@@ -69,10 +69,10 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-8 justify-center animate-in fade-in zoom-in duration-1000 delay-700">
-              <Link href="/proyectos" className="btn-3d btn-3d-gold px-12 py-6 rounded-full font-black uppercase tracking-[0.2em] text-xs transition-all flex items-center justify-center">
+              <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-gold px-12 py-6 rounded-full font-black uppercase tracking-[0.2em] text-xs transition-all flex items-center justify-center">
                 EXPLORE ASSETS
               </Link>
-              <Link href="/tours" className="btn-3d btn-3d-navy px-12 py-6 rounded-full font-black uppercase tracking-[0.2em] text-xs transition-all bg-white/5 backdrop-blur-xl border border-white/10 flex items-center justify-center gap-3">
+              <Link href={`/${lang}/tours`} className="btn-3d btn-3d-navy px-12 py-6 rounded-full font-black uppercase tracking-[0.2em] text-xs transition-all bg-white/5 backdrop-blur-xl border border-white/10 flex items-center justify-center gap-3">
                 <PlayCircle size={20} className="text-brand-GOLD" /> DISCOVERY TOURS
               </Link>
             </div>
@@ -125,7 +125,7 @@ export default function Home() {
               <h2 className="font-heading text-4xl md:text-7xl font-black text-white mb-6 uppercase tracking-tighter leading-none">VIP DEVELOPMENTS</h2>
               <p className="text-slate-400 text-lg font-medium">High-liquidity <strong>Panama branded residences</strong> and beachfront assets engineered for the modern Rockstar investor.</p>
             </div>
-            <Link href="/proyectos" className="btn-3d btn-3d-gold px-10 py-5 rounded-full font-black uppercase tracking-widest text-[10px] flex items-center justify-center">VIEW ENTIRE INVENTORY</Link>
+            <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-gold px-10 py-5 rounded-full font-black uppercase tracking-widest text-[10px] flex items-center justify-center">VIEW ENTIRE INVENTORY</Link>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
             {PROJECTS.slice(0, 3).map((project, idx) => (
@@ -217,8 +217,8 @@ export default function Home() {
         <div className="max-w-5xl mx-auto px-4 relative z-10">
           <h2 className="text-5xl md:text-9xl font-heading font-black text-white mb-16 tracking-tighter uppercase italic leading-[0.8]">READY FOR THE <br /> <span className="text-brand-GOLD">UPGRADE?</span></h2>
           <div className="flex flex-wrap justify-center gap-10">
-            <Link href="/contacto" className="btn-3d btn-3d-navy px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs transition-all shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] flex items-center justify-center">CONTACT A SENIOR ADVISOR</Link>
-            <Link href="/tours" className="btn-3d btn-3d-gold px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs transition-all flex items-center justify-center">BOOK DISCOVERY JOURNEY</Link>
+            <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs transition-all shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] flex items-center justify-center">CONTACT A SENIOR ADVISOR</Link>
+            <Link href={`/${lang}/tours`} className="btn-3d btn-3d-gold px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs transition-all flex items-center justify-center">BOOK DISCOVERY JOURNEY</Link>
           </div>
         </div>
       </section>
