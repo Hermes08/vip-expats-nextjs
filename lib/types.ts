@@ -22,8 +22,8 @@ export interface Project {
   slug: string;
   name: Record<string, string>;
   location: Record<string, string>;
-  type: ProjectType;
-  zone: ProjectZone;
+  type: ProjectType[];
+  zone: ProjectZone[];
   status: ProjectStatus;
   h1Title: Record<string, string>;
   description: Record<string, string>;
