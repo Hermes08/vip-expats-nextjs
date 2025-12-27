@@ -37,9 +37,9 @@ const QuizPageContent: React.FC = () => {
     const calculateResults = () => {
         // Logic: Map environment choices to existing projects
         let matched = PROJECTS.filter(p => {
-            if (formData.environment === 'Mountains') return p.zone === 'Mountain';
-            if (formData.environment === 'Beach') return p.zone === 'Beach' || p.zone === 'Caribbean';
-            if (formData.environment === 'City') return p.zone === 'City' || p.slug.includes('westin'); // Westin is near city
+            if (formData.environment === 'Mountains') return p.zone.includes('Mountain');
+            if (formData.environment === 'Beach') return p.zone.includes('Beach') || p.zone.includes('Caribbean');
+            if (formData.environment === 'City') return p.zone.includes('City') || p.slug.includes('westin'); // Westin is near city
             return true;
         });
 
