@@ -13,7 +13,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
     const labels = t.labels;
 
     return (
-        <div className="glass-card rounded-[2.5rem] overflow-hidden group flex flex-col border-white/5 transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_40px_80px_-15px_rgba(0,0,0,0.6)] hover:border-brand-GOLD/30">
+        <Link href={`/proyectos/${project.slug}`} className="glass-card rounded-[2.5rem] overflow-hidden group flex flex-col border-white/5 transition-all duration-500 hover:scale-[1.02] hover:shadow-[0_40px_80px_-15px_rgba(212,175,55,0.2)] hover:border-brand-GOLD/30 block h-full">
             <div className="relative aspect-[16/11] overflow-hidden">
                 <img
                     src={project.images[0]}
@@ -69,14 +69,15 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                     {project.description[lang] || project.description.en}
                 </p>
 
-                <Link
-                    href={`/proyectos/${project.slug}`}
-                    className="btn-3d btn-3d-navy flex items-center justify-center gap-4 w-full py-5 rounded-full font-black text-[10px] uppercase tracking-[0.3em] bg-white/5 hover:bg-brand-GOLD hover:text-brand-900 transition-all border border-white/5"
-                >
-                    {labels.viewDetails} <ArrowRight size={16} />
-                </Link>
+                <div className="mt-auto">
+                    <span
+                        className="btn-3d btn-3d-gold flex items-center justify-center gap-4 w-full py-5 rounded-full font-black text-[10px] uppercase tracking-[0.3em] transition-all"
+                    >
+                        {labels.viewDetails} <ArrowRight size={16} />
+                    </span>
+                </div>
             </div>
-        </div>
+        </Link>
     );
 };
 

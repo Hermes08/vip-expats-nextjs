@@ -4,6 +4,7 @@ import "../globals.css";
 import { CMSProvider } from "@/context/CMSContext";
 import { LanguageProvider } from "@/context/LanguageContext";
 import MainLayout from "@/components/MainLayout";
+import ScrollAnimationObserver from "@/components/ScrollAnimationObserver";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -18,7 +19,7 @@ const montserrat = Montserrat({
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
-  
+
   const titles = {
     es: "ExpatRockstars | Portal de Bienes Raíces e Inversiones en Panamá",
     en: "ExpatRockstars | Panama Real Estate & Investment Portal"
@@ -60,6 +61,7 @@ export default async function RootLayout({
         className={`${inter.variable} ${montserrat.variable} antialiased overflow-x-hidden selection:bg-brand-GOLD selection:text-brand-900 bg-brand-950`}
       >
         <LanguageProvider initialLang={lang as 'es' | 'en'}>
+          <ScrollAnimationObserver />
           <CMSProvider>
             <MainLayout>
               {children}

@@ -87,7 +87,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                         </div>
 
                         {/* SECTION 1: Deep Dive */}
-                        <article className="prose prose-lg max-w-none text-brand-600 mb-20">
+                        <article className="prose prose-lg max-w-none text-brand-600 mb-20 reveal-on-scroll">
                             <h2 className="text-3xl font-heading font-bold text-brand-900 mb-8 border-b-2 border-brand-GOLD inline-block pb-2 uppercase tracking-tighter">
                                 {lang === 'es' ? 'Análisis Profundo del Proyecto' : 'Project Deep Dive & Architectural Vision'}
                             </h2>
@@ -99,20 +99,20 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
 
                         {/* Video Section */}
                         {project.videoUrl && project.showVideo !== false && (
-                            <div className="mb-20">
+                            <div className="mb-20 reveal-on-scroll">
                                 <VideoSection videoUrl={project.videoUrl} />
                             </div>
                         )}
 
                         {/* Floor Plans Section */}
                         {project.floorplans && project.floorplans.length > 0 && project.showFloorplans !== false && (
-                            <div className="mb-20">
+                            <div className="mb-20 reveal-on-scroll">
                                 <FloorPlans floorplans={project.floorplans} lang={lang} />
                             </div>
                         )}
 
                         {/* SECTION 2: Location & Lifestyle */}
-                        <article className="bg-neutral-50 p-12 rounded-[3rem] border border-neutral-100 mb-20">
+                        <article className="bg-neutral-50 p-12 rounded-[3rem] border border-neutral-100 mb-20 reveal-on-scroll">
                             <h2 className="text-3xl font-heading font-bold text-brand-900 mb-8 flex items-center gap-4">
                                 <Compass className="text-brand-GOLD" size={36} />
                                 {lang === 'es' ? 'Ubicación y Estilo de Vida' : 'Neighborhood Analysis & Coastal Lifestyle'}
@@ -123,24 +123,27 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                             />
                         </article>
 
-                        {/* SECTION 3: Investment Analysis */}
-                        <article className="mb-20">
-                            <div className="flex items-center gap-4 mb-8">
-                                <div className="w-16 h-16 bg-brand-900 text-brand-GOLD rounded-full flex items-center justify-center">
-                                    <TrendingUp size={32} />
+                        {/* SECTION 3: Investment Analysis (GOLD/GLASS POLISH) */}
+                        <article className="mb-20 p-12 rounded-[3rem] bg-brand-950 border border-white/5 shadow-2xl relative overflow-hidden group reveal-on-scroll">
+                            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-brand-GOLD/10 via-transparent to-transparent opacity-50"></div>
+                            <div className="relative z-10">
+                                <div className="flex items-center gap-6 mb-10">
+                                    <div className="w-20 h-20 bg-brand-GOLD/10 backdrop-blur-md border border-brand-GOLD/20 text-brand-GOLD rounded-2xl flex items-center justify-center shadow-[0_0_30px_-5px_rgba(212,175,55,0.3)] group-hover:scale-110 transition-transform duration-500">
+                                        <TrendingUp size={40} />
+                                    </div>
+                                    <h2 className="text-3xl md:text-5xl font-heading font-black text-white uppercase tracking-tighter italic">
+                                        {lang === 'es' ? 'Análisis de Inversión y ROI' : 'Investment Analysis & Market Trends'}
+                                    </h2>
                                 </div>
-                                <h2 className="text-3xl font-heading font-bold text-brand-900 uppercase tracking-tighter">
-                                    {lang === 'es' ? 'Análisis de Inversión y ROI' : 'Investment Analysis & Market Trends'}
-                                </h2>
+                                <div
+                                    className="prose prose-lg prose-invert max-w-none whitespace-pre-line text-slate-300 font-medium leading-relaxed"
+                                    dangerouslySetInnerHTML={{ __html: project.investmentAnalysis?.[lang] || '' }}
+                                />
                             </div>
-                            <div
-                                className="prose prose-lg text-brand-600 max-w-none whitespace-pre-line"
-                                dangerouslySetInnerHTML={{ __html: project.investmentAnalysis?.[lang] || '' }}
-                            />
                         </article>
 
                         {/* SECTION 4: Buyer Profile */}
-                        <article className="bg-brand-900 text-white p-12 rounded-[3rem] mb-20 shadow-2xl relative overflow-hidden">
+                        <article className="bg-brand-900 text-white p-12 rounded-[3rem] mb-20 shadow-2xl relative overflow-hidden reveal-on-scroll">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-GOLD/5 rounded-full blur-3xl"></div>
                             <h2 className="text-3xl font-heading font-bold mb-8 flex items-center gap-4">
                                 <UserCheck className="text-brand-GOLD" size={36} />
@@ -153,7 +156,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                         </article>
 
                         {/* SECTION 5: Legal & Residency */}
-                        <article className="mb-20 p-12 border-2 border-brand-GOLD/20 rounded-[3rem]">
+                        <article className="mb-20 p-12 border-2 border-brand-GOLD/20 rounded-[3rem] reveal-on-scroll">
                             <h2 className="text-3xl font-heading font-bold text-brand-900 mb-8 flex items-center gap-4">
                                 <Gavel className="text-brand-GOLD" size={36} />
                                 {lang === 'es' ? 'Integración Legal y Residencia' : 'Legal Guide & Residency Pathways'}

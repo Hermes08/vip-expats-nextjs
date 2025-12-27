@@ -101,8 +101,10 @@ const ProjectsPageContent: React.FC = () => {
                 </div>
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24">
-                    {filteredProjects.map(project => (
-                        <ProjectCard key={project.id} project={project} />
+                    {filteredProjects.map((project, idx) => (
+                        <div key={project.id} className={`reveal-on-scroll stagger-${(idx % 3) + 1} animate-float`} style={{ animationDelay: `${idx * 0.3}s` }}>
+                            <ProjectCard project={project} />
+                        </div>
                     ))}
                 </div>
 
