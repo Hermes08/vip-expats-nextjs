@@ -6,11 +6,13 @@ import { PROJECTS, CONTENT } from '@/lib/constants';
 import { MapPin, CheckCircle, TrendingUp, BookOpen, Compass, ShieldCheck, UserCheck, Gavel, Home } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 import { useCMS } from '@/context/CMSContext';
+import VideoSection from '@/components/projects/VideoSection';
+import FloorPlans from '@/components/projects/FloorPlans';
 
 const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
     const { lang } = useLanguage();
-    const { blogPosts } = useCMS();
-    const project = PROJECTS.find(p => p.slug === slug);
+    const { blogPosts, projects } = useCMS();
+    const project = projects.find(p => p.slug === slug);
     const [activeImage, setActiveImage] = useState(0);
     const t = CONTENT[lang] || CONTENT['en'];
     const labels = t.labels;
@@ -91,6 +93,20 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                                 dangerouslySetInnerHTML={{ __html: project.longDescription?.[lang] || project.description[lang] }}
                             />
                         </article>
+
+                        {/* Video Section */}
+                        {project.videoUrl && project.showVideo !== false && (
+                            <div className="mb-20">
+                                <VideoSection videoUrl={project.videoUrl} />
+                            </div>
+                        )}
+
+                        {/* Floor Plans Section */}
+                        {project.floorplans && project.floorplans.length > 0 && project.showFloorplans !== false && (
+                            <div className="mb-20">
+                                <FloorPlans floorplans={project.floorplans} lang={lang} />
+                            </div>
+                        )}
 
                         {/* SECTION 2: Location & Lifestyle */}
                         <article className="bg-neutral-50 p-12 rounded-[3rem] border border-neutral-100 mb-20">

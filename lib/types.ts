@@ -9,6 +9,14 @@ export interface SEOSection {
   keywords: string[];
 }
 
+export interface FloorPlan {
+  name: Record<string, string>;
+  size: string; // e.g., "97 m2 (1044.1 sq.ft)"
+  price: number;
+  image: string;
+  characteristics: Record<string, string[]>;
+}
+
 export interface Project {
   id: string;
   slug: string;
@@ -19,9 +27,9 @@ export interface Project {
   status: ProjectStatus;
   h1Title: Record<string, string>;
   description: Record<string, string>;
-  marketAnalysis: Record<string, string>; 
+  marketAnalysis: Record<string, string>;
   highlights: Record<string, string[]>;
-  keywords: string[]; 
+  keywords: string[];
   images: string[];
   amenities: Record<string, string[]>;
   priceFrom: number;
@@ -38,6 +46,10 @@ export interface Project {
   buyerProfile?: Record<string, string>;
   residencyInfo?: Record<string, string>;
   servicesCTA?: Record<string, string>;
+  floorplans?: FloorPlan[];
+  videoUrl?: string; // YouTube/Vimeo or self-hosted .mp4
+  showFloorplans?: boolean;
+  showVideo?: boolean;
 }
 
 export interface BlogPost {

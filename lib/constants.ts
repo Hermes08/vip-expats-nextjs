@@ -141,6 +141,31 @@ export const PROJECTS: Project[] = [
     sqft: '105 - 150',
     unitsAvailable: 8,
     faqs: [],
+    videoUrl: 'https://www.youtube.com/watch?v=R_I_oV7q0cM', // Branded Residences Promo
+    floorplans: [
+      {
+        name: { en: 'Grand Studio', es: 'Gran Studio', zh: '豪华单身公寓' },
+        size: '105 m2 (1130 sq.ft)',
+        price: 320000,
+        image: '/images/placeholders/studio_apartment_floorplan.png',
+        characteristics: {
+          en: ['Ocean View Terrace', 'Marble Floors', 'Italian Kitchen', 'Marriott Room Service'],
+          es: ['Terraza con Vista al Mar', 'Pisos de Mármol', 'Cocina Italiana', 'Servicio a la habitación Marriott'],
+          zh: ['海景露台', '大理石地板', '意大利厨房', '万豪客房服务']
+        }
+      },
+      {
+        name: { en: 'Executive Suite', es: 'Suite Ejecutiva', zh: '行政套房' },
+        size: '150 m2 (1614 sq.ft)',
+        price: 450000,
+        image: '/images/placeholders/modern_floorplan_1.png',
+        characteristics: {
+          en: ['Master Suite with Walk-in Closet', 'Home Office Space', 'Panoramic Balcony', 'Smart Lock Access'],
+          es: ['Suite Principal con Walk-in Closet', 'Espacio para Oficina', 'Balcón Panorámico', 'Acceso con Cerradura Inteligente'],
+          zh: ['主卧套房带步入式衣橱', '办公空间', '全景阳台', '智能门锁']
+        }
+      }
+    ],
     didYouKnow: [
       "Westin residences are managed to Marriott's highest standards.",
       "Ownership qualifies for the Qualified Investor Visa program.",
@@ -246,6 +271,31 @@ export const PROJECTS: Project[] = [
     sqft: '85 - 180',
     unitsAvailable: 12,
     faqs: [],
+    videoUrl: 'https://www.youtube.com/watch?v=uKofVNo1T5A', // Boquete Life Promo
+    floorplans: [
+      {
+        name: { en: 'Mountain Cabin', es: 'Cabaña de Montaña', zh: '山间木屋' },
+        size: '85 m2 (915 sq.ft)',
+        price: 245000,
+        image: '/images/placeholders/studio_apartment_floorplan.png',
+        characteristics: {
+          en: ['Fireplace Ready', 'River Sound View', 'Exposed Wood Beams', 'Garden Path Access'],
+          es: ['Listo para Chimenea', 'Vista al Sonido del Río', 'Vigas de Madera Expuestas', 'Acceso a Sendero de Jardín'],
+          zh: ['壁炉就绪', '溪流景观', '外露木梁', '花园步道入户']
+        }
+      },
+      {
+        name: { en: 'Valley Villa', es: 'Villa del Valle', zh: '溪谷别墅' },
+        size: '180 m2 (1937 sq.ft)',
+        price: 395000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['3 Bedrooms + Den', 'High Altitude Insulation', 'Large Greenhouse Window', 'Wine Cellar Space'],
+          es: ['3 Recámaras + Den', 'Aislamiento de Altura', 'Ventana Grande tipo Invernadero', 'Espacio para Cava de Vinos'],
+          zh: ['3 卧室 + 工作室', '高海拔隔热', '大型温室窗', '酒窖空间']
+        }
+      }
+    ],
     didYouKnow: [
       "Valle Escondido was the first massive luxury development in Boquete.",
       "Boquete is known for the most expensive coffee in the world: Geisha.",
@@ -351,6 +401,31 @@ export const PROJECTS: Project[] = [
     sqft: '250 - 650',
     unitsAvailable: 4,
     faqs: [],
+    videoUrl: 'https://www.youtube.com/watch?v=5z_Tsk8c7mQ', // Buenaventura Marina Promo
+    floorplans: [
+      {
+        name: { en: 'Marina Loft', es: 'Loft de la Marina', zh: '游艇码头LOFT' },
+        size: '250 m2 (2691 sq.ft)',
+        price: 450000,
+        image: '/images/placeholders/modern_floorplan_1.png',
+        characteristics: {
+          en: ['Marina Frontage', 'Industrial Chic Finish', 'Double Height Ceilings', 'Private Dock Access'],
+          es: ['Frente a la Marina', 'Acabados Industrial Chic', 'Techos de Doble Altura', 'Acceso a Muelle Privado'],
+          zh: ['游艇码头前排', '工业风装修', '双层挑高设计', '私人码头通道']
+        }
+      },
+      {
+        name: { en: 'Lakeside Estate', es: 'Finca del Lago', zh: '湖畔庄园' },
+        size: '650 m2 (6996 sq.ft)',
+        price: 1200000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['6 Full Suites', 'Olympic Size Pool Space', 'Underground Garage', 'Guest House Annex'],
+          es: ['6 Suites Completas', 'Espacio para Piscina Olímpica', 'Garaje Subterráneo', 'Anexo para Huéspedes'],
+          zh: ['6 套房', '奥林匹克规格游泳池空间', '地下车库', '客房独立附楼']
+        }
+      }
+    ],
     didYouKnow: [
       "There is an on-site zoo and rescue center for local wildlife.",
       "Many of Panama's top business leaders have homes here.",
@@ -458,6 +533,31 @@ export const PROJECTS: Project[] = [
     sqft: '65 - 95',
     unitsAvailable: 20,
     faqs: [],
+    videoUrl: 'https://www.youtube.com/watch?v=yYfmsuL1GCI', // Margaritaville Global Promo
+    floorplans: [
+      {
+        name: { en: 'Chill Suite', es: 'Suite Relax', zh: '休闲套房' },
+        size: '65 m2 (700 sq.ft)',
+        price: 195000,
+        image: '/images/placeholders/studio_apartment_floorplan.png',
+        characteristics: {
+          en: ['Fully Furnished', 'Wet Bar Included', 'Smart Rental Integration', 'Hammock Hook Ready'],
+          es: ['Totalmente Amueblado', 'Wet Bar Incluido', 'Integración de Alquiler Inteligente', 'Ganchos para Hamaca Listos'],
+          zh: ['精装修拎包入住', '自带小酒吧', '智能租赁系统', '吊床挂钩就绪']
+        }
+      },
+      {
+        name: { en: 'Party Pad', es: 'Residencia Party', zh: '派对住宅' },
+        size: '95 m2 (1022 sq.ft)',
+        price: 285000,
+        image: '/images/placeholders/modern_floorplan_1.png',
+        characteristics: {
+          en: ['Expansive Rooftop Terrace', 'Surround Sound Wiring', 'Outdoor Kitchenette', 'Beachfront Prime View'],
+          es: ['Terraza Expansiva en Azotea', 'Cableado para Sonido Surround', 'Cocineta Exterior', 'Vista Premium Frente al Mar'],
+          zh: ['大型屋顶露台', '环绕声布线', '室外小厨房', '一线海景']
+        }
+      }
+    ],
     didYouKnow: [
       "This is the first Margaritaville residence in Central America.",
       "Playa Caracol is the closest high-end surf beach to the capital.",
@@ -563,23 +663,141 @@ export const PROJECTS: Project[] = [
     sqft: '120 - 250',
     unitsAvailable: 5,
     faqs: [],
+    videoUrl: 'https://www.youtube.com/watch?v=0hNo_JgP-p0', // Caribbean Luxury Promo
+    floorplans: [
+      {
+        name: { en: 'Seaside Villa', es: 'Villa al Mar', zh: '海边别墅' },
+        size: '120 m2 (1291 sq.ft)',
+        price: 210000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['Private Jungle Garden', 'Eco-Design Ventilation', 'Coral Stone Bathrooms', 'Walking Distance to Marina'],
+          es: ['Jardín Privado en la Jungla', 'Ventilación Eco-Diseño', 'Baños de Piedra Coralina', 'A poca distancia de la Marina'],
+          zh: ['私人丛林花园', '生态设计通风', '珊瑚石浴室', '步行可达码头']
+        }
+      },
+      {
+        name: { en: 'Skyline Penthouse', es: 'Penthouse Horizonte', zh: '地平线阁楼' },
+        size: '250 m2 (2691 sq.ft)',
+        price: 450000,
+        image: '/images/placeholders/modern_floorplan_1.png',
+        characteristics: {
+          en: ['Infinity Plunge Pool', 'Floor-to-Ceiling Impact Glass', 'Staff Quarters', '270 Degree Caribbean View'],
+          es: ['Piscina de Inmersión Infinity', 'Vidrio de Impacto Piso a Techo', 'Cuarto de Servicio', 'Vista de 270 Grados al Caribe'],
+          zh: ['无边际戏水池', '落地防弹玻璃', '员工房', '270度加勒比海景']
+        }
+      }
+    ],
     didYouKnow: [
       "The Caribbean side has calmer, warmer turquoise waters.",
       "Helicopter access is available for high-end residents.",
       "Lush jungle surrounds the entire community."
     ]
+  },
+  {
+    id: 'bioma',
+    slug: 'bioma-costa-del-este',
+    name: { en: 'Bioma Costa del Este', es: 'Bioma Costa del Este', zh: 'Bioma' },
+    location: { en: 'Costa del Este, Panama City', es: 'Costa del Este, Ciudad de Panamá', zh: '东海岸, 巴拿马城' },
+    type: 'Condo',
+    zone: 'City',
+    status: 'Presale',
+    h1Title: {
+      en: 'Bioma Costa del Este | Panama City Luxury Apartments | ExpatRockstars',
+      es: 'Bioma Costa del Este | Apartamentos de Lujo en Ciudad de Panamá',
+      zh: 'Bioma Costa del Este | 豪华公寓'
+    },
+    description: {
+      en: 'Bioma is a revolutionary residential project in Costa del Este, focusing on biodiversity and community connection.',
+      es: 'Bioma es un proyecto residencial revolucionario en Costa del Este, enfocado en la biodiversidad y la conexión comunitaria.',
+      zh: 'Bioma 是东海岸的一个革命性住宅项目。'
+    },
+    videoUrl: 'https://www.youtube.com/watch?v=uKofVNo1T5A',
+    floorplans: [
+      {
+        name: { en: 'Model A', es: 'Modelo A', zh: 'A型' },
+        size: '97 m2 (1044.1 sq.ft)',
+        price: 417000,
+        image: '/images/placeholders/modern_floorplan_1.png',
+        characteristics: {
+          en: ['97 m2 construction', '2-3 Bedrooms', '2.5 Bathrooms', 'Spacious Terrace'],
+          es: ['97 m2 de construcción', '2-3 Recámaras', '2.5 Baños', 'Terraza Amplia'],
+          zh: ['97 平方米', '2-3 卧室', '2.5 浴室', '宽敞露台']
+        }
+      },
+      {
+        name: { en: 'Model B', es: 'Modelo B', zh: 'B型' },
+        size: '100 - 156 m2 (1076.4 - 1679.1 sq.ft)',
+        price: 457000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['100-156 m2 construction', '3 Bedrooms', '3.5 Bathrooms', 'Panoramic Views'],
+          es: ['100-156 m2 de construcción', '3 Recámaras', '3.5 Baños', 'Vistas Panorámicas'],
+          zh: ['100-156 平方米', '3 卧室', '3.5 浴室', '全景视野']
+        }
+      },
+      {
+        name: { en: 'Model C', es: 'Modelo C', zh: 'C型' },
+        size: '65 - 114 m2 (700 - 1227.1 sq.ft)',
+        price: 335000,
+        image: '/images/placeholders/studio_apartment_floorplan.png',
+        characteristics: {
+          en: ['65-114 m2 construction', '1-2 Bedrooms', '2 Bathrooms', 'Efficient Design'],
+          es: ['65-114 m2 de construcción', '1-2 Recámaras', '2 Baños', 'Diseño Eficiente'],
+          zh: ['65-114 平方米', '1-2 卧室', '2 浴室', '高效设计']
+        }
+      },
+      {
+        name: { en: 'Model D', es: 'Modelo D', zh: 'D型' },
+        size: '89 - 114 m2 (958 - 1227.1 sq.ft)',
+        price: 406000,
+        image: '/images/placeholders/modern_floorplan_1.png',
+        characteristics: {
+          en: ['89-114 m2 construction', '2 Bedrooms', '2 Bathrooms', 'Sea Views'],
+          es: ['89-114 m2 de construcción', '2 Recámaras', '2 Baños', 'Vista al Mar'],
+          zh: ['89-114 平方米', '2 卧室', '2 浴室', '海景']
+        }
+      }
+    ],
+    highlights: {
+      en: ['Located in Costa del Este', 'Inspired by nature', 'Exclusive wellness amenities', 'Sustainable architecture'],
+      es: ['Ubicado en Costa del Este', 'Inspirado en la naturaleza', 'Amenidades exclusivas de bienestar', 'Arquitectura sostenible'],
+      zh: ['位于东海岸', '灵感源于自然', '独家健康设施', '可持续建筑']
+    },
+    images: [
+      'https://thepanamalink.com/wp-content/uploads/2024/05/Bioma-Costa-del-Este.jpg',
+      'https://thepanamalink.com/wp-content/uploads/2024/05/Bioma-Amenities.jpg'
+    ],
+    amenities: {
+      en: ['Co-working Spaces', 'Infinity Pool', 'Gym & Spa', 'Community Garden'],
+      es: ['Espacios de Co-working', 'Piscina Infinity', 'Gimnasio y Spa', 'Jardín Comunitario'],
+      zh: ['联合办公空间', '无边泳池', '健身房和水疗中心', '社区花园']
+    },
+    priceFrom: 335000,
+    beds: '1-3',
+    baths: '2-3.5',
+    sqft: '65 - 156',
+    unitsAvailable: 15,
+    faqs: [],
+    marketAnalysis: {
+      en: 'Costa del Este continues to be the most stable high-end market in Panama City.',
+      es: 'Costa del Este sigue siendo el mercado de lujo más estable de la Ciudad de Panamá.',
+      zh: '东海岸仍然是巴拿马城最稳定的高端市场。'
+    },
+    keywords: ["bioma costa del este", "panama luxury apartments", "costa del este real estate"],
+    didYouKnow: ["Bioma features 3 unique ecosystems within the building."]
   }
 ];
 
 export const CONTENT: ContentDictionary = {
   en: {
-    nav: { 
-      projects: "Projects", 
-      tours: "Relocation Tours", 
-      about: "About Us", 
-      blog: "Blog", 
-      contact: "Contact", 
-      search: "Search" 
+    nav: {
+      projects: "Projects",
+      tours: "Relocation Tours",
+      about: "About Us",
+      blog: "Blog",
+      contact: "Contact",
+      search: "Search"
     },
     labels: {
       beds: "Beds",
@@ -597,22 +815,22 @@ export const CONTENT: ContentDictionary = {
       cta: "View All Projects"
     },
     homepage: {
-        introTitle: "The Definitive Guide to Panama Real Estate Market 2025",
-        introBody: `Navigating the panama real estate landscape in 2025 requires more than just looking at beachfront condos panama listings. It requires a deep dive into the cost of living panama and understanding the different neighborhood dynamics from panama city condos in punta pacifica to boquete real estate in the mountains. Whether you are searching for panama condos on the beach at playa bonita panama or looking for beachfront homes for sale in panama near coronado panama real estate, ExpatRockstars provides the local expertise you need to make a secure real estate investment.
+      introTitle: "The Definitive Guide to Panama Real Estate Market 2025",
+      introBody: `Navigating the panama real estate landscape in 2025 requires more than just looking at beachfront condos panama listings. It requires a deep dive into the cost of living panama and understanding the different neighborhood dynamics from panama city condos in punta pacifica to boquete real estate in the mountains. Whether you are searching for panama condos on the beach at playa bonita panama or looking for beachfront homes for sale in panama near coronado panama real estate, ExpatRockstars provides the local expertise you need to make a secure real estate investment.
 
         Panama remains one of the best places to retire panama for North Americans and Europeans due to the panama retirement benefits and the legendary pensionado visa panama program. American retirees in panama often choose boquete panama retire communities because of the eternal spring weather and established expat communities in panama. Our mission is to guide you through the pros and cons of living in panama and help you find the panama dream home that fits your specific retirement real estate goals.`,
-        investmentTitle: "Panama Investment Property: Strategy for ROI and Tax Benefits",
-        investmentBody: `Why invest panama real estate now? The country offers some of the most competitive panama tax benefits in the world, including the friendly nations visa panama and residency through real estate investment. Investors seeking panama high ROI real estate should focus on panama city beach real estate and new developments panama that offer panama branded residences like the westin panama residences or margaritaville panama.
+      investmentTitle: "Panama Investment Property: Strategy for ROI and Tax Benefits",
+      investmentBody: `Why invest panama real estate now? The country offers some of the most competitive panama tax benefits in the world, including the friendly nations visa panama and residency through real estate investment. Investors seeking panama high ROI real estate should focus on panama city beach real estate and new developments panama that offer panama branded residences like the westin panama residences or margaritaville panama.
 
         The the buenaventura golf and beach resort and other panama lifestyle resort developments are seeing massive demand for panama short term rental property and panama beachfront airbnb investment. With tourism on the rise, owning a vacation home in a panama gated community ensures higher occupancy and better property management. Our panama real estate investment opportunities analysis covers everything from panama real estate tax benefits to the legal guide for international buyers.`,
-        expatLifeTitle: "International Living in Panama: What You Need to Know",
-        expatLifeBody: `Relocate to panama and experience a lifestyle where the panama beach lifestyle meets high-end panama coastal living. The cost of retirement in panama is a major draw, but the international living in panama experience is what makes people stay. From the skyscrapers of costa del este apartments to the serene villas in bocas del toro real estate, there is a community for every expat.
+      expatLifeTitle: "International Living in Panama: What You Need to Know",
+      expatLifeBody: `Relocate to panama and experience a lifestyle where the panama beach lifestyle meets high-end panama coastal living. The cost of retirement in panama is a major draw, but the international living in panama experience is what makes people stay. From the skyscrapers of costa del este apartments to the serene villas in bocas del toro real estate, there is a community for every expat.
 
         Retiring in panama pros and cons often involve balancing the modern infrastructure of panama city tourism with the laid-back vibe of beach house rentals. We provide panama relocation services that include panama relocation real estate tours to help you see the best places for expats to live in panama first hand. Our panama retirement advisors are dedicated to making your transition as smooth as possible, from panama residency through real estate to setting up your new tropical life.`
     },
     projectsPage: {
-        neighborhoodTitle: "Where to Invest? Analyzing Panama's Top Neighborhoods",
-        neighborhoodBody: `Choosing the right neighborhood is the first step in buying real estate in panama. For those seeking urban luxury, panama city panama condos in areas like santa maria panama real estate and ocean reef islands panama are the top picks. These zones represent panama high end real estate with amenities that rival Miami or Dubai. If you prefer the beach, coronado panama real estate and playa caracol panama offer beachfront houses for sale in panama with excellent panama oceanfront lifestyle potential.
+      neighborhoodTitle: "Where to Invest? Analyzing Panama's Top Neighborhoods",
+      neighborhoodBody: `Choosing the right neighborhood is the first step in buying real estate in panama. For those seeking urban luxury, panama city panama condos in areas like santa maria panama real estate and ocean reef islands panama are the top picks. These zones represent panama high end real estate with amenities that rival Miami or Dubai. If you prefer the beach, coronado panama real estate and playa caracol panama offer beachfront houses for sale in panama with excellent panama oceanfront lifestyle potential.
 
         The boquete panama real estate market is the gold standard for mountain living, while the caribbean coast panama offers a more rugged, authentic experience. Our panama real estate projects selection is curated to include only new developments panama with strong developer backing and proven ROI. Whether you want a panama second home or a permanent panama expat real estate asset, our panama real estate advisors are here to provide a complete panama property investment guide.`
     },
@@ -648,13 +866,13 @@ export const CONTENT: ContentDictionary = {
     }
   },
   es: {
-    nav: { 
-      projects: "Proyectos", 
-      tours: "Tours de Relocación", 
-      about: "Nosotros", 
-      blog: "Blog", 
-      contact: "Contacto", 
-      search: "Buscar" 
+    nav: {
+      projects: "Proyectos",
+      tours: "Tours de Relocación",
+      about: "Nosotros",
+      blog: "Blog",
+      contact: "Contacto",
+      search: "Buscar"
     },
     labels: {
       beds: "Hab.",
@@ -672,22 +890,22 @@ export const CONTENT: ContentDictionary = {
       cta: "Ver Proyectos"
     },
     homepage: {
-        introTitle: "La Guía Definitiva del Mercado Inmobiliario en Panamá 2025",
-        introBody: `Navegar por el panorama de bienes raíces en panamá en 2025 requiere más que solo mirar anuncios de apartamentos frente al mar en panamá. Requiere una inmersión profunda en el costo de vida en panamá y entender la dinámica de los diferentes vecindarios, desde condominios en la ciudad de panamá en punta pacífica hasta bienes raíces en boquete en las montañas. Ya sea que esté buscando apartamentos en la playa en panamá en playa bonita panama o buscando casas frente al mar en venta en panamá cerca de bienes raíces en coronado panama, ExpatRockstars proporciona la experiencia local que necesita para realizar una inversión inmobiliaria segura.
+      introTitle: "La Guía Definitiva del Mercado Inmobiliario en Panamá 2025",
+      introBody: `Navegar por el panorama de bienes raíces en panamá en 2025 requiere más que solo mirar anuncios de apartamentos frente al mar en panamá. Requiere una inmersión profunda en el costo de vida en panamá y entender la dinámica de los diferentes vecindarios, desde condominios en la ciudad de panamá en punta pacífica hasta bienes raíces en boquete en las montañas. Ya sea que esté buscando apartamentos en la playa en panamá en playa bonita panama o buscando casas frente al mar en venta en panamá cerca de bienes raíces en coronado panama, ExpatRockstars proporciona la experiencia local que necesita para realizar una inversión inmobiliaria segura.
 
         Panamá sigue siendo uno de los mejores lugares para jubilarse en panamá para norteamericanos y europeos debido a los beneficios de jubilación en panamá y al legendario programa de visa pensionado panamá. Los jubilados estadounidenses en panamá a menudo eligen comunidades de jubilados en boquete panama debido al clima de primavera eterna y a las comunidades de expatriados establecidas en panamá. Nuestra misión es guiarlo a través de los pros y contras de vivir en panamá y ayudarlo a encontrar la casa de sus sueños en panamá que se ajuste a sus objetivos específicos de bienes raíces de jubilación.`,
-        investmentTitle: "Inversión Inmobiliaria en Panamá: Estrategia para ROI y Beneficios Fiscales",
-        investmentBody: `¿Por qué invertir en bienes raíces en panamá ahora? El país ofrece algunos de los beneficios fiscales de panamá más competitivos del mundo, incluida la visa de naciones amigas de panamá y la residencia mediante inversión inmobiliaria. Los inversores que buscan bienes raíces de alto ROI en panamá deben centrarse en los bienes raíces de la playa de la ciudad de panamá y en los nuevos desarrollos de panamá que ofrecen residencias de marca en panamá como las residencias de westin panama o margaritaville panama.
+      investmentTitle: "Inversión Inmobiliaria en Panamá: Estrategia para ROI y Beneficios Fiscales",
+      investmentBody: `¿Por qué invertir en bienes raíces en panamá ahora? El país ofrece algunos de los beneficios fiscales de panamá más competitivos del mundo, incluida la visa de naciones amigas de panamá y la residencia mediante inversión inmobiliaria. Los inversores que buscan bienes raíces de alto ROI en panamá deben centrarse en los bienes raíces de la playa de la ciudad de panamá y en los nuevos desarrollos de panamá que ofrecen residencias de marca en panamá como las residencias de westin panama o margaritaville panama.
 
         El buenaventura resort panama y otros desarrollos de estilo de vida en panamá están viendo una demanda masiva de propiedades de alquiler a corto plazo en panamá e inversión de airbnb frente al mar en panamá. Con el turismo en aumento, ser propietario de una casa de vacaciones en una comunidad cerrada de panamá garantiza una mayor ocupación y una mejor gestión de la propiedad. Nuestro análisis de oportunidades de inversión inmobiliaria en panamá cubre todo, desde los beneficios fiscales de bienes raíces en panamá hasta la guía legal para compradores internacionales.`,
-        expatLifeTitle: "Vida Internacional en Panamá: Lo Que Necesitas Saber",
-        expatLifeBody: `Múdate a panamá y experimenta un estilo de vida donde el estilo de vida de la playa de panamá se encuentra con la vida costera de lujo en panamá. El costo de la jubilación en panamá es un gran atractivo, pero la experiencia de vida internacional en panamá es lo que hace que la gente se quede. Desde los rascacielos de los apartamentos de costa del este hasta las serenas villas en bienes raíces de bocas del toro, hay una comunidad para cada expatriado.
+      expatLifeTitle: "Vida Internacional en Panamá: Lo Que Necesitas Saber",
+      expatLifeBody: `Múdate a panamá y experimenta un estilo de vida donde el estilo de vida de la playa de panamá se encuentra con la vida costera de lujo en panamá. El costo de la jubilación en panamá es un gran atractivo, pero la experiencia de vida internacional en panamá es lo que hace que la gente se quede. Desde los rascacielos de los apartamentos de costa del este hasta las serenas villas en bienes raíces de bocas del toro, hay una comunidad para cada expatriado.
 
         Los pros y contras de jubilarse en panamá a menudo implican equilibrar la infraestructura moderna del turismo en la ciudad de panamá con el ambiente relajado de los alquileres de casas de playa. Ofrecemos servicios de reubicación en panamá que incluyen recorridos inmobiliarios de reubicación en panamá para ayudarlo a ver los mejores lugares para que los expatriados vivan en panamá de primera mano. Nuestros asesores de jubilación en panamá se dedican a hacer que su transición sea lo más fluida posible, desde la residencia en panamá a través de bienes raíces hasta la configuración de su nueva vida tropical.`
     },
     projectsPage: {
-        neighborhoodTitle: "¿Dónde Invertir? Analizando los Mejores Barrios de Panamá",
-        neighborhoodBody: `Elegir el barrio adecuado es el primer paso para comprar bienes raíces en panamá. Para quienes buscan lujo urbano, los apartamentos en la ciudad de panamá en zonas como santa maria panama real estate y ocean reef islands panama son las mejores opciones. Estas zonas representan bienes raíces de alta gama en panamá con comodidades que rivalizan con Miami o Dubai. Si prefiere la playa, coronado panama real estate y playa caracol panama ofrecen casas frente al mar en venta en panamá con excelente potencial de estilo de vida frente al mar en panamá.
+      neighborhoodTitle: "¿Dónde Invertir? Analizando los Mejores Barrios de Panamá",
+      neighborhoodBody: `Elegir el barrio adecuado es el primer paso para comprar bienes raíces en panamá. Para quienes buscan lujo urbano, los apartamentos en la ciudad de panamá en zonas como santa maria panama real estate y ocean reef islands panama son las mejores opciones. Estas zonas representan bienes raíces de alta gama en panamá con comodidades que rivalizan con Miami o Dubai. Si prefiere la playa, coronado panama real estate y playa caracol panama ofrecen casas frente al mar en venta en panamá con excelente potencial de estilo de vida frente al mar en panamá.
 
         El mercado de bienes raíces en boquete panama es el estándar de oro para la vida en la montaña, mientras que la costa caribeña de panamá ofrece una experiencia más auténtica. Nuestra selección de proyectos inmobiliarios en panamá está curada para incluir solo nuevos desarrollos en panamá con un sólido respaldo de desarrolladores y un ROI comprobado. Ya sea que desee una segunda vivienda en panamá o un activo inmobiliario permanente para expatriados en panamá, nuestros asesores inmobiliarios en panamá están aquí para brindarle una guía completa de inversión inmobiliaria en panamá.`
     },
@@ -729,18 +947,18 @@ export const BLOG_POSTS: BlogPost[] = [
     id: 'blog-1',
     slug: 'boquete-real-estate-investment-guide-2025',
     projectId: 'pino-alto',
-    title: { 
-      en: 'Boquete Real Estate Investment Guide 2025: Why Valle Escondido is the #1 Pick', 
+    title: {
+      en: 'Boquete Real Estate Investment Guide 2025: Why Valle Escondido is the #1 Pick',
       es: 'Guía de Inversión Boquete 2025: Por qué Valle Escondido es la opción #1',
       zh: '2025年博克特房地产投资指南'
     },
-    excerpt: { 
-      en: 'An in-depth analysis of why Boquete Panama real estate continues to be the preferred choice for expats.', 
+    excerpt: {
+      en: 'An in-depth analysis of why Boquete Panama real estate continues to be the preferred choice for expats.',
       es: 'Un análisis profundo de por qué los bienes raíces en Boquete siguen siendo la opción preferida.',
       zh: '深入分析为什么博克特房地产继续成为外籍人士的首选。'
     },
-    content: { 
-      en: `Boquete is no longer just a retirement haven; it has evolved into a high-yield investment destination...`, 
+    content: {
+      en: `Boquete is no longer just a retirement haven; it has evolved into a high-yield investment destination...`,
       es: 'Boquete ya no es solo un refugio para el retiro; se ha convertido en un destino de inversión...',
       zh: '博克特不再仅仅是退休避风港...'
     },
