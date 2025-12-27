@@ -25,14 +25,14 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                         {project.status}
                     </span>
                 </div>
-                <div className="absolute bottom-6 left-6 right-6">
-                    <div className="bg-white/10 backdrop-blur-2xl px-6 py-4 rounded-3xl border border-white/10 shadow-2xl flex justify-between items-center transform transition-transform duration-500 group-hover:-translate-y-2">
+                <div className="absolute bottom-8 left-6 right-6 z-20">
+                    <div className="bg-brand-950/90 backdrop-blur-xl px-6 py-5 rounded-3xl border border-white/20 shadow-2xl flex justify-between items-center transform transition-transform duration-500 group-hover:-translate-y-2">
                         <div>
-                            <span className="text-[9px] font-black text-brand-GOLD uppercase tracking-widest block mb-1">Rockstar Valuation</span>
-                            <div className="text-xl font-black text-white tracking-tighter italic">USD {project.priceFrom.toLocaleString()}</div>
+                            <span className="text-[10px] font-black text-brand-GOLD uppercase tracking-widest block mb-2">Rockstar Valuation</span>
+                            <div className="text-2xl font-black text-white tracking-tighter italic">USD {project.priceFrom.toLocaleString()}</div>
                         </div>
-                        <div className="bg-brand-GOLD/20 p-2.5 rounded-xl">
-                            <TrendingUp size={18} className="text-brand-GOLD" />
+                        <div className="bg-white/10 p-3 rounded-full">
+                            <TrendingUp size={20} className="text-brand-GOLD" />
                         </div>
                     </div>
                 </div>
