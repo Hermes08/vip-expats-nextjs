@@ -28,25 +28,25 @@ const Navbar: React.FC = () => {
     const isActive = (path: string) => pathname === `/${lang}${path}`;
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-brand-950/90 backdrop-blur-xl border-b border-white/5 py-3 shadow-2xl' : 'bg-transparent py-6'}`}>
+        <nav className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-[rgba(7,10,20,0.86)] backdrop-blur-xl border-b border-white/5 py-3 shadow-2xl' : 'bg-transparent py-6'}`}>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
-                    <Link href={`/${lang}`} className="z-50 focus:outline-none">
-                        <span className="font-heading text-xl md:text-3xl font-black tracking-tighter">
-                            <span className="text-brand-GOLD uppercase">EXPAT</span><span className="uppercase text-white">ROCKSTARS</span><span className="text-brand-GOLD">.</span>
+                    <Link href={`/${lang}`} className="z-50 focus:outline-none group">
+                        <span className="font-heading text-xl md:text-3xl font-black tracking-tighter transition-opacity group-hover:opacity-90">
+                            <span className="text-brand-GOLD uppercase text-shadow-sm">EXPAT</span><span className="uppercase text-white text-shadow-sm">ROCKSTARS</span>
                         </span>
                     </Link>
 
-                    <div className="hidden lg:flex items-center gap-10">
-                        <div className="flex gap-8 text-[11px] font-black uppercase tracking-[0.2em] text-white/70">
-                            <Link href={`/${lang}/proyectos`} className={isActive('/proyectos') ? 'text-brand-GOLD' : 'hover:text-brand-GOLD transition-all'}>{t.nav.projects}</Link>
-                            <Link href={`/${lang}/quiz`} className={isActive('/quiz') ? 'text-brand-GOLD' : 'flex items-center gap-2 hover:text-brand-GOLD transition-all'}><Sparkles size={14} className="animate-pulse" /> Neighborhood Quiz</Link>
-                            <Link href={`/${lang}/tours`} className={isActive('/tours') ? 'text-brand-GOLD' : 'hover:text-brand-GOLD transition-all'}>{t.nav.tours}</Link>
-                            <Link href={`/${lang}/blog`} className={isActive('/blog') ? 'text-brand-GOLD' : 'hover:text-brand-GOLD transition-all'}>{t.nav.blog}</Link>
+                    <div className="hidden lg:flex items-center gap-12">
+                        <div className="flex gap-8 text-[11px] font-black uppercase tracking-[0.2em] text-gray-200">
+                            <Link href={`/${lang}/proyectos`} className={isActive('/proyectos') ? 'text-brand-GOLD' : 'hover:text-white transition-all'}>{t.nav.projects}</Link>
+                            <Link href={`/${lang}/quiz`} className={isActive('/quiz') ? 'text-brand-GOLD' : 'flex items-center gap-2 hover:text-white transition-all'}><Sparkles size={14} className="text-brand-GOLD animate-pulse" /> Neighborhood Quiz</Link>
+                            <Link href={`/${lang}/tours`} className={isActive('/tours') ? 'text-brand-GOLD' : 'hover:text-white transition-all'}>{t.nav.tours}</Link>
+                            <Link href={`/${lang}/blog`} className={isActive('/blog') ? 'text-brand-GOLD' : 'hover:text-white transition-all'}>{t.nav.blog}</Link>
                         </div>
                         <div className="flex items-center gap-6">
                             <LanguageSwitcher currentLang={lang} />
-                            <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-gold px-6 py-3 rounded-full font-black text-[10px] uppercase tracking-widest flex items-center gap-2">
+                            <Link href={`/${lang}/proyectos`} className="bg-brand-GOLD text-brand-950 px-6 py-2.5 rounded-full font-black text-[10px] uppercase tracking-widest flex items-center gap-2 border-[4px] border-white/5 hover:bg-[#FCD34D] hover:border-white/10 transition-all shadow-lg hover:shadow-brand-GOLD/20">
                                 <Search size={14} /> {t.nav.search}
                             </Link>
                         </div>

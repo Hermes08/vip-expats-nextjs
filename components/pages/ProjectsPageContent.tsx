@@ -21,17 +21,20 @@ const ProjectsPageContent: React.FC = () => {
     return (
         <div className="pt-24 min-h-screen bg-brand-950">
             {/* Header */}
-            <div className="relative py-32 px-4 overflow-hidden">
-                <div className="absolute inset-0 opacity-20">
-                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80" alt="" className="w-full h-full object-cover" />
+            {/* Header */}
+            <div className="relative pt-40 pb-20 px-4 overflow-hidden">
+                <div className="absolute inset-0 opacity-40">
+                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80" alt="" className="w-full h-full object-cover grayscale" />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-b from-brand-950/90 via-brand-950/50 to-brand-950" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-black/20 via-brand-950/80 to-brand-950" />
                 <div className="max-w-7xl mx-auto text-center relative z-10">
-                    <span className="text-brand-GOLD font-bold uppercase tracking-[0.3em] text-xs mb-6 block">Exclusive Inventory</span>
-                    <h1 className="font-heading text-4xl md:text-7xl font-bold text-white mb-8">
+                    <span className="inline-block border border-brand-GOLD/30 bg-brand-950/50 backdrop-blur-md text-brand-GOLD px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-8 animate-fade-in-up">
+                        Exclusive Inventory
+                    </span>
+                    <h1 className="font-heading text-5xl md:text-8xl font-black text-white mb-8 tracking-tighter leading-[0.9]">
                         {lang === 'zh' ? '新开发项目' : 'New Developments Panama'}
                     </h1>
-                    <p className="text-brand-300 text-xl max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-gray-300 text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed font-light">
                         Curating the highest ROI <strong>panama real estate projects</strong> and exclusive <strong>panama luxury developments</strong> across the country's premium zones.
                     </p>
                 </div>
@@ -97,7 +100,7 @@ const ProjectsPageContent: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24">
                     {filteredProjects.map(project => (
                         <ProjectCard key={project.id} project={project} />
                     ))}

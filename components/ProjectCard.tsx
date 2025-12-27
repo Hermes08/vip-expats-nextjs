@@ -26,13 +26,13 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                     </span>
                 </div>
                 <div className="absolute bottom-8 left-6 right-6 z-20">
-                    <div className="bg-brand-950/90 backdrop-blur-xl px-6 py-5 rounded-3xl border border-white/20 shadow-2xl flex justify-between items-center transform transition-transform duration-500 group-hover:-translate-y-2">
+                    <div className="bg-white/10 backdrop-blur-md px-6 py-5 rounded-3xl border border-white/20 shadow-xl flex justify-between items-center transform transition-transform duration-500 group-hover:-translate-y-2">
                         <div>
-                            <span className="text-[10px] font-black text-brand-GOLD uppercase tracking-widest block mb-2">Rockstar Valuation</span>
-                            <div className="text-2xl font-black text-white tracking-tighter italic">USD {project.priceFrom.toLocaleString()}</div>
+                            <span className="text-[10px] font-black text-brand-GOLD uppercase tracking-widest block mb-2 text-shadow-sm">Rockstar Valuation</span>
+                            <div className="text-2xl font-black text-white tracking-tighter italic text-shadow-md">USD {project.priceFrom.toLocaleString()}</div>
                         </div>
-                        <div className="bg-white/10 p-3 rounded-full">
-                            <TrendingUp size={20} className="text-brand-GOLD" />
+                        <div className="bg-white/20 p-3 rounded-full backdrop-blur-sm border border-white/20 shadow-lg group-hover:bg-brand-GOLD group-hover:text-brand-950 transition-colors">
+                            <TrendingUp size={20} className="text-brand-GOLD group-hover:text-brand-900" />
                         </div>
                     </div>
                 </div>
@@ -50,13 +50,13 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                 {/* Modern Specs Bar */}
                 <div className="flex items-center justify-between mb-8 pb-8 border-b border-white/5">
                     <div className="flex flex-col gap-1">
-                        <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest">{labels.beds}</span>
-                        <div className="flex items-center gap-2 text-white font-black italic"><Bed size={14} className="text-brand-GOLD" /> {project.beds}</div>
+                        <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{labels.beds}</span>
+                        <div className="flex items-center gap-2 text-gray-200 font-black italic"><Bed size={14} className="text-brand-GOLD" /> {project.beds}</div>
                     </div>
                     <div className="w-px h-6 bg-white/10"></div>
                     <div className="flex flex-col gap-1">
-                        <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest">{labels.baths}</span>
-                        <div className="flex items-center gap-2 text-white font-black italic"><Bath size={14} className="text-brand-GOLD" /> {project.baths}</div>
+                        <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{labels.baths}</span>
+                        <div className="flex items-center gap-2 text-gray-200 font-black italic"><Bath size={14} className="text-brand-GOLD" /> {project.baths}</div>
                     </div>
                     <div className="w-px h-6 bg-white/10"></div>
                     <div className="flex flex-col gap-1">

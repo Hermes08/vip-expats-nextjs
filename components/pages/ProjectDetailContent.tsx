@@ -22,38 +22,41 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
     const relatedPosts = blogPosts.filter(post => post.projectId === project.id);
 
     return (
-        <div className="pt-[72px] bg-white min-h-screen">
+        <div className="bg-white min-h-screen">
             {/* Gallery Header */}
-            <section className="bg-neutral-900 h-[60vh] min-h-[500px] relative overflow-hidden group">
-                <img src={project.images[activeImage]} alt={project.name[lang]} className="w-full h-full object-cover opacity-80 transition-all duration-700" />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-950/90 to-transparent" />
-                <div className="absolute bottom-0 left-0 w-full p-8 md:p-12">
+            {/* Gallery Header */}
+            <section className="bg-neutral-900 h-[85vh] min-h-[600px] relative overflow-hidden group">
+                <img src={project.images[activeImage]} alt={project.name[lang]} className="w-full h-full object-cover transition-all duration-700" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-black/80 via-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-transparent to-black/30" />
+
+                <div className="absolute bottom-0 left-0 w-full p-8 md:p-12 pb-24">
                     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end gap-6">
-                        <div className="text-white max-w-3xl">
-                            <div className="flex items-center gap-2 text-brand-GOLD font-bold uppercase tracking-widest text-[10px] mb-4">
+                        <div className="text-white max-w-4xl relative z-20">
+                            <div className="inline-flex items-center gap-2 bg-black/60 backdrop-blur-md text-brand-GOLD font-bold uppercase tracking-widest text-[10px] mb-6 px-4 py-1.5 rounded-full border border-white/10">
                                 <MapPin size={12} /> {project.location[lang]}
                             </div>
-                            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-4 leading-tight">{project.name[lang]}</h1>
+                            <h1 className="font-heading text-5xl md:text-7xl font-black mb-6 leading-[0.9] tracking-tighter text-shadow-lg">{project.name[lang]}</h1>
                             <div className="flex flex-wrap gap-4">
-                                <span className="bg-brand-GOLD text-brand-950 px-3 py-1 rounded text-xs font-bold uppercase">{project.status}</span>
-                                <span className="bg-white/10 backdrop-blur-md text-white px-3 py-1 rounded text-xs font-bold uppercase border border-white/20">{project.type}</span>
+                                <span className="bg-brand-GOLD text-brand-900 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg shadow-brand-GOLD/20">{project.status}</span>
+                                <span className="bg-white/10 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase border border-white/20 hover:bg-white/20 transition-colors cursor-default">{project.type}</span>
                             </div>
                         </div>
-                        <div className="bg-white p-6 rounded-xl shadow-2xl flex flex-col items-end min-w-[250px] hidden md:flex border-l-4 border-brand-GOLD">
-                            <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest mb-1">{labels.startingAt}</span>
-                            <span className="text-3xl font-bold text-brand-900">USD {project.priceFrom.toLocaleString()}</span>
+                        <div className="bg-white/10 backdrop-blur-xl p-8 rounded-3xl shadow-2xl flex flex-col items-end min-w-[280px] hidden md:flex border border-white/20 relative z-20">
+                            <span className="text-[10px] font-black text-brand-GOLD uppercase tracking-[0.2em] mb-2 text-shadow-sm">{labels.startingAt}</span>
+                            <span className="text-4xl font-black text-white tracking-tighter italic text-shadow-lg">USD {project.priceFrom.toLocaleString()}</span>
                         </div>
                     </div>
                 </div>
 
                 {/* Thumbnail Selectors */}
                 {project.images.length > 1 && (
-                    <div className="absolute bottom-12 right-12 flex gap-2">
+                    <div className="absolute bottom-40 right-12 z-30 flex gap-3 p-2 bg-black/20 backdrop-blur-md rounded-2xl border border-white/10">
                         {project.images.map((img, idx) => (
                             <button
                                 key={idx}
                                 onClick={() => setActiveImage(idx)}
-                                className={`w-16 h-10 rounded-lg overflow-hidden border-2 transition-all ${activeImage === idx ? 'border-brand-GOLD scale-110 shadow-lg' : 'border-white/20 opacity-60 hover:opacity-100'}`}
+                                className={`w-20 h-14 rounded-xl overflow-hidden border-2 transition-all duration-300 ${activeImage === idx ? 'border-brand-GOLD scale-105 shadow-lg' : 'border-transparent opacity-60 hover:opacity-100'}`}
                             >
                                 <img src={img} className="w-full h-full object-cover" alt="" />
                             </button>
