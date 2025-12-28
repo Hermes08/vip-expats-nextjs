@@ -80,7 +80,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       },
     },
     verification: {
-      google: 'your-google-verification-code',
+      google: 'C5dDcwN7RBp9fhyc_KFAlYYd9mW8-wdMUw9aOIim4Us',
     }
   };
 }
@@ -103,19 +103,19 @@ export default async function RootLayout({
 
   return (
     <html lang={lang} suppressHydrationWarning>
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-90BHGEJ5KD"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
+      {/* Google Analytics */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-90BHGEJ5KD"
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'G-90BHGEJ5KD');
           `}
-        </Script>
+      </Script>
       <body
         className={`${inter.variable} ${montserrat.variable} antialiased overflow-x-hidden selection:bg-brand-GOLD selection:text-brand-900 bg-brand-950`}
       >
