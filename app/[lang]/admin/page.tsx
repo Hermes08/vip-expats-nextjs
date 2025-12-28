@@ -229,7 +229,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
         handleChange('faqs', newFaqs);
     };
 
-    // Floor Plan Handlers
+    // Floor Plan Handlers 
     const handleAddFloorPlan = () => {
         setFormData(prev => ({
             ...prev,
@@ -268,45 +268,6 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
             };
             handleChange('floorplans', newPlans);
         }
-    };
-
-    // Floor Plan Handlers
-    const handleAddFloorPlan = () => {
-        setFormData(prev => ({
-            ...prev,
-            floorplans: [...(prev.floorplans || []), {
-                name: { en: 'New Layout', es: 'Nuevo Diseño' },
-                size: '100 m2',
-                price: 0,
-                image: '',
-                characteristics: { en: [], es: [] }
-            }]
-        }));
-    };
-
-    const handleRemoveFloorPlan = (index: number) => {
-        setFormData(prev => ({
-            ...prev,
-            floorplans: (prev.floorplans || []).filter((_, i) => i !== index)
-        }));
-    };
-
-    const handleFloorPlanChange = (index: number, field: string, value: any) => {
-        const newPlans = [...(formData.floorplans || [])];
-        newPlans[index] = { ...newPlans[index], [field]: value };
-        handleChange('floorplans', newPlans);
-    };
-
-    const handleFloorPlanNestedChange = (index: number, parent: 'name', lang: 'en' | 'es', value: string) => {
-        const newPlans = [...(formData.floorplans || [])];
-        newPlans[index] = {
-            ...newPlans[index],
-            [parent]: {
-                ...newPlans[index][parent],
-                [lang]: value
-            }
-        };
-        handleChange('floorplans', newPlans);
     };
 
     return (
