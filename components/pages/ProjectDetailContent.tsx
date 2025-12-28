@@ -8,6 +8,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { useCMS } from '@/context/CMSContext';
 import VideoSection from '@/components/projects/VideoSection';
 import FloorPlans from '@/components/projects/FloorPlans';
+import SplitText from '@/components/ui/SplitText';
 
 const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
     const { lang } = useLanguage();
@@ -36,7 +37,9 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                             <div className="inline-flex items-center gap-2 bg-black/60 backdrop-blur-md text-brand-GOLD font-bold uppercase tracking-widest text-[10px] mb-6 px-4 py-1.5 rounded-full border border-white/10">
                                 <MapPin size={12} /> {project.location[lang]}
                             </div>
-                            <h1 className="font-heading text-4xl md:text-7xl font-black mb-6 leading-none md:leading-[0.9] tracking-tighter text-shadow-lg">{project.name[lang]}</h1>
+                            <h1 className="font-heading text-4xl md:text-7xl font-black mb-6 leading-none md:leading-[0.9] tracking-tighter text-shadow-lg">
+                                <SplitText text={project.name[lang]} delay={0.2} />
+                            </h1>
                             <div className="flex flex-wrap gap-4">
                                 <span className="bg-brand-GOLD text-brand-900 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg shadow-brand-GOLD/20">{project.status}</span>
                                 <span className="bg-white/10 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase border border-white/20 hover:bg-white/20 transition-colors cursor-default">{project.type}</span>

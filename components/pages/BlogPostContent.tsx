@@ -6,6 +6,7 @@ import { CONTENT, PROJECTS } from '@/lib/constants';
 import { useCMS } from '@/context/CMSContext';
 import { useLanguage } from '@/context/LanguageContext';
 import { ArrowLeft, Calendar, User, Share2, ArrowRight, BookOpen } from 'lucide-react';
+import SplitText from '@/components/ui/SplitText';
 
 const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
     const { lang } = useLanguage();
@@ -40,7 +41,7 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
                 </span>
 
                 <h1 className="font-heading text-3xl md:text-5xl font-bold text-brand-900 mb-8 leading-[1.2]">
-                    {title}
+                    <SplitText text={title} delay={0.2} />
                 </h1>
 
                 <div className="flex items-center justify-between border-y border-neutral-100 py-6 mb-12">

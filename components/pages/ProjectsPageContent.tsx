@@ -9,6 +9,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { useCMS } from '@/context/CMSContext';
 import { Project, ProjectType, ProjectZone } from '@/lib/types';
 import ParallaxSection from '@/components/ui/ParallaxSection';
+import SplitText from '@/components/ui/SplitText';
 
 const ProjectsPageContent: React.FC = () => {
     const { lang } = useLanguage();
@@ -53,7 +54,7 @@ const ProjectsPageContent: React.FC = () => {
                         Exclusive Inventory
                     </span>
                     <h1 className="font-heading text-5xl md:text-8xl font-black text-white mb-8 tracking-tighter leading-[0.9]">
-                        {lang === 'zh' ? '新开发项目' : 'New Developments Panama'}
+                        <SplitText text={lang === 'zh' ? '新开发项目' : 'New Developments Panama'} delay={0.2} />
                     </h1>
                     <p className="text-gray-300 text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed font-light">
                         Curating the highest ROI <strong>panama real estate projects</strong> and exclusive <strong>panama luxury developments</strong> across the country's premium zones.

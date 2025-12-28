@@ -3,12 +3,15 @@
 import React from 'react';
 import { Phone, Mail, MapPin, MessageCircle, Send } from 'lucide-react';
 import { CONTACT_INFO } from '@/lib/constants';
+import SplitText from '@/components/ui/SplitText';
 
 const ContactPageContent: React.FC = () => {
     return (
         <div className="pt-24 min-h-screen bg-slate-50">
             <section className="bg-brand-900 py-24 text-white text-center">
-                <h1 className="font-serif text-4xl md:text-6xl font-bold mb-4">Hablemos de tu inversión</h1>
+                <h1 className="font-serif text-4xl md:text-6xl font-bold mb-4">
+                    <SplitText text="Hablemos de tu inversión" />
+                </h1>
                 <p className="text-slate-300 text-lg max-w-2xl mx-auto">Nuestro equipo de expertos bilingües de ExpatRockstars está listo para asistirte en cada paso.</p>
             </section>
 
