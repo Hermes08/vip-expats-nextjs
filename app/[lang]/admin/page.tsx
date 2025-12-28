@@ -473,248 +473,333 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                     </div>
                 </section>
 
-                {/* Names & Titles */}
-                <section className="space-y-6">
-                    <h3 className="text-lg font-bold text-slate-800 border-b pb-2">Names & Titles</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div className="space-y-4">
-                            <h4 className="font-semibold text-slate-600">English (EN)</h4>
-                            <div>
-                                <label className="block text-xs font-bold text-slate-500 mb-1">Project Name</label>
-                                <input
-                                    value={formData.name.en}
-                                    onChange={(e) => handleNestedChange('name', 'en', e.target.value)}
-                                    className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-xs font-bold text-slate-500 mb-1">H1 Title (SEO)</label>
-                                <input
-                                    value={formData.h1Title.en}
-                                    onChange={(e) => handleNestedChange('h1Title', 'en', e.target.value)}
-                                    className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-xs font-bold text-slate-500 mb-1">Location Label</label>
-                                <input
-                                    value={formData.location.en}
-                                    onChange={(e) => handleNestedChange('location', 'en', e.target.value)}
-                                    className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
-                                />
-                            </div>
-                        </div>
-
-                        <div className="space-y-4">
-                            <h4 className="font-semibold text-slate-600">Spanish (ES)</h4>
-                            <div>
-                                <label className="block text-xs font-bold text-slate-500 mb-1">Nombre del Proyecto</label>
-                                <input
-                                    value={formData.name.es}
-                                    onChange={(e) => handleNestedChange('name', 'es', e.target.value)}
-                                    className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-xs font-bold text-slate-500 mb-1">Título H1 (SEO)</label>
-                                <input
-                                    value={formData.h1Title.es}
-                                    onChange={(e) => handleNestedChange('h1Title', 'es', e.target.value)}
-                                    className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-xs font-bold text-slate-500 mb-1">Ubicación</label>
-                                <input
-                                    value={formData.location.es}
-                                    onChange={(e) => handleNestedChange('location', 'es', e.target.value)}
-                                    className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* Descriptions */}
-                <section className="space-y-6">
-                    <h3 className="text-lg font-bold text-slate-800 border-b pb-2">Descriptions</h3>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label className="block text-sm font-bold text-slate-700 mb-1">Short Description (EN)</label>
-                            <textarea
-                                rows={3}
-                                value={formData.description.en}
-                                onChange={(e) => handleNestedChange('description', 'en', e.target.value)}
-                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 text-sm shadow-sm"
-                            />
-                        </div>
-                        <div>
-                            <label className="block text-sm font-bold text-slate-700 mb-1">Descripción Corta (ES)</label>
-                            <textarea
-                                rows={3}
-                                value={formData.description.es}
-                                onChange={(e) => handleNestedChange('description', 'es', e.target.value)}
-                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 text-sm shadow-sm"
-                            />
-                        </div>
-
-                        {/* Expandable Long Description Areas */}
-                        {[
-                            { label: 'Long Description / Deep Dive (EN)', field: 'longDescription', lang: 'en', val: formData.longDescription?.en || formData.description.en },
-                            { label: 'Descripción Larga / Análisis (ES)', field: 'longDescription', lang: 'es', val: formData.longDescription?.es || formData.description.es }
-                        ].map((item) => (
-                            <div key={item.lang} className={`md:col-span-2 relative transition-all duration-300 group`}>
-                                <div className="flex justify-between items-end mb-1">
-                                    <label className="block text-sm font-bold text-slate-700">{item.label}</label>
-                                </div>
-                                <textarea
-                                    rows={6}
-                                    value={item.val}
-                                    onChange={(e) => handleNestedChange(item.field, item.lang, e.target.value)}
-                                    className={`w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none font-mono text-sm bg-white text-slate-900 shadow-sm transition-all duration-300 focus:h-[50vh] focus:absolute focus:z-50 focus:shadow-2xl focus:top-0 focus:-mt-10 h-40`}
-                                />
-                                <p className="text-xs text-slate-500 mt-1">Supports HTML tags for formatting. CLICK TO EXPAND.</p>
-                            </div>
-                        ))}
-                    </div>
-                </section>
-
-                {/* Analysis & Deep Dives */}
-                <section className="space-y-6">
-                    <h3 className="text-lg font-bold text-slate-800 border-b pb-2">Analysis & Deep Dives</h3>
-
-                    {['marketAnalysis', 'locationAnalysis', 'investmentAnalysis', 'buyerProfile', 'residencyInfo', 'servicesCTA'].map((field) => (
-                        <div key={field} className="space-y-4 border-b border-slate-100 pb-6 last:border-0 group">
-                            <h4 className="font-semibold text-slate-700 capitalize">{field.replace(/([A-Z])/g, ' $1').trim()}</h4>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div className="relative">
-                                    <label className="block text-xs font-bold text-slate-500 mb-1">English (EN)</label>
-                                    <textarea
-                                        rows={4}
-                                        value={(formData[field as keyof Project] as Record<string, string>)?.en || ''}
-                                        onChange={(e) => handleNestedChange(field, 'en', e.target.value)}
-                                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none text-sm bg-white text-slate-900 shadow-sm transition-all duration-300 focus:h-[40vh] focus:absolute focus:z-50 focus:shadow-2xl focus:top-0 focus:-mt-6 h-32"
-                                        placeholder={`Enter ${field} in English...`}
-                                    />
-                                    <span className="text-[10px] text-slate-400 absolute bottom-2 right-4 pointer-events-none group-focus-within:hidden">Expand on focus</span>
-                                </div>
-                                <div className="relative">
-                                    <label className="block text-xs font-bold text-slate-500 mb-1">Spanish (ES)</label>
-                                    <textarea
-                                        rows={4}
-                                        value={(formData[field as keyof Project] as Record<string, string>)?.es || ''}
-                                        onChange={(e) => handleNestedChange(field, 'es', e.target.value)}
-                                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none text-sm bg-white text-slate-900 shadow-sm transition-all duration-300 focus:h-[40vh] focus:absolute focus:z-50 focus:shadow-2xl focus:top-0 focus:-mt-6 h-32"
-                                        placeholder={`Ingresar ${field} en Español...`}
-                                    />
-                                    <span className="text-[10px] text-slate-400 absolute bottom-2 right-4 pointer-events-none group-focus-within:hidden">Expandir al enfocar</span>
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </section>
-
-                {/* Lists Management */}
-                <section className="space-y-6">
-                    <h3 className="text-lg font-bold text-slate-800 border-b pb-2">Lists Management (One item per line)</h3>
-
-                    {/* Simple Lists */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div>
-                            <label className="block text-sm font-bold text-slate-700 mb-1">Keywords</label>
-                            <textarea
-                                rows={5}
-                                value={formData.keywords?.join('\n') || ''}
-                                onChange={(e) => handleArrayFromText('keywords', e.target.value)}
-                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 shadow-sm"
-                                placeholder="Luxury\nBeachfront\nCondo..."
-                            />
-                        </div>
-                        <div>
-                            <label className="block text-sm font-bold text-slate-700 mb-1">Did You Know?</label>
-                            <textarea
-                                rows={5}
-                                value={formData.didYouKnow?.join('\n') || ''}
-                                onChange={(e) => handleArrayFromText('didYouKnow', e.target.value)}
-                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 shadow-sm"
-                                placeholder="Interesting fact 1\nInteresting fact 2..."
-                            />
-                        </div>
-                    </div>
-
-                    {/* Localized Lists */}
-                    {['highlights', 'amenities'].map((field) => (
-                        <div key={field} className="space-y-4 border-t border-slate-100 pt-6">
-                            <h4 className="font-semibold text-slate-700 capitalize">{field}</h4>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
-                                    <label className="block text-xs font-bold text-slate-500 mb-1">English (EN)</label>
-                                    <textarea
-                                        rows={5}
-                                        value={(formData[field as keyof Project] as Record<string, string[]>)?.en?.join('\n') || ''}
-                                        onChange={(e) => handleLocalizedArrayFromText(field, 'en', e.target.value)}
-                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 shadow-sm"
-                                        placeholder={`Enter ${field} in English...`}
-                                    />
-                                </div>
-                                <div>
-                                    <label className="block text-xs font-bold text-slate-500 mb-1">Spanish (ES)</label>
-                                    <textarea
-                                        rows={5}
-                                        value={(formData[field as keyof Project] as Record<string, string[]>)?.es?.join('\n') || ''}
-                                        onChange={(e) => handleLocalizedArrayFromText(field, 'es', e.target.value)}
-                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 shadow-sm"
-                                        placeholder={`Ingresar ${field} en Español...`}
-                                    />
-                                </div>
-                            </div>
-                        </div>
-                    ))}
-                </section>
-
-                {/* FAQs */}
+                {/* Floor Plans Management */}
                 <section className="space-y-6">
                     <div className="flex justify-between items-center border-b pb-2">
-                        <h3 className="text-lg font-bold text-slate-800">FAQs</h3>
+                        <h3 className="text-lg font-bold text-slate-800">Floor Plans</h3>
                         <button
-                            onClick={handleAddFaq}
+                            onClick={handleAddFloorPlan}
                             className="px-3 py-1 bg-green-50 text-green-600 rounded-lg text-sm font-bold hover:bg-green-100 transition-colors"
                         >
-                            + Add FAQ
+                            + Add Floor Plan
                         </button>
                     </div>
 
-                    <div className="space-y-4">
-                        {formData.faqs?.map((faq, index) => (
-                            <div key={index} className="bg-slate-50 p-4 rounded-xl relative group border border-slate-200">
+                    <div className="space-y-8">
+                        {formData.floorplans?.map((plan, index) => (
+                            <div key={index} className="bg-slate-50 p-6 rounded-xl relative group border border-slate-200">
                                 <button
-                                    onClick={() => handleRemoveFaq(index)}
-                                    className="absolute top-2 right-2 text-slate-400 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
+                                    onClick={() => handleRemoveFloorPlan(index)}
+                                    className="absolute top-4 right-4 text-slate-400 hover:text-red-500 bg-white rounded-full p-1 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity"
                                 >
-                                    <X size={16} />
+                                    <X size={20} />
                                 </button>
-                                <div className="space-y-3">
-                                    <input
-                                        value={faq.question}
-                                        onChange={(e) => handleFaqChange(index, 'question', e.target.value)}
-                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none font-bold bg-white text-slate-900 shadow-sm"
-                                        placeholder="Question"
-                                    />
-                                    <textarea
-                                        rows={2}
-                                        value={faq.answer}
-                                        onChange={(e) => handleFaqChange(index, 'answer', e.target.value)}
-                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none text-sm bg-white text-slate-900 shadow-sm"
-                                        placeholder="Answer"
-                                    />
+
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+                                    {/* Image Selection */}
+                                    <div className="space-y-2">
+                                        <label className="block text-xs font-bold text-slate-500 uppercase">Plan Image</label>
+                                        <div className="w-full aspect-video bg-white rounded-lg border border-slate-300 overflow-hidden relative flex items-center justify-center">
+                                            {plan.image ? (
+                                                <img src={plan.image} alt="Plan" className="w-full h-full object-cover" />
+                                            ) : (
+                                                <span className="text-slate-300">No Image</span>
+                                            )}
+                                        </div>
+                                        <div className="h-10">
+                                            <ImageSelectorWrapper onSelect={(url) => handleFloorPlanChange(index, 'image', url)} />
+                                        </div>
+                                    </div>
+
+                                    {/* Data Fields */}
+                                    <div className="space-y-4">
+                                        <div className="grid grid-cols-2 gap-4">
+                                            <div>
+                                                <label className="block text-xs font-bold text-slate-500 mb-1">Size</label>
+                                                <input
+                                                    value={plan.size}
+                                                    onChange={(e) => handleFloorPlanChange(index, 'size', e.target.value)}
+                                                    className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none bg-white font-bold"
+                                                />
+                                            </div>
+                                            <div>
+                                                <label className="block text-xs font-bold text-slate-500 mb-1">Price (Optional)</label>
+                                                <input
+                                                    type="number"
+                                                    value={plan.price}
+                                                    onChange={(e) => handleFloorPlanChange(index, 'price', Number(e.target.value))}
+                                                    className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none bg-white font-bold"
+                                                />
+                                            </div>
+                                        </div>
+
+                                        <div>
+                                            <label className="block text-xs font-bold text-slate-500 mb-1">Name (EN)</label>
+                                            <input
+                                                value={plan.name?.en || ''}
+                                                onChange={(e) => handleFloorPlanNestedChange(index, 'name', 'en', e.target.value)}
+                                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none bg-white"
+                                            />
+                                        </div>
+                                        <div>
+                                            <label className="block text-xs font-bold text-slate-500 mb-1">Nombre (ES)</label>
+                                            <input
+                                                value={plan.name?.es || ''}
+                                                onChange={(e) => handleFloorPlanNestedChange(index, 'name', 'es', e.target.value)}
+                                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none bg-white"
+                                            />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         ))}
-                        {(!formData.faqs || formData.faqs.length === 0) && (
-                            <p className="text-slate-500 text-sm text-center italic py-4">No FAQs added yet.</p>
+                        {(!formData.floorplans || formData.floorplans.length === 0) && (
+                            <p className="text-slate-500 text-sm text-center italic py-4">No floor plans added yet.</p>
                         )}
                     </div>
-                </section>
+
+                    {/* Names & Titles */}
+                    <section className="space-y-6">
+                        <h3 className="text-lg font-bold text-slate-800 border-b pb-2">Names & Titles</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div className="space-y-4">
+                                <h4 className="font-semibold text-slate-600">English (EN)</h4>
+                                <div>
+                                    <label className="block text-xs font-bold text-slate-500 mb-1">Project Name</label>
+                                    <input
+                                        value={formData.name.en}
+                                        onChange={(e) => handleNestedChange('name', 'en', e.target.value)}
+                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-xs font-bold text-slate-500 mb-1">H1 Title (SEO)</label>
+                                    <input
+                                        value={formData.h1Title.en}
+                                        onChange={(e) => handleNestedChange('h1Title', 'en', e.target.value)}
+                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-xs font-bold text-slate-500 mb-1">Location Label</label>
+                                    <input
+                                        value={formData.location.en}
+                                        onChange={(e) => handleNestedChange('location', 'en', e.target.value)}
+                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="space-y-4">
+                                <h4 className="font-semibold text-slate-600">Spanish (ES)</h4>
+                                <div>
+                                    <label className="block text-xs font-bold text-slate-500 mb-1">Nombre del Proyecto</label>
+                                    <input
+                                        value={formData.name.es}
+                                        onChange={(e) => handleNestedChange('name', 'es', e.target.value)}
+                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-xs font-bold text-slate-500 mb-1">Título H1 (SEO)</label>
+                                    <input
+                                        value={formData.h1Title.es}
+                                        onChange={(e) => handleNestedChange('h1Title', 'es', e.target.value)}
+                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-xs font-bold text-slate-500 mb-1">Ubicación</label>
+                                    <input
+                                        value={formData.location.es}
+                                        onChange={(e) => handleNestedChange('location', 'es', e.target.value)}
+                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Descriptions */}
+                    <section className="space-y-6">
+                        <h3 className="text-lg font-bold text-slate-800 border-b pb-2">Descriptions</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label className="block text-sm font-bold text-slate-700 mb-1">Short Description (EN)</label>
+                                <textarea
+                                    rows={3}
+                                    value={formData.description.en}
+                                    onChange={(e) => handleNestedChange('description', 'en', e.target.value)}
+                                    className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 text-sm shadow-sm"
+                                />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-bold text-slate-700 mb-1">Descripción Corta (ES)</label>
+                                <textarea
+                                    rows={3}
+                                    value={formData.description.es}
+                                    onChange={(e) => handleNestedChange('description', 'es', e.target.value)}
+                                    className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 text-sm shadow-sm"
+                                />
+                            </div>
+
+                            {/* Expandable Long Description Areas */}
+                            {[
+                                { label: 'Long Description / Deep Dive (EN)', field: 'longDescription', lang: 'en', val: formData.longDescription?.en || formData.description.en },
+                                { label: 'Descripción Larga / Análisis (ES)', field: 'longDescription', lang: 'es', val: formData.longDescription?.es || formData.description.es }
+                            ].map((item) => (
+                                <div key={item.lang} className={`md:col-span-2 relative transition-all duration-300 group`}>
+                                    <div className="flex justify-between items-end mb-1">
+                                        <label className="block text-sm font-bold text-slate-700">{item.label}</label>
+                                    </div>
+                                    <textarea
+                                        rows={6}
+                                        value={item.val}
+                                        onChange={(e) => handleNestedChange(item.field, item.lang, e.target.value)}
+                                        className={`w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none font-mono text-sm bg-white text-slate-900 shadow-sm transition-all duration-300 focus:h-[50vh] focus:absolute focus:z-50 focus:shadow-2xl focus:top-0 focus:-mt-10 h-40`}
+                                    />
+                                    <p className="text-xs text-slate-500 mt-1">Supports HTML tags for formatting. CLICK TO EXPAND.</p>
+                                </div>
+                            ))}
+                        </div>
+                    </section>
+
+                    {/* Analysis & Deep Dives */}
+                    <section className="space-y-6">
+                        <h3 className="text-lg font-bold text-slate-800 border-b pb-2">Analysis & Deep Dives</h3>
+
+                        {['marketAnalysis', 'locationAnalysis', 'investmentAnalysis', 'buyerProfile', 'residencyInfo', 'servicesCTA'].map((field) => (
+                            <div key={field} className="space-y-4 border-b border-slate-100 pb-6 last:border-0 group">
+                                <h4 className="font-semibold text-slate-700 capitalize">{field.replace(/([A-Z])/g, ' $1').trim()}</h4>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div className="relative">
+                                        <label className="block text-xs font-bold text-slate-500 mb-1">English (EN)</label>
+                                        <textarea
+                                            rows={4}
+                                            value={(formData[field as keyof Project] as Record<string, string>)?.en || ''}
+                                            onChange={(e) => handleNestedChange(field, 'en', e.target.value)}
+                                            className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none text-sm bg-white text-slate-900 shadow-sm transition-all duration-300 focus:h-[40vh] focus:absolute focus:z-50 focus:shadow-2xl focus:top-0 focus:-mt-6 h-32"
+                                            placeholder={`Enter ${field} in English...`}
+                                        />
+                                        <span className="text-[10px] text-slate-400 absolute bottom-2 right-4 pointer-events-none group-focus-within:hidden">Expand on focus</span>
+                                    </div>
+                                    <div className="relative">
+                                        <label className="block text-xs font-bold text-slate-500 mb-1">Spanish (ES)</label>
+                                        <textarea
+                                            rows={4}
+                                            value={(formData[field as keyof Project] as Record<string, string>)?.es || ''}
+                                            onChange={(e) => handleNestedChange(field, 'es', e.target.value)}
+                                            className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none text-sm bg-white text-slate-900 shadow-sm transition-all duration-300 focus:h-[40vh] focus:absolute focus:z-50 focus:shadow-2xl focus:top-0 focus:-mt-6 h-32"
+                                            placeholder={`Ingresar ${field} en Español...`}
+                                        />
+                                        <span className="text-[10px] text-slate-400 absolute bottom-2 right-4 pointer-events-none group-focus-within:hidden">Expandir al enfocar</span>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </section>
+
+                    {/* Lists Management */}
+                    <section className="space-y-6">
+                        <h3 className="text-lg font-bold text-slate-800 border-b pb-2">Lists Management (One item per line)</h3>
+
+                        {/* Simple Lists */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label className="block text-sm font-bold text-slate-700 mb-1">Keywords</label>
+                                <textarea
+                                    rows={5}
+                                    value={formData.keywords?.join('\n') || ''}
+                                    onChange={(e) => handleArrayFromText('keywords', e.target.value)}
+                                    className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 shadow-sm"
+                                    placeholder="Luxury\nBeachfront\nCondo..."
+                                />
+                            </div>
+                            <div>
+                                <label className="block text-sm font-bold text-slate-700 mb-1">Did You Know?</label>
+                                <textarea
+                                    rows={5}
+                                    value={formData.didYouKnow?.join('\n') || ''}
+                                    onChange={(e) => handleArrayFromText('didYouKnow', e.target.value)}
+                                    className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 shadow-sm"
+                                    placeholder="Interesting fact 1\nInteresting fact 2..."
+                                />
+                            </div>
+                        </div>
+
+                        {/* Localized Lists */}
+                        {['highlights', 'amenities'].map((field) => (
+                            <div key={field} className="space-y-4 border-t border-slate-100 pt-6">
+                                <h4 className="font-semibold text-slate-700 capitalize">{field}</h4>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                    <div>
+                                        <label className="block text-xs font-bold text-slate-500 mb-1">English (EN)</label>
+                                        <textarea
+                                            rows={5}
+                                            value={(formData[field as keyof Project] as Record<string, string[]>)?.en?.join('\n') || ''}
+                                            onChange={(e) => handleLocalizedArrayFromText(field, 'en', e.target.value)}
+                                            className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 shadow-sm"
+                                            placeholder={`Enter ${field} in English...`}
+                                        />
+                                    </div>
+                                    <div>
+                                        <label className="block text-xs font-bold text-slate-500 mb-1">Spanish (ES)</label>
+                                        <textarea
+                                            rows={5}
+                                            value={(formData[field as keyof Project] as Record<string, string[]>)?.es?.join('\n') || ''}
+                                            onChange={(e) => handleLocalizedArrayFromText(field, 'es', e.target.value)}
+                                            className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 shadow-sm"
+                                            placeholder={`Ingresar ${field} en Español...`}
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </section>
+
+                    {/* FAQs */}
+                    <section className="space-y-6">
+                        <div className="flex justify-between items-center border-b pb-2">
+                            <h3 className="text-lg font-bold text-slate-800">FAQs</h3>
+                            <button
+                                onClick={handleAddFaq}
+                                className="px-3 py-1 bg-green-50 text-green-600 rounded-lg text-sm font-bold hover:bg-green-100 transition-colors"
+                            >
+                                + Add FAQ
+                            </button>
+                        </div>
+
+                        <div className="space-y-4">
+                            {formData.faqs?.map((faq, index) => (
+                                <div key={index} className="bg-slate-50 p-4 rounded-xl relative group border border-slate-200">
+                                    <button
+                                        onClick={() => handleRemoveFaq(index)}
+                                        className="absolute top-2 right-2 text-slate-400 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
+                                    >
+                                        <X size={16} />
+                                    </button>
+                                    <div className="space-y-3">
+                                        <input
+                                            value={faq.question}
+                                            onChange={(e) => handleFaqChange(index, 'question', e.target.value)}
+                                            className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none font-bold bg-white text-slate-900 shadow-sm"
+                                            placeholder="Question"
+                                        />
+                                        <textarea
+                                            rows={2}
+                                            value={faq.answer}
+                                            onChange={(e) => handleFaqChange(index, 'answer', e.target.value)}
+                                            className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none text-sm bg-white text-slate-900 shadow-sm"
+                                            placeholder="Answer"
+                                        />
+                                    </div>
+                                </div>
+                            ))}
+                            {(!formData.faqs || formData.faqs.length === 0) && (
+                                <p className="text-slate-500 text-sm text-center italic py-4">No FAQs added yet.</p>
+                            )}
+                        </div>
+                    </section>
             </div>
         </div>
     );
