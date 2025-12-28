@@ -143,7 +143,9 @@ const ProjectsPageContent: React.FC = () => {
                                 viewport={{ once: true, margin: "-50px" }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
                             >
-                                <ProjectCard project={project} />
+                                <div className="animate-float" style={{ animationDelay: `${index * 1}s` }}>
+                                    <ProjectCard project={project} />
+                                </div>
                             </motion.div>
                         ))}
                     </div>
