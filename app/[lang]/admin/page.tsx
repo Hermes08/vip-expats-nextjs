@@ -222,15 +222,20 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                         </div>
                         <div>
                             <label className="block text-sm font-bold text-slate-700 mb-1">Status</label>
-                            <select
-                                value={formData.status}
-                                onChange={(e) => handleChange('status', e.target.value)}
-                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
-                            >
-                                <option value="Presale">Presale</option>
-                                <option value="Under Construction">Under Construction</option>
-                                <option value="Ready to Move">Ready to Move</option>
-                            </select>
+                            <div className="flex flex-wrap gap-2">
+                                {['Presale', 'Under Construction', 'Ready to Move'].map(status => (
+                                    <button
+                                        key={status}
+                                        onClick={() => handleChange('status', status)}
+                                        className={`px-3 py-1 rounded-full text-xs font-bold border transition-all ${formData.status === status
+                                            ? 'bg-green-600 text-white border-green-600 shadow-md transform scale-105'
+                                            : 'bg-white text-slate-500 border-slate-300 hover:border-green-500'
+                                            }`}
+                                    >
+                                        {status}
+                                    </button>
+                                ))}
+                            </div>
                         </div>
                         <div>
                             <label className="block text-sm font-bold text-slate-700 mb-1">Type (Multi-select)</label>
@@ -240,8 +245,8 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                                         key={type}
                                         onClick={() => toggleArrayItem('type', type)}
                                         className={`px-3 py-1 rounded-full text-xs font-bold border transition-all ${(formData.type as string[]).includes(type)
-                                                ? 'bg-brand-GOLD text-brand-950 border-brand-GOLD'
-                                                : 'bg-white text-slate-500 border-slate-300 hover:border-brand-GOLD'
+                                            ? 'bg-brand-GOLD text-brand-950 border-brand-GOLD'
+                                            : 'bg-white text-slate-500 border-slate-300 hover:border-brand-GOLD'
                                             }`}
                                     >
                                         {type}
@@ -257,8 +262,8 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                                         key={zone}
                                         onClick={() => toggleArrayItem('zone', zone)}
                                         className={`px-3 py-1 rounded-full text-xs font-bold border transition-all ${(formData.zone as string[]).includes(zone)
-                                                ? 'bg-blue-500 text-white border-blue-500'
-                                                : 'bg-white text-slate-500 border-slate-300 hover:border-blue-500'
+                                            ? 'bg-blue-500 text-white border-blue-500'
+                                            : 'bg-white text-slate-500 border-slate-300 hover:border-blue-500'
                                             }`}
                                     >
                                         {zone}
@@ -399,7 +404,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                                 rows={3}
                                 value={formData.description.en}
                                 onChange={(e) => handleNestedChange('description', 'en', e.target.value)}
-                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none"
+                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 text-sm shadow-sm"
                             />
                         </div>
                         <div>
@@ -408,30 +413,28 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                                 rows={3}
                                 value={formData.description.es}
                                 onChange={(e) => handleNestedChange('description', 'es', e.target.value)}
-                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none"
+                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 text-sm shadow-sm"
                             />
                         </div>
 
-                        <div className="md:col-span-2">
-                            <label className="block text-sm font-bold text-slate-700 mb-1">Long Description / Deep Dive (EN)</label>
-                            <textarea
-                                rows={6}
-                                value={formData.longDescription?.en || formData.description.en}
-                                onChange={(e) => handleNestedChange('longDescription', 'en', e.target.value)}
-                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none font-mono text-sm"
-                            />
-                            <p className="text-xs text-slate-500 mt-1">Supports HTML tags for formatting.</p>
-                        </div>
-                        <div className="md:col-span-2">
-                            <label className="block text-sm font-bold text-slate-700 mb-1">Descripción Larga / Análisis (ES)</label>
-                            <textarea
-                                rows={6}
-                                value={formData.longDescription?.es || formData.description.es}
-                                onChange={(e) => handleNestedChange('longDescription', 'es', e.target.value)}
-                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none font-mono text-sm"
-                            />
-                            <p className="text-xs text-slate-500 mt-1">Soporta etiquetas HTML para formato.</p>
-                        </div>
+                        {/* Expandable Long Description Areas */}
+                        {[
+                            { label: 'Long Description / Deep Dive (EN)', field: 'longDescription', lang: 'en', val: formData.longDescription?.en || formData.description.en },
+                            { label: 'Descripción Larga / Análisis (ES)', field: 'longDescription', lang: 'es', val: formData.longDescription?.es || formData.description.es }
+                        ].map((item) => (
+                            <div key={item.lang} className={`md:col-span-2 relative transition-all duration-300 group`}>
+                                <div className="flex justify-between items-end mb-1">
+                                    <label className="block text-sm font-bold text-slate-700">{item.label}</label>
+                                </div>
+                                <textarea
+                                    rows={6}
+                                    value={item.val}
+                                    onChange={(e) => handleNestedChange(item.field, item.lang, e.target.value)}
+                                    className={`w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none font-mono text-sm bg-white text-slate-900 shadow-sm transition-all duration-300 focus:h-[50vh] focus:absolute focus:z-50 focus:shadow-2xl focus:top-0 focus:-mt-10 h-40`}
+                                />
+                                <p className="text-xs text-slate-500 mt-1">Supports HTML tags for formatting. CLICK TO EXPAND.</p>
+                            </div>
+                        ))}
                     </div>
                 </section>
 
@@ -440,28 +443,30 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                     <h3 className="text-lg font-bold text-slate-800 border-b pb-2">Analysis & Deep Dives</h3>
 
                     {['marketAnalysis', 'locationAnalysis', 'investmentAnalysis', 'buyerProfile', 'residencyInfo', 'servicesCTA'].map((field) => (
-                        <div key={field} className="space-y-4 border-b border-slate-100 pb-6 last:border-0">
+                        <div key={field} className="space-y-4 border-b border-slate-100 pb-6 last:border-0 group">
                             <h4 className="font-semibold text-slate-700 capitalize">{field.replace(/([A-Z])/g, ' $1').trim()}</h4>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div>
+                                <div className="relative">
                                     <label className="block text-xs font-bold text-slate-500 mb-1">English (EN)</label>
                                     <textarea
                                         rows={4}
                                         value={(formData[field as keyof Project] as Record<string, string>)?.en || ''}
                                         onChange={(e) => handleNestedChange(field, 'en', e.target.value)}
-                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none text-sm"
+                                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none text-sm bg-white text-slate-900 shadow-sm transition-all duration-300 focus:h-[40vh] focus:absolute focus:z-50 focus:shadow-2xl focus:top-0 focus:-mt-6 h-32"
                                         placeholder={`Enter ${field} in English...`}
                                     />
+                                    <span className="text-[10px] text-slate-400 absolute bottom-2 right-4 pointer-events-none group-focus-within:hidden">Expand on focus</span>
                                 </div>
-                                <div>
+                                <div className="relative">
                                     <label className="block text-xs font-bold text-slate-500 mb-1">Spanish (ES)</label>
                                     <textarea
                                         rows={4}
                                         value={(formData[field as keyof Project] as Record<string, string>)?.es || ''}
                                         onChange={(e) => handleNestedChange(field, 'es', e.target.value)}
-                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none text-sm"
+                                        className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none text-sm bg-white text-slate-900 shadow-sm transition-all duration-300 focus:h-[40vh] focus:absolute focus:z-50 focus:shadow-2xl focus:top-0 focus:-mt-6 h-32"
                                         placeholder={`Ingresar ${field} en Español...`}
                                     />
+                                    <span className="text-[10px] text-slate-400 absolute bottom-2 right-4 pointer-events-none group-focus-within:hidden">Expandir al enfocar</span>
                                 </div>
                             </div>
                         </div>
@@ -480,7 +485,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                                 rows={5}
                                 value={formData.keywords?.join('\n') || ''}
                                 onChange={(e) => handleArrayFromText('keywords', e.target.value)}
-                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none"
+                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 shadow-sm"
                                 placeholder="Luxury\nBeachfront\nCondo..."
                             />
                         </div>
@@ -490,7 +495,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                                 rows={5}
                                 value={formData.didYouKnow?.join('\n') || ''}
                                 onChange={(e) => handleArrayFromText('didYouKnow', e.target.value)}
-                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none"
+                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 shadow-sm"
                                 placeholder="Interesting fact 1\nInteresting fact 2..."
                             />
                         </div>
@@ -507,7 +512,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                                         rows={5}
                                         value={(formData[field as keyof Project] as Record<string, string[]>)?.en?.join('\n') || ''}
                                         onChange={(e) => handleLocalizedArrayFromText(field, 'en', e.target.value)}
-                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none"
+                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 shadow-sm"
                                         placeholder={`Enter ${field} in English...`}
                                     />
                                 </div>
@@ -517,7 +522,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                                         rows={5}
                                         value={(formData[field as keyof Project] as Record<string, string[]>)?.es?.join('\n') || ''}
                                         onChange={(e) => handleLocalizedArrayFromText(field, 'es', e.target.value)}
-                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none"
+                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none bg-white text-slate-900 shadow-sm"
                                         placeholder={`Ingresar ${field} en Español...`}
                                     />
                                 </div>
@@ -540,7 +545,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
 
                     <div className="space-y-4">
                         {formData.faqs?.map((faq, index) => (
-                            <div key={index} className="bg-slate-50 p-4 rounded-xl relative group">
+                            <div key={index} className="bg-slate-50 p-4 rounded-xl relative group border border-slate-200">
                                 <button
                                     onClick={() => handleRemoveFaq(index)}
                                     className="absolute top-2 right-2 text-slate-400 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
@@ -551,14 +556,14 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                                     <input
                                         value={faq.question}
                                         onChange={(e) => handleFaqChange(index, 'question', e.target.value)}
-                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none font-bold"
+                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none font-bold bg-white text-slate-900 shadow-sm"
                                         placeholder="Question"
                                     />
                                     <textarea
                                         rows={2}
                                         value={faq.answer}
                                         onChange={(e) => handleFaqChange(index, 'answer', e.target.value)}
-                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none text-sm"
+                                        className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none text-sm bg-white text-slate-900 shadow-sm"
                                         placeholder="Answer"
                                     />
                                 </div>

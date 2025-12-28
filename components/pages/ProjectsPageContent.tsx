@@ -1,18 +1,20 @@
 'use client';
 
 import React, { useState } from 'react';
-import { PROJECTS, CONTENT } from '@/lib/constants';
+import { CONTENT } from '@/lib/constants';
 import ProjectCard from '@/components/ProjectCard';
 import { Search, Map, TrendingUp, Info, ChevronDown, Filter, ShieldCheck } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
+import { useCMS } from '@/context/CMSContext';
 
 const ProjectsPageContent: React.FC = () => {
     const { lang } = useLanguage();
+    const { projects } = useCMS();
     const [activeZone, setActiveZone] = useState<string>('All');
     const [activeType, setActiveType] = useState<string>('Any');
     const t = CONTENT[lang] || CONTENT['en'];
 
-    const filteredProjects = PROJECTS.filter(p => {
+    const filteredProjects = projects.filter(p => {
         const zoneMatch = activeZone === 'All' || p.zone.includes(activeZone as any);
         const typeMatch = activeType === 'Any' || p.type.includes(activeType as any);
         return zoneMatch && typeMatch;
