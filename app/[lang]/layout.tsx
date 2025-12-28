@@ -44,42 +44,42 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         'es-PA': `${domain}/es`,
         'x-default': `${domain}/es`,
       },
-          openGraph: {
-      type: 'website',
-      locale: lang === 'es' ? 'es_PA' : 'en_US',
-      url: `${domain}/${lang}`,
-      siteName: titles[lang as keyof typeof titles] || titles.es,
-      title: titles[lang as keyof typeof titles] || titles.es,
-      description: descriptions[lang as keyof typeof descriptions] || descriptions.es,
-      images: [
-        {
-          url: `${domain}/og-image.jpg`,
-          width: 1200,
-          height: 630,
-          alt: titles[lang as keyof typeof titles] || titles.es,
-        },
-      ],
-    },
-    twitter: {
-      card: 'summary_large_image',
-      title: titles[lang as keyof typeof titles] || titles.es,
-      description: descriptions[lang as keyof typeof descriptions] || descriptions.es,
-      images: [`${domain}/og-image.jpg`],
-    },
-    robots: {
-      index: true,
-      follow: true,
-      googleBot: {
+      openGraph: {
+        type: 'website',
+        locale: lang === 'es' ? 'es_PA' : 'en_US',
+        url: `${domain}/${lang}`,
+        siteName: titles[lang as keyof typeof titles] || titles.es,
+        title: titles[lang as keyof typeof titles] || titles.es,
+        description: descriptions[lang as keyof typeof descriptions] || descriptions.es,
+        images: [
+          {
+            url: `${domain}/og-image.jpg`,
+            width: 1200,
+            height: 630,
+            alt: titles[lang as keyof typeof titles] || titles.es,
+          },
+        ],
+      },
+      twitter: {
+        card: 'summary_large_image',
+        title: titles[lang as keyof typeof titles] || titles.es,
+        description: descriptions[lang as keyof typeof descriptions] || descriptions.es,
+        images: [`${domain}/og-image.jpg`],
+      },
+      robots: {
         index: true,
         follow: true,
-        'max-video-preview': -1,
-        'max-image-preview': 'large',
-        'max-snippet': -1,
+        googleBot: {
+          index: true,
+          follow: true,
+          'max-video-preview': -1,
+          'max-image-preview': 'large',
+          'max-snippet': -1,
+        },
       },
-    },
-    verification: {
-      google: 'your-google-verification-code',
-    }
+      verification: {
+        google: 'your-google-verification-code',
+      }
     },
   };
 }
@@ -106,9 +106,9 @@ export default async function RootLayout({
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-90BHGEJ5KD"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics" strategy="beforeInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
