@@ -123,9 +123,9 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ onSelect, onCancel }) => 
                                     <Upload size={24} />
                                 </div>
                                 <h3 className="text-lg font-bold text-slate-800 mb-1">Click to Upload</h3>
-                                <p className="text-sm text-slate-500 mb-6">Support JPG, PNG, WEBP</p>
+                                <p className="text-sm text-slate-500 mb-6">Support JPG, PNG, WEBP, MP4</p>
                                 <span className="bg-white border border-slate-300 px-4 py-2 rounded-lg text-sm font-bold text-slate-700 shadow-sm">Select from Computer</span>
-                                <input type="file" accept="image/*" className="hidden" onChange={handleFileUpload} />
+                                <input type="file" accept="image/*,video/*" className="hidden" onChange={handleFileUpload} />
                             </label>
                         )}
                     </div>
@@ -135,7 +135,7 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ onSelect, onCancel }) => 
                 {mode === 'link' && (
                     <form onSubmit={handleUrlSubmit} className="flex flex-col justify-center h-full max-w-sm mx-auto space-y-4">
                         <div>
-                            <label className="block text-sm font-bold text-slate-700 mb-2">Paste Image URL</label>
+                            <label className="block text-sm font-bold text-slate-700 mb-2">Paste Media URL</label>
                             <div className="relative">
                                 <LinkIcon size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
                                 <input
@@ -143,7 +143,7 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ onSelect, onCancel }) => 
                                     required
                                     value={urlInput}
                                     onChange={(e) => setUrlInput(e.target.value)}
-                                    placeholder="https://example.com/image.jpg"
+                                    placeholder="https://..."
                                     className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
                                 />
                             </div>
@@ -152,7 +152,7 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ onSelect, onCancel }) => 
                             type="submit"
                             className="w-full py-3 bg-brand-900 text-white font-bold rounded-lg hover:bg-brand-800 transition-colors"
                         >
-                            Use This Image
+                            Use This Media
                         </button>
                     </form>
                 )}

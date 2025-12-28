@@ -258,6 +258,47 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
 
     const handleFloorPlanNestedChange = (index: number, parent: 'name', lang: 'en' | 'es', value: string) => {
         const newPlans = [...(formData.floorplans || [])];
+        if (newPlans[index] && newPlans[index][parent]) {
+            newPlans[index] = {
+                ...newPlans[index],
+                [parent]: {
+                    ...newPlans[index][parent],
+                    [lang]: value
+                }
+            };
+            handleChange('floorplans', newPlans);
+        }
+    };
+
+    // Floor Plan Handlers
+    const handleAddFloorPlan = () => {
+        setFormData(prev => ({
+            ...prev,
+            floorplans: [...(prev.floorplans || []), {
+                name: { en: 'New Layout', es: 'Nuevo Diseño' },
+                size: '100 m2',
+                price: 0,
+                image: '',
+                characteristics: { en: [], es: [] }
+            }]
+        }));
+    };
+
+    const handleRemoveFloorPlan = (index: number) => {
+        setFormData(prev => ({
+            ...prev,
+            floorplans: (prev.floorplans || []).filter((_, i) => i !== index)
+        }));
+    };
+
+    const handleFloorPlanChange = (index: number, field: string, value: any) => {
+        const newPlans = [...(formData.floorplans || [])];
+        newPlans[index] = { ...newPlans[index], [field]: value };
+        handleChange('floorplans', newPlans);
+    };
+
+    const handleFloorPlanNestedChange = (index: number, parent: 'name', lang: 'en' | 'es', value: string) => {
+        const newPlans = [...(formData.floorplans || [])];
         newPlans[index] = {
             ...newPlans[index],
             [parent]: {
@@ -436,12 +477,19 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                         </div>
                         <div className="md:col-span-2">
                             <label className="block text-sm font-bold text-slate-700 mb-1">Video URL (YouTube/Vimeo/MP4)</label>
-                            <input
-                                value={formData.videoUrl || ''}
-                                onChange={(e) => handleChange('videoUrl', e.target.value)}
-                                className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
-                                placeholder="https://..."
-                            />
+                            <div className="flex gap-2">
+                                <input
+                                    value={formData.videoUrl || ''}
+                                    onChange={(e) => handleChange('videoUrl', e.target.value)}
+                                    className="flex-1 px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none"
+                                    placeholder="https://..."
+                                />
+                                {/* Reuse ImageSelectorWrapper for video uploads - it uploads to 'images' bucket but works for files */}
+                                <div className="w-12">
+                                    <ImageSelectorWrapper onSelect={(url) => handleChange('videoUrl', url)} />
+                                </div>
+                            </div>
+                            <p className="text-[10px] text-slate-500 mt-1">Paste a YouTube link OR click the + icon to upload an MP4 file.</p>
                         </div>
                     </div>
                 </section>
