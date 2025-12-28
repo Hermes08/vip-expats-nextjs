@@ -1,11 +1,13 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { CONTENT } from '@/lib/constants';
 import ProjectCard from '@/components/ProjectCard';
 import { Search, Map, TrendingUp, Info, ChevronDown, Filter, ShieldCheck } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 import { useCMS } from '@/context/CMSContext';
+import { Project, ProjectType, ProjectZone } from '@/lib/types';
+import ParallaxSection from '@/components/ui/ParallaxSection';
 
 const ProjectsPageContent: React.FC = () => {
     const { lang } = useLanguage();
@@ -102,13 +104,35 @@ const ProjectsPageContent: React.FC = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24">
-                    {filteredProjects.map((project, idx) => (
-                        <div key={project.id} className={`reveal-on-scroll stagger-${(idx % 3) + 1} animate-float`} style={{ animationDelay: `${idx * 0.3}s` }}>
-                            <ProjectCard project={project} />
+                {/* Projects Grid */}
+                <ParallaxSection className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 relative z-20">
+                    <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+                        {filteredProjects.map((project, index) => (
+                            <div
+                                key={project.id}
+                                className="reveal-on-scroll"
+                                style={{ transitionDelay: `${index * 100}ms` }}
+                            >
+                                <ProjectCard project={project} lang={lang} />
+                            </div>
+                        ))}
+                    </div>
+
+                    {filteredProjects.length === 0 && (
+                        <div className="text-center py-20">
+                            <p className="text-xl text-gray-400">No projects found matching your criteria.</p>
+                            <button
+                                onClick={() => {
+                                    setActiveType('All');
+                                    setActiveZone('All');
+                                }}
+                                className="mt-4 text-brand-GOLD hover:underline"
+                            >
+                                Clear Filters
+                            </button>
                         </div>
-                    ))}
-                </div>
+                    )}
+                </ParallaxSection>
 
                 {/* SECTION: MASSIVE NEIGHBORHOOD ANALYSIS */}
                 <div className="mt-32 pt-20 border-t border-white/5">

@@ -5,6 +5,7 @@ import { CMSProvider } from "@/context/CMSContext";
 import { LanguageProvider } from "@/context/LanguageContext";
 import MainLayout from "@/components/MainLayout";
 import ScrollAnimationObserver from "@/components/ScrollAnimationObserver";
+import ZeroGravityWrapper from '@/components/GoldParticles/ZeroGravityWrapper';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -56,12 +57,13 @@ export default async function RootLayout({
   const { lang } = await params;
 
   return (
-    <html lang={lang}>
+    <html lang={lang} suppressHydrationWarning>
       <body
         className={`${inter.variable} ${montserrat.variable} antialiased overflow-x-hidden selection:bg-brand-GOLD selection:text-brand-900 bg-brand-950`}
       >
         <LanguageProvider initialLang={lang as 'es' | 'en'}>
           <ScrollAnimationObserver />
+          <ZeroGravityWrapper />
           <CMSProvider>
             <MainLayout>
               {children}

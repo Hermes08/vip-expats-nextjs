@@ -12,7 +12,7 @@ interface MainLayoutProps {
 
 const MainLayout: React.FC<MainLayoutProps> = ({ children }) => {
     return (
-        <div className="min-h-screen flex flex-col font-sans bg-brand-950 text-slate-100 relative">
+        <div className="min-h-screen flex flex-col font-sans bg-transparent text-slate-100 relative">
             {/* Persistent 3D Particle Field */}
             <RockstarParticles />
 
