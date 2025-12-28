@@ -133,8 +133,10 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             setBlogPosts([post, ...blogPosts]);
             return true;
         }
-        const { error } = await supabase.from('blog_posts').insert([post]);
+        const { error } = await supabase.from('blog_posts').upsert(post);
         if (!error) { await refreshData(); return true; }
+        console.error("Add blog error:", error);
+        alert(`Error saving blog: ${error.message}`);
         return false;
     };
 
@@ -143,8 +145,10 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             setBlogPosts(blogPosts.map(p => p.id === post.id ? post : p));
             return true;
         }
-        const { error } = await supabase.from('blog_posts').update(post).eq('id', post.id);
+        const { error } = await supabase.from('blog_posts').upsert(post);
         if (!error) { await refreshData(); return true; }
+        console.error("Update blog error:", error);
+        alert(`Error updating blog: ${error.message}`);
         return false;
     };
 
@@ -155,6 +159,7 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         }
         const { error } = await supabase.from('blog_posts').delete().eq('id', id);
         if (!error) { await refreshData(); return true; }
+        console.error("Delete blog error:", error);
         return false;
     };
 
@@ -163,8 +168,10 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             setProjects([project, ...projects]);
             return true;
         }
-        const { error } = await supabase.from('projects').insert([project]);
+        const { error } = await supabase.from('projects').upsert(project);
         if (!error) { await refreshData(); return true; }
+        console.error("Add project error:", error);
+        alert(`Error saving project: ${error.message}`);
         return false;
     };
 
@@ -173,8 +180,10 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             setProjects(projects.map(p => p.id === project.id ? project : p));
             return true;
         }
-        const { error } = await supabase.from('projects').update(project).eq('id', project.id);
+        const { error } = await supabase.from('projects').upsert(project);
         if (!error) { await refreshData(); return true; }
+        console.error("Update project error:", error);
+        alert(`Error updating project: ${error.message}`);
         return false;
     };
 
@@ -185,6 +194,7 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         }
         const { error } = await supabase.from('projects').delete().eq('id', id);
         if (!error) { await refreshData(); return true; }
+        console.error("Delete project error:", error);
         return false;
     };
 
