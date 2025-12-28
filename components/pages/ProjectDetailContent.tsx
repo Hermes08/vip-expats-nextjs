@@ -185,11 +185,46 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                             </div>
 
                             {/* Lead Magnet Book */}
-                            <div className="bg-white rounded-3xl p-8 border border-neutral-100 shadow-xl text-center group">
-                                <BookOpen className="mx-auto text-brand-GOLD mb-4 transition-transform group-hover:scale-110" size={32} />
-                                <h4 className="font-bold text-brand-900 mb-2">Free Panama Investment Guide</h4>
-                                <p className="text-xs text-brand-500 mb-6">"How to master panama real estate in 2025". 50+ pages of expert data.</p>
-                                <button className="text-brand-AMBER font-black uppercase tracking-widest text-[10px] border-b-2 border-brand-GOLD pb-1 hover:text-brand-900 transition-colors">Download PDF Bible</button>
+                            {/* Lead Form */}
+                            <div className="bg-white rounded-3xl p-8 border border-neutral-100 shadow-xl">
+                                <h4 className="font-bold text-brand-900 mb-4 uppercase tracking-widest text-[10px] flex items-center gap-2">
+                                    <ShieldCheck size={14} className="text-brand-GOLD" /> Official Inquiry
+                                </h4>
+                                <p className="text-xs text-brand-500 mb-6 font-medium">Recieve the full brochure & pricing list for {project.name[lang]}</p>
+
+                                <form onSubmit={async (e) => {
+                                    e.preventDefault();
+                                    const form = e.target as HTMLFormElement;
+                                    const formData = new FormData(form);
+                                    const data = {
+                                        name: formData.get('name') as string,
+                                        email: formData.get('email') as string,
+                                        phone: formData.get('phone') as string,
+                                        project_interest: project.name[lang],
+                                        message: formData.get('message') as string,
+                                    };
+
+                                    try {
+                                        const { supabase } = await import('@/lib/supabase');
+                                        const { error } = await supabase.from('leads').insert([data]);
+                                        if (error) throw error;
+                                        alert('Inquiry sent! We will contact you shortly.');
+                                        form.reset();
+                                    } catch (err) {
+                                        console.error(err);
+                                        alert('Error sending message. Please try again.');
+                                    }
+                                }} className="space-y-4">
+                                    <input name="name" required placeholder="Name" className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
+                                    <input name="email" required type="email" placeholder="Email" className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
+                                    <input name="phone" required placeholder="Phone/WhatsApp" className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
+                                    <textarea name="message" placeholder="I'm interested in..." rows={3} className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all resize-none"></textarea>
+
+                                    <button type="submit" className="w-full py-4 bg-brand-900 text-white font-black uppercase tracking-widest text-[10px] rounded-xl hover:bg-brand-GOLD hover:text-brand-900 transition-all shadow-lg">
+                                        Request Details
+                                    </button>
+                                </form>
+                                <p className="text-[9px] text-neutral-400 mt-4 text-center">100% Privacy Guaranteed.</p>
                             </div>
 
                             {/* Amenities List */}
