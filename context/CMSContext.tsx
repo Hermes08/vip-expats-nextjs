@@ -48,11 +48,26 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         }
 
         try {
-            const { data: bData } = await supabase.from('blog_posts').select('*').order('created_at', { ascending: false });
-            if (bData) setBlogPosts([...bData, ...BLOG_POSTS]);
-
             const { data: pData } = await supabase.from('projects').select('*');
-            if (pData) setProjects([...pData, ...PROJECTS]);
+            if (pData) {
+                const dbProjects = pData as Project[];
+                // Merge strategies: Use DB project if it exists, otherwise use static.
+                const mergedProjects = [
+                    ...dbProjects,
+                    ...PROJECTS.filter(staticP => !dbProjects.some(dbP => dbP.id === staticP.id))
+                ];
+                setProjects(mergedProjects);
+            }
+
+            const { data: bData } = await supabase.from('blog_posts').select('*').order('created_at', { ascending: false });
+            if (bData) {
+                const dbPosts = bData as BlogPost[];
+                const mergedPosts = [
+                    ...dbPosts,
+                    ...BLOG_POSTS.filter(staticB => !dbPosts.some(dbB => dbB.id === staticB.id))
+                ];
+                setBlogPosts(mergedPosts);
+            }
 
             const { data: qData } = await supabase.from('quiz_submissions').select('*').order('timestamp', { ascending: false });
             if (qData) setQuizSubmissions(qData);
