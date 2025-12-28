@@ -21,9 +21,9 @@ const TiltCard: React.FC<TiltCardProps> = ({ children, className = '', gloss = t
     const mouseY = useSpring(y, { stiffness: 300, damping: 30 });
 
     // ROTATION TRANSFORMS
-    // Move mouse X (-0.5 to 0.5) -> Rotate Y (-15deg to 15deg)
-    const rotateX = useTransform(mouseY, [-0.5, 0.5], [15, -15]);
-    const rotateY = useTransform(mouseX, [-0.5, 0.5], [-15, 15]);
+    // Move mouse X (-0.5 to 0.5) -> Rotate Y (-4deg to 4deg) -- Greatly reduced intensity
+    const rotateX = useTransform(mouseY, [-0.5, 0.5], [4, -4]);
+    const rotateY = useTransform(mouseX, [-0.5, 0.5], [-4, 4]);
 
     // GLOSS GRADIENT MOVEMENT
     // Gloss moves opposite to rotation to simulate reflection
