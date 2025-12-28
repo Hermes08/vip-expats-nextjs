@@ -5,6 +5,7 @@ import { useCMS } from '@/context/CMSContext';
 import { Project } from '@/lib/types';
 import { X, Save, Edit2 } from 'lucide-react';
 import MediaGallery from '@/components/admin/MediaGallery';
+import ImageSelector from '@/components/admin/ImageSelector';
 
 const AdminPage = () => {
     const { isAuthenticated, login, logout, projects, updateProject } = useCMS();
@@ -145,6 +146,31 @@ const AdminPage = () => {
 const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave: (p: Project) => void, onCancel: () => void }) => {
     const [formData, setFormData] = useState<Project>(project);
 
+    // Helper component to keep state clean (defined inside to access props easily, or move out)
+    const ImageSelectorWrapper = ({ onSelect }: { onSelect: (url: string) => void }) => {
+        const [isOpen, setIsOpen] = useState(false);
+        if (!isOpen) {
+            return (
+                <button
+                    onClick={() => setIsOpen(true)}
+                    className="w-full h-32 border-2 border-dashed border-slate-300 rounded-lg hover:border-brand-GOLD hover:bg-brand-50 transition-all flex flex-col items-center justify-center gap-2 text-slate-400 hover:text-brand-900 group"
+                >
+                    <div className="p-2 bg-white rounded-full shadow-sm group-hover:scale-110 transition-transform"><Edit2 size={20} /></div>
+                    <span className="font-bold text-sm">+ Add Image</span>
+                </button>
+            );
+        }
+        return (
+            <div className="p-4 bg-slate-100 rounded-xl border border-slate-200">
+                <div className="flex justify-between items-center mb-4">
+                    <h4 className="font-bold text-slate-700">Select Image</h4>
+                    <button onClick={() => setIsOpen(false)}><X size={20} className="text-slate-400 hover:text-slate-600" /></button>
+                </div>
+                <ImageSelector onSelect={(url) => { onSelect(url); setIsOpen(false); }} onCancel={() => setIsOpen(false)} />
+            </div>
+        );
+    };
+
     const handleChange = (field: string, value: any) => {
         setFormData(prev => ({ ...prev, [field]: value }));
     };
@@ -203,6 +229,45 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
         handleChange('faqs', newFaqs);
     };
 
+    // Floor Plan Handlers
+    const handleAddFloorPlan = () => {
+        setFormData(prev => ({
+            ...prev,
+            floorplans: [...(prev.floorplans || []), {
+                name: { en: 'New Layout', es: 'Nuevo Diseño' },
+                size: '100 m2',
+                price: 0,
+                image: '',
+                characteristics: { en: [], es: [] }
+            }]
+        }));
+    };
+
+    const handleRemoveFloorPlan = (index: number) => {
+        setFormData(prev => ({
+            ...prev,
+            floorplans: (prev.floorplans || []).filter((_, i) => i !== index)
+        }));
+    };
+
+    const handleFloorPlanChange = (index: number, field: string, value: any) => {
+        const newPlans = [...(formData.floorplans || [])];
+        newPlans[index] = { ...newPlans[index], [field]: value };
+        handleChange('floorplans', newPlans);
+    };
+
+    const handleFloorPlanNestedChange = (index: number, parent: 'name', lang: 'en' | 'es', value: string) => {
+        const newPlans = [...(formData.floorplans || [])];
+        newPlans[index] = {
+            ...newPlans[index],
+            [parent]: {
+                ...newPlans[index][parent],
+                [lang]: value
+            }
+        };
+        handleChange('floorplans', newPlans);
+    };
+
     return (
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
             <div className="bg-slate-900 p-6 flex justify-between items-center sticky top-0 z-10">
@@ -218,6 +283,49 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
             </div>
 
             <div className="p-8 space-y-8 max-h-[80vh] overflow-y-auto">
+                {/* Project Images */}
+                <section className="space-y-6">
+                    <h3 className="text-lg font-bold text-slate-800 border-b pb-2">Project Images</h3>
+
+                    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                        {formData.images.map((img, idx) => (
+                            <div key={idx} className="relative aspect-video rounded-lg overflow-hidden group border border-slate-200 bg-slate-100">
+                                <img src={img} className="w-full h-full object-cover" />
+                                <button
+                                    onClick={() => {
+                                        const newImages = formData.images.filter((_, i) => i !== idx);
+                                        handleChange('images', newImages);
+                                    }}
+                                    className="absolute top-2 right-2 p-1.5 bg-red-500 text-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity hover:bg-red-600"
+                                    title="Remove Image"
+                                >
+                                    <X size={14} />
+                                </button>
+                                {idx === 0 && (
+                                    <span className="absolute bottom-2 left-2 bg-black/60 text-white text-[10px] font-bold px-2 py-0.5 rounded backdrop-blur-sm">MAIN COVER</span>
+                                )}
+                            </div>
+                        ))}
+
+                        <div className="aspect-video relative">
+                            {/* Selector Trigger */}
+                            <div className="absolute inset-0">
+                                <div className="h-full w-full border-2 border-dashed border-slate-300 rounded-lg hover:border-brand-GOLD transition-colors bg-slate-50 flex flex-col items-center justify-center cursor-pointer group"
+                                    onClick={() => {
+                                        // This is a bit of a hack to show the selector, ideally we'd use a modal State
+                                        // But for simplicity within this file, we can toggle a local state inside a wrapper or just render it inline
+                                    }}
+                                >
+                                    {/* We need local state for the selector modal visibility in this component */}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <ImageSelectorWrapper
+                        onSelect={(url) => handleChange('images', [...formData.images, url])}
+                    />
+                </section>
+
                 {/* Basic Info */}
                 <section className="space-y-6">
                     <h3 className="text-lg font-bold text-slate-800 border-b pb-2">Basic Info</h3>
