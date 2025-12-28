@@ -7,6 +7,15 @@ import { X, Save, Edit2 } from 'lucide-react';
 import MediaGallery from '@/components/admin/MediaGallery';
 import ImageSelector from '@/components/admin/ImageSelector';
 
+const StorageStatus = () => {
+    const { isSupabaseConfigured } = useCMS();
+    return (
+        <span className={`px-3 py-1 rounded-full text-xs font-bold border ${isSupabaseConfigured ? 'bg-blue-100 text-blue-700 border-blue-200' : 'bg-orange-100 text-orange-700 border-orange-200'}`}>
+            Storage: {isSupabaseConfigured ? 'Supabase (Persistent)' : 'Memory (Temporary)'}
+        </span>
+    );
+};
+
 const AdminPage = () => {
     const { isAuthenticated, login, logout, projects, updateProject } = useCMS();
     const [pin, setPin] = useState('');
@@ -75,7 +84,16 @@ const AdminPage = () => {
         <div className="pt-32 min-h-screen bg-slate-50 pb-20">
             <div className="max-w-7xl mx-auto px-4">
                 <div className="flex justify-between items-center mb-12">
-                    <h1 className="text-3xl font-bold text-slate-800">Project Visibility Manager</h1>
+                    <div className="flex flex-col gap-2">
+                        <h1 className="text-3xl font-bold text-slate-800">Project Visibility Manager</h1>
+                        <div className="flex items-center gap-2">
+                            <span className={`px-3 py-1 rounded-full text-xs font-bold border ${isAuthenticated ? 'bg-green-100 text-green-700 border-green-200' : 'bg-red-100 text-red-700'}`}>
+                                Admin: {isAuthenticated ? 'Active' : 'Inactive'}
+                            </span>
+                            {/* We need to get isSupabaseConfigured from context, but we are inside the component so we can use the hook */}
+                            <StorageStatus />
+                        </div>
+                    </div>
                     <button
                         onClick={logout}
                         className="px-6 py-2 bg-red-50 text-red-600 rounded-lg font-bold hover:bg-red-100 transition-colors"
