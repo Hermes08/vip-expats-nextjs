@@ -113,7 +113,7 @@ const ProjectsPageContent: React.FC = () => {
                                 className="reveal-on-scroll"
                                 style={{ transitionDelay: `${index * 100}ms` }}
                             >
-                                <ProjectCard project={project} lang={lang} />
+                                <ProjectCard project={project} />
                             </div>
                         ))}
                     </div>

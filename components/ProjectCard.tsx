@@ -26,7 +26,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, className = '' }) =>
         maximumFractionDigits: 0,
     }).format(project.priceFrom);
 
-    const isPresale = project.status === 'Pre-sale';
+    const isPresale = project.status === 'Presale';
 
     return (
         <Link
