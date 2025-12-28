@@ -18,7 +18,9 @@ interface CMSContextType {
     updateProject: (project: Project) => Promise<boolean>;
     deleteProject: (id: string) => Promise<boolean>;
     saveQuizSubmission: (submission: QuizSubmission) => Promise<void>;
+
     deleteQuizSubmission: (id: string) => Promise<void>;
+    getImages: (bucket: string) => Promise<string[]>;
     isAuthenticated: boolean;
     login: (password: string) => void;
     logout: () => void;
@@ -107,6 +109,25 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         }
     };
 
+    const getImages = async (bucket: string): Promise<string[]> => {
+        if (!isSupabaseConfigured) return [];
+        try {
+            const { data, error } = await supabase.storage.from(bucket).list('', {
+                limit: 100,
+                offset: 0,
+                sortBy: { column: 'created_at', order: 'desc' },
+            });
+            if (error) throw error;
+            return data.map(file => {
+                const { data: publicUrlData } = supabase.storage.from(bucket).getPublicUrl(file.name);
+                return publicUrlData.publicUrl;
+            });
+        } catch (e) {
+            console.error("List images error:", e);
+            return [];
+        }
+    };
+
     const addBlogPost = async (post: BlogPost): Promise<boolean> => {
         if (!isSupabaseConfigured) {
             setBlogPosts([post, ...blogPosts]);
@@ -184,7 +205,7 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     return (
         <CMSContext.Provider value={{
             blogPosts, projects, quizSubmissions, refreshData, uploadImage, addBlogPost, updateBlogPost, deleteBlogPost,
-            addProject, updateProject, deleteProject, saveQuizSubmission, deleteQuizSubmission, isAuthenticated, login, logout
+            addProject, updateProject, deleteProject, saveQuizSubmission, deleteQuizSubmission, getImages, isAuthenticated, login, logout
         }}>
             {children}
         </CMSContext.Provider>

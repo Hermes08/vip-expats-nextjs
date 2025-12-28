@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { useCMS } from '@/context/CMSContext';
 import { Project } from '@/lib/types';
 import { X, Save, Edit2 } from 'lucide-react';
+import MediaGallery from '@/components/admin/MediaGallery';
 
 const AdminPage = () => {
     const { isAuthenticated, login, logout, projects, updateProject } = useCMS();
@@ -80,6 +81,11 @@ const AdminPage = () => {
                     >
                         Logout
                     </button>
+                </div>
+
+                {/* Media Manager Section */}
+                <div className="mb-12">
+                    <MediaGallery />
                 </div>
 
                 <div className="grid gap-6">
