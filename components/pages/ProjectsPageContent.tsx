@@ -63,7 +63,7 @@ const ProjectsPageContent: React.FC = () => {
             </div>
 
             {/* Filters Bar */}
-            <div className="sticky top-[72px] z-40 bg-brand-950/80 backdrop-blur-xl border-b border-white/5 py-6 shadow-2xl">
+            <div className="relative lg:sticky lg:top-[72px] z-40 bg-brand-950/80 backdrop-blur-xl border-b border-white/5 py-6 shadow-2xl">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-wrap items-center justify-between gap-6">
                         <div className="flex flex-wrap gap-10 items-center">

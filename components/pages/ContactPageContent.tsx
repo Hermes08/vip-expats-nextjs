@@ -17,37 +17,58 @@ const ContactPageContent: React.FC = () => {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 mb-24">
                 <div className="grid lg:grid-cols-3 gap-8">
-                    {/* Contact Form */}
                     <div className="lg:col-span-2 bg-white rounded-3xl shadow-2xl p-8 md:p-12 border-t-4 border-brand-GOLD">
-                        <form onSubmit={(e) => e.preventDefault()} className="grid md:grid-cols-2 gap-6">
+                        <form onSubmit={async (e) => {
+                            e.preventDefault();
+                            const form = e.target as HTMLFormElement;
+                            const formData = new FormData(form);
+                            const data = {
+                                name: formData.get('name') as string,
+                                email: formData.get('email') as string,
+                                phone: formData.get('phone') as string,
+                                project_interest: formData.get('project_interest') as string,
+                                message: formData.get('message') as string,
+                            };
+
+                            try {
+                                const { supabase } = await import('@/lib/supabase');
+                                const { error } = await supabase.from('leads').insert([data]);
+                                if (error) throw error;
+                                alert('Message sent successfully! We will contact you shortly.');
+                                form.reset();
+                            } catch (err) {
+                                console.error(err);
+                                alert('Error sending message. Please try again.');
+                            }
+                        }} className="grid md:grid-cols-2 gap-6">
                             <div className="space-y-2">
                                 <label className="text-sm font-bold text-slate-500 uppercase tracking-widest">Nombre Completo</label>
-                                <input type="text" className="w-full px-4 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none" placeholder="John Doe" />
+                                <input name="name" required type="text" className="w-full px-4 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none" placeholder="John Doe" />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-sm font-bold text-slate-500 uppercase tracking-widest">Email</label>
-                                <input type="email" className="w-full px-4 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none" placeholder="john@expatrockstars.com" />
+                                <input name="email" required type="email" className="w-full px-4 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none" placeholder="john@expatrockstars.com" />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-sm font-bold text-slate-500 uppercase tracking-widest">WhatsApp / Phone</label>
-                                <input type="tel" className="w-full px-4 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none" placeholder="+1 234 567 890" />
+                                <input name="phone" required type="tel" className="w-full px-4 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none" placeholder="+1 234 567 890" />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-sm font-bold text-slate-500 uppercase tracking-widest">Proyecto de Interés</label>
-                                <select className="w-full px-4 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none text-sm font-bold">
-                                    <option>Seleccionar proyecto...</option>
-                                    <option>Pino Alto (Boquete)</option>
-                                    <option>Westin Residences (Playa Bonita)</option>
-                                    <option>Playa Escondida (Colón)</option>
-                                    <option>Buenaventura (Rio Hato)</option>
-                                    <option>Margaritaville (Chame)</option>
+                                <select name="project_interest" className="w-full px-4 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none text-sm font-bold">
+                                    <option value="">Seleccionar proyecto...</option>
+                                    <option value="Pino Alto (Boquete)">Pino Alto (Boquete)</option>
+                                    <option value="Westin Residences (Playa Bonita)">Westin Residences (Playa Bonita)</option>
+                                    <option value="Playa Escondida (Colón)">Playa Escondida (Colón)</option>
+                                    <option value="Buenaventura (Rio Hato)">Buenaventura (Rio Hato)</option>
+                                    <option value="Margaritaville (Chame)">Margaritaville (Chame)</option>
                                 </select>
                             </div>
                             <div className="md:col-span-2 space-y-2">
                                 <label className="text-sm font-bold text-slate-500 uppercase tracking-widest">Mensaje</label>
-                                <textarea className="w-full h-32 px-4 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none" placeholder="I am interested in..." />
+                                <textarea name="message" className="w-full h-32 px-4 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none" placeholder="I am interested in..." />
                             </div>
-                            <button className="md:col-span-2 bg-brand-900 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-brand-GOLD hover:text-brand-900 transition-all shadow-xl">
+                            <button type="submit" className="md:col-span-2 bg-brand-900 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-brand-GOLD hover:text-brand-900 transition-all shadow-xl">
                                 <Send size={18} /> Enviar Mensaje
                             </button>
                         </form>

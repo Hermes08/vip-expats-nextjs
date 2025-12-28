@@ -3,7 +3,7 @@
 import React, { createContext, useContext, useEffect, useState } from 'react';
 import { BlogPost, Project, QuizSubmission } from '@/lib/types';
 import { BLOG_POSTS, PROJECTS } from '@/lib/constants';
-import { supabase } from '@/lib/supabaseClient';
+import { supabase } from '@/lib/supabase';
 
 interface CMSContextType {
     blogPosts: BlogPost[];
