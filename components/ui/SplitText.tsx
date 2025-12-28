@@ -26,7 +26,7 @@ const SplitText: React.FC<SplitTextProps> = ({ text, className = '', delay = 0, 
         }),
     };
 
-    const child = {
+    const child: any = {
         visible: {
             opacity: 1,
             y: 0,
