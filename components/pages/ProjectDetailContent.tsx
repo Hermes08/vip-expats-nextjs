@@ -30,13 +30,13 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-black/80 via-black/20 to-transparent" />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-transparent to-black/30" />
 
-                <div className="absolute bottom-0 left-0 w-full p-8 md:p-12 pb-24">
+                <div className="absolute bottom-0 left-0 w-full p-6 md:p-12 pb-24">
                     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end gap-6">
                         <div className="text-white max-w-4xl relative z-20">
                             <div className="inline-flex items-center gap-2 bg-black/60 backdrop-blur-md text-brand-GOLD font-bold uppercase tracking-widest text-[10px] mb-6 px-4 py-1.5 rounded-full border border-white/10">
                                 <MapPin size={12} /> {project.location[lang]}
                             </div>
-                            <h1 className="font-heading text-5xl md:text-7xl font-black mb-6 leading-[0.9] tracking-tighter text-shadow-lg">{project.name[lang]}</h1>
+                            <h1 className="font-heading text-4xl md:text-7xl font-black mb-6 leading-none md:leading-[0.9] tracking-tighter text-shadow-lg">{project.name[lang]}</h1>
                             <div className="flex flex-wrap gap-4">
                                 <span className="bg-brand-GOLD text-brand-900 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg shadow-brand-GOLD/20">{project.status}</span>
                                 <span className="bg-white/10 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase border border-white/20 hover:bg-white/20 transition-colors cursor-default">{project.type}</span>
@@ -51,7 +51,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
 
                 {/* Thumbnail Selectors */}
                 {project.images.length > 1 && (
-                    <div className="absolute bottom-40 right-12 z-30 flex gap-3 p-2 bg-black/20 backdrop-blur-md rounded-2xl border border-white/10">
+                    <div className="absolute bottom-40 right-12 z-30 hidden lg:flex gap-3 p-2 bg-black/20 backdrop-blur-md rounded-2xl border border-white/10">
                         {project.images.map((img, idx) => (
                             <button
                                 key={idx}

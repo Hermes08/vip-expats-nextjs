@@ -36,9 +36,19 @@
 }
 
 /* Custom Styles Ported from index.html */
+html,
 body {
   background-color: var(--color-brand-950);
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
   color: var(--color-neutral-50);
+  min-height: 100vh;
 }
 
 .reveal-on-scroll {

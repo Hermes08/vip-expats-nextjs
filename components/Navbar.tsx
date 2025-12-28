@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
                         </span>
                     </Link>
 
-                    <div className="hidden lg:flex items-center gap-12">
+                    <div className="hidden xl:flex items-center gap-12">
                         <div className="flex gap-8 text-[11px] font-black uppercase tracking-[0.2em] text-gray-200">
                             <Link href={`/${lang}/proyectos`} className={isActive('/proyectos') ? 'text-brand-GOLD' : 'hover:text-white transition-all'}>{t.nav.projects}</Link>
                             <Link href={`/${lang}/quiz`} className={isActive('/quiz') ? 'text-brand-GOLD' : 'flex items-center gap-2 hover:text-white transition-all'}><Sparkles size={14} className="text-brand-GOLD animate-pulse" /> Neighborhood Quiz</Link>
@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="flex lg:hidden items-center gap-4">
+                    <div className="flex xl:hidden items-center gap-4">
                         <LanguageSwitcher currentLang={lang} />
                         <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="p-2 text-white">
                             {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
@@ -62,7 +62,7 @@ const Navbar: React.FC = () => {
             </div>
 
             {isMobileMenuOpen && (
-                <div className="absolute top-full left-0 w-full bg-brand-950 shadow-2xl border-t border-white/5 p-10 flex flex-col gap-8 lg:hidden animate-in slide-in-from-top-4 duration-500">
+                <div className="absolute top-full left-0 w-full bg-brand-950 shadow-2xl border-t border-white/5 p-10 flex flex-col gap-8 xl:hidden animate-in slide-in-from-top-4 duration-500">
                     <Link href={`/${lang}/proyectos`} className="text-2xl font-black text-white uppercase tracking-tighter hover:text-brand-GOLD">{t.nav.projects}</Link>
                     <Link href={`/${lang}/quiz`} className="text-2xl font-black text-brand-GOLD uppercase tracking-tighter flex items-center gap-3"><Sparkles size={24} /> Neighborhood Quiz</Link>
                     <Link href={`/${lang}/tours`} className="text-2xl font-black text-white uppercase tracking-tighter hover:text-brand-GOLD">{t.nav.tours}</Link>
