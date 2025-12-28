@@ -7,6 +7,7 @@ import { useCMS } from '@/context/CMSContext';
 import { useLanguage } from '@/context/LanguageContext';
 import { ArrowLeft, Calendar, User, Share2, ArrowRight, BookOpen } from 'lucide-react';
 import SplitText from '@/components/ui/SplitText';
+import BlogPostSchema from '@/components/seo/BlogPostSchema';
 
 const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
     const { lang } = useLanguage();
@@ -31,6 +32,7 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
 
     return (
         <div className="pt-24 min-h-screen bg-white">
+            <BlogPostSchema post={post} lang={lang as 'es' | 'en'} />
             <div className="max-w-4xl mx-auto px-4 py-12">
                 <Link href="/blog" className="inline-flex items-center gap-2 text-neutral-400 hover:text-brand-900 font-bold uppercase tracking-widest text-[10px] mb-8 transition-colors">
                     <ArrowLeft size={12} /> Back to Insights

@@ -9,6 +9,7 @@ import { useCMS } from '@/context/CMSContext';
 import VideoSection from '@/components/projects/VideoSection';
 import FloorPlans from '@/components/projects/FloorPlans';
 import SplitText from '@/components/ui/SplitText';
+import ProductSchema from '@/components/seo/ProductSchema';
 
 const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
     const { lang } = useLanguage();
@@ -24,6 +25,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
 
     return (
         <div className="bg-white min-h-screen">
+            <ProductSchema project={project} lang={lang as 'es' | 'en'} />
             {/* Gallery Header */}
             {/* Gallery Header */}
             <section className="bg-neutral-900 h-[85vh] min-h-[600px] relative overflow-hidden group">

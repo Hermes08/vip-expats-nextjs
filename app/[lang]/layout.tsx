@@ -7,6 +7,7 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import MainLayout from "@/components/MainLayout";
 import ScrollAnimationObserver from "@/components/ScrollAnimationObserver";
 import ZeroGravityWrapper from '@/components/GoldParticles/ZeroGravityWrapper';
+import OrganizationSchema from '@/components/seo/OrganizationSchema';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -44,43 +45,43 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         'es-PA': `${domain}/es`,
         'x-default': `${domain}/es`,
       },
-      openGraph: {
-        type: 'website',
-        locale: lang === 'es' ? 'es_PA' : 'en_US',
-        url: `${domain}/${lang}`,
-        siteName: titles[lang as keyof typeof titles] || titles.es,
-        title: titles[lang as keyof typeof titles] || titles.es,
-        description: descriptions[lang as keyof typeof descriptions] || descriptions.es,
-        images: [
-          {
-            url: `${domain}/og-image.jpg`,
-            width: 1200,
-            height: 630,
-            alt: titles[lang as keyof typeof titles] || titles.es,
-          },
-        ],
-      },
-      twitter: {
-        card: 'summary_large_image',
-        title: titles[lang as keyof typeof titles] || titles.es,
-        description: descriptions[lang as keyof typeof descriptions] || descriptions.es,
-        images: [`${domain}/og-image.jpg`],
-      },
-      robots: {
+    },
+    openGraph: {
+      type: 'website',
+      locale: lang === 'es' ? 'es_PA' : 'en_US',
+      url: `${domain}/${lang}`,
+      siteName: titles[lang as keyof typeof titles] || titles.es,
+      title: titles[lang as keyof typeof titles] || titles.es,
+      description: descriptions[lang as keyof typeof descriptions] || descriptions.es,
+      images: [
+        {
+          url: `${domain}/og-image.jpg`,
+          width: 1200,
+          height: 630,
+          alt: titles[lang as keyof typeof titles] || titles.es,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: titles[lang as keyof typeof titles] || titles.es,
+      description: descriptions[lang as keyof typeof descriptions] || descriptions.es,
+      images: [`${domain}/og-image.jpg`],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
         index: true,
         follow: true,
-        googleBot: {
-          index: true,
-          follow: true,
-          'max-video-preview': -1,
-          'max-image-preview': 'large',
-          'max-snippet': -1,
-        },
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
       },
-      verification: {
-        google: 'your-google-verification-code',
-      }
     },
+    verification: {
+      google: 'your-google-verification-code',
+    }
   };
 }
 
@@ -118,6 +119,7 @@ export default async function RootLayout({
       <body
         className={`${inter.variable} ${montserrat.variable} antialiased overflow-x-hidden selection:bg-brand-GOLD selection:text-brand-900 bg-brand-950`}
       >
+        <OrganizationSchema lang={lang as 'es' | 'en'} />
         <LanguageProvider initialLang={lang as 'es' | 'en'}>
           <ScrollAnimationObserver />
           <ZeroGravityWrapper />
