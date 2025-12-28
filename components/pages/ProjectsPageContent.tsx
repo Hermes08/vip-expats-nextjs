@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
+import { motion } from 'framer-motion';
 import { CONTENT } from '@/lib/constants';
 import ProjectCard from '@/components/ProjectCard';
 import { Search, Map, TrendingUp, Info, ChevronDown, Filter, ShieldCheck } from 'lucide-react';
@@ -14,18 +15,34 @@ const ProjectsPageContent: React.FC = () => {
     const { projects } = useCMS();
     const [activeZone, setActiveZone] = useState<string>('All');
     const [activeType, setActiveType] = useState<string>('Any');
+    const [searchTerm, setSearchTerm] = useState('');
     const t = CONTENT[lang] || CONTENT['en'];
+
+    // Search Handler (Simple state for now, debounce can be added if performance lags, but for <50 items it's fine)
+    const handleSearchCheck = (project: Project) => {
+        if (!searchTerm) return true;
+        const term = searchTerm.toLowerCase();
+
+        // Search in Name (Current Lang & English fallback)
+        const nameMatch = (project.name[lang] || project.name['en']).toLowerCase().includes(term);
+        const locationMatch = (project.location[lang] || project.location['en']).toLowerCase().includes(term);
+        // Optional: Search description or keywords if deep search required
+
+        return nameMatch || locationMatch;
+    };
 
     const filteredProjects = projects.filter(p => {
         const zoneMatch = activeZone === 'All' || p.zone.includes(activeZone as any);
         const typeMatch = activeType === 'Any' || p.type.includes(activeType as any);
-        return zoneMatch && typeMatch;
+        const searchMatch = handleSearchCheck(p);
+
+        return zoneMatch && typeMatch && searchMatch;
     });
 
     return (
         <div className="pt-24 min-h-screen bg-brand-950">
             {/* Header */}
-            {/* Header */}
+            {/* ... (Header code remains unchanged via context lines) ... */}
             <div className="relative pt-40 pb-20 px-4 overflow-hidden">
                 <div className="absolute inset-0 opacity-40">
                     <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80" alt="" className="w-full h-full object-cover grayscale" />
@@ -87,10 +104,21 @@ const ProjectsPageContent: React.FC = () => {
                         <div className="flex-grow md:max-w-sm relative">
                             <input
                                 type="text"
+                                value={searchTerm}
+                                onChange={(e) => setSearchTerm(e.target.value)}
                                 placeholder={lang === 'zh' ? "搜索项目..." : "Search project by keyword..."}
-                                className="w-full pl-12 pr-4 py-3 bg-white/5 rounded-xl text-sm border border-white/10 text-white focus:ring-2 focus:ring-brand-GOLD outline-none transition-all placeholder:text-slate-500"
+                                className="w-full pl-12 pr-10 py-3 bg-white/5 rounded-xl text-sm border border-white/10 text-white focus:ring-2 focus:ring-brand-GOLD outline-none transition-all placeholder:text-slate-500"
                             />
                             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400" size={18} />
+                            {searchTerm && (
+                                <button
+                                    onClick={() => setSearchTerm('')}
+                                    className="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-white"
+                                >
+                                    <span className="sr-only">Clear</span>
+                                    &times;
+                                </button>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -108,27 +136,31 @@ const ProjectsPageContent: React.FC = () => {
                 <ParallaxSection className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 relative z-20">
                     <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
                         {filteredProjects.map((project, index) => (
-                            <div
+                            <motion.div
                                 key={project.id}
-                                className="reveal-on-scroll"
-                                style={{ transitionDelay: `${index * 100}ms` }}
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true, margin: "-50px" }}
+                                transition={{ duration: 0.5, delay: index * 0.1 }}
                             >
                                 <ProjectCard project={project} />
-                            </div>
+                            </motion.div>
                         ))}
                     </div>
 
                     {filteredProjects.length === 0 && (
-                        <div className="text-center py-20">
-                            <p className="text-xl text-gray-400">No projects found matching your criteria.</p>
+                        <div className="text-center py-20 bg-white/5 rounded-3xl border border-white/10">
+                            <p className="text-xl text-gray-400 mb-2">No projects found matching your criteria.</p>
+                            <p className="text-sm text-gray-500 mb-6">Try adjusting your filters or search term.</p>
                             <button
                                 onClick={() => {
                                     setActiveType('All');
                                     setActiveZone('All');
+                                    setSearchTerm('');
                                 }}
-                                className="mt-4 text-brand-GOLD hover:underline"
+                                className="bg-brand-GOLD text-brand-950 px-6 py-2 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-white transition-colors"
                             >
-                                Clear Filters
+                                Clear All Filters
                             </button>
                         </div>
                     )}
