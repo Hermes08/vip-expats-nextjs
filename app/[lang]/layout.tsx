@@ -22,16 +22,16 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const { lang } = await params;
 
   const titles = {
-    es: "ExpatRockstars | Portal de Bienes Raíces e Inversiones en Panamá",
-    en: "ExpatRockstars | Panama Real Estate & Investment Portal"
+    es: "panamarealestatesale | Portal de Bienes Raíces e Inversiones en Panamá",
+    en: "panamarealestatesale | Panama Real Estate & Investment Portal"
   };
 
   const descriptions = {
-    es: "ExpatRockstars - Portal profesional de bienes raíces para pre-construcción, resorts de playa de lujo y propiedades de inversión en montaña en Panamá.",
-    en: "ExpatRockstars - Professional real estate portal for pre-construction, luxury beach resorts and mountain investment properties in Panama."
+    es: "panamarealestatesale - Portal profesional de bienes raíces para pre-construcción, resorts de playa de lujo y propiedades de inversión en montaña en Panamá.",
+    en: "panamarealestatesale - Professional real estate portal for pre-construction, luxury beach resorts and mountain investment properties in Panama."
   };
 
-  const domain = "https://expatrockstars.com"; // User should update this if different
+  const domain = "https://panamarealestatesale.com"; // User should update this if different
 
   return {
     title: titles[lang as keyof typeof titles] || titles.es,
@@ -43,6 +43,42 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         'es-PA': `${domain}/es`,
         'x-default': `${domain}/es`,
       },
+          openGraph: {
+      type: 'website',
+      locale: lang === 'es' ? 'es_PA' : 'en_US',
+      url: `${domain}/${lang}`,
+      siteName: titles[lang as keyof typeof titles] || titles.es,
+      title: titles[lang as keyof typeof titles] || titles.es,
+      description: descriptions[lang as keyof typeof descriptions] || descriptions.es,
+      images: [
+        {
+          url: `${domain}/og-image.jpg`,
+          width: 1200,
+          height: 630,
+          alt: titles[lang as keyof typeof titles] || titles.es,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: titles[lang as keyof typeof titles] || titles.es,
+      description: descriptions[lang as keyof typeof descriptions] || descriptions.es,
+      images: [`${domain}/og-image.jpg`],
+    },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
+    },
+    verification: {
+      google: 'your-google-verification-code',
+    }
     },
   };
 }
