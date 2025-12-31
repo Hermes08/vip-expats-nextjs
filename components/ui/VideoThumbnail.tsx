@@ -13,7 +13,10 @@ export default function VideoThumbnail({ videoUrl, title, className = '' }: Vide
     const [isPlaying, setIsPlaying] = useState(false);
 
     // Extract video ID (supports standard YouTube URLs)
-    const videoId = videoUrl.includes('v=') ? videoUrl.split('v=')[1]?.split('&')[0] : videoUrl.split('/').pop();
+    const videoId = videoUrl.includes('v=')
+        ? videoUrl.split('v=')[1]?.split('&')[0]
+        : videoUrl.split('/').pop()?.split('?')[0];
+
     // Support time start if present (e.g. t=681)
     const timeStart = videoUrl.includes('t=') ? videoUrl.split('t=')[1]?.split('&')[0] : '0';
 

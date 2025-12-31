@@ -12,7 +12,9 @@ export default function VideoSection({ videoUrl }: VideoSectionProps) {
 
     const getEmbedUrl = (url: string) => {
         if (isYouTube) {
-            const videoId = url.includes('v=') ? url.split('v=')[1]?.split('&')[0] : url.split('/').pop();
+            const videoId = url.includes('v=')
+                ? url.split('v=')[1]?.split('&')[0]
+                : url.split('/').pop()?.split('?')[0];
             return `https://www.youtube.com/embed/${videoId}`;
         }
         if (isVimeo) {

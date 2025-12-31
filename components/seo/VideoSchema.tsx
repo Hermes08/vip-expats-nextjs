@@ -11,8 +11,11 @@ interface VideoSchemaProps {
 }
 
 export default function VideoSchema({ videoUrl, name, description, uploadDate, thumbnailUrl }: VideoSchemaProps) {
-    // Extract video ID for fallback thumbnail
-    const videoId = videoUrl.includes('v=') ? videoUrl.split('v=')[1]?.split('&')[0] : videoUrl.split('/').pop();
+    // Extract video ID (supports standard YouTube URLs)
+    const videoId = videoUrl.includes('v=')
+        ? videoUrl.split('v=')[1]?.split('&')[0]
+        : videoUrl.split('/').pop()?.split('?')[0];
+
     const finalThumbnail = thumbnailUrl || `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 
     const schema = {

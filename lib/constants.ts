@@ -401,7 +401,7 @@ export const PROJECTS: Project[] = [
     sqft: '250 - 650',
     unitsAvailable: 4,
     faqs: [],
-    videoUrl: 'https://www.youtube.com/watch?v=5z_Tsk8c7mQ', // Buenaventura Marina Promo
+    videoUrl: 'https://www.youtube.com/watch?v=d9ijDk-Q_go', // Buenaventura Marina Promo
     floorplans: [
       {
         name: { en: 'Marina Loft', es: 'Loft de la Marina', zh: '游艇码头LOFT' },
