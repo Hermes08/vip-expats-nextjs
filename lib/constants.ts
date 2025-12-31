@@ -141,7 +141,7 @@ export const PROJECTS: Project[] = [
     sqft: '105 - 150',
     unitsAvailable: 8,
     faqs: [],
-    videoUrl: 'https://www.youtube.com/watch?v=d9ijDk-Q_go', // Branded Residences Promo
+    videoUrl: 'https://www.youtube.com/watch?v=sKaFb9NJfEE',
     floorplans: [
       {
         name: { en: '1-2 Bedroom Residences', es: 'Residencias de 1-2 Recámaras', zh: '1-2 卧室住宅' },
