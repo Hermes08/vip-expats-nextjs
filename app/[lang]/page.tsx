@@ -9,6 +9,8 @@ import { ArrowRight, Compass, ShieldCheck, Globe, TrendingUp, CheckCircle, PlayC
 import { useLanguage } from '@/context/LanguageContext';
 import HeroTilt from '@/components/ui/HeroTilt';
 import SplitText from '@/components/ui/SplitText';
+import VideoThumbnail from '@/components/ui/VideoThumbnail';
+import VideoSchema from '@/components/seo/VideoSchema';
 
 const HeroCarousel: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -122,11 +124,26 @@ export default function Home() {
               ))}
             </div>
           </div>
+
+          {/* HOMEPAGE VIDEO INSERTION */}
+          <div className="mt-20 max-w-4xl mx-auto px-4 reveal-on-scroll">
+            <VideoThumbnail
+              videoUrl="https://youtu.be/sDW0cwto6aQ?t=681"
+              title="Experience The ExpatRockstars Lifestyle"
+              className="w-full max-w-lg mx-auto shadow-2xl border-2 border-brand-GOLD/30 rounded-3xl"
+            />
+            <VideoSchema
+              videoUrl="https://youtu.be/sDW0cwto6aQ?t=681"
+              name="ExpatRockstars: Panama Luxury Real Estate Experience"
+              description="See why international investors choose ExpatRockstars for their Panama relocation and investment journey."
+              uploadDate="2024-01-01"
+            />
+          </div>
         </div>
-      </section>
+      </section >
 
       {/* FEATURED ASSETS: FLOATING CARDS */}
-      <section className="py-32 bg-black relative">
+      < section className="py-32 bg-black relative" >
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-10 reveal-on-scroll">
             <div className="max-w-2xl">
@@ -144,10 +161,10 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section >
 
       {/* INVESTMENT ROI: PREMIUM DARK EXPERIENCE */}
-      <section className="py-32 bg-brand-950 border-y border-white/5">
+      < section className="py-32 bg-brand-950 border-y border-white/5" >
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-24 items-center reveal-on-scroll">
             <div className="relative p-12 lg:p-20 glass-card rounded-[4rem] border-white/5 shadow-inner">
@@ -184,7 +201,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section >
 
       <div className="reveal-on-scroll">
         <LeadMagnet />

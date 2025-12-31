@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { Award, Compass, TrendingUp, ShieldCheck, Star, Users, Map, Heart, Shield, Globe, BookOpen, CheckCircle, MapPin, ArrowRight, Info, AlertTriangle } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 import { SEO_KEYWORDS_LIST } from '@/lib/constants';
+import VideoThumbnail from '@/components/ui/VideoThumbnail';
 
 const AboutPageContent: React.FC = () => {
     const { lang } = useLanguage();
@@ -38,6 +39,15 @@ const AboutPageContent: React.FC = () => {
                     <p>
                         Our mission is to act as your <strong>panama real estate advisors</strong> and ground team. Whether you are searching for <strong>panama condos on the beach</strong> or a <strong>panama luxury retirement</strong> estate in the mountains, we provide the <strong>panama real estate expertise</strong> required to avoid common pitfalls. From <strong>panama relocation tours</strong> to final title handover, we are with you every step of the way.
                     </p>
+
+                    <div className="my-16 flex justify-center not-prose">
+                        <VideoThumbnail
+                            videoUrl="https://youtu.be/sDW0cwto6aQ?t=681"
+                            title="See the ExpatRockstars Difference"
+                            className="w-full max-w-2xl shadow-2xl border-4 border-brand-GOLD/10 rounded-3xl"
+                        />
+                    </div>
+
                     <div className="bg-neutral-50 p-12 rounded-[3rem] border border-neutral-100 not-prose my-16 shadow-inner">
                         <div className="flex flex-col md:flex-row gap-12 items-center">
                             <div className="md:w-1/3">

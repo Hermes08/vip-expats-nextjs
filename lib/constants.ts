@@ -141,7 +141,7 @@ export const PROJECTS: Project[] = [
     sqft: '105 - 150',
     unitsAvailable: 8,
     faqs: [],
-    videoUrl: 'https://www.youtube.com/watch?v=sKaFb9NJfEE', // Branded Residences Promo
+    videoUrl: 'https://www.youtube.com/watch?v=d9ijDk-Q_go', // Branded Residences Promo
     floorplans: [
       {
         name: { en: 'Grand Studio', es: 'Gran Studio', zh: '豪华单身公寓' },
@@ -1063,7 +1063,7 @@ export const PROJECTS: Project[] = [
       es: 'Empire Residences establece un nuevo estándar de lujo en el exclusivo Santa María Golf & Country Club.',
       zh: 'Empire Residences 在独家的圣玛丽亚高尔夫乡村俱乐部树立了豪华的新标准。'
     },
-    videoUrl: 'https://www.youtube.com/watch?v=De8xmb5HwmM',
+    videoUrl: 'https://www.youtube.com/watch?v=JjRQCPdkrrs',
     images: ['https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&q=80', 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80'],
     priceFrom: 550000,
     beds: '3-4',

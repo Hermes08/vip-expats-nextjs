@@ -126,7 +126,7 @@ const ProjectsPageContent: React.FC = () => {
             </div>
 
             {/* Main Grid Content */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-48 pb-20">
                 <div className="flex justify-between items-center mb-16">
                     <p className="text-[10px] font-black text-brand-GOLD uppercase tracking-[0.3em]">
                         Showing {filteredProjects.length} Verified Rockstar Assets
