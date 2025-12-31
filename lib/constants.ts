@@ -1265,7 +1265,19 @@ export const PROJECTS: Project[] = [
         }
       }
     ],
-    faqs: []
+    faqs: [],
+    residencyInfo: {
+      en: `Altos del Maria is the top choice for mountain lovers seeking **panama residency through real estate**. With homes qualifying for the Qualified Investor Visa, you can **relocate to panama**'s highlands in record time. It is the premier community for the **pensionado visa panama**.
+
+      The cool climate makes it a favorite for those using the **pensionado visa panama**. We also assist younger families with the **friendly nations visa panama**.
+
+      Our **panama real estate legal guide** includes specific expertise on mountain land titles and water rights, ensuring your mountain sanctuary is legally sound.`,
+      es: `Altos del María es la mejor opción para amantes de la montaña buscando **residencia en panamá**. Las casas califican para la Visa de Inversionista Calificado.
+
+      El clima fresco lo hace favorito para la **visa pensionado panamá**. También asistimos con la **visa de naciones amigas**.
+
+      Nuestra **guía legal** incluye experiencia específica en títulos de tierras de montaña y derechos de agua.`
+    }
   },
   {
     id: 'mova',
@@ -1359,7 +1371,19 @@ export const PROJECTS: Project[] = [
         }
       }
     ],
-    faqs: []
+    faqs: [],
+    residencyInfo: {
+      en: `MOVA is an ideal investment for the **panama residency through real estate** program. Qualifying units ($300k+) grant the fast-track Qualified Investor Visa. Its central location also makes it perfect for the **friendly nations visa panama** for working professionals.
+
+      For active retirees, MOVA offers a city-center lifestyle compatible with the **pensionado visa panama**. You are steps from banking and healthcare.
+
+      We include a **panama real estate legal guide** focused on pre-construction contracts, protecting your investment during the delivery phase.`,
+      es: `MOVA es ideal para el programa de **residencia en panamá**. Las unidades que califican otorgan la Visa de Inversionista Calificado.
+
+      Para jubilados activos, MOVA es compatible con la **visa pensionado panamá** por su ubicación céntrica.
+
+      Incluimos una **guía legal** enfocada en contratos de pre-construcción para proteger su inversión.`
+    }
   },
   {
     id: 'towncenter-boquete',
