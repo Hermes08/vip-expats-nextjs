@@ -128,13 +128,13 @@ const ProjectsPageContent: React.FC = () => {
             {/* Main Grid Content */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-48 pb-20">
                 <div className="flex justify-between items-center mb-16">
-                    <p className="text-[10px] font-black text-brand-GOLD uppercase tracking-[0.3em]">
+                    <p className="text-sm font-black text-brand-GOLD uppercase tracking-[0.2em] mb-4">
                         Showing {filteredProjects.length} Verified Rockstar Assets
                     </p>
                 </div>
 
                 {/* Projects Grid */}
-                <ParallaxSection className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 relative z-20">
+                <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 relative z-20">
                     <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
                         {filteredProjects.map((project, index) => (
                             <motion.div
@@ -167,7 +167,7 @@ const ProjectsPageContent: React.FC = () => {
                             </button>
                         </div>
                     )}
-                </ParallaxSection>
+                </div>
 
                 {/* SECTION: MASSIVE NEIGHBORHOOD ANALYSIS */}
                 <div className="mt-32 pt-20 border-t border-white/5">

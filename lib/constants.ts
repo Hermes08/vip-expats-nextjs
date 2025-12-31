@@ -144,25 +144,36 @@ export const PROJECTS: Project[] = [
     videoUrl: 'https://www.youtube.com/watch?v=d9ijDk-Q_go', // Branded Residences Promo
     floorplans: [
       {
-        name: { en: 'Grand Studio', es: 'Gran Studio', zh: '豪华单身公寓' },
-        size: '105 m2 (1130 sq.ft)',
+        name: { en: '1-2 Bedroom Residences', es: 'Residencias de 1-2 Recámaras', zh: '1-2 卧室住宅' },
+        size: '80 m2',
         price: 320000,
         image: '/images/placeholders/studio_apartment_floorplan.png',
         characteristics: {
-          en: ['Ocean View Terrace', 'Marble Floors', 'Italian Kitchen', 'Marriott Room Service'],
-          es: ['Terraza con Vista al Mar', 'Pisos de Mármol', 'Cocina Italiana', 'Servicio a la habitación Marriott'],
-          zh: ['海景露台', '大理石地板', '意大利厨房', '万豪客房服务']
+          en: ['Compact Luxury', 'Beachfront', 'Marriott Services'],
+          es: ['Lujo Compacto', 'Frente al Mar', 'Servicios Marriott'],
+          zh: ['紧凑奢华', '海滨', '万豪服务']
         }
       },
       {
-        name: { en: 'Executive Suite', es: 'Suite Ejecutiva', zh: '行政套房' },
-        size: '150 m2 (1614 sq.ft)',
+        name: { en: '2 Bedroom + Study', es: '2 Recámaras + Estudio', zh: '2 卧室 + 书房' },
+        size: '128 m2',
         price: 450000,
         image: '/images/placeholders/modern_floorplan_1.png',
         characteristics: {
-          en: ['Master Suite with Walk-in Closet', 'Home Office Space', 'Panoramic Balcony', 'Smart Lock Access'],
-          es: ['Suite Principal con Walk-in Closet', 'Espacio para Oficina', 'Balcón Panorámico', 'Acceso con Cerradura Inteligente'],
-          zh: ['主卧套房带步入式衣橱', '办公空间', '全景阳台', '智能门锁']
+          en: ['Extra Study Room', 'Ocean View', 'Integrated Kitchen'],
+          es: ['Estudio Adicional', 'Vista al Mar', 'Cocina Integrada'],
+          zh: ['额外书房', '海景', '集成厨房']
+        }
+      },
+      {
+        name: { en: 'Premium Unit', es: 'Unidad Premium', zh: '高级单元' },
+        size: 'Up to 209 m2',
+        price: 650000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['Penthouse Level', 'Panoramic Terrace', 'Expansive Layout'],
+          es: ['Nivel Penthouse', 'Terraza Panorámica', 'Diseño Expansivo'],
+          zh: ['顶层公寓', '全景露台', '宽敞布局']
         }
       }
     ],
@@ -274,25 +285,25 @@ export const PROJECTS: Project[] = [
     videoUrl: 'https://www.youtube.com/watch?v=uKofVNo1T5A', // Boquete Life Promo
     floorplans: [
       {
-        name: { en: 'Mountain Cabin', es: 'Cabaña de Montaña', zh: '山间木屋' },
-        size: '85 m2 (915 sq.ft)',
+        name: { en: '2 Bedroom Condo', es: 'Condo de 2 Recámaras', zh: '2 卧室公寓' },
+        size: '100 m2',
         price: 245000,
         image: '/images/placeholders/studio_apartment_floorplan.png',
         characteristics: {
-          en: ['Fireplace Ready', 'River Sound View', 'Exposed Wood Beams', 'Garden Path Access'],
-          es: ['Listo para Chimenea', 'Vista al Sonido del Río', 'Vigas de Madera Expuestas', 'Acceso a Sendero de Jardín'],
-          zh: ['壁炉就绪', '溪流景观', '外露木梁', '花园步道入户']
+          en: ['2 Bedrooms', '2 Bathrooms', 'Greenery Views'],
+          es: ['2 Recámaras', '2 Baños', 'Vistas Verdes'],
+          zh: ['2 卧室', '2 浴室', '绿意盎然']
         }
       },
       {
-        name: { en: 'Valley Villa', es: 'Villa del Valle', zh: '溪谷别墅' },
-        size: '180 m2 (1937 sq.ft)',
+        name: { en: 'Country Club Unit', es: 'Unidad Country Club', zh: '乡村俱乐部单元' },
+        size: '120 - 180 m2',
         price: 395000,
         image: '/images/placeholders/luxury_villa_floorplan.png',
         characteristics: {
-          en: ['3 Bedrooms + Den', 'High Altitude Insulation', 'Large Greenhouse Window', 'Wine Cellar Space'],
-          es: ['3 Recámaras + Den', 'Aislamiento de Altura', 'Ventana Grande tipo Invernadero', 'Espacio para Cava de Vinos'],
-          zh: ['3 卧室 + 工作室', '高海拔隔热', '大型温室窗', '酒窖空间']
+          en: ['Golf Views', 'Large Terrace', 'Mountain Breeze'],
+          es: ['Vistas al Golf', 'Terraza Grande', 'Brisa de Montaña'],
+          zh: ['高尔夫景观', '大露台', '山风']
         }
       }
     ],
@@ -791,43 +802,99 @@ export const PROJECTS: Project[] = [
     id: 'silverbay',
     slug: 'silverbay-panama',
     name: { en: 'SilverBay', es: 'SilverBay', zh: 'SilverBay' },
-    location: { en: 'Bahia de Panama', es: 'Bahía de Panamá', zh: '巴拿马湾' },
+    location: { en: 'Marbella, Panama City', es: 'Marbella, Ciudad de Panamá', zh: 'Marbella, 巴拿马城' },
     type: ['Condo'],
     zone: ['City'],
     status: 'Presale',
     h1Title: {
-      en: 'SilverBay Panama | Luxury Bayfront Living | ExpatRockstars',
-      es: 'SilverBay Panamá | Vida de Lujo frente a la Bahía',
-      zh: 'SilverBay 巴拿马 | 豪华湾畔生活'
+      en: 'SilverBay Panama | Intelligent Investment in Marbella | ExpatRockstars',
+      es: 'SilverBay Panamá | Inversión Inteligente en Marbella',
+      zh: 'SilverBay Panama | 玛贝拉智能投资'
     },
     description: {
-      en: 'SilverBay offers exclusive residences with stunning views of the Panama Bay.',
-      es: 'SilverBay ofrece residencias exclusivas con impresionantes vistas a la Bahía de Panamá.',
-      zh: 'SilverBay 提供享有巴拿马湾壮丽景色的独家住宅。'
+      en: 'Discover SilverBay, the boutique residential project redefining intelligent investment in Panama City\'s prestigious Marbella district.',
+      es: 'Descubre SilverBay, el proyecto residencial boutique que redefine la inversión inteligente en el prestigioso distrito de Marbella.',
+      zh: '探索 SilverBay，这个精品住宅项目正在重新定义巴拿马城著名的玛贝拉区的智能投资。'
+    },
+    longDescription: {
+      en: `**SilverBay: Your Solid Investment in Panama's Rising Market**
+
+      Discover SilverBay, the boutique residential project redefining intelligent investment in Panama City. Located in the prestigious Marbella district, SilverBay combines prime location with high-yield rental potential in one of the capital's fastest-appreciating zones.
+
+      **Strategic Location & All-Inclusive Living**
+      Positioned in Bella Vista's epicenter of urban development, SilverBay places you at the heart of Panama's cosmopolitan lifestyle. The neighborhood pulses with restaurants, shopping, and cultural attractions—all within walking distance.
+
+      **Smart Investment Architecture**
+      This isn't just a residence—it's a revenue-generating asset. SilverBay features an innovative all-inclusive model with professional property management, turning your apartment into a sustainable income stream. The building's boutique scale ensures personalized service while maintaining exclusivity.
+
+      **Flexible Floor Plans for Every Lifestyle**
+      From efficient studios starting at 37 m² to spacious two-bedroom layouts reaching 89 m², each unit maximizes functionality with floor-to-ceiling windows (3-meter height), modern kitchens, integrated laundry centers, and private balconies.
+
+      **Technology Meets Design**
+      Every detail reflects forward-thinking design: premium finishes, smart layouts that enhance daily living, and architectural elements that capture natural light throughout the day. Innovation generates real income here.`,
+      es: `**SilverBay: Su Inversión Sólida en el Mercado en Alza de Panamá**
+      
+      Descubra SilverBay, el proyecto residencial boutique que redefine la inversión inteligente en la Ciudad de Panamá. Ubicado en el prestigioso distrito de Marbella, SilverBay combina una ubicación privilegiada con un alto potencial de rendimiento de alquiler en una de las zonas de más rápida apreciación de la capital. Estructurado para generar ingresos sostenibles con gestión profesional.`,
+      zh: `SilverBay：您在巴拿马新兴市场的稳健投资。位于着名的玛贝拉区，重新定义了智能投资。`
     },
     videoUrl: 'https://www.youtube.com/watch?v=xFYq9t69pvE',
     images: ['https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1200&q=80', 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80'],
-    priceFrom: 280000,
+    priceFrom: 118000,
     beds: '1-3',
     baths: '1.5-3.5',
-    sqft: '80 - 200',
+    sqft: '37 - 89',
     unitsAvailable: 10,
     amenities: {
-      en: ['Bay View Pool', 'Gym', 'Social Area', 'Concierge'],
-      es: ['Piscina con Vista a la Bahía', 'Gimnasio', 'Área Social', 'Conserje'],
-      zh: ['海湾景观泳池', '健身房', '社交区', '礼宾服务']
+      en: ['Boutique Scale', 'Professional Property Management', 'Smart Layouts', 'Walking Distance to Dining'],
+      es: ['Escala Boutique', 'Gestión Profesional', 'Diseños Inteligentes', 'A pasos de restaurantes'],
+      zh: ['精品规模', '专业物业管理', '智能布局', '步行可达餐饮']
     },
     highlights: {
-      en: ['Prime Location', 'Ocean Views', 'Modern Design'],
-      es: ['Ubicación privilegiada', 'Vistas al mar', 'Diseño moderno'],
-      zh: ['黄金地段', '海景', '现代设计']
+      en: ['Marbella Location', 'High Yield Potential', '3-meter Ceilings'],
+      es: ['Ubicación en Marbella', 'Alto Potencial de Rendimiento', 'Techos de 3 metros'],
+      zh: ['玛贝拉位置', '高收益潜力', '3米层高']
     },
-    keywords: ["silverbay panama", "panama bay condos"],
+    keywords: ["silverbay panama", "marbella panama real estate", "panama investment property"],
     marketAnalysis: {
-      en: "High demand for bayfront properties.",
-      es: "Alta demanda de propiedades frente a la bahía.",
-      zh: "海湾物业需求量大。"
+      en: "Marbella is a high-appreciation zone with strong rental demand.",
+      es: "Marbella es una zona de alta apreciación con fuerte demanda de alquiler.",
+      zh: "玛贝拉是一个升值潜力大且租赁需求强劲的区域。"
     },
+    floorplans: [
+      {
+        name: { en: 'Model A', es: 'Modelo A', zh: 'A型' },
+        size: '62 m2',
+        price: 180000,
+        image: '/images/placeholders/modern_floorplan_1.png',
+        characteristics: {
+          en: ['Premium Layout', 'City Views', 'Integrated Laundry'],
+          es: ['Diseño Premium', 'Vistas a la Ciudad', 'Lavandería Integrada'],
+          zh: ['高级布局', '城市景观', '集成洗衣房']
+        }
+      },
+      {
+        name: { en: 'Model B', es: 'Modelo B', zh: 'B型' },
+        size: '54 m2',
+        price: 155000,
+        image: '/images/placeholders/studio_apartment_floorplan.png',
+        characteristics: {
+          en: ['Efficient Design', 'Balcony', 'Modern Kitchen'],
+          es: ['Diseño Eficiente', 'Balcón', 'Cocina Moderna'],
+          zh: ['高效设计', '阳台', '现代厨房']
+        }
+      },
+      {
+        name: { en: 'Model E (Studio)', es: 'Modelo E (Estudio)', zh: 'E型 (单间)' },
+        size: '37 m2',
+        price: 118000,
+        image: '/images/placeholders/studio_apartment_floorplan.png',
+        characteristics: {
+          en: ['Entry Level Investment', 'High Rental Demand', 'Smart Space'],
+          es: ['Inversión Inicial', 'Alta Demanda de Alquiler', 'Espacio Inteligente'],
+          zh: ['入门级投资', '高租赁需求', '智能空间']
+        }
+      }
+    ],
     faqs: []
   },
   {
@@ -839,38 +906,81 @@ export const PROJECTS: Project[] = [
     zone: ['City'],
     status: 'Ready to Move',
     h1Title: {
-      en: 'Allure Punta Pacifica | Iconic Luxury Towers | ExpatRockstars',
-      es: 'Allure Punta Pacifica | Torres Icónicas de Lujo',
-      zh: 'Allure Punta Pacifica | 标志性豪华塔楼'
+      en: 'Allure Punta Pacifica | Organic Design & Ocean Living',
+      es: 'Allure Punta Pacifica | Donde el Diseño Orgánico se Encuentra con el Mar',
+      zh: 'Allure Punta Pacifica | 有机设计与海洋生活'
     },
     description: {
-      en: 'A landmark tower in the heart of Punta Pacifica offering world-class amenities.',
-      es: 'Una torre emblemática en el corazón de Punta Pacífica que ofrece amenidades de clase mundial.',
-      zh: '位于蓬塔帕西菲卡中心的标志性塔楼，提供世界一流的设施。'
+      en: 'Allure Punta Pacifica is an intimate 10-story tower redefining waterfront luxury with nature-inspired design.',
+      es: 'Allure Punta Pacífica es una torre íntima de 10 pisos que redefine el lujo frente al mar con un diseño inspirado en la naturaleza.',
+      zh: 'Allure Punta Pacifica 是一座亲密的 10 层塔楼，以自然为灵感的设计重新定义了海滨奢华。'
+    },
+    longDescription: {
+      en: `**Allure at Punta Pacifica: Where Organic Design Meets Ocean Living**
+
+      Welcome to Allure, a residential masterpiece that embodies the pure essence of waterfront luxury in Panama City's most established neighborhood. This intimate 10-story tower redefines sophisticated living through nature-inspired design and layouts that actually work for daily life.
+
+      **Destined to Become an Icon**
+      Allure's fluid, organic architecture creates a visual landmark along Punta Pacifica's coveted oceanfront. Developed by an experienced team with proven success, this project prioritizes quality over quantity—just 44 residences sharing world-class amenities.
+
+      **Intelligent Layouts, Not Wasted Space**
+      Every residence (115-302 m²) focuses on practical, day-to-day functionality. Model 5 exemplifies this: at 115.37 m², the kitchen flows seamlessly into living/dining areas that connect to a spacious balcony, flooding the space with natural light. Three bedrooms cluster together—ideal for families—with the master featuring a walk-in closet, two full bathrooms, and dedicated laundry.
+
+      **Location Without Compromise**
+      Situated between JW Marriott and Grand Tower, Allure places you steps from Multiplaza Mall, private hospitals, and Panama's finest dining. This is walkable urbanism: everything within 15 minutes, yet your home remains a serene oceanfront retreat.
+
+      **Amenities Designed for Living**
+      The rooftop infinity pool offers open ocean views, while below you'll find a biophilic garden, co-working spaces, fitness center, yoga room, and massage facilities. A small retail component adds convenience without disrupting the residential atmosphere.`,
+      es: `Allure at Punta Pacifica: Donde el diseño orgánico se encuentra con la vida oceánica. Bienvenido a Allure, una obra maestra residencial que encarna la esencia pura del lujo frente al mar en el barrio más establecido de la Ciudad de Panamá.`,
+      zh: `Allure at Punta Pacifica：有机设计与海洋生活的结合。欢迎来到 Allure，这是一个体现巴拿马城最成熟社区海滨奢华纯粹精髓的住宅杰作。`
     },
     videoUrl: 'https://www.youtube.com/watch?v=16FTZua6R88',
     images: ['https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=1200&q=80', 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80'],
     priceFrom: 450000,
     beds: '2-4',
     baths: '2.5-4.5',
-    sqft: '150 - 350',
+    sqft: '115 - 302',
     unitsAvailable: 5,
     amenities: {
-      en: ['Infinity Pool', 'Spa', 'Squash Court', 'Business Center'],
-      es: ['Piscina Infinity', 'Spa', 'Cancha de Squash', 'Centro de Negocios'],
-      zh: ['无边泳池', '水疗中心', '壁球场', '商务中心']
+      en: ['Rooftop Infinity Pool', 'Biophilic Garden', 'Co-working Spaces', 'Yoga Room'],
+      es: ['Piscina Infinity en Azotea', 'Jardín Biofílico', 'Espacios de Co-working', 'Sala de Yoga'],
+      zh: ['屋顶无边泳池', '亲生物花园', '联合办公空间', '瑜伽室']
     },
     highlights: {
-      en: ['Luxury Finishes', 'Central Location', 'High Security'],
-      es: ['Acabados de Lujo', 'Ubicación Céntrica', 'Alta Seguridad'],
-      zh: ['豪华装修', '中心位置', '高安全性']
+      en: ['Organic Architecture', 'Walkable Urbanism', 'Intimate Scale (44 units)'],
+      es: ['Arquitectura Orgánica', 'Urbanismo Caminable', 'Escala Íntima (44 unidades)'],
+      zh: ['有机建筑', '适宜步行的城市主义', '亲密规模（44 个单元）']
     },
-    keywords: ["allure punta pacifica", "punta pacifica condos"],
+    keywords: ["allure punta pacifica", "punta pacifica condos", "panama organic design"],
     marketAnalysis: {
-      en: "Punta Pacifica remains a top investment choice.",
-      es: "Punta Pacífica sigue siendo una de las mejores opciones de inversión.",
-      zh: "蓬塔帕西菲卡仍然是首选投资选择。"
+      en: "Punta Pacifica's limited inventory supports long-term value.",
+      es: "El inventario limitado de Punta Pacífica respalda el valor a largo plazo.",
+      zh: "蓬塔帕西菲卡有限的库存支持长期价值。"
     },
+    floorplans: [
+      {
+        name: { en: 'Model 5', es: 'Modelo 5', zh: '5型' },
+        size: '115.37 m2',
+        price: 450000,
+        image: '/images/placeholders/modern_floorplan_1.png',
+        characteristics: {
+          en: ['3 Bedrooms', 'Flowing Layout', 'Oceanfront Balcony', 'Walk-in Closet'],
+          es: ['3 Recámaras', 'Diseño Fluido', 'Balcón Frente al Mar', 'Walk-in Closet'],
+          zh: ['3 卧室', '流畅布局', '海滨阳台', '步入式衣橱']
+        }
+      },
+      {
+        name: { en: 'Grand Residence', es: 'Gran Residencia', zh: '豪华住宅' },
+        size: '271 m2',
+        price: 950000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['Expansive Living Area', 'Maids Quarters', 'Direct Ocean View'],
+          es: ['Área de Sala Expansiva', 'Cuarto de Servicio', 'Vista Directa al Mar'],
+          zh: ['宽敞起居区', '保姆房', '一线海景']
+        }
+      }
+    ],
     faqs: []
   },
   {
@@ -882,38 +992,92 @@ export const PROJECTS: Project[] = [
     zone: ['City'],
     status: 'Presale',
     h1Title: {
-      en: 'Cavarossa Amador | Causeway Living | ExpatRockstars',
-      es: 'Cavarossa Amador | Vida en el Causeway',
-      zh: 'Cavarossa Amador | 堤道生活'
+      en: 'Cavarossa Amador | The Secret of Amador Revealed | ExpatRockstars',
+      es: 'Cavarossa Amador | El Secreto de Amador Revelado',
+      zh: 'Cavarossa Amador | 天堂的秘密揭晓'
     },
     description: {
-      en: 'Experience the unique lifestyle of the Amador Causeway at Cavarossa.',
-      es: 'Experimenta el estilo de vida único de la Calzada de Amador en Cavarossa.',
-      zh: '在 Cavarossa 体验阿马多尔堤道的独特生活方式。'
+      en: 'Where Italian sea meets Panama\'s Pacific shore. Cavarossa is a sophisticated residential treasure on the renovated Amador Causeway.',
+      es: 'Donde el mar italiano se encuentra con la costa del Pacífico de Panamá. Cavarossa es un tesoro residencial sofisticado en el renovado Causeway de Amador.',
+      zh: '意大利海与巴拿马太平洋海岸的交汇处。Cavarossa 是阿马多尔堤道上的精致住宅珍宝。'
+    },
+    longDescription: {
+      en: `**CAVAROSSA: The Secret of Amador Revealed**
+
+      Where the Italian sea meets Panama's Pacific shore, CAVAROSSA emerges as the Causeway's best-kept secret—a residential treasure where history, ocean majesty, and sophisticated living converge in perfect harmony.
+
+      **A Journey Through Italian Elegance**
+      CAVAROSSA's story transports you through Mediterranean waters and mysterious Italian caves, translated into architectural poetry on Panama's most prestigious waterfront. This is where nobody dared to dream this big—until now. Every detail has been meticulously crafted to blend natural beauty with refined design.
+
+      **The Authentic Secret of Amador**
+      From its privileged position facing the Pacific, CAVAROSSA commands uninterrupted ocean views framing the Canal's Pacific entrance. The Amador Causeway is renowned for prestige and beauty, and CAVAROSSA integrates seamlessly into this exclusive environment.
+
+      **Residences That Reflect the Sea**
+      Choose from sophisticated floor plans (60-106 m²) where every unit enjoys spectacular ocean vistas. Including intimate 60 m² studios with first-line views and spacious 94-106 m² residences with expansive terraces.
+
+      **Club Cavarossa: Mediterranean Living**
+      The top-floor club offers exclusive amenities with the best ocean views. The Boardwalk Gallery below combines private spaces with an exclusive outdoor plaza, creating unique experiences that transport you to the European Mediterranean.`,
+      es: `CAVAROSSA: El Secreto de Amador Revelado. Donde el mar italiano se encuentra con la costa del Pacífico de Panamá, CAVAROSSA emerge como el secreto mejor guardado del Causeway.`,
+      zh: `CAVAROSSA：阿马多尔的秘密揭晓。在意大利海与巴拿马太平洋海岸交汇的地方，CAVAROSSA 成为堤道保存最完好的秘密。`
     },
     videoUrl: 'https://www.youtube.com/watch?v=DyPJZd6v1wM',
     images: ['https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=1200&q=80', 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80'],
-    priceFrom: 300000,
+    priceFrom: 281200,
     beds: '1-3',
     baths: '1-3',
-    sqft: '90 - 180',
+    sqft: '60 - 106',
     unitsAvailable: 8,
     amenities: {
-      en: ['Rooftop Lounge', 'Bike Storage', 'Pool', 'Smart Home Features'],
-      es: ['Salón en la Azotea', 'Almacenamiento de Bicicletas', 'Piscina', 'Características de Hogar Inteligente'],
-      zh: ['屋顶休息室', '自行车存放处', '游泳池', '智能家居功能']
+      en: ['Club Cavarossa', 'Boardwalk Gallery', 'Ocean Front Pool', 'Italian Inspired Plaza'],
+      es: ['Club Cavarossa', 'Galería Boardwalk', 'Piscina Frente al Mar', 'Plaza de Inspiración Italiana'],
+      zh: ['Cavarossa 俱乐部', '木板路画廊', '海滨泳池', '意大利灵感广场']
     },
     highlights: {
-      en: ['Causeway Views', 'Near BioMuseo', 'Active Lifestyle'],
-      es: ['Vistas al Causeway', 'Cerca del BioMuseo', 'Estilo de Vida Activo'],
-      zh: ['堤道景观', '靠近生物博物馆', '积极生活方式']
+      en: ['Uninterrupted Ocean Views', 'Mediterranean Concept', 'Causeway Location'],
+      es: ['Vistas Ininterrumpidas al Mar', 'Concepto Mediterráneo', 'Ubicación en Causeway'],
+      zh: ['无遮挡海景', '地中海概念', '堤道位置']
     },
-    keywords: ["cavarossa panama", "amador causeway real estate"],
+    keywords: ["cavarossa panama", "amador causeway real estate", "panama luxury waterfront"],
     marketAnalysis: {
-      en: "Growing interest in the Amador Causeway area.",
-      es: "Creciente interés en el área de la Calzada de Amador.",
-      zh: "阿马多尔堤道地区日益受到关注。"
+      en: "Amador is Panama's next big tourism and residential hub.",
+      es: "Amador es el próximo gran centro turístico y residencial de Panamá.",
+      zh: "阿马多尔是巴拿马下一个大型旅游和住宅中心。"
     },
+    floorplans: [
+      {
+        name: { en: 'Model A', es: 'Modelo A', zh: 'A型' },
+        size: '60 m2',
+        price: 281000,
+        image: '/images/placeholders/studio_apartment_floorplan.png',
+        characteristics: {
+          en: ['1 Bed', '1 Bath', 'First Line View'],
+          es: ['1 Recámara', '1 Baño', 'Vista en Primera Línea'],
+          zh: ['1 卧室', '1 浴室', '一线景观']
+        }
+      },
+      {
+        name: { en: 'Model B', es: 'Modelo B', zh: 'B型' },
+        size: '106 m2',
+        price: 462000,
+        image: '/images/placeholders/modern_floorplan_1.png',
+        characteristics: {
+          en: ['2 Beds', '2.5 Baths', 'Premium Layout'],
+          es: ['2 Recámaras', '2.5 Baños', 'Diseño Premium'],
+          zh: ['2 卧室', '2.5 浴室', '高级布局']
+        }
+      },
+      {
+        name: { en: 'Model E/F', es: 'Modelo E/F', zh: 'E/F型' },
+        size: '94 m2',
+        price: 434000,
+        image: '/images/placeholders/modern_floorplan_1.png',
+        characteristics: {
+          en: ['2 Beds', '2.5 Baths', 'Spacious Terrace'],
+          es: ['2 Recámaras', '2.5 Baños', 'Terraza Amplia'],
+          zh: ['2 卧室', '2.5 浴室', '宽敞露台']
+        }
+      }
+    ],
     faqs: []
   },
   {
@@ -925,21 +1089,40 @@ export const PROJECTS: Project[] = [
     zone: ['Mountain'],
     status: 'Ready to Move',
     h1Title: {
-      en: 'Altos del Maria | Mountain Living Perfection | ExpatRockstars',
-      es: 'Altos del María | Perfección en la Montaña',
-      zh: 'Altos del Maria | 完美的山地生活'
+      en: 'Altos del Maria | Where Mountains Meet Luxury Living',
+      es: 'Altos del María | Donde las Montañas se Encuentran con el Lujo',
+      zh: 'Altos del Maria | 山脉与奢华生活的交汇处'
     },
     description: {
-      en: 'Altos del Maria is a premier mountain community offering cool climate and nature.',
-      es: 'Altos del María es una comunidad de montaña de primer nivel que ofrece clima fresco y naturaleza.',
-      zh: 'Altos del Maria 是一个顶级的山地社区，提供凉爽的气候和自然环境。'
+      en: 'Discover Panama\'s premier mountain sanctuary, where 1,600 exclusive homes nestle among pristine cloud forests.',
+      es: 'Descubre el santuario de montaña premier de Panamá, donde 1,600 hogares exclusivos se anidan entre bosques nubosos.',
+      zh: '探索巴拿马首屈一指的山地避难所，1,600 座专属住宅坐落在原始云雾林中。'
     },
-    videoUrl: 'https://www.youtube.com/watch?v=khlmnErz5No',
+    longDescription: {
+      en: `**Altos del María: Where Mountains Meet Luxury Living**
+
+      Discover Panama's premier mountain sanctuary, where 1,600 exclusive homes nestle among pristine cloud forests at 950-1,000 meters above sea level. Just 90 minutes from Panama City and 30 minutes from Pacific beaches, Altos del María offers a complete escape without leaving civilization behind.
+
+      **A Climate That Changes Everything**
+      Experience year-round comfort in this lush, tropical setting. The elevation delivers cool temperatures and low humidity—a refreshing alternative to coastal living—while maintaining easy access to urban amenities.
+
+      **Residences Designed for Mountain Majesty**
+      From contemporary single-level homes to dramatic three-story estates, every property maximizes the spectacular natural setting. The "Valle Bonito Collection" offers modern mountain homes on large lots with pergolas and fireplaces.
+
+      **Panama's Largest Gated Mountain Community**
+      With over 15,000 hectares, Altos del María features 44 miles of paved roads, three potable water plants, high-speed internet, and 24/7 gated security.
+
+      **Nature at Your Doorstep**
+      Private hiking trails, waterfalls, rivers, and lookout points offer spectacular views of both mountains and Pacific Ocean. It is a complete mountain lifestyle with a residents' club, swimming pools, tennis courts, and more.`,
+      es: `Altos del María: Donde las Montañas se Encuentran con el Lujo. Descubre el santuario de montaña premier de Panamá, donde 1,600 hogares exclusivos se anidan entre bosques nubosos vírgenes.`,
+      zh: `Altos del María：山脉与奢华生活的交汇处。探索巴拿马首屈一指的山地避难所，1,600 座专属住宅坐落在原始云雾林中。`
+    },
+    videoUrl: 'https://www.youtube.com/watch?v=khImnErz5No',
     images: ['https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80', 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200&q=80'],
-    priceFrom: 150000,
-    beds: '2-5',
+    priceFrom: 399000,
+    beds: '3-5',
     baths: '2-5',
-    sqft: '120 - 500',
+    sqft: '144 - 500',
     unitsAvailable: 20,
     amenities: {
       en: ['Hiking Trails', 'Waterfalls', 'Community Center', 'Gated Security'],
@@ -947,59 +1130,134 @@ export const PROJECTS: Project[] = [
       zh: ['徒步小径', '瀑布', '社区中心', '门禁安全']
     },
     highlights: {
-      en: ['Cool Weather', 'Mountain Views', 'Large Lots'],
-      es: ['Clima Fresco', 'Vistas a la Montaña', 'Lotes Grandes'],
-      zh: ['凉爽天气', '山景', '大面积地块']
+      en: ['Cool Weather (950m elevation)', '30 mins to Beach', 'Paved Roads'],
+      es: ['Clima Fresco (950m elevación)', '30 mins a la Playa', 'Carreteras Pavimentadas'],
+      zh: ['凉爽天气（海拔950米）', '30分钟到达海滩', '铺面道路']
     },
-    keywords: ["altos del maria", "panama mountain real estate"],
+    keywords: ["altos del maria", "panama mountain real estate", "panama cloud forest"],
     marketAnalysis: {
-      en: "Steady appreciation in mountain communities.",
-      es: "Apreciación constante en comunidades de montaña.",
-      zh: "山地社区稳步升值。"
+      en: "Mountain properties offer a unique stable asset class.",
+      es: "Las propiedades de montaña ofrecen una clase de activos estable y única.",
+      zh: "山地物业提供了独特的稳定资产类别。"
     },
+    floorplans: [
+      {
+        name: { en: 'Dianela Model', es: 'Modelo Dianela', zh: 'Dianela型' },
+        size: '144.71 m2',
+        price: 429000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['Single Floor', '3 Beds', '2 Baths', 'Imported Finishes'],
+          es: ['Un Piso', '3 Recámaras', '2 Baños', 'Acabados Importados'],
+          zh: ['单层', '3 卧室', '2 浴室', '进口装修']
+        }
+      },
+      {
+        name: { en: 'Mediterranean Villa', es: 'Villa Mediterránea', zh: '地中海别墅' },
+        size: '275 m2',
+        price: 399000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['Large Lot (2,698 m2)', 'Pool', 'Office', 'Ocean Views'],
+          es: ['Lote Grande (2,698 m2)', 'Piscina', 'Oficina', 'Vistas al Mar'],
+          zh: ['大占地', '游泳池', '办公室', '海景']
+        }
+      }
+    ],
     faqs: []
   },
   {
     id: 'mova',
     slug: 'mova-bb-italy',
     name: { en: 'Mova by B&B Italy', es: 'Mova by B&B Italy', zh: 'Mova by B&B Italy' },
-    location: { en: 'Costa del Este, Panama City', es: 'Costa del Este, Ciudad de Panamá', zh: '东海岸, 巴拿马城' },
+    location: { en: 'Obarrio, Panama City', es: 'Obarrio, Ciudad de Panamá', zh: 'Obarrio, 巴拿马城' },
     type: ['Condo'],
     zone: ['City'],
     status: 'Presale',
     h1Title: {
-      en: 'Mova by B&B Italy | Designer Living | ExpatRockstars',
-      es: 'Mova by B&B Italy | Vida de Diseñador',
-      zh: 'Mova by B&B Italy | 设计师生活'
+      en: 'MOVA by B&B Italia | Where Italian Design Meets Urban Panama',
+      es: 'MOVA by B&B Italia | Donde el Diseño Italiano se Encuentra con el Panamá Urbano',
+      zh: 'MOVA by B&B Italia | 意大利设计与巴拿马城市的邂逅'
     },
     description: {
-      en: 'Luxury residences furnished and designed in collaboration with B&B Italia.',
-      es: 'Residencias de lujo amuebladas y diseñadas en colaboración con B&B Italia.',
-      zh: '与 B&B Italia 合作设计和布置的豪华住宅。'
+      en: 'In the pulsing heart of Obarrio emerges MOVA—a visionary mixed-use development that redefines luxury urban living with B&B Italia.',
+      es: 'En el vibrante corazón de Obarrio emerge MOVA, un desarrollo visionario de uso mixto que redefine el lujo urbano con B&B Italia.',
+      zh: '在 Obarrio 的脉动中心，MOVA 作为一个有远见的综合用途开发项目应运而生，与 B&B Italia 一起重新定义了豪华城市生活。'
+    },
+    longDescription: {
+      en: `**MOVA by B&B Italia: Where Italian Design Meets Urban Panama**
+
+      In the pulsing heart of Obarrio emerges MOVA—a visionary mixed-use development that redefines luxury urban living through collaboration with legendary Italian design house B&B Italia. This is not merely residence; it's an eternally inspired lifestyle.
+
+      **The 15-Minute City, Perfected**
+      MOVA embodies walkable urbanism at its finest. Positioned in Panama's financial district, you're within 15 minutes of elite shopping at Soho City Center, gourmet dining, cultural landmarks, and Casco Viejo's historic charm. The "Superblocks" concept minimizes motorized transport while maximizing green urban spaces and social interaction.
+
+      **B&B Italia: Design in Every Detail**
+      Every residence (67-199.5 m²) arrives fully curated. Features include Miele appliances throughout, custom kitchens and closets by B&B Italia, LUTRON smart lighting systems, and integrated VRF air conditioning.
+
+      **Amenities Beyond Expectation**
+      Residents enjoy a double-height lobby, a panoramic pool deck, a wellness center with spa and gym, and dedicated co-working areas. The integration of high-end retail on the ground floor adds to the convenience.`,
+      es: `MOVA by B&B Italia: Donde el Diseño Italiano se Encuentra con el Panamá Urbano. En el corazón palpitante de Obarrio emerge MOVA, un desarrollo de uso mixto visionario.`,
+      zh: `MOVA by B&B Italia：意大利设计与巴拿马城市的邂逅。在 Obarrio 的脉动中心，MOVA 作为一个有远见的综合用途开发项目应运而生。`
     },
     videoUrl: 'https://www.youtube.com/watch?v=PRinFoBYzbY',
     images: ['https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80', 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80'],
-    priceFrom: 350000,
+    priceFrom: 311550,
     beds: '1-3',
     baths: '1.5-3.5',
-    sqft: '85 - 200',
+    sqft: '67 - 200',
     unitsAvailable: 12,
     amenities: {
-      en: ['Designer Lobby', 'Pool Deck', 'Wellness Center', 'Co-working'],
-      es: ['Lobby de Diseñador', 'Cubierta de Piscina', 'Centro de Bienestar', 'Co-working'],
-      zh: ['设计师大堂', '泳池甲板', '健康中心', '联合办公']
+      en: ['Miele Appliances', 'B&B Italia Kitchens', 'LUTRON Lighting', 'VRF AC'],
+      es: ['Electrodomésticos Miele', 'Cocinas B&B Italia', 'Iluminación LUTRON', 'Aire Acondicionado VRF'],
+      zh: ['电器', '意大利厨房', '照明', '中央空调']
     },
     highlights: {
-      en: ['Italian Design', 'Premium Finishes', 'Costa del Este Location'],
-      es: ['Diseño Italiano', 'Acabados Premium', 'Ubicación en Costa del Este'],
-      zh: ['意大利设计', '高档装修', '东海岸位置']
+      en: ['Italian Design Collaboration', 'Obarrio Location', 'Fully Curated'],
+      es: ['Colaboración de Diseño Italiano', 'Ubicación en Obarrio', 'Totalmente Curado'],
+      zh: ['意大利设计合作', 'Obarrio位置', '精选']
     },
-    keywords: ["mova panama", "b&b italia panama"],
+    keywords: ["mova panama", "b&b italia panama", "obarrio real estate"],
     marketAnalysis: {
-      en: "Premium for designer-branded residences.",
-      es: "Prima para residencias de marca de diseñador.",
-      zh: "设计师品牌住宅的溢价。"
+      en: "Branded residences in Obarrio command premium rents.",
+      es: "Las residencias de marca en Obarrio exigen alquileres premium.",
+      zh: "Obarrio 的品牌住宅租金很高。"
     },
+    floorplans: [
+      {
+        name: { en: '1-Bedroom', es: '1 Recámara', zh: '1 卧室' },
+        size: '67 - 69 m2',
+        price: 311550,
+        image: '/images/placeholders/studio_apartment_floorplan.png',
+        characteristics: {
+          en: ['Smart Layout', 'Designer Furnishings', 'City View'],
+          es: ['Diseño Inteligente', 'Mobiliario de Diseñador', 'Vista a la Ciudad'],
+          zh: ['智能布局', '设计师家具', '城市景观']
+        }
+      },
+      {
+        name: { en: '2-Bedroom', es: '2 Recámaras', zh: '2 卧室' },
+        size: '95 - 102 m2',
+        price: 450000,
+        image: '/images/placeholders/modern_floorplan_1.png',
+        characteristics: {
+          en: ['Spacious Living', 'En-suite Baths', 'Premium Finishes'],
+          es: ['Sala Espaciosa', 'Baños en Suite', 'Acabados Premium'],
+          zh: ['宽敞生活', '套房浴室', '高级装修']
+        }
+      },
+      {
+        name: { en: '3-Bedroom', es: '3 Recámaras', zh: '3 卧室' },
+        size: '140 m2',
+        price: 650000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['Family Layout', 'Corner Unit', 'Panoramic Views'],
+          es: ['Diseño Familiar', 'Unidad de Esquina', 'Vistas Panorámicas'],
+          zh: ['家庭布局', '角落单元', '全景视野']
+        }
+      }
+    ],
     faqs: []
   },
   {
