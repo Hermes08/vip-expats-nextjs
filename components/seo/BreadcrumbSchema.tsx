@@ -1,24 +1,21 @@
+'use client';
+
 import React from 'react';
 
-interface BreadcrumbItem {
-    name: string;
-    url: string;
-}
-
 interface BreadcrumbSchemaProps {
-    items: BreadcrumbItem[];
+    items: { name: string; item: string }[];
 }
 
 export default function BreadcrumbSchema({ items }: BreadcrumbSchemaProps) {
     const schema = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
-        "itemListElement": items.map((item, index) => ({
+        "itemListElement": items.map((crumb, index) => ({
             "@type": "ListItem",
             "position": index + 1,
-            "name": item.name,
-            "item": item.url
-        }))
+            "name": crumb.name,
+            "item": crumb.item,
+        })),
     };
 
     return (

@@ -11,6 +11,7 @@ import FloorPlans from '@/components/projects/FloorPlans';
 import SplitText from '@/components/ui/SplitText';
 import ProductSchema from '@/components/seo/ProductSchema';
 import VideoSchema from '@/components/seo/VideoSchema';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
 const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
     const { lang } = useLanguage();
@@ -23,10 +24,16 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
     if (!project) return <div className="pt-32 text-center text-white">Project not found.</div>;
 
     const relatedPosts = blogPosts.filter(post => post.projectId === project.id);
+    const baseUrl = 'https://panamarealestatesale.com';
 
     return (
         <div className="bg-white min-h-screen">
             <ProductSchema project={project} lang={lang as 'es' | 'en'} />
+            <BreadcrumbSchema items={[
+                { name: lang === 'es' ? 'Inicio' : 'Home', item: `${baseUrl}/${lang}` },
+                { name: lang === 'es' ? 'Proyectos' : 'Projects', item: `${baseUrl}/${lang}/proyectos` },
+                { name: project.name[lang], item: `${baseUrl}/${lang}/proyectos/${slug}` }
+            ]} />
             {project.videoUrl && (
                 <VideoSchema
                     videoUrl={project.videoUrl}

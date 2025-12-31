@@ -9,26 +9,17 @@ interface ProductSchemaProps {
 export default function ProductSchema({ project, lang }: ProductSchemaProps) {
     const schema = {
         "@context": "https://schema.org",
-        "@type": "Product",
+        "@type": "RealEstateListing",
         "name": project.name[lang],
         "description": project.description[lang],
         "image": project.images,
-        "brand": {
-            "@type": "Brand",
-            "name": "panamarealestatesale"
-        },
+        "datePosted": "2025-01-01",
         "offers": {
-            "@type": "AggregateOffer",
+            "@type": "Offer",
             "priceCurrency": "USD",
-            "lowPrice": project.priceFrom,
-            "highPrice": project.priceFrom * 3,
+            "price": project.priceFrom,
             "availability": "https://schema.org/InStock",
             "url": `https://panamarealestatesale.com/${lang}/proyectos/${project.slug}`
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "127"
         },
         "category": "Real Estate",
         "additionalProperty": [
