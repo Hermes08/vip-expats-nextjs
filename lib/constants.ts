@@ -1278,7 +1278,7 @@ export const PROJECTS: Project[] = [
       es: 'Un desarrollo de uso mixto que trae la conveniencia moderna al corazón de Boquete.',
       zh: '将现代便利带到博克特中心的综合用途开发项目。'
     },
-    videoUrl: 'https://www.youtube.com/watch?v=FafoYlSb6BQ',
+    videoUrl: 'https://www.youtube.com/watch?v=FafoYISb6BQ',
     images: ['https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200&q=80', 'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=1200&q=80'],
     priceFrom: 210000,
     beds: '1-3',
