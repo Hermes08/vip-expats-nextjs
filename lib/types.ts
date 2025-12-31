@@ -65,6 +65,19 @@ export interface BlogPost {
   sections?: SEOSection[];
 }
 
+export interface PodcastEpisode {
+  id: string;
+  slug: string;
+  title: Record<string, string>;
+  description: Record<string, string>;
+  videoId: string;
+  duration: string;
+  publishDate: string;
+  topics: string[];
+  host: string;
+  guest?: string;
+}
+
 export interface QuizSubmission {
   id: string;
   timestamp: string;

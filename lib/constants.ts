@@ -1,5 +1,5 @@
 
-import { Project, BlogPost, ContentDictionary } from './types';
+import { Project, BlogPost, ContentDictionary, PodcastEpisode } from './types';
 
 export const CONTACT_INFO = {
   phone: "+507 6761-0315",
@@ -1532,3 +1532,60 @@ export const SEO_KEYWORDS_LIST = [
 ];
 
 export const COUNTRIES = ["United States", "Canada", "United Kingdom", "Germany", "Spain", "France", "Panama", "Other"];
+
+export const PODCAST_EPISODES: PodcastEpisode[] = [
+  {
+    id: 'ep-7',
+    slug: 'insurance-and-real-estate-in-panama',
+    title: {
+      en: "Episode 7: Insurance & Real Estate in Panama",
+      es: "Episodio 7: Seguros y Bienes Raíces en Panamá"
+    },
+    description: {
+      en: "Austin Hess interviews Nicole Mitsarachi about insurance and David Aguirre about Panama real estate market trends, investment opportunities, and relocation advice.",
+      es: "Austin Hess entrevista a Nicole Mitsarachi sobre seguros y a David Aguirre sobre las tendencias del mercado inmobiliario en Panamá, oportunidades de inversión y consejos de reubicación."
+    },
+    videoId: "sDW0cwto6aQ",
+    duration: "25:00",
+    publishDate: "2025-12-31",
+    topics: ["Insurance", "Health", "Real Estate"],
+    host: "Austin Hess",
+    guest: "Nicole Mitsarachi, David Aguirre"
+  },
+  {
+    id: 'ep-6',
+    slug: 'health-wellness-and-investment',
+    title: {
+      en: "Episode 6: Health, Wellness & Investment",
+      es: "Episodio 6: Salud, Bienestar e Inversión"
+    },
+    description: {
+      en: "Dr. Alejandro Contreras and Liz Larroquette discuss lifestyle and health in Panama.",
+      es: "El Dr. Alejandro Contreras y Liz Larroquette discuten el estilo de vida y la salud en Panamá."
+    },
+    videoId: "1Pm1avijVeQ", // Placeholder - short ID guess or needs update
+    duration: "30:00",
+    publishDate: "2025-12-15",
+    topics: ["Health", "Wellness", "Investment"],
+    host: "Austin Hess",
+    guest: "Dr. Alejandro Contreras, Liz Larroquette"
+  },
+  {
+    id: 'ep-5',
+    slug: 'entrepreneurship-and-diplomacy',
+    title: {
+      en: "Episode 5: Entrepreneurship & Diplomacy",
+      es: "Episodio 5: Emprendimiento y Diplomacia"
+    },
+    description: {
+      en: "Featuring Luis Picardi and Victoria Levitam, discussing business opportunities.",
+      es: "Con Luis Picardi y Victoria Levitam, discutiendo oportunidades de negocio."
+    },
+    videoId: "placeholder_5",
+    duration: "28:00",
+    publishDate: "2025-11-30",
+    topics: ["Business", "Diplomacy"],
+    host: "Austin Hess",
+    guest: "Luis Picardi, Victoria Levitam"
+  }
+];
