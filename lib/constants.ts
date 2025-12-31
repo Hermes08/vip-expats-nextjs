@@ -1860,13 +1860,13 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
       es: "Episodio 6: Salud, Bienestar e Inversión"
     },
     description: {
-      en: "Dr. Alejandro Contreras and Liz Larroquette discuss lifestyle and health in Panama.",
-      es: "El Dr. Alejandro Contreras y Liz Larroquette discuten el estilo de vida y la salud en Panamá."
+      en: "We dive into health, wellness, Real Estate and the benefits of an AirBnB investment in Panama with Dr. Alejandro Contreras from Pro Care Clinic and Liz Larroquette from Empresas Bern.",
+      es: "Profundizamos en salud, bienestar, bienes raíces y los beneficios de una inversión en AirBnB en Panamá con el Dr. Alejandro Contreras y Liz Larroquette."
     },
-    videoId: "1Pm1avijVeQ", // Placeholder - short ID guess or needs update
-    duration: "30:00",
+    videoId: "OpY_jxflaAw",
+    duration: "27:25",
     publishDate: "2025-12-15",
-    topics: ["Health", "Wellness", "Investment"],
+    topics: ["Health", "Wellness", "Investment", "Airbnb"],
     host: "Austin Hess",
     guest: "Dr. Alejandro Contreras, Liz Larroquette"
   },
@@ -1878,14 +1878,86 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
       es: "Episodio 5: Emprendimiento y Diplomacia"
     },
     description: {
-      en: "Featuring Luis Picardi and Victoria Levitam, discussing business opportunities.",
-      es: "Con Luis Picardi y Victoria Levitam, discutiendo oportunidades de negocio."
+      en: "Visionary entrepreneur Luis Picardi (Furia, Piano Bar, Cielo Rooftop) and Victoria Levitam, Ambassador of Panama, discuss business opportunities and diplomacy.",
+      es: "El visionario empresario Luis Picardi (Furia, Piano Bar, Cielo Rooftop) y Victoria Levitam, Embajadora de Panamá, discuten oportunidades de negocio y diplomacia."
     },
-    videoId: "placeholder_5",
-    duration: "28:00",
+    videoId: "iDg7VjWzxdU",
+    duration: "28:18",
     publishDate: "2025-11-30",
-    topics: ["Business", "Diplomacy"],
+    topics: ["Business", "Diplomacy", "Entrepreneurship"],
     host: "Austin Hess",
     guest: "Luis Picardi, Victoria Levitam"
+  },
+  {
+    id: 'ep-4',
+    slug: 'innovation-and-future-of-panama-city',
+    title: {
+      en: "Episode 4: Innovation & The Future of Panama City",
+      es: "Episodio 4: Innovación y el Futuro de la Ciudad de Panamá"
+    },
+    description: {
+      en: "We’re honored to welcome Mayer Mizrachi, Mayor of Panamá District! Join us as we dive into innovation, community growth, and the future of Panama City.",
+      es: "¡Nos honra dar la bienvenida a Mayer Mizrachi, Alcalde del Distrito de Panamá! Únase a nosotros mientras profundizamos en la innovación, el crecimiento comunitario y el futuro de la Ciudad de Panamá."
+    },
+    videoId: "P1YTsoWVYZE",
+    duration: "26:14",
+    publishDate: "2025-11-15",
+    topics: ["Innovation", "Politics", "Community Growth"],
+    host: "Austin Hess",
+    guest: "Mayer Mizrachi"
+  },
+  {
+    id: 'ep-3',
+    slug: 'healthcare-and-development',
+    title: {
+      en: "Episode 3: Healthcare & Development",
+      es: "Episodio 3: Salud y Desarrollo"
+    },
+    description: {
+      en: "Featuring Mike Kelly (International Client Relations Manager at Pacifica Salud Hospital) & Melissa Aristizabal (The Velopers Group). Two inspiring professionals making a difference and helping shape Panama’s future!",
+      es: "Con Mike Kelly (Gerente de Relaciones con Clientes Internacionales en el Hospital Pacifica Salud) y Melissa Aristizabal (The Velopers Group). ¡Dos profesionales inspiradores que marcan la diferencia!"
+    },
+    videoId: "MZ4cHG6Wdc8",
+    duration: "28:11",
+    publishDate: "2025-10-30",
+    topics: ["Healthcare", "Real Estate Development", "Future of Panama"],
+    host: "Austin Hess",
+    guest: "Mike Kelly, Melissa Aristizabal"
+  },
+  {
+    id: 'ep-2',
+    slug: 'health-lifestyle-and-life-abroad',
+    title: {
+      en: "Episode 2: Health, Lifestyle & Life Abroad",
+      es: "Episodio 2: Salud, Estilo de Vida y Vida en el Extranjero"
+    },
+    description: {
+      en: "Today’s guests: Dr. Daniel Baccarani & Geoff Blumer — two inspiring professionals making an impact in Panama. Join us for conversations about health, lifestyle, and life abroad.",
+      es: "Invitados de hoy: Dr. Daniel Baccarani y Geoff Blumer — dos profesionales inspiradores que tienen un impacto en Panamá. Únase a nosotros para conversar sobre salud, estilo de vida y vida en el extranjero."
+    },
+    videoId: "Q2CyjkXhADE",
+    duration: "24:51",
+    publishDate: "2025-10-15",
+    topics: ["Health", "Lifestyle", "Expats"],
+    host: "Austin Hess",
+    guest: "Dr. Daniel Baccarani, Geoff Blumer"
+  },
+  {
+    id: 'ep-1',
+    slug: 'welcome-to-panagringo',
+    title: {
+      en: "Episode 1: Welcome to Pana'Gringo",
+      es: "Episodio 1: Bienvenidos a Pana'Gringo"
+    },
+    description: {
+      en: "The wait is over—the first episode is live! Bringing you insights, stories, and real-life experiences of Panama living. From investing and relocating to culture and lifestyle, we cover it all.",
+      es: "¡La espera ha terminado! Les traemos ideas, historias y experiencias de la vida real en Panamá. Desde inversiones y reubicación hasta cultura y estilo de vida, lo cubrimos todo."
+    },
+    videoId: "ptek8p0i8Kc",
+    duration: "23:40",
+    publishDate: "2025-09-30",
+    topics: ["Panama Living", "Relocation", "Culture"],
+    host: "Austin Hess",
+    guest: "Austin Hess"
   }
 ];

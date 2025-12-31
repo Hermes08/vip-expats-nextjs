@@ -21,6 +21,18 @@ function getVideoId(url: string): string | undefined {
     return url.split('/').pop()?.split('?')[0];
 }
 
+function parseDurationToSeconds(durationStr: string): number {
+    if (!durationStr) return 0;
+    const parts = durationStr.split(':').map(Number);
+    if (parts.length === 3) {
+        return parts[0] * 3600 + parts[1] * 60 + parts[2];
+    }
+    if (parts.length === 2) {
+        return parts[0] * 60 + parts[1];
+    }
+    return 0;
+}
+
 export async function GET() {
     const baseUrl = 'https://panamarealestatesale.com';
     const languages = ['en', 'es'];
@@ -78,7 +90,7 @@ export async function GET() {
                     const title = escapeXml(project.name[lang as 'en' | 'es'] || project.name['en']);
                     const desc = escapeXml(project.description[lang as 'en' | 'es'] || project.description['en']);
                     const thumbLoc = `https://i.ytimg.com/vi/${videoId}/maxresdefault.jpg`;
-                    const playerLoc = `https://www.youtube.com/watch?v=${videoId}`;
+                    const playerLoc = `https://www.youtube.com/embed/${videoId}`;
 
                     videoBlock = `
         <video:video>
@@ -125,7 +137,8 @@ export async function GET() {
             const title = escapeXml(episode.title[lang as 'en' | 'es']);
             const desc = escapeXml(episode.description[lang as 'en' | 'es']);
             const thumbLoc = `https://i.ytimg.com/vi/${episode.videoId}/maxresdefault.jpg`;
-            const playerLoc = `https://www.youtube.com/watch?v=${episode.videoId}`;
+            const playerLoc = `https://www.youtube.com/embed/${episode.videoId}`;
+            const durationSeconds = parseDurationToSeconds(episode.duration);
 
             const videoBlock = `
         <video:video>
@@ -134,10 +147,8 @@ export async function GET() {
             <video:thumbnail_loc>${thumbLoc}</video:thumbnail_loc>
             <video:player_loc>${playerLoc}</video:player_loc>
             <video:publication_date>${lastMod}</video:publication_date>
-            <video:duration>1500</video:duration> 
+            <video:duration>${durationSeconds}</video:duration> 
         </video:video>`;
-            // Note: Duration hardcoded to 1500s (25m) as example, ideally parse from duration string if possible or keep generic. 
-            // Google recommends duration in seconds. For now 1500 is a safe placeholder roughly matching 25m.
 
             xml += `
     <url>
