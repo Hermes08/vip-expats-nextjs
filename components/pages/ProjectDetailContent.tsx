@@ -10,6 +10,7 @@ import VideoSection from '@/components/projects/VideoSection';
 import FloorPlans from '@/components/projects/FloorPlans';
 import SplitText from '@/components/ui/SplitText';
 import ProductSchema from '@/components/seo/ProductSchema';
+import VideoSchema from '@/components/seo/VideoSchema';
 
 const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
     const { lang } = useLanguage();
@@ -26,6 +27,15 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
     return (
         <div className="bg-white min-h-screen">
             <ProductSchema project={project} lang={lang as 'es' | 'en'} />
+            {project.videoUrl && (
+                <VideoSchema
+                    videoUrl={project.videoUrl}
+                    name={project.name[lang] || project.name['en']}
+                    description={project.description[lang] || project.description['en']}
+                    uploadDate="2025-01-01"
+                    thumbnailUrl={project.images[0]}
+                />
+            )}
             {/* Gallery Header */}
             {/* Gallery Header */}
             <section className="bg-neutral-900 h-[85vh] min-h-[600px] relative overflow-hidden group">
