@@ -1,4 +1,4 @@
-import { PROJECTS, BLOG_POSTS } from '@/lib/constants';
+import { PROJECTS, BLOG_POSTS, PODCAST_EPISODES } from '@/lib/constants';
 
 function escapeXml(unsafe: string): string {
     return unsafe.replace(/[<>&'"]/g, (c) => {
@@ -34,6 +34,7 @@ export async function GET() {
         '/contacto',
         '/tours',
         '/quiz',
+        '/podcast',
     ];
 
     let xml = `<?xml version="1.0" encoding="UTF-8"?>
@@ -99,6 +100,7 @@ export async function GET() {
         });
     });
 
+
     // 3. Blog Posts
     languages.forEach(lang => {
         BLOG_POSTS.forEach(post => {
@@ -110,6 +112,39 @@ export async function GET() {
         <lastmod>${lastMod}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+    </url>`;
+        });
+    });
+
+    // 4. Podcast Episodes (With Video Tags)
+    languages.forEach(lang => {
+        PODCAST_EPISODES.forEach(episode => {
+            const url = `${baseUrl}/${lang}/podcast/${episode.slug}`;
+            const lastMod = episode.publishDate ? new Date(episode.publishDate).toISOString() : new Date().toISOString();
+
+            const title = escapeXml(episode.title[lang as 'en' | 'es']);
+            const desc = escapeXml(episode.description[lang as 'en' | 'es']);
+            const thumbLoc = `https://i.ytimg.com/vi/${episode.videoId}/maxresdefault.jpg`;
+            const playerLoc = `https://www.youtube.com/watch?v=${episode.videoId}`;
+
+            const videoBlock = `
+        <video:video>
+            <video:title>${title}</video:title>
+            <video:description>${desc}</video:description>
+            <video:thumbnail_loc>${thumbLoc}</video:thumbnail_loc>
+            <video:player_loc>${playerLoc}</video:player_loc>
+            <video:publication_date>${lastMod}</video:publication_date>
+            <video:duration>1500</video:duration> 
+        </video:video>`;
+            // Note: Duration hardcoded to 1500s (25m) as example, ideally parse from duration string if possible or keep generic. 
+            // Google recommends duration in seconds. For now 1500 is a safe placeholder roughly matching 25m.
+
+            xml += `
+    <url>
+        <loc>${url}</loc>
+        <lastmod>${lastMod}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>${videoBlock}
     </url>`;
         });
     });
