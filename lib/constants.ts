@@ -141,7 +141,7 @@ export const PROJECTS: Project[] = [
     sqft: '105 - 150',
     unitsAvailable: 8,
     faqs: [],
-    videoUrl: 'https://www.youtube.com/watch?v=R_I_oV7q0cM', // Branded Residences Promo
+    videoUrl: 'https://www.youtube.com/watch?v=sKaFb9NJfEE', // Branded Residences Promo
     floorplans: [
       {
         name: { en: 'Grand Studio', es: 'Gran Studio', zh: '豪华单身公寓' },
@@ -533,7 +533,7 @@ export const PROJECTS: Project[] = [
     sqft: '65 - 95',
     unitsAvailable: 20,
     faqs: [],
-    videoUrl: 'https://www.youtube.com/watch?v=yYfmsuL1GCI', // Margaritaville Global Promo
+    videoUrl: 'https://www.youtube.com/watch?v=De8xmb5HwmM', // Margaritaville Global Promo
     floorplans: [
       {
         name: { en: 'Chill Suite', es: 'Suite Relax', zh: '休闲套房' },
@@ -712,7 +712,7 @@ export const PROJECTS: Project[] = [
       es: 'Bioma es un proyecto residencial revolucionario en Costa del Este, enfocado en la biodiversidad y la conexión comunitaria.',
       zh: 'Bioma 是东海岸的一个革命性住宅项目。'
     },
-    videoUrl: 'https://www.youtube.com/watch?v=uKofVNo1T5A',
+    videoUrl: 'https://www.youtube.com/watch?v=yrqNyWJ2d_s',
     floorplans: [
       {
         name: { en: 'Model A', es: 'Modelo A', zh: 'A型' },
@@ -786,6 +786,307 @@ export const PROJECTS: Project[] = [
     },
     keywords: ["bioma costa del este", "panama luxury apartments", "costa del este real estate"],
     didYouKnow: ["Bioma features 3 unique ecosystems within the building."]
+  },
+  {
+    id: 'silverbay',
+    slug: 'silverbay-panama',
+    name: { en: 'SilverBay', es: 'SilverBay', zh: 'SilverBay' },
+    location: { en: 'Bahia de Panama', es: 'Bahía de Panamá', zh: '巴拿马湾' },
+    type: ['Condo'],
+    zone: ['City'],
+    status: 'Presale',
+    h1Title: {
+      en: 'SilverBay Panama | Luxury Bayfront Living | ExpatRockstars',
+      es: 'SilverBay Panamá | Vida de Lujo frente a la Bahía',
+      zh: 'SilverBay 巴拿马 | 豪华湾畔生活'
+    },
+    description: {
+      en: 'SilverBay offers exclusive residences with stunning views of the Panama Bay.',
+      es: 'SilverBay ofrece residencias exclusivas con impresionantes vistas a la Bahía de Panamá.',
+      zh: 'SilverBay 提供享有巴拿马湾壮丽景色的独家住宅。'
+    },
+    videoUrl: 'https://www.youtube.com/watch?v=xFYq9t69pvE',
+    images: ['https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1200&q=80', 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80'],
+    priceFrom: 280000,
+    beds: '1-3',
+    baths: '1.5-3.5',
+    sqft: '80 - 200',
+    unitsAvailable: 10,
+    amenities: {
+      en: ['Bay View Pool', 'Gym', 'Social Area', 'Concierge'],
+      es: ['Piscina con Vista a la Bahía', 'Gimnasio', 'Área Social', 'Conserje'],
+      zh: ['海湾景观泳池', '健身房', '社交区', '礼宾服务']
+    },
+    highlights: {
+      en: ['Prime Location', 'Ocean Views', 'Modern Design'],
+      es: ['Ubicación privilegiada', 'Vistas al mar', 'Diseño moderno'],
+      zh: ['黄金地段', '海景', '现代设计']
+    },
+    keywords: ["silverbay panama", "panama bay condos"],
+    marketAnalysis: {
+      en: "High demand for bayfront properties.",
+      es: "Alta demanda de propiedades frente a la bahía.",
+      zh: "海湾物业需求量大。"
+    },
+    faqs: []
+  },
+  {
+    id: 'allure-punta-pacifica',
+    slug: 'allure-punta-pacifica',
+    name: { en: 'Allure Punta Pacifica', es: 'Allure Punta Pacifica', zh: 'Allure Punta Pacifica' },
+    location: { en: 'Punta Pacifica, Panama City', es: 'Punta Pacífica, Ciudad de Panamá', zh: '蓬塔帕西菲卡, 巴拿马城' },
+    type: ['Condo'],
+    zone: ['City'],
+    status: 'Ready to Move',
+    h1Title: {
+      en: 'Allure Punta Pacifica | Iconic Luxury Towers | ExpatRockstars',
+      es: 'Allure Punta Pacifica | Torres Icónicas de Lujo',
+      zh: 'Allure Punta Pacifica | 标志性豪华塔楼'
+    },
+    description: {
+      en: 'A landmark tower in the heart of Punta Pacifica offering world-class amenities.',
+      es: 'Una torre emblemática en el corazón de Punta Pacífica que ofrece amenidades de clase mundial.',
+      zh: '位于蓬塔帕西菲卡中心的标志性塔楼，提供世界一流的设施。'
+    },
+    videoUrl: 'https://www.youtube.com/watch?v=16FTZua6R88',
+    images: ['https://images.unsplash.com/photo-1473116763249-2faaef81ccda?w=1200&q=80', 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80'],
+    priceFrom: 450000,
+    beds: '2-4',
+    baths: '2.5-4.5',
+    sqft: '150 - 350',
+    unitsAvailable: 5,
+    amenities: {
+      en: ['Infinity Pool', 'Spa', 'Squash Court', 'Business Center'],
+      es: ['Piscina Infinity', 'Spa', 'Cancha de Squash', 'Centro de Negocios'],
+      zh: ['无边泳池', '水疗中心', '壁球场', '商务中心']
+    },
+    highlights: {
+      en: ['Luxury Finishes', 'Central Location', 'High Security'],
+      es: ['Acabados de Lujo', 'Ubicación Céntrica', 'Alta Seguridad'],
+      zh: ['豪华装修', '中心位置', '高安全性']
+    },
+    keywords: ["allure punta pacifica", "punta pacifica condos"],
+    marketAnalysis: {
+      en: "Punta Pacifica remains a top investment choice.",
+      es: "Punta Pacífica sigue siendo una de las mejores opciones de inversión.",
+      zh: "蓬塔帕西菲卡仍然是首选投资选择。"
+    },
+    faqs: []
+  },
+  {
+    id: 'cavarossa',
+    slug: 'cavarossa-amador',
+    name: { en: 'Cavarossa', es: 'Cavarossa', zh: 'Cavarossa' },
+    location: { en: 'Amador Causeway, Panama City', es: 'Calzada de Amador, Ciudad de Panamá', zh: '阿马多尔堤道, 巴拿马城' },
+    type: ['Condo'],
+    zone: ['City'],
+    status: 'Presale',
+    h1Title: {
+      en: 'Cavarossa Amador | Causeway Living | ExpatRockstars',
+      es: 'Cavarossa Amador | Vida en el Causeway',
+      zh: 'Cavarossa Amador | 堤道生活'
+    },
+    description: {
+      en: 'Experience the unique lifestyle of the Amador Causeway at Cavarossa.',
+      es: 'Experimenta el estilo de vida único de la Calzada de Amador en Cavarossa.',
+      zh: '在 Cavarossa 体验阿马多尔堤道的独特生活方式。'
+    },
+    videoUrl: 'https://www.youtube.com/watch?v=DyPJZd6v1wM',
+    images: ['https://images.unsplash.com/photo-1526772662000-3f88f10405ff?w=1200&q=80', 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80'],
+    priceFrom: 300000,
+    beds: '1-3',
+    baths: '1-3',
+    sqft: '90 - 180',
+    unitsAvailable: 8,
+    amenities: {
+      en: ['Rooftop Lounge', 'Bike Storage', 'Pool', 'Smart Home Features'],
+      es: ['Salón en la Azotea', 'Almacenamiento de Bicicletas', 'Piscina', 'Características de Hogar Inteligente'],
+      zh: ['屋顶休息室', '自行车存放处', '游泳池', '智能家居功能']
+    },
+    highlights: {
+      en: ['Causeway Views', 'Near BioMuseo', 'Active Lifestyle'],
+      es: ['Vistas al Causeway', 'Cerca del BioMuseo', 'Estilo de Vida Activo'],
+      zh: ['堤道景观', '靠近生物博物馆', '积极生活方式']
+    },
+    keywords: ["cavarossa panama", "amador causeway real estate"],
+    marketAnalysis: {
+      en: "Growing interest in the Amador Causeway area.",
+      es: "Creciente interés en el área de la Calzada de Amador.",
+      zh: "阿马多尔堤道地区日益受到关注。"
+    },
+    faqs: []
+  },
+  {
+    id: 'altos-del-maria',
+    slug: 'altos-del-maria',
+    name: { en: 'Altos del Maria', es: 'Altos del María', zh: 'Altos del Maria' },
+    location: { en: 'Sora, Panama', es: 'Sora, Panamá', zh: '索拉, 巴拿马' },
+    type: ['House'],
+    zone: ['Mountain'],
+    status: 'Ready to Move',
+    h1Title: {
+      en: 'Altos del Maria | Mountain Living Perfection | ExpatRockstars',
+      es: 'Altos del María | Perfección en la Montaña',
+      zh: 'Altos del Maria | 完美的山地生活'
+    },
+    description: {
+      en: 'Altos del Maria is a premier mountain community offering cool climate and nature.',
+      es: 'Altos del María es una comunidad de montaña de primer nivel que ofrece clima fresco y naturaleza.',
+      zh: 'Altos del Maria 是一个顶级的山地社区，提供凉爽的气候和自然环境。'
+    },
+    videoUrl: 'https://www.youtube.com/watch?v=khlmnErz5No',
+    images: ['https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=1200&q=80', 'https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200&q=80'],
+    priceFrom: 150000,
+    beds: '2-5',
+    baths: '2-5',
+    sqft: '120 - 500',
+    unitsAvailable: 20,
+    amenities: {
+      en: ['Hiking Trails', 'Waterfalls', 'Community Center', 'Gated Security'],
+      es: ['Senderos para Caminar', 'Cascadas', 'Centro Comunitario', 'Seguridad Privada'],
+      zh: ['徒步小径', '瀑布', '社区中心', '门禁安全']
+    },
+    highlights: {
+      en: ['Cool Weather', 'Mountain Views', 'Large Lots'],
+      es: ['Clima Fresco', 'Vistas a la Montaña', 'Lotes Grandes'],
+      zh: ['凉爽天气', '山景', '大面积地块']
+    },
+    keywords: ["altos del maria", "panama mountain real estate"],
+    marketAnalysis: {
+      en: "Steady appreciation in mountain communities.",
+      es: "Apreciación constante en comunidades de montaña.",
+      zh: "山地社区稳步升值。"
+    },
+    faqs: []
+  },
+  {
+    id: 'mova',
+    slug: 'mova-bb-italy',
+    name: { en: 'Mova by B&B Italy', es: 'Mova by B&B Italy', zh: 'Mova by B&B Italy' },
+    location: { en: 'Costa del Este, Panama City', es: 'Costa del Este, Ciudad de Panamá', zh: '东海岸, 巴拿马城' },
+    type: ['Condo'],
+    zone: ['City'],
+    status: 'Presale',
+    h1Title: {
+      en: 'Mova by B&B Italy | Designer Living | ExpatRockstars',
+      es: 'Mova by B&B Italy | Vida de Diseñador',
+      zh: 'Mova by B&B Italy | 设计师生活'
+    },
+    description: {
+      en: 'Luxury residences furnished and designed in collaboration with B&B Italia.',
+      es: 'Residencias de lujo amuebladas y diseñadas en colaboración con B&B Italia.',
+      zh: '与 B&B Italia 合作设计和布置的豪华住宅。'
+    },
+    videoUrl: 'https://www.youtube.com/watch?v=PRinFoBYzbY',
+    images: ['https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1200&q=80', 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80'],
+    priceFrom: 350000,
+    beds: '1-3',
+    baths: '1.5-3.5',
+    sqft: '85 - 200',
+    unitsAvailable: 12,
+    amenities: {
+      en: ['Designer Lobby', 'Pool Deck', 'Wellness Center', 'Co-working'],
+      es: ['Lobby de Diseñador', 'Cubierta de Piscina', 'Centro de Bienestar', 'Co-working'],
+      zh: ['设计师大堂', '泳池甲板', '健康中心', '联合办公']
+    },
+    highlights: {
+      en: ['Italian Design', 'Premium Finishes', 'Costa del Este Location'],
+      es: ['Diseño Italiano', 'Acabados Premium', 'Ubicación en Costa del Este'],
+      zh: ['意大利设计', '高档装修', '东海岸位置']
+    },
+    keywords: ["mova panama", "b&b italia panama"],
+    marketAnalysis: {
+      en: "Premium for designer-branded residences.",
+      es: "Prima para residencias de marca de diseñador.",
+      zh: "设计师品牌住宅的溢价。"
+    },
+    faqs: []
+  },
+  {
+    id: 'towncenter-boquete',
+    slug: 'towncenter-boquete',
+    name: { en: 'Towncenter Boquete', es: 'Towncenter Boquete', zh: 'Towncenter Boquete' },
+    location: { en: 'Boquete, Chiriqui', es: 'Boquete, Chiriquí', zh: '博克特, 奇里基' },
+    type: ['Condo', 'Villa'],
+    zone: ['Mountain'],
+    status: 'Presale',
+    h1Title: {
+      en: 'Towncenter Boquete | New Urbanism in the Highlands | ExpatRockstars',
+      es: 'Towncenter Boquete | Nuevo Urbanismo en las Tierras Altas',
+      zh: 'Towncenter Boquete | 高地新城市主义'
+    },
+    description: {
+      en: 'A mixed-use development bringing modern convenience to the heart of Boquete.',
+      es: 'Un desarrollo de uso mixto que trae la conveniencia moderna al corazón de Boquete.',
+      zh: '将现代便利带到博克特中心的综合用途开发项目。'
+    },
+    videoUrl: 'https://www.youtube.com/watch?v=FafoYlSb6BQ',
+    images: ['https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200&q=80', 'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=1200&q=80'],
+    priceFrom: 210000,
+    beds: '1-3',
+    baths: '1-3',
+    sqft: '70 - 150',
+    unitsAvailable: 15,
+    amenities: {
+      en: ['Shopping Plaza', 'Restaurants', 'Medical Center', 'Park'],
+      es: ['Plaza Comercial', 'Restaurantes', 'Centro Médico', 'Parque'],
+      zh: ['购物广场', '餐厅', '医疗中心', '公园']
+    },
+    highlights: {
+      en: ['Walkability', 'Central Boquete', 'Modern Amenities'],
+      es: ['Caminabilidad', 'Boquete Central', 'Amenidades Modernas'],
+      zh: ['适宜步行', '博克特中心', '现代设施']
+    },
+    keywords: ["towncenter boquete", "boquete commercial real estate"],
+    marketAnalysis: {
+      en: "Commercial and residential mix drives value.",
+      es: "La mezcla comercial y residencial impulsa el valor.",
+      zh: "商业和住宅混合推动价值。"
+    },
+    faqs: []
+  },
+  {
+    id: 'empire-residences',
+    slug: 'empire-residences-santa-maria',
+    name: { en: 'Empire Residences', es: 'Empire Residences', zh: 'Empire Residences' },
+    location: { en: 'Santa Maria, Panama City', es: 'Santa María, Ciudad de Panamá', zh: '圣玛丽亚, 巴拿马城' },
+    type: ['Condo'],
+    zone: ['City'],
+    status: 'Presale',
+    h1Title: {
+      en: 'Empire Residences Santa Maria | Ultra-Luxury Living | ExpatRockstars',
+      es: 'Empire Residences Santa María | Vida de Ultra Lujo',
+      zh: 'Empire Residences Santa Maria | 超豪华生活'
+    },
+    description: {
+      en: 'Empire Residences sets a new standard for luxury in the exclusive Santa Maria Golf & Country Club.',
+      es: 'Empire Residences establece un nuevo estándar de lujo en el exclusivo Santa María Golf & Country Club.',
+      zh: 'Empire Residences 在独家的圣玛丽亚高尔夫乡村俱乐部树立了豪华的新标准。'
+    },
+    videoUrl: 'https://www.youtube.com/watch?v=De8xmb5HwmM',
+    images: ['https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&q=80', 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80'],
+    priceFrom: 550000,
+    beds: '3-4',
+    baths: '3.5-4.5',
+    sqft: '200 - 400',
+    unitsAvailable: 6,
+    amenities: {
+      en: ['Golf Course Views', 'Exclusive Gym', 'Pool & Jacuzzi', 'Kids Club'],
+      es: ['Vistas al Campo de Golf', 'Gimnasio Exclusivo', 'Piscina y Jacuzzi', 'Club de Niños'],
+      zh: ['高尔夫球场景观', '专属健身房', '游泳池和按摩浴缸', '儿童俱乐部']
+    },
+    highlights: {
+      en: ['Santa Maria Location', 'High-End Finishes', 'Golf Lifestyle'],
+      es: ['Ubicación en Santa María', 'Acabados de Alta Gama', 'Estilo de Vida de Golf'],
+      zh: ['圣玛丽亚位置', '高端装修', '高尔夫生活方式']
+    },
+    keywords: ["empire residences panama", "santa maria panama real estate"],
+    marketAnalysis: {
+      en: "Santa Maria maintains high property values.",
+      es: "Santa María mantiene altos valores de propiedad.",
+      zh: "圣玛丽亚保持高房产价值。"
+    },
+    faqs: []
   }
 ];
 
