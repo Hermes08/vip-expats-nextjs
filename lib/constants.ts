@@ -112,7 +112,9 @@ export const PROJECTS: Project[] = [
       Our **panama real estate legal guide** is included as part of our advisory service. We handle the due diligence on titles, escrow management, and the residency filing process. We ensure that your **panama real estate investment** serves as a secure foundation for your new life in the tropics.`,
       es: `Westin Residences es un proyecto calificado para el programa de **residencia en panamá a través de bienes raíces**. Una compra aquí de $300,000 o más califica para la Visa de Inversionista Calificado, que otorga la residencia permanente en tan solo 30 días.
 
-      Para quienes buscan la **visa pensionado panamá**, nuestro equipo legal puede estructurar la compra para satisfacer los requisitos de "hogar permanente", asegurando que reciba todos los descuentos de por vida en servicios médicos y servicios públicos.`
+      Para quienes buscan la **visa pensionado panamá**, nuestro equipo legal puede estructurar la compra para satisfacer los requisitos de "hogar permanente", asegurando que reciba todos los descuentos de por vida en servicios médicos y servicios públicos.
+
+      Nuestro **guía legal de bienes raíces en panamá** está incluido. Manejamos la debida diligencia de títulos y el proceso de residencia.`
     },
     servicesCTA: {
       en: `Experience Playa Bonita today. Our **panama relocation real estate tours** provide an exclusive behind-the-scenes look at the Westin Residences. Don't buy based on a brochure; see the quality, feel the sea breeze, and meet the community.
@@ -122,8 +124,8 @@ export const PROJECTS: Project[] = [
 
       Programe un **tour de descubrimiento de bienes raíces en panamá** con ExpatRockstars. Nuestros **consultores inmobiliarios** le brindarán un análisis de mercado personalizado.`
     },
-    marketAnalysis: { en: "Market ROI is 8-10% gross.", es: "El ROI es del 8-10% bruto.", zh: "由万豪管理，收益更高。" },
-    keywords: ["panama condos on the beach", "westin panama residences", "panama luxury real estate", "panama investment property"],
+    marketAnalysis: { en: "Branded residence premium ensures high residency value.", es: "La prima de residencia de marca asegura un alto valor de residencia.", zh: "品牌住宅溢价确保高居住价值。" },
+    keywords: ["westin panama residences", "panama qualified investor visa", "panama luxury real estate"],
     highlights: {
       en: ['Marriott branded management', '15 min to Panama City', 'Tax Exemption available', 'Private Beach Club access'],
       es: ['Gestión de marca Marriott', 'A 15 min de Ciudad de Panamá', 'Exención de impuestos disponible', 'Acceso a Club de Playa Privado'],
@@ -847,7 +849,19 @@ export const PROJECTS: Project[] = [
       zh: '东海岸保持 8-12% 的年收益率。'
     },
     keywords: ["bioma costa del este", "panama smart living", "mallol architects panama"],
-    didYouKnow: ["Bioma features 7 distinct 'habitats' within its club ecosystem."]
+    didYouKnow: ["Bioma features 7 distinct 'habitats' within its club ecosystem."],
+    residencyInfo: {
+      en: `Investing in Bioma Costa del Este qualifies for the **panama residency through real estate** program. A purchase of $300,000+ makes you eligible for the Qualified Investor Visa, granting permanent residency in 30 days. Costa del Este is the premier choice for expats seeking to **relocate to panama** with family.
+
+      For those applying for the **pensionado visa panama**, upgrading to a luxury home in Bioma fulfills all permanent address requirements. We also facilitate the **friendly nations visa panama** for citizens of qualifying countries.
+
+      Our comprehensive **panama real estate legal guide** covers all aspects of the purchase, from initial reservation to final title transfer, ensuring a secure transaction for your new Panama life.`,
+      es: `Invertir en Bioma califica para el programa de **residencia en panamá a través de bienes raíces**. Una compra de $300,000+ lo hace elegible para la Visa de Inversionista Calificado, otorgando residencia permanente en 30 días.
+
+      Para quienes aplican a la **visa pensionado panamá**, Bioma cumple todos los requisitos. También facilitamos la **visa de naciones amigas de panamá**.
+
+      Nuestro **guía legal de bienes raíces en panamá** cubre todos los aspectos de la compra para asegurar una transacción segura.`
+    }
   },
   {
     id: 'silverbay',
@@ -946,7 +960,19 @@ export const PROJECTS: Project[] = [
         }
       }
     ],
-    faqs: []
+    faqs: [],
+    residencyInfo: {
+      en: `SilverBay offers an accessible entry point for **panama residency through real estate**. While units start below the Investor Visa threshold, multiple units can be combined or used for the **friendly nations visa panama**. It is a smart choice for those needing a city base to **relocate to panama**.
+
+      The **friendly nations visa panama** is particularly popular for professionals working in the city. SilverBay's central location makes it perfect for this demographic. We also assist retirees with the **pensionado visa panama**.
+
+      Included in our service is a full **panama real estate legal guide**, ensuring your investment is structured correctly for tax efficiency and residency compliance.`,
+      es: `SilverBay ofrece un punto de entrada accesible para la **residencia en panamá**. Ideal para la **visa de naciones amigas de panamá**.
+
+      La **visa de naciones amigas** es popular entre profesionales. También asistimos con la **visa pensionado panamá**.
+
+      Incluimos una **guía legal de bienes raíces en panamá** completa para asegurar eficiencia fiscal y cumplimiento de residencia.`
+    }
   },
   {
     id: 'allure-punta-pacifica',
@@ -1032,7 +1058,19 @@ export const PROJECTS: Project[] = [
         }
       }
     ],
-    faqs: []
+    faqs: [],
+    residencyInfo: {
+      en: `Purchasing at Allure Punta Pacifica instantly qualifies you for the **panama residency through real estate** Qualified Investor Visa ($300k+). This status grants permanent residency in 30 days, perfect for those wanting to **relocate to panama** immediately to the most exclusive neighborhood.
+
+      Retirees love Allure for the **pensionado visa panama** lifestyle, offering walkability to top hospitals. The **friendly nations visa panama** is also a seamless option here.
+
+      Our team provides a dedicated **panama real estate legal guide** for high-net-worth transactions, ensuring your privacy and asset protection are paramount.`,
+      es: `Comprar en Allure califica instantáneamente para la Visa de Inversionista Calificado ($300k+), otorgando residencia permanente en 30 días.
+
+      Ideal para la **visa pensionado panamá** por su cercanía a hospitales. La **visa de naciones amigas** también es una opción.
+
+      Ofrecemos una **guía legal de bienes raíces en panamá** dedicada para transacciones de alto valor, asegurando privacidad y protección de activos.`
+    }
   },
   {
     id: 'cavarossa',
@@ -1129,7 +1167,19 @@ export const PROJECTS: Project[] = [
         }
       }
     ],
-    faqs: []
+    faqs: [],
+    residencyInfo: {
+      en: `Cavarossa Amador allows investors to qualify for the **panama residency through real estate** program. The Qualified Investor Visa is available for purchases over $300,000, offering a fast track to **relocate to panama**. Amador is a unique zone for those seeking a tranquil maritime lifestyle.
+
+      Qualifying for the **pensionado visa panama** is simple here, with the added benefit of being near the city yet apart from the noise. We also process the **friendly nations visa panama**.
+
+      Our **panama real estate legal guide** ensures that your title on the Causeway is secure and verified, handling all government concession checks where applicable.`,
+      es: `Cavarossa Amador permite calificar para el programa de **residencia en panamá**. La Visa de Inversionista Calificado está disponible para compras mayores a $300,000.
+
+      Calificar para la **visa pensionado panamá** es simple aquí. También procesamos la **visa de naciones amigas**.
+
+      Nuestra **guía legal** asegura que su título en el Causeway esté seguro y verificado.`
+    }
   },
   {
     id: 'altos-del-maria',
@@ -1427,7 +1477,19 @@ export const PROJECTS: Project[] = [
       es: "La licencia de alquiler a corto plazo crea un alto potencial de rendimiento en Airbnb.",
       zh: "短期租赁许可创造了高收益潜力。"
     },
-    faqs: []
+    faqs: [],
+    residencyInfo: {
+      en: `Towncenter Boquete is a verified project for **panama residency through real estate**. Investments here qualify for multiple visa categories, including the Qualified Investor Visa. It is the #1 choice for those wanting to **relocate to panama**'s highlands with urban amenities.
+
+      The project is custom-tailored for the **pensionado visa panama**, offering a walkable lifestyle that retirees love. We also handle **friendly nations visa panama** applications.
+
+      Our **panama real estate legal guide** specifically covers the ATP tourism licensing for this project, verifying your right to short-term rental income.`,
+      es: `Towncenter Boquete es un proyecto verificado para **residencia en panamá**. Las inversiones califican para múltiples visas, incluida la de Inversionista Calificado.
+
+      El proyecto está hecho a medida para la **visa pensionado panamá**. También manejamos aplicaciones de **visa de naciones amigas**.
+
+      Nuestra **guía legal** cubre específicamente la licencia turística de la ATP para asegurar sus ingresos por alquiler.`
+    }
   },
   {
     id: 'empire-residences',
@@ -1546,7 +1608,19 @@ export const PROJECTS: Project[] = [
       es: "Los diseños exclusivos de medio piso crean un valor escaso en el mercado de alta gama.",
       zh: "独特的半层布局在高端市场创造了稀缺价值。"
     },
-    faqs: []
+    faqs: [],
+    residencyInfo: {
+      en: `Empire Residences is the gold standard for **panama residency through real estate**. Every unit easily surpasses the $300,000 threshold for the Qualified Investor Visa, granting faster permanent residency to **relocate to panama** in luxury.
+
+      It is the residence of choice for elite retirees on the **pensionado visa panama** who demand golf course living. The **friendly nations visa panama** is also fully supported.
+
+      Our **panama real estate legal guide** provides VIP-level due diligence, ensuring your high-value asset is protected with the strictest legal standards in the country.`,
+      es: `Empire Residences es el estándar de oro para la **residencia en panamá**. Cada unidad supera el umbral para la Visa de Inversionista Calificado.
+
+      Es la residencia elegida por jubilados de élite con **visa pensionado panamá**. La **visa de naciones amigas** también es totalmente compatible.
+
+      Nuestra **guía legal** ofrece diligencia debida nivel VIP, asegurando que su activo de alto valor esté protegido.`
+    }
   }
 ];
 
