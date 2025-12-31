@@ -48,12 +48,15 @@ const SplitText: React.FC<SplitTextProps> = ({ text, className = '', delay = 0, 
             variants={container}
             initial="hidden"
             animate="visible"
+            aria-label={text}
         >
-            {characters.map((char, index) => (
-                <motion.span variants={child} key={index} className="inline-block min-w-[0.2em] whitespace-pre">
-                    {char}
-                </motion.span>
-            ))}
+            <span aria-hidden="true">
+                {characters.map((char, index) => (
+                    <motion.span variants={child} key={index} className="inline-block min-w-[0.2em] whitespace-pre">
+                        {char}
+                    </motion.span>
+                ))}
+            </span>
         </motion.span>
     );
 };

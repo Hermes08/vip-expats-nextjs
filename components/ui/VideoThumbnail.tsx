@@ -35,9 +35,11 @@ export default function VideoThumbnail({ videoUrl, title, className = '' }: Vide
     }
 
     return (
-        <div
-            className={`relative aspect-video rounded-2xl overflow-hidden shadow-2xl group cursor-pointer ${className}`}
+        <button
+            type="button"
+            className={`relative aspect-video rounded-2xl overflow-hidden shadow-2xl group cursor-pointer w-full text-left focus:outline-none focus:ring-4 focus:ring-brand-GOLD ${className}`}
             onClick={() => setIsPlaying(true)}
+            aria-label={`Play video: ${title}`}
         >
             <img
                 src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
@@ -55,6 +57,6 @@ export default function VideoThumbnail({ videoUrl, title, className = '' }: Vide
             <div className="absolute bottom-4 left-4 right-4">
                 <p className="text-white font-bold text-sm text-shadow">{title}</p>
             </div>
-        </div>
+        </button>
     );
 }

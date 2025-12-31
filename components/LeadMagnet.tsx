@@ -105,8 +105,9 @@ const LeadMagnet: React.FC<LeadMagnetProps> = ({ variant = 'full' }) => {
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div className="grid grid-cols-1 gap-6">
                                     <div className="space-y-2">
-                                        <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">{t.formLabels.name}</label>
+                                        <label htmlFor="lead-name" className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">{t.formLabels.name}</label>
                                         <input
+                                            id="lead-name"
                                             required
                                             type="text"
                                             className="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-2xl focus:ring-2 focus:ring-brand-GOLD outline-none transition-all text-white font-bold"
@@ -115,8 +116,9 @@ const LeadMagnet: React.FC<LeadMagnetProps> = ({ variant = 'full' }) => {
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">{t.formLabels.email}</label>
+                                        <label htmlFor="lead-email" className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">{t.formLabels.email}</label>
                                         <input
+                                            id="lead-email"
                                             required
                                             type="email"
                                             className="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-2xl focus:ring-2 focus:ring-brand-GOLD outline-none transition-all text-white font-bold"

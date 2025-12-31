@@ -21,8 +21,8 @@ const Footer: React.FC = () => {
                         </span>
                         <p className="text-slate-400 max-w-sm mb-10 text-lg font-medium leading-relaxed italic border-l-4 border-brand-GOLD pl-6">{t.footer.about}</p>
                         <div className="flex gap-6">
-                            <a href="#" className="p-3 glass-card rounded-full hover:bg-brand-GOLD hover:text-brand-900 transition-all transform hover:scale-110"><Instagram size={20} /></a>
-                            <a href="#" className="p-3 glass-card rounded-full hover:bg-brand-GOLD hover:text-brand-900 transition-all transform hover:scale-110"><Mail size={20} /></a>
+                            <a href="#" aria-label="Instagram" className="p-3 glass-card rounded-full hover:bg-brand-GOLD hover:text-brand-900 transition-all transform hover:scale-110"><Instagram size={20} /></a>
+                            <a href="#" aria-label="Email" className="p-3 glass-card rounded-full hover:bg-brand-GOLD hover:text-brand-900 transition-all transform hover:scale-110"><Mail size={20} /></a>
                         </div>
                     </div>
                     <div>
