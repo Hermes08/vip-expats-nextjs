@@ -714,89 +714,140 @@ export const PROJECTS: Project[] = [
     zone: ['City'],
     status: 'Presale',
     h1Title: {
-      en: 'Bioma Costa del Este | Panama City Luxury Apartments | ExpatRockstars',
-      es: 'Bioma Costa del Este | Apartamentos de Lujo en Ciudad de Panamá',
-      zh: 'Bioma Costa del Este | 豪华公寓'
+      en: 'Bioma Costa del Este | Revolutionary Smart Living',
+      es: 'Bioma Costa del Este | Vida Inteligente Revolucionaria',
+      zh: 'Bioma Costa del Este | 革命性智能生活'
     },
     description: {
-      en: 'Bioma is a revolutionary residential project in Costa del Este, focusing on biodiversity and community connection.',
-      es: 'Bioma es un proyecto residencial revolucionario en Costa del Este, enfocado en la biodiversidad y la conexión comunitaria.',
-      zh: 'Bioma 是东海岸的一个革命性住宅项目。'
+      en: 'A revolutionary 58-story residential tower redefining smart urban living with three unique ecosystems.',
+      es: 'Una torre residencial revolucionaria de 58 pisos que redefine la vida urbana inteligente con tres ecosistemas únicos.',
+      zh: '一座革命性的 58 层住宅塔楼，以三个独特的生态系统重新定义智能城市生活。'
+    },
+    longDescription: {
+      en: `**Project Deep Dive & Architectural Vision**
+      Bioma is a revolutionary 58-story residential tower that redefines smart urban living in the heart of Costa del Este. Developed by The Velopers in collaboration with award-winning Mallol Arquitectos, this visionary project represents the birth of an intelligent lifestyle where architecture, nature, and community converge.
+
+      **Three Unique Ecosystems**
+      At the core of Bioma's innovation is its unique three-ecosystem design:
+      *   **Residential Ecosystem:** Seven distinct apartment models (65-156m²) with 3.2m ceilings and deep terraces.
+      *   **Club Ecosystem:** 7,000m² of amenities including nature pool, spa, bowling alley, and the "Terrarium" rooftop.
+      *   **Urban Ecosystem:** Ground floor commercial village integrating work, dining, and shopping.`,
+      es: `**Visión Arquitectónica y Profunda**
+      Bioma es una torre residencial revolucionaria de 58 pisos que redefine la vida urbana inteligente en el corazón de Costa del Este. Desarrollado por The Velopers junto a Mallol Arquitectos, representa el nacimiento de un estilo de vida inteligente.
+
+      **Tres Ecosistemas Únicos**
+      *   **Ecosistema Residencial:** Siete modelos de apartamentos con techos de 3.2m.
+      *   **Ecosistema Club:** 7,000m² de amenidades incluyendo piscina natural, spa y rooftop "Terrarium".
+      *   **Ecosistema Urbano:** Planta baja comercial integrando trabajo y ocio.`
+    },
+    locationAnalysis: {
+      en: `**Neighborhood Analysis**
+      Costa del Este is Panama City's most successful master-planned community. Bioma residents enjoy pedestrian access to Town Center plaza, over 100 restaurants, and top international schools. It combines urban sophistication with coastal living.`,
+      es: `**Análisis del Vecindario**
+      Costa del Este es la comunidad planificada más exitosa de la ciudad. Los residentes de Bioma disfrutan de acceso peatonal al Town Center, restaurantes y escuelas internacionales.`
+    },
+    investmentAnalysis: {
+      en: `**Investment Analysis**
+      Bioma presents an exceptional investment opportunity in a stable market.
+      *   **Projected Yields:** 8-12% annual rental yields.
+      *   **Occupancy:** 92-95% in Costa del Este.
+      *   **Drivers:** Growing expat community and multinational HQs.`,
+      es: `**Análisis de Inversión**
+      Bioma presenta una oportunidad excepcional en un mercado estable con rendimientos proyectados del 8-12% y alta ocupación en Costa del Este.`
+    },
+    buyerProfile: {
+      en: `**Ideal Buyer Profile**
+      *   **Young Families:** Extensive children's amenities and school proximity.
+      *   **Digital Nomads:** Coworking "habitats" and fiber internet.
+      *   **Investors:** Strong rental fundamentals and flexible payment plans.`,
+      es: `**Perfil del Comprador**
+      Ideal para familias jóvenes, nómadas digitales e inversores que buscan fundamentos sólidos de alquiler.`
     },
     videoUrl: 'https://www.youtube.com/watch?v=yrqNyWJ2d_s',
     floorplans: [
       {
-        name: { en: 'Model A', es: 'Modelo A', zh: 'A型' },
-        size: '97 m2 (1044.1 sq.ft)',
+        name: { en: 'Model A - Studio', es: 'Modelo A - Estudio', zh: 'A型' },
+        size: '65 m2',
+        price: 342000,
+        image: '/images/placeholders/studio_apartment_floorplan.png',
+        characteristics: {
+          en: ['1 Bed', '1 Bath', 'Terrace', '3.2m Ceilings'],
+          es: ['1 Recámara', '1 Baño', 'Terraza', 'Techos de 3.2m'],
+          zh: ['1 卧室', '1 浴室', '露台']
+        }
+      },
+      {
+        name: { en: 'Model B - 1 Bed Plus', es: 'Modelo B - 1 Rec +', zh: 'B型' },
+        size: '89 m2',
+        price: 372000,
+        image: '/images/placeholders/modern_floorplan_1.png',
+        characteristics: {
+          en: ['1 Bed + Den', '2 Baths', '12m2 Terrace', 'Walk-in Closet'],
+          es: ['1 Rec + Den', '2 Baños', 'Terraza 12m2', 'Walk-in Closet'],
+          zh: ['1 卧室 + 书房', '2 浴室', '露台']
+        }
+      },
+      {
+        name: { en: 'Model C - 2 Bed Classic', es: 'Modelo C - 2 Rec Clásico', zh: 'C型' },
+        size: '97 m2',
         price: 417000,
         image: '/images/placeholders/modern_floorplan_1.png',
         characteristics: {
-          en: ['97 m2 construction', '2-3 Bedrooms', '2.5 Bathrooms', 'Spacious Terrace'],
-          es: ['97 m2 de construcción', '2-3 Recámaras', '2.5 Baños', 'Terraza Amplia'],
-          zh: ['97 平方米', '2-3 卧室', '2.5 浴室', '宽敞露台']
+          en: ['2-3 Beds', '2.5 Baths', '15m2 Terrace', 'Maid Option'],
+          es: ['2-3 Recámaras', '2.5 Baños', 'Terraza 15m2', 'Opción Empleada'],
+          zh: ['2-3 卧室', '2.5 浴室', '露台']
         }
       },
       {
-        name: { en: 'Model B', es: 'Modelo B', zh: 'B型' },
-        size: '100 - 156 m2 (1076.4 - 1679.1 sq.ft)',
-        price: 457000,
+        name: { en: 'Model E - 3 Bed Family', es: 'Modelo E - 3 Rec Familiar', zh: 'E型' },
+        size: '114 m2',
+        price: 498000,
         image: '/images/placeholders/luxury_villa_floorplan.png',
         characteristics: {
-          en: ['100-156 m2 construction', '3 Bedrooms', '3.5 Bathrooms', 'Panoramic Views'],
-          es: ['100-156 m2 de construcción', '3 Recámaras', '3.5 Baños', 'Vistas Panorámicas'],
-          zh: ['100-156 平方米', '3 卧室', '3.5 浴室', '全景视野']
+          en: ['3 Beds', '3 Baths', '20m2 Terrace', 'Service Room'],
+          es: ['3 Recámaras', '3 Baños', 'Terraza 20m2', 'Cuarto de Servicio'],
+          zh: ['3 卧室', '3 浴室', '露台']
         }
       },
       {
-        name: { en: 'Model C', es: 'Modelo C', zh: 'C型' },
-        size: '65 - 114 m2 (700 - 1227.1 sq.ft)',
-        price: 335000,
-        image: '/images/placeholders/studio_apartment_floorplan.png',
+        name: { en: 'Model G - Penthouse', es: 'Modelo G - Penthouse', zh: 'G型' },
+        size: '156 m2',
+        price: 695000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
         characteristics: {
-          en: ['65-114 m2 construction', '1-2 Bedrooms', '2 Bathrooms', 'Efficient Design'],
-          es: ['65-114 m2 de construcción', '1-2 Recámaras', '2 Baños', 'Diseño Eficiente'],
-          zh: ['65-114 平方米', '1-2 卧室', '2 浴室', '高效设计']
-        }
-      },
-      {
-        name: { en: 'Model D', es: 'Modelo D', zh: 'D型' },
-        size: '89 - 114 m2 (958 - 1227.1 sq.ft)',
-        price: 406000,
-        image: '/images/placeholders/modern_floorplan_1.png',
-        characteristics: {
-          en: ['89-114 m2 construction', '2 Bedrooms', '2 Bathrooms', 'Sea Views'],
-          es: ['89-114 m2 de construcción', '2 Recámaras', '2 Baños', 'Vista al Mar'],
-          zh: ['89-114 平方米', '2 卧室', '2 浴室', '海景']
+          en: ['3 Beds + Den', '4 Baths', 'Double Height', 'Rooftop Access'],
+          es: ['3 Rec + Den', '4 Baños', 'Doble Altura', 'Acceso Rooftop'],
+          zh: ['3 卧室 + 书房', '4 浴室', '双倍层高']
         }
       }
     ],
     highlights: {
-      en: ['Located in Costa del Este', 'Inspired by nature', 'Exclusive wellness amenities', 'Sustainable architecture'],
-      es: ['Ubicado en Costa del Este', 'Inspirado en la naturaleza', 'Amenidades exclusivas de bienestar', 'Arquitectura sostenible'],
-      zh: ['位于东海岸', '灵感源于自然', '独家健康设施', '可持续建筑']
+      en: ['Three Ecosystems', '7,000m2 Amenities', 'Mallol Architects', 'Urban Porosity'],
+      es: ['Tres Ecosistemas', '7,000m2 Amenidades', 'Arquitectura Mallol', 'Porosidad Urbana'],
+      zh: ['三大生态系统', '7,000平米设施', 'Mallol建筑', '城市孔隙度']
     },
     images: [
       'https://thepanamalink.com/wp-content/uploads/2024/05/Bioma-Costa-del-Este.jpg',
       'https://thepanamalink.com/wp-content/uploads/2024/05/Bioma-Amenities.jpg'
     ],
     amenities: {
-      en: ['Co-working Spaces', 'Infinity Pool', 'Gym & Spa', 'Community Garden'],
-      es: ['Espacios de Co-working', 'Piscina Infinity', 'Gimnasio y Spa', 'Jardín Comunitario'],
-      zh: ['联合办公空间', '无边泳池', '健身房和水疗中心', '社区花园']
+      en: ['Nature Pool', 'Bowling Alley', 'Sky Bar', 'Coworking Habitats'],
+      es: ['Piscina Natural', 'Bolera', 'Sky Bar', 'Hábitats de Coworking'],
+      zh: ['自然泳池', '保龄球馆', '天空酒吧', '联合办公栖息地']
     },
-    priceFrom: 335000,
+    priceFrom: 342000,
     beds: '1-3',
-    baths: '2-3.5',
+    baths: '1-4',
     sqft: '65 - 156',
     unitsAvailable: 15,
     faqs: [],
     marketAnalysis: {
-      en: 'Costa del Este continues to be the most stable high-end market in Panama City.',
-      es: 'Costa del Este sigue siendo el mercado de lujo más estable de la Ciudad de Panamá.',
-      zh: '东海岸仍然是巴拿马城最稳定的高端市场。'
+      en: 'Costa del Este maintains 8-12% annual yields with high occupancy.',
+      es: 'Costa del Este mantiene rendimientos anuales del 8-12% con alta ocupación.',
+      zh: '东海岸保持 8-12% 的年收益率。'
     },
-    keywords: ["bioma costa del este", "panama luxury apartments", "costa del este real estate"],
-    didYouKnow: ["Bioma features 3 unique ecosystems within the building."]
+    keywords: ["bioma costa del este", "panama smart living", "mallol architects panama"],
+    didYouKnow: ["Bioma features 7 distinct 'habitats' within its club ecosystem."]
   },
   {
     id: 'silverbay',
@@ -1267,39 +1318,114 @@ export const PROJECTS: Project[] = [
     location: { en: 'Boquete, Chiriqui', es: 'Boquete, Chiriquí', zh: '博克特, 奇里基' },
     type: ['Condo', 'Villa'],
     zone: ['Mountain'],
-    status: 'Presale',
+    status: 'Ready to Move',
     h1Title: {
-      en: 'Towncenter Boquete | New Urbanism in the Highlands | ExpatRockstars',
-      es: 'Towncenter Boquete | Nuevo Urbanismo en las Tierras Altas',
+      en: 'Towncenter Boquete | New Urbanism in the Highlands',
+      es: 'Towncenter Boquete | Nuevo Urbanismo en Tierras Altas',
       zh: 'Towncenter Boquete | 高地新城市主义'
     },
     description: {
-      en: 'A mixed-use development bringing modern convenience to the heart of Boquete.',
-      es: 'Un desarrollo de uso mixto que trae la conveniencia moderna al corazón de Boquete.',
-      zh: '将现代便利带到博克特中心的综合用途开发项目。'
+      en: 'Sophisticated mixed-use living in the heart of Boquete with tourism-licensed units.',
+      es: 'Vida sofisticada de uso mixto en el corazón de Boquete con unidades con licencia turística.',
+      zh: '位于博克特中心的精致综合用途生活，拥有旅游许可单元。'
+    },
+    longDescription: {
+      en: `**Project Deep Dive & Architectural Vision**
+      Towncenter Boquete represents a revolutionary New Urbanism development that brings sophisticated mixed-use living to the heart of Panama's most beloved mountain town. Strategically located on Avenida Central, this landmark project seamlessly integrates residential condos with shopping, dining, and culture.
+
+      **Mountain Contemporary Design**
+      The vision embraces mountain contemporary design with natural stone, wood elements, and floor-to-ceiling glass to capture Volcán Barú views. All units include the innovative LOCK-OFF SYSTEM - a flexible design allowing owners to rent separate independent units.
+
+      **Turnkey & Tourism Licensed**
+      Units come FULLY FURNISHED and equipped. Towncenter holds official ATP licensing for short-term tourist rentals, a rare advantage for immediate Airbnb income.`,
+      es: `**Visión Arquitectónica y Profunda**
+      Towncenter Boquete representa el Nuevo Urbanismo en el corazón de Boquete. Ubicado estratégicamente en la Avenida Central, integra condominios residenciales con comercio y cultura.
+
+      **Diseño Contemporáneo de Montaña**
+      Incorpora piedra natural, madera y vidrio para vistas al Volcán Barú. Todas las unidades incluyen el sistema LOCK-OFF para maximizar alquileres.
+
+      **Llave en Mano y Licencia Turística**
+      Unidades TOTALMENTE AMUEBLADAS con licencia de la ATP para alquileres a corto plazo.`
+    },
+    locationAnalysis: {
+      en: `**Neighborhood Analysis**
+      Boquete is Panama's premier mountain destination, offering eternal spring weather. Towncenter's location places you in the heart of everything: walking distance to restaurants, supermarkets, and the famous Tuesday Market.`,
+      es: `**Análisis del Vecindario**
+      Boquete es el destino de montaña premier de Panamá. Towncenter está a pasos de todo: restaurantes, supermercados y el mercado de los martes.`
+    },
+    investmentAnalysis: {
+      en: `**Investment Analysis**
+      *   **Short-term Income:** $1,200-$2,400/month potential.
+      *   **Lock-off System:** Doubles rental potential.
+      *   **Immediate Delivery:** Generating income from day one.`,
+      es: `**Análisis de Inversión**
+      Potencial de ingresos a corto plazo de $1,200-$2,400/mes. El sistema Lock-off duplica el potencial. Entrega inmediata.`
+    },
+    buyerProfile: {
+      en: `**Ideal Buyer Profile**
+      *   **Retiring Adventurers:** Lock-and-leave convenience.
+      *   **Airbnb Investors:** Tourism licensing and management.
+      *   **Digital Nomads:** Fast internet and inspiring setting.`,
+      es: `**Perfil del Comprador**
+      Aventureros jubilados, inversores de Airbnb y nómadas digitales.`
     },
     videoUrl: 'https://www.youtube.com/watch?v=FafoYISb6BQ',
+    floorplans: [
+      {
+        name: { en: 'Caldera - 1 Bed Compact', es: 'Caldera - 1 Rec Compacto', zh: 'Caldera' },
+        size: '66 m2',
+        price: 214600,
+        image: '/images/placeholders/studio_apartment_floorplan.png',
+        characteristics: {
+          en: ['1 Bed', '1 Bath', 'Lock-off', 'Views'],
+          es: ['1 Recámara', '1 Baño', 'Lock-off', 'Vistas'],
+          zh: ['1 卧室', '1 浴室', '锁定', '景观']
+        }
+      },
+      {
+        name: { en: 'Jaramillo - 2 Bed Standard', es: 'Jaramillo - 2 Rec Estándar', zh: 'Jaramillo' },
+        size: '90 m2',
+        price: 267000,
+        image: '/images/placeholders/modern_floorplan_1.png',
+        characteristics: {
+          en: ['2 Beds', '2 Baths', 'River Views', 'Great Room'],
+          es: ['2 Recámaras', '2 Baños', 'Vistas al Río', 'Gran Sala'],
+          zh: ['2 卧室', '2 浴室', '河景']
+        }
+      },
+      {
+        name: { en: 'Volcan - 3 Bed Premium', es: 'Volcan - 3 Rec Premium', zh: 'Volcan' },
+        size: '119 m2',
+        price: 325000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['3 Beds', '3 Baths', 'Corner Unit', 'Lock-off'],
+          es: ['3 Recámaras', '3 Baños', 'Unidad de Esquina', 'Lock-off'],
+          zh: ['3 卧室', '3 浴室', '角落单元']
+        }
+      }
+    ],
     images: ['https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=1200&q=80', 'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=1200&q=80'],
-    priceFrom: 210000,
+    priceFrom: 214600,
     beds: '1-3',
     baths: '1-3',
-    sqft: '70 - 150',
+    sqft: '66 - 122',
     unitsAvailable: 15,
     amenities: {
-      en: ['Shopping Plaza', 'Restaurants', 'Medical Center', 'Park'],
-      es: ['Plaza Comercial', 'Restaurantes', 'Centro Médico', 'Parque'],
-      zh: ['购物广场', '餐厅', '医疗中心', '公园']
+      en: ['Shopping Plaza', 'Medical Center', 'Amphitheather', 'River Trail'],
+      es: ['Plaza Comercial', 'Centro Médico', 'Anfiteatro', 'Sendero del Río'],
+      zh: ['购物广场', '医疗中心', '露天剧场', '河道']
     },
     highlights: {
-      en: ['Walkability', 'Central Boquete', 'Modern Amenities'],
-      es: ['Caminabilidad', 'Boquete Central', 'Amenidades Modernas'],
-      zh: ['适宜步行', '博克特中心', '现代设施']
+      en: ['Tourism Licensed', 'Lock-off System', 'Central Location', 'Fully Furnished'],
+      es: ['Licencia Turística', 'Sistema Lock-off', 'Ubicación Central', 'Totalmente Amueblado'],
+      zh: ['旅游许可', '锁定系统', '中心位置', '全配家具']
     },
-    keywords: ["towncenter boquete", "boquete commercial real estate"],
+    keywords: ["towncenter boquete", "boquete airbnb investment", "panama mountain condos"],
     marketAnalysis: {
-      en: "Commercial and residential mix drives value.",
-      es: "La mezcla comercial y residencial impulsa el valor.",
-      zh: "商业和住宅混合推动价值。"
+      en: "Short-term rental licensing creates high-yield Airbnb potential.",
+      es: "La licencia de alquiler a corto plazo crea un alto potencial de rendimiento en Airbnb.",
+      zh: "短期租赁许可创造了高收益潜力。"
     },
     faqs: []
   },
@@ -1310,39 +1436,115 @@ export const PROJECTS: Project[] = [
     location: { en: 'Santa Maria, Panama City', es: 'Santa María, Ciudad de Panamá', zh: '圣玛丽亚, 巴拿马城' },
     type: ['Condo'],
     zone: ['City'],
-    status: 'Presale',
+    status: 'Ready to Move',
     h1Title: {
-      en: 'Empire Residences Santa Maria | Ultra-Luxury Living | ExpatRockstars',
-      es: 'Empire Residences Santa María | Vida de Ultra Lujo',
-      zh: 'Empire Residences Santa Maria | 超豪华生活'
+      en: 'Empire Residences Santa Maria | Ultra-Luxury Golf Living',
+      es: 'Empire Residences Santa María | Vida de Ultra Lujo y Golf',
+      zh: 'Empire Residences Santa Maria | 超豪华高尔夫生活'
     },
     description: {
-      en: 'Empire Residences sets a new standard for luxury in the exclusive Santa Maria Golf & Country Club.',
-      es: 'Empire Residences establece un nuevo estándar de lujo en el exclusivo Santa María Golf & Country Club.',
-      zh: 'Empire Residences 在独家的圣玛丽亚高尔夫乡村俱乐部树立了豪华的新标准。'
+      en: 'A 48-story architectural masterpiece in Santa Maria Golf & Country Club with exclusive half-floor residences.',
+      es: 'Una obra maestra arquitectónica de 48 pisos en Santa María Golf & Country Club con residencias exclusivas de medio piso.',
+      zh: '圣玛丽亚高尔夫乡村俱乐部的一座 48 层建筑杰作，拥有独特的半层住宅。'
+    },
+    longDescription: {
+      en: `**Project Deep Dive & Architectural Vision**
+      Empire Residences stands as a 48-story architectural masterpiece designed by renowned architect Saúl Bassan. This landmark tower represents the pinnacle of Panama City residential development within the prestigious Santa Maria Golf & Country Club.
+
+      **Privacy and Panoramas**
+      Each residence occupies an entire half-floor (only 2 units per floor), ensuring maximum privacy. Floor-to-ceiling glass walls frame breathtaking 270-degree views of the Jack Nicklaus-designed golf course and Pacific Ocean.
+
+      **World-Class Amenities**
+      Social areas rival five-star hotels: adult infinity pool, children's pool, gym with Technogym equipment, sun deck, and elegant ballroom. Delivery status: READY FOR IMMEDIATE OCCUPANCY.`,
+      es: `**Visión Arquitectónica y Profunda**
+      Empire Residences es una obra maestra de 48 pisos diseñada por Saúl Bassan en Santa María.
+
+      **Privacidad y Panorámicas**
+      Cada residencia ocupa medio piso entero, asegurando privacidad. Paredes de vidrio de piso a techo ofrecen vistas de 270 grados al campo de golf y al océano.
+
+      **Amenidades de Clase Mundial**
+      Áreas sociales que rivalizan con hoteles de cinco estrellas: piscinas, gimnasio Technogym y salón de baile. ENTREGA INMEDIATA.`
+    },
+    locationAnalysis: {
+      en: `**Neighborhood Analysis**
+      Santa Maria is Panama City's most prestigious address. The community centers around the Jack Nicklaus Signature golf course. Residents enjoy safety, exclusivity, and proximity to Costa del Este and the airport.`,
+      es: `**Análisis del Vecindario**
+      Santa María es la dirección más prestigiosa de Panamá, centrada en el campo de golf Jack Nicklaus. Seguridad, exclusividad y cercanía a Costa del Este.`
+    },
+    investmentAnalysis: {
+      en: `**Investment Analysis**
+      Empire Residences represents the ultra-luxury segment.
+      *   **Rental Income:** $3,500-$5,500/month.
+      *   **Occupancy:** Near 100% for furnished units.
+      *   **Target Tenant:** C-Suite Executives and Diplomats.`,
+      es: `**Análisis de Inversión**
+      Representa el segmento de ultra lujo. Ingresos de alquiler de $3,500-$5,500/mes. Objetivo: Ejecutivos y Diplomáticos.`
+    },
+    buyerProfile: {
+      en: `**Ideal Buyer Profile**
+      *   **C-Suite Executives:** Prestige address and privacy.
+      *   **Golf Enthusiasts:** Direct course access and views.
+      *   **Wealth Preservation:** Stable luxury asset.`,
+      es: `**Perfil del Comprador**
+      Ejecutivos C-Suite, entusiastas del golf y preservación de patrimonio.`
     },
     videoUrl: 'https://www.youtube.com/watch?v=JjRQCPdkrrs',
+    floorplans: [
+      {
+        name: { en: 'Model A - 3 Bed Classic', es: 'Modelo A - 3 Rec Clásico', zh: 'A型' },
+        size: '322 m2',
+        price: 1030000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['3 Beds', '3.5 Baths', 'Private Foyer', 'Golf Views'],
+          es: ['3 Recámaras', '3.5 Baños', 'Foyer Privado', 'Vistas al Golf'],
+          zh: ['3 卧室', '3.5 浴室', '高尔夫景观']
+        }
+      },
+      {
+        name: { en: 'Model C - 4 Bed Estate', es: 'Modelo C - 4 Rec Estate', zh: 'C型' },
+        size: '368 m2',
+        price: 1185000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['4 Beds', '4.5 Baths', 'Panoramic 270° Views', 'Family Room'],
+          es: ['4 Recámaras', '4.5 Baños', 'Vistas Panorámicas 270°', 'Sala Familiar'],
+          zh: ['4 卧室', '4.5 浴室', '270度全景']
+        }
+      },
+      {
+        name: { en: 'Penthouse Collection', es: 'Colección Penthouse', zh: '顶层公寓' },
+        size: '400 - 450 m2',
+        price: 1450000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['4 Beds + Den', '5+ Baths', 'Double Height', 'Rooftop Terrace'],
+          es: ['4 Rec + Den', '5+ Baños', 'Doble Altura', 'Terraza Rooftop'],
+          zh: ['4 卧室 + 书房', '5+ 浴室', '顶层露台']
+        }
+      }
+    ],
     images: ['https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&q=80', 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80'],
-    priceFrom: 550000,
+    priceFrom: 1030000,
     beds: '3-4',
-    baths: '3.5-4.5',
-    sqft: '200 - 400',
+    baths: '3.5-5',
+    sqft: '322 - 450',
     unitsAvailable: 6,
     amenities: {
-      en: ['Golf Course Views', 'Exclusive Gym', 'Pool & Jacuzzi', 'Kids Club'],
-      es: ['Vistas al Campo de Golf', 'Gimnasio Exclusivo', 'Piscina y Jacuzzi', 'Club de Niños'],
-      zh: ['高尔夫球场景观', '专属健身房', '游泳池和按摩浴缸', '儿童俱乐部']
+      en: ['Infinity Pool', 'Technogym', 'Ballroom', 'Golf Views'],
+      es: ['Piscina Infinity', 'Technogym', 'Salón de Baile', 'Vistas al Golf'],
+      zh: ['无边泳池', '健身房', '宴会厅', '高尔夫景观']
     },
     highlights: {
-      en: ['Santa Maria Location', 'High-End Finishes', 'Golf Lifestyle'],
-      es: ['Ubicación en Santa María', 'Acabados de Alta Gama', 'Estilo de Vida de Golf'],
-      zh: ['圣玛丽亚位置', '高端装修', '高尔夫生活方式']
+      en: ['Private Lobby per unit', 'Immedidate Occupancy', 'Saul Bassan Design'],
+      es: ['Lobby Privado por unidad', 'Ocupación Inmediata', 'Diseño de Saúl Bassan'],
+      zh: ['私人大堂', '即刻入住', '设计']
     },
-    keywords: ["empire residences panama", "santa maria panama real estate"],
+    keywords: ["empire residences", "santa maria panama", "luxury golf condos panama"],
     marketAnalysis: {
-      en: "Santa Maria maintains high property values.",
-      es: "Santa María mantiene altos valores de propiedad.",
-      zh: "圣玛丽亚保持高房产价值。"
+      en: "Exclusive half-floor layouts create scarce value in high-end market.",
+      es: "Los diseños exclusivos de medio piso crean un valor escaso en el mercado de alta gama.",
+      zh: "独特的半层布局在高端市场创造了稀缺价值。"
     },
     faqs: []
   }
