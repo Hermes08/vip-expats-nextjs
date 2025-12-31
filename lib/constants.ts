@@ -416,7 +416,7 @@ export const PROJECTS: Project[] = [
     floorplans: [
       {
         name: { en: 'Marina Loft', es: 'Loft de la Marina', zh: '游艇码头LOFT' },
-        size: '250 m2 (2691 sq.ft)',
+        size: '250 m2',
         price: 450000,
         image: '/images/placeholders/modern_floorplan_1.png',
         characteristics: {
@@ -427,7 +427,7 @@ export const PROJECTS: Project[] = [
       },
       {
         name: { en: 'Lakeside Estate', es: 'Finca del Lago', zh: '湖畔庄园' },
-        size: '650 m2 (6996 sq.ft)',
+        size: '650 m2',
         price: 1200000,
         image: '/images/placeholders/luxury_villa_floorplan.png',
         characteristics: {
@@ -548,7 +548,7 @@ export const PROJECTS: Project[] = [
     floorplans: [
       {
         name: { en: 'Chill Suite', es: 'Suite Relax', zh: '休闲套房' },
-        size: '65 m2 (700 sq.ft)',
+        size: '65 m2',
         price: 195000,
         image: '/images/placeholders/studio_apartment_floorplan.png',
         characteristics: {
@@ -559,7 +559,7 @@ export const PROJECTS: Project[] = [
       },
       {
         name: { en: 'Party Pad', es: 'Residencia Party', zh: '派对住宅' },
-        size: '95 m2 (1022 sq.ft)',
+        size: '95 m2',
         price: 285000,
         image: '/images/placeholders/modern_floorplan_1.png',
         characteristics: {
@@ -678,7 +678,7 @@ export const PROJECTS: Project[] = [
     floorplans: [
       {
         name: { en: 'Seaside Villa', es: 'Villa al Mar', zh: '海边别墅' },
-        size: '120 m2 (1291 sq.ft)',
+        size: '120 m2',
         price: 210000,
         image: '/images/placeholders/luxury_villa_floorplan.png',
         characteristics: {
@@ -689,7 +689,7 @@ export const PROJECTS: Project[] = [
       },
       {
         name: { en: 'Skyline Penthouse', es: 'Penthouse Horizonte', zh: '地平线阁楼' },
-        size: '250 m2 (2691 sq.ft)',
+        size: '250 m2',
         price: 450000,
         image: '/images/placeholders/modern_floorplan_1.png',
         characteristics: {
