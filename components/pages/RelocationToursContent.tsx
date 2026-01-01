@@ -3,14 +3,30 @@
 import React from 'react';
 import { Compass, MapPin, CheckCircle, ArrowRight, MessageSquare, Ship, Mountain, Globe, ShieldCheck, Users, Calendar, Plane, Map } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
 const RelocationToursContent: React.FC = () => {
+    const breadcrumbItems = [
+        { name: "Home", item: "https://expatrockstars.com/" },
+        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
+        { name: "Tours", item: "https://expatrockstars.com/relocation/tours" }
+    ];
+
     return (
         <div className="pt-24 min-h-screen bg-white">
+            <BreadcrumbSchema items={breadcrumbItems} />
+
             {/* Hero Section */}
             <section className="bg-brand-900 py-32 text-white relative overflow-hidden">
                 <div className="absolute inset-0 opacity-20">
-                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80" alt="Panama Relocation Real Estate Tours" className="w-full h-full object-cover" />
+                    <Image
+                        src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80"
+                        alt="Expats exploring beautiful local landscapes during a Panama Relocation Tour"
+                        fill
+                        className="object-cover"
+                        priority
+                    />
                 </div>
                 <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
                     <span className="inline-block px-3 py-1 bg-brand-GOLD text-brand-950 text-[10px] font-bold uppercase tracking-[0.3em] rounded mb-6">
