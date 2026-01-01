@@ -6,14 +6,14 @@ export async function generateMetadata({ params }: { params: { lang: string } })
 
     const translations: any = {
         en: {
-            title: 'Pensionado Visa Panama | Retirement Perks & Guide 2024',
-            description: 'The complete guide to the Panama Pensionado Visa. Learn about the lifetime discounts for retirees, income requirements, and how to retire in Panama with the Rockstar team.',
-            keywords: ['pensionado visa panama', 'pensionado visa panama requirements', 'retire in panama', 'panama retirement discounts']
+            title: 'Panama Retirement Visa Guide 2026 | Pensionado Program Perks',
+            description: 'The definitive guide to the Panama Pensionado Visa in 2026. Learn about lifetime discounts, income requirements, and elite relocation support.',
+            keywords: ['panama retirement visa', 'pensionado visa panama requirements', 'retire in panama', 'panama retirement benefits 2026']
         },
         es: {
-            title: 'Visa de Pensionado Panamá | Beneficios y Guía 2024',
-            description: 'La guía completa para la Visa de Pensionado de Panamá. Conozca los descuentos de por vida para jubilados, requisitos de ingresos y cómo jubilarse en Panamá.',
-            keywords: ['visa pensionado panamá', 'requisitos visa pensionado', 'jubilarse en panamá', 'descuentos pensionados panamá']
+            title: 'Guía de Visa de Pensionado Panamá 2026 | Beneficios de Jubilación',
+            description: 'La guía definitiva para la Visa de Pensionado de Panamá en 2026. Conozca los descuentos de por vida, requisitos de ingresos y apoyo de reubicación de élite.',
+            keywords: ['visa de jubilado panama', 'requisitos visa pensionado 2026', 'registrarse como jubilado en panama', 'beneficios jubilación panama']
         }
     };
 

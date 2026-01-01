@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { ShieldCheck, Gavel, Scale, FileText, Briefcase, HelpCircle, ArrowRight, UserCheck, AlertTriangle } from 'lucide-react';
+import { ShieldCheck, Gavel, Scale, FileText, Briefcase, HelpCircle, ArrowRight, UserCheck, AlertTriangle, Check } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
@@ -35,20 +35,64 @@ const RelocationLegalContent: React.FC = () => {
 
     const faqs = [
         {
-            q: "Do I need a panama immigration lawyer?",
-            a: "Yes. By law, all residency applications in Panama must be filed through a licensed Panamanian lawyer. We partner with the top in-house firm to ensure your <strong>panama residency visa</strong> is filed correctly the first time."
+            question: "Do I need a panama immigration lawyer?",
+            answer: "Yes. By law, all residency applications in Panama must be filed through a licensed Panamanian lawyer. You cannot walk into the immigration office alone. We partner with the top in-house firm to ensure your <strong>panama residency visa</strong> is filed correctly the first time."
         },
         {
-            q: "What are the passport requirements for Panama?",
-            a: "Your <strong>passport for panama</strong> must be valid for at least 3-6 months depending on your home country. For residency, it must be valid for the duration of the processing."
+            question: "What are the passport requirements for Panama?",
+            answer: "Your <strong>passport for panama</strong> must be valid for at least 3-6 months depending on your home country. For residency, it must be valid for the duration of the processing (usually 3-6 months)."
         },
         {
-            q: "How long does panama permanent residency take?",
-            a: "It depends on the visa. The <strong>qualified investor visa</strong> can grant PR in 30 days, while the <strong>friendly nations visa panama requirements</strong> involve a 2-year provisional period before conversion."
+            question: "How long does panama permanent residency take?",
+            answer: "It depends on the visa. The <strong>qualified investor visa</strong> can grant PR in 30 days, while the <strong>friendly nations visa panama requirements</strong> involve a 2-year provisional period before conversion."
         },
         {
-            q: "What is the cost of a private immigration consultation?",
-            a: "While we provide the logistics and housing, we connect you with <strong>panama immigration lawyers</strong> for a private review. Our specialized <strong>panama relocation tours</strong> include this consultation at no extra cost."
+            question: "What is an Apostille?",
+            answer: "An apostille is a federal authentication of a document for international use. Panama requires all foreign documents (FBI check, birth certificates) to be apostilled by the issuing authority (e.g., US Department of State)."
+        },
+        {
+            question: "Can I work in Panama with a residency visa?",
+            answer: "Residency gives you the right to live, but a **Work Permit** is a separate legal process through the Ministry of Labor (MITRADEL). Certain visas, like the Professional path, make this easier."
+        },
+        {
+            question: "Are there protected professions in Panama?",
+            answer: "Yes. Over 50 professions (Medicine, Law, Engineering, Nursing) are reserved for Panamanian citizens. Foreigners can work in these sectors as 'Consultants' or 'Managers' but cannot hold the protected title."
+        },
+        {
+            question: "How much are legal fees for a visa?",
+            answer: "Legal fees typically range from $1,500 to $2,500 plus government costs of approx $1,050. Dependents usually cost an additional $500 - $800 each in legal fees."
+        },
+        {
+            question: "Can I bring my pets to Panama?",
+            answer: "Yes, but it requires a 'Pet Entry Permit' and a health certificate from your home vet, apostilled by the USDA (for US) or equivalent. Our legal team can handle the 'Home Quarantine' paperwork."
+        },
+        {
+            question: "What is a 'Cédula'?",
+            answer: "The Cédula is the official Panamanian ID card. You receive an 'E' Cédula (Foreigner) once your residency is approved. It is your most important piece of ID in the country."
+        },
+        {
+            question: "Do I need to be in Panama for the whole process?",
+            answer: "No. Most visas require one initial visit of 5-10 business days for the filing. After that, you can wait for approval (3-4 months) from abroad, or stay in Panama as a tourist-resident."
+        },
+        {
+            question: "Is there an age limit for the Pensionado Visa?",
+            answer: "No. As long as you have a lifetime government or corporate pension of $1,000/mo, you qualify regardless of age (perfect for early retirees)."
+        },
+        {
+            question: "Can I buy a car in Panama as a tourist?",
+            answer: "Yes, but you cannot get a Panamanian Driver's License until you have a residency card. You can drive on your foreign license for up to 90 days."
+        },
+        {
+            question: "How do I open a bank account in Panama?",
+            answer: "This is often harder than the visa. You need a bank reference letter, proof of income, and a local 'nexus' (like a residency application). Our lawyers handle the pre-compliance for you."
+        },
+        {
+            question: "What is a 'Repatriation Bond'?",
+            answer: "It is a $800 refundable deposit (or insurance) paid to the government in case you need to be deported. It's mandatory for almost all visa types."
+        },
+        {
+            question: "What happens if my visa expires?",
+            answer: "Panama is strict. If your temporary card expires before you file for the next stage, you face heavy fines ($50/mo) and potential deportation. Our legal calendar prevents this."
         }
     ];
 
@@ -60,7 +104,7 @@ const RelocationLegalContent: React.FC = () => {
                 <Breadcrumbs items={breadcrumbItems} />
             </div>
 
-            <FAQSchema questions={faqs.map(f => ({ question: f.q, answer: f.a }))} />
+            <FAQSchema questions={faqs} />
 
             {/* Disclaimer Bar */}
             <div className="bg-brand-GOLD text-brand-950 py-3 text-center text-[10px] font-black uppercase tracking-[0.3em] sticky top-20 z-40">
@@ -108,18 +152,56 @@ const RelocationLegalContent: React.FC = () => {
                 </div>
             </section>
 
+            {/* The "No-Lawyer" Reality Check */}
+            <section className="py-32 bg-neutral-900 border-y border-white/5 relative overflow-hidden">
+                <div className="absolute top-0 right-0 p-20 opacity-5">
+                    <Scale size={200} />
+                </div>
+                <div className="max-w-7xl mx-auto px-4 relative z-10 grid lg:grid-cols-2 gap-24 items-center">
+                    <div>
+                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">When You <span className="text-brand-GOLD">DON'T</span> <br /> Need a Lawyer</h2>
+                        <div className="space-y-8 text-lg text-gray-400 font-medium leading-[1.8]">
+                            <p>
+                                Transparency is our core value. While you <strong>must</strong> have a <strong>panama immigration lawyer</strong> for the visa filing itself, you do NOT need a lawyer for everything.
+                            </p>
+                            <p>
+                                Many firms will try to charge you $2,000 for a "Real Estate Purchase Review" or a "Car Buying Escrow." For most standard transactions, a reputable broker and a simple notary-certified contract are sufficient.
+                            </p>
+                            <div className="p-8 bg-white/5 rounded-[3rem] border border-white/10">
+                                <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-widest mb-4">Save Your Money On:</h4>
+                                <ul className="grid grid-cols-2 gap-4 text-[10px] font-black uppercase tracking-widest">
+                                    <li className="flex gap-2"><Check size={12} className="text-brand-GOLD" /> Standard Rental Leases</li>
+                                    <li className="flex gap-2"><Check size={12} className="text-brand-GOLD" /> Pre-owned Car Sales</li>
+                                    <li className="flex gap-2"><Check size={12} className="text-brand-GOLD" /> Utility Setup</li>
+                                    <li className="flex gap-2"><Check size={12} className="text-brand-GOLD" /> School Enrollments</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="bg-brand-GOLD p-16 rounded-[4rem] text-brand-950 shadow-2xl">
+                        <h3 className="text-3xl font-black uppercase tracking-tighter mb-8 italic">The "Legal Rockstar" Hybrid</h3>
+                        <p className="font-bold opacity-80 leading-relaxed mb-8 text-lg">
+                            We believe in the "Hybrid" model: Use the lawyers for the visa and the heavy corporate lifting, but use our **Logistics Specialists** for the ground-level move. This saves our clients an average of **$1,500 - $3,000** in unnecessary legal fees.
+                        </p>
+                        <Link href="/contacto" className="px-10 py-5 bg-brand-950 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all inline-block shadow-2xl">
+                            Get My Logistic Proposal
+                        </Link>
+                    </div>
+                </div>
+            </section>
+
             {/* Value Proposition: The Lawyer Connection */}
             <section className="py-32 bg-white text-brand-950 rounded-[5rem] mx-4 overflow-hidden relative">
                 <div className="max-w-7xl mx-auto px-8 relative z-10">
                     <div className="flex flex-col lg:flex-row gap-20 items-center">
                         <div className="lg:w-1/2">
                             <UserCheck size={64} className="text-brand-GOLD mb-10" />
-                            <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD underline">In-House</span> Advantage</h2>
+                            <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none text-brand-950">The <span className="text-brand-GOLD underline">In-House</span> Advantage</h2>
                             <p className="text-xl text-neutral-600 font-medium leading-[1.8] mb-12">
-                                Navigating <strong>panama visa requirements</strong> alone is a liability. We put you in direct contact with our firm's specialized attorneys to handle everything from your <strong>panama work permit</strong> to permanent residency.
+                                Navigating <strong>panama visa requirements</strong> alone is a liability. Our platform exists to connect you with verified <strong>panama visa attorneys</strong> who have a proven track record. No "cousin-of-a-friend" deals. Just vetted, professional legal counsel.
                             </p>
-                            <Link href="/contacto" className="px-12 py-6 bg-brand-950 text-white font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-GOLD hover:text-brand-950 transition-all inline-block shadow-2xl">
-                                Meet the Legal Team
+                            <Link href="/relocation/legal/lawyers-directory" className="px-12 py-6 bg-brand-950 text-white font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-GOLD hover:text-brand-950 transition-all inline-block shadow-2xl">
+                                Browse Verified Lawyers
                             </Link>
                         </div>
                         <div className="lg:w-1/2">
@@ -136,7 +218,7 @@ const RelocationLegalContent: React.FC = () => {
                                     <div className="text-4xl font-black italic text-brand-950 mb-2">100%</div>
                                     <div className="text-[9px] font-black uppercase tracking-widest text-neutral-400">Success Rate</div>
                                 </div>
-                                <div className="p-8 bg-brand-GOLD text-brand-950 rounded-[3rem] text-center">
+                                <div className="p-8 bg-brand-GOLD text-brand-950 rounded-[3rem] text-center shadow-xl">
                                     <div className="text-4xl font-black italic mb-2">Elite</div>
                                     <div className="text-[9px] font-black uppercase tracking-widest opacity-60">Legal Network</div>
                                 </div>
@@ -154,16 +236,19 @@ const RelocationLegalContent: React.FC = () => {
                 </div>
 
                 <div className="space-y-10">
-                    {faqs.map((faq, i) => (
-                        <div key={i} className="bg-white/5 border border-white/5 p-10 rounded-[3rem] hover:bg-white/10 transition-all">
-                            <div className="flex gap-6 items-start">
-                                <HelpCircle className="text-brand-GOLD shrink-0 mt-1" size={24} />
-                                <div>
-                                    <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic">{faq.q}</h4>
-                                    <p className="text-sm text-neutral-400 font-medium leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.a }}></p>
-                                </div>
-                            </div>
-                        </div>
+                    {faqs.map((faq, idx) => (
+                        <details key={idx} className="group bg-neutral-900 rounded-[2.5rem] border border-white/5 overflow-hidden transition-all hover:border-brand-GOLD/50">
+                            <summary className="flex items-center justify-between p-8 cursor-pointer list-none">
+                                <span className="text-xl font-black uppercase tracking-tighter italic pr-8">{faq.question}</span>
+                                <span className="text-brand-GOLD group-open:rotate-180 transition-transform duration-300">
+                                    <ArrowRight size={24} />
+                                </span>
+                            </summary>
+                            <div
+                                className="px-8 pb-8 text-gray-400 font-medium leading-relaxed border-t border-white/5 pt-6"
+                                dangerouslySetInnerHTML={{ __html: faq.answer }}
+                            />
+                        </details>
                     ))}
                 </div>
             </section>

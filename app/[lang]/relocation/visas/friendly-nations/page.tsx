@@ -6,14 +6,14 @@ export async function generateMetadata({ params }: { params: { lang: string } })
 
     const translations: any = {
         en: {
-            title: 'Friendly Nations Visa Panama | 2024 Requirements & Guide',
-            description: 'The definitive guide to the Panama Friendly Nations Visa. Discover the 2024 requirements, list of 50 nations, professional pathways, and real estate investment options.',
-            keywords: ['friendly nations visa panama', 'panama friendly nations visa list', 'panama residency by investment', 'panama work permit']
+            title: 'Friendly Nations Visa Panama 2026 | Ultimate Requirements Guide',
+            description: 'The definitive guide to the Panama Friendly Nations Visa in 2026. Discover the latest list of 50 nations, investment pathways, and professional requirements.',
+            keywords: ['friendly nations visa panama requirements', 'panama friendly nations visa list 2026', 'panama residency by investment', 'panama work permit for foreigners']
         },
         es: {
-            title: 'Visa de Naciones Amigas Panamá | Requisitos y Guía 2024',
-            description: 'La guía definitiva para la Visa de Naciones Amigas de Panamá. Descubre los requisitos de 2024, la lista de naciones y opciones de inversión.',
-            keywords: ['visa naciones amigas panamá', 'requisitos visa naciones amigas', 'residencia panamá por inversión']
+            title: 'Guía Visa de Naciones Amigas Panamá 2026 | Requisitos Actualizados',
+            description: 'La guía definitiva para la Visa de Naciones Amigas de Panamá en 2026. Descubre la lista de naciones, opciones de inversión y requisitos profesionales.',
+            keywords: ['visa naciones amigas panamá 2026', 'requisitos residencia panamá naciones amigas', 'inversion panama paises amigos']
         }
     };
 

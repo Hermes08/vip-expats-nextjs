@@ -7,14 +7,14 @@ export async function generateMetadata({ params }: { params: { lang: string } })
 
     const translations: any = {
         en: {
-            title: 'Panama Relocation Hub | Everything You Need to Move to Panama',
-            description: 'The ultimate resource for relocating to Panama. Discover relocation tours, visa guides, and regional analysis for expats seeking to move to Panama.',
-            keywords: ['panama relocation', 'relocate to panama', 'move to panama', 'panama relocation tours', 'pensionado visa panama']
+            title: 'Panama Relocation Guide 2026 | The Ultimate Move-to-Panama Hub',
+            description: 'The definitive 2026 resource for relocating to Panama. Compare relocation tours, visa types, cost of living, and the best expat neighborhoods.',
+            keywords: ['panama relocation guide 2026', 'move to panama 2026', 'panama expat hub', 'relocate to panama requirements']
         },
         es: {
-            title: 'Hub de Relocación en Panamá | Todo lo que necesitas para mudarte',
-            description: 'El recurso definitivo para reubicarse en Panamá. Descubra tours de reubicación, guías de visa y análisis regional para expatriados.',
-            keywords: ['relocación panamá', 'mudarse a panamá', 'tours de reubicación panamá', 'visa pensionado panamá']
+            title: 'Guía de Relocación a Panamá 2026 | El Hub Definitivo',
+            description: 'El recurso definitivo de 2026 para mudarse a Panamá. Compare tours, visas, costo de vida y los mejores barrios para expatriados.',
+            keywords: ['guía relocación panamá 2026', 'mudarse a panamá 2026', 'vivir en panamá expatriados']
         }
     };
 

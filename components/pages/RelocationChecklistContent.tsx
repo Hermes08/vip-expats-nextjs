@@ -16,21 +16,45 @@ const RelocationChecklistContent: React.FC = () => {
 
     const checklistSections = [
         {
-            title: "Phase 1: Home Country Prep",
+            title: "Phase 1: Home Country Procurement",
             items: [
-                { title: "FBI Criminal Record / Police Check", desc: "Must be issued within 6 months of filing and must be APOSTILLED or AUTHENTICATED." },
-                { title: "Passport Validity", desc: "Ensure your passport has at least 6 months validity remaining." },
-                { title: "Second ID", desc: "A valid driver's license or state ID card (notarized copy)." },
-                { title: "Apostilled Marriage/Birth Certificates", desc: "Only required if applying with dependents." }
+                {
+                    title: "FBI Criminal Record (USA) / Police Check (Global)",
+                    desc: "This is the most critical document. For US citizens, it MUST be the FBI Identity History Summary. Local or State police checks are not accepted. For others, it must be the national-level background check. In 2026, Panama requires this to be issued within 6 months of your filing date. If you get this too early, you risk it 'aging out' before your appointment. Use an FBI Channeller for 24-48 hour results instead of the standard 6-week mail-in process."
+                },
+                {
+                    title: "The Golden Apostille Seal",
+                    desc: "An apostille is a federal authentication of a signature. In the US, this is issued by the Secretary of State (for state docs) or the US Department of State (for federal docs like the FBI check). Note that federal apostilles currently take 4-8 weeks. We recommend starting this process exactly 90 days before your flight. Every document must be 'fresh'—Panama is extremely strict about the 180-day window."
+                },
+                {
+                    title: "Marriage & Birth Certificates",
+                    desc: "Only required if you are relocating with a spouse or children. These must be original certified copies issued by the vital records office (not a photocopy) and MUST also be apostilled. If you are divorced, you only need the divorce decree if you have reverted to a maiden name and it differs from your current passport."
+                },
+                {
+                    title: "Passport & ID Organizers",
+                    desc: "You need a color copy of every single page of your passport (including blank ones). This must be notarized in Panama by a Panamanian notary. We handle this during your first morning in the city. Additionally, bring a secondary ID (Driver's License) as backup for bank account openings."
+                }
             ]
         },
         {
-            title: "Phase 2: Panama Arrival",
+            title: "Phase 2: Panamanian Formalities",
             items: [
-                { title: "Health Certificate", desc: "Must be issued by a Panamanian doctor (we arrange this for you)." },
-                { title: "8 Passport Photos", desc: "Professional attire required (suit/tie for men, business for women)." },
-                { title: "Personal Sworn Affidavit", desc: "A standard form explaining your reasons for seeking residency." },
-                { title: "Bank Reference Letter", desc: "Required for the investment and Friendly Nations paths." }
+                {
+                    title: "Panamanian Health Certificate",
+                    desc: "You cannot bring this from home. It must be issued by a licensed Panamanian physician. This involves a simple physical exam and a basic blood test (HIV and TB are the standard checks). We coordinate this appointment to happen during your first 48 hours in the country to ensure your file is submitted immediately."
+                },
+                {
+                    title: "8 Passport Photos (The Formal Standard)",
+                    desc: "Immigration in Panama has a dress code. Men must be in a suit and tie; women in conservative business attire. These photos must be 'infante' size (2x2) and should be taken at a specialized shop in Panama City to ensure the background color and paper quality meet the exact 2026 standards."
+                },
+                {
+                    title: "Personal Sworn Affidavit",
+                    desc: "Drafted by your attorney, this document declares that you have never been arrested for or convicted of any crimes other than minor traffic violations. It must be signed in the presence of a notary in Panama. This is your personal pledge of good conduct."
+                },
+                {
+                    title: "Bank Reference & Utility Bills",
+                    desc: "For the investment and Friendly Nations paths, you need a bank reference letter from your home bank (original, on letterhead, signed in ink). You also need a utility bill (Power, Water, or Fiber) in your name to prove your current 'home country' residence for AML compliance."
+                }
             ]
         }
     ];
@@ -128,6 +152,78 @@ const RelocationChecklistContent: React.FC = () => {
                 </div>
             </section>
 
+            {/* The Art of Timing: 2026 Strategy */}
+            <section className="py-32 bg-white">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="flex flex-col lg:flex-row gap-24 items-center">
+                        <div className="lg:w-1/2">
+                            <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The Art of <br /><span className="text-brand-GOLD italic">Timing</span></h2>
+                            <div className="space-y-8 text-lg text-neutral-600 font-medium leading-[1.8]">
+                                <p>
+                                    The #1 reason <strong>panama visa requirements</strong> fail is not a lack of money or intent—it's <strong>document expiration</strong>. Panama defines "Valid" as having been issued within 180 days of the file hitting the desk at the Ministry of Security.
+                                </p>
+                                <p>
+                                    If you order your FBI check 5 months before your move, and then your flight is delayed by 3 weeks, your entire legal folder is junk. You have to start over.
+                                </p>
+                                <div className="p-10 bg-neutral-950 text-white rounded-[4rem] shadow-2xl">
+                                    <h4 className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest mb-6 text-center">Rockstar Timeline Management</h4>
+                                    <div className="grid grid-cols-2 gap-8 border-t border-white/10 pt-8">
+                                        <div>
+                                            <span className="text-[10px] font-black uppercase tracking-widest text-gray-500">Day -90</span>
+                                            <p className="text-xs font-bold mt-2">Order certified Marriage/Birth certificates.</p>
+                                        </div>
+                                        <div>
+                                            <span className="text-[10px] font-black uppercase tracking-widest text-gray-500">Day -45</span>
+                                            <p className="text-xs font-bold mt-2">FBI Fingerprints via Authorized Channeller.</p>
+                                        </div>
+                                        <div>
+                                            <span className="text-[10px] font-black uppercase tracking-widest text-gray-500">Day -30</span>
+                                            <p className="text-xs font-bold mt-2">Submit FBI report for Federal Apostille (expedited).</p>
+                                        </div>
+                                        <div>
+                                            <span className="text-[10px] font-black uppercase tracking-widest text-gray-500">Day -14</span>
+                                            <p className="text-xs font-bold mt-2">Final notarized bank references & utility scans.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="lg:w-1/2 relative aspect-square">
+                            <Image
+                                src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1000&q=80"
+                                alt="Modern filing system and organized legal documents"
+                                fill
+                                className="object-cover rounded-[4rem]"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Checklist FAQ: Requirements Edition */}
+            <section className="py-32 max-w-5xl mx-auto px-4">
+                <div className="text-center mb-24">
+                    <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic leading-none text-brand-950 underline decoration-brand-GOLD decoration-8 underline-offset-8">Requirement <span className="text-brand-GOLD italic">FAQ</span></h2>
+                    <p className="text-neutral-500 font-black uppercase tracking-widest text-xs mt-8">Deep Answers for Document Procurement.</p>
+                </div>
+
+                <div className="space-y-8">
+                    {[
+                        { q: "What is an Apostille and why is it mandatory?", a: "An Apostille is an international certification comparable to a notarization in domestic law. Panama is a member of the Hague Convention, so all foreign documents must have this seal to be legally recognized. Without it, your documents are just paper." },
+                        { q: "Can I use a local police check if I live in a small town?", a: "No. Panama requires a **National** background check. In the USA, this means the FBI. In Canada, the RCMP. In the UK, the ACRO. Local town or 'County' checks will result in immediate rejection." },
+                        { q: "Do my documents need to be translated in my home country?", a: "NO. This is a common and expensive mistake. Panama requires all translations to be done by a **Certified Panamanian Public Translator**. Any translation done outside of Panama is invalid for immigration purposes." },
+                        { q: "What if I have lived in multiple countries recently?", a: "If you have lived in a country other than your home country for more than 2 years, you must provide a background check from THAT country as well, duly apostilled. This is common for 'Nomad' types moving through multiple jurisdictions." },
+                        { q: "Do I need to bring my kids for the filing?", a: "Yes. Every dependent included in the visa must be physically present in Panama for the initial filing and to receive their temporary residency card." },
+                        { q: "Can I use 'Digital' documents for the filing?", a: "Immigration requires **Originals** with wet signatures or the original apostilled federal printouts. Scans are only used for pre-clearance. You must travel with the physical folder." }
+                    ].map((faq, i) => (
+                        <div key={i} className="p-10 border-b border-neutral-100 group hover:bg-neutral-50 transition-all rounded-[3rem]">
+                            <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic group-hover:text-brand-GOLD transition-colors">{faq.q}</h4>
+                            <p className="text-sm text-neutral-500 font-medium leading-relaxed">{faq.a}</p>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
             {/* Final Call to Action */}
             <section className="py-32 text-center">
                 <div className="max-w-4xl mx-auto px-4">
@@ -135,8 +231,8 @@ const RelocationChecklistContent: React.FC = () => {
                     <p className="text-xl text-neutral-500 mb-16 font-medium leading-relaxed">
                         Don't risk your move on a missing paper. Get the full verified 2026 checklist and a 1-on-1 legal review.
                     </p>
-                    <Link href="/relocation/tours" className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
-                        Download PDF & Book Tour
+                    <Link href="/contacto" className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
+                        Talk to a Document Expert
                     </Link>
                 </div>
             </section>

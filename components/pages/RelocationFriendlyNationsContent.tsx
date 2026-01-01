@@ -7,6 +7,8 @@ import Image from 'next/image';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import ServiceSchema from '@/components/seo/ServiceSchema';
+import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
+import FAQSchema from '@/components/seo/FAQSchema';
 
 const RelocationFriendlyNationsContent: React.FC = () => {
     const breadcrumbItems = [
@@ -23,6 +25,11 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                 description="Professional legal support for the Panama Friendly Nations Visa Professional and Investment paths. Vetted lawyer network and VIP processing."
                 serviceType="Immigration Service"
             />
+            <LocalBusinessSchema />
+            <FAQSchema questions={[
+                { question: "What are the Friendly Nations Visa requirements for 2026?", answer: "Applicants must be from one of 50+ eligible nations and either invest $200,000 in real estate/bank deposit or have a valid Panamanian job offer." },
+                { question: "How long does the Friendly Nations Visa take?", answer: "Temporary residency is issued in about 5-7 business days, with final provisional approval taking 3-4 months." }
+            ]} />
 
             <div className="max-w-7xl mx-auto px-4 mt-8">
                 <Breadcrumbs items={breadcrumbItems} />
@@ -343,6 +350,72 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                         <Link href="/relocation/nichos/entrepreneurs" className="text-[10px] font-black uppercase tracking-[0.3em] bg-brand-950 text-white px-8 py-4 rounded-xl inline-block">
                             Entrepreneur Guide
                         </Link>
+                    </div>
+                </div>
+            </section>
+
+            {/* NEW SECTION: ROI DEEP DIVE */}
+            <section className="py-32 bg-white text-brand-950">
+                <div className="max-w-7xl mx-auto px-4">
+                    <h2 className="text-4xl md:text-8xl font-heading font-black mb-16 uppercase tracking-tighter italic leading-none border-l-8 border-brand-GOLD pl-10">Real Estate <br /> vs. <span className="text-brand-GOLD">Bank Deposit</span></h2>
+                    <div className="grid lg:grid-cols-2 gap-20">
+                        <div className="space-y-10">
+                            <div className="p-10 bg-neutral-50 rounded-[4rem] border border-neutral-100">
+                                <h3 className="text-2xl font-black uppercase italic mb-6">Option A: The $200k Property Play</h3>
+                                <p className="text-lg text-neutral-600 font-medium leading-relaxed mb-8">
+                                    In 2026, $200,000 in Panama City can still secure a high-end 1-bedroom in **San Francisco** or a luxury condo in **Coronado**.
+                                </p>
+                                <div className="space-y-4 text-sm font-bold">
+                                    <div className="flex justify-between border-b pb-2"><span>Estimated ROI</span><span className="text-brand-GOLD">5.5% - 7.5%</span></div>
+                                    <div className="flex justify-between border-b pb-2"><span>Capital Apprec.</span><span className="text-brand-GOLD">3-5% Annually</span></div>
+                                    <div className="flex justify-between"><span>Liquidity</span><span className="text-brand-GOLD italic">Moderate</span></div>
+                                </div>
+                                <p className="mt-8 text-xs text-neutral-400 font-medium">Best for: Those seeking a 'home base' or a tangible asset that offsets local living costs.</p>
+                            </div>
+                        </div>
+                        <div className="space-y-10">
+                            <div className="p-10 bg-neutral-900 text-white rounded-[4rem]">
+                                <h3 className="text-2xl font-black uppercase italic mb-6 text-brand-GOLD">Option B: The $200k Bank Deposit</h3>
+                                <p className="text-lg text-gray-400 font-medium leading-relaxed mb-8">
+                                    Panama's banking system is the strongest in LatAm. A 3-year CD (Certificate of Deposit) for $200k at a top-tier bank (Banistmo, Global Bank) yields consistent returns.
+                                </p>
+                                <div className="space-y-4 text-sm font-bold">
+                                    <div className="flex justify-between border-b border-white/10 pb-2"><span>Estimated Yield</span><span className="text-brand-GOLD">4.5% - 5.5%</span></div>
+                                    <div className="flex justify-between border-b border-white/10 pb-2"><span>Risk Rating</span><span className="text-brand-GOLD">Low (Investment Grade)</span></div>
+                                    <div className="flex justify-between"><span>Liquidity</span><span className="text-brand-GOLD italic">Locked (3 Years)</span></div>
+                                </div>
+                                <p className="mt-8 text-xs text-gray-500 font-medium">Best for: Digital Nomads who want to keep their capital clean and earn passive income while traveling.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* NEW SECTION: TAX RESIDENCY & THE 183-DAY RULE */}
+            <section className="py-32 bg-neutral-100 rounded-[5rem] mx-4 overflow-hidden relative">
+                <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-24 items-center">
+                    <div>
+                        <Globe size={64} className="text-brand-GOLD mb-10" />
+                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Tax <span className="text-brand-GOLD underline">Residency</span> <br /> Demystified</h2>
+                        <div className="space-y-8 text-lg text-neutral-600 font-medium leading-relaxed">
+                            <p>
+                                Getting a <strong>panama residency visa</strong> is only half the battle. To truly benefit from Panama's territorial tax system (0% on foreign income), you often need more than just the card. You need a <strong>Tax Residency Certificate</strong>.
+                            </p>
+                            <p>
+                                To qualify for a Tax Residency Certificate in 2026, you generally must:
+                            </p>
+                            <ul className="space-y-4 text-sm font-black uppercase tracking-widest">
+                                <li className="flex gap-3"><Check className="text-brand-GOLD" size={16} /> Spend 183+ days in Panama per year</li>
+                                <li className="flex gap-3"><Check className="text-brand-GOLD" size={16} /> OR Demonstrate "Center of Vital Interests" (Property/Business)</li>
+                                <li className="flex gap-3"><Check className="text-brand-GOLD" size={16} /> Have a permanent home in Panama (Owned or long-term lease)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div className="bg-brand-950 p-16 rounded-[4rem] text-white shadow-2xl skew-x-1">
+                        <h4 className="text-3xl font-black uppercase tracking-tighter mb-8 italic text-brand-GOLD">The 0% Reality</h4>
+                        <p className="font-medium text-gray-400 leading-relaxed mb-8">
+                            Panama does not tax you on dividends from foreign companies, remote work for foreign clients, or rental income from outside Panama. Combined with the <strong>friendly nations visa</strong>, this creates a 'Rockstar' financial fortress for high-earning professionals.
+                        </p>
                     </div>
                 </div>
             </section>

@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Compass, MapPin, CheckCircle, ArrowRight, MessageSquare, Ship, Mountain, Globe, ShieldCheck, Users, Calendar, Plane, Map } from 'lucide-react';
+import { Compass, MapPin, CheckCircle, ArrowRight, MessageSquare, Ship, Mountain, Globe, ShieldCheck, Users, Calendar, Plane, Map, Zap, Heart, Camera } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
@@ -14,11 +14,11 @@ const RelocationToursContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-white">
+        <div className="pt-24 min-h-screen bg-white selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={breadcrumbItems} />
 
             {/* Hero Section */}
-            <section className="bg-brand-900 py-32 text-white relative overflow-hidden">
+            <section className="bg-brand-950 py-32 text-white relative overflow-hidden rounded-b-[5rem]">
                 <div className="absolute inset-0 opacity-20">
                     <Image
                         src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80"
@@ -29,99 +29,166 @@ const RelocationToursContent: React.FC = () => {
                     />
                 </div>
                 <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
-                    <span className="inline-block px-3 py-1 bg-brand-GOLD text-brand-950 text-[10px] font-bold uppercase tracking-[0.3em] rounded mb-6">
-                        REAL BOOTS ON THE GROUND
+                    <span className="inline-block px-5 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
+                        The 2026 Discovery Experience
                     </span>
-                    <h1 className="font-heading text-4xl md:text-8xl font-bold mb-8 leading-[0.9]">Explore. Invest. <br /> Relocate.</h1>
-                    <p className="text-xl text-neutral-300 max-w-3xl mx-auto leading-relaxed">
-                        Don't buy blind. Feel the vibe. Walk the neighborhoods. Meet the community. Our <strong>panama relocation real estate tours</strong> are the filter between a mistake and your <strong>panama dream home</strong>.
+                    <h1 className="text-6xl md:text-9xl font-heading font-black mb-10 uppercase tracking-tighter leading-[0.8] italic">
+                        The <span className="text-brand-GOLD underline italic">Boots</span> <br /> Ground <br /> Protocol.
+                    </h1>
+                    <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-medium mb-16">
+                        Don't buy a life you haven't lived. Our <strong>panama relocation discovery tours</strong> are designed to bridge the gap between "Internet Research" and "Actual Living." Explore the <strong>best places for expats to live in panama</strong> with the Rockstar team.
                     </p>
-                    <div className="mt-12 flex flex-wrap justify-center gap-6">
-                        <button className="px-10 py-5 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-xs rounded-xl shadow-2xl hover:bg-white transition-all">Request Custom Itinerary</button>
-                        <div className="flex items-center gap-2 text-brand-GOLD text-xs font-bold uppercase tracking-widest">
-                            <Calendar size={16} /> Monthly Tours Available
-                        </div>
+                    <div className="flex flex-col sm:flex-row justify-center gap-8">
+                        <Link href="/contacto" className="px-16 py-8 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-xs rounded-3xl hover:bg-white transition-all shadow-2xl">
+                            Reserve My Discovery Slot
+                        </Link>
                     </div>
                 </div>
             </section>
 
-            {/* INTRO: WHY TOURS? */}
-            <section className="py-24 max-w-5xl mx-auto px-4">
-                <div className="prose prose-lg text-brand-600 max-w-none space-y-10">
-                    <h2 className="text-brand-900 text-3xl md:text-5xl font-heading font-bold mb-10 text-center italic border-b-2 border-brand-GOLD inline-block pb-4">Why a Panama Discovery Tour is Your Best Investment</h2>
-                    <p>
-                        Deciding to <strong>relocate to panama</strong> is one of the most exciting decisions you will ever make. However, it is also one where small mistakes can cost thousands. Many people spend months searching for "<strong>panama real estate</strong>" or "<strong>boquete homes for sale</strong>" without understanding the nuances of microclimates, local traffic patterns, or proximity to <strong>best places for expats to live in panama</strong> hubs.
-                    </p>
-                    <p>
-                        A "Rockstar <strong>panama real estate discovery tour</strong>" isn't just a property showing. It's a deep dive into the <strong>cost of living in panama</strong>, the legal frameworks of the <strong>pensionado visa panama</strong>, and the reality of <strong>expat communities in panama</strong>. We take you behind the scenes of our top developments like <strong>pino alto boquete</strong> or <strong>the westin panama residences</strong>, but we also show you where to buy groceries, where the best private clinics are, and where to have the best coffee.
-                    </p>
-                    <p>
-                        Our <strong>panama relocation real estate tours</strong> focus on <strong>panama luxury developments</strong> and <strong>panama gated communities</strong>. We want you to see the difference between <strong>panama city condos</strong> in Punta Pacifica vs <strong>costa del este apartments</strong>. We want you to feel the breeze at <strong>playa bonita panama</strong> and compare it to the surfing vibe of <strong>playa caracol panama</strong>. This is <strong>international living in panama</strong> at its most transparent and professional level.
-                    </p>
-
-                    <div className="grid md:grid-cols-2 gap-12 my-20 not-prose">
-                        <div className="bg-neutral-50 p-12 rounded-[3rem] border border-neutral-100 shadow-sm hover:shadow-xl transition-all">
-                            <Mountain className="text-brand-GOLD mb-8" size={48} />
-                            <h3 className="text-2xl font-bold text-brand-900 mb-6 uppercase italic">Highlands Immersion (Boquete)</h3>
-                            <p className="text-sm text-brand-500 leading-relaxed mb-6">Discover why <strong>boquete real estate</strong> is the #1 choice for <strong>american retirees in panama</strong>. We walk through <strong>valle escondido panama</strong> and Lucero, comparing the microclimates and gated communities. Learn about <strong>property in boquete panama</strong> availability and rental yields for <strong>panama expat housing</strong>.</p>
-                            <div className="flex items-center gap-2 text-brand-GOLD font-black text-[10px] uppercase tracking-widest">
-                                Explore Boquete <ArrowRight size={14} />
-                            </div>
-                        </div>
-                        <div className="bg-neutral-50 p-12 rounded-[3rem] border border-neutral-100 shadow-sm hover:shadow-xl transition-all">
-                            <Ship className="text-brand-GOLD mb-8" size={48} />
-                            <h3 className="text-2xl font-bold text-brand-900 mb-6 uppercase italic">Coastal Discovery (Pacific Coast)</h3>
-                            <p className="text-sm text-brand-500 leading-relaxed mb-6">From the ultra-luxury of <strong>buenaventura resort panama</strong> to the lifestyle ROI of <strong>margaritaville panama</strong>. Explore <strong>panama condos on the beach</strong> and benchmark them against urban options like <strong>ocean reef islands panama</strong>. Experience the <strong>panama beach lifestyle</strong> first-hand.</p>
-                            <div className="flex items-center gap-2 text-brand-GOLD font-black text-[10px] uppercase tracking-widest">
-                                Explore the Coast <ArrowRight size={14} />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* 5-DAY ITINERARY: THE MASTER ROADMAP */}
-            <section className="py-24 bg-neutral-900 text-white">
-                <div className="max-w-7xl mx-auto px-4">
-                    <div className="text-center mb-24">
-                        <h2 className="text-4xl md:text-7xl font-heading font-bold mb-8">The 5-Day Discovery Itinerary</h2>
-                        <p className="text-brand-400 text-xl max-w-3xl mx-auto font-medium">A structured roadmap for your <strong>panama relocation real estate</strong> discovery process.</p>
-                    </div>
-
-                    <div className="space-y-24">
-                        {[
-                            {
-                                day: "01", icon: Plane, title: "Urban Pulse & Sky High Luxury",
-                                desc: "Arrival and check-in at a <strong>panama luxury hotel</strong>. We start with <strong>panama city luxury condos</strong>. Visit <strong>punta pacifica condos</strong> (ph oceanaire/dupont tower) and <strong>costa del este apartments</strong>. Evening workshop on <strong>panama residency visa</strong> legalities and <strong>panama tax benefits</strong>."
-                            },
-                            {
-                                day: "02", icon: Ship, title: "The Beach Club & Branded Residences",
-                                desc: "Head to <strong>playa bonita panama</strong> to see the <strong>westin panama residences</strong>. Afternoon at <strong>playa caracol panama</strong> exploring <strong>margaritaville beach resort panama</strong>. Learn about <strong>vacation rental investment</strong> and property management for <strong>panama beachfront condos</strong>."
-                            },
-                            {
-                                day: "03", icon: Map, title: "The Ultra-Luxury Benchmark (Buenaventura)",
-                                desc: "A full day at <strong>buenaventura resort panama</strong>. Explore the <strong>buenaventura golf club</strong> and <strong>the buenaventura golf and beach resort</strong>. Private yacht tour to see <strong>panama coastal real estate</strong> from the water. Comparison session with <strong>coronado panama real estate</strong> options."
-                            },
-                            {
-                                day: "04", icon: Mountain, title: "Mountain Wellness in Boquete",
-                                desc: "Quick flight to David. Explore <strong>boquete panama real estate</strong>. Visit <strong>valle escondido panama</strong> and see <strong>boquete homes for sale</strong>. Meet with <strong>american retirees in panama</strong> to hear real stories about the <strong>cost of retirement in panama</strong> and local <strong>expat communities in panama</strong>."
-                            },
-                            {
-                                day: "05", icon: Globe, title: "Caribbean Frontier & Legal Wrap-up",
-                                desc: "Helicopter excursion to <strong>playa escondida resort</strong> near Portobelo. Discover the growth potential of <strong>panama oceanfront real estate</strong> on the Caribbean side. Final wrap-up on <strong>buying real estate in panama</strong> legal guide and tax planning for <strong>panama foreign buyer real estate</strong>."
-                            }
-                        ].map((step, i) => (
-                            <div key={i} className="flex flex-col lg:flex-row gap-16 items-center lg:items-start group">
-                                <div className="lg:w-1/4">
-                                    <div className="text-8xl font-black text-brand-GOLD/10 group-hover:text-brand-GOLD/40 transition-all duration-700 leading-none">{step.day}</div>
-                                    <div className="mt-4 flex items-center gap-4 text-brand-GOLD">
-                                        <step.icon size={32} />
-                                        <span className="font-black uppercase tracking-[0.2em] text-[10px]">Phase {i + 1}</span>
+            {/* The Rockstar Difference */}
+            <section className="py-32 max-w-7xl mx-auto px-4">
+                <div className="grid lg:grid-cols-2 gap-24 items-center mb-32">
+                    <div>
+                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Why a <br /> <span className="text-brand-GOLD underline italic">Tour</span> Matters.</h2>
+                        <div className="space-y-8 text-lg text-neutral-600 font-medium leading-[1.8]">
+                            <p>
+                                In 2026, Panama's real estate market is moving faster than ever. From <strong>luxury condos in Panama City</strong> to high-yield <strong>short-term rentals in Coronado</strong>, knowing which building has the best management and which neighborhood has the best infrastructure isn't something you can find on a listing site.
+                            </p>
+                            <p>
+                                A Rockstar <strong>relocation tour</strong> is a curated, high-intensity immersion into the <strong>panama expat lifestyle</strong>. We don't just show you houses; we introduce you to the community, the legal team, and the coffee shops where the "real" expat deals happen.
+                            </p>
+                            <div className="grid grid-cols-2 gap-8 pt-12 border-t border-neutral-100 italic font-bold">
+                                <div className="flex gap-4">
+                                    <ShieldCheck className="text-brand-GOLD shrink-0" size={32} />
+                                    <div>
+                                        <h4 className="text-xs uppercase font-black mb-2 italic">Legal Vetting</h4>
+                                        <p className="text-[10px] text-neutral-400 font-medium">Every project we visit is pre-checked for title and zoning compliance.</p>
                                     </div>
                                 </div>
-                                <div className="lg:w-3/4 border-l border-white/10 pl-16 py-4 group-hover:border-brand-GOLD transition-all">
-                                    <h4 className="text-3xl md:text-5xl font-bold mb-8 italic">{step.title}</h4>
-                                    <p className="text-brand-300 text-lg leading-relaxed font-medium" dangerouslySetInnerHTML={{ __html: step.desc }}></p>
+                                <div className="flex gap-4">
+                                    <Heart className="text-brand-GOLD shrink-0" size={32} />
+                                    <div>
+                                        <h4 className="text-xs uppercase font-black mb-2 italic">Social Access</h4>
+                                        <p className="text-[10px] text-neutral-400 font-medium">Private meet-and-greets with current residents in Boquete and Coronado.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="relative aspect-square rounded-[5rem] overflow-hidden shadow-2xl scale-95 hover:scale-100 transition-transform duration-700">
+                        <Image
+                            src="https://images.unsplash.com/photo-1549439602-43ebca2327af?w=1000&q=80"
+                            alt="Luxury lifestyle in Panama"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                </div>
+
+                {/* 5-DAY ITINERARY: THE MASTER ROADMAP */}
+                <div className="text-center mb-24 underline italic">
+                    <h2 className="text-4xl md:text-8xl font-heading font-black mb-6 uppercase tracking-tighter italic text-center leading-none">The <span className="text-brand-GOLD">Master</span> Itinerary</h2>
+                    <p className="text-neutral-500 text-lg uppercase tracking-widest font-black italic text-center">5 Days de 2,000% Clarity.</p>
+                </div>
+
+                <div className="space-y-8">
+                    {[
+                        {
+                            day: "01",
+                            title: "Urban Command Center (Panama City)",
+                            focus: "Residency & Real Estate Foundations",
+                            desc: "Arrival and check-in at a Top-5 <strong>panama city luxury hotel</strong>. We begin with a high-level briefing on the <strong>friendly nations visa panama requirements</strong> and a tour of key urban hubs: Punta Pacifica (PH Oceanaire), Costa del Este, and the historic Casco Viejo. Evening: Dinner with our lead immigration attorney."
+                        },
+                        {
+                            day: "02",
+                            title: "The Gold Coast (Coronado & Beaches)",
+                            focus: "Rental Yields & Lifestyle",
+                            desc: "Transition to the Pacific Riviera. Explore <strong>Coronado real estate</strong> and the growing <strong>Margaritaville Panama</strong> development. Learn about the ROI of <strong>panama beachfront condos</strong> and the 'Lock-and-Leave' lifestyle for part-time residents. Site visit to <strong>Playa Caracol</strong>."
+                        },
+                        {
+                            day: "03",
+                            title: "The Highlands (Boquete)",
+                            focus: "Retirement & Wellness",
+                            desc: "Fly to David and head into the mountains. Deep dive into <strong>Boquete homes for sale</strong>. Visit <strong>Valle Escondido</strong> and the <strong>Pino Alto Boquete</strong> project. Meet the <strong>American retirees in panama</strong> who make up the heart of the Boquete expat community."
+                        },
+                        {
+                            day: "04",
+                            title: "The Infrastructure Deep-Dive",
+                            focus: "Healthcare, Banking & Schools",
+                            desc: "A hands-on day visiting private clinics (Pacifica Salud), local banks to discuss <strong>panama bank account</strong> opening, and international schools (ISP/Kings College). We demystify the <strong>cost of living in panama</strong> by visiting local upscale grocers and lifestyle hubs."
+                        },
+                        {
+                            day: "05",
+                            title: "The Strategic Wrap-Up",
+                            focus: "Finalizing Your Plan",
+                            desc: "Return to Panama City. Individual 1-on-1 strategy sessions. Finalize your <strong>panama residency visa</strong> timeline and property shortlist. Helicopter optional: Caribbean frontier tour of Playa Escondida."
+                        }
+                    ].map((item, idx) => (
+                        <div key={idx} className="bg-neutral-50 p-12 rounded-[4rem] border border-neutral-100 group hover:shadow-2xl transition-all">
+                            <div className="flex flex-col lg:flex-row gap-12 items-center">
+                                <div className="lg:w-1/4">
+                                    <div className="text-8xl font-black text-brand-GOLD/10 group-hover:text-brand-GOLD/40 transition-all duration-700 leading-none mb-4">{item.day}</div>
+                                    <div className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD bg-brand-GOLD/10 px-4 py-2 rounded-full inline-block">Day {idx + 1}</div>
+                                </div>
+                                <div className="lg:w-3/4">
+                                    <h3 className="text-3xl font-black uppercase tracking-tighter italic mb-4 leading-none">{item.title}</h3>
+                                    <p className="text-xs font-black uppercase tracking-widest text-neutral-400 mb-6 italic">{item.focus}</p>
+                                    <p className="text-sm text-neutral-600 font-medium leading-relaxed" dangerouslySetInnerHTML={{ __html: item.desc }} />
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </section>
+
+            {/* Legal Proof of Concept */}
+            <section className="py-32 bg-brand-950 text-white rounded-[5xl] mx-4 relative overflow-hidden flex flex-col items-center">
+                <div className="absolute inset-0 opacity-10 pointer-events-none">
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-brand-GOLD rounded-full blur-[200px]"></div>
+                </div>
+                <div className="max-w-4xl mx-auto px-4 relative z-10 text-center flex flex-col items-center">
+                    <h2 className="text-4xl md:text-8xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none text-center italic">The <span className="text-brand-GOLD">Legal</span> Shield.</h2>
+                    <p className="text-xl md:text-2xl text-gray-400 font-medium mb-16 leading-relaxed text-center">
+                        Our tours are the only ones in Panama that integrate a <strong>mandatory legal consultation</strong>. Why? Because a house is only a home if your <strong>panama residency</strong> is 100% airtight.
+                    </p>
+                    <div className="grid md:grid-cols-3 gap-8 w-full">
+                        {[
+                            { icon: <MapPin className="text-brand-GOLD" />, title: "Site Scoping", desc: "No generic listings. We see the exact units that fit your portfolio." },
+                            { icon: <Users className="text-brand-GOLD" />, title: "Resident Access", desc: "Real talk from real expats. No sugarcoating allowed." },
+                            { icon: <ShieldCheck className="text-brand-GOLD" />, title: "Due Diligence", desc: "We pre-audit every property for title and tax liens before you see it." }
+                        ].map((p, i) => (
+                            <div key={i} className="p-8 bg-white/5 border border-white/10 rounded-[3rem] text-center flex flex-col items-center">
+                                <div className="mb-6">{p.icon}</div>
+                                <h4 className="text-lg font-black uppercase italic mb-2 leading-none">{p.title}</h4>
+                                <p className="text-[10px] text-gray-400 font-medium">{p.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
+            {/* Visual Proof */}
+            <section className="py-32">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="text-center mb-24 italic underline">
+                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic text-center underline italic leading-none">Boots on the <span className="text-brand-GOLD">Ground</span></h2>
+                        <p className="text-neutral-500 text-lg uppercase tracking-widest font-black italic text-center">Every corner, every community.</p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {[
+                            { img: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80", name: "Highlands", vibe: "Boquete Focus" },
+                            { img: "https://images.unsplash.com/photo-1549439602-43ebca2327af?w=800&q=80", name: "Ocean Front", vibe: "Coronado Focus" },
+                            { img: "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&q=80", name: "Urban Elite", vibe: "City Focus" },
+                            { img: "https://images.unsplash.com/photo-1549439602-43ebca2327af?w=800&q=80", name: "Island Life", vibe: "Bocas Focus" }
+                        ].map((item, idx) => (
+                            <div key={idx} className="relative group overflow-hidden rounded-[4rem] aspect-[3/4]">
+                                <Image src={item.img} alt={item.name} fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-brand-950 to-transparent opacity-60" />
+                                <div className="absolute bottom-0 left-0 p-8">
+                                    <h4 className="text-white text-2xl font-black uppercase italic tracking-tighter mb-2 leading-none">{item.name}</h4>
+                                    <p className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest">{item.vibe}</p>
                                 </div>
                             </div>
                         ))}
@@ -129,64 +196,17 @@ const RelocationToursContent: React.FC = () => {
                 </div>
             </section>
 
-            {/* LEGAL & RESIDENCY: THE GROUND TEAM GUIDE */}
-            <section className="py-24 max-w-5xl mx-auto px-4 prose prose-lg text-brand-600 max-w-none">
-                <h3 className="text-brand-900 font-heading font-bold text-3xl md:text-5xl mb-10 text-center uppercase tracking-tighter">Your Legal Ground Team in Panama</h3>
-                <p className="mb-10 text-xl font-bold text-brand-950 leading-relaxed text-center">
-                    One of the biggest advantages of our <strong>panama relocation services</strong> is the direct access to top-tier legal experts. Whether you are aiming for the <strong>friendly nations visa panama</strong> or the <strong>panama pensionado program</strong>, we ensure you have the right documentation.
-                </p>
-                <div className="grid md:grid-cols-2 gap-12 not-prose my-16 bg-neutral-50 p-12 rounded-[3rem] border border-neutral-100 shadow-inner">
-                    <div className="space-y-6">
-                        <h4 className="text-xl font-bold text-brand-900 flex items-center gap-2 uppercase tracking-widest text-xs border-b border-brand-GOLD pb-2"><ShieldCheck className="text-brand-GOLD" /> Residency via Investment</h4>
-                        <p className="text-sm leading-relaxed">Purchasing <strong>panama real estate projects</strong> over $300,000 can often be your ticket to immediate permanent residency through the Qualified Investor program. Our <strong>panama real estate advisors</strong> specialize in assets that meet these strict criteria while providing <strong>panama high ROI real estate</strong> potential.</p>
-                    </div>
-                    <div className="space-y-6">
-                        <h4 className="text-xl font-bold text-brand-900 flex items-center gap-2 uppercase tracking-widest text-xs border-b border-brand-GOLD pb-2"><Users className="text-brand-GOLD" /> The Pensionado Secrets</h4>
-                        <p className="text-sm leading-relaxed">The <strong>pensionado visa panama</strong> is the world's most generous retirement visa. It's not just about residency; it's about the lifetime discounts on everything from flights and movies to utility bills and hospital visits. We guide you on how to structure your <strong>panama retirement real estate</strong> purchase to leverage these benefits.</p>
-                    </div>
-                </div>
-                <p>
-                    During our <strong>panama relocation real estate tours</strong>, we host private sessions with residency attorneys to answer your specific "outside the box" questions about offshore income reporting, <strong>panama real estate tax benefits</strong>, and global asset protection. This is crucial for <strong>american retirees in panama</strong> who need to navigate IRS reporting while enjoying the low <strong>cost of living panama</strong> offers.
-                </p>
-            </section>
-
-            {/* THE INFOGRAPHIC: 10 ROCKSTAR FACTS */}
-            <section className="py-24 bg-brand-GOLD rounded-[5rem] mx-4 mb-24 relative overflow-hidden shadow-2xl">
-                <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full -mr-48 -mt-48 blur-3xl"></div>
-                <div className="max-w-7xl mx-auto px-8 relative z-10 text-brand-950">
-                    <h2 className="text-3xl md:text-6xl font-heading font-bold mb-16 text-center uppercase tracking-tighter">10 Rockstar Relocation Realities</h2>
-                    <div className="grid md:grid-cols-2 gap-x-24 gap-y-12">
-                        {[
-                            "<strong>Panama uses the US Dollar</strong>, protecting your <strong>panama real estate investment</strong> from local currency crashes.",
-                            "The <strong>Pensionado Visa grants 25% off electricity</strong> and 50% off movies for life.",
-                            "<strong>Starlink WiFi</strong> is fully active in <strong>boquete panama</strong> and <strong>playa caracol panama</strong> for remote workers.",
-                            "You pay <strong>zero tax on foreign-earned income</strong> under the <strong>panama tax benefits</strong> code.",
-                            "Driving from <strong>panama city condos</strong> to <strong>playa bonita panama</strong> takes only 15 minutes over the canal.",
-                            "<strong>Property tax is extremely low</strong>, often under $500/year for a <strong>luxury beach home panama</strong>.",
-                            "Panama is home to the <strong>second largest free trade zone</strong> in the world near Colon.",
-                            "<strong>Private healthcare is 70% cheaper</strong> than the US and features Johns Hopkins affiliated doctors.",
-                            "You can <strong>own beachfront property titled</strong> in your name (no long-term leases required).",
-                            "ExpatRockstars <strong>refunds your tour costs</strong> if you purchase a <strong>panama dream home</strong> through our team."
-                        ].map((item, i) => (
-                            <div key={i} className="flex gap-6 items-start">
-                                <span className="text-6xl font-black opacity-10 leading-none">{i + 1}</span>
-                                <p className="text-lg font-bold leading-tight mt-1" dangerouslySetInnerHTML={{ __html: item }}></p>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
-
-            {/* FINAL CTA */}
-            <section className="py-24 text-center">
-                <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-4xl md:text-7xl font-bold text-brand-900 mb-10">Start Your Discovery Journey</h2>
-                    <p className="text-brand-500 mb-16 text-xl font-medium">Our tours are limited to 4 families per month to ensure an exclusive, high-value experience. Custom itineraries available for <strong>panama real estate investors</strong>.</p>
-                    <div className="flex flex-wrap justify-center gap-8">
-                        <button className="px-16 py-8 bg-brand-900 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl flex items-center gap-4 group">
-                            <Compass size={24} className="group-hover:rotate-45 transition-transform" /> Request Custom Tour Quote
-                        </button>
-                        <Link href="/contacto" className="px-16 py-8 border-4 border-brand-900 text-brand-900 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-900 hover:text-white transition-all">Speak with an Advisor</Link>
+            {/* Final CTA */}
+            <section className="py-40 bg-brand-GOLD text-brand-950 text-center relative overflow-hidden rounded-[5xl] mx-4 mb-20 flex flex-col items-center">
+                <div className="max-w-4xl mx-auto px-4 relative z-10 text-center flex flex-col items-center">
+                    <h2 className="text-5xl md:text-9xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none text-center">Stop <span className="underline italic">Scrolling.</span> <br /> Start <span className="italic">Exploring.</span></h2>
+                    <p className="text-xl md:text-2xl font-black mb-16 opacity-80 max-w-xl mx-auto italic text-center">
+                        Our Discovery Tours are limited to 4 families per month. This isn't a bus tour; it's an elite relocation mission. Secure your dates for the 2026 season.
+                    </p>
+                    <div className="flex justify-center flex-col sm:flex-row gap-8">
+                        <Link href="/contacto" className="inline-flex items-center justify-center gap-4 px-16 py-8 bg-brand-950 text-white rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-black transition-all shadow-2xl">
+                            Request My Custom Itinerary <ArrowRight size={14} />
+                        </Link>
                     </div>
                 </div>
             </section>

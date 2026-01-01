@@ -18,11 +18,43 @@ const RelocationWorkPermitContent: React.FC = () => {
     const faqs = [
         {
             question: "How do I get a Panama work permit?",
-            answer: "Most work permits require you to have a residency visa first. Once your residency is provisional or permanent, you can apply for a work permit through the Ministry of Labor with a local employment contract."
+            answer: "Most work permits require you to have a residency visa first. Once your residency is provisional or permanent, you can apply for a work permit through the Ministry of Labor (MITRADEL) with a local employment contract. The process usually takes 2-4 months for approval."
         },
         {
             question: "Can digital nomads work in Panama?",
-            answer: "Yes. Panama offers a Short-Stay Visa for Remote Workers (Digital Nomad Visa) which allows you to live and work in the country for up to 18 months, provided you earn more than $36,000 annually from foreign sources."
+            answer: "Yes. Panama offers a 'Short-Stay Visa for Remote Workers' (Digital Nomad Visa) which allows you to live and work in the country for up to 18 months. You must earn at least $36,000 annually from foreign sources and have private health insurance."
+        },
+        {
+            question: "What is the 'Protected Professions' list?",
+            answer: "Panama protects over 50 professions for Panamanian citizens only. This includes Medicine, Nursing, Law, Architecture, Accounting, and most Engineering fields. Foreigners cannot get a work permit for these specific roles, but can work as 'Consultants' or 'Managers' in related sectors."
+        },
+        {
+            question: "Does the Friendly Nations Visa include a work permit?",
+            answer: "No. The visa gives you residency and the RIGHT to apply for a work permit. You must still file a separate application with MITRADEL once your residency card is issued."
+        },
+        {
+            question: "What is the 10% and 15% rule?",
+            answer: "Panamanian companies are restricted in how many foreigners they can hire. Generally, only 10% of the workforce can be foreign (ordinary laborers), or 15% for 'specialized' personnel or managers. This is why many expats choose to start their own companies."
+        },
+        {
+            question: "How much does a work permit cost?",
+            answer: "Legal fees range from $800 to $1,500. There is also a government fee of $250 for the 'Carnét de Trabajo' (Work Permit Card)."
+        },
+        {
+            question: "Can I work for a foreign company while in Panama?",
+            answer: "Legally, if you are performing work while physically inside Panama, you should have a visa that permits it. The Digital Nomad Visa is designed specifically for this. If you are a permanent resident, you have the right to work anywhere."
+        },
+        {
+            question: "Can I get a work permit as an entrepreneur?",
+            answer: "Yes. By creating a Panamanian corporation and appointing yourself as a Director or Executive, you can apply for a work permit under the 'Foreign Personnel' quota."
+        },
+        {
+            question: "Do I need a university degree for a work permit?",
+            answer: "For the 'Professional' residency path, yes—it must be apostilled and validated. For many other paths, a degree is not strictly required but highly recommended to avoid MITRADEL audits."
+        },
+        {
+            question: "How long is the work permit valid?",
+            answer: "Initial permits are usually valid for 1 year, extendable to 3 years, and eventually indefinitely if you maintain your permanent residency status."
         }
     ];
 
@@ -60,38 +92,119 @@ const RelocationWorkPermitContent: React.FC = () => {
                 </div>
             </section>
 
-            {/* Core Pathways */}
+            {/* Deep Context: The Labor Landscape 2026 */}
             <section className="py-32 max-w-7xl mx-auto px-4">
-                <div className="grid md:grid-cols-2 gap-12">
-                    <div className="bg-neutral-50 p-12 rounded-[4rem] border border-neutral-100 h-full">
-                        <Globe className="text-brand-GOLD mb-8" size={56} />
-                        <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 italic">Digital Nomad Guide</h3>
-                        <p className="text-neutral-500 font-medium leading-relaxed mb-8">
-                            Panama's Short-Stay Visa for Remote Workers is perfect for those earning more than $36,000 annually from foreign sources. Enjoy 9 months of legalized remote work, extendable to 18 months.
-                        </p>
-                        <ul className="space-y-4 mb-8">
-                            <li className="flex gap-3 text-xs font-black uppercase tracking-widest text-brand-900">
-                                <Check className="text-brand-GOLD" size={16} /> Foreign income proof
-                            </li>
-                            <li className="flex gap-3 text-xs font-black uppercase tracking-widest text-brand-900">
-                                <Check className="text-brand-GOLD" size={16} /> Private health insurance
-                            </li>
-                        </ul>
+                <div className="grid lg:grid-cols-2 gap-24 items-center">
+                    <div>
+                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD">10% Rule</span> <br /> & Quotas</h2>
+                        <div className="space-y-8 text-lg text-neutral-600 font-medium leading-[1.8]">
+                            <p>
+                                Panama is protective of its labor market. Most Panamanian companies are limited to a workforce that is **90% Panamanian**. This is known as the "10% Rule." For specialized technical staff or management roles, this quota can be expanded to **15%**.
+                            </p>
+                            <p>
+                                For the <strong>panama work permit 2026</strong> seeker, this means you can't just apply for a barista job. You must be high-value. You must be the "Specialist" that the company cannot find locally. This is why we specialize in the **Professional Residency** path, which facilitates the MITRADEL filing.
+                            </p>
+                            <div className="p-8 bg-neutral-900 text-white rounded-[3rem]">
+                                <h4 className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest mb-4">Market Insight</h4>
+                                <p className="text-sm font-bold italic">
+                                    "Multinationals (SEM) are exempt from these quotas. If you get a job with a company like Dell, Sony, or Heineken in Panama City, the work permit process is significantly faster and has no percentage caps."
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="bg-neutral-50 p-12 rounded-[4rem] border border-neutral-100 h-full">
-                        <Landmark className="text-brand-GOLD mb-8" size={56} />
-                        <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 italic">Professional Path</h3>
-                        <p className="text-neutral-500 font-medium leading-relaxed mb-8">
-                            For those hired by Panamanian companies. The 10% and 15% rules (percentage of foreign labor) apply. Requires a local labor contract and ministry approval.
+                    <div className="relative aspect-square rounded-[4rem] overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-1000">
+                        <Image
+                            src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=1000&q=80"
+                            alt="Business meeting in Panama City's financial district"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                </div>
+            </section>
+
+            {/* Core Pathways */}
+            <section className="py-32 bg-neutral-50 rounded-[5rem] mx-4">
+                <div className="max-w-7xl mx-auto px-8">
+                    <div className="text-center mb-24">
+                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic">Choose Your <span className="text-brand-GOLD text-3xl md:text-5xl block">Labor Trajectory</span></h2>
+                    </div>
+                    <div className="grid lg:grid-cols-2 gap-12">
+                        <div className="bg-white p-16 rounded-[4rem] shadow-sm border border-neutral-100 group hover:border-brand-GOLD transition-all">
+                            <Globe className="text-brand-GOLD mb-10" size={64} />
+                            <h3 className="text-4xl font-black uppercase tracking-tighter mb-8 italic">The Nomad Visa</h3>
+                            <p className="text-lg text-neutral-600 font-medium leading-relaxed mb-10">
+                                Officially the "Short-Stay Visa for Remote Workers." It's the most flexible way to live legally in Panama while working for your foreign clients or employer. No local payroll required.
+                            </p>
+                            <div className="space-y-6">
+                                <div className="flex gap-4">
+                                    <Check className="text-brand-GOLD shrink-0" size={20} />
+                                    <div>
+                                        <h4 className="font-black uppercase tracking-widest text-[10px] mb-1">Income Minimum</h4>
+                                        <p className="text-xs text-neutral-400 font-medium">$3,000/month individual ($4,000 for families). Verified by 3 months of bank statements.</p>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4">
+                                    <Check className="text-brand-GOLD shrink-0" size={20} />
+                                    <div>
+                                        <h4 className="font-black uppercase tracking-widest text-[10px] mb-1">100% Remote</h4>
+                                        <p className="text-xs text-neutral-400 font-medium">You must prove your work is 100% remote and your clients are outside of Panama.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="bg-neutral-950 text-white p-16 rounded-[4rem] relative overflow-hidden group">
+                            <Landmark className="text-brand-GOLD mb-10" size={64} />
+                            <h3 className="text-4xl font-black uppercase tracking-tighter mb-8 italic text-brand-GOLD">The Local Professional</h3>
+                            <p className="text-lg text-gray-400 font-medium leading-relaxed mb-10">
+                                This is for the "Rockstars" hired by local Panamanian firms. It is a path to **Permanent Residency**. You will be on a local contract and pay into the Panamanian Social Security (CSS).
+                            </p>
+                            <div className="space-y-6">
+                                <div className="flex gap-4">
+                                    <Check className="text-brand-GOLD shrink-0" size={20} />
+                                    <div>
+                                        <h4 className="font-black uppercase tracking-widest text-[10px] mb-1 text-white">Degree Validation</h4>
+                                        <p className="text-xs text-gray-500 font-medium">Your University degree must be apostilled and translated by a certified Panamanian professional.</p>
+                                    </div>
+                                </div>
+                                <div className="flex gap-4">
+                                    <Check className="text-brand-GOLD shrink-0" size={20} />
+                                    <div>
+                                        <h4 className="font-black uppercase tracking-widest text-[10px] mb-1 text-white">Labor Contract</h4>
+                                        <p className="text-xs text-gray-500 font-medium">The contract must follow MITRADEL standards and include specific 'extraordinary' clauses.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Warning: Protected Professions */}
+            <section className="py-32 bg-red-950 text-white rounded-[5rem] mx-4 relative overflow-hidden">
+                <div className="max-w-7xl mx-auto px-8 relative z-10 flex flex-col md:flex-row items-center gap-20">
+                    <div className="md:w-1/3">
+                        <ShieldCheck size={120} className="text-red-500 opacity-50 mb-10" />
+                        <h2 className="text-4xl md:text-7xl font-heading font-black uppercase tracking-tighter italic leading-none">Access <br /><span className="text-red-500">Denied?</span></h2>
+                    </div>
+                    <div className="md:w-2/3">
+                        <p className="text-xl text-gray-400 font-medium leading-relaxed mb-8">
+                            Over 50 professions are strictly reserved for Panamanian citizens. If you are one of the following, you **cannot** obtain a <strong>panama work permit</strong> for these specific roles:
                         </p>
-                        <ul className="space-y-4 mb-8">
-                            <li className="flex gap-3 text-xs font-black uppercase tracking-widest text-brand-900">
-                                <Check className="text-brand-GOLD" size={16} /> Accredited degree/diploma
-                            </li>
-                            <li className="flex gap-3 text-xs font-black uppercase tracking-widest text-brand-900">
-                                <Check className="text-brand-GOLD" size={16} /> Local employment contract
-                            </li>
+                        <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 text-[10px] font-black uppercase tracking-widest text-red-500">
+                            <li>Medicine</li>
+                            <li>Nursing</li>
+                            <li>Law</li>
+                            <li>Architecture</li>
+                            <li>Civil Engineering</li>
+                            <li>Dentistry</li>
+                            <li>Psychology</li>
+                            <li>Accounting</li>
+                            <li>Journalism</li>
                         </ul>
+                        <p className="mt-8 text-sm text-gray-400 italic">
+                            **Rockstar Solution:** We help you refactor your job title to "Operations Manager" or "Project Consultant" while maintaining legal compliance with MITRADEL.
+                        </p>
                     </div>
                 </div>
             </section>

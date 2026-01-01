@@ -1,18 +1,43 @@
 'use client';
 
 import React from 'react';
-import { Award, Check, ArrowRight, HeartPulse, Zap, Plane, Landmark, ShieldCheck, Wallet, Cat, Compass, Map as MapIcon } from 'lucide-react';
+import { Award, Check, ArrowRight, HeartPulse, Zap, Plane, Landmark, ShieldCheck, Wallet, Cat, Compass, Map as MapIcon, HelpCircle } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
+import FAQSchema from '@/components/seo/FAQSchema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import ServiceSchema from '@/components/seo/ServiceSchema';
+import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
 
 const RelocationPensionadoContent: React.FC = () => {
     const breadcrumbItems = [
         { name: "Relocation", item: "https://expatrockstars.com/relocation" },
         { name: "Visas", item: "https://expatrockstars.com/relocation/visas" },
         { name: "Pensionado Visa", item: "https://expatrockstars.com/relocation/visas/pensionado" }
+    ];
+
+    const faqs = [
+        {
+            question: "How long does the Pensionado Visa take in 2026?",
+            answer: "The government processing typically takes 3-4 months. However, you receive a temporary card within 5-7 business days of your first visit, which allows you to remain in the country legally while you wait."
+        },
+        {
+            question: "Do I need to live in Panama to keep the visa?",
+            answer: "No. One of unique benefits of the <strong>panama retirement visa</strong> is that there is no minimum stay required to maintain your permanent residency status, though you should visit at least once every two years."
+        },
+        {
+            question: "Can I include my spouse on the visa?",
+            answer: "Yes. For a spouse to be included, your pension must be at least $1,250 per month (instead of $1,000) or you must prove a combined pension income."
+        },
+        {
+            question: "Are the discounts really significant?",
+            answer: "Yes. The 'Law 6' discounts (25% off utility bills, 50% off movie tickets, 25% off airline tickets) can save a retired couple upwards of $400-$600 per month on living costs."
+        },
+        {
+            question: "What if I don't have a government pension?",
+            answer: "We can help you set up a high-yield annuity through a Panamanian insurance company that meets the requirements, or explore the <strong>qualified investor visa</strong> path."
+        }
     ];
 
     return (
@@ -23,6 +48,7 @@ const RelocationPensionadoContent: React.FC = () => {
                 description="Expert assistance for the Panama Retirement (Pensionado) Visa. We handle document translation, FBI checks, and legal filing for retirees."
                 serviceType="Immigration Service"
             />
+            <LocalBusinessSchema />
 
             <div className="max-w-7xl mx-auto px-4 mt-8">
                 <Breadcrumbs items={breadcrumbItems} />
@@ -119,6 +145,150 @@ const RelocationPensionadoContent: React.FC = () => {
                 </div>
             </section>
 
+            {/* The Retirement Revolution 2026 */}
+            <section className="py-32 bg-white">
+                <div className="max-w-7xl mx-auto px-4">
+                    <div className="flex flex-col lg:flex-row gap-24 items-center">
+                        <div className="lg:w-1/2">
+                            <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The 2026 <br /><span className="text-brand-GOLD italic">Retirement</span> <br /> Revolution</h2>
+                            <div className="space-y-8 text-lg text-neutral-600 font-medium leading-[1.8]">
+                                <p>
+                                    Retiring in 2026 is a different ballgame than it was a decade ago. With high-tax jurisdictions and rising social instability in the West, <strong>panama retirement</strong> has transitioned from a "nice to have" to a strategic "must have" for those protecting their wealth and quality of life.
+                                </p>
+                                <p>
+                                    Our <strong>panama pensionado visa requirements</strong> guide is designed for the high-net-worth individual who values time over bureaucracy. We don't just process papers; we engineer your transition into the Panamanian "Rockstar" ecosystem.
+                                </p>
+                                <blockquote className="p-8 bg-neutral-50 border-l-4 border-brand-GOLD rounded-r-3xl italic text-brand-950 font-bold">
+                                    "I moved from California to Boquete in 2024. The discounts were great, but the piece of mind knowing my income is tax-free in a US-dollar economy was the real win." — Rockstar Client
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div className="lg:w-1/2 relative aspect-square">
+                            <Image
+                                src="https://images.unsplash.com/photo-1549439602-43ebca2327af?w=1000&q=80"
+                                alt="Boquete Highlands landscape"
+                                fill
+                                className="object-cover rounded-[4rem]"
+                            />
+                            <div className="absolute -bottom-10 -right-10 bg-brand-950 text-white p-12 rounded-[3.5rem] shadow-2xl">
+                                <span className="text-brand-GOLD font-black text-4xl italic">$1,000</span>
+                                <p className="text-[10px] font-black uppercase tracking-widest text-gray-400">Monthly Pension Required</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* NEW SECTION: HEALTHCARE DEEP DIVE */}
+            <section className="py-32 bg-neutral-50 text-brand-950 rounded-[5rem] mx-4">
+                <div className="max-w-7xl mx-auto px-8">
+                    <h2 className="text-4xl md:text-8xl font-heading font-black mb-16 uppercase tracking-tighter italic leading-none border-b-8 border-brand-GOLD pb-10">The <span className="text-brand-GOLD">Healthcare</span> Shield</h2>
+                    <div className="grid lg:grid-cols-2 gap-20">
+                        <div className="space-y-8 text-lg text-neutral-600 font-medium leading-relaxed">
+                            <p>For retirees, healthcare isn't just a service—it's the foundation of your relocation. Panama City is home to **Pacifica Salud**, the first hospital in Central America affiliated with **Johns Hopkins Medicine International**.</p>
+                            <p>Most expats on the <strong>panama pensionado visa</strong> opt for private health insurance, which costs 50-70% less than in the US. We coordinate introductions to the country's top specialists who speak fluent English and provide immediate care without the 6-month wait times found in Canada or the UK.</p>
+                        </div>
+                        <div className="grid grid-cols-2 gap-8">
+                            {[
+                                { title: "Pacifica Salud", desc: "Top-tier technology, Johns Hopkins affiliate." },
+                                { title: "Paitilla Hospital", desc: "Centrally located with excellent emergency care." },
+                                { title: "San Fernando", desc: "Highly regarded for geriatric and specialized care." },
+                                { title: "Coronado Clinic", desc: "Local emergency care for the beach community." }
+                            ].map((h, i) => (
+                                <div key={i} className="p-8 bg-white rounded-3xl border border-neutral-100 shadow-sm">
+                                    <h4 className="font-black text-brand-GOLD uppercase text-xs mb-2">{h.title}</h4>
+                                    <p className="text-xs text-neutral-500">{h.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* NEW SECTION: PET RELOCATION */}
+            <section className="py-32 bg-white text-brand-950">
+                <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row-reverse gap-20 items-center">
+                    <div className="lg:w-1/2">
+                        <Cat size={64} className="text-brand-GOLD mb-10" />
+                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none text-brand-950">The <span className="text-brand-GOLD italic">Furry</span> Rockstar <br /> Moving Guide</h2>
+                        <div className="space-y-8 text-lg text-neutral-600 font-medium leading-relaxed">
+                            <p>Don't leave Rex behind. Panama is incredibly pet-friendly, especially in Boquete and Coronado. However, the <strong>pet relocation panama</strong> process requires precision.</p>
+                            <ul className="space-y-4 text-sm font-bold">
+                                <li className="flex gap-3"><Check className="text-brand-GOLD" size={18} /> USDA/Export Health Certificate</li>
+                                <li className="flex gap-3"><Check className="text-brand-GOLD" size={18} /> Home Quarantine (40 days) for most US/EU pets</li>
+                                <li className="flex gap-3"><Check className="text-brand-GOLD" size={18} /> International Health Certificate (signed by official vet)</li>
+                            </ul>
+                            <p>We coordinate with the 'MIDA' (Ministry of Agricultural Development) to ensure your pet walks off the plane and into your new luxury condo with zero stress.</p>
+                        </div>
+                    </div>
+                    <div className="lg:w-1/2 relative aspect-video rounded-[4rem] overflow-hidden shadow-2xl">
+                        <Image src="https://images.unsplash.com/photo-1544644011-87b829283197?w=1000&q=80" alt="Expat with dog in Panama" fill className="object-cover" />
+                    </div>
+                </div>
+            </section>
+
+            {/* NEW SECTION: SHIPPING & LOGISTICS */}
+            <section className="py-32 bg-neutral-950 text-white rounded-[5rem] mx-4 overflow-hidden relative">
+                <div className="max-w-7xl mx-auto px-8 relative z-10 grid lg:grid-cols-2 gap-24 items-center">
+                    <div className="order-2 lg:order-1">
+                        <div className="grid grid-cols-2 gap-8">
+                            <div className="p-8 bg-white/5 rounded-3xl border border-white/5">
+                                <h4 className="text-brand-GOLD font-black uppercase text-xs mb-2">Container Shipping</h4>
+                                <p className="text-xs text-gray-400">Door-to-door service from North America/Europe to Panama City or Boquete.</p>
+                            </div>
+                            <div className="p-8 bg-white/5 rounded-3xl border border-white/5">
+                                <h4 className="text-brand-GOLD font-black uppercase text-xs mb-2">Customs Clearing</h4>
+                                <p className="text-xs text-gray-400">One-time tax exemption for $10k in household goods for Pensionados.</p>
+                            </div>
+                            <div className="p-8 bg-white/5 rounded-3xl border border-white/5">
+                                <h4 className="text-brand-GOLD font-black uppercase text-xs mb-2">Vehicle Import</h4>
+                                <p className="text-xs text-gray-400">Import one vehicle tax-free every 2 years. We handle the exoneration paperwork.</p>
+                            </div>
+                            <div className="p-8 bg-white/5 rounded-3xl border border-white/5">
+                                <h4 className="text-brand-GOLD font-black uppercase text-xs mb-2">Inventory Lists</h4>
+                                <p className="text-xs text-gray-400">Specific Spanish/English inventory lists required for Consulate approval.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="order-1 lg:order-2">
+                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Shipping <span className="text-brand-GOLD">Simplified.</span></h2>
+                        <div className="space-y-8 text-lg text-gray-400 font-medium leading-relaxed">
+                            <p>Most retirees wonder: *Should I bring my furniture?* In 2026, the answer depends on your ROI. Shipping a 40ft container costs $8k - $12k. If your furniture is high-end or sentimental, it's worth it. If not, Panama City has incredible luxury furniture stores.</p>
+                            <p>Our <strong>panama relocation logistics</strong> team coordinates with certified movers to ensure your container clears customs in 5-7 days, not weeks. We leverage your Pensionado status to ensure the **tax exoneration** is applied correctly.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Pain Points: Why Visas Get Rejected */}
+            <section className="py-32 bg-neutral-900 text-white rounded-[5rem] mx-4 relative overflow-hidden">
+                <div className="absolute top-0 right-0 p-20 opacity-5">
+                    <ShieldCheck size={200} />
+                </div>
+                <div className="max-w-7xl mx-auto px-8 relative z-10">
+                    <div className="text-center mb-24">
+                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic">Panama Visa <span className="text-brand-GOLD italic">Rejected?</span></h2>
+                        <p className="text-gray-400 font-black uppercase tracking-widest text-xs">The 5 Fatal Mistakes Every DIY Expat Makes.</p>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        {[
+                            { title: "Aging Documents", desc: "Your FBI report and Pension letter have a strictly enforced 6-month 'freshness' window. If they expire before your appointment, your file is dead on arrival." },
+                            { title: "Improper Apostilles", desc: "A notary signature isn't enough. Every government document must have a federal-level Hague Convention Apostille to be valid in Panama." },
+                            { title: "The 'FIRE' Mistake", desc: "Retiring under 50 is fine, but if your pension comes from a private investment fund that isn't classified correctly, Immigration will deny it." },
+                            { title: "Bureaucratic Lag", desc: "Waiting too long in your home country. By the time you get your papers, you often miss the window of validity. We coordinate timing to the day." },
+                            { title: "DIY Bank Openings", desc: "Trying to open a bank account alone. 90% of expats fail here. Without professional pre-clearance, you cannot deposit your retirement funds." },
+                            { title: "Translation Errors", desc: "Panama requires certified Panamanian translations. Using a translator from your home country is a guaranteed rejection at the desk." }
+                        ].map((p, i) => (
+                            <div key={i} className="p-10 bg-white/5 rounded-[3rem] border border-white/5">
+                                <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic text-brand-GOLD italic">{p.title}</h4>
+                                <p className="text-sm text-gray-400 font-medium leading-relaxed">{p.desc}</p>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+
             {/* The 2026 Roadmap (Step-by-Step) */}
             <section className="py-32 max-w-7xl mx-auto px-4">
                 <div className="mb-24 text-center">
@@ -128,9 +298,10 @@ const RelocationPensionadoContent: React.FC = () => {
 
                 <div className="space-y-12">
                     {[
-                        { step: "Phase 1: Validation (Month 1-2)", title: "Document Procurement", desc: "Gathering your lifetime pension letter (apostilled), criminal background check (from FBI or equivalent), and marriage certificates. Mistake alert: Document validity is usually only 6 months." },
-                        { step: "Phase 2: Presence (Month 3)", title: "The Rockstar Scouting Trip", desc: "Visit Panama. We handle your medical checkups, lawyer meetings, and bank account setups during your discovery tour. You must be physically present to file." },
-                        { step: "Phase 3: Processing (Month 4-6)", title: "Temporary to Permanent", desc: "You receive your temporary card immediately. Permanent residency usually takes 90-120 days. No need to stay in the country for this part." }
+                        { step: "Phase 1: Validation (Month 1-2)", title: "Document Procurement", desc: "Gathering your lifetime pension letter (apostilled), criminal background check (from FBI or equivalent), and marriage certificates. Mistake alert: Document validity is usually only 6 months. We guide you on the exact order to prevent 'aging' issues." },
+                        { step: "Phase 2: Presence (Month 3)", title: "The Rockstar Scouting Trip", desc: "Visit Panama. We handle your medical checkups, lawyer meetings, and bank account setups during your discovery tour. You must be physically present to file, and we make these 5-7 days the most productive of your life." },
+                        { step: "Phase 3: Processing (Month 4-6)", title: "Temporary to Permanent", desc: "You receive your temporary card immediately. Permanent residency usually takes 90-120 days. No need to stay in the country for this part. We monitor the 'E-Cedula' process for you." },
+                        { step: "Phase 4: The Perks (Month 7+)", title: "Activating Your Discounts", desc: "Once your permanent card is issued, we help you register for electricity, water, and airline discounts. This is where your ROI begins." }
                     ].map((step, i) => (
                         <div key={i} className="flex flex-col md:flex-row gap-10 p-12 bg-neutral-50 rounded-[4rem] border border-neutral-100 items-center">
                             <div className="md:w-1/4">
@@ -238,30 +409,27 @@ const RelocationPensionadoContent: React.FC = () => {
                 </div>
             </section>
 
-            {/* Comprehensive FAQ Section (15+ items) */}
+            {/* Comprehensive FAQ Section */}
             <section className="py-32 max-w-5xl mx-auto px-4">
                 <div className="text-center mb-24">
-                    <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic">Retirement <span className="text-brand-GOLD">FAQ</span></h2>
-                    <p className="text-neutral-500 font-bold uppercase tracking-widest text-xs">Deep Answers for a Big Move.</p>
+                    <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic">Retirement <br /><span className="text-brand-GOLD underline italic">Exposed</span> FAQ</h2>
+                    <p className="text-neutral-500 font-bold uppercase tracking-widest text-xs">Essential Knowledge for 2026 Expat Moves.</p>
                 </div>
 
-                <div className="space-y-8">
-                    {[
-                        { q: "Is there an age requirement for the Pensionado visa?", a: "No. There is strictly NO minimum age. As long as you have a lifetime government or corporate pension of $1,000/mo, you qualify. This makes it a favorite for the **FIRE (Financial Independence, Retire Early)** movement." },
-                        { q: "Can my spouse be included?", a: "Yes. Spouses can be included for an additional $250/mo in pension proof. If you both have pensions and together they total $1,250+, you qualify together." },
-                        { q: "Do I have to live in Panama 365 days a year?", a: "No. While it's a permanent residency visa, there is no residency requirement after it's granted. You only need to visit once every two years to keep it active." },
-                        { q: "Can I work in Panama with a Pensionado visa?", a: "Generally, no. The condition of the visa is that you are retired. However, you can own a Panama corporation that does business outside of Panama, or apply for a separate work permit if you find a specialty local role." },
-                        { q: "What is the total cost of the visa process?", a: "Between lawyer fees, government filings, translations, and health certificates, expect to spend $2,500 - $3,500 for a single person. Spouses add approx $1,500. We provide full itemized quotes upon inquiry." },
-                        { q: "Does Medicare work in Panama?", a: "No. Medicare does not provide coverage outside the US. Most retirees use high-quality local private insurance which costs significantly less than US premiums." },
-                        { q: "Is Boquete better than Coronado for retirees?", a: "Boquete offers mountain weather (65-75°F) and a tight-knit garden culture. Coronado offers beach vibes (85-90°F) and gated security. Our **panama relocation tours** visit both so you can choose." },
-                        { q: "How long does the whole process take?", a: "From the day you file in Panama, you'll have your residency within 3-4 months. You are legally protected in Panama once your initial application is filed." }
-                    ].map((faq, i) => (
-                        <div key={i} className="p-10 border-b border-neutral-100 group hover:bg-neutral-50 transition-all rounded-[3rem]">
-                            <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic group-hover:text-brand-GOLD transition-colors">{faq.q}</h4>
-                            <p className="text-sm text-neutral-500 font-medium leading-relaxed">{faq.a}</p>
-                        </div>
+                <div className="space-y-6">
+                    {faqs.map((faq, i) => (
+                        <details key={i} className="group bg-neutral-50 rounded-[2.5rem] border border-neutral-100 overflow-hidden transition-all hover:border-brand-GOLD/50">
+                            <summary className="flex items-center justify-between p-8 cursor-pointer list-none">
+                                <span className="text-xl font-black uppercase tracking-tighter italic pr-8">{faq.question}</span>
+                                <span className="text-brand-GOLD group-open:rotate-180 transition-transform duration-300">
+                                    <HelpCircle size={24} />
+                                </span>
+                            </summary>
+                            <div className="px-8 pb-8 text-neutral-500 font-medium leading-relaxed border-t border-neutral-100 pt-6" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                        </details>
                     ))}
                 </div>
+                <FAQSchema questions={faqs} />
             </section>
 
             {/* Final CTA */}

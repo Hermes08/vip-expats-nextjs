@@ -3,6 +3,9 @@
 import React from 'react';
 import { Star, Quote, ArrowRight, MapPin, CheckCircle2, Play } from 'lucide-react';
 import Link from 'next/link';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
+import ReviewSchema from '@/components/seo/ReviewSchema';
+import Breadcrumbs from '@/components/ui/Breadcrumbs';
 
 const RelocationReviewsContent: React.FC = () => {
     const reviews = [
@@ -29,8 +32,28 @@ const RelocationReviewsContent: React.FC = () => {
         }
     ];
 
+    const breadcrumbItems = [
+        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
+        { name: "Success Stories", item: "https://expatrockstars.com/relocation/reviews" }
+    ];
+
     return (
         <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans">
+            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <ReviewSchema
+                itemReviewedName="Panama Relocation Discovery Tours"
+                itemReviewedDescription="Ultra-efficient relocation and real estate discovery tours in Panama City, Boquete, and Coronado."
+                aggregateRating={{ ratingValue: 5.0, reviewCount: 2500 }}
+                reviews={reviews.map(r => ({
+                    author: r.name,
+                    reviewBody: r.quote,
+                    reviewRating: 5
+                }))}
+            />
+
+            <div className="max-w-7xl mx-auto px-4 mt-8">
+                <Breadcrumbs items={breadcrumbItems} />
+            </div>
             {/* Hero Section */}
             <section className="py-24 text-center max-w-7xl mx-auto px-4">
                 <span className="inline-block px-5 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">

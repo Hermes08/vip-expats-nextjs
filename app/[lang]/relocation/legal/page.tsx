@@ -6,14 +6,14 @@ export async function generateMetadata({ params }: { params: { lang: string } })
 
     const translations: any = {
         en: {
-            title: 'Panama Immigration Lawyer & Legal Services | ExpatRockstars',
-            description: 'Expert legal support for your Panama relocation. We connect you with top immigration lawyers for Friendly Nations Visas, Work Permits, and Permanent Residency.',
-            keywords: ['panama immigration lawyer', 'panama residency requirements', 'panama work permit', 'panama legal residency', 'passport for panama']
+            title: 'Panama Immigration Legal Guide 2026 | Vetted Lawyers & Visas',
+            description: 'The definitive 2026 legal resource for Panama residency. Compare immigration lawyers, visa requirements, and work permit pathways for expats.',
+            keywords: ['panama immigration lawyer 2026', 'panama legal residency guide', 'best panama visa attorney', 'panama immigration laws for foreigners']
         },
         es: {
-            title: 'Abogados de Inmigración en Panamá | Servicios Legales - ExpatRockstars',
-            description: 'Apoyo legal experto para su reubicación en Panamá. Le conectamos con los mejores abogados para Visas de Naciones Amigas, Permisos de Trabajo y Residencia.',
-            keywords: ['abogados de inmigración panamá', 'requisitos residencia panamá', 'permiso de trabajo panamá', 'residencia legal panamá']
+            title: 'Guía Legal de Inmigración Panamá 2026 | Abogados y Visas',
+            description: 'El recurso legal definitivo de 2026 para la residencia en Panamá. Compare abogados de inmigración, requisitos de visa y permisos de trabajo.',
+            keywords: ['abogado de inmigración panamá 2026', 'residencia legal panamá guía', 'leyes de inmigración panamá']
         }
     };
 
