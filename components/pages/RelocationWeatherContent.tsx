@@ -1,16 +1,18 @@
 'use client';
 
 import React from 'react';
-import { Thermometer, CloudRain, Sun, Calendar, ArrowRight, Zap, MapPin, Wind } from 'lucide-react';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
+import Breadcrumbs from '@/components/ui/Breadcrumbs';
+import ServiceSchema from '@/components/seo/ServiceSchema';
+import { Thermometer, CloudRain, Sun, Calendar, ArrowRight, Zap, MapPin, Wind, HeartPulse, ShieldCheck, Star, Compass } from 'lucide-react';
+import Image from 'next/image';
 
 const RelocationWeatherContent: React.FC = () => {
     const breadcrumbItems = [
-        { name: "Home", item: "https://expatrockstars.com/" },
         { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Weather Hub", item: "https://expatrockstars.com/relocation/weather" }
+        { name: "Weather Guide", item: "https://expatrockstars.com/relocation/weather" }
     ];
 
     const faqs = [
@@ -45,19 +47,28 @@ const RelocationWeatherContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={breadcrumbItems} />
+            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
             <FAQSchema questions={faqs} />
+            <ServiceSchema
+                name="Panama Seasonal & Weather Planning Guide"
+                description="Comprehensive analysis of Panama's weather by month. Climate data for Boquete, Coronado, and Panama City to help plan your relocation discovery tour."
+                serviceType="Relocation Consulting"
+            />
+
+            <div className="max-w-7xl mx-auto px-4 mt-8">
+                <Breadcrumbs items={breadcrumbItems} />
+            </div>
 
             {/* Hero Section */}
             <section className="bg-brand-950 py-32 text-white relative overflow-hidden rounded-b-[4rem]">
                 <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
                     <span className="inline-block px-5 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
-                        Seasonal Planning
+                        The 2026 Climate Blueprint
                     </span>
-                    <h1 className="text-5xl md:text-8xl font-heading font-black mb-8 uppercase tracking-tighter">
-                        Best <span className="text-brand-GOLD italic">Time</span> to Visit
+                    <h1 className="text-5xl md:text-9xl font-heading font-black mb-8 uppercase tracking-tighter italic leading-none">
+                        Panama <span className="text-brand-GOLD italic">Weather</span> <br /> By Month
                     </h1>
-                    <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed font-medium">
+                    <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-black uppercase tracking-tight">
                         Timing is everything for your <strong>panama relocation discovery tour</strong>. Discover the difference between the 'Summer' dry season and the lush 'Green' season.
                     </p>
                 </div>
@@ -122,26 +133,155 @@ const RelocationWeatherContent: React.FC = () => {
                 </div>
             </section>
 
-            {/* Regional Nuances */}
-            <section className="py-32 max-w-7xl mx-auto px-4">
-                <div className="text-center mb-20">
-                    <h2 className="text-3xl font-black uppercase tracking-tighter italic">Weather by <span className="text-brand-GOLD">Region</span></h2>
+            {/* The Science of Microclimates: The Rockstar Truth */}
+            <section className="py-32 bg-white text-brand-950 rounded-[5rem] mx-4 border border-neutral-100 shadow-2xl relative overflow-hidden">
+                <div className="absolute top-0 left-0 p-20 opacity-5">
+                    <Compass size={200} />
                 </div>
+                <div className="max-w-7xl mx-auto px-8 relative z-10">
+                    <div className="grid lg:grid-cols-2 gap-24 items-center">
+                        <div>
+                            <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD italic">Microclimate</span> <br /> Paradox</h2>
+                            <div className="space-y-8 text-lg text-neutral-600 font-medium leading-[1.8]">
+                                <p>
+                                    Panama is geographically unique. It is a narrow bridge between two oceans, meaning weather can change within a 15-minute drive. For the <strong>expat panama</strong> community, this isn't just a curiosity—it's a lifestyle determinant.
+                                </p>
+                                <p>
+                                    Why does <strong>boquete panama weather</strong> feel like Zurich in the summer, while <strong>coronado panama weather</strong> feels like Miami in August? It comes down to elevation and the "Rain Shadow" effect. Understanding <strong>panama weather counts by month</strong> is the first step in deciding which region fits your biology.
+                                </p>
+                            </div>
+                        </div>
+                        <div className="grid grid-cols-1 gap-8">
+                            <div className="p-10 bg-neutral-950 text-white rounded-[3rem]">
+                                <h4 className="text-xl font-black uppercase tracking-widest text-brand-GOLD mb-4 italic italic">The Continental Divide</h4>
+                                <p className="text-sm text-gray-400 leading-relaxed">
+                                    The central mountain range acts as a wall. While the Caribbean side (Bocas del Toro) stays wet year-round, the Pacific side (Coronado) enjoys a distinct dry season.
+                                </p>
+                            </div>
+                            <div className="p-10 bg-neutral-50 rounded-[3rem] border border-neutral-100">
+                                <h4 className="text-xl font-black uppercase tracking-widest text-brand-950 mb-4 italic">Elevation vs Humidity</h4>
+                                <p className="text-sm text-neutral-500 leading-relaxed">
+                                    For every 1,000 feet of elevation gain, the temperature drops by about 3.5°F. This is why Boquete at 3,500ft is the "Eternal Spring" compared to sea-level Panama City.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Regional Nuances: Deep Dives */}
+            <section className="py-32 max-w-7xl mx-auto px-4">
+                <div className="text-center mb-24">
+                    <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic">Regional <span className="text-brand-GOLD italic">Atmospheres</span></h2>
+                    <p className="text-neutral-500 font-black uppercase tracking-widest text-xs">Different strokes for different folks.</p>
+                </div>
+
                 <div className="grid md:grid-cols-3 gap-12">
-                    <div className="text-center">
-                        <MapPin size={40} className="text-brand-GOLD mx-auto mb-6" />
-                        <h4 className="text-xl font-black uppercase tracking-tighter italic mb-4">Panama City</h4>
-                        <p className="text-sm text-neutral-500 font-medium">Humid tropical climate. Consistent 85-90°F year-round. After-work thunderstorms are common in the green season.</p>
+                    <div className="group">
+                        <div className="relative aspect-[4/5] rounded-[3rem] overflow-hidden mb-8">
+                            <Image src="https://images.unsplash.com/photo-1558449028-s549c1d27996?w=600&q=80" alt="Panama City Humidity" fill className="object-cover transition-transform group-hover:scale-110" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-brand-950 to-transparent"></div>
+                            <div className="absolute bottom-10 left-10 text-white">
+                                <h4 className="text-2xl font-black italic uppercase tracking-tighter">The Capital</h4>
+                                <p className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD">Hot & Humid</p>
+                            </div>
+                        </div>
+                        <p className="text-sm text-neutral-500 leading-relaxed px-4">
+                            Expect 85-90°F with high humidity. The <strong>best time to visit panama city</strong> is during the 'Summer' (Jan-March) when the trade winds blow away the coastal haze.
+                        </p>
                     </div>
-                    <div className="text-center">
-                        <MapPin size={40} className="text-brand-GOLD mx-auto mb-6" />
-                        <h4 className="text-xl font-black uppercase tracking-tighter italic mb-4">Boquete</h4>
-                        <p className="text-sm text-neutral-500 font-medium">Perpetual spring. 65-75°F. Expect the 'Bajareque' mist which keeps the highlands cool and fertile.</p>
+                    <div className="group">
+                        <div className="relative aspect-[4/5] rounded-[3rem] overflow-hidden mb-8 shadow-2xl">
+                            <Image src="https://images.unsplash.com/photo-1549439602-43ebca2327af?w=600&q=80" alt="Boquete Highlands" fill className="object-cover transition-transform group-hover:scale-110" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-brand-950 to-transparent"></div>
+                            <div className="absolute bottom-10 left-10 text-white">
+                                <h4 className="text-2xl font-black italic uppercase tracking-tighter">The Highlands</h4>
+                                <p className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD underline">Cool Mist</p>
+                            </div>
+                        </div>
+                        <p className="text-sm text-neutral-500 leading-relaxed px-4">
+                            The <strong>Boquete weather 2026</strong> forecast remains consistent: 65-75°F. The "Bajareque" mist is your best friend or worst enemy depending on your mood.
+                        </p>
                     </div>
-                    <div className="text-center">
-                        <MapPin size={40} className="text-brand-GOLD mx-auto mb-6" />
-                        <h4 className="text-xl font-black uppercase tracking-tighter italic mb-4">Coronado</h4>
-                        <p className="text-sm text-neutral-500 font-medium">The 'Dry Arch' of Panama. Receives significantly less rainfall than the city or the mountains.</p>
+                    <div className="group">
+                        <div className="relative aspect-[4/5] rounded-[3rem] overflow-hidden mb-8">
+                            <Image src="https://images.unsplash.com/photo-1544644011-87b829283197?w=600&q=80" alt="Coronado Sunshine" fill className="object-cover transition-transform group-hover:scale-110" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-brand-950 to-transparent"></div>
+                            <div className="absolute bottom-10 left-10 text-white">
+                                <h4 className="text-2xl font-black italic uppercase tracking-tighter">The Gold Coast</h4>
+                                <p className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD">Arco Seco</p>
+                            </div>
+                        </div>
+                        <p className="text-sm text-neutral-500 leading-relaxed px-4">
+                            In the <strong>Coronado panama</strong> dry arc, you'll see 20% less rain than the rest of the country. If you are a sun-seeker, this is your <strong>best places in panama for expats</strong> choice.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Preparation and What to Pack */}
+            <section className="py-32 bg-neutral-900 text-white rounded-[5rem] mx-4">
+                <div className="max-w-7xl mx-auto px-8">
+                    <div className="flex flex-col lg:flex-row gap-24 items-center">
+                        <div className="lg:w-1/2">
+                            <Star className="text-brand-GOLD mb-10" size={64} />
+                            <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD italic">Packer's</span> <br /> Manifesto</h2>
+                            <div className="space-y-8 text-lg text-gray-400 font-medium leading-[1.8]">
+                                <p>
+                                    Most visitors pack for "Tropical Paradise" only to find themselves freezing in the Boquete highlands or at a high-end restaurant in the city.
+                                </p>
+                                <p>
+                                    On our <strong>panama relocation tours</strong>, we recommend a three-layer system. A breathable base for the humidity, a light sweater for the mountains, and a rain shell for the <strong>panama green season</strong>.
+                                </p>
+                                <div className="grid grid-cols-2 gap-4 pt-8">
+                                    <div className="p-6 bg-white/5 rounded-3xl border border-white/5">
+                                        <h5 className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD mb-2">Essential</h5>
+                                        <p className="text-xs">Quick-dry fabrics (Cotton is your enemy in humidity).</p>
+                                    </div>
+                                    <div className="p-6 bg-white/5 rounded-3xl border border-white/5">
+                                        <h5 className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD mb-2">Tech</h5>
+                                        <p className="text-xs">Waterproof bags for your passport and electronics.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="lg:w-1/2 bg-brand-GOLD p-16 rounded-[4rem] text-brand-950">
+                            <h4 className="text-3xl font-black uppercase tracking-tighter mb-8 italic italic">Seasonal Logic</h4>
+                            <ul className="space-y-6">
+                                <li className="flex gap-4">
+                                    <div className="w-10 h-10 bg-brand-950 text-white rounded-xl flex items-center justify-center shrink-0 font-black italic">!</div>
+                                    <p className="text-sm font-medium leading-relaxed"><strong>Jan - March:</strong> Strong winds mean the Pacific is choppy. Great for kitesurfing, tough for fishing.</p>
+                                </li>
+                                <li className="flex gap-4">
+                                    <div className="w-10 h-10 bg-brand-950 text-white rounded-xl flex items-center justify-center shrink-0 font-black italic">!</div>
+                                    <p className="text-sm font-medium leading-relaxed"><strong>Oct - Nov:</strong> Peak rain. The best time to see the <strong>Mist over Boquete</strong> but avoid the Darien gap tours.</p>
+                                </li>
+                            </ul>
+                            <Link href="/relocation/tours" className="mt-12 w-full block py-6 bg-brand-950 text-white text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all">
+                                Custom Packing Guide
+                            </Link>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Related Resources: The Topic Cluster */}
+            <section className="py-24 bg-neutral-50 rounded-[5rem] mx-4 mb-32">
+                <div className="max-w-7xl mx-auto px-8">
+                    <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-neutral-400 mb-12 text-center">Complete Your Research</h4>
+                    <div className="grid md:grid-cols-2 gap-8">
+                        <Link href="/relocation/cost-of-living" className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
+                            <Zap className="text-brand-GOLD mb-6" size={24} />
+                            <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Cost of Living 2026</h5>
+                            <p className="text-xs text-neutral-500 font-medium mb-6">Compare the exact costs of Boquete vs Coronado vs Panama City.</p>
+                            <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">View Guide <ArrowRight size={12} /></span>
+                        </Link>
+                        <Link href="/relocation/guides/boquete-vs-coronado" className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
+                            <Compass className="text-brand-GOLD mb-6" size={24} />
+                            <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Boquete vs Coronado</h5>
+                            <p className="text-xs text-neutral-500 font-medium mb-6">The definitive showdown between the mountains and the beach.</p>
+                            <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">View Guide <ArrowRight size={12} /></span>
+                        </Link>
                     </div>
                 </div>
             </section>

@@ -4,6 +4,7 @@ import React from 'react';
 import { ShieldCheck, ArrowRight, Check, AlertCircle, Users, Award, Briefcase, Landmark } from 'lucide-react';
 import Link from 'next/link';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
+import Breadcrumbs from '@/components/ui/Breadcrumbs';
 
 const RelocationVisasContent: React.FC = () => {
     const breadcrumbItems = [
@@ -38,7 +39,11 @@ const RelocationVisasContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={breadcrumbItems} />
+            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+
+            <div className="max-w-7xl mx-auto px-4 mt-8">
+                <Breadcrumbs items={breadcrumbItems} />
+            </div>
 
             {/* Hero Section */}
             <section className="bg-brand-950 py-32 text-white relative overflow-hidden rounded-b-[5rem]">

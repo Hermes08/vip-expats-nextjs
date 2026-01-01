@@ -6,10 +6,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
+import Breadcrumbs from '@/components/ui/Breadcrumbs';
 
 const RelocationGuidesContent: React.FC = () => {
     const breadcrumbItems = [
-        { name: "Home", item: "https://expatrockstars.com/" },
         { name: "Relocation", item: "https://expatrockstars.com/relocation" },
         { name: "Living in Panama", item: "https://expatrockstars.com/relocation/guides" }
     ];
@@ -58,7 +58,12 @@ const RelocationGuidesContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={breadcrumbItems} />
+            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+
+            <div className="max-w-7xl mx-auto px-4 mt-8">
+                <Breadcrumbs items={breadcrumbItems} />
+            </div>
+
             <FAQSchema questions={faqs.map(f => ({ question: f.q, answer: f.a }))} />
 
             {/* Hero Section */}
