@@ -23,7 +23,7 @@ const HeroCarousel: React.FC = () => {
     <div className="absolute inset-0 z-0 bg-brand-950 overflow-hidden">
       {IMAGES.heroSlides.map((slide, index) => (
         <div key={index} className={`absolute inset-0 transition-all duration-[3000ms] ease-in-out ${index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-110'}`}>
-          <img src={slide} alt="ExpatRockstars Luxury Experience" className="w-full h-full object-cover" />
+          <img src={slide} alt={`Luxury Panama Real Estate Experience - Slide ${index + 1}`} className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-brand-950/90 via-brand-950/40 to-brand-950" />
         </div>
       ))}
@@ -138,6 +138,16 @@ export default function Home() {
               description="See why international investors choose ExpatRockstars for their Panama relocation and investment journey."
               uploadDate="2024-01-01"
             />
+            {/* Screen Reader Summary / Transcript for SEO & Accessibility */}
+            <div className="sr-only">
+              <h3>Video Summary: Experience The ExpatRockstars Lifestyle</h3>
+              <p>
+                This video showcases the premium real estate and relocation services provided by ExpatRockstars in Panama.
+                It highlights luxury beachfront properties, high-yield investment opportunities in the tropics, and the
+                comprehensive support for international investors, including relocation tours, legal assistance, and
+                lifestyle integration.
+              </p>
+            </div>
           </div>
         </div>
       </section >

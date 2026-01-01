@@ -74,6 +74,7 @@ const ProjectsPageContent: React.FC = () => {
                                         className="bg-transparent font-bold text-xs uppercase tracking-widest focus:outline-none cursor-pointer pr-6 appearance-none text-white"
                                         value={activeZone}
                                         onChange={(e) => setActiveZone(e.target.value)}
+                                        aria-label="Neighborhood Filter"
                                     >
                                         <option value="All" className="text-brand-950">{lang === 'zh' ? '全部地区' : 'All Neighborhoods'}</option>
                                         <option value="Beach" className="text-brand-950">{lang === 'zh' ? '海滩' : 'Beach Areas'}</option>
@@ -91,6 +92,7 @@ const ProjectsPageContent: React.FC = () => {
                                         className="bg-transparent font-bold text-xs uppercase tracking-widest focus:outline-none cursor-pointer pr-6 appearance-none text-white"
                                         value={activeType}
                                         onChange={(e) => setActiveType(e.target.value)}
+                                        aria-label="Property Type Filter"
                                     >
                                         <option value="Any" className="text-brand-950">{lang === 'zh' ? '房产类型' : 'Property Type'}</option>
                                         <option value="Condo" className="text-brand-950">{lang === 'zh' ? '公寓' : 'Condominiums'}</option>
@@ -108,6 +110,7 @@ const ProjectsPageContent: React.FC = () => {
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
                                 placeholder={lang === 'zh' ? "搜索项目..." : "Search project by keyword..."}
+                                aria-label="Search projects by keyword"
                                 className="w-full pl-12 pr-10 py-3 bg-white/5 rounded-xl text-sm border border-white/10 text-white focus:ring-2 focus:ring-brand-GOLD outline-none transition-all placeholder:text-slate-500"
                             />
                             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400" size={18} />
@@ -183,21 +186,21 @@ const ProjectsPageContent: React.FC = () => {
                         <div className="grid md:grid-cols-2 gap-16 mt-20">
                             <div className="space-y-10">
                                 <div>
-                                    <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-3"><TrendingUp className="text-brand-GOLD" /> Beachfront Investment Hotspots</h4>
+                                    <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-3"><TrendingUp className="text-brand-GOLD" /> Beachfront Investment Hotspots</h3>
                                     <p className="text-sm leading-relaxed text-slate-400">The <strong>panama condos on the beach</strong> market has expanded significantly towards <strong>playa caracol panama</strong> and Playa Bonita. These areas represent <strong>panama beachfront investment</strong> opportunities with the highest potential for short-term rental yields. Benchmark these against the traditional <strong>coronado panama real estate</strong> market to see how <strong>panama city beach real estate</strong> is evolving towards a younger, lifestyle-oriented demographic.</p>
                                 </div>
                                 <div>
-                                    <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-3"><Map className="text-brand-GOLD" /> The Highlands & Retiro Life</h4>
+                                    <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-3"><Map className="text-brand-GOLD" /> The Highlands & Retiro Life</h3>
                                     <p className="text-sm leading-relaxed text-slate-400">For <strong>panama mountain homes for sale</strong>, Boquete is the undisputed king. The <strong>boquete panama real estate</strong> market is driven by <strong>american retirees in panama</strong> looking for world-class wellness facilities and established <strong>expat communities in panama</strong>. Explore <strong>property in boquete panama</strong> as a defensive asset in your portfolio, providing stability and excellent quality of life under the <strong>pensionado visa panama</strong> benefits.</p>
                                 </div>
                             </div>
                             <div className="space-y-10">
                                 <div>
-                                    <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-3"><Info className="text-brand-GOLD" /> Urban Luxury & Branded Residences</h4>
+                                    <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-3"><Info className="text-brand-GOLD" /> Urban Luxury & Branded Residences</h3>
                                     <p className="text-sm leading-relaxed text-slate-400"><strong>Panama city condos</strong> continue to lead the region in sophistication. Projects like <strong>ocean reef islands panama</strong> and <strong>westin panama residences</strong> are the pinnacle of <strong>panama branded residences</strong>. These properties appeal to international buyers seeking <strong>panama high end real estate</strong> with the security of a global hotel brand. Benchmark these against <strong>punta pacifica condos</strong> like <strong>ph oceanaire</strong> to understand the premium of hotel-managed inventory.</p>
                                 </div>
                                 <div>
-                                    <h4 className="text-xl font-bold text-white mb-4 flex items-center gap-3"><ShieldCheck className="text-brand-GOLD" /> Buyer's Checklist for Panama</h4>
+                                    <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-3"><ShieldCheck className="text-brand-GOLD" /> Buyer's Checklist for Panama</h3>
                                     <p className="text-sm leading-relaxed text-slate-400">When <strong>buying real estate in panama</strong>, always verify the developer's track record and the <strong>panama real estate projects</strong>' history of appreciation. Our <strong>panama property investment guide</strong> recommends prioritizing <strong>panama gated communities</strong> with professional maintenance. Whether you seek <strong>panama expat real estate</strong> or a <strong>panama second home</strong>, the Rockstar advisors provide full transparency on closing costs and tax exemptions.</p>
                                 </div>
                             </div>
@@ -209,7 +212,7 @@ const ProjectsPageContent: React.FC = () => {
             {/* Search Grounding Wall */}
             <section className="bg-black py-20 border-t border-white/5">
                 <div className="max-w-7xl mx-auto px-4">
-                    <h5 className="text-[10px] font-black text-neutral-600 uppercase tracking-[0.3em] mb-10 text-center">Global Property Search Hub</h5>
+                    <h2 className="text-[10px] font-black text-neutral-600 uppercase tracking-[0.3em] mb-10 text-center">Global Property Search Hub</h2>
                     <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-40 text-[11px] font-bold text-brand-GOLD grayscale hover:grayscale-0 transition-all">
                         <span>panama condos for sale</span>
                         <span>panama apartments for sale</span>

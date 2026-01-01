@@ -78,7 +78,7 @@ export default function FloorPlans({ floorplans, lang }: FloorPlansProps) {
                     <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-white/5 order-1 lg:order-2">
                         <Image
                             src={floorplans[activeTab].image}
-                            alt={floorplans[activeTab].name['en']}
+                            alt={floorplans[activeTab].name[lang] || floorplans[activeTab].name['en']}
                             fill
                             className="object-contain p-4"
                             sizes="(max-width: 1024px) 100vw, 50vw"

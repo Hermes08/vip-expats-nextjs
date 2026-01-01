@@ -55,7 +55,7 @@ const AboutPageContent: React.FC = () => {
                                 <p className="text-[10px] font-black uppercase tracking-widest mt-4 text-brand-GOLD">Curated Inventory</p>
                             </div>
                             <div className="md:w-2/3">
-                                <h4 className="text-2xl font-bold text-brand-900 mb-4 uppercase italic">The Rockstar Standard</h4>
+                                <h3 className="text-2xl font-bold text-brand-900 mb-4 uppercase italic">The Rockstar Standard</h3>
                                 <p className="text-brand-600 leading-relaxed">We reject 99% of <strong>panama real estate projects</strong>. We only represent developers with proven liquid assets, clear title history, and strong property management structures. This is how we ensure <strong>panama safe investment property</strong> for our international clients.</p>
                             </div>
                         </div>
@@ -75,7 +75,7 @@ const AboutPageContent: React.FC = () => {
                     <div className="grid md:grid-cols-2 gap-20">
                         <div className="space-y-12">
                             <div>
-                                <h4 className="text-2xl font-bold mb-6 flex items-center gap-3 text-brand-GOLD"><Heart /> The Pros: Living the Dream</h4>
+                                <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 text-brand-GOLD"><Heart /> The Pros: Living the Dream</h3>
                                 <p className="text-brand-200 leading-relaxed mb-6">The <strong>panama lifestyle for expats</strong> is legendary. <strong>American retirees in panama</strong> enjoy first-world healthcare at 70% lower costs, a dollarized economy that protects your <strong>panama real estate investment</strong>, and the incredible <strong>panama retirement benefits</strong> of the <strong>pensionado visa panama</strong>.</p>
                                 <ul className="space-y-4">
                                     <li className="flex items-start gap-3"><CheckCircle className="text-brand-GOLD shrink-0" size={18} /> 25% off electricity and utility bills for life.</li>
@@ -84,18 +84,18 @@ const AboutPageContent: React.FC = () => {
                                 </ul>
                             </div>
                             <div>
-                                <h4 className="text-2xl font-bold mb-6 flex items-center gap-3 text-brand-GOLD"><AlertTriangle /> The Dangers: Avoiding Pitfalls</h4>
+                                <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 text-brand-GOLD"><AlertTriangle /> The Dangers: Avoiding Pitfalls</h3>
                                 <p className="text-brand-200 leading-relaxed">Let&apos;s talk about <strong>retiring in panama dangers</strong>. The biggest risk is buying unverified <strong>panama property</strong> or pre-construction units from developers with no liquidity. This is why we focus on <strong>panama gated communities</strong> and <strong>panama branded residences</strong> like <strong>buenaventura resort panama</strong> or <strong>margaritaville panama</strong>. These projects offer institutional security and professional management.</p>
                             </div>
                         </div>
                         <div className="space-y-12">
                             <div className="bg-white/5 p-12 rounded-[2.5rem] border border-white/10">
-                                <h4 className="text-2xl font-bold mb-8 uppercase tracking-widest text-brand-GOLD border-b border-brand-GOLD/30 pb-4">The Real Cost of Living</h4>
+                                <h3 className="text-2xl font-bold mb-8 uppercase tracking-widest text-brand-GOLD border-b border-brand-GOLD/30 pb-4">The Real Cost of Living</h3>
                                 <p className="text-brand-100 leading-relaxed mb-8">Building a realistic <strong>cost of retirement in panama</strong> budget is essential. While local food is cheap, high-end <strong>panama luxury apartments</strong> in the city and imported goods can match US prices. We help you build a profile: <strong>panama coastal expat living</strong> vs mountain wellness in Boquete. Most Rockstar clients live comfortably on $2,500 - $4,000 USD per month including luxury rent.</p>
                                 <Link href="/contacto" className="inline-flex items-center gap-3 bg-brand-GOLD text-brand-950 px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-white transition-all shadow-xl">Speak with a Relocation Advisor <ArrowRight size={16} /></Link>
                             </div>
                             <div>
-                                <h4 className="text-2xl font-bold mb-6 flex items-center gap-3 text-brand-GOLD"><Users /> Expat Communities in Panama</h4>
+                                <h3 className="text-2xl font-bold mb-6 flex items-center gap-3 text-brand-GOLD"><Users /> Expat Communities in Panama</h3>
                                 <p className="text-brand-200 leading-relaxed">Finding your tribe is crucial. From the <strong>best places for expats to live in panama</strong> like Coronado for golf lovers, to <strong>boquete panama real estate</strong> for mountain hikers, we connect you with the social hubs that make <strong>international living in panama</strong> truly feel like home.</p>
                             </div>
                         </div>
@@ -118,7 +118,7 @@ const AboutPageContent: React.FC = () => {
                         ].map((item, i) => (
                             <div key={i} className="text-center group">
                                 <div className="w-20 h-20 bg-neutral-50 rounded-full flex items-center justify-center mx-auto mb-8 text-brand-GOLD group-hover:bg-brand-900 group-hover:text-white transition-all duration-500 shadow-lg"><item.icon size={40} /></div>
-                                <h4 className="font-bold text-brand-900 uppercase text-xs tracking-widest mb-4">{item.title}</h4>
+                                <h3 className="font-bold text-brand-900 uppercase text-xs tracking-widest mb-4">{item.title}</h3>
                                 <p className="text-xs text-brand-500 font-medium leading-relaxed" dangerouslySetInnerHTML={{ __html: item.desc }}></p>
                             </div>
                         ))}
@@ -135,7 +135,7 @@ const AboutPageContent: React.FC = () => {
             {/* THE ROADMAP wall (approx 200 words) */}
             <section className="py-24 bg-neutral-50 border-t border-neutral-100">
                 <div className="max-w-7xl mx-auto px-4">
-                    <h4 className="text-brand-400 font-bold uppercase tracking-[0.4em] text-[10px] mb-12 text-center">Global Relocation & Investment Hub</h4>
+                    <h2 className="text-brand-400 font-bold uppercase tracking-[0.4em] text-[10px] mb-12 text-center">Global Relocation & Investment Hub</h2>
                     <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 text-[11px] font-bold text-neutral-400 uppercase tracking-tighter opacity-70">
                         {SEO_KEYWORDS_LIST.map((k, i) => (
                             <span key={i} className="hover:text-brand-900 transition-colors cursor-default">{k}</span>

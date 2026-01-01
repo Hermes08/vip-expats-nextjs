@@ -2,9 +2,10 @@
 
 interface VideoSectionProps {
     videoUrl: string;
+    title?: string;
 }
 
-export default function VideoSection({ videoUrl }: VideoSectionProps) {
+export default function VideoSection({ videoUrl, title = "Video presentation" }: VideoSectionProps) {
     if (!videoUrl) return null;
 
     const isYouTube = videoUrl.includes('youtube.com') || videoUrl.includes('youtu.be');
@@ -34,6 +35,7 @@ export default function VideoSection({ videoUrl }: VideoSectionProps) {
                             className="absolute inset-0 w-full h-full"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
+                            title={title}
                         />
                     ) : (
                         <video

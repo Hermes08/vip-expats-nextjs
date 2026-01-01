@@ -78,9 +78,10 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                             <button
                                 key={idx}
                                 onClick={() => setActiveImage(idx)}
+                                aria-label={`View gallery image ${idx + 1}`}
                                 className={`w-20 h-14 rounded-xl overflow-hidden border-2 transition-all duration-300 ${activeImage === idx ? 'border-brand-GOLD scale-105 shadow-lg' : 'border-transparent opacity-60 hover:opacity-100'}`}
                             >
-                                <img src={img} className="w-full h-full object-cover" alt="" />
+                                <img src={img} className="w-full h-full object-cover" alt={`Gallery image ${idx + 1}`} />
                             </button>
                         ))}
                     </div>
@@ -198,7 +199,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                             <div className="bg-brand-950 text-white p-8 rounded-3xl shadow-2xl relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-brand-GOLD/10 rounded-full -mr-16 -mt-16 blur-2xl"></div>
                                 <Compass className="text-brand-GOLD mb-6" size={40} />
-                                <h4 className="text-2xl font-bold mb-4 leading-tight">Request a Private Relocation Tour</h4>
+                                <h3 className="text-2xl font-bold mb-4 leading-tight">Request a Private Relocation Tour</h3>
                                 <p className="text-neutral-400 text-sm mb-8 leading-relaxed">Experience {project.name[lang]} first-hand with our expert ground team. We handle legal, logistics, and lifestyle vetting.</p>
                                 <Link href="/contacto" className="block w-full py-4 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-xl hover:bg-white transition-all text-center">Schedule Discovery Visit</Link>
                             </div>
@@ -206,9 +207,9 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                             {/* Lead Magnet Book */}
                             {/* Lead Form */}
                             <div className="bg-white rounded-3xl p-8 border border-neutral-100 shadow-xl">
-                                <h4 className="font-bold text-brand-900 mb-4 uppercase tracking-widest text-[10px] flex items-center gap-2">
+                                <h3 className="font-bold text-brand-900 mb-4 uppercase tracking-widest text-[10px] flex items-center gap-2">
                                     <ShieldCheck size={14} className="text-brand-GOLD" /> Official Inquiry
-                                </h4>
+                                </h3>
                                 <p className="text-xs text-brand-500 mb-6 font-medium">Recieve the full brochure & pricing list for {project.name[lang]}</p>
 
                                 <form onSubmit={async (e) => {
@@ -234,10 +235,10 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                                         alert('Error sending message. Please try again.');
                                     }
                                 }} className="space-y-4">
-                                    <input name="name" required placeholder="Name" className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
-                                    <input name="email" required type="email" placeholder="Email" className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
-                                    <input name="phone" required placeholder="Phone/WhatsApp" className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
-                                    <textarea name="message" placeholder="I'm interested in..." rows={3} className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all resize-none"></textarea>
+                                    <input name="name" required placeholder="Name" aria-label="Your Name" className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
+                                    <input name="email" required type="email" placeholder="Email" aria-label="Your Email" className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
+                                    <input name="phone" required placeholder="Phone/WhatsApp" aria-label="Your Phone or WhatsApp" className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
+                                    <textarea name="message" placeholder="I'm interested in..." aria-label="Message" rows={3} className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all resize-none"></textarea>
 
                                     <button type="submit" className="w-full py-4 bg-brand-900 text-white font-black uppercase tracking-widest text-[10px] rounded-xl hover:bg-brand-GOLD hover:text-brand-900 transition-all shadow-lg">
                                         Request Details
@@ -248,9 +249,9 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
 
                             {/* Amenities List */}
                             <div className="bg-neutral-50 p-8 rounded-3xl">
-                                <h4 className="font-bold text-brand-900 mb-6 uppercase tracking-widest text-[10px] border-b border-neutral-200 pb-2 flex items-center gap-2">
+                                <h3 className="font-bold text-brand-900 mb-6 uppercase tracking-widest text-[10px] border-b border-neutral-200 pb-2 flex items-center gap-2">
                                     <Home size={14} className="text-brand-GOLD" /> Development Amenities
-                                </h4>
+                                </h3>
                                 <ul className="space-y-4">
                                     {(project.amenities[lang] || project.amenities.en).map((a, i) => (
                                         <li key={i} className="flex gap-3 text-xs font-bold text-brand-600">
@@ -263,7 +264,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                             {/* Related Content */}
                             {relatedPosts.length > 0 && (
                                 <div className="bg-neutral-50 p-8 rounded-3xl">
-                                    <h4 className="font-bold text-brand-900 mb-6 uppercase tracking-widest text-[10px] border-b border-neutral-200 pb-2">Market Context</h4>
+                                    <h3 className="font-bold text-brand-900 mb-6 uppercase tracking-widest text-[10px] border-b border-neutral-200 pb-2">Market Context</h3>
                                     <div className="space-y-6">
                                         {relatedPosts.map(post => (
                                             <Link key={post.id} href={`/blog/${post.slug}`} className="block group">
@@ -282,7 +283,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
             {/* Search Grounding Wall (SEO Booster) */}
             <section className="bg-neutral-50 py-20 border-t border-neutral-100">
                 <div className="max-w-7xl mx-auto px-4">
-                    <h5 className="text-[10px] font-black text-neutral-400 uppercase tracking-[0.3em] mb-10 text-center">Global Reach • Local Expertise • Panama Investment Hub</h5>
+                    <h2 className="text-[10px] font-black text-neutral-400 uppercase tracking-[0.3em] mb-10 text-center">Global Reach • Local Expertise • Panama Investment Hub</h2>
                     <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-40 text-[11px] font-bold text-brand-900 grayscale">
                         <span>panama condos on the beach</span>
                         <span>panama city condos</span>
