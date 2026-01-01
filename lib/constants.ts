@@ -1655,6 +1655,7 @@ export const CONTENT: ContentDictionary = {
       tours: "Relocation Tours",
       about: "About Us",
       blog: "Blog",
+      podcast: "Podcast",
       contact: "Contact",
       search: "Search"
     },
@@ -1730,6 +1731,7 @@ export const CONTENT: ContentDictionary = {
       tours: "Tours de Relocación",
       about: "Nosotros",
       blog: "Blog",
+      podcast: "Podcast",
       contact: "Contacto",
       search: "Buscar"
     },

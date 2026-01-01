@@ -43,6 +43,7 @@ const Navbar: React.FC = () => {
                             <Link href={`/${lang}/quiz`} className={isActive('/quiz') ? 'text-brand-GOLD' : 'flex items-center gap-2 hover:text-white transition-all'}><Sparkles size={14} className="text-brand-GOLD animate-pulse" /> Neighborhood Quiz</Link>
                             <Link href={`/${lang}/tours`} className={isActive('/tours') ? 'text-brand-GOLD' : 'hover:text-white transition-all'}>{t.nav.tours}</Link>
                             <Link href={`/${lang}/blog`} className={isActive('/blog') ? 'text-brand-GOLD' : 'hover:text-white transition-all'}>{t.nav.blog}</Link>
+                            <Link href={`/${lang}/podcast`} className={isActive('/podcast') ? 'text-brand-GOLD' : 'hover:text-white transition-all'}>{t.nav.podcast}</Link>
                         </div>
                         <div className="flex items-center gap-6">
                             <LanguageSwitcher currentLang={lang} />
@@ -67,6 +68,7 @@ const Navbar: React.FC = () => {
                     <Link href={`/${lang}/quiz`} className="text-2xl font-black text-brand-GOLD uppercase tracking-tighter flex items-center gap-3"><Sparkles size={24} /> Neighborhood Quiz</Link>
                     <Link href={`/${lang}/tours`} className="text-2xl font-black text-white uppercase tracking-tighter hover:text-brand-GOLD">{t.nav.tours}</Link>
                     <Link href={`/${lang}/blog`} className="text-2xl font-black text-white uppercase tracking-tighter hover:text-brand-GOLD">{t.nav.blog}</Link>
+                    <Link href={`/${lang}/podcast`} className="text-2xl font-black text-white uppercase tracking-tighter hover:text-brand-GOLD">{t.nav.podcast}</Link>
                     <Link href={`/${lang}/contacto`} className="text-2xl font-black text-white uppercase tracking-tighter hover:text-brand-GOLD">{t.nav.contact}</Link>
                 </div>
             )}
