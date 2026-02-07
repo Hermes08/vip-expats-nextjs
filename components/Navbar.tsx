@@ -44,6 +44,7 @@ const Navbar: React.FC = () => {
         invest: {
             label: t.nav.invest,
             items: [
+                { path: '/panama-real-estate', label: lang === 'es' ? 'Bienes Raíces' : 'Panama Real Estate' },
                 { path: '/proyectos', label: t.nav.projects },
                 { path: '/quiz', label: t.nav.quiz, icon: <Sparkles size={12} className="text-brand-GOLD" /> },
             ]

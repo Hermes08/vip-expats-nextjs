@@ -41,12 +41,17 @@ export async function GET() {
     const staticPages = [
         '',
         '/proyectos',
+        '/panama-real-estate',
         '/about',
         '/blog',
         '/contacto',
         '/tours',
         '/quiz',
         '/podcast',
+        '/relocation',
+        '/relocation/visas',
+        '/relocation/cost-of-living',
+        '/relocation/guides',
     ];
 
     let xml = `<?xml version="1.0" encoding="UTF-8"?>

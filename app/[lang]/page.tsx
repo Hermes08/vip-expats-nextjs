@@ -66,17 +66,18 @@ export default function Home() {
 
             <div style={{ transform: 'translateZ(60px)' }}>
               <h1 className="font-heading text-5xl md:text-8xl font-black text-white mb-8 leading-[0.9] tracking-tighter uppercase italic">
-                <SplitText text="OWN THE" delay={0.2} className="block" />
+                <SplitText text="REAL ESTATE" delay={0.2} className="block" />
                 <span className="text-brand-GOLD">
-                  <SplitText text="PANAMA" delay={0.8} />
+                  <SplitText text="IN PANAMA" delay={0.8} />
                 </span>
-                <br />
-                <SplitText text="DREAM." delay={1.4} />
               </h1>
+              <p className="text-2xl md:text-3xl text-white/90 font-bold mb-4">
+                Luxury Properties & Investment Opportunities
+              </p>
             </div>
 
             <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-400 font-medium" style={{ transform: 'translateZ(30px)' }}>
-              We guide international investors to the most prestigious, high-yield real estate opportunities in the tropics.
+              Your trusted guide to buying property in Panama. From beachfront condos to mountain retreats, we connect international investors with the best real estate opportunities.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-8 justify-center animate-in fade-in zoom-in duration-1000 delay-700" style={{ transform: 'translateZ(50px)' }}>
