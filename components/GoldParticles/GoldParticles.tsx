@@ -72,8 +72,20 @@ const FallingGoldPoints: React.FC = () => {
 export const GoldParticles: React.FC = () => {
     // Only render if reduced motion is NOT preferred
     const shouldReduceMotion = useReducedMotion();
+    const [webGLSupported, setWebGLSupported] = React.useState<boolean | null>(null);
 
-    if (shouldReduceMotion) return null;
+    React.useEffect(() => {
+        try {
+            const canvas = document.createElement('canvas');
+            const supported = !!(window.WebGLRenderingContext && (canvas.getContext('webgl') || canvas.getContext('experimental-webgl')));
+            setWebGLSupported(supported);
+        } catch (e) {
+            setWebGLSupported(false);
+        }
+    }, []);
+
+    if (shouldReduceMotion || webGLSupported === false) return null;
+    if (webGLSupported === null) return null; // Wait for check
 
     return (
         <div className="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none">
