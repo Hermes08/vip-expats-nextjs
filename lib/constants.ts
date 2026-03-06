@@ -5,7 +5,7 @@ export const CONTACT_INFO = {
   phone: "+507 6761-0315",
   displayPhone: "+507 6761-0315",
   whatsapp: "50767610315",
-  email: "info@expatrockstars.com",
+  email: "info@panamarealestatesale.com",
   address: "Oceania Business Plaza, Tower 2000, Panama City",
   inquiryMessage: "Hello! I am interested in more information about ",
   whatsappNumber: "50767610315",
@@ -45,7 +45,7 @@ export const PROJECTS: Project[] = [
     zone: ['Beach'],
     status: 'Ready to Move',
     h1Title: {
-      en: 'Westin Residences Playa Bonita | Panama Condos on the Beach | ExpatRockstars',
+      en: 'Westin Residences Playa Bonita | Panama Condos on the Beach | Panama Real Estate Sale',
       es: 'Westin Residences Playa Bonita | Apartamentos frente al mar Panamá',
       zh: '普拉亚博尼塔威斯汀住宅 | 靠近巴拿马城的豪华海滨生活'
     },

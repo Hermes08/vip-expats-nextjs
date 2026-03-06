@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
                 <div className="flex justify-between items-center">
                     <Link href={`/${lang}`} className="z-50 focus:outline-none group">
                         <span className="font-heading text-xl md:text-3xl font-black tracking-tighter transition-opacity group-hover:opacity-90">
-                            <span className="text-brand-GOLD uppercase text-shadow-sm">EXPAT</span><span className="uppercase text-white text-shadow-sm">ROCKSTARS</span>
+                            <span className="text-brand-GOLD uppercase text-shadow-sm">PANAMA</span><span className="uppercase text-white text-shadow-sm">REALESTATESALE</span>
                         </span>
                     </Link>
 

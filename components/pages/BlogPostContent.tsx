@@ -19,7 +19,7 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
         return (
             <div className="pt-32 text-center">
                 <h1 className="text-2xl font-bold text-brand-900">Post not found</h1>
-                <Link href="/blog" className="text-brand-GOLD hover:underline mt-4 block">Back to Blog</Link>
+                <Link href={`/${lang}/blog`} className="text-brand-GOLD hover:underline mt-4 block">Back to Blog</Link>
             </div>
         )
     }
@@ -34,7 +34,7 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
         <div className="pt-24 min-h-screen bg-white">
             <BlogPostSchema post={post} lang={lang as 'es' | 'en'} />
             <div className="max-w-4xl mx-auto px-4 py-12">
-                <Link href="/blog" className="inline-flex items-center gap-2 text-neutral-400 hover:text-brand-900 font-bold uppercase tracking-widest text-[10px] mb-8 transition-colors">
+                <Link href={`/${lang}/blog`} className="inline-flex items-center gap-2 text-neutral-400 hover:text-brand-900 font-bold uppercase tracking-widest text-[10px] mb-8 transition-colors">
                     <ArrowLeft size={12} /> Back to Insights
                 </Link>
 

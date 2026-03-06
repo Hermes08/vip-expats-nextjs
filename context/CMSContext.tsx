@@ -44,7 +44,13 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
             console.warn("Supabase not configured. Using in-memory/local data.");
             if (typeof window !== 'undefined') {
                 const localLeads = localStorage.getItem('rockstar_leads');
-                if (localLeads) setQuizSubmissions(JSON.parse(localLeads));
+                if (localLeads) {
+                    try {
+                        setQuizSubmissions(JSON.parse(localLeads));
+                    } catch (e) {
+                        console.error("Error parsing local leads:", e);
+                    }
+                }
             }
             return;
         }

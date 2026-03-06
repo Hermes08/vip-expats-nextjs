@@ -6,15 +6,17 @@ import Link from 'next/link';
 import Image from 'next/image';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
+import { useLanguage } from '@/context/LanguageContext';
 
 const RelocationHubContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" }
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` }
     ];
 
     return (
         <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
 
             <div className="max-w-7xl mx-auto px-4 mt-8 relative z-50">
                 <Breadcrumbs items={breadcrumbItems} />
@@ -40,16 +42,16 @@ const RelocationHubContent: React.FC = () => {
                         </span>
                     </div>
                     <h1 className="font-heading text-6xl md:text-9xl font-black mb-8 leading-tight tracking-tighter">
-                        PANAMA <br /> <span className="text-brand-GOLD">RELOCATION</span> TOURS 2026
+                        PANAMA <br /> <span className="text-brand-GOLD">REAL ESTATE</span> SALE 2026
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed font-medium mb-12">
                         Don't just move to Panama. <strong>Relocate with strategy.</strong> Explore our <strong>panama relocation tours</strong>, master the <strong>pensionado visa panama</strong>, and find your <strong>panama dream home</strong> with the world's #1 expat team.
                     </p>
                     <div className="flex flex-wrap justify-center gap-6">
-                        <Link href="/relocation/tours" className="px-12 py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-[0.2em] text-[10px] rounded-2xl shadow-2xl hover:bg-white transition-all transform hover:-translate-y-1">
+                        <Link href={`/${lang}/relocation/tours`} className="px-12 py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-[0.2em] text-[10px] rounded-2xl shadow-2xl hover:bg-white transition-all transform hover:-translate-y-1">
                             Book Discovery Tour
                         </Link>
-                        <Link href="/relocation/visas" className="px-12 py-6 bg-white/5 border border-white/10 text-white font-black uppercase tracking-[0.2em] text-[10px] rounded-2xl backdrop-blur-xl hover:bg-white/10 transition-all transform hover:-translate-y-1">
+                        <Link href={`/${lang}/relocation/visas`} className="px-12 py-6 bg-white/5 border border-white/10 text-white font-black uppercase tracking-[0.2em] text-[10px] rounded-2xl backdrop-blur-xl hover:bg-white/10 transition-all transform hover:-translate-y-1">
                             Visa Requirements
                         </Link>
                     </div>
@@ -110,7 +112,7 @@ const RelocationHubContent: React.FC = () => {
                                     <ArrowRight size={14} className="text-brand-GOLD" /> Custom Itineraries
                                 </li>
                             </ul>
-                            <Link href="/relocation/tours" className="inline-flex items-center gap-3 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] group-hover:gap-5 transition-all">
+                            <Link href={`/${lang}/relocation/tours`} className="inline-flex items-center gap-3 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] group-hover:gap-5 transition-all">
                                 Explore Tours <ArrowRight size={16} />
                             </Link>
                         </div>

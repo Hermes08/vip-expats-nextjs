@@ -16,6 +16,7 @@ const SplitText: React.FC<SplitTextProps> = ({ text, className = '', delay = 0, 
     // For the specific tagline "OWN THE PANAMA DREAM", we can treat it as words or characters.
     // Let's do characters for maximum cinematic feel.
 
+    if (!text) return null;
     const characters = text.split('');
 
     const container = {

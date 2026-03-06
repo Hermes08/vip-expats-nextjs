@@ -16,8 +16,8 @@ const Footer: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
                     <div className="col-span-1 md:col-span-2">
-                        <span className="font-heading text-4xl font-black tracking-tighter mb-8 block italic">
-                            <span className="text-brand-GOLD">EXPAT</span>ROCKSTARS<span className="text-brand-GOLD">.</span>
+                        <span className="font-heading text-4xl font-black tracking-tighter mb-8 block italic text-brand-GOLD">
+                            PANAMA REALESTATE SALE
                         </span>
                         <p className="text-slate-400 max-w-sm mb-10 text-lg font-medium leading-relaxed italic border-l-4 border-brand-GOLD pl-6">{t.footer.about}</p>
                         <div className="flex gap-6">
@@ -28,10 +28,10 @@ const Footer: React.FC = () => {
                     <div>
                         <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-[0.3em] mb-8">Navigation</h4>
                         <ul className="space-y-6 text-slate-400 text-xs font-black uppercase tracking-widest">
-                            <li><Link href="/proyectos" className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Developments</Link></li>
-                            <li><Link href="/quiz" className="hover:text-white transition-colors flex items-center gap-2 group text-brand-GOLD"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Neighborhood Quiz</Link></li>
-                            <li><Link href="/tours" className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Relocation Tours</Link></li>
-                            <li><Link href="/blog" className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Market Intelligence</Link></li>
+                            <li><Link href={`/${lang}/proyectos`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Developments</Link></li>
+                            <li><Link href={`/${lang}/quiz`} className="hover:text-white transition-colors flex items-center gap-2 group text-brand-GOLD"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Neighborhood Quiz</Link></li>
+                            <li><Link href={`/${lang}/relocation/tours`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Relocation Tours</Link></li>
+                            <li><Link href={`/${lang}/blog`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Market Intelligence</Link></li>
                         </ul>
                     </div>
                     <div>
@@ -45,9 +45,9 @@ const Footer: React.FC = () => {
                 </div>
 
                 <div className="pt-12 border-t border-white/5 text-slate-500 text-[9px] font-black uppercase tracking-[0.4em] flex flex-col md:flex-row justify-between items-center gap-6">
-                    <p>&copy; {new Date().getFullYear()} EXPATROCKSTARS REAL ESTATE. {t.footer.rights}</p>
+                    <p>&copy; {new Date().getFullYear()} PANAMAREALESTATESALE. {t.footer.rights}</p>
                     <div className="flex gap-10">
-                        <Link href="/admin" className="hover:text-white transition-all flex items-center gap-2"><Lock size={12} /> Admin Control</Link>
+                        <Link href={`/${lang}/admin`} className="hover:text-white transition-all flex items-center gap-2"><Lock size={12} /> Admin Control</Link>
                     </div>
                 </div>
             </div>

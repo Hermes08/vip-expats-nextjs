@@ -28,7 +28,7 @@ const BlogPageContent: React.FC = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {blogPosts.map((post) => (
                         <article key={post.id} className="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col group border border-slate-100">
-                            <Link href={`/blog/${post.slug}`} className="block h-64 overflow-hidden relative">
+                            <Link href={`/${lang}/blog/${post.slug}`} className="block h-64 overflow-hidden relative">
                                 <img
                                     src={post.image}
                                     alt={post.title[lang] || post.title.en}
@@ -43,7 +43,7 @@ const BlogPageContent: React.FC = () => {
                             <div className="p-8 flex flex-col flex-grow">
                                 <div className="text-slate-400 text-xs font-medium mb-3">{post.date}</div>
                                 <h2 className="font-serif text-2xl font-bold text-brand-900 mb-4 group-hover:text-brand-GOLD transition-colors leading-tight">
-                                    <Link href={`/blog/${post.slug}`}>
+                                    <Link href={`/${lang}/blog/${post.slug}`}>
                                         {post.title[lang] || post.title.en}
                                     </Link>
                                 </h2>
@@ -51,7 +51,7 @@ const BlogPageContent: React.FC = () => {
                                     {post.excerpt[lang] || post.excerpt.en}
                                 </p>
                                 <Link
-                                    href={`/blog/${post.slug}`}
+                                    href={`/${lang}/blog/${post.slug}`}
                                     className="inline-flex items-center gap-2 text-brand-900 font-bold hover:gap-3 transition-all text-sm group-hover:text-brand-GOLD"
                                 >
                                     Read Article <ArrowRight size={16} />
