@@ -9,7 +9,7 @@ interface LocalBusinessSchemaProps {
 }
 
 const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({
-    name = "panamarealestatesale",
+    name = "Panama Real Estate Sale",
     description = "Panama's leading real estate and investment consultancy. Expert guidance for luxury properties, beachfront condos, and residency visas.",
     url = "https://panamarealestatesale.com",
     telephone = "+507 6761-0315",
@@ -50,9 +50,9 @@ const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({
             "closes": "18:00"
         },
         "sameAs": [
-            "https://www.facebook.com/expatrockstars",
-            "https://www.instagram.com/expatrockstars",
-            "https://www.youtube.com/@expatrockstars"
+            "https://www.facebook.com/panamarealestatesale",
+            "https://www.instagram.com/panamarealestatesale",
+            "https://www.youtube.com/@panamarealestatesale"
         ]
     };
 

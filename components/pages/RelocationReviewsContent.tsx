@@ -7,13 +7,16 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import ReviewSchema from '@/components/seo/ReviewSchema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 
+import { useLanguage } from '@/context/LanguageContext';
+
 const RelocationReviewsContent: React.FC = () => {
+    const { lang } = useLanguage();
     const reviews = [
         {
             name: "The Miller Family",
             origin: "California, USA",
             destination: "Boquete",
-            quote: "We were 100% sure we wanted the beach. After two days on the Rockstar tour in Boquete, we realized the mountain lifestyle was what we actually needed. That tour saved us from a half-million dollar mistake.",
+            quote: "We were 100% sure we wanted the beach. After two days on the Elite tour in Boquete, we realized the mountain lifestyle was what we actually needed. That tour saved us from a half-million dollar mistake.",
             image: "https://images.unsplash.com/photo-1543269664-76bc3997d9ea?w=400&q=80"
         },
         {
@@ -33,13 +36,13 @@ const RelocationReviewsContent: React.FC = () => {
     ];
 
     const breadcrumbItems = [
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Success Stories", item: "https://expatrockstars.com/relocation/reviews" }
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Success Stories", item: `https://panamarealestatesale.com/${lang}/relocation/reviews` }
     ];
 
     return (
         <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans">
-            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}/` }, ...breadcrumbItems]} />
             <ReviewSchema
                 itemReviewedName="Panama Relocation Discovery Tours"
                 itemReviewedDescription="Ultra-efficient relocation and real estate discovery tours in Panama City, Boquete, and Coronado."
@@ -63,14 +66,14 @@ const RelocationReviewsContent: React.FC = () => {
                     Client <span className="text-brand-GOLD italic">Success</span> Stories
                 </h1>
                 <p className="text-xl text-gray-400 max-w-3xl mx-auto leading-relaxed font-medium">
-                    Discover why 2,500+ expats have trusted ExpatRockstars for their <strong>panama relocation discovery tour</strong> and investment strategy.
+                    Discover why 2,500+ expats have trusted Panama Real Estate Sale for their <strong>panama relocation discovery tour</strong> and investment strategy.
                 </p>
             </section>
 
             {/* Featured Video Placeholder */}
             <section className="py-12 max-w-5xl mx-auto px-4">
                 <div className="relative aspect-video rounded-[3rem] overflow-hidden border border-white/10 group cursor-pointer">
-                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&q=80" alt="Expat Rockstar Interview" className="w-full h-full object-cover opacity-50 transition-transform duration-700 group-hover:scale-105" />
+                    <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&q=80" alt="Panama Real Estate Sale Interview" className="w-full h-full object-cover opacity-50 transition-transform duration-700 group-hover:scale-105" />
                     <div className="absolute inset-0 flex items-center justify-center">
                         <div className="w-24 h-24 bg-brand-GOLD text-brand-950 rounded-full flex items-center justify-center shadow-2xl transform transition-transform group-hover:scale-110">
                             <Play size={40} fill="currentColor" />
@@ -127,7 +130,7 @@ const RelocationReviewsContent: React.FC = () => {
                         </div>
                         <div className="flex flex-col items-center">
                             <CheckCircle2 size={48} className="mb-6" />
-                            <h3 className="text-xl font-black uppercase tracking-widest leading-none mb-4">Rockstar Community</h3>
+                            <h3 className="text-xl font-black uppercase tracking-widest leading-none mb-4">Panama Real Estate Sale Community</h3>
                             <p className="text-sm font-bold opacity-60">Lifetime access to our expat network.</p>
                         </div>
                     </div>
@@ -140,7 +143,7 @@ const RelocationReviewsContent: React.FC = () => {
                 <p className="text-gray-500 mb-16 text-xl font-medium max-w-2xl mx-auto">
                     Join the ranks of successful <strong>panama expats</strong>. Book your Discovery Tour today and see the results for yourself.
                 </p>
-                <Link href="/relocation/tours" className="px-16 py-8 bg-brand-GOLD text-brand-950 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-white transition-all shadow-2xl">
+                <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-GOLD text-brand-950 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-white transition-all shadow-2xl">
                     Explore Our Tours
                 </Link>
             </section>

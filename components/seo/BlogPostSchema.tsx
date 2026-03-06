@@ -15,12 +15,12 @@ export default function BlogPostSchema({ post, lang }: BlogPostSchemaProps) {
         "image": post.image,
         "author": {
             "@type": "Organization",
-            "name": "panamarealestatesale",
+            "name": "Panama Real Estate Sale",
             "url": "https://panamarealestatesale.com"
         },
         "publisher": {
             "@type": "Organization",
-            "name": "panamarealestatesale",
+            "name": "Panama Real Estate Sale",
             "logo": {
                 "@type": "ImageObject",
                 "url": "https://panamarealestatesale.com/logo.png"

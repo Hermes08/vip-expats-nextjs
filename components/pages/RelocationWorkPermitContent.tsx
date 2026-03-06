@@ -8,11 +8,14 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 
+import { useLanguage } from '@/context/LanguageContext';
+
 const RelocationWorkPermitContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Legal Hub", item: "https://expatrockstars.com/relocation/legal" },
-        { name: "Work Permits", item: "https://expatrockstars.com/relocation/legal/work-permit" }
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Legal Hub", item: `https://panamarealestatesale.com/${lang}/relocation/legal` },
+        { name: "Work Permits", item: `https://panamarealestatesale.com/${lang}/relocation/legal/work-permit` }
     ];
 
     const faqs = [
@@ -60,7 +63,7 @@ const RelocationWorkPermitContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
 
             <div className="max-w-7xl mx-auto px-4 mt-8">
                 <Breadcrumbs items={breadcrumbItems} />
@@ -157,7 +160,7 @@ const RelocationWorkPermitContent: React.FC = () => {
                             <Landmark className="text-brand-GOLD mb-10" size={64} />
                             <h3 className="text-4xl font-black uppercase tracking-tighter mb-8 italic text-brand-GOLD">The Local Professional</h3>
                             <p className="text-lg text-gray-400 font-medium leading-relaxed mb-10">
-                                This is for the "Rockstars" hired by local Panamanian firms. It is a path to **Permanent Residency**. You will be on a local contract and pay into the Panamanian Social Security (CSS).
+                                This is for the "Panama Real Estate Sale" hired by local Panamanian firms. It is a path to **Permanent Residency**. You will be on a local contract and pay into the Panamanian Social Security (CSS).
                             </p>
                             <div className="space-y-6">
                                 <div className="flex gap-4">
@@ -203,7 +206,7 @@ const RelocationWorkPermitContent: React.FC = () => {
                             <li>Journalism</li>
                         </ul>
                         <p className="mt-8 text-sm text-gray-400 italic">
-                            **Rockstar Solution:** We help you refactor your job title to "Operations Manager" or "Project Consultant" while maintaining legal compliance with MITRADEL.
+                            **Panama Real Estate Sale Solution:** We help you refactor your job title to "Operations Manager" or "Project Consultant" while maintaining legal compliance with MITRADEL.
                         </p>
                     </div>
                 </div>
@@ -242,7 +245,7 @@ const RelocationWorkPermitContent: React.FC = () => {
                         </p>
                     </div>
                     <div>
-                        <Link href="/contacto" className="px-12 py-6 bg-brand-950 text-white font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-black transition-all shadow-2xl inline-flex items-center gap-4">
+                        <Link href={`/${lang}/contacto`} className="px-12 py-6 bg-brand-950 text-white font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-black transition-all shadow-2xl inline-flex items-center gap-4">
                             Consult Work Expert <Zap size={16} className="text-brand-GOLD" />
                         </Link>
                     </div>
@@ -252,7 +255,7 @@ const RelocationWorkPermitContent: React.FC = () => {
             {/* Footer FAQ */}
             <section className="py-24 text-center">
                 <p className="text-neutral-500 mb-8 font-medium italic uppercase tracking-widest text-xs">Combining Residency with Work?</p>
-                <Link href="/relocation/visas/friendly-nations" className="text-brand-GOLD font-black uppercase tracking-[0.3em] text-[10px] flex items-center justify-center gap-3 hover:gap-5 transition-all">
+                <Link href={`/${lang}/relocation/visas/friendly-nations`} className="text-brand-GOLD font-black uppercase tracking-[0.3em] text-[10px] flex items-center justify-center gap-3 hover:gap-5 transition-all">
                     Explore Friendly Nations Residency <ArrowRight size={14} />
                 </Link>
             </section>

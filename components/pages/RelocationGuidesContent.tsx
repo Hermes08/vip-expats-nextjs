@@ -8,10 +8,13 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 
+import { useLanguage } from '@/context/LanguageContext';
+
 const RelocationGuidesContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Living in Panama", item: "https://expatrockstars.com/relocation/guides" }
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Living in Panama", item: `https://panamarealestatesale.com/${lang}/relocation/guides` }
     ];
 
     const faqs = [
@@ -58,7 +61,7 @@ const RelocationGuidesContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}/` }, ...breadcrumbItems]} />
 
             <div className="max-w-7xl mx-auto px-4 mt-8">
                 <Breadcrumbs items={breadcrumbItems} />
@@ -120,7 +123,7 @@ const RelocationGuidesContent: React.FC = () => {
                         },
                         {
                             q: "Can I bring my dog to Panama?",
-                            a: "Yes, Panama is pet-friendly. You will need a health certificate, proof of vaccination, and a 'Home Quarantine' form. We provide full coordination for Rockstar pet relocations."
+                            a: "Yes, Panama is pet-friendly. You will need a health certificate, proof of vaccination, and a 'Home Quarantine' form. We provide full coordination for Panama Real Estate Sale pet relocations."
                         },
                         {
                             q: "What are the best places to live in Panama?",
@@ -148,7 +151,7 @@ const RelocationGuidesContent: React.FC = () => {
                         <p className="text-lg font-bold opacity-80 mb-8">
                             Can't decide between the surf of Coronado and the cool breeze of Boquete? Our comparison guide breaks down the weather, lifestyle, and real estate ROI.
                         </p>
-                        <Link href="/relocation/guides/boquete-vs-coronado" className="inline-flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.3em] bg-brand-950 text-white px-8 py-5 rounded-2xl hover:bg-black transition-all">
+                        <Link href={`/${lang}/relocation/guides/boquete-vs-coronado`} className="inline-flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.3em] bg-brand-950 text-white px-8 py-5 rounded-2xl hover:bg-black transition-all">
                             View Comparison <ArrowRight size={16} />
                         </Link>
                     </div>

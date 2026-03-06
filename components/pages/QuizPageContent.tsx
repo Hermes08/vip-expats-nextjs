@@ -88,7 +88,7 @@ const QuizPageContent: React.FC = () => {
                         <div className="w-20 h-20 bg-brand-GOLD text-brand-900 rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
                             <Sparkles size={40} />
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-heading font-bold text-brand-900 mb-4">Your Rockstar Match is Ready!</h1>
+                        <h1 className="text-4xl md:text-6xl font-heading font-bold text-brand-900 mb-4">Your Panama Match is Ready!</h1>
                         <p className="text-slate-500 text-lg">Based on your lifestyle and investment goals, we've identified these top Panama locations.</p>
                     </div>
 
@@ -327,10 +327,10 @@ const QuizPageContent: React.FC = () => {
                                     <label className="flex items-start gap-4 cursor-pointer group">
                                         <input type="checkbox" className="mt-1 w-5 h-5 text-brand-GOLD rounded" checked={formData.consent} onChange={e => setFormData({ ...formData, consent: e.target.checked })} />
                                         <span className="text-xs text-slate-400 leading-relaxed group-hover:text-slate-600 transition-colors">
-                                            I agree to receive other communications from ExpatRockstars Real Estate. You may unsubscribe at any time.
+                                            I agree to receive other communications from Panama Real Estate Sale. You may unsubscribe at any time.
                                         </span>
                                     </label>
-                                    <p className="text-[9px] text-slate-300 font-bold uppercase tracking-widest leading-loose">By clicking submit, you consent to allow ExpatRockstars to store and process your personal information.</p>
+                                    <p className="text-[9px] text-slate-300 font-bold uppercase tracking-widest leading-loose">By clicking submit, you consent to allow Panama Real Estate Sale to store and process your personal information.</p>
                                 </div>
                             </QuestionFrame>
                         )}

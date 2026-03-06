@@ -17,12 +17,12 @@ export async function generateMetadata(
 
     if (!post) {
         return {
-            title: 'Post Not Found | ExpatRockstars Insights',
+            title: 'Post Not Found | Panama Real Estate Sale Insights',
         };
     }
 
     return {
-        title: `${post.title.en} | ExpatRockstars Insights`,
+        title: `${post.title.en} | Panama Real Estate Sale Insights`,
         description: post.excerpt.en,
     };
 }

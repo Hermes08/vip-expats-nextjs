@@ -8,12 +8,14 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import ServiceSchema from '@/components/seo/ServiceSchema';
+import { useLanguage } from '@/context/LanguageContext';
 
 const BoqueteVsCoronadoContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Guides", item: "https://expatrockstars.com/relocation/guides" },
-        { name: "Boquete vs Coronado", item: "https://expatrockstars.com/relocation/guides/boquete-vs-coronado" }
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Guides", item: `https://panamarealestatesale.com/${lang}/relocation/guides` },
+        { name: "Boquete vs Coronado", item: `https://panamarealestatesale.com/${lang}/relocation/guides/boquete-vs-coronado` }
     ];
 
     const faqs = [
@@ -33,7 +35,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <FAQSchema questions={faqs.map(f => ({ question: f.q, answer: f.a }))} />
             <ServiceSchema
                 name="Panama Regional Comparison: Boquete vs Coronado"
@@ -63,7 +65,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                         Boquete <span className="text-brand-GOLD italic">VS</span> <br /> Coronado
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-medium">
-                        Choosing between the <strong>Boquete Chiriquí</strong> highlands and the <strong>Coronado beach Panama</strong> lifestyle is the biggest decision for any expat. This 2,000-word guide breaks down the "Rockstar" truth.
+                        Choosing between the <strong>Boquete Chiriquí</strong> highlands and the <strong>Coronado beach Panama</strong> lifestyle is the biggest decision for any expat. This 2,000-word guide breaks down the in-depth truth.
                     </p>
                 </div>
             </section>
@@ -256,7 +258,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                         <div className="bg-neutral-900 rounded-[4rem] p-16 text-white flex flex-col justify-center">
                             <h4 className="text-3xl font-black uppercase tracking-tighter mb-8 italic text-brand-GOLD">Lifestyle Budget Tip</h4>
                             <p className="text-lg font-medium leading-relaxed opacity-80 mb-10">
-                                You'll spend $150/mo on AC in Coronado vs. $40/mo in Boquete. However, Boquete real estate can carry a premium for views. The <strong>cost of living in panama</strong> is all about where you allocate your "Rockstar" funds.
+                                You'll spend $150/mo on AC in Coronado vs. $40/mo in Boquete. However, Boquete real estate can carry a premium for views. The <strong>cost of living in panama</strong> is all about where you allocate your investment funds.
                             </p>
                         </div>
                     </div>
@@ -285,7 +287,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                         </div>
                         <div className="space-y-8 text-lg text-gray-400 font-medium leading-[1.8]">
                             <p>
-                                However, "Rockstar" safety means being smart. Petty theft is the most common issue. We teach our <strong>panama relocation tours</strong> clients the "Golden Rules" of security, like not leaving valuables in cars at remote trailheads in Boquete or being discreet with high-end jewelry in the city.
+                                However, expert safety means being smart. Petty theft is the most common issue. We teach our <strong>panama relocation tours</strong> clients the "Golden Rules" of security, like not leaving valuables in cars at remote trailheads in Boquete or being discreet with high-end jewelry in the city.
                             </p>
                             <div className="flex gap-4 p-8 bg-white/5 rounded-3xl border border-white/5">
                                 <div className="text-brand-GOLD font-black text-2xl">92%</div>
@@ -317,7 +319,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                             <p>
                                 For <strong>pet relocation panama</strong>, you'll need a USDA health certificate (or the equivalent from your home country), but the process is straightforward. In Boquete, your pups will love the cool mountain trails; in Coronado, the beaches are giant playgrounds.
                             </p>
-                            <Link href="/relocation/legal/checklist" className="text-[10px] font-black uppercase tracking-[0.3em] bg-brand-950 text-white px-10 py-6 rounded-2xl inline-block mt-8">
+                            <Link href={`/${lang}/relocation/legal/lawyers`} className="text-[10px] font-black uppercase tracking-[0.3em] bg-brand-950 text-white px-10 py-6 rounded-2xl inline-block mt-8">
                                 Get Pet Checklist
                             </Link>
                         </div>
@@ -434,13 +436,13 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-8">
                     <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-neutral-400 mb-12 text-center">Complete Your Research</h4>
                     <div className="grid md:grid-cols-2 gap-8">
-                        <Link href="/relocation/cost-of-living" className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
+                        <Link href={`/${lang}/relocation/pricing`} className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Zap className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Cost of Living 2026</h5>
                             <p className="text-xs text-neutral-500 font-medium mb-6">Compare the exact costs of Boquete vs Coronado vs Panama City.</p>
                             <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">View Guide <ArrowRight size={12} /></span>
                         </Link>
-                        <Link href="/relocation/weather" className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
+                        <Link href={`/${lang}/relocation/guides`} className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Sun className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Weather Guide 2026</h5>
                             <p className="text-xs text-neutral-500 font-medium mb-6">Discover the best time to visit and how microclimates affect your move.</p>
@@ -458,10 +460,10 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                         Don't guess. Walk both paths. Our <strong>panama relocation tours</strong> cover both the mountains and the beach in every itinerary.
                     </p>
                     <div className="flex flex-col md:flex-row gap-6 justify-center">
-                        <Link href="/relocation/tours" className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl">
+                        <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl">
                             Compare in Person
                         </Link>
-                        <Link href="/relocation/guides" className="px-16 py-8 bg-white border-2 border-brand-950 text-brand-950 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-950 hover:text-white transition-all">
+                        <Link href={`/${lang}/relocation/guides`} className="px-16 py-8 bg-white border-2 border-brand-950 text-brand-950 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-950 hover:text-white transition-all">
                             Back to Guides
                         </Link>
                     </div>

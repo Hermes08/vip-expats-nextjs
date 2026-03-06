@@ -7,33 +7,35 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import FAQSchema from '@/components/seo/FAQSchema';
 import ServiceSchema from '@/components/seo/ServiceSchema';
+import { useLanguage } from '@/context/LanguageContext';
 
 const RelocationVisasContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Home", item: "https://expatrockstars.com/" },
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Residency Visas", item: "https://expatrockstars.com/relocation/visas" }
+        { name: "Home", item: `https://panamarealestatesale.com/${lang}` },
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Residency Visas", item: `https://panamarealestatesale.com/${lang}/relocation/visas` }
     ];
 
     const visaTypes = [
         {
             title: "Friendly Nations Visa",
             description: "The most flexible residency for citizens of 50+ countries. Ideal for professionals and digital nomads.",
-            path: "/relocation/visas/friendly-nations",
+            path: `/${lang}/relocation/visas/friendly-nations`,
             benefits: ["Permanent Residency in 2 steps", "Right to Work", "Low minimum investment", "Tax Efficiency"],
             icon: Users
         },
         {
             title: "Pensionado (Retirement)",
             description: "The world's #1 retirement program. Lifetime discounts and permanent residency for life.",
-            path: "/relocation/visas/pensionado",
+            path: `/${lang}/relocation/visas/pensionado`,
             benefits: ["25% off Electricity/Water", "50% off Movies/Concerts", "25% off Airline Tickets", "Import zero-tax car"],
             icon: Award
         },
         {
             title: "Qualified Investor",
             description: "The fastest path. Permanent residency in as little as 30 days via real estate investment.",
-            path: "/relocation/visas/qualified-investor",
+            path: `/${lang}/relocation/visas/qualified-investor`,
             benefits: ["Direct Permanent Residency", "No local job required", "Investment ROI potential", "Priority processing"],
             icon: Landmark
         }
@@ -50,7 +52,7 @@ const RelocationVisasContent: React.FC = () => {
         },
         {
             question: "How much are the legal fees for a Panama visa?",
-            answer: "Legal fees typically range from $1,500 to $2,500 per applicant, plus approximately $1,050 in government fees and repatriation bonds. Rockstar clients receive a transparent, all-inclusive fee schedule."
+            answer: "Legal fees typically range from $1,500 to $2,500 per applicant, plus approximately $1,050 in government fees and repatriation bonds. Our clients receive a transparent, all-inclusive fee schedule."
         },
         {
             question: "Do I need to be in Panama for the whole process?",
@@ -64,7 +66,7 @@ const RelocationVisasContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <FAQSchema questions={faqs} />
             <ServiceSchema
                 name="Panama Residency Visa Consultancy"
@@ -86,13 +88,13 @@ const RelocationVisasContent: React.FC = () => {
                         The Ultimate 2026 Legal Guide
                     </span>
                     <h1 className="text-5xl md:text-9xl font-heading font-black mb-10 uppercase tracking-tighter leading-none">
-                        Panama <br /> <span className="text-brand-GOLD italic">Rockstar</span> <br /> Residency
+                        Panama <br /> <span className="text-brand-GOLD italic">Real Estate</span> <br /> Sale
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-medium mb-12">
                         Everything you need to know about navigating the <strong>panama residency visa</strong> ecosystem. From the <strong>friendly nations visa</strong> to the elite <strong>pensionado program</strong>, we provide the blueprint for your legal relocation.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
-                        <Link href="/contacto" className="px-12 py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-white transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="px-12 py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-white transition-all shadow-2xl">
                             Get My Visa Strategy
                         </Link>
                     </div>
@@ -109,10 +111,10 @@ const RelocationVisasContent: React.FC = () => {
                                 Panama's immigration system is one of the most stable in the world, but in 2026, the complexity of <strong>compliance and anti-money laundering (AML)</strong> has reached an all-time high. Gone are the days of simple "walk-in" residency.
                             </p>
                             <p>
-                                A successful <strong>panama immigration</strong> strategy now requires a "Rockstar" level of preparation. This means matching your specific financial profile (Digital Nomad income vs. Corporate Pension vs. Asset Liquidity) to the right legal vehicle before you even book your flight.
+                                A successful <strong>panama immigration</strong> strategy now requires an elite level of preparation. This means matching your specific financial profile (Digital Nomad income vs. Corporate Pension vs. Asset Liquidity) to the right legal vehicle before you even book your flight.
                             </p>
                             <div className="p-10 bg-neutral-900 text-white rounded-[4rem] border-l-8 border-brand-GOLD">
-                                <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-widest mb-4">Rockstar Pro Tip</h4>
+                                <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-widest mb-4">Expert Pro Tip</h4>
                                 <p className="text-sm font-medium leading-relaxed italic">
                                     "Most rejections happen because of aging documents. In Panama, an FBI report or Pension letter is only considered 'fresh' for 6 months from the date of issuance. Timing your apostilles is critical."
                                 </p>
@@ -206,7 +208,7 @@ const RelocationVisasContent: React.FC = () => {
                                 </div>
                                 <div>
                                     <h4 className="text-xl font-black uppercase italic mb-2">Financial Vagueness</h4>
-                                    <p className="text-sm text-gray-400 font-medium leading-relaxed">Providing bank statements that do not clearly show the 'Rockstar' source of funds.</p>
+                                    <p className="text-sm text-gray-400 font-medium leading-relaxed">Providing bank statements that do not clearly show the legitimate source of funds.</p>
                                 </div>
                             </div>
                         </div>
@@ -233,7 +235,7 @@ const RelocationVisasContent: React.FC = () => {
                             <li className="flex gap-3 text-xs font-bold text-neutral-800"><Check size={14} className="text-brand-GOLD" /> Permanent Residency in 2 Years</li>
                             <li className="flex gap-3 text-xs font-bold text-neutral-800"><Check size={14} className="text-brand-GOLD" /> Work Permit Availability</li>
                         </ul>
-                        <Link href="/relocation/visas/friendly-nations" className="text-brand-GOLD font-black uppercase tracking-[0.2em] text-[10px] flex items-center gap-2 hover:gap-4 transition-all">
+                        <Link href={`/${lang}/relocation/visas/friendly-nations`} className="text-brand-GOLD font-black uppercase tracking-[0.2em] text-[10px] flex items-center gap-2 hover:gap-4 transition-all">
                             View Deep Dive <ArrowRight size={14} />
                         </Link>
                     </div>
@@ -251,7 +253,7 @@ const RelocationVisasContent: React.FC = () => {
                             <li className="flex gap-3 text-xs font-bold text-brand-GOLD"><Check size={14} /> Immediate Permanent Status</li>
                             <li className="flex gap-3 text-xs font-bold text-brand-GOLD"><Check size={14} /> World-Class Discount Law (L6)</li>
                         </ul>
-                        <Link href="/relocation/visas/pensionado" className="text-white font-black uppercase tracking-[0.2em] text-[10px] flex items-center gap-2 hover:gap-4 transition-all">
+                        <Link href={`/${lang}/relocation/visas/pensionado`} className="text-white font-black uppercase tracking-[0.2em] text-[10px] flex items-center gap-2 hover:gap-4 transition-all">
                             View Deep Dive <ArrowRight size={14} />
                         </Link>
                     </div>
@@ -329,10 +331,10 @@ const RelocationVisasContent: React.FC = () => {
                     <ShieldCheck className="text-brand-GOLD mx-auto mb-8" size={64} />
                     <h2 className="text-4xl md:text-9xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none text-center">Plan Your <br /> <span className="text-brand-GOLD underline italic">Secure</span> Exit.</h2>
                     <p className="text-xl md:text-2xl text-neutral-500 mb-16 font-medium leading-relaxed italic text-center">
-                        Don't guess with your future. Relocating to Panama is a high-stakes move that requires <strong>panama relocation rockstar</strong> precision.
+                        Don't guess with your future. Relocating to Panama is a high-stakes move that requires <strong>panama relocation expert</strong> precision.
                     </p>
                     <div className="flex justify-center flex-col sm:flex-row gap-8">
-                        <Link href="/relocation/tours" className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-[11px] rounded-full hover:bg-black transition-all shadow-2xl inline-block">
+                        <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-[11px] rounded-full hover:bg-black transition-all shadow-2xl inline-block">
                             Start My Discovery Journey
                         </Link>
                     </div>

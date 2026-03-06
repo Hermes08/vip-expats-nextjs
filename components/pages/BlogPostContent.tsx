@@ -8,6 +8,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { ArrowLeft, Calendar, User, Share2, ArrowRight, BookOpen } from 'lucide-react';
 import SplitText from '@/components/ui/SplitText';
 import BlogPostSchema from '@/components/seo/BlogPostSchema';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
 const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
     const { lang } = useLanguage();
@@ -32,6 +33,12 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
 
     return (
         <div className="pt-24 min-h-screen bg-white">
+            <BreadcrumbSchema
+                items={[
+                    { name: 'Blog', item: `https://panamarealestatesale.com/${lang}/blog` },
+                    { name: title, item: `https://panamarealestatesale.com/${lang}/blog/${slug}` }
+                ]}
+            />
             <BlogPostSchema post={post} lang={lang as 'es' | 'en'} />
             <div className="max-w-4xl mx-auto px-4 py-12">
                 <Link href={`/${lang}/blog`} className="inline-flex items-center gap-2 text-neutral-400 hover:text-brand-900 font-bold uppercase tracking-widest text-[10px] mb-8 transition-colors">
@@ -54,7 +61,7 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
                         </div>
                         <div className="flex items-center gap-2">
                             <User size={14} className="text-brand-GOLD" />
-                            Rockstar Advisor
+                            Panama Real Estate Sale Advisor
                         </div>
                     </div>
                     <button className="text-neutral-400 hover:text-brand-900 transition-colors">
@@ -90,7 +97,7 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
                                 {project.description[lang] || project.description.en}
                             </p>
                             <Link
-                                href={`/proyectos/${project.slug}`}
+                                href={`/${lang}/proyectos/${project.slug}`}
                                 className="inline-flex items-center gap-3 bg-brand-GOLD text-brand-950 font-black px-6 py-3 rounded-xl text-xs uppercase hover:bg-white transition-all shadow-xl"
                             >
                                 View Development <ArrowRight size={16} />
@@ -110,7 +117,7 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
                         Download our 50-page Panama Investment Bible. Covers residency, taxes, and hidden market opportunities.
                     </p>
                     <Link
-                        href="/"
+                        href={`/${lang}`}
                         className="inline-block bg-brand-950 text-white font-black py-4 px-12 rounded-xl uppercase tracking-widest text-xs hover:scale-105 transition-all shadow-xl"
                     >
                         Download Free Guide
@@ -122,7 +129,7 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
                     <h3 className="font-heading text-2xl font-bold text-brand-900 mb-4">Need personalized advice?</h3>
                     <p className="text-brand-500 mb-8 max-w-xl mx-auto">Our senior advisors can build a custom portfolio for your specific ROI and residency goals.</p>
                     <Link
-                        href="/contacto"
+                        href={`/${lang}/contact`}
                         className="inline-block border-2 border-brand-900 text-brand-900 font-black py-4 px-12 rounded-xl uppercase tracking-widest text-xs hover:bg-brand-900 hover:text-white transition-all"
                     >
                         Speak with an Advisor

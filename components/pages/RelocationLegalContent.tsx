@@ -7,11 +7,13 @@ import Image from 'next/image';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
+import { useLanguage } from '@/context/LanguageContext';
 
 const RelocationLegalContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Legal & Immigration", item: "https://expatrockstars.com/relocation/legal" }
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Legal & Immigration", item: `https://panamarealestatesale.com/${lang}/relocation/legal` }
     ];
     // ... (omitting rest of constants for brevity, will use multi-replace or just replace hero)
 
@@ -98,7 +100,7 @@ const RelocationLegalContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
 
             <div className="max-w-7xl mx-auto px-4 mt-8">
                 <Breadcrumbs items={breadcrumbItems} />
@@ -144,7 +146,7 @@ const RelocationLegalContent: React.FC = () => {
                             <service.icon className="text-brand-GOLD mb-8 group-hover:scale-110 transition-transform" size={48} />
                             <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 italic">{service.title}</h3>
                             <p className="text-neutral-500 font-medium leading-relaxed mb-8" dangerouslySetInnerHTML={{ __html: service.desc }}></p>
-                            <Link href="/relocation/visas" className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">
+                            <Link href={`/${lang}/relocation/visas`} className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">
                                 Discover More <ArrowRight size={14} />
                             </Link>
                         </div>
@@ -179,11 +181,11 @@ const RelocationLegalContent: React.FC = () => {
                         </div>
                     </div>
                     <div className="bg-brand-GOLD p-16 rounded-[4rem] text-brand-950 shadow-2xl">
-                        <h3 className="text-3xl font-black uppercase tracking-tighter mb-8 italic">The "Legal Rockstar" Hybrid</h3>
+                        <h3 className="text-3xl font-black uppercase tracking-tighter mb-8 italic">The "Legal Panama Real Estate Sale" Hybrid</h3>
                         <p className="font-bold opacity-80 leading-relaxed mb-8 text-lg">
                             We believe in the "Hybrid" model: Use the lawyers for the visa and the heavy corporate lifting, but use our **Logistics Specialists** for the ground-level move. This saves our clients an average of **$1,500 - $3,000** in unnecessary legal fees.
                         </p>
-                        <Link href="/contacto" className="px-10 py-5 bg-brand-950 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all inline-block shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="px-10 py-5 bg-brand-950 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all inline-block shadow-2xl">
                             Get My Logistic Proposal
                         </Link>
                     </div>
@@ -200,7 +202,7 @@ const RelocationLegalContent: React.FC = () => {
                             <p className="text-xl text-neutral-600 font-medium leading-[1.8] mb-12">
                                 Navigating <strong>panama visa requirements</strong> alone is a liability. Our platform exists to connect you with verified <strong>panama visa attorneys</strong> who have a proven track record. No "cousin-of-a-friend" deals. Just vetted, professional legal counsel.
                             </p>
-                            <Link href="/relocation/legal/lawyers-directory" className="px-12 py-6 bg-brand-950 text-white font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-GOLD hover:text-brand-950 transition-all inline-block shadow-2xl">
+                            <Link href={`/${lang}/relocation/legal/lawyers-directory`} className="px-12 py-6 bg-brand-950 text-white font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-GOLD hover:text-brand-950 transition-all inline-block shadow-2xl">
                                 Browse Verified Lawyers
                             </Link>
                         </div>
@@ -261,10 +263,10 @@ const RelocationLegalContent: React.FC = () => {
                         Don't let <strong>panama entry requirements</strong> or complex forms slow you down. Get the legal clarity you need today.
                     </p>
                     <div className="flex flex-col md:flex-row gap-6 justify-center">
-                        <Link href="/contacto" className="px-12 py-6 bg-brand-950 text-white font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-black transition-all">
+                        <Link href={`/${lang}/contacto`} className="px-12 py-6 bg-brand-950 text-white font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-black transition-all">
                             Book Legal Consultation
                         </Link>
-                        <Link href="/relocation/visas" className="px-12 py-6 bg-white border-2 border-brand-950 text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-950 hover:text-white transition-all">
+                        <Link href={`/${lang}/relocation/visas`} className="px-12 py-6 bg-white border-2 border-brand-950 text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-950 hover:text-white transition-all">
                             View Visa Options
                         </Link>
                     </div>

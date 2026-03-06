@@ -18,7 +18,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     if (!episode) {
         return {
-            title: 'Episode Not Found | Expat Rockstars',
+            title: 'Episode Not Found | Panama Real Estate Sale',
         };
     }
 

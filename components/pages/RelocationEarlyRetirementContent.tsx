@@ -8,8 +8,10 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 import ServiceSchema from '@/components/seo/ServiceSchema';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
+import { useLanguage } from '@/context/LanguageContext';
 
 const RelocationEarlyRetirementContent = () => {
+    const { lang } = useLanguage();
     const faqs = [
         {
             question: "Can I get a Pensionado Visa if I am under 50?",
@@ -25,7 +27,7 @@ const RelocationEarlyRetirementContent = () => {
         },
         {
             question: "How much do I need to retire early in Panama?",
-            answer: "While it depends on your lifestyle, a couple can live like 'Rockstars' on $3,500 - $5,000 per month, including a luxury condo, private healthcare, and frequent dining out."
+            answer: "While it depends on your lifestyle, a couple can live like 'Panama Real Estate Sales' on $3,500 - $5,000 per month, including a luxury condo, private healthcare, and frequent dining out."
         }
     ];
 
@@ -33,8 +35,8 @@ const RelocationEarlyRetirementContent = () => {
         <div className="bg-white text-brand-950 min-h-screen">
             <BreadcrumbSchema
                 items={[
-                    { name: 'Relocation', item: 'https://expatrockstars.com/relocation' },
-                    { name: 'Early Retirement', item: 'https://expatrockstars.com/relocation/early-retirement' }
+                    { name: 'Relocation', item: `https://panamarealestatesale.com/${lang}/relocation` },
+                    { name: 'Early Retirement', item: `https://panamarealestatesale.com/${lang}/relocation/early-retirement` }
                 ]}
             />
             <FAQSchema questions={faqs} />
@@ -59,10 +61,10 @@ const RelocationEarlyRetirementContent = () => {
                         Why wait until 65? Panama is the ultimate destination for the <strong>early retirement</strong> community. Escape the grind and leverage your capital for a high-intensity lifestyle in the <strong>best places to retire in panama</strong>.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-8 justify-center">
-                        <Link href="/contacto" className="px-16 py-8 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="px-16 py-8 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
                             Unlock My Early Exit
                         </Link>
-                        <Link href="/relocation/legal" className="px-16 py-8 bg-white/5 border border-white/10 text-white rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white/10 transition-all">
+                        <Link href={`/${lang}/relocation/legal`} className="px-16 py-8 bg-white/5 border border-white/10 text-white rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white/10 transition-all">
                             View Visa Paths
                         </Link>
                     </div>
@@ -144,7 +146,7 @@ const RelocationEarlyRetirementContent = () => {
                                 </div>
                                 <h3 className="text-3xl font-black uppercase tracking-tighter italic mb-6 leading-none">{path.title}</h3>
                                 <p className="text-gray-400 font-medium text-sm leading-relaxed mb-8">{path.desc}</p>
-                                <Link href="/relocation/legal" className="inline-flex items-center gap-2 text-brand-GOLD font-black uppercase text-[10px] tracking-widest group-hover:gap-4 transition-all italic">
+                                <Link href={`/${lang}/relocation/legal`} className="inline-flex items-center gap-2 text-brand-GOLD font-black uppercase text-[10px] tracking-widest group-hover:gap-4 transition-all italic">
                                     Deep Dive <ArrowRight size={14} />
                                 </Link>
                             </div>
@@ -206,7 +208,7 @@ const RelocationEarlyRetirementContent = () => {
                         The best time to retire was yesterday. The second best time is today. We guide the under-50 crowd to legal and lifestyle freedom in Panama.
                     </p>
                     <div className="flex justify-center flex-col sm:flex-row gap-8">
-                        <Link href="/contacto" className="inline-flex items-center justify-center gap-4 px-16 py-8 bg-brand-950 text-white rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-black transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="inline-flex items-center justify-center gap-4 px-16 py-8 bg-brand-950 text-white rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-black transition-all shadow-2xl">
                             Schedule My FIRE Audit <ArrowRight size={14} />
                         </Link>
                     </div>

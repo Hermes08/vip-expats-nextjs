@@ -7,6 +7,7 @@ import { useCMS } from '@/context/CMSContext';
 import { useLanguage } from '@/context/LanguageContext';
 import { ArrowRight } from 'lucide-react';
 import SplitText from '@/components/ui/SplitText';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
 const BlogPageContent: React.FC = () => {
     const { lang } = useLanguage();
@@ -15,13 +16,18 @@ const BlogPageContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-slate-50 pb-20">
+            <BreadcrumbSchema
+                items={[
+                    { name: 'Blog', item: `https://panamarealestatesale.com/${lang}/blog` }
+                ]}
+            />
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <div className="text-center mb-20">
                     <h1 className="font-serif text-4xl md:text-6xl font-bold text-brand-900 mb-6">
                         <SplitText text={t.nav.blog} delay={0.2} />
                     </h1>
                     <p className="text-lg text-slate-500 max-w-2xl mx-auto leading-relaxed">
-                        Stay updated with the latest trends in the Panamanian property market, investment guides, and lifestyle tips for the rockstar expat.
+                        Stay updated with the latest trends in the Panamanian property market, investment guides, and lifestyle tips for the modern expat.
                     </p>
                 </div>
 

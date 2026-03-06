@@ -113,7 +113,7 @@ const AboutPageContent: React.FC = () => {
                     <div className="grid md:grid-cols-3 gap-12 not-prose my-20">
                         {[
                             { icon: MapPin, title: "Zone Selection", desc: "Choose between <strong>panama condos on the beach</strong> or <strong>mountain homes</strong> based on ROI goals." },
-                            { icon: Shield, title: "Title Verification", desc: "Rockstar legal partners ensure every <strong>panama property</strong> is clear and safe for foreign buyers." },
+                            { icon: Shield, title: "Title Verification", desc: "Elite legal partners ensure every <strong>panama property</strong> is clear and safe for foreign buyers." },
                             { icon: BookOpen, title: "Visa Integration", desc: "Optimizing your <strong>panama residency visa</strong> process through your real estate purchase." }
                         ].map((item, i) => (
                             <div key={i} className="text-center group">
@@ -156,7 +156,7 @@ const AboutPageContent: React.FC = () => {
             {/* FINAL CTA */}
             <section className="py-24 bg-brand-900 text-center">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-6xl font-heading font-bold text-white mb-10">Start Your Rockstar Journey</h2>
+                    <h2 className="text-3xl md:text-6xl font-heading font-bold text-white mb-10">Start Your Elite Journey</h2>
                     <div className="flex flex-wrap justify-center gap-6">
                         <button className="px-14 py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-[0.2em] text-xs rounded-full hover:scale-105 transition-all shadow-xl">Speak with an Advisor</button>
                         <Link href="/tours" className="px-14 py-6 border-2 border-white text-white font-black uppercase tracking-[0.2em] text-xs rounded-full hover:bg-white hover:text-brand-900 transition-all">Book Relocation Tour</Link>

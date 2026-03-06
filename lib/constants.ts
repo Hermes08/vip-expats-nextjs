@@ -99,7 +99,7 @@ export const PROJECTS: Project[] = [
 
       It also caters to the "Business Traveler" who frequently visits the capital and wants a **panama second home** that can generate income while they are away. For families, the security and proximity to international schools make it an excellent choice for **panama expat real estate**. 
 
-      The **panama luxury retirement** community here is diverse, composed of successful entrepreneurs, former diplomats, and multinational executives. This creates a high-level networking environment within the social areas. If your goal is **international living in panama** without the "roughing it" phase, Westin Residences provides a seamless transition into the Rockstar lifestyle.`,
+      The **panama luxury retirement** community here is diverse, composed of successful entrepreneurs, former diplomats, and multinational executives. This creates a high-level networking environment within the social areas. If your goal is **international living in panama** without the "roughing it" phase, Westin Residences provides a seamless transition into the Elite lifestyle.`,
       es: `El comprador ideal para Westin Residences es el "Ciudadano Global" que valora el tiempo y el prestigio. Vemos una alta concentración de **jubilados estadounidenses en panamá** que desean una base de lujo que no requiera mantenimiento. Si busca **jubilarse en panamá** con servicio de 5 estrellas, esta es la elección definitiva.
 
       También atiende al "Viajero de Negocios" que visita con frecuencia la capital y desea una **segunda vivienda en panamá** que pueda generar ingresos. Para las familias, la seguridad y la proximidad a escuelas internacionales la convierten en una excelente opción.`
@@ -119,10 +119,10 @@ export const PROJECTS: Project[] = [
     servicesCTA: {
       en: `Experience Playa Bonita today. Our **panama relocation real estate tours** provide an exclusive behind-the-scenes look at the Westin Residences. Don't buy based on a brochure; see the quality, feel the sea breeze, and meet the community.
 
-      Schedule a **panama real estate discovery tour** with ExpatRockstars. Our **panama property consultants** will provide a custom market analysis and walk you through the **cost of living panama** for a luxury beachfront lifestyle. Work with the **panama real estate experts** who prioritize your long-term success.`,
+      Schedule a **panama real estate discovery tour** with Panama Real Estate Sale. Our **panama property consultants** will provide a custom market analysis and walk you through the **cost of living panama** for a luxury beachfront lifestyle. Work with the **panama real estate experts** who prioritize your long-term success.`,
       es: `Viva Playa Bonita hoy mismo. Nuestros **tours inmobiliarios de reubicación en panamá** ofrecen una mirada exclusiva detrás de escena en Westin Residences. No compre basado en un folleto; vea la calidad y sienta la brisa marina.
 
-      Programe un **tour de descubrimiento de bienes raíces en panamá** con ExpatRockstars. Nuestros **consultores inmobiliarios** le brindarán un análisis de mercado personalizado.`
+      Programe un **tour de descubrimiento de bienes raíces en panamá** con Panama Real Estate Sale. Nuestros **consultores inmobiliarios** le brindarán un análisis de mercado personalizado.`
     },
     marketAnalysis: { en: "Branded residence premium ensures high residency value.", es: "La prima de residencia de marca asegura un alto valor de residencia.", zh: "品牌住宅溢价确保高居住价值。" },
     keywords: ["westin panama residences", "panama qualified investor visa", "panama luxury real estate"],
@@ -194,7 +194,7 @@ export const PROJECTS: Project[] = [
     zone: ['Mountain'],
     status: 'Presale',
     h1Title: {
-      en: 'Pino Alto Boquete | Valle Escondido Panama Real Estate | ExpatRockstars',
+      en: 'Pino Alto Boquete | Valle Escondido Panama Real Estate | Panama Real Estate Sale',
       es: 'Pino Alto Boquete | Bienes Raíces Valle Escondido Panamá',
       zh: 'Pino Alto Boquete | 位于隐藏山谷的豪华山地生活'
     },
@@ -250,20 +250,20 @@ export const PROJECTS: Project[] = [
     residencyInfo: {
       en: `Purchasing a unit at Pino Alto is an eligible investment for the **panama residency through real estate** program. Buyers who invest the required amount can qualify for the Qualified Investor Visa, granting permanent residency in weeks. This is the ultimate goal for many looking for a **panama residency visa**.
 
-      For those on the **pensionado visa panama**, our Rockstar team assists with documenting your "permanent address" in Boquete, ensuring you receive all government benefits. We also provide a full **panama real estate legal guide** to handle the Chiriquí-specific title checks and closing procedures.
+      For those on the **pensionado visa panama**, our Elite team assists with documenting your "permanent address" in Boquete, ensuring you receive all government benefits. We also provide a full **panama real estate legal guide** to handle the Chiriquí-specific title checks and closing procedures.
 
       Our **panama relocation services** extend to helping you find the right international moving companies and setting up local banking in David or Boquete. We ensure that your **panama real estate investment** is the first step in a seamless relocation to the highlands.`,
       es: `Comprar una unidad en Pino Alto es una inversión elegible para el programa de **residencia en panamá a través de bienes raíces**. Los compradores que inviertan el monto requerido pueden calificar para la Visa de Inversionista Calificado, otorgando la residencia permanente en semanas.
 
-      Para quienes tienen la **visa pensionado panamá**, nuestro equipo Rockstar les ayuda a documentar su "dirección permanente" en Boquete, asegurando que reciban todos los beneficios gubernamentales.`
+      Para quienes tienen la **visa pensionado panamá**, nuestro Elite team assists with documenting your "permanent address" in Boquete, ensuring you receive all government benefits.`
     },
     servicesCTA: {
-      en: `Experience the highlands like a Rockstar. Our **panama relocation real estate tours** to Boquete include a private visit to Pino Alto and a tour of Valle Escondido. See why the "Eternal Spring" is the best place to call home.
+      en: `Experience the highlands like an Elite. Our **panama relocation real estate tours** to Boquete include a private visit to Pino Alto and a tour of Valle Escondido. See why the "Eternal Spring" is the best place to call home.
 
-      Schedule your **panama relocation tour** with ExpatRockstars today. Our **panama real estate advisors** will provide a full breakdown of the **cost of living panama** highlands style and introduce you to the local expat leaders. Discover **boquete panama real estate** with the ground team you can trust.`,
-      es: `Viva las tierras altas como un Rockstar. Nuestros **tours inmobiliarios de reubicación en panamá** a Boquete incluyen una visita privada a Pino Alto y un recorrido por Valle Escondido. Vea por qué la "Eterna Primavera" es el mejor lugar para llamar hogar.
+      Schedule your **panama relocation tour** with Panama Real Estate Sale today. Our **panama real estate advisors** will provide a full breakdown of the **cost of living panama** highlands style and introduce you to the local expat leaders. Discover **boquete panama real estate** with the ground team you can trust.`,
+      es: `Viva las tierras altas como un Elite. Nuestros **tours inmobiliarios de reubicación en panamá** a Boquete incluyen una visita privada a Pino Alto y un recorrido por Valle Escondido. Vea por qué la "Eterna Primavera" es el mejor lugar para llamar hogar.
 
-      Programe su **tour de reubicación en panamá** con ExpatRockstars hoy mismo. Nuestros **asesores inmobiliarios** le brindarán un desglose completo del **costo de vida en panamá**.`
+      Programe su **tour de reubicación en panamá** con Panama Real Estate Sale hoy mismo. Nuestros **asesores inmobiliarios** le brindarán un desglose completo del **costo de vida en panamá**.`
     },
     marketAnalysis: { en: "Gross ROI 7-9%. High demand, low supply.", es: "ROI bruto 7-9%. Alta demanda, baja oferta.", zh: "博克特房产投资市场分析。" },
     keywords: ["boquete panama real estate", "property in boquete panama", "boquete homes for sale", "retire in panama"],
@@ -324,7 +324,7 @@ export const PROJECTS: Project[] = [
     zone: ['Beach'],
     status: 'Ready to Move',
     h1Title: {
-      en: 'Buenaventura Resort Panama | luxury beachfront condos panama | ExpatRockstars',
+      en: 'Buenaventura Resort Panama | luxury beachfront condos panama | Panama Real Estate Sale',
       es: 'Buenaventura Resort Panamá | Lujo frente al mar en Coclé',
       zh: '巴拿马布埃纳文图拉 | 豪华海滨生活的黄金标准'
     },
@@ -390,10 +390,10 @@ export const PROJECTS: Project[] = [
     servicesCTA: {
       en: `Ready to see the crown jewel of the Pacific? Our **panama luxury property tours** include private access to Buenaventura's most exclusive listings. Don't just look at photos; experience the scale and the prestige of this community first-hand.
 
-      Schedule a **panama relocation real estate tour** with ExpatRockstars today. Our **panama real estate advisors** will build a custom ROI analysis for your purchase and introduce you to the ground team that will manage your asset. Discover the Buenaventura lifestyle with the experts.`,
+      Schedule a **panama relocation real estate tour** with Panama Real Estate Sale today. Our **panama real estate advisors** will provide a custom ROI analysis for your purchase and introduce you to the ground team that will manage your asset. Discover the Buenaventura lifestyle with the experts.`,
       es: `¿Listo para ver la joya de la corona del Pacífico? Nuestros **tours de propiedades de lujo en panamá** incluyen acceso privado a los listados más exclusivos de Buenaventura. No solo vea fotos; experimente la escala y el prestigio de esta comunidad de primera mano.
 
-      Programe un **tour inmobiliario de reubicación en panamá** con ExpatRockstars hoy mismo. Nuestros **asesores inmobiliarios** construirán un análisis de ROI personalizado.`
+      Programe un **tour inmobiliario de reubicación en panamá** con Panama Real Estate Sale hoy mismo. Nuestros **asesores inmobiliarios** construirán un análisis de ROI personalizado.`
     },
     marketAnalysis: { en: "The most resilient asset class in Panama.", es: "La clase de activo más resistente en Panamá.", zh: "布埃纳文图拉房地产保持着巴拿马最高的韧性。" },
     keywords: ["buenaventura resort panama", "panama luxury beachfront living", "panama lifestyle resort"],
@@ -454,7 +454,7 @@ export const PROJECTS: Project[] = [
     zone: ['Beach'],
     status: 'Presale',
     h1Title: {
-      en: 'Margaritaville Panama | margaritaville beach resort panama | ExpatRockstars',
+      en: 'Margaritaville Panama | margaritaville beach resort panama | Panama Real Estate Sale',
       es: 'Margaritaville Panamá | Inversión en Resort Playa Caracol',
       zh: '普拉亚卡拉科尔玛格丽特维尔 | 品牌住宅投资'
     },
@@ -494,7 +494,7 @@ export const PROJECTS: Project[] = [
 
       Rental projections show a conservative 8-12% net ROI, driven by the project's unique amenities and the brand's ability to drive ADR. When compared to older **beach homes for sale in panama**, Margaritaville offers a much more liquid asset due to its international appeal. It is a cornerstone for any **panama beachfront investment** portfolio.
 
-      Furthermore, the property management is fully integrated, meaning your **panama investment** is completely passive. The developer handles everything from cleaning and maintenance to guest relations and tax reporting. It is the perfect "set it and forget it" asset for the modern Rockstar investor.`,
+      Furthermore, the property management is fully integrated, meaning your **panama investment** is completely passive. The developer handles everything from cleaning and maintenance to guest relations and tax reporting. It is the perfect "set it and forget it" asset for the modern investor.`,
       es: `Margaritaville es la jugada definitiva de **bienes raíces de alto ROI en panamá**. El poder de la marca asegura una alta ocupación durante todo el año a través de su motor de marketing global. Para los inversores que buscan una **inversión en alquileres vacacionales**, la combinación de la demanda de Playa Caracol y la marca Margaritaville es imbatible.
 
       Nuestros **consultores inmobiliarios en panamá** destacan los precios de preventa disponibles actualmente. Comprar temprano en **nuevos desarrollos en panamá** de esta escala suele resultar en un crecimiento del capital de entre el 20 y el 30% antes de la finalización.`
@@ -522,10 +522,10 @@ export const PROJECTS: Project[] = [
     servicesCTA: {
       en: `Don't miss the pre-construction window. Our **panama real estate advisors** are hosting dedicated discovery tours to Playa Caracol and the Margaritaville site. See the surf, taste the cocktails, and experience the lifestyle.
 
-      Schedule your **panama relocation real estate tour** with ExpatRockstars today. We provide a full **panama real estate market** update and rental yield projection. Work with the **panama beachfront experts** who know the Chame market better than anyone.`,
+      Schedule your **panama relocation real estate tour** with Panama Real Estate Sale today. We provide a full **panama real estate market** update and rental yield projection. Work with the **panama beachfront experts** who know the Chame market better than anyone.`,
       es: `No pierda la ventana de preventa. Nuestros **asesores inmobiliarios en panamá** están organizando tours de descubrimiento dedicados a Playa Caracol y al sitio de Margaritaville. Vea el surf, pruebe los cócteles y experimente el estilo de vida.
 
-      Programe su **tour inmobiliario de reubicación en panamá** con ExpatRockstars hoy mismo. Brindamos una actualización completa del **mercado inmobiliario de panamá**.`
+      Programe su **tour inmobiliario de reubicación en panamá** con Panama Real Estate Sale hoy mismo. Brindamos una actualización completa del **mercado inmobiliario de panamá**.`
     },
     marketAnalysis: { en: "Branded residences see 30% higher ADR.", es: "Las residencias de marca ven un ADR un 30% más alto.", zh: "品牌住宅是巴拿马房地产中增长最快的领域。" },
     keywords: ["margaritaville panama", "playa caracol panama", "panama passive income property", "vacation rental investment"],
@@ -586,7 +586,7 @@ export const PROJECTS: Project[] = [
     zone: ['Caribbean'],
     status: 'Under Construction',
     h1Title: {
-      en: 'Playa Escondida Resort | Caribbean Coast Panama Real Estate | ExpatRockstars',
+      en: 'Playa Escondida Resort | Caribbean Coast Panama Real Estate | Panama Real Estate Sale',
       es: 'Playa Escondida Resort | Inmuebles en el Caribe de Panamá Portobelo',
       zh: '隐秘海滩度假村及游艇码头 | 独家加勒比房地产'
     },
@@ -636,7 +636,7 @@ export const PROJECTS: Project[] = [
 
       If you prioritize "off the beaten path" luxury and turquoise waters, Playa Escondida is your **panama dream home**. It attracts sailors, history buffs, and those who value absolute privacy. The **expat communities in panama** Caribbean side are small but very close-knit and supportive.
 
-      For the "Sustainable Investor," the low-density and jungle-focused design of the resort is a major plus. It appeals to those who want their **panama real estate** to exist in harmony with nature. It is the ultimate choice for the Rockstar expat who wants to live on the frontier of luxury.`,
+      For the "Sustainable Investor," the low-density and jungle-focused design of the resort is a major plus. It appeals to those who want their **panama real estate** to exist in harmony with nature. It is the ultimate choice for the Elite expat who wants to live on the frontier of luxury.`,
       es: `Este proyecto es para el "Expat Aventurero" que no quiere una vida de molde. Es ideal para los **jubilados estadounidenses en panamá** que quieren pasar sus años dorados buceando y explorando. También es una **segunda vivienda en panamá** perfecta para quienes ya poseen **apartamentos en la ciudad de panamá**.`
     },
     residencyInfo: {
@@ -650,7 +650,7 @@ export const PROJECTS: Project[] = [
       Hacemos que su **inversión frente al mar en panamá** sea legalmente sólida. Nuestro equipo de **expertos inmobiliarios en panamá** se encarga de la verificación de títulos y el trámite de residencia.`
     },
     servicesCTA: {
-      en: `The Caribbean is calling. Our **panama relocation real estate tours** to Portobelo and Playa Escondida are legendary. See the turquoise waters, tour the marina, and find your sanctuary. Schedule your **panama relocation tour** with ExpatRockstars today.
+      en: `The Caribbean is calling. Our **panama relocation real estate tours** to Portobelo and Playa Escondida are legendary. See the turquoise waters, tour the marina, and find your sanctuary. Schedule your **panama relocation tour** with Panama Real Estate Sale today.
 
       We provide a full **panama real estate market** update and introduction to the Caribbean lifestyle leaders. Work with the **panama real estate expert** advisors who are pioneering the Caribbean frontier. Discover your **panama dream home** in Playa Escondida.`,
       es: `El Caribe te llama. Nuestros **tours inmobiliarios de reubicación en panamá** a Portobelo y Playa Escondida son legendarios. Vea las aguas turquesas, recorra la marina y encuentre su santuario. Programe su **tour de reubicación en panamá** hoy mismo.
@@ -1816,7 +1816,7 @@ export const CONTENT: ContentDictionary = {
       about: "ExpatRockstars: La agencia inmobiliaria líder en panamá para inversores y jubilados internacionales. Expertos en bienes raíces de lujo y reubicación.",
       explore: "Explorar",
       contact: "Contacto",
-      rights: "Todos los derechos reservados. ExpatRockstars Panamá."
+      rights: "Todos los derechos reservados. Panama Real Estate Sale Panamá."
     }
   }
 };
@@ -1903,7 +1903,7 @@ export const BLOG_POSTS: BlogPost[] = [
       **3. Lack of a 'Why'**
       Moving *away* from something (taxes, politics, cold) is a weak foundation. Moving *towards* a new life, a new language, and a new community is a strong one. Successful expats have a project, a hobby, or a business that keeps them engaged.
 
-      **Rockstar Solution:** We don't just sell real estate; we sell **Integration Strategies**. Our <strong>panama relocation tours</strong> focus on the hard truths so you enter with your eyes wide open.`,
+      **Elite Solution:** We don't just sell real estate; we sell **Integration Strategies**. Our <strong>panama relocation tours</strong> focus on the hard truths so you enter with your eyes wide open.`,
       es: 'El "comezón de los dos años" es un fenómeno bien documentado...',
       zh: '“两年的瘙痒”是巴拿马外籍人士社区中一个有据可查的现象...'
     },
@@ -1937,7 +1937,7 @@ export const BLOG_POSTS: BlogPost[] = [
       *   **The 5-Day Appeal Window:** In most cases, your lawyer has a very narrow window to file a "Recurso de Reconsideración."
       *   **Audit Your Files:** We provide a **Legal Audit Service** specifically for those who have been rejected elsewhere. We review your entire file to find the "Hidden Red Flag" that the previous firm missed.
 
-      **Rockstar Warning:** Never attempt to "bribe" your way out of a rejection. Panama's immigration system is increasingly transparent, and such actions will result in a permanent ban.`,
+      **Elite Warning:** Never attempt to "bribe" your way out of a rejection. Panama's immigration system is increasingly transparent, and such actions will result in a permanent ban.`,
       es: 'Una notificación de **visa de panama rechazada** es una de las experiencias más estresantes...',
       zh: '签证被拒绝通知是外籍人士可能面临的最具压力的经历之一...'
     },
@@ -1972,7 +1972,7 @@ export const BLOG_POSTS: BlogPost[] = [
       2. **Home Security:** If you live in a non-gated area, invest in basic security cameras and light sensors.
       3. **The 'Gringo Tax':** Safety also means financial safety. Don't carry large amounts of cash or wear excessive jewelry in public markets.
 
-      **Rockstar Conclusion:** Panama is safe, provided you apply common sense. It is a "High Trust" society in the interior (Boquete, Pedasí) and a modern urban environment in the city.`,
+      **Elite Conclusion:** Panama is safe, provided you apply common sense. It is a "High Trust" society in the interior (Boquete, Pedasí) and a modern urban environment in the city.`,
       es: 'La pregunta sobre la **seguridad en panamá** es lo primero que pregunta todo candidato...',
       zh: '巴拿马的安全问题是每个搬迁候选人询问的第一件事...'
     },
@@ -2204,13 +2204,12 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     guest: "Austin Hess",
     takeaways: {
       en: [
-        "The story behind the ExpatRockstars movement.",
+        "The story behind the Panama Real Estate Sale movement.",
         "What to expect when moving to Panama in 2026.",
         "How the Pana'Gringo podcast bridges the gap between locals and expats.",
-        "The core pillars of a successful relocation strategy."
       ],
       es: [
-        "La historia detrás del movimiento ExpatRockstars.",
+        "La historia detrás del movimiento Panama Real Estate Sale.",
         "Qué esperar al mudarse a Panamá en 2026.",
         "Cómo el podcast Pana'Gringo une a locales y expatriados.",
         "Los pilares fundamentales de una estrategia de reubicación exitosa."

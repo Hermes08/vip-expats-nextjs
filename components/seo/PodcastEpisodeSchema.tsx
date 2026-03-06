@@ -17,7 +17,7 @@ export default function PodcastEpisodeSchema({ episode, lang }: PodcastEpisodeSc
         "@type": "PodcastEpisode",
         "name": title,
         "description": description,
-        "url": `https://expatrockstars.com/${lang}/podcast`,
+        "url": `https://panamarealestatesale.com/${lang}/podcast`,
         "datePublished": episode.publishDate,
         "duration": `PT${episode.duration.replace(':', 'M')}S`,
         "associatedMedia": {
@@ -26,8 +26,8 @@ export default function PodcastEpisodeSchema({ episode, lang }: PodcastEpisodeSc
         },
         "partOfSeries": {
             "@type": "PodcastSeries",
-            "name": "Expat Rockstars Podcast",
-            "url": "https://expatrockstars.com/podcast"
+            "name": "Panama Real Estate Sale Podcast",
+            "url": "https://panamarealestatesale.com/podcast"
         },
         "actor": episode.guest ? episode.guest.split(',').map(name => ({
             "@type": "Person",

@@ -6,12 +6,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
+import { useLanguage } from '@/context/LanguageContext';
 
 const RelocationChecklistContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Legal Hub", item: "https://expatrockstars.com/relocation/legal" },
-        { name: "Visa Checklist 2026", item: "https://expatrockstars.com/relocation/legal/checklist" }
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Legal Hub", item: `https://panamarealestatesale.com/${lang}/relocation/legal` },
+        { name: "Visa Checklist 2026", item: `https://panamarealestatesale.com/${lang}/relocation/legal/checklist` }
     ];
 
     const checklistSections = [
@@ -61,7 +63,7 @@ const RelocationChecklistContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
 
             <div className="max-w-7xl mx-auto px-4 mt-8">
                 <Breadcrumbs items={breadcrumbItems} />
@@ -119,13 +121,13 @@ const RelocationChecklistContent: React.FC = () => {
                 </div>
             </section>
 
-            {/* Pro-Tips / Rockstar Insights */}
+            {/* Pro-Tips / Panama Real Estate Sale Insights */}
             <section className="py-32 bg-neutral-950 text-white rounded-[5rem] mx-4 overflow-hidden relative">
                 <div className="max-w-7xl mx-auto px-8 relative z-10">
                     <div className="flex flex-col lg:flex-row gap-20 items-center">
                         <div className="lg:w-1/2">
                             <Zap className="text-brand-GOLD mb-10" size={64} />
-                            <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD underline">Rockstar</span> Secret</h2>
+                            <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD underline">Panama Real Estate Sale</span> Secret</h2>
                             <p className="text-xl text-gray-400 font-medium leading-relaxed mb-12">
                                 Navigating <strong>panama residency requirements</strong> isn't just about the list; it's about the timing. We manage the entire schedule for you.
                             </p>
@@ -166,7 +168,7 @@ const RelocationChecklistContent: React.FC = () => {
                                     If you order your FBI check 5 months before your move, and then your flight is delayed by 3 weeks, your entire legal folder is junk. You have to start over.
                                 </p>
                                 <div className="p-10 bg-neutral-950 text-white rounded-[4rem] shadow-2xl">
-                                    <h4 className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest mb-6 text-center">Rockstar Timeline Management</h4>
+                                    <h4 className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest mb-6 text-center">Panama Real Estate Sale Timeline Management</h4>
                                     <div className="grid grid-cols-2 gap-8 border-t border-white/10 pt-8">
                                         <div>
                                             <span className="text-[10px] font-black uppercase tracking-widest text-gray-500">Day -90</span>
@@ -231,7 +233,7 @@ const RelocationChecklistContent: React.FC = () => {
                     <p className="text-xl text-neutral-500 mb-16 font-medium leading-relaxed">
                         Don't risk your move on a missing paper. Get the full verified 2026 checklist and a 1-on-1 legal review.
                     </p>
-                    <Link href="/contacto" className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
+                    <Link href={`/${lang}/contacto`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
                         Talk to a Document Expert
                     </Link>
                 </div>

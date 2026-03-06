@@ -8,8 +8,8 @@ export default function OrganizationSchema({ lang }: OrganizationSchemaProps) {
     const schema = {
         "@context": "https://schema.org",
         "@type": "RealEstateAgent",
-        "name": "panamarealestatesale",
-        "alternateName": "ExpatRockstars Real Estate",
+        "name": "Panama Real Estate Sale",
+        "alternateName": "Panama Real Estate Sale",
         "url": "https://panamarealestatesale.com",
         "logo": "https://panamarealestatesale.com/logo.png",
         "description": lang === 'es'
@@ -29,9 +29,9 @@ export default function OrganizationSchema({ lang }: OrganizationSchemaProps) {
             "availableLanguage": ["en", "es"]
         },
         "sameAs": [
-            "https://www.facebook.com/expatrockstars",
-            "https://www.instagram.com/expatrockstars",
-            "https://www.linkedin.com/company/expatrockstars"
+            "https://www.facebook.com/panamarealestatesale",
+            "https://www.instagram.com/panamarealestatesale",
+            "https://www.linkedin.com/company/panama-real-estate-sale"
         ],
         "priceRange": "$$$",
         "areaServed": {

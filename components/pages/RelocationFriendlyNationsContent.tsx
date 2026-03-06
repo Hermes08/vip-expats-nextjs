@@ -10,16 +10,19 @@ import ServiceSchema from '@/components/seo/ServiceSchema';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 
+import { useLanguage } from '@/context/LanguageContext';
+
 const RelocationFriendlyNationsContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Visas", item: "https://expatrockstars.com/relocation/visas" },
-        { name: "Friendly Nations", item: "https://expatrockstars.com/relocation/visas/friendly-nations" }
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Visas", item: `https://panamarealestatesale.com/${lang}/relocation/visas` },
+        { name: "Friendly Nations", item: `https://panamarealestatesale.com/${lang}/relocation/visas/friendly-nations` }
     ];
 
     return (
         <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <ServiceSchema
                 name="Panama Friendly Nations Visa Services"
                 description="Professional legal support for the Panama Friendly Nations Visa Professional and Investment paths. Vetted lawyer network and VIP processing."
@@ -51,7 +54,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                         Your VIP pass to one of the world's fastest-growing economies. The <strong>friendly nations visa panama</strong> remains the premier residency path for citizens of 50+ pro-business countries seeking <strong>international living in panama</strong>.
                     </p>
                     <div className="flex justify-center gap-6">
-                        <Link href="/contacto" className="px-12 py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-white transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="px-12 py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-white transition-all shadow-2xl">
                             Check My Eligibility
                         </Link>
                     </div>
@@ -70,13 +73,13 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                         />
                     </div>
                     <div>
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD">Rockstar</span> Choice</h2>
+                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD">Panama Real Estate Sale</span> Choice</h2>
                         <div className="space-y-8 text-lg text-neutral-600 font-medium leading-[1.8]">
                             <p>
                                 Since its overhaul in 2021, the <strong>friendly nations visa panama requirements</strong> have evolved. It is no longer a "visit once and get a card" program. It is now a serious, multi-stage path designed for professionals and investors who want to contribute to Panama's growth.
                             </p>
                             <p>
-                                At Relocate Rockstar, we specialize in navigating the nuances of the <strong>friendly nations visa country list</strong> and the specific professional categories that get approved fastest. Whether you're a digital nomad or a corporate executive, this is your blueprint.
+                                At Panama Real Estate Sale, we specialize in navigating the nuances of the <strong>friendly nations visa country list</strong> and the specific professional categories that get approved fastest. Whether you're a digital nomad or a corporate executive, this is your blueprint.
                             </p>
                             <div className="p-8 bg-neutral-900 text-white rounded-[3rem]">
                                 <h4 className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest mb-4">Elite Benefits</h4>
@@ -222,7 +225,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                         <Zap size={64} className="mb-10 opacity-30" />
                         <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The 2026 <br /> Checklist</h2>
                         <div className="space-y-8 font-bold text-lg opacity-80 mb-12">
-                            <p>Don't let the paperwork kill your vibe. We've distilled 500 pages of legal code into a 10-point Rockstar Checklist.</p>
+                            <p>Don't let the paperwork kill your vibe. We've distilled 500 pages of legal code into a 10-point Elite Checklist.</p>
                             <ul className="space-y-4 text-xs font-black uppercase tracking-widest">
                                 <li className="flex gap-3"><Check size={16} /> FBI/Police Check (Apostilled/Authenticated)</li>
                                 <li className="flex gap-3"><Check size={16} /> Valid Passport (with min. 6 months)</li>
@@ -241,7 +244,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                             Since 2024, Panama has tightened rules on apostilles. If your documents are older than 6 months by the time you arrive in Panama City, they will be rejected.
                         </p>
                         <p>
-                            <strong>Relocate Rockstar Pro-Tip:</strong> Time your FBI check for exactly 30 days before your flight for maximum safety.
+                            <strong>Panama Real Estate Sale Pro-Tip:</strong> Time your FBI check for exactly 30 days before your flight for maximum safety.
                         </p>
                     </div>
                 </div>
@@ -283,7 +286,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                         </div>
                     </div>
                     <div className="lg:w-1/2 p-12 bg-neutral-900 rounded-[4rem] text-white">
-                        <h3 className="text-3xl font-black uppercase tracking-tighter mb-8 italic text-brand-GOLD">The Rockstar Solution</h3>
+                        <h3 className="text-3xl font-black uppercase tracking-tighter mb-8 italic text-brand-GOLD">The Panama Real Estate Sale Solution</h3>
                         <p className="text-gray-400 font-medium leading-relaxed mb-10">
                             We pre-audit your entire <strong>friendly nations visa dossier</strong> before you even book your flight. By the time our <strong>panama immigration lawyers</strong> see your file, it's already 95% cleared for approval.
                         </p>
@@ -321,7 +324,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
             <section className="py-32 max-w-7xl mx-auto px-4">
                 <div className="text-center mb-24">
                     <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic">The 2026 <br /><span className="text-brand-GOLD">Labor Market</span></h2>
-                    <p className="text-neutral-500 font-bold uppercase tracking-widest text-xs">Where the Rockstar Friendly Nations are finding success.</p>
+                    <p className="text-neutral-500 font-bold uppercase tracking-widest text-xs">Where the Panama Real Estate Sale Friendly Nations are finding success.</p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -345,9 +348,9 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                         </div>
                         <h4 className="text-3xl font-black uppercase tracking-tighter mb-8 italic">The Salary Reality</h4>
                         <p className="font-bold opacity-80 leading-relaxed mb-8">
-                            While living costs are lower, Panamanian salaries for local roles are often lower than US/EU equivalents. Most Rockstar Friendly Nations move as **multinational transfers** or **entrepreneurs** to keep their global earning power while enjoying Panama's tax benefits.
+                            While living costs are lower, Panamanian salaries for local roles are often lower than US/EU equivalents. Most Elite Friendly Nations move as **multinational transfers** or **entrepreneurs** to keep their global earning power while enjoying Panama's tax benefits.
                         </p>
-                        <Link href="/relocation/nichos/entrepreneurs" className="text-[10px] font-black uppercase tracking-[0.3em] bg-brand-950 text-white px-8 py-4 rounded-xl inline-block">
+                        <Link href={`/${lang}/relocation/nichos/entrepreneurs`} className="text-[10px] font-black uppercase tracking-[0.3em] bg-brand-950 text-white px-8 py-4 rounded-xl inline-block">
                             Entrepreneur Guide
                         </Link>
                     </div>
@@ -414,7 +417,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                     <div className="bg-brand-950 p-16 rounded-[4rem] text-white shadow-2xl skew-x-1">
                         <h4 className="text-3xl font-black uppercase tracking-tighter mb-8 italic text-brand-GOLD">The 0% Reality</h4>
                         <p className="font-medium text-gray-400 leading-relaxed mb-8">
-                            Panama does not tax you on dividends from foreign companies, remote work for foreign clients, or rental income from outside Panama. Combined with the <strong>friendly nations visa</strong>, this creates a 'Rockstar' financial fortress for high-earning professionals.
+                            Panama does not tax you on dividends from foreign companies, remote work for foreign clients, or rental income from outside Panama. Combined with the <strong>friendly nations visa</strong>, this creates a 'Panama Real Estate Sale' financial fortress for high-earning professionals.
                         </p>
                     </div>
                 </div>
@@ -509,11 +512,11 @@ const RelocationFriendlyNationsContent: React.FC = () => {
             <section className="py-32 text-center border-t border-neutral-100">
                 <div className="max-w-4xl mx-auto">
                     <ShieldCheck className="text-brand-GOLD mx-auto mb-10" size={80} />
-                    <h2 className="text-4xl md:text-8xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none">Your Rockstar <br /> Future Awaits</h2>
+                    <h2 className="text-4xl md:text-8xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none">Your Panama Real Estate Sale <br /> Future Awaits</h2>
                     <p className="text-xl text-neutral-500 mb-16 font-medium leading-relaxed">
                         Don't let the 50-country list confuse you. We know exactly which path is fastest for your specific profile.
                     </p>
-                    <Link href="/relocation/tours" className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
+                    <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
                         Start Initial Consultation
                     </Link>
                 </div>

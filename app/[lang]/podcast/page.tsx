@@ -4,6 +4,7 @@ import PodcastCard from '@/components/podcast/PodcastCard';
 import { Metadata } from 'next';
 import ZeroGravityWrapper from '@/components/GoldParticles/ZeroGravityWrapper';
 import PodcastEpisodeSchema from '@/components/seo/PodcastEpisodeSchema';
+import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
 type Props = {
     params: Promise<{ lang: string }>
@@ -14,13 +15,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const isEs = lang === 'es';
 
     return {
-        title: isEs ? 'Podcast Expat Rockstars | Inversión y Vida en Panamá' : 'Expat Rockstars Podcast | Panama Real Estate & Lifestyle',
+        title: isEs ? 'Podcast Panama Real Estate Sale | Inversión y Vida en Panamá' : 'Panama Real Estate Sale Podcast | Panama Real Estate & Lifestyle',
         description: isEs
-            ? 'Escuche a los expertos en bienes raíces en Panamá. Entrevistas sobre reubicación, inversión inmobiliaria y cómo vivir el estilo de vida Rockstar en Panamá.'
-            : 'Listen to Panama real estate experts. Interviews on relocation, property investment, and how to live the Rockstar lifestyle in Panama.',
+            ? 'Escuche a los expertos en bienes raíces en Panamá. Entrevistas sobre reubicación, inversión inmobiliaria y cómo vivir el estilo de vida de lujo en Panamá.'
+            : 'Listen to Panama real estate experts. Interviews on relocation, property investment, and how to live the luxury lifestyle in Panama.',
         keywords: [
             "panama real estate podcast",
-            "expat rockstars podcast",
+            "panama real estate sale podcast",
             "panagringo podcast",
             "investing in panama",
             "relocation panama",
@@ -28,10 +29,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             "austin hess panama"
         ],
         alternates: {
-            canonical: `https://expatrockstars.com/${lang}/podcast`,
+            canonical: `https://panamarealestatesale.com/${lang}/podcast`,
             languages: {
-                'en': 'https://expatrockstars.com/en/podcast',
-                'es': 'https://expatrockstars.com/es/podcast',
+                'en': 'https://panamarealestatesale.com/en/podcast',
+                'es': 'https://panamarealestatesale.com/es/podcast',
             },
         },
     };
@@ -45,6 +46,11 @@ export default async function PodcastHub({ params }: Props) {
     return (
         <div className="bg-brand-950 min-h-screen pt-24 pb-20">
             <ZeroGravityWrapper />
+            <BreadcrumbSchema
+                items={[
+                    { name: 'Podcast', item: `https://panamarealestatesale.com/${lang}/podcast` }
+                ]}
+            />
 
             {/* SEO Structured Data */}
             {episodes.map(episode => (
@@ -61,7 +67,7 @@ export default async function PodcastHub({ params }: Props) {
                         {isEs ? 'La Voz de los Bienes Raíces en Panamá' : 'The Voice of Panama Real Estate'}
                     </span>
                     <h1 className="text-4xl md:text-6xl font-heading font-black text-white mb-6">
-                        Expat Rockstars <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-GOLD to-yellow-500">Podcast</span>
+                        Panama Real Estate Sale <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-GOLD to-yellow-500">Podcast</span>
                     </h1>
                     <p className="text-xl text-neutral-300 leading-relaxed">
                         {isEs
@@ -91,7 +97,7 @@ export default async function PodcastHub({ params }: Props) {
                                 : "We are looking for unique Panama success stories. Contact us if you have expertise to share."}
                         </p>
                         <a
-                            href={`/${lang}/contacto`}
+                            href={`/${lang}/contact`}
                             className="inline-block bg-brand-GOLD text-brand-950 font-black uppercase tracking-wider py-3 px-8 rounded-full hover:bg-white hover:text-brand-950 transition-all duration-300"
                         >
                             {isEs ? 'Contáctenos' : 'Contact Us'}

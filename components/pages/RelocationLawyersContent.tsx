@@ -7,12 +7,14 @@ import Image from 'next/image';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
+import { useLanguage } from '@/context/LanguageContext';
 
 const RelocationLawyersContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Legal Hub", item: "https://expatrockstars.com/relocation/legal" },
-        { name: "Immigration Lawyers", item: "https://expatrockstars.com/relocation/legal/lawyers" }
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Legal Hub", item: `https://panamarealestatesale.com/${lang}/relocation/legal` },
+        { name: "Immigration Lawyers", item: `https://panamarealestatesale.com/${lang}/relocation/legal/lawyers` }
     ];
 
     const lawyerSpecialties = [
@@ -50,7 +52,7 @@ const RelocationLawyersContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <FAQSchema questions={faqs.map(f => ({ question: f.q, answer: f.a }))} />
 
             <div className="max-w-7xl mx-auto px-4 mt-8">
@@ -130,7 +132,7 @@ const RelocationLawyersContent: React.FC = () => {
                                 <spec.icon className="text-brand-GOLD mb-8 group-hover:scale-110 transition-transform" size={48} />
                                 <h3 className="text-2xl font-black uppercase tracking-tighter mb-6 italic">{spec.title}</h3>
                                 <p className="text-neutral-500 text-sm font-medium leading-relaxed mb-10" dangerouslySetInnerHTML={{ __html: spec.desc }}></p>
-                                <Link href="/contacto" className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">
+                                <Link href={`/${lang}/contacto`} className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">
                                     Consult Specialist <ArrowRight size={14} />
                                 </Link>
                             </div>
@@ -146,7 +148,7 @@ const RelocationLawyersContent: React.FC = () => {
                         <div className="lg:w-1/2">
                             <h2 className="text-4xl md:text-6xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">How We VET Our <br /><span className="text-brand-GOLD">Lawyers</span></h2>
                             <p className="text-xl text-gray-400 font-medium leading-relaxed mb-12">
-                                We don't just recommend anyone. Our legal panel is curated based on rigorous standards that ensure you get the Rockstar treatment.
+                                We don't just recommend anyone. Our legal panel is curated based on rigorous standards that ensure you get the Panama Real Estate Sale treatment.
                             </p>
                             <ul className="space-y-6">
                                 {[
@@ -208,10 +210,10 @@ const RelocationLawyersContent: React.FC = () => {
                         Ready to speak with a top <strong>panama immigration lawyer</strong>? Book a consultation today and get a clear legal roadmap for your move.
                     </p>
                     <div className="flex flex-col md:flex-row gap-6 justify-center">
-                        <Link href="/contacto" className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl">
                             Meet My Attorney
                         </Link>
-                        <Link href="/relocation/legal" className="px-16 py-8 bg-white border-2 border-brand-950 text-brand-950 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-950 hover:text-white transition-all">
+                        <Link href={`/${lang}/relocation/legal`} className="px-16 py-8 bg-white border-2 border-brand-950 text-brand-950 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-950 hover:text-white transition-all">
                             View Legal Services
                         </Link>
                     </div>

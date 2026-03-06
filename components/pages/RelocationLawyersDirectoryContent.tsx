@@ -9,11 +9,14 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import ServiceSchema from '@/components/seo/ServiceSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 
+import { useLanguage } from '@/context/LanguageContext';
+
 const RelocationLawyersDirectoryContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Legal", item: "https://expatrockstars.com/relocation/legal" },
-        { name: "Lawyers Directory", item: "https://expatrockstars.com/relocation/legal/lawyers-directory" }
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Legal", item: `https://panamarealestatesale.com/${lang}/relocation/legal` },
+        { name: "Lawyers Directory", item: `https://panamarealestatesale.com/${lang}/relocation/legal/lawyers-directory` }
     ];
 
     const lawyers = [
@@ -51,7 +54,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}/` }, ...breadcrumbItems]} />
             <ServiceSchema
                 name="Panama Immigration Lawyer Directory"
                 description="The most trusted directory of verified Panama immigration lawyers. Compare fees, read reviews, and find the best attorney for your residency visa."
@@ -98,7 +101,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                                 A bad lawyer can cost you months of delays, thousands in lost fees, and potentially a permanent black mark on your immigration record. Our directory exists to eliminate that risk.
                             </p>
                             <div className="p-8 bg-neutral-50 rounded-[3rem] border border-neutral-100">
-                                <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-widest mb-4">Rockstar Verification Stats</h4>
+                                <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-widest mb-4">Panama Real Estate Sale Verification Stats</h4>
                                 <ul className="space-y-4">
                                     <li className="flex gap-3 text-sm text-neutral-800 font-bold">
                                         <Check className="text-brand-GOLD" size={18} /> 100% Licensed & In Good Standing (National Bar Association)
@@ -134,7 +137,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
-                            { title: "Legal Fees", price: "$1,500 - $3,500", desc: "This is what you pay the attorney for their time, counsel, and filing. Rockstar-vetted lawyers fall within this professional range." },
+                            { title: "Legal Fees", price: "$1,500 - $3,500", desc: "This is what you pay the attorney for their time, counsel, and filing. Elite-vetted lawyers fall within this professional range." },
                             { title: "Government Costs", price: "$1,050 - $1,300", desc: "Fixed fees paid to the Panamanian government for processing, health certificates, and the residency card itself." },
                             { title: "Repatriation Bond", price: "$800 - $1,000", desc: "A refundable bond (or insurance equivalent) required for most visas to cover potential deportation costs (Rarely used)." }
                         ].map((c, i) => (
@@ -205,7 +208,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                 </div>
             </section>
 
-            {/* Vetting Process: The Rockstar Standard */}
+            {/* Vetting Process: The Elite Standard */}
             <section className="py-32 bg-neutral-50 rounded-[5rem] mx-4 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-24 items-center">
                     <div className="relative aspect-video rounded-[4rem] overflow-hidden shadow-2xl">
@@ -217,7 +220,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                         />
                     </div>
                     <div>
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD">Rockstar</span> Standard</h2>
+                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD">Panama Real Estate Sale</span> Standard</h2>
                         <div className="space-y-8 text-lg text-neutral-600 font-medium leading-[1.8]">
                             <p>
                                 We don't just "list" lawyers. We **engineer** the relationship. Every attorney in our <strong>panama immigration lawyer directory</strong> undergoes a rigorous quarterly audit.
@@ -282,7 +285,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                     <p className="text-xl md:text-2xl font-bold mb-16 opacity-80 max-w-2xl mx-auto leading-relaxed">
                         Ready to speak with the best <strong>panama immigration lawyer</strong> for your specific needs? Let us make the introduction and guarantee your success.
                     </p>
-                    <Link href="/contacto" className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl inline-block">
+                    <Link href={`/${lang}/contact`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl inline-block">
                         Introduce Me to an Attorney
                     </Link>
                 </div>

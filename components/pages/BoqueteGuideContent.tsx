@@ -7,12 +7,15 @@ import Image from 'next/image';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 
+import { useLanguage } from '@/context/LanguageContext';
+
 const BoqueteGuideContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Home", item: "https://expatrockstars.com/" },
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Living in Panama", item: "https://expatrockstars.com/relocation/guides" },
-        { name: "Boquete Guide", item: "https://expatrockstars.com/relocation/guides/boquete" }
+        { name: "Home", item: `https://panamarealestatesale.com/${lang}/` },
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Living in Panama", item: `https://panamarealestatesale.com/${lang}/relocation/guides` },
+        { name: "Boquete Guide", item: `https://panamarealestatesale.com/${lang}/relocation/guides/boquete` }
     ];
 
     const faqs = [
@@ -166,7 +169,7 @@ const BoqueteGuideContent: React.FC = () => {
                     <p className="text-xl md:text-2xl font-bold mb-16 opacity-80">
                         See the neighborhoods, meeting the community, and find your <strong>boquete dream home</strong> on our specialized Highlands tour.
                     </p>
-                    <Link href="/relocation/tours" className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl">
+                    <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl">
                         Request Boquete Itinerary
                     </Link>
                 </div>

@@ -6,17 +6,19 @@ import Link from 'next/link';
 import Image from 'next/image';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
+import { useLanguage } from '@/context/LanguageContext';
 import ServiceSchema from '@/components/seo/ServiceSchema';
 
 const RelocationCostContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Cost of Living", item: "https://expatrockstars.com/relocation/cost" }
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Cost of Living", item: `https://panamarealestatesale.com/${lang}/relocation/cost` }
     ];
 
     const budgetTiers = [
         {
-            name: "The Rockstar Minimalist",
+            name: "The Panama Real Estate Sale Minimalist",
             price: "$1,500 - $2,000",
             target: "Single / Couple (Local Living)",
             desc: "Focuses on local markets, small mountain towns (like Volcan), and efficient utility usage. No full-time maid.",
@@ -33,7 +35,7 @@ const RelocationCostContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <ServiceSchema
                 name="Panama Cost of Living Analysis 2026"
                 description="The definitive guide to the cost of living in Panama. Budgeting for rent, groceries, healthcare, and property in 2026."
@@ -54,7 +56,7 @@ const RelocationCostContent: React.FC = () => {
                         Cost of <span className="italic">Living</span> <br /> In Panama
                     </h1>
                     <p className="text-xl md:text-2xl text-brand-950/70 max-w-4xl mx-auto leading-relaxed font-black uppercase tracking-tight">
-                        How much do you REALLY need to live like a Rockstar in Panama? We break down the <strong>panama relocation tours cost</strong> and monthly lifestyle budgets.
+                        How much do you REALLY need to live like a Panama Real Estate Sale in Panama? We break down the <strong>panama relocation tours cost</strong> and monthly lifestyle budgets.
                     </p>
                 </div>
             </section>
@@ -163,7 +165,7 @@ const RelocationCostContent: React.FC = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <Link href="/contacto" className="w-full block py-6 bg-brand-950 text-white text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all">
+                                <Link href={`/${lang}/contacto`} className="w-full block py-6 bg-brand-950 text-white text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all">
                                     Analyze My Budget
                                 </Link>
                             </div>
@@ -217,7 +219,7 @@ const RelocationCostContent: React.FC = () => {
                                     One of the biggest variables in the <strong>living in panama cost</strong> is your social life. Panama City boasts a world-class culinary scene (UNESCO Creative City of Gastronomy), while Boquete and Coronado offer a more relaxed, expat-centric restaurant environment.
                                 </p>
                                 <p>
-                                    Eating "Local" vs. "Imported" is where budgets are made or broken. Your grocery bill will double if you insist on US brands at Riba Smith. Mastering the local <strong>panama farmers markets</strong> is the ultimate Rockstar relocation hack.
+                                    Eating "Local" vs. "Imported" is where budgets are made or broken. Your grocery bill will double if you insist on US brands at Riba Smith. Mastering the local <strong>panama farmers markets</strong> is the ultimate Panama Real Estate Sale relocation hack.
                                 </p>
                             </div>
                         </div>
@@ -298,13 +300,13 @@ const RelocationCostContent: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-8">
                     <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-neutral-400 mb-12 text-center">Complete Your Research</h4>
                     <div className="grid md:grid-cols-2 gap-8">
-                        <Link href="/relocation/weather" className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
+                        <Link href={`/${lang}/relocation/weather`} className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Sun className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Weather Guide 2026</h5>
                             <p className="text-xs text-neutral-500 font-medium mb-6">Discover the best time to visit and how microclimates affect your move.</p>
                             <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">View Guide <ArrowRight size={12} /></span>
                         </Link>
-                        <Link href="/relocation/guides/boquete-vs-coronado" className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
+                        <Link href={`/${lang}/relocation/guides/boquete-vs-coronado`} className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Compass className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Boquete vs Coronado</h5>
                             <p className="text-xs text-neutral-500 font-medium mb-6">The definitive showdown between the mountains and the beach.</p>
@@ -321,7 +323,7 @@ const RelocationCostContent: React.FC = () => {
                     <p className="text-xl text-neutral-500 mb-16 font-medium leading-relaxed italic">
                         The <strong>cheapest way to get panama residency</strong> starts with a verified budget. Let's crunch the numbers together.
                     </p>
-                    <Link href="/relocation/tours" className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
+                    <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
                         Customize My Budget Tour
                     </Link>
                 </div>

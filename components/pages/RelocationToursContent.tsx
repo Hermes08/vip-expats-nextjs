@@ -5,12 +5,14 @@ import { Compass, MapPin, CheckCircle, ArrowRight, MessageSquare, Ship, Mountain
 import Link from 'next/link';
 import Image from 'next/image';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
+import { useLanguage } from '@/context/LanguageContext';
 
 const RelocationToursContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Home", item: "https://expatrockstars.com/" },
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Tours", item: "https://expatrockstars.com/relocation/tours" }
+        { name: "Home", item: `https://panamarealestatesale.com/${lang}` },
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Tours", item: `https://panamarealestatesale.com/${lang}/relocation/tours` }
     ];
 
     return (
@@ -36,17 +38,17 @@ const RelocationToursContent: React.FC = () => {
                         The <span className="text-brand-GOLD underline italic">Boots</span> <br /> Ground <br /> Protocol.
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-medium mb-16">
-                        Don't buy a life you haven't lived. Our <strong>panama relocation discovery tours</strong> are designed to bridge the gap between "Internet Research" and "Actual Living." Explore the <strong>best places for expats to live in panama</strong> with the Rockstar team.
+                        Don't buy a life you haven't lived. Our <strong>panama relocation discovery tours</strong> are designed to bridge the gap between "Internet Research" and "Actual Living." Explore the <strong>best places for expats to live in panama</strong> with the Panama Real Estate Sale team.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-8">
-                        <Link href="/contacto" className="px-16 py-8 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-xs rounded-3xl hover:bg-white transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="px-16 py-8 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-xs rounded-3xl hover:bg-white transition-all shadow-2xl">
                             Reserve My Discovery Slot
                         </Link>
                     </div>
                 </div>
             </section>
 
-            {/* The Rockstar Difference */}
+            {/* The Panama Real Estate Sale Difference */}
             <section className="py-32 max-w-7xl mx-auto px-4">
                 <div className="grid lg:grid-cols-2 gap-24 items-center mb-32">
                     <div>
@@ -56,7 +58,7 @@ const RelocationToursContent: React.FC = () => {
                                 In 2026, Panama's real estate market is moving faster than ever. From <strong>luxury condos in Panama City</strong> to high-yield <strong>short-term rentals in Coronado</strong>, knowing which building has the best management and which neighborhood has the best infrastructure isn't something you can find on a listing site.
                             </p>
                             <p>
-                                A Rockstar <strong>relocation tour</strong> is a curated, high-intensity immersion into the <strong>panama expat lifestyle</strong>. We don't just show you houses; we introduce you to the community, the legal team, and the coffee shops where the "real" expat deals happen.
+                                A Panama Real Estate Sale <strong>relocation tour</strong> is a curated, high-intensity immersion into the <strong>panama expat lifestyle</strong>. We don't just show you houses; we introduce you to the community, the legal team, and the coffee shops where the "real" expat deals happen.
                             </p>
                             <div className="grid grid-cols-2 gap-8 pt-12 border-t border-neutral-100 italic font-bold">
                                 <div className="flex gap-4">
@@ -204,7 +206,7 @@ const RelocationToursContent: React.FC = () => {
                         Our Discovery Tours are limited to 4 families per month. This isn't a bus tour; it's an elite relocation mission. Secure your dates for the 2026 season.
                     </p>
                     <div className="flex justify-center flex-col sm:flex-row gap-8">
-                        <Link href="/contacto" className="inline-flex items-center justify-center gap-4 px-16 py-8 bg-brand-950 text-white rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-black transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="inline-flex items-center justify-center gap-4 px-16 py-8 bg-brand-950 text-white rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-black transition-all shadow-2xl">
                             Request My Custom Itinerary <ArrowRight size={14} />
                         </Link>
                     </div>

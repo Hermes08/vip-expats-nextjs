@@ -5,14 +5,16 @@ import Link from 'next/link';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
+import { useLanguage } from '@/context/LanguageContext';
 import ServiceSchema from '@/components/seo/ServiceSchema';
 import { Thermometer, CloudRain, Sun, Calendar, ArrowRight, Zap, MapPin, Wind, HeartPulse, ShieldCheck, Star, Compass } from 'lucide-react';
 import Image from 'next/image';
 
 const RelocationWeatherContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Weather Guide", item: "https://expatrockstars.com/relocation/weather" }
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Weather Guide", item: `https://panamarealestatesale.com/${lang}/relocation/weather` }
     ];
 
     const faqs = [
@@ -47,7 +49,7 @@ const RelocationWeatherContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <FAQSchema questions={faqs} />
             <ServiceSchema
                 name="Panama Seasonal & Weather Planning Guide"
@@ -133,7 +135,7 @@ const RelocationWeatherContent: React.FC = () => {
                 </div>
             </section>
 
-            {/* The Science of Microclimates: The Rockstar Truth */}
+            {/* The Science of Microclimates: The Panama Real Estate Sale Truth */}
             <section className="py-32 bg-white text-brand-950 rounded-[5rem] mx-4 border border-neutral-100 shadow-2xl relative overflow-hidden">
                 <div className="absolute top-0 left-0 p-20 opacity-5">
                     <Compass size={200} />
@@ -257,7 +259,7 @@ const RelocationWeatherContent: React.FC = () => {
                                     <p className="text-sm font-medium leading-relaxed"><strong>Oct - Nov:</strong> Peak rain. The best time to see the <strong>Mist over Boquete</strong> but avoid the Darien gap tours.</p>
                                 </li>
                             </ul>
-                            <Link href="/relocation/tours" className="mt-12 w-full block py-6 bg-brand-950 text-white text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all">
+                            <Link href={`/${lang}/relocation/tours`} className="mt-12 w-full block py-6 bg-brand-950 text-white text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all">
                                 Custom Packing Guide
                             </Link>
                         </div>
@@ -270,13 +272,13 @@ const RelocationWeatherContent: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-8">
                     <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-neutral-400 mb-12 text-center">Complete Your Research</h4>
                     <div className="grid md:grid-cols-2 gap-8">
-                        <Link href="/relocation/cost-of-living" className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
+                        <Link href={`/${lang}/relocation/cost-of-living`} className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Zap className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Cost of Living 2026</h5>
                             <p className="text-xs text-neutral-500 font-medium mb-6">Compare the exact costs of Boquete vs Coronado vs Panama City.</p>
                             <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">View Guide <ArrowRight size={12} /></span>
                         </Link>
-                        <Link href="/relocation/guides/boquete-vs-coronado" className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
+                        <Link href={`/${lang}/relocation/guides/boquete-vs-coronado`} className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Compass className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Boquete vs Coronado</h5>
                             <p className="text-xs text-neutral-500 font-medium mb-6">The definitive showdown between the mountains and the beach.</p>
@@ -292,7 +294,7 @@ const RelocationWeatherContent: React.FC = () => {
                 <p className="text-xl md:text-2xl font-bold mb-16 opacity-80 max-w-2xl mx-auto">
                     Ready to book your <strong>panama relocation discovery tour</strong>? Let's find the best dates for your scouting journey.
                 </p>
-                <Link href="/relocation/tours" className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl">
+                <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl">
                     Check Tour Availability
                 </Link>
             </section>

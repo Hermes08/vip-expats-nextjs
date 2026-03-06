@@ -10,11 +10,14 @@ import ServiceSchema from '@/components/seo/ServiceSchema';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 
+import { useLanguage } from '@/context/LanguageContext';
+
 const RelocationQualifiedInvestorContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Visas", item: "https://expatrockstars.com/relocation/visas" },
-        { name: "Qualified Investor", item: "https://expatrockstars.com/relocation/visas/qualified-investor" }
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Visas", item: `https://panamarealestatesale.com/${lang}/relocation/visas` },
+        { name: "Qualified Investor", item: `https://panamarealestatesale.com/${lang}/relocation/visas/qualified-investor` }
     ];
 
     const faqs = [
@@ -42,7 +45,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <ServiceSchema
                 name="Panama Qualified Investor Visa VIP Services"
                 description="The ultimate fast-track residency program in Panama. Direct permanent residency in 30 days via $300,000 real estate investment."
@@ -71,7 +74,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
                         Permanent residency in <strong>30 days</strong>. The <strong>panama qualified investor visa</strong> is the fastest and most prestigious residency program in the Americas, designed for the high-net-worth individual who values speed, efficiency, and ROI.
                     </p>
                     <div className="flex justify-center gap-6">
-                        <Link href="/contacto" className="px-12 py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-white transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="px-12 py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-white transition-all shadow-2xl">
                             Request Private Consultation
                         </Link>
                     </div>
@@ -180,7 +183,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
                     <div className="flex flex-col lg:flex-row gap-24 items-center">
                         <div className="lg:w-1/2">
                             <BarChart3 size={64} className="text-brand-GOLD mb-10" />
-                            <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The Rockstar <br /><span className="text-brand-GOLD italic">ROI</span> Strategy</h2>
+                            <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The Panama Real Estate Sale <br /><span className="text-brand-GOLD italic">ROI</span> Strategy</h2>
                             <div className="space-y-8 text-lg text-neutral-600 font-medium leading-[1.8]">
                                 <p>
                                     Buying property for the <strong>panama qualified investor visa</strong> shouldn't just be a legal checkbox—it should be an asset play. In 2026, our investment team focuses on high-yield zones like **Costa del Este** and **Avenida Balboa**, or short-term vacation rentals in **Coronado**.
@@ -239,7 +242,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
                         <p className="text-gray-400 font-medium leading-relaxed mb-10">
                             The $300,000 investment *must* be registered in the **Public Registry** and the funds must come from a foreign bank account directly to the escrow or developer in Panama. DIY investors who pay with local cashier's checks without an audit trail are often rejected.
                         </p>
-                        <Link href="/relocation/legal" className="text-[10px] font-black uppercase tracking-[0.3em] text-white border-b-2 border-brand-GOLD pb-2">
+                        <Link href={`/${lang}/relocation/legal`} className="text-[10px] font-black uppercase tracking-[0.3em] text-white border-b-2 border-brand-GOLD pb-2">
                             Learn About Escrow Security
                         </Link>
                     </div>
@@ -313,9 +316,9 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
                 <div className="max-w-4xl mx-auto px-4 relative z-10">
                     <h2 className="text-5xl md:text-9xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-[0.85]">Become a <br /> Resident Today</h2>
                     <p className="text-xl md:text-2xl font-bold mb-16 opacity-80 max-w-2xl mx-auto leading-relaxed">
-                        The <strong>panama qualified investor visa</strong> is only for those who are ready for the ultimate upgrade. Let the Rockstar legal and real estate teams handle every detail.
+                        The <strong>panama qualified investor visa</strong> is only for those who are ready for the ultimate upgrade. Let the Panama Real Estate Sale legal and real estate teams handle every detail.
                     </p>
-                    <Link href="/relocation/tours" className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl inline-block">
+                    <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl inline-block">
                         Request Golden Visa Itinerary
                     </Link>
                 </div>

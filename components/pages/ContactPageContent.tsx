@@ -12,7 +12,7 @@ const ContactPageContent: React.FC = () => {
                 <h1 className="font-serif text-4xl md:text-6xl font-bold mb-4">
                     <SplitText text="Hablemos de tu inversión" />
                 </h1>
-                <p className="text-slate-300 text-lg max-w-2xl mx-auto">Nuestro equipo de expertos bilingües de ExpatRockstars está listo para asistirte en cada paso.</p>
+                <p className="text-slate-300 text-lg max-w-2xl mx-auto">Nuestro equipo de expertos bilingües de Panama Real Estate Sale está listo para asistirte en cada paso.</p>
             </section>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 mb-24">
@@ -47,7 +47,7 @@ const ContactPageContent: React.FC = () => {
                             </div>
                             <div className="space-y-2">
                                 <label className="text-sm font-bold text-slate-500 uppercase tracking-widest">Email</label>
-                                <input name="email" required type="email" className="w-full px-4 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none" placeholder="john@expatrockstars.com" />
+                                <input name="email" required type="email" className="w-full px-4 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none" placeholder="john@example.com" />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-sm font-bold text-slate-500 uppercase tracking-widest">WhatsApp / Phone</label>

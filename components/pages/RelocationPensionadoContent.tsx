@@ -10,11 +10,14 @@ import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import ServiceSchema from '@/components/seo/ServiceSchema';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
 
+import { useLanguage } from '@/context/LanguageContext';
+
 const RelocationPensionadoContent: React.FC = () => {
+    const { lang } = useLanguage();
     const breadcrumbItems = [
-        { name: "Relocation", item: "https://expatrockstars.com/relocation" },
-        { name: "Visas", item: "https://expatrockstars.com/relocation/visas" },
-        { name: "Pensionado Visa", item: "https://expatrockstars.com/relocation/visas/pensionado" }
+        { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
+        { name: "Visas", item: `https://panamarealestatesale.com/${lang}/relocation/visas` },
+        { name: "Pensionado Visa", item: `https://panamarealestatesale.com/${lang}/relocation/visas/pensionado` }
     ];
 
     const faqs = [
@@ -42,7 +45,7 @@ const RelocationPensionadoContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
-            <BreadcrumbSchema items={[{ name: "Home", item: "https://expatrockstars.com/" }, ...breadcrumbItems]} />
+            <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <ServiceSchema
                 name="Panama Pensionado Visa Services"
                 description="Expert assistance for the Panama Retirement (Pensionado) Visa. We handle document translation, FBI checks, and legal filing for retirees."
@@ -70,7 +73,7 @@ const RelocationPensionadoContent: React.FC = () => {
                         Don't just retire. Upgrade. The <strong>panama pensionado visa</strong> remains the gold standard for global residency, offering lifetime discounts and a path to <strong>international living in panama</strong> that no other country can match.
                     </p>
                     <div className="flex justify-center gap-6">
-                        <Link href="/contacto" className="px-12 py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-white transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="px-12 py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-white transition-all shadow-2xl">
                             Start My Application
                         </Link>
                     </div>
@@ -90,7 +93,7 @@ const RelocationPensionadoContent: React.FC = () => {
                                 <strong>Panama's pensionado program</strong> is backed by law and cannot be revoked once granted. It provides a unique "First World Service at Third World Prices" experience, especially in hubs like <strong>Boquete</strong> and <strong>Coronado</strong>.
                             </p>
                             <div className="p-8 bg-neutral-50 rounded-[3rem] border border-neutral-100">
-                                <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-widest mb-4">The Rockstar ROI</h4>
+                                <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-widest mb-4">The Elite ROI</h4>
                                 <ul className="space-y-4">
                                     <li className="flex gap-3 text-sm text-neutral-800 font-bold">
                                         <Check className="text-brand-GOLD" size={18} /> No Taxes on Foreign-Source Pension
@@ -130,7 +133,7 @@ const RelocationPensionadoContent: React.FC = () => {
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {[
                             { title: "25% Off Utilities", desc: "Save every month on electricity, water, and garbage collection. This benefit is tied to your ID (Cedula)." },
-                            { title: "50% Off Entertainment", desc: "Rockstar living means half-price movies, concerts, and sporting events. Just show your card." },
+                            { title: "50% Off Entertainment", desc: "Elite living means half-price movies, concerts, and sporting events. Just show your card." },
                             { title: "25% Off Dining", desc: "Enjoy 25% off in restaurants Monday through Thursday. Perfect for the Coronado social scene." },
                             { title: "15% Off Healthcare", desc: "Discount on hospital bills, lab tests, and private consultations nationwide." },
                             { title: "25% Off Flights", desc: "Discounts on international tickets originating from Panama. Ideal for visiting family back home." },
@@ -156,10 +159,10 @@ const RelocationPensionadoContent: React.FC = () => {
                                     Retiring in 2026 is a different ballgame than it was a decade ago. With high-tax jurisdictions and rising social instability in the West, <strong>panama retirement</strong> has transitioned from a "nice to have" to a strategic "must have" for those protecting their wealth and quality of life.
                                 </p>
                                 <p>
-                                    Our <strong>panama pensionado visa requirements</strong> guide is designed for the high-net-worth individual who values time over bureaucracy. We don't just process papers; we engineer your transition into the Panamanian "Rockstar" ecosystem.
+                                    Our <strong>panama pensionado visa requirements</strong> guide is designed for the high-net-worth individual who values time over bureaucracy. We don't just process papers; we engineer your transition into the Panamanian "Panama Real Estate Sale" ecosystem.
                                 </p>
                                 <blockquote className="p-8 bg-neutral-50 border-l-4 border-brand-GOLD rounded-r-3xl italic text-brand-950 font-bold">
-                                    "I moved from California to Boquete in 2024. The discounts were great, but the piece of mind knowing my income is tax-free in a US-dollar economy was the real win." — Rockstar Client
+                                    "I moved from California to Boquete in 2024. The discounts were great, but the piece of mind knowing my income is tax-free in a US-dollar economy was the real win." — Panama Real Estate Sale Client
                                 </blockquote>
                             </div>
                         </div>
@@ -210,7 +213,7 @@ const RelocationPensionadoContent: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row-reverse gap-20 items-center">
                     <div className="lg:w-1/2">
                         <Cat size={64} className="text-brand-GOLD mb-10" />
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none text-brand-950">The <span className="text-brand-GOLD italic">Furry</span> Rockstar <br /> Moving Guide</h2>
+                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none text-brand-950">The <span className="text-brand-GOLD italic">Furry</span> Panama Real Estate Sale <br /> Moving Guide</h2>
                         <div className="space-y-8 text-lg text-neutral-600 font-medium leading-relaxed">
                             <p>Don't leave Rex behind. Panama is incredibly pet-friendly, especially in Boquete and Coronado. However, the <strong>pet relocation panama</strong> process requires precision.</p>
                             <ul className="space-y-4 text-sm font-bold">
@@ -293,13 +296,13 @@ const RelocationPensionadoContent: React.FC = () => {
             <section className="py-32 max-w-7xl mx-auto px-4">
                 <div className="mb-24 text-center">
                     <h2 className="text-4xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter italic">The 2026 <span className="text-brand-GOLD">Relocation Roadmap</span></h2>
-                    <p className="text-neutral-500 font-black uppercase tracking-widest text-xs">A 6-Month Timeline to your Rockstar Life.</p>
+                    <p className="text-neutral-500 font-black uppercase tracking-widest text-xs">A 6-Month Timeline to your Elite Life.</p>
                 </div>
 
                 <div className="space-y-12">
                     {[
                         { step: "Phase 1: Validation (Month 1-2)", title: "Document Procurement", desc: "Gathering your lifetime pension letter (apostilled), criminal background check (from FBI or equivalent), and marriage certificates. Mistake alert: Document validity is usually only 6 months. We guide you on the exact order to prevent 'aging' issues." },
-                        { step: "Phase 2: Presence (Month 3)", title: "The Rockstar Scouting Trip", desc: "Visit Panama. We handle your medical checkups, lawyer meetings, and bank account setups during your discovery tour. You must be physically present to file, and we make these 5-7 days the most productive of your life." },
+                        { step: "Phase 2: Presence (Month 3)", title: "The Panama Real Estate Sale Scouting Trip", desc: "Visit Panama. We handle your medical checkups, lawyer meetings, and bank account setups during your discovery tour. You must be physically present to file, and we make these 5-7 days the most productive of your life." },
                         { step: "Phase 3: Processing (Month 4-6)", title: "Temporary to Permanent", desc: "You receive your temporary card immediately. Permanent residency usually takes 90-120 days. No need to stay in the country for this part. We monitor the 'E-Cedula' process for you." },
                         { step: "Phase 4: The Perks (Month 7+)", title: "Activating Your Discounts", desc: "Once your permanent card is issued, we help you register for electricity, water, and airline discounts. This is where your ROI begins." }
                     ].map((step, i) => (
@@ -336,7 +339,7 @@ const RelocationPensionadoContent: React.FC = () => {
                                 Nestled in the highlands of Chiriquí, <strong>Boquete panama</strong> is the undisputed capital of the <strong>pensionado visa</strong> community. With temperatures hovering between 65-75°F year-round, it's the "eternal spring."
                             </p>
                             <p>
-                                <strong>Vibe:</strong> Coffee culture, hiking trails, arts communities, and a very active social calendar. If you love gardening and mountain views, this is your Rockstar base.
+                                <strong>Vibe:</strong> Coffee culture, hiking trails, arts communities, and a very active social calendar. If you love gardening and mountain views, this is your Panama Real Estate Sale base.
                             </p>
                             <ul className="space-y-3 font-black uppercase tracking-widest text-[10px]">
                                 <li className="flex items-center gap-2"><ArrowRight size={12} className="text-brand-GOLD" /> Microclimates for every mood</li>
@@ -375,7 +378,7 @@ const RelocationPensionadoContent: React.FC = () => {
                         <div className="w-16 h-16 bg-brand-GOLD/10 rounded-2xl flex items-center justify-center mb-10">
                             <Landmark className="text-brand-GOLD" size={32} />
                         </div>
-                        <h2 className="text-4xl md:text-6xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Financial <span className="text-brand-GOLD">Rockstar</span> Strategy</h2>
+                        <h2 className="text-4xl md:text-6xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Financial <span className="text-brand-GOLD">Panama Real Estate Sale</span> Strategy</h2>
                         <div className="space-y-8 text-lg text-neutral-600 font-medium leading-[1.8]">
                             <p>
                                 One of the most misunderstood parts of the <strong>pensionado visa panama requirements</strong> is the bank account opening. Panama takes FATCA and AML rules very seriously. You cannot just "walk in" and open an account.
@@ -440,9 +443,9 @@ const RelocationPensionadoContent: React.FC = () => {
                 <div className="max-w-4xl mx-auto px-4 relative z-10">
                     <h2 className="text-5xl md:text-9xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-[0.85]">Plan Your <br /> Upgrade</h2>
                     <p className="text-xl md:text-2xl font-bold mb-16 opacity-80 max-w-2xl mx-auto leading-relaxed">
-                        Don't leave your <strong>panama retirement</strong> to chance. Relocate with the Rockstar team and secure your <strong>panama pensionado visa</strong> with zero stress.
+                        Don't leave your <strong>panama retirement</strong> to chance. Relocate with the Panama Real Estate Sale team and secure your <strong>panama pensionado visa</strong> with zero stress.
                     </p>
-                    <Link href="/relocation/tours" className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl inline-block">
+                    <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl inline-block">
                         Request Retirement Itinerary
                     </Link>
                 </div>

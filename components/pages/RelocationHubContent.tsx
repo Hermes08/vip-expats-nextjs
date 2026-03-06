@@ -42,7 +42,7 @@ const RelocationHubContent: React.FC = () => {
                         </span>
                     </div>
                     <h1 className="font-heading text-6xl md:text-9xl font-black mb-8 leading-tight tracking-tighter">
-                        PANAMA <br /> <span className="text-brand-GOLD">REAL ESTATE</span> SALE 2026
+                        PANAMA <br /> <span className="text-brand-GOLD">REAL ESTATE</span> SALE
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed font-medium mb-12">
                         Don't just move to Panama. <strong>Relocate with strategy.</strong> Explore our <strong>panama relocation tours</strong>, master the <strong>pensionado visa panama</strong>, and find your <strong>panama dream home</strong> with the world's #1 expat team.
@@ -184,7 +184,7 @@ const RelocationHubContent: React.FC = () => {
                                     Relocating to Panama is more than just getting a stamp in your passport. It's about building a new support system. From finding a reliable <strong>A/C technician in Coronado</strong> to discovering the best <strong>farm-to-table restaurants in Boquete</strong>, the logistics of daily life are where we excel.
                                 </p>
                                 <p>
-                                    On our <strong>panama relocation tours</strong>, we don't just show you houses; we introduce you to the mechanics, the property managers, and the local business owners who make up the "Rockstar" network.
+                                    On our <strong>panama relocation tours</strong>, we don't just show you houses; we introduce you to the mechanics, the property managers, and the local business owners who make up our elite network.
                                 </p>
                             </div>
                         </div>
@@ -208,13 +208,13 @@ const RelocationHubContent: React.FC = () => {
                 </div>
             </section>
 
-            {/* Featured Rockstar Video */}
+            {/* Featured Panama Relocation Video */}
             <section className="py-32 max-w-7xl mx-auto px-4">
                 <div className="relative aspect-video rounded-[4rem] overflow-hidden border-8 border-brand-950/5 shadow-[0_0_100px_rgba(0,0,0,0.1)]">
                     <iframe
                         className="absolute inset-0 w-full h-full"
                         src="https://www.youtube.com/embed/9-LPE1R6bCo"
-                        title="Living in Panama Rockstar Life"
+                        title="Living in Panama - VIP Relocation"
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
@@ -256,11 +256,11 @@ const RelocationHubContent: React.FC = () => {
                 </div>
             </section>
 
-            {/* Anatomy of a Rockstar Panama Relocation Tour */}
+            {/* Anatomy of a VIP Panama Relocation Tour */}
             <section className="py-32 max-w-7xl mx-auto px-4">
                 <div className="flex flex-col lg:flex-row gap-24 items-center">
                     <div className="lg:w-1/2">
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Anatomy of a <br /><span className="text-brand-GOLD">Rockstar Tour</span></h2>
+                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Anatomy of a <br /><span className="text-brand-GOLD">VIP Tour</span></h2>
                         <div className="space-y-8 text-lg text-neutral-400 font-medium leading-[1.8]">
                             <p>
                                 Our <strong>panama relocation tours</strong> aren't just bus rides through the city. They are strategic deep-dives designed to answer the "What If?" questions that keep you awake at night.
@@ -411,7 +411,7 @@ const RelocationHubContent: React.FC = () => {
                                 Relocating to Panama is a legal marathon, not a sprint. In 2026, the complexity of <strong>panama residency requirements</strong> has never been higher, but neither has the reward.
                             </p>
                             <p>
-                                We've built an elite network of <strong>panama immigration lawyers</strong> who specialize in the "Rockstar" transition. Whether you're navigating the <strong>friendly nations visa panama requirements</strong> or the <strong>pensionado visa</strong>, you need a team that knows the shortcuts.
+                                We've built an elite network of <strong>panama immigration lawyers</strong> who specialize in the VIP transition. Whether you're navigating the <strong>friendly nations visa panama requirements</strong> or the <strong>pensionado visa</strong>, you need a team that knows the shortcuts.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-6">
                                 <Link href={`/${lang}/relocation/legal/lawyers`} className="px-10 py-5 bg-brand-950 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-GOLD hover:text-brand-950 transition-all text-center">
@@ -477,7 +477,7 @@ const RelocationHubContent: React.FC = () => {
                 <div className="max-w-4xl mx-auto px-4">
                     <h2 className="text-4xl md:text-7xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none">Your New <span className="text-brand-GOLD italic">Frontier</span></h2>
                     <p className="text-xl text-neutral-500 mb-16 font-medium leading-relaxed">
-                        Don't just move to Panama. Master it. From the financial district of Panama City to the cool highlands of Boquete, your Rockstar journey starts with the right <strong>panama relocation services</strong>.
+                        Don't just move to Panama. Master it. From the financial district of Panama City to the cool highlands of Boquete, your elite journey starts with the right <strong>panama relocation services</strong>.
                     </p>
                     <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
                         Customize Your Tour
@@ -503,7 +503,7 @@ const RelocationHubContent: React.FC = () => {
             {/* Final CTA Footer */}
             <section className="py-32 bg-brand-GOLD text-brand-950 text-center">
                 <div className="max-w-5xl mx-auto px-4">
-                    <h2 className="text-5xl md:text-8xl font-heading font-black mb-12 uppercase tracking-tighter italic">Ready to ROCK?</h2>
+                    <h2 className="text-5xl md:text-8xl font-heading font-black mb-12 uppercase tracking-tighter italic">Ready to Begin?</h2>
                     <p className="text-xl md:text-2xl font-bold mb-16 opacity-80">Stop dreaming. Start Relocating. Our team is standing by.</p>
                     <div className="flex flex-wrap justify-center gap-8">
                         <Link href={`/${lang}/contacto`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl">

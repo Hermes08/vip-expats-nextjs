@@ -8,8 +8,10 @@ import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 import ServiceSchema from '@/components/seo/ServiceSchema';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
+import { useLanguage } from '@/context/LanguageContext';
 
 const RelocationFamiliesContent = () => {
+    const { lang } = useLanguage();
     const faqs = [
         {
             question: "Are international schools in Panama expensive?",
@@ -33,8 +35,8 @@ const RelocationFamiliesContent = () => {
         <div className="bg-white text-brand-950 min-h-screen font-sans">
             <BreadcrumbSchema
                 items={[
-                    { name: 'Relocation', item: 'https://expatrockstars.com/relocation' },
-                    { name: 'Families', item: 'https://expatrockstars.com/relocation/families' }
+                    { name: 'Relocation', item: `https://panamarealestatesale.com/${lang}/relocation` },
+                    { name: 'Families', item: `https://panamarealestatesale.com/${lang}/families` }
                 ]}
             />
             <FAQSchema questions={faqs} />
@@ -62,7 +64,7 @@ const RelocationFamiliesContent = () => {
                         Raising kids in Panama isn't just a move—it's a massive advantage. Give your family the <strong>international lifestyle</strong>, world-class education, and the safety they deserve in the <strong>best places to live in panama</strong>.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-8 justify-center">
-                        <Link href="/contacto" className="px-16 py-8 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="px-16 py-8 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
                             Request Family Relocation Plan
                         </Link>
                     </div>
@@ -80,7 +82,7 @@ const RelocationFamiliesContent = () => {
                                     Why are <strong>expat families moving to panama</strong>? In 2026, the demand for safety and quality of education has never been higher. Panama offers a unique ecosystem where kids grow up trilingual, outdoors, and globally connected.
                                 </p>
                                 <p>
-                                    From the <strong>Boquete</strong> highlands to the <strong>Coronado</strong> beaches, we specialize in finding the perfect "Rockstar" base that aligns with your children's schooling needs and your lifestyle goals.
+                                    From the <strong>Boquete</strong> highlands to the <strong>Coronado</strong> beaches, we specialize in finding the perfect "Panama Real Estate Sale" base that aligns with your children's schooling needs and your lifestyle goals.
                                 </p>
                                 <div className="p-8 bg-neutral-50 rounded-[4rem] border border-neutral-100 italic font-bold text-brand-950">
                                     "We moved from Toronto to Clayton. Our kids are in the best school we've ever experienced, and they spend every afternoon in the pool or the park. The quality of life for families here is unmatched."
@@ -204,10 +206,10 @@ const RelocationFamiliesContent = () => {
                 <div className="max-w-4xl mx-auto px-4 relative z-10 flex flex-col items-center text-center">
                     <h2 className="text-5xl md:text-9xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none text-center">The Next <br /> <span className="text-brand-GOLD underline italic">Generation</span> <br /> Awaits.</h2>
                     <p className="text-xl md:text-2xl font-medium mb-16 text-gray-400 max-w-2xl mx-auto leading-relaxed text-center">
-                        Don't just move your family. Upgrade their future. Let the Rockstar team handle the logistics while you focus on the memories.
+                        Don't just move your family. Upgrade their future. Let the Panama Real Estate Sale team handle the logistics while you focus on the memories.
                     </p>
                     <div className="flex justify-center flex-col sm:flex-row gap-8">
-                        <Link href="/contacto" className="inline-flex items-center justify-center gap-4 px-16 py-8 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="inline-flex items-center justify-center gap-4 px-16 py-8 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
                             Design My Family Relocation <ArrowRight size={14} />
                         </Link>
                     </div>

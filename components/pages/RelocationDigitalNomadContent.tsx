@@ -7,8 +7,10 @@ import Image from 'next/image';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 import ServiceSchema from '@/components/seo/ServiceSchema';
+import { useLanguage } from '@/context/LanguageContext';
 
 const RelocationDigitalNomadContent = () => {
+    const { lang } = useLanguage();
     const faqs = [
         {
             question: "What is the Panama Digital Nomad Visa?",
@@ -36,8 +38,8 @@ const RelocationDigitalNomadContent = () => {
         <div className="bg-brand-950 text-white min-h-screen">
             <BreadcrumbSchema
                 items={[
-                    { name: 'Relocation', item: 'https://expatrockstars.com/relocation' },
-                    { name: 'Digital Nomad', item: 'https://expatrockstars.com/relocation/digital-nomad' }
+                    { name: 'Relocation', item: `https://panamarealestatesale.com/${lang}/relocation` },
+                    { name: 'Digital Nomad', item: `https://panamarealestatesale.com/${lang}/relocation/digital-nomad` }
                 ]}
             />
             <FAQSchema questions={faqs} />
@@ -62,7 +64,7 @@ const RelocationDigitalNomadContent = () => {
                             Stop commuting. Start living. The <strong>panama digital nomad visa</strong> is your legal shortcut to a tropical lifestyle with first-world connectivity and a territorial tax system that keeps your money in your pocket.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6">
-                            <Link href="/contacto" className="px-10 py-5 bg-brand-GOLD text-brand-950 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-white hover:scale-105 transition-all text-center">
+                            <Link href={`/${lang}/contacto`} className="px-10 py-5 bg-brand-GOLD text-brand-950 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-white hover:scale-105 transition-all text-center">
                                 Claim My Nomad Visa
                             </Link>
                             <Link href="#connectivity" className="px-10 py-5 bg-white/5 border border-white/10 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-white/10 transition-all text-center">
@@ -163,7 +165,7 @@ const RelocationDigitalNomadContent = () => {
             <section className="py-32 bg-white text-brand-950 rounded-[5rem] mx-4">
                 <div className="max-w-7xl mx-auto px-8">
                     <div className="text-center mb-20">
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic text-brand-950 leading-none">Where the <span className="text-brand-GOLD">Rockstars</span> Hang</h2>
+                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic text-brand-950 leading-none">Where the <span className="text-brand-GOLD">Panama Real Estate Sales</span> Hang</h2>
                         <p className="text-xl text-neutral-500 font-medium max-w-2xl mx-auto italic">From colonial vibes to high-tech jungles, pick your vibe.</p>
                     </div>
 
@@ -231,11 +233,11 @@ const RelocationDigitalNomadContent = () => {
 
                     <div className="mt-20 p-16 bg-brand-GOLD text-brand-950 rounded-[4rem] text-center shadow-2xl relative overflow-hidden group">
                         <div className="relative z-10">
-                            <h3 className="text-5xl font-black uppercase tracking-tighter italic mb-8">Ready to Go Rockstar?</h3>
+                            <h3 className="text-5xl font-black uppercase tracking-tighter italic mb-8">Ready to Go Panama Real Estate Sale?</h3>
                             <p className="text-lg font-black opacity-70 mb-10 max-w-xl mx-auto">
                                 Skip the digital nomad bureaucracy. We handle your entire visa filing and 6-month fiber-guaranteed housing contract in one package.
                             </p>
-                            <Link href="/contacto" className="inline-flex items-center gap-4 px-12 py-6 bg-brand-950 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all">
+                            <Link href={`/${lang}/contacto`} className="inline-flex items-center gap-4 px-12 py-6 bg-brand-950 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all">
                                 Get The Nomad Bundle <ArrowRight size={14} />
                             </Link>
                         </div>

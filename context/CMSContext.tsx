@@ -43,7 +43,7 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         if (!isSupabaseConfigured) {
             console.warn("Supabase not configured. Using in-memory/local data.");
             if (typeof window !== 'undefined') {
-                const localLeads = localStorage.getItem('rockstar_leads');
+                const localLeads = localStorage.getItem('pres_leads');
                 if (localLeads) {
                     try {
                         setQuizSubmissions(JSON.parse(localLeads));
@@ -105,7 +105,7 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         if (!isSupabaseConfigured) {
             const updated = [submission, ...quizSubmissions];
             setQuizSubmissions(updated);
-            localStorage.setItem('rockstar_leads', JSON.stringify(updated));
+            localStorage.setItem('pres_leads', JSON.stringify(updated));
             return;
         }
         await supabase.from('quiz_submissions').insert([submission]);
@@ -116,7 +116,7 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         if (!isSupabaseConfigured) {
             const updated = quizSubmissions.filter(s => s.id !== id);
             setQuizSubmissions(updated);
-            localStorage.setItem('rockstar_leads', JSON.stringify(updated));
+            localStorage.setItem('pres_leads', JSON.stringify(updated));
             return;
         }
         await supabase.from('quiz_submissions').delete().eq('id', id);

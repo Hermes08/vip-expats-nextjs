@@ -9,7 +9,10 @@ import FAQSchema from '@/components/seo/FAQSchema';
 import ServiceSchema from '@/components/seo/ServiceSchema';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
 
+import { useLanguage } from '@/context/LanguageContext';
+
 const RelocationLGBTQContent = () => {
+    const { lang } = useLanguage();
     const faqs = [
         {
             question: "Is same-sex marriage recognized for residency in Panama?",
@@ -33,8 +36,8 @@ const RelocationLGBTQContent = () => {
         <div className="bg-white text-brand-950 min-h-screen font-sans">
             <BreadcrumbSchema
                 items={[
-                    { name: 'Relocation', item: 'https://expatrockstars.com/relocation' },
-                    { name: 'LGBTQ+ Expats', item: 'https://expatrockstars.com/relocation/lgbtq-expats' }
+                    { name: 'Relocation', item: `https://panamarealestatesale.com/${lang}/relocation` },
+                    { name: 'LGBTQ+ Expats', item: `https://panamarealestatesale.com/${lang}/relocation/lgbtq-expats` }
                 ]}
             />
             <FAQSchema questions={faqs} />
@@ -56,13 +59,13 @@ const RelocationLGBTQContent = () => {
                         <span className="text-[10px] font-black uppercase tracking-widest text-white">The LGBTQ+ Expat Guide 2026</span>
                     </div>
                     <h1 className="text-6xl md:text-9xl font-heading font-black mb-12 uppercase tracking-tighter leading-none italic">
-                        Live <span className="text-brand-GOLD underline italic">Proud.</span> <br /> Move Rockstar.
+                        Live <span className="text-brand-GOLD underline italic">Proud.</span> <br /> Move Panama.
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-400 font-medium leading-relaxed mb-16 max-w-3xl mx-auto">
                         Panama is rapidly evolving. Discover the honest reality of <strong>LGBTQ+ life in Panama</strong>, from the vibrant streets of Casco Viejo to the legal strategies for <strong>panama residency</strong> in 2026.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-8 justify-center">
-                        <Link href="/contacto" className="px-16 py-8 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
+                        <Link href={`/${lang}/contact`} className="px-16 py-8 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
                             Request My Proud Relocation Plan
                         </Link>
                     </div>
@@ -209,12 +212,12 @@ const RelocationLGBTQContent = () => {
             <section className="py-40 bg-brand-950 text-white text-center relative overflow-hidden flex flex-col items-center">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-GOLD opacity-10 rounded-full blur-[150px]"></div>
                 <div className="max-w-4xl mx-auto px-4 relative z-10 flex flex-col items-center text-center">
-                    <h2 className="text-5xl md:text-9xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none">Your <span className="text-brand-GOLD underline italic">Rockstar</span> <br /> Community Hub.</h2>
+                    <h2 className="text-5xl md:text-9xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none">Your <span className="text-brand-GOLD underline italic">Panama</span> <br /> Community Hub.</h2>
                     <p className="text-xl md:text-2xl font-medium mb-16 text-gray-400 max-w-2xl mx-auto leading-relaxed">
                         Moving is easier when you have a tribe. We don't just process your visa; we plug you into the heart of the thriving LGBTQ+ expat experience.
                     </p>
                     <div className="flex justify-center flex-col sm:flex-row gap-8">
-                        <Link href="/contacto" className="inline-flex items-center justify-center gap-4 px-16 py-8 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
+                        <Link href={`/${lang}/contact`} className="inline-flex items-center justify-center gap-4 px-16 py-8 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
                             Plan My Transition <ArrowRight size={14} />
                         </Link>
                     </div>
