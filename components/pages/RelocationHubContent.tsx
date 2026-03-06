@@ -135,7 +135,7 @@ const RelocationHubContent: React.FC = () => {
                                     <ArrowRight size={14} className="text-brand-GOLD" /> Visa Comparison Center
                                 </li>
                             </ul>
-                            <Link href="/relocation/legal" className="inline-flex items-center gap-3 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] group-hover:gap-5 transition-all">
+                            <Link href={`/${lang}/relocation/legal`} className="inline-flex items-center gap-3 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] group-hover:gap-5 transition-all">
                                 Legal Hub <ArrowRight size={16} />
                             </Link>
                         </div>
@@ -149,12 +149,12 @@ const RelocationHubContent: React.FC = () => {
                             </p>
                             <ul className="space-y-4 mb-10">
                                 <li className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-gray-300">
-                                    <Link href="/relocation/guides/boquete-vs-coronado" className="hover:text-brand-GOLD transition-colors">
+                                    <Link href={`/${lang}/relocation/guides/boquete-vs-coronado`} className="hover:text-brand-GOLD transition-colors">
                                         <ArrowRight size={14} className="text-brand-GOLD" /> Boquete vs Coronado
                                     </Link>
                                 </li>
                                 <li className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-gray-300">
-                                    <Link href="/relocation/cost-of-living" className="hover:text-brand-GOLD transition-colors">
+                                    <Link href={`/${lang}/relocation/cost-of-living`} className="hover:text-brand-GOLD transition-colors">
                                         <ArrowRight size={14} className="text-brand-GOLD" /> Cost of Living Breakdown
                                     </Link>
                                 </li>
@@ -162,7 +162,7 @@ const RelocationHubContent: React.FC = () => {
                                     <ArrowRight size={14} className="text-brand-GOLD" /> Best Neighborhood Quiz
                                 </li>
                             </ul>
-                            <Link href="/relocation/guides" className="inline-flex items-center gap-3 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] group-hover:gap-5 transition-all">
+                            <Link href={`/${lang}/relocation/guides`} className="inline-flex items-center gap-3 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] group-hover:gap-5 transition-all">
                                 View Guides <ArrowRight size={16} />
                             </Link>
                         </div>
@@ -389,7 +389,7 @@ const RelocationHubContent: React.FC = () => {
                                         <Star size={14} /> VIP Integration
                                     </li>
                                 </ul>
-                                <Link href="/relocation/legal/checklist" className="w-full block py-4 bg-brand-950 text-white text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all">
+                                <Link href={`/${lang}/relocation/legal/checklist`} className="w-full block py-4 bg-brand-950 text-white text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all">
                                     Download Checklist
                                 </Link>
                             </div>
@@ -414,10 +414,10 @@ const RelocationHubContent: React.FC = () => {
                                 We've built an elite network of <strong>panama immigration lawyers</strong> who specialize in the "Rockstar" transition. Whether you're navigating the <strong>friendly nations visa panama requirements</strong> or the <strong>pensionado visa</strong>, you need a team that knows the shortcuts.
                             </p>
                             <div className="flex flex-col sm:flex-row gap-6">
-                                <Link href="/relocation/legal/lawyers" className="px-10 py-5 bg-brand-950 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-GOLD hover:text-brand-950 transition-all text-center">
+                                <Link href={`/${lang}/relocation/legal/lawyers`} className="px-10 py-5 bg-brand-950 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-GOLD hover:text-brand-950 transition-all text-center">
                                     Meet the Lawyers
                                 </Link>
-                                <Link href="/relocation/legal/checklist" className="px-10 py-5 bg-neutral-100 border border-neutral-200 text-brand-950 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-950 hover:text-white transition-all text-center">
+                                <Link href={`/${lang}/relocation/legal/checklist`} className="px-10 py-5 bg-neutral-100 border border-neutral-200 text-brand-950 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-950 hover:text-white transition-all text-center">
                                     View 2026 Checklist
                                 </Link>
                             </div>
@@ -452,7 +452,7 @@ const RelocationHubContent: React.FC = () => {
                             <p className="text-neutral-500 font-medium leading-relaxed mb-10">
                                 Perfect for those with a lifetime pension. The <strong>panama retirement visa</strong> offers the world's best discounts on everything from movies to medical bills.
                             </p>
-                            <Link href="/relocation/visas/pensionado" className="inline-flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.3em] text-brand-950 border-b-2 border-brand-GOLD pb-2">
+                            <Link href={`/${lang}/relocation/visas/pensionado`} className="inline-flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.3em] text-brand-950 border-b-2 border-brand-GOLD pb-2">
                                 Pensionado Guide <ArrowRight size={14} />
                             </Link>
                         </div>
@@ -464,7 +464,7 @@ const RelocationHubContent: React.FC = () => {
                             <p className="text-gray-400 font-medium leading-relaxed mb-10">
                                 The choice for tech workers, digital nomads, and investors from 50+ countries. The <strong>friendly nations visa panama</strong> is your business pass.
                             </p>
-                            <Link href="/relocation/visas/friendly-nations" className="inline-flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.3em] text-brand-GOLD">
+                            <Link href={`/${lang}/relocation/visas/friendly-nations`} className="inline-flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.3em] text-brand-GOLD">
                                 Friendly Nations Deep-Dive <ArrowRight size={14} />
                             </Link>
                         </div>
@@ -479,7 +479,7 @@ const RelocationHubContent: React.FC = () => {
                     <p className="text-xl text-neutral-500 mb-16 font-medium leading-relaxed">
                         Don't just move to Panama. Master it. From the financial district of Panama City to the cool highlands of Boquete, your Rockstar journey starts with the right <strong>panama relocation services</strong>.
                     </p>
-                    <Link href="/relocation/tours" className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
+                    <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
                         Customize Your Tour
                     </Link>
                 </div>
@@ -493,7 +493,7 @@ const RelocationHubContent: React.FC = () => {
                         <p className="text-gray-400 mb-12 font-medium">
                             The <strong>best time to visit panama</strong> depends on what you're looking for. From the dry summer season to the lush green season, each month offers a different perspective on <strong>international living in panama</strong>.
                         </p>
-                        <Link href="/relocation/weather" className="inline-flex items-center gap-3 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] hover:gap-5 transition-all">
+                        <Link href={`/${lang}/relocation/weather`} className="inline-flex items-center gap-3 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] hover:gap-5 transition-all">
                             View Seasonal Guide <ArrowRight size={16} />
                         </Link>
                     </div>
@@ -506,7 +506,7 @@ const RelocationHubContent: React.FC = () => {
                     <h2 className="text-5xl md:text-8xl font-heading font-black mb-12 uppercase tracking-tighter italic">Ready to ROCK?</h2>
                     <p className="text-xl md:text-2xl font-bold mb-16 opacity-80">Stop dreaming. Start Relocating. Our team is standing by.</p>
                     <div className="flex flex-wrap justify-center gap-8">
-                        <Link href="/contacto" className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl">
                             Request My Proposal
                         </Link>
                     </div>
