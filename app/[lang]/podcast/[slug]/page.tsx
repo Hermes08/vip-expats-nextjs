@@ -114,7 +114,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
                                 {episode.description[lang as 'en' | 'es']}
                             </p>
 
-                            <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
+                            <div className="bg-white/5 rounded-2xl p-8 border border-white/10 mt-8">
                                 <h3 className="text-white font-bold mb-4 flex items-center gap-2">
                                     <span className="w-2 h-2 rounded-full bg-brand-GOLD"></span>
                                     {lang === 'es' ? 'Invitados' : 'Guests'}
@@ -129,6 +129,36 @@ export default async function PodcastEpisodePage({ params }: Props) {
                                 </p>
                             </div>
                         </div>
+
+                        {/* Takeaways Section */}
+                        {episode.takeaways?.[lang as 'en' | 'es'] && (
+                            <div className="mb-12 bg-white/5 rounded-3xl p-8 border border-white/10">
+                                <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                                    <span className="w-8 h-8 rounded-full bg-brand-GOLD text-brand-900 flex items-center justify-center text-sm font-black italic">!</span>
+                                    {lang === 'es' ? 'Puntos Clave' : 'Key Takeaways'}
+                                </h3>
+                                <ul className="space-y-4">
+                                    {episode.takeaways[lang as 'en' | 'es'].map((item, i) => (
+                                        <li key={i} className="flex items-start gap-4 text-neutral-300">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-brand-GOLD mt-2.5 flex-shrink-0" />
+                                            <span className="text-lg leading-relaxed">{item}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
+
+                        {/* Transcript Section */}
+                        {episode.transcript?.[lang as 'en' | 'es'] && (
+                            <div className="mb-12">
+                                <h3 className="text-brand-GOLD font-bold uppercase tracking-wider text-sm mb-4">
+                                    {lang === 'es' ? 'Transcripción y Notas' : 'Transcript & Show Notes'}
+                                </h3>
+                                <div className="text-neutral-400 leading-relaxed text-base bg-black/30 p-8 rounded-2xl border border-white/5 italic">
+                                    {episode.transcript[lang as 'en' | 'es']}
+                                </div>
+                            </div>
+                        )}
 
                     </div>
 

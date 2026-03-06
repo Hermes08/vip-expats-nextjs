@@ -29,8 +29,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   };
 
   const descriptions = {
-    es: "Encuentre las mejores propiedades de bienes raíces en Panamá. Condominios frente al mar, casas de lujo, y oportunidades de inversión inmobiliaria. Asesoría experta para expatriados e inversionistas.",
-    en: "Find the best real estate in Panama. Beachfront condos, luxury homes, and investment properties. Expert guidance for expats and investors looking to buy property in Panama."
+    es: "Encuentre bienes raíces en Panamá: condominios de lujo, casas de playa y oportunidades de inversión. Guía experta para expatriados e inversionistas.",
+    en: "Find real estate in Panama: luxury beachfront condos, homes and investment properties. Expert guidance for expats and investors buying property in Panama."
   };
 
   const domain = "https://panamarealestatesale.com"; // User should update this if different

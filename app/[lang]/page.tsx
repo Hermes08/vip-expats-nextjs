@@ -11,6 +11,8 @@ import HeroTilt from '@/components/ui/HeroTilt';
 import SplitText from '@/components/ui/SplitText';
 import VideoThumbnail from '@/components/ui/VideoThumbnail';
 import VideoSchema from '@/components/seo/VideoSchema';
+import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
+import FAQSchema from '@/components/seo/FAQSchema';
 
 const HeroCarousel: React.FC = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -53,6 +55,18 @@ export default function Home() {
 
   return (
     <>
+      <LocalBusinessSchema />
+      <FAQSchema
+        questions={lang === 'es' ? [
+          { question: "¿Es seguro vivir en Panamá en 2026?", answer: "Panamá sigue siendo uno de los países más seguros de América Latina para expatriados, con una comunidad internacional creciente y estabilidad política." },
+          { question: "¿Cuál es el costo de vida en Panamá?", answer: "El costo de vida varía, pero una pareja puede vivir cómodamente con un presupuesto desde $2,500 en la ciudad o menos en áreas rurales, disfrutando de infraestructura de primer nivel." },
+          { question: "¿Cómo puedo obtener la residencia en Panamá?", answer: "Existen múltiples opciones como la Visa de Naciones Amigas, Jubilado o Inversionista Calificado, cada una con requisitos específicos de inversión." }
+        ] : [
+          { question: "Is Panama safe to live in 2026?", answer: "Panama remains one of the safest countries in Latin America for expats, featuring a growing international community and political stability." },
+          { question: "What is the cost of living in Panama?", answer: "The cost of living varies, but a couple can live comfortably starting at $2,500 in the city or less in rural areas, enjoying world-class infrastructure." },
+          { question: "How can I get residency in Panama?", answer: "There are multiple options like the Friendly Nations, Pensionado, or Qualified Investor Visa, each with specific investment requirements." }
+        ]}
+      />
       {/* HERO EXPERIENCE */}
       <section className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
         <HeroCarousel />

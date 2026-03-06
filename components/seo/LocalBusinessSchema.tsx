@@ -9,10 +9,10 @@ interface LocalBusinessSchemaProps {
 }
 
 const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({
-    name = "ExpatRockstars Panama",
-    description = "Panama's leading relocation and residency consultancy. Expert guidance for the Friendly Nations, Pensionado, and Qualified Investor visas.",
-    url = "https://expatrockstars.com",
-    telephone = "+507 833-9000",
+    name = "panamarealestatesale",
+    description = "Panama's leading real estate and investment consultancy. Expert guidance for luxury properties, beachfront condos, and residency visas.",
+    url = "https://panamarealestatesale.com",
+    telephone = "+507 6761-0315",
     priceRange = "$$$"
 }) => {
     const schema = {
@@ -23,7 +23,7 @@ const LocalBusinessSchema: React.FC<LocalBusinessSchemaProps> = ({
         "url": url,
         "telephone": telephone,
         "priceRange": priceRange,
-        "image": "https://expatrockstars.com/logo.png",
+        "image": "https://panamarealestatesale.com/logo.png",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Oceania Business Plaza, Tower 2000, 43rd Floor",

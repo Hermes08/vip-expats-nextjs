@@ -1979,6 +1979,76 @@ export const BLOG_POSTS: BlogPost[] = [
     date: 'January 25, 2026',
     image: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=800&q=80',
     category: 'Lifestyle'
+  },
+  {
+    id: 'blog-6',
+    slug: 'how-to-buy-property-in-panama-2026-guide',
+    title: {
+      en: 'How to Buy Property in Panama: Complete 2026 Guide for Foreigners',
+      es: 'Cómo Comprar Propiedad en Panamá: Guía Completa 2026 para Extranjeros',
+      zh: '巴拿马房产购买：2026年外国投资者完整指南'
+    },
+    excerpt: {
+      en: 'Everything you need to know about the legal process, closing costs, and title due diligence when buying real estate in Panama.',
+      es: 'Todo lo que necesita saber sobre el proceso legal, costos de cierre y debida diligencia al comprar en Panamá.',
+      zh: '关于巴拿马房地产购买法律程序、交易成本和产权尽职调查的所有信息。'
+    },
+    content: {
+      en: `Buying <strong>real estate in panama</strong> is one of the most secure ways to protect your capital in Latin America. However, the process is uniquely Panamanian.
+
+      **1. The Title System**
+      Panama has a centralized Public Registry. Most <strong>panama property for sale</strong> is "Titled," meaning it has a registered finca number. Avoid "Right of Possession" (ROP) land unless you have expert legal counsel.
+
+      **2. The Promise to Purchase**
+      Once you find your <strong>panama dream home</strong>, you sign a Promise to Purchase Agreement. This typically requires a 10% deposit held in escrow or paid directly to the developer.
+
+      **3. Closing Costs**
+      Expect to pay between 1% and 2% of the purchase price in legal fees. The seller usually pays the 2% transfer tax and 3% capital gains tax.
+
+      **4. Due Diligence**
+      Never skip the "Certificado de Registro Público." This document confirms the owner, dimensions, and any liens or mortgages on the property.`,
+      es: 'Comprar **bienes raíces en panamá** es una de las formas más seguras de proteger su capital...'
+    },
+    date: 'March 1, 2026',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80',
+    category: 'Market Guide'
+  },
+  {
+    id: 'blog-7',
+    slug: '10-best-places-to-live-in-panama-2026',
+    title: {
+      en: '10 Best Places to Live in Panama for Expats (2026 Rankings)',
+      es: 'Los 10 Mejores Lugares para Vivir en Panamá para Expatriados (Ranking 2026)',
+      zh: '2026年巴拿马10大最适合外籍人士居住的地方'
+    },
+    excerpt: {
+      en: 'From the skyscrapers of Panama City to the mountains of Boquete, we rank the best expat communities based on cost of living, safety, and amenities.',
+      es: 'Desde los rascacielos de la ciudad hasta las montañas de Boquete, clasificamos las mejores comunidades de expatriados.',
+      zh: '从巴拿马城的摩天大楼到博克特的山脉，我们根据生活成本、安全性和设施对最佳外籍人士社区进行了排名。'
+    },
+    content: {
+      en: `Choosing where to <strong>relocate to panama</strong> depends on your lifestyle priorities. Here is our 2026 definitive ranking:
+
+      **1. Boquete (The Mountain King)**
+      Best for: Retirees and nature lovers. 
+      Pros: Eternal spring climate, established expat social scene.
+      Cons: Can feel small after a few years.
+
+      **2. Coronado (The Beach Hub)**
+      Best for: Families and weekenders.
+      Pros: <strong>Coronado panama real estate</strong> is high-liquidity, best infrastructure outside the city.
+
+      **3. Costa del Este (The Urban Oasis)**
+      Best for: Multinational executives and families.
+      Pros: Walkable, ultra-modern, home to <strong>bioma costa del este</strong>.
+
+      **4. Pedasí (The Ocean Soul)**
+      Best for: Surfers, fishers, and those seeking "Old Panama" charm.`,
+      es: 'Elegir dónde **mudarse a panamá** depende de sus prioridades de estilo de vida...'
+    },
+    date: 'March 5, 2026',
+    image: 'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=800&q=80',
+    category: 'Relocation'
   }
 ];
 
@@ -2005,7 +2075,25 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     publishDate: "2025-12-31",
     topics: ["Insurance", "Health", "Real Estate"],
     host: "Austin Hess",
-    guest: "Nicole Mitsarachi, David Aguirre"
+    guest: "Nicole Mitsarachi, David Aguirre",
+    takeaways: {
+      en: [
+        "Current trends in the Panama real estate market for 2026.",
+        "How to choose the right health and property insurance for expats.",
+        "The importance of title due diligence in Panama.",
+        "Investment hotspots: why the Pacific Riviera is booming."
+      ],
+      es: [
+        "Tendencias actuales del mercado inmobiliario en Panamá para 2026.",
+        "Cómo elegir el seguro médico y de propiedad adecuado para expatriados.",
+        "La importancia de la debida diligencia de títulos en Panamá.",
+        "Puntos calientes de inversión: por qué la Riviera Pacífica está en auge."
+      ]
+    },
+    transcript: {
+      en: "In this episode, Austin Hess sits down with David Aguirre to discuss the state of the Panamanian real estate market. They cover the Qualified Investor Visa, the growth of branded residences, and why insurance is a critical component of any property purchase...",
+      es: "En este episodio, Austin Hess conversa con David Aguirre sobre el estado del mercado inmobiliario panameño..."
+    }
   },
   {
     id: 'ep-6',
@@ -2113,6 +2201,24 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
     publishDate: "2025-09-30",
     topics: ["Panama Living", "Relocation", "Culture"],
     host: "Austin Hess",
-    guest: "Austin Hess"
+    guest: "Austin Hess",
+    takeaways: {
+      en: [
+        "The story behind the ExpatRockstars movement.",
+        "What to expect when moving to Panama in 2026.",
+        "How the Pana'Gringo podcast bridges the gap between locals and expats.",
+        "The core pillars of a successful relocation strategy."
+      ],
+      es: [
+        "La historia detrás del movimiento ExpatRockstars.",
+        "Qué esperar al mudarse a Panamá en 2026.",
+        "Cómo el podcast Pana'Gringo une a locales y expatriados.",
+        "Los pilares fundamentales de una estrategia de reubicación exitosa."
+      ]
+    },
+    transcript: {
+      en: "Welcome to the first episode of the Pana'Gringo podcast! I'm your host Austin Hess, and today we're laying out the roadmap for everything we're going to cover in this series. We're talking about the real Panama, beyond the brochures...",
+      es: "¡Bienvenidos al primer episodio del podcast Pana'Gringo! Soy su anfitrión Austin Hess..."
+    }
   }
 ];

@@ -76,6 +76,8 @@ export interface PodcastEpisode {
   topics: string[];
   host: string;
   guest?: string;
+  takeaways?: Record<string, string[]>;
+  transcript?: Record<string, string>;
 }
 
 export interface QuizSubmission {
