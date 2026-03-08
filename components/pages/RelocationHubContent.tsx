@@ -159,7 +159,14 @@ const RelocationHubContent: React.FC = () => {
                                     </Link>
                                 </li>
                                 <li className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-gray-300">
-                                    <ArrowRight size={14} className="text-brand-GOLD" /> Best Neighborhood Quiz
+                                    <Link href={`/${lang}/blog/cost-of-living-panama-vs-us`} className="hover:text-brand-GOLD transition-colors">
+                                        <ArrowRight size={14} className="text-brand-GOLD" /> Panama vs US Financials
+                                    </Link>
+                                </li>
+                                <li className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-gray-300">
+                                    <Link href={`/${lang}/proyectos`} className="hover:text-brand-GOLD transition-colors">
+                                        <ArrowRight size={14} className="text-brand-GOLD" /> View Live Inventory
+                                    </Link>
                                 </li>
                             </ul>
                             <Link href={`/${lang}/relocation/guides`} className="inline-flex items-center gap-3 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] group-hover:gap-5 transition-all">

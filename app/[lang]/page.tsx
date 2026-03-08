@@ -80,9 +80,9 @@ export default function Home() {
 
             <div style={{ transform: 'translateZ(60px)' }}>
               <h1 className="font-heading text-5xl md:text-8xl font-black text-white mb-8 leading-[0.9] tracking-tighter uppercase italic">
-                <SplitText text="REAL ESTATE" delay={0.2} className="block" />
+                <SplitText text="PANAMA" delay={0.2} className="block" />
                 <span className="text-brand-GOLD">
-                  <SplitText text="IN PANAMA" delay={0.8} />
+                  <SplitText text="REAL ESTATE" delay={0.8} />
                 </span>
               </h1>
               <p className="text-2xl md:text-3xl text-white/90 font-bold mb-4">
