@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Head from 'next/header';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, TrendingDown, DollarSign, Home, HeartPulse } from 'lucide-react';
 import OrganizationSchema from '@/components/seo/OrganizationSchema';

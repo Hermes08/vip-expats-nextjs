@@ -1,5 +1,4 @@
 import { Metadata } from 'next';
-import Head from 'next/head';
 import Link from 'next/link';
 import { ArrowRight, Building, MapPin, TrendingUp, ShieldCheck, DollarSign } from 'lucide-react';
 
