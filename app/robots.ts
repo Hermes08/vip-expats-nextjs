@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
                 disallow: ['/admin/', '/api/'],
             },
         ],
-        sitemap: 'https://panamarealestatesale.com/sitemap.xml',
+        sitemap: 'https://www.panamarealestatesale.com/sitemap.xml',
     };
 }
