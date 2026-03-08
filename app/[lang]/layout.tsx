@@ -25,12 +25,12 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
   const titles = {
     es: "Bienes Raíces en Panamá | Propiedades de Lujo & Inversión | panamarealestatesale",
-    en: "Real Estate in Panama | Luxury Property & Investment | panamarealestatesale"
+    en: "Panama Real Estate for Sale | Luxury Properties"
   };
 
   const descriptions = {
     es: "Encuentre bienes raíces en Panamá: condominios de lujo, casas de playa y oportunidades de inversión. Guía experta para expatriados e inversionistas.",
-    en: "Find real estate in Panama: luxury beachfront condos, homes and investment properties. Expert guidance for expats and investors buying property in Panama."
+    en: "Discover luxury Panama Real Estate for sale. Explore beachfront condos & investments. Contact us today to secure your dream home in Panama!"
   };
 
   const domain = "https://panamarealestatesale.com"; // User should update this if different
