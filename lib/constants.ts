@@ -1823,6 +1823,28 @@ export const CONTENT: ContentDictionary = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: 'blog-cost-of-living',
+    slug: 'cost-of-living-panama-vs-us',
+    title: {
+      en: 'Cost of Living: Panama vs. The United States (2026)',
+      es: 'Costo de Vida: Panamá vs. Estados Unidos (2026)',
+      zh: '巴拿马与美国的生活成本比较 (2026)'
+    },
+    excerpt: {
+      en: 'A detailed breakdown of why the American middle class is upgrading to the Panamanian elite class. Compare real costs of housing, healthcare, and lifestyle.',
+      es: 'Un desglose detallado de por qué la clase media estadounidense se está actualizando a la clase élite panameña. Compare los costos reales de vivienda, atención médica y estilo de vida.',
+      zh: '详细分析为什么美国中产阶级正在升级为巴拿马精英阶层。比较住房、医疗保健和生活方式的实际成本。'
+    },
+    content: {
+      en: 'For decades, the American Dream required an American ZIP code. Today, the savvy investor knows that true financial freedom and a luxury lifestyle are found just a 2.5-hour flight south of Miami, in the Republic of Panama. See the full article for a detailed breakdown.',
+      es: 'Durante décadas, el sueño americano requirió un código postal estadounidense. Hoy en día, el inversor inteligente sabe que la verdadera libertad financiera y un estilo de vida de lujo se encuentran a solo 2.5 horas de vuelo al sur de Miami, en Panamá. Lea el artículo completo para un desglose detallado.',
+      zh: '几十年来，美国梦需要美国的邮政编码。今天，精明的投资者知道，真正的财务自由和奢华的生活方式只需从迈阿密向南飞行2.5小时，即可在巴拿马共和国实现。请参阅全文了解详细分析。'
+    },
+    date: 'March 8, 2026',
+    image: 'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
     id: 'blog-1',
     slug: 'boquete-real-estate-investment-guide-2025',
     projectId: 'pino-alto',
