@@ -18,6 +18,8 @@ const pages: SitemapPage[] = [
     { path: '/blog/cost-of-living-panama-vs-us', changeFrequency: 'monthly', priority: 0.7 },
     { path: '/blog/panama-golden-visa-2026', changeFrequency: 'monthly', priority: 0.8 },
     { path: '/blog/panama-real-estate-investments', changeFrequency: 'monthly', priority: 0.8 },
+    { path: '/blog/panama-investment-opportunities', changeFrequency: 'monthly', priority: 0.8 },
+    { path: '/blog/panama-real-estate-beachfront-retirement', changeFrequency: 'monthly', priority: 0.8 },
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
