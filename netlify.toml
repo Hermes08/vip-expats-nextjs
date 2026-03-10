@@ -3,6 +3,7 @@
   publish = ".next"
 
 [build.environment]
+  NEXT_USE_TURBOPACK = "0"
   NEXT_DISABLE_TURBOPACK = "1"
   NEXT_FORCE_WEBPACK = "1"
   NEXT_TURBOPACK = "false"
