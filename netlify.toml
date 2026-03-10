@@ -3,11 +3,6 @@
   publish = ".next"
 
 [build.environment]
-  TURBOPACK_DISABLE_DEPENDENCY_TRACKING = "0"
-  NEXT_USE_TURBOPACK = "0"
-  NEXT_DISABLE_TURBOPACK = "1"
-  NEXT_FORCE_WEBPACK = "1"
-  NEXT_TURBOPACK = "false"
   # Use Node.js 22 to match your local environment
   NODE_VERSION = "22"
   # Increase Node.js memory limit for build
