@@ -1,4 +1,4 @@
-import React from 'react';
+import Script from 'next/script';
 
 interface OrganizationSchemaProps {
     lang: 'es' | 'en';
@@ -41,8 +41,10 @@ export default function OrganizationSchema({ lang }: OrganizationSchemaProps) {
     };
 
     return (
-        <script
+        <Script
+            id="organization-schema"
             type="application/ld+json"
+            strategy="afterInteractive"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
     );

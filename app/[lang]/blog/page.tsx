@@ -7,6 +7,7 @@ export const metadata: Metadata = {
     description: 'Read our latest insights on Panama real estate, investment trends, and how to live with style as an expat.',
 };
 
-export default function Page() {
-    return <BlogPageContent />;
+export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
+    return <BlogPageContent lang={lang as 'en' | 'es'} />;
 }

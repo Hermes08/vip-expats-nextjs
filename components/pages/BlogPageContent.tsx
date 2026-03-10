@@ -9,8 +9,9 @@ import { ArrowRight } from 'lucide-react';
 import SplitText from '@/components/ui/SplitText';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 
-const BlogPageContent: React.FC = () => {
-    const { lang } = useLanguage();
+const BlogPageContent: React.FC<{ lang?: 'en' | 'es' }> = ({ lang: propLang }) => {
+    const { lang: contextLang } = useLanguage();
+    const lang = propLang || contextLang || 'en';
     const t = CONTENT[lang] || CONTENT['en'];
     const { blogPosts } = useCMS();
 

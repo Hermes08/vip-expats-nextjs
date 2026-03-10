@@ -45,7 +45,9 @@ const investmentTiers = [
   },
 ];
 
-export default function PanamaGoldenVisa2026() {
+export default async function PanamaGoldenVisa2026({ params }: { params: Promise<{ lang: string }> }) {
+  const resolvedParams = await params;
+  const lang = resolvedParams.lang || 'en';
   return (
     <div className="pt-24 min-h-screen bg-white text-slate-900">
       {/* Hero */}

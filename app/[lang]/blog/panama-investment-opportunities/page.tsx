@@ -32,8 +32,9 @@ const investmentHighlights = [
     },
 ];
 
-export default function PanamaInvestmentOpportunities({ params }: { params: { lang: string } }) {
-    const lang = params.lang || 'en';
+export default async function PanamaInvestmentOpportunities({ params }: { params: Promise<{ lang: string }> }) {
+    const resolvedParams = await params;
+    const lang = resolvedParams.lang || 'en';
 
     return (
         <div className="pt-24 min-h-screen bg-white text-slate-900">
