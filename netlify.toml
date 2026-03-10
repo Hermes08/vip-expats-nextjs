@@ -1,8 +1,9 @@
 [build]
-  command = "NEXT_DISABLE_TURBOPACK=1 npm run build"
+  command = "npm run build"
   publish = ".next"
 
 [build.environment]
+  NEXT_TURBOPACK = "0"
   # Use Node.js 22 to match your local environment
   NODE_VERSION = "22"
   # Increase Node.js memory limit for build
