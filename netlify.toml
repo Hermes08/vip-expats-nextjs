@@ -3,6 +3,7 @@
   publish = ".next"
 
 [build.environment]
+  NEXT_SKIP_TURBOPACK = "1"
   # Use Node.js 22 to match your local environment
   NODE_VERSION = "22"
   # Increase Node.js memory limit for build
