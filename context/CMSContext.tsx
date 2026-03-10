@@ -43,7 +43,7 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         if (!isSupabaseConfigured) {
             console.warn("Supabase not configured. Using in-memory/local data.");
             if (typeof window !== 'undefined') {
-                const localLeads = localStorage.getItem('pres_leads');
+                const localLeads = window.localStorage.getItem('pres_leads');
                 if (localLeads) {
                     try {
                         setQuizSubmissions(JSON.parse(localLeads));
@@ -96,16 +96,20 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
     // Initial load and auth check
     useEffect(() => {
-        refreshData();
-        const auth = localStorage.getItem('cms_auth');
-        if (auth === 'true') setIsAuthenticated(true);
+        if (typeof window !== 'undefined') {
+            refreshData();
+            const auth = window.localStorage.getItem('cms_auth');
+            if (auth === 'true') setIsAuthenticated(true);
+        }
     }, []);
 
     const saveQuizSubmission = async (submission: QuizSubmission) => {
         if (!isSupabaseConfigured) {
             const updated = [submission, ...quizSubmissions];
             setQuizSubmissions(updated);
-            localStorage.setItem('pres_leads', JSON.stringify(updated));
+            if (typeof window !== 'undefined') {
+                window.localStorage.setItem('pres_leads', JSON.stringify(updated));
+            }
             return;
         }
         await supabase.from('quiz_submissions').insert([submission]);
@@ -116,7 +120,9 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         if (!isSupabaseConfigured) {
             const updated = quizSubmissions.filter(s => s.id !== id);
             setQuizSubmissions(updated);
-            localStorage.setItem('pres_leads', JSON.stringify(updated));
+            if (typeof window !== 'undefined') {
+                window.localStorage.setItem('pres_leads', JSON.stringify(updated));
+            }
             return;
         }
         await supabase.from('quiz_submissions').delete().eq('id', id);
@@ -235,7 +241,9 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     const login = (password: string) => {
         if (password === '1234') {
             setIsAuthenticated(true);
-            localStorage.setItem('cms_auth', 'true');
+            if (typeof window !== 'undefined') {
+                window.localStorage.setItem('cms_auth', 'true');
+            }
         } else {
             alert('PIN Incorrecto');
         }
@@ -243,7 +251,9 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
 
     const logout = () => {
         setIsAuthenticated(false);
-        localStorage.removeItem('cms_auth');
+        if (typeof window !== 'undefined') {
+            window.localStorage.removeItem('cms_auth');
+        }
     };
 
     return (
