@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { PROJECTS } from '@/lib/constants';
-import { CheckCircle, TrendingUp, ShieldCheck, Globe, MapPin, DollarSign, Home, Building } from 'lucide-react';
+import { CheckCircle, TrendingUp, ShieldCheck, Globe, MapPin, DollarSign, Home, Building, ArrowRight } from 'lucide-react';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
