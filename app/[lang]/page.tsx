@@ -82,11 +82,11 @@ export default function Home() {
               <h1 className="font-heading text-5xl md:text-8xl font-black text-white mb-8 leading-[0.9] tracking-tighter uppercase italic">
                 <SplitText text="PANAMA" delay={0.2} className="block" />
                 <span className="text-brand-GOLD">
-                  <SplitText text="REAL ESTATE" delay={0.8} />
+                  <SplitText text="INVESTMENTS" delay={0.8} />
                 </span>
               </h1>
-              <p className="text-2xl md:text-3xl text-white/90 font-bold mb-4">
-                Luxury Properties & Investment Opportunities
+              <p className="text-2xl md:text-3xl text-white/90 font-bold mb-4 uppercase tracking-tighter">
+                Luxury Beachfront & City Real Estate 2026
               </p>
             </div>
 
