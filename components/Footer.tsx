@@ -32,6 +32,7 @@ const Footer: React.FC = () => {
                             <li><Link href={`/${lang}/quiz`} className="hover:text-white transition-colors flex items-center gap-2 group text-brand-GOLD"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Neighborhood Quiz</Link></li>
                             <li><Link href={`/${lang}/relocation/tours`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Relocation Tours</Link></li>
                             <li><Link href={`/${lang}/blog`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Market Intelligence</Link></li>
+                            <li><Link href={`/${lang}/api-docs`} className="hover:text-white transition-colors flex items-center gap-2 group text-brand-GOLD"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> API Interaction</Link></li>
                         </ul>
                     </div>
                     <div>
