@@ -1823,6 +1823,25 @@ export const CONTENT: ContentDictionary = {
 
 export const BLOG_POSTS: BlogPost[] = [
   {
+    id: 'blog-investment-lifestyle-retirement-2026',
+    slug: 'panama-real-estate-investment-lifestyle-2026',
+    title: {
+      en: 'Panama Real Estate 2026: Investment, Lifestyle & Retirement Guide',
+      es: 'Bienes Raíces en Panamá 2026: Guía de Inversión, Estilo de Vida y Jubilación'
+    },
+    excerpt: {
+      en: 'The definitive 2026 guide to Panama real estate. Explore high-yield investment opportunities and the luxury expat lifestyle.',
+      es: 'La guía definitiva 2026 de bienes raíces en Panamá. Explore oportunidades de inversión de alto rendimiento y el estilo de vida de lujo.'
+    },
+    content: {
+      en: 'In an era of global volatility, Panama stands as a fortress of stability. Discover why 2026 is the year to secure your future in the tropics.',
+      es: 'En una era de volatilidad global, Panamá se erige como una fortaleza de estabilidad. Descubra por qué 2026 es el año para asegurar su futuro.'
+    },
+    date: 'March 15, 2026',
+    image: 'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=800&q=80',
+    category: 'Lifestyle'
+  },
+  {
     id: 'blog-investment-opportunities-2026',
     slug: 'panama-investment-opportunities',
     title: {

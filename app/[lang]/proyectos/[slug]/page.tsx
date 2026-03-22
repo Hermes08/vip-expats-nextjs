@@ -8,9 +8,9 @@ type Props = {
 }
 
 export async function generateMetadata(
-    { params }: Props
+    { params }: { params: Promise<{ slug: string; lang: string }> }
 ): Promise<Metadata> {
-    const { slug } = await params;
+    const { slug, lang } = await params;
     const project = PROJECTS.find(p => p.slug === slug);
 
     if (!project) {
@@ -20,9 +20,11 @@ export async function generateMetadata(
         };
     }
 
+    const currentLang = (lang === 'es' || lang === 'en') ? lang : 'en';
+
     return {
-        title: project.h1Title.en,
-        description: project.description.en,
+        title: project.h1Title[currentLang] || project.h1Title.en,
+        description: project.description[currentLang] || project.description.en,
     };
 }
 
