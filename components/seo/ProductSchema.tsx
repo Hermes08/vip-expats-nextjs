@@ -13,7 +13,7 @@ export default function ProductSchema({ project, lang }: ProductSchemaProps) {
         "name": project.name[lang],
         "description": project.description[lang],
         "image": project.images,
-        "datePosted": "2025-01-01",
+        "datePosted": "2026-01-01",
         "offers": {
             "@type": "Offer",
             "priceCurrency": "USD",

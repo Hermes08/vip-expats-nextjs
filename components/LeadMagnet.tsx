@@ -58,7 +58,7 @@ const LeadMagnet: React.FC<LeadMagnetProps> = ({ variant = 'full' }) => {
                                 {t.socialProof}
                             </p>
                             <h3 className="text-4xl md:text-6xl font-heading font-black text-white mb-16 leading-[0.9] tracking-tighter uppercase italic">
-                                THE PANAMA <br /> INVESTMENT <br /> <span className="text-brand-GOLD">BIBLE 2025.</span>
+                                THE PANAMA <br /> INVESTMENT <br /> <span className="text-brand-GOLD">BIBLE 2026.</span>
                             </h3>
 
                             {/* Book Experience */}
