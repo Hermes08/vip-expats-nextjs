@@ -126,7 +126,7 @@ export default async function RootLayout({
         </Script>
       </head>
       <body
-        className={`${inter.variable} ${montserrat.variable} antialiased overflow-x-hidden selection:bg-brand-GOLD selection:text-brand-900 bg-brand-950`}
+        className={`${inter.variable} ${montserrat.variable} ${manrope.variable} antialiased overflow-x-hidden selection:bg-brand-GOLD selection:text-brand-900 bg-brand-950`}
       >
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 z-[100] px-6 py-3 bg-brand-GOLD text-brand-950 font-bold rounded-lg shadow-xl ring-2 ring-white">
           Skip to content
