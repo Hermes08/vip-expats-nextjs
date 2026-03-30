@@ -1,16 +1,16 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { PROJECTS } from '@/lib/constants';
-import { CheckCircle, TrendingUp, ShieldCheck, Globe, MapPin, DollarSign, Home, Building } from 'lucide-react';
+import { CheckCircle, TrendingUp, ShieldCheck, Globe, MapPin, DollarSign, Home, Building, ArrowRight } from 'lucide-react';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
-  
+
   const titles = {
     en: "Panama Real Estate | Buy Property in Panama | Houses, Condos & Land",
     es: "Bienes Raíces en Panamá | Comprar Propiedades | Casas, Apartamentos y Terrenos"
   };
-  
+
   const descriptions = {
     en: "Complete guide to Panama real estate. Find beachfront condos, luxury homes, investment properties, and land for sale in Panama. Expert advice for expats and investors.",
     es: "Guía completa de bienes raíces en Panamá. Encuentra condominios frente al mar, casas de lujo, propiedades de inversión y terrenos en venta. Asesoría experta para expatriados e inversionistas."
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
 export default async function PanamaRealEstatePage({ params }: { params: Promise<{ lang: string }> }) {
   const { lang } = await params;
-  
+
   const content = {
     en: {
       h1: "Panama Real Estate",
@@ -157,15 +157,15 @@ export default async function PanamaRealEstatePage({ params }: { params: Promise
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {PROJECTS.slice(0, 6).map((project) => (
-              <Link 
-                key={project.id} 
+              <Link
+                key={project.id}
                 href={`/${lang}/proyectos/${project.slug}`}
                 className="glass-card rounded-2xl overflow-hidden border border-white/5 hover:border-brand-GOLD/50 transition-all group"
               >
                 <div className="aspect-video bg-brand-900 relative overflow-hidden">
                   {project.image && (
-                    <img 
-                      src={project.image} 
+                    <img
+                      src={project.image}
                       alt={project.name[lang as 'en' | 'es'] || project.name.en}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
@@ -187,11 +187,53 @@ export default async function PanamaRealEstatePage({ params }: { params: Promise
             ))}
           </div>
           <div className="text-center">
-            <Link 
+            <Link
               href={`/${lang}/proyectos`}
               className="inline-block px-10 py-5 bg-brand-GOLD text-brand-950 font-black uppercase tracking-wider rounded-full hover:bg-white transition-colors"
             >
               {t.exploreButton}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Latest Investment & Lifestyle Guides */}
+      <section className="py-20 px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-heading font-black text-white mb-16 text-center uppercase tracking-tighter">
+            Investment & Lifestyle Guides
+          </h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <Link
+              href={`/${lang}/blog/panama-investment-opportunities`}
+              className="glass-card p-10 rounded-[2rem] border border-white/5 hover:border-brand-GOLD/50 transition-all group block"
+            >
+              <TrendingUp className="text-brand-GOLD mb-6 group-hover:scale-110 transition-transform" size={40} />
+              <h3 className="text-2xl font-black text-white mb-4 uppercase italic tracking-tighter">
+                2026 Investment Opportunities
+              </h3>
+              <p className="text-slate-400 leading-relaxed mb-6">
+                Why sophisticated investors are choosing Panama's stable, dollarized market for high-yield property assets.
+              </p>
+              <span className="text-brand-GOLD font-bold flex items-center gap-2">
+                Read Guide <ArrowRight size={16} />
+              </span>
+            </Link>
+
+            <Link
+              href={`/${lang}/blog/panama-real-estate-beachfront-retirement`}
+              className="glass-card p-10 rounded-[2rem] border border-white/5 hover:border-brand-GOLD/50 transition-all group block"
+            >
+              <Home className="text-brand-GOLD mb-6 group-hover:scale-110 transition-transform" size={40} />
+              <h3 className="text-2xl font-black text-white mb-4 uppercase italic tracking-tighter">
+                Beachfront & Retirement Guide
+              </h3>
+              <p className="text-slate-400 leading-relaxed mb-6">
+                Discover the ultimate lifestyle benefits of retiring or living beachfront in Panama's most exclusive communities.
+              </p>
+              <span className="text-brand-GOLD font-bold flex items-center gap-2">
+                Explore Lifestyle <ArrowRight size={16} />
+              </span>
             </Link>
           </div>
         </div>
@@ -203,7 +245,7 @@ export default async function PanamaRealEstatePage({ params }: { params: Promise
           <h2 className="text-4xl md:text-6xl font-heading font-black text-white mb-10 uppercase tracking-tighter">
             {t.ctaTitle}
           </h2>
-          <Link 
+          <Link
             href={`/${lang}/contacto`}
             className="inline-block px-12 py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest rounded-full hover:bg-white transition-colors text-lg"
           >

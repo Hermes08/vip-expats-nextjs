@@ -1,21 +1,29 @@
-import React from 'react';
-import { BlogPost } from '@/lib/types';
-
 interface BlogPostSchemaProps {
-    post: BlogPost;
+    post?: BlogPost;
+    title?: string;
+    description?: string;
+    image?: string;
+    publishDate?: string;
+    authorName?: string;
     lang: 'es' | 'en';
 }
 
-export default function BlogPostSchema({ post, lang }: BlogPostSchemaProps) {
+export default function BlogPostSchema({ post, title, description, image, publishDate, authorName, lang }: BlogPostSchemaProps) {
+    const finalTitle = post ? post.title[lang] : title;
+    const finalDescription = post ? post.excerpt[lang] : description;
+    const finalImage = post ? post.image : image;
+    const finalDate = post ? post.date : publishDate;
+    const finalAuthor = authorName || "Panama Real Estate Sale";
+
     const schema = {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
-        "headline": post.title[lang],
-        "description": post.excerpt[lang],
-        "image": post.image,
+        "headline": finalTitle,
+        "description": finalDescription,
+        "image": finalImage,
         "author": {
             "@type": "Organization",
-            "name": "Panama Real Estate Sale",
+            "name": finalAuthor,
             "url": "https://panamarealestatesale.com"
         },
         "publisher": {
@@ -26,11 +34,11 @@ export default function BlogPostSchema({ post, lang }: BlogPostSchemaProps) {
                 "url": "https://panamarealestatesale.com/logo.png"
             }
         },
-        "datePublished": post.date,
-        "dateModified": post.date,
+        "datePublished": finalDate,
+        "dateModified": finalDate,
         "mainEntityOfPage": {
             "@type": "WebPage",
-            "@id": `https://panamarealestatesale.com/${lang}/blog/${post.slug}`
+            "@id": post ? `https://panamarealestatesale.com/${lang}/blog/${post.slug}` : `https://panamarealestatesale.com/${lang}/blog`
         },
         "articleSection": "Real Estate",
         "inLanguage": lang === 'es' ? 'es-PA' : 'en-US'

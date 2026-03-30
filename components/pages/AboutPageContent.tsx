@@ -106,7 +106,7 @@ const AboutPageContent: React.FC = () => {
             {/* STRATEGY & ROI: THE BUYING GUIDE (WORD COUNT BOOST) */}
             <section className="py-24 max-w-5xl mx-auto px-4">
                 <div className="prose prose-lg text-brand-600 max-w-none">
-                    <h2 className="text-brand-900 font-heading font-bold text-3xl md:text-5xl mb-10 text-center italic">Your 2025 Panama Property Buying Guide</h2>
+                    <h2 className="text-brand-900 font-heading font-bold text-3xl md:text-5xl mb-10 text-center italic">Your 2026 Panama Property Buying Guide</h2>
                     <p className="mb-10 text-xl font-bold text-brand-900 border-l-8 border-brand-GOLD pl-10 leading-relaxed">
                         The <strong>panama real estate market</strong> is currently in a &quot;sweet spot&quot; for international buyers. With the global search for <strong>panama sun and beach living</strong> reaching an all-time high, the <strong>panama beachfront investment</strong> sector is seeing unprecedented growth.
                     </p>

@@ -24,13 +24,13 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const { lang } = await params;
 
   const titles = {
-    es: "Bienes Raíces en Panamá | Propiedades de Lujo & Inversión | panamarealestatesale",
-    en: "Real Estate in Panama | Luxury Property & Investment | panamarealestatesale"
+    es: "Bienes Raíces en Panamá 2026 | Propiedades de Lujo e Inversión VIP",
+    en: "Panama Real Estate for Sale 2026 | Luxury Beachfront & City Investment"
   };
 
   const descriptions = {
-    es: "Encuentre bienes raíces en Panamá: condominios de lujo, casas de playa y oportunidades de inversión. Guía experta para expatriados e inversionistas.",
-    en: "Find real estate in Panama: luxury beachfront condos, homes and investment properties. Expert guidance for expats and investors buying property in Panama."
+    es: "Descubra las mejores propiedades en Panamá para 2026. Lujo frente al mar, inversiones de alto rendimiento y asesoría experta para su próximo activo inmobiliario.",
+    en: "Explore the best Panama real estate for sale in 2026. From luxury beachfront condos to high-yield city investments, secure your dream home or ROI asset with us."
   };
 
   const domain = "https://panamarealestatesale.com"; // User should update this if different
@@ -99,23 +99,26 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: Promise<{ lang: string }>;
 }) {
-  const { lang } = await params;
+  const resolvedParams = await params;
+  const lang = resolvedParams?.lang || 'es';
 
   return (
     <html lang={lang} suppressHydrationWarning>
-      {/* Google Analytics */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-90BHGEJ5KD"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-90BHGEJ5KD');
-          `}
-      </Script>
+      <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-90BHGEJ5KD"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-90BHGEJ5KD');
+            `}
+        </Script>
+      </head>
       <body
         className={`${inter.variable} ${montserrat.variable} antialiased overflow-x-hidden selection:bg-brand-GOLD selection:text-brand-900 bg-brand-950`}
       >

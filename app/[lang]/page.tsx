@@ -75,18 +75,18 @@ export default function Home() {
           <HeroTilt intensity={5} className="max-w-4xl mx-auto text-center">
             <div className="inline-flex items-center gap-3 px-4 py-2 glass-card rounded-full mb-8 animate-in fade-in slide-in-from-top-4 duration-1000" style={{ transform: 'translateZ(40px)' }}>
               <div className="w-2 h-2 bg-brand-GOLD rounded-full animate-ping"></div>
-              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white">Market Intelligence 2025</span>
+              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white">Market Intelligence 2026</span>
             </div>
 
             <div style={{ transform: 'translateZ(60px)' }}>
-              <h1 className="font-heading text-5xl md:text-8xl font-black text-white mb-8 leading-[0.9] tracking-tighter uppercase italic">
-                <SplitText text="REAL ESTATE" delay={0.2} className="block" />
+              <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl font-black text-white mb-8 leading-[0.9] tracking-tighter uppercase italic">
+                <SplitText text={lang === 'es' ? "Bienes Raíces" : "Panama Real Estate"} delay={0.2} className="block" />
                 <span className="text-brand-GOLD">
-                  <SplitText text="IN PANAMA" delay={0.8} />
+                  <SplitText text={lang === 'es' ? "en Venta 2026" : "for Sale 2026"} delay={0.8} />
                 </span>
               </h1>
-              <p className="text-2xl md:text-3xl text-white/90 font-bold mb-4">
-                Luxury Properties & Investment Opportunities
+              <p className="text-2xl md:text-3xl text-white/90 font-bold mb-4 uppercase tracking-tighter">
+                Luxury Beachfront & City Real Estate 2026
               </p>
             </div>
 
@@ -203,7 +203,7 @@ export default function Home() {
                 <li className="flex items-start gap-6 reveal-on-scroll stagger-1">
                   <div className="bg-brand-GOLD text-brand-900 p-2.5 rounded-xl shadow-lg"><CheckCircle size={24} /></div>
                   <div>
-                    <p className="text-xl font-black text-white mb-2 uppercase italic tracking-tighter">Tax Exemption 2025</p>
+                    <p className="text-xl font-black text-white mb-2 uppercase italic tracking-tighter">Tax Exemption 2026</p>
                     <p className="text-sm text-slate-500 font-medium">New <strong>Panama beachfront condos</strong> qualify for long-term fiscal incentives.</p>
                   </div>
                 </li>

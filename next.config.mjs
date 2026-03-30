@@ -1,6 +1,5 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   images: {
     remotePatterns: [
       {
@@ -13,8 +12,6 @@ const nextConfig: NextConfig = {
       }
     ],
   },
-  // Skip TypeScript checking during build - it's already done during compilation
-  // This prevents timeout issues on Netlify
   typescript: {
     ignoreBuildErrors: true,
   },

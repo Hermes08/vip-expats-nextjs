@@ -3,10 +3,11 @@ import type { Metadata } from 'next';
 import BlogPageContent from '@/components/pages/BlogPageContent';
 
 export const metadata: Metadata = {
-    title: 'Blog | Panama Real Estate Sale',
-    description: 'Read our latest insights on Panama real estate, investment trends, and how to live with style as an expat.',
+    title: 'Panama Real Estate Blog | 2026 Investment & Expat Insights',
+    description: 'Get the latest 2026 insights on Panama real estate, luxury investment trends, and expert relocation advice for expats and retirees.',
 };
 
-export default function Page() {
-    return <BlogPageContent />;
+export default async function Page({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
+    return <BlogPageContent lang={lang as 'en' | 'es'} />;
 }

@@ -39,7 +39,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                     videoUrl={project.videoUrl}
                     name={project.name[lang] || project.name['en']}
                     description={project.description[lang] || project.description['en']}
-                    uploadDate="2025-01-01"
+                    uploadDate="2026-01-01"
                     thumbnailUrl={project.images[0]}
                 />
             )}
