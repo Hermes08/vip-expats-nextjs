@@ -60,13 +60,15 @@ export default function Home() {
       <LocalBusinessSchema />
       <FAQSchema
         questions={lang === 'es' ? [
-          { question: "¿Es seguro vivir en Panamá en 2026?", answer: "Panamá sigue siendo uno de los países más seguros de América Latina para expatriados, con una comunidad internacional creciente y estabilidad política." },
-          { question: "¿Cuál es el costo de vida en Panamá?", answer: "El costo de vida varía, pero una pareja puede vivir cómodamente con un presupuesto desde $2,500 en la ciudad o menos en áreas rurales, disfrutando de infraestructura de primer nivel." },
-          { question: "¿Cómo puedo obtener la residencia en Panamá?", answer: "Existen múltiples opciones como la Visa de Naciones Amigas, Jubilado o Inversionista Calificado, cada una con requisitos específicos de inversión." }
+          { question: "¿Pueden los extranjeros comprar propiedades en Panamá?", answer: "Sí. Los extranjeros tienen los mismos derechos que los ciudadanos panameños cuando se trata de la propiedad de bienes raíces. Puede titular a su nombre personal o a través de una corporación/fundación panameña." },
+          { question: "¿Qué es la Visa de Pensionado de Panamá?", answer: "Es uno de los programas de jubilación más populares del mundo. Proporciona residencia permanente a cualquier persona con una pensión vitalicia de $1,000 o más al mes, con beneficios como 25% de descuento en servicios públicos y 50% en cine." },
+          { question: "¿Hay impuestos sobre la propiedad en Panamá?", answer: "Sí, pero son bajos. Muchos nuevos desarrollos califican para exenciones de impuestos de construcción por varios años. La residencia principal también disfruta de una exención significativa sobre los primeros $120,000 del valor registrado." },
+          { question: "¿Es seguro invertir en bienes raíces en Panamá?", answer: "Sí, siempre que realice una debida diligencia adecuada. Panamá utiliza un sistema de Registro Público centralizado donde se registra cada título, proporcionando un alto nivel de seguridad." }
         ] : [
-          { question: "Is Panama safe to live in 2026?", answer: "Panama remains one of the safest countries in Latin America for expats, featuring a growing international community and political stability." },
-          { question: "What is the cost of living in Panama?", answer: "The cost of living varies, but a couple can live comfortably starting at $2,500 in the city or less in rural areas, enjoying world-class infrastructure." },
-          { question: "How can I get residency in Panama?", answer: "There are multiple options like the Friendly Nations, Pensionado, or Qualified Investor Visa, each with specific investment requirements." }
+          { question: "Can foreigners buy property in Panama?", answer: "Yes. Foreigners have the same rights as Panamanian citizens when it comes to property ownership. You can hold title in your personal name or through a Panamanian corporation or foundation." },
+          { question: "What is the Panama Pensionado Visa?", answer: "It is one of the world's most popular retirement programs. It provides permanent residency to anyone with a lifetime pension of $1,000 or more per month, with benefits like 25% off utility bills and 50% off movie tickets." },
+          { question: "Are there property taxes in Panama?", answer: "Yes, but they are relatively low. Many new developments qualify for property tax exemptions on the construction value for several years. Primary residences also enjoy significant exemptions on the first $120,000." },
+          { question: "Is it safe to invest in Panama real estate?", answer: "Yes, provided you conduct proper due diligence. Panama uses a centralized Public Registry system where every title is recorded, providing a high level of security for investors." }
         ]}
       />
       {/* HERO EXPERIENCE */}
