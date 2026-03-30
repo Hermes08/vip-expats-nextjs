@@ -48,24 +48,25 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             </div>
 
             {/* Hero Section */}
-            <section className="py-24 bg-brand-950 text-white relative overflow-hidden rounded-b-[4rem]">
+            <section className="py-48 bg-brand-950 text-white relative overflow-hidden rounded-b-[5rem]">
                 <div className="absolute inset-0 opacity-20">
-                    <Image
+                    <img
                         src="https://images.unsplash.com/photo-1544644011-87b829283197?w=1600&q=80"
                         alt="Boquete highlands vs Coronado beach panama comparison"
-                        fill
-                        className="object-cover"
+                        className="w-full h-full object-cover"
                     />
                 </div>
-                <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
-                    <span className="inline-block px-5 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
-                        The Ultimate Showdown
+                <div className="absolute inset-0 bg-gradient-to-b from-brand-950/40 via-brand-950 to-brand-950" />
+                <div className="max-w-7xl mx-auto px-4 relative z-10">
+                    <span className="inline-block px-6 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-12">
+                        Strategic Comparison 2026
                     </span>
-                    <h1 className="text-5xl md:text-9xl font-heading font-black mb-8 uppercase tracking-tighter leading-[0.85]">
-                        Boquete <span className="text-brand-GOLD italic">VS</span> <br /> Coronado
+                    <h1 className="text-6xl md:text-9xl font-heading font-black mb-12 uppercase tracking-tighter leading-[0.8] italic">
+                        Boquete <br />
+                        <span className="text-brand-GOLD">VS Coronado</span>
                     </h1>
-                    <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-medium">
-                        Choosing between the <strong>Boquete Chiriquí</strong> highlands and the <strong>Coronado beach Panama</strong> lifestyle is the biggest decision for any expat. This 2,000-word guide breaks down the in-depth truth.
+                    <p className="text-xl md:text-2xl text-slate-400 max-w-2xl leading-relaxed font-medium italic border-l-4 border-brand-GOLD/20 pl-12">
+                        Choosing between the <strong>Boquete Chiriquí</strong> highlands and <strong>Coronado beach</strong> is the ultimate binary choice for any expat.
                     </p>
                 </div>
             </section>
@@ -346,13 +347,13 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                             <Zap size={14} /> Curriculum: US/Panama Hybrid
                         </div>
                     </div>
-                    <div className="p-16 bg-neutral-900 text-white rounded-[4rem] shadow-xl">
+                    <div className="p-16 bg-neutral-900 text-white rounded-[4rem] shadow-2xl border border-white/5">
                         <h4 className="text-2xl font-black uppercase tracking-tighter mb-8 italic text-brand-GOLD">Coronado Schools</h4>
-                        <p className="text-gray-400 leading-relaxed mb-8">
-                            Coronado has the prestigious <strong>Coronado International School</strong>. Because of the proximity to the city, families often find the resources for extracurriculars (surf team, golf academy) to be superior in the beach region.
+                        <p className="text-slate-400 leading-relaxed mb-8">
+                            Coronado features the prestigious <strong>Coronado International School</strong>. Proximity to the city guarantees superior resources for extracurriculars including competitive surf and golf academies.
                         </p>
-                        <div className="flex items-center gap-4 text-[10px] font-black uppercase tracking-widest text-brand-GOLD font-bold">
-                            <Zap size={14} /> Curriculum: International Baccalaureate
+                        <div className="flex items-center gap-4 text-[10px] font-black uppercase tracking-widest text-brand-GOLD">
+                            <Zap size={14} /> Curriculum: IB Standard
                         </div>
                     </div>
                 </div>
@@ -459,12 +460,12 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                     <p className="text-xl font-bold opacity-80 mb-16 max-w-2xl mx-auto">
                         Don't guess. Walk both paths. Our <strong>panama relocation tours</strong> cover both the mountains and the beach in every itinerary.
                     </p>
-                    <div className="flex flex-col md:flex-row gap-6 justify-center">
-                        <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl">
-                            Compare in Person
+                    <div className="flex flex-col md:flex-row gap-8 justify-center">
+                        <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-navy px-16 py-8 rounded-2xl font-black uppercase tracking-[0.3em] text-xs">
+                            COMPARE IN PERSON
                         </Link>
-                        <Link href={`/${lang}/relocation/guides`} className="px-16 py-8 bg-white border-2 border-brand-950 text-brand-950 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-950 hover:text-white transition-all">
-                            Back to Guides
+                        <Link href={`/${lang}/relocation/guides`} className="btn-3d bg-white text-brand-950 px-16 py-8 rounded-2xl font-black uppercase tracking-[0.3em] text-xs shadow-xl border border-brand-950/10 hover:bg-brand-950 hover:text-white transition-all">
+                            BACK TO GUIDES
                         </Link>
                     </div>
                 </div>

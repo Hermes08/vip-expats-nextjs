@@ -23,37 +23,35 @@ const RelocationHubContent: React.FC = () => {
             </div>
 
             {/* Premium Hero Section */}
-            <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
+            <section className="relative min-h-screen flex items-center overflow-hidden border-b border-white/5">
                 <div className="absolute inset-0 z-0">
-                    <Image
+                    <img
                         src="https://images.unsplash.com/photo-1544644011-87b829283197?w=1600&q=80"
                         alt="Aerial view of Panama City skyline, a primary destination for panama relocation tours"
-                        fill
-                        className="w-full h-full object-cover opacity-30 scale-110 animate-[pulse_10s_ease-in-out_infinite]"
-                        priority
+                        className="w-full h-full object-cover opacity-20 scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-brand-950/80 via-transparent to-brand-950"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/80 to-transparent"></div>
                 </div>
 
-                <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
-                    <div className="flex justify-center mb-8">
-                        <span className="px-5 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full backdrop-blur-md">
-                            Your Panama Life Starts Here
+                <div className="relative z-10 max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-20 items-center">
+                    <div>
+                        <span className="inline-block px-6 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full backdrop-blur-md mb-12">
+                            The Expat Gateway 2026
                         </span>
-                    </div>
-                    <h1 className="font-heading text-6xl md:text-9xl font-black mb-8 leading-tight tracking-tighter">
-                        PANAMA <br /> <span className="text-brand-GOLD">REAL ESTATE</span> SALE
-                    </h1>
-                    <p className="text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto leading-relaxed font-medium mb-12">
-                        Don't just move to Panama. <strong>Relocate with strategy.</strong> Explore our <strong>panama relocation tours</strong>, master the <strong>pensionado visa panama</strong>, and find your <strong>panama dream home</strong> with the world's #1 expat team.
-                    </p>
-                    <div className="flex flex-wrap justify-center gap-6">
-                        <Link href={`/${lang}/relocation/tours`} className="px-12 py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-[0.2em] text-[10px] rounded-2xl shadow-2xl hover:bg-white transition-all transform hover:-translate-y-1">
-                            Book Discovery Tour
-                        </Link>
-                        <Link href={`/${lang}/relocation/visas`} className="px-12 py-6 bg-white/5 border border-white/10 text-white font-black uppercase tracking-[0.2em] text-[10px] rounded-2xl backdrop-blur-xl hover:bg-white/10 transition-all transform hover:-translate-y-1">
-                            Visa Requirements
-                        </Link>
+                        <h1 className="font-heading text-6xl md:text-9xl font-black mb-12 leading-[0.8] tracking-tighter uppercase italic">
+                            THE PANAMA <br /> <span className="text-brand-GOLD">RELOCATION</span> <br /> MASTERCLASS
+                        </h1>
+                        <p className="text-xl md:text-2xl text-slate-400 max-w-xl leading-relaxed font-medium mb-16 italic border-l-4 border-brand-GOLD/20 pl-12 opacity-80">
+                            Don't just move to Panama. <strong>Relocate with strategy.</strong> Explore our elite <strong>relocation tours</strong> and master the <strong>pensionado visa</strong> with the world's #1 expat team.
+                        </p>
+                        <div className="flex flex-wrap gap-8">
+                            <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-gold px-12 py-6 rounded-xl font-black uppercase tracking-[0.2em] text-[11px]">
+                                BOOK DISCOVERY TOUR
+                            </Link>
+                            <Link href={`/${lang}/relocation/visas`} className="btn-3d btn-3d-navy px-12 py-6 rounded-xl font-black uppercase tracking-[0.2em] text-[11px]">
+                                VISA REQUIREMENTS
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -94,83 +92,63 @@ const RelocationHubContent: React.FC = () => {
 
                     <div className="grid lg:grid-cols-3 gap-8">
                         {/* Pillar 1: Exploration */}
-                        <div className="bg-white/5 border border-white/5 p-12 rounded-[3.5rem] hover:border-brand-GOLD/30 transition-all group relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-brand-GOLD/5 rounded-full -mr-16 -mt-16 blur-2xl group-hover:bg-brand-GOLD/20 transition-all"></div>
-                            <Compass className="text-brand-GOLD mb-10" size={56} />
-                            <h3 className="text-3xl font-black mb-6 uppercase tracking-tighter italic">Discovery <br /> & Tours</h3>
-                            <p className="text-gray-400 leading-relaxed mb-8 font-medium">
-                                Seeing is believing. Our <strong>panama relocation real estate tours</strong> are the ultimate filter. Walk the streets, meet the community, and find where you truly belong before you invest.
+                        <div className="glass-card p-16 rounded-[4rem] border-white/5 hover:border-brand-GOLD/30 transition-all group relative overflow-hidden">
+                            <div className="absolute top-0 right-0 w-48 h-48 bg-brand-GOLD/5 rounded-full -mr-24 -mt-24 blur-3xl group-hover:bg-brand-GOLD/10 transition-all"></div>
+                            <Compass className="text-brand-GOLD mb-12" size={64} />
+                            <h3 className="text-4xl font-black mb-8 uppercase tracking-tighter italic leading-none">Discovery <br /> & Tours</h3>
+                            <p className="text-slate-400 leading-relaxed mb-12 font-medium opacity-80">
+                                Seeing is believing. Our <strong>panama relocation real estate tours</strong> are the ultimate filter. Walk the streets, meet the community, and find where you truly belong.
                             </p>
-                            <ul className="space-y-4 mb-10">
-                                <li className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-gray-300">
-                                    <ArrowRight size={14} className="text-brand-GOLD" /> 5-Day VIP Experience
+                            <ul className="space-y-6 mb-16">
+                                <li className="flex items-center gap-4 text-xs font-black uppercase tracking-widest text-slate-300">
+                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div> VIP Experience
                                 </li>
-                                <li className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-gray-300">
-                                    <ArrowRight size={14} className="text-brand-GOLD" /> Regional Deep Dives
-                                </li>
-                                <li className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-gray-300">
-                                    <ArrowRight size={14} className="text-brand-GOLD" /> Custom Itineraries
+                                <li className="flex items-center gap-4 text-xs font-black uppercase tracking-widest text-slate-300">
+                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div> Regional Deep Dives
                                 </li>
                             </ul>
-                            <Link href={`/${lang}/relocation/tours`} className="inline-flex items-center gap-3 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] group-hover:gap-5 transition-all">
-                                Explore Tours <ArrowRight size={16} />
+                            <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-gold px-10 py-5 rounded-xl font-black uppercase tracking-[0.3em] text-[9px] w-full text-center">
+                                EXPLORE TOURS
                             </Link>
                         </div>
 
                         {/* Pillar 2: Residency */}
-                        <div className="bg-white/5 border border-white/5 p-12 rounded-[3.5rem] hover:border-brand-GOLD/30 transition-all group relative overflow-hidden">
-                            <ShieldCheck className="text-brand-GOLD mb-10" size={56} />
-                            <h3 className="text-3xl font-black mb-6 uppercase tracking-tighter italic">Legal <br /> & Residency</h3>
-                            <p className="text-gray-400 leading-relaxed mb-8 font-medium">
-                                Navigate the legal maze with elite precision. From the <strong>pensionado visa panama</strong> to <strong>work permits</strong>, our partnership with top lawyers ensures your residency is 100% compliant.
+                        <div className="glass-card p-16 rounded-[4rem] border-white/5 hover:border-brand-GOLD/30 transition-all group relative overflow-hidden md:mt-24">
+                            <ShieldCheck className="text-brand-GOLD mb-12" size={64} />
+                            <h3 className="text-4xl font-black mb-8 uppercase tracking-tighter italic leading-none">Legal <br /> & Residency</h3>
+                            <p className="text-slate-400 leading-relaxed mb-12 font-medium opacity-80">
+                                Navigate the legal maze with precision. From the <strong>pensionado visa</strong> to <strong>work permits</strong>, we ensure your residency is 100% compliant and professional.
                             </p>
-                            <ul className="space-y-4 mb-10">
-                                <li className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-gray-300">
-                                    <ArrowRight size={14} className="text-brand-GOLD" /> Legal FAQ & Lawyer Access
+                            <ul className="space-y-6 mb-16">
+                                <li className="flex items-center gap-4 text-xs font-black uppercase tracking-widest text-slate-300">
+                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div> Legal HQ Access
                                 </li>
-                                <li className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-gray-300">
-                                    <ArrowRight size={14} className="text-brand-GOLD" /> Panama Work Permit Guide
-                                </li>
-                                <li className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-gray-300">
-                                    <ArrowRight size={14} className="text-brand-GOLD" /> Visa Comparison Center
+                                <li className="flex items-center gap-4 text-xs font-black uppercase tracking-widest text-slate-300">
+                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div> Visa Comparison
                                 </li>
                             </ul>
-                            <Link href={`/${lang}/relocation/legal`} className="inline-flex items-center gap-3 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] group-hover:gap-5 transition-all">
-                                Legal Hub <ArrowRight size={16} />
+                            <Link href={`/${lang}/relocation/legal`} className="btn-3d btn-3d-navy px-10 py-5 rounded-xl font-black uppercase tracking-[0.3em] text-[9px] w-full text-center">
+                                LEGAL HUB
                             </Link>
                         </div>
 
-                        {/* Pillar 3: Regional Guides */}
-                        <div className="bg-white/5 border border-white/5 p-12 rounded-[3.5rem] hover:border-brand-GOLD/30 transition-all group relative overflow-hidden">
-                            <Map className="text-brand-GOLD mb-10" size={56} />
-                            <h3 className="text-3xl font-black mb-6 uppercase tracking-tighter italic">Regional <br /> Research</h3>
-                            <p className="text-gray-400 leading-relaxed mb-8 font-medium">
-                                Decisions made with data. Compare <strong>boquete panama</strong> highlands against the <strong>coronado panama</strong> beach lifestyle. Get the truth on weather, safety, and healthcare.
+                        {/* Pillar 3: Research */}
+                        <div className="glass-card p-16 rounded-[4rem] border-white/5 hover:border-brand-GOLD/30 transition-all group relative overflow-hidden">
+                            <Map className="text-brand-GOLD mb-12" size={64} />
+                            <h3 className="text-4xl font-black mb-8 uppercase tracking-tighter italic leading-none">Regional <br /> Research</h3>
+                            <p className="text-slate-400 leading-relaxed mb-12 font-medium opacity-80">
+                                Decisions made with data. Compare <strong>boquete highlands</strong> vs <strong>coronado beach</strong>. Get the truth on weather, safety, and healthcare.
                             </p>
-                            <ul className="space-y-4 mb-10">
-                                <li className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-gray-300">
-                                    <Link href={`/${lang}/relocation/guides/boquete-vs-coronado`} className="hover:text-brand-GOLD transition-colors">
-                                        <ArrowRight size={14} className="text-brand-GOLD" /> Boquete vs Coronado
-                                    </Link>
+                            <ul className="space-y-6 mb-16">
+                                <li className="flex items-center gap-4 text-xs font-black uppercase tracking-widest text-slate-300">
+                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div> Cost Analysis
                                 </li>
-                                <li className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-gray-300">
-                                    <Link href={`/${lang}/relocation/cost-of-living`} className="hover:text-brand-GOLD transition-colors">
-                                        <ArrowRight size={14} className="text-brand-GOLD" /> Cost of Living Breakdown
-                                    </Link>
-                                </li>
-                                <li className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-gray-300">
-                                    <Link href={`/${lang}/blog/cost-of-living-panama-vs-us`} className="hover:text-brand-GOLD transition-colors">
-                                        <ArrowRight size={14} className="text-brand-GOLD" /> Panama vs US Financials
-                                    </Link>
-                                </li>
-                                <li className="flex items-center gap-3 text-xs font-black uppercase tracking-widest text-gray-300">
-                                    <Link href={`/${lang}/proyectos`} className="hover:text-brand-GOLD transition-colors">
-                                        <ArrowRight size={14} className="text-brand-GOLD" /> View Live Inventory
-                                    </Link>
+                                <li className="flex items-center gap-4 text-xs font-black uppercase tracking-widest text-slate-300">
+                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div> Weather Intelligence
                                 </li>
                             </ul>
-                            <Link href={`/${lang}/relocation/guides`} className="inline-flex items-center gap-3 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] group-hover:gap-5 transition-all">
-                                View Guides <ArrowRight size={16} />
+                            <Link href={`/${lang}/relocation/guides`} className="btn-3d btn-3d-gold px-10 py-5 rounded-xl font-black uppercase tracking-[0.3em] text-[9px] w-full text-center">
+                                VIEW GUIDES
                             </Link>
                         </div>
                     </div>
@@ -420,12 +398,12 @@ const RelocationHubContent: React.FC = () => {
                             <p>
                                 We've built an elite network of <strong>panama immigration lawyers</strong> who specialize in the VIP transition. Whether you're navigating the <strong>friendly nations visa panama requirements</strong> or the <strong>pensionado visa</strong>, you need a team that knows the shortcuts.
                             </p>
-                            <div className="flex flex-col sm:flex-row gap-6">
-                                <Link href={`/${lang}/relocation/legal/lawyers`} className="px-10 py-5 bg-brand-950 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-GOLD hover:text-brand-950 transition-all text-center">
-                                    Meet the Lawyers
+                            <div className="flex flex-col sm:flex-row gap-8">
+                                <Link href={`/${lang}/relocation/legal/lawyers`} className="btn-3d btn-3d-navy px-12 py-6 rounded-xl font-black uppercase tracking-widest text-xs inline-flex items-center justify-center">
+                                    MEET THE LAWYERS
                                 </Link>
-                                <Link href={`/${lang}/relocation/legal/checklist`} className="px-10 py-5 bg-neutral-100 border border-neutral-200 text-brand-950 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-950 hover:text-white transition-all text-center">
-                                    View 2026 Checklist
+                                <Link href={`/${lang}/relocation/legal/checklist`} className="btn-3d bg-white text-brand-950 px-12 py-6 rounded-xl font-black uppercase tracking-widest text-xs inline-flex items-center justify-center border border-brand-950/10 shadow-xl">
+                                    VIEW 2026 CHECKLIST
                                 </Link>
                             </div>
                         </div>
@@ -486,8 +464,8 @@ const RelocationHubContent: React.FC = () => {
                     <p className="text-xl text-neutral-500 mb-16 font-medium leading-relaxed">
                         Don't just move to Panama. Master it. From the financial district of Panama City to the cool highlands of Boquete, your elite journey starts with the right <strong>panama relocation services</strong>.
                     </p>
-                    <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
-                        Customize Your Tour
+                    <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-navy px-16 py-8 rounded-2xl font-black uppercase tracking-[0.3em] text-xs inline-block">
+                        CUSTOMIZE YOUR TOUR
                     </Link>
                 </div>
             </section>
@@ -512,9 +490,9 @@ const RelocationHubContent: React.FC = () => {
                 <div className="max-w-5xl mx-auto px-4">
                     <h2 className="text-5xl md:text-8xl font-heading font-black mb-12 uppercase tracking-tighter italic">Ready to Begin?</h2>
                     <p className="text-xl md:text-2xl font-bold mb-16 opacity-80">Stop dreaming. Start Relocating. Our team is standing by.</p>
-                    <div className="flex flex-wrap justify-center gap-8">
-                        <Link href={`/${lang}/contacto`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl">
-                            Request My Proposal
+                    <div className="flex flex-wrap justify-center gap-10">
+                        <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-20 py-10 rounded-3xl font-black uppercase tracking-[0.4em] text-sm flex items-center justify-center min-w-[320px]">
+                            REQUEST PROPOSAL
                         </Link>
                     </div>
                 </div>

@@ -43,35 +43,35 @@ const ProjectsPageContent: React.FC = () => {
     return (
         <div className="pt-24 min-h-screen bg-brand-950">
             {/* Header */}
-            {/* ... (Header code remains unchanged via context lines) ... */}
-            <div className="relative pt-40 pb-20 px-4 overflow-hidden">
-                <div className="absolute inset-0 opacity-40">
-                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80" alt="" className="w-full h-full object-cover grayscale" />
+            <div className="relative pt-48 pb-32 px-4 overflow-hidden border-b border-white/5">
+                <div className="absolute inset-0 opacity-20">
+                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80" alt="" className="w-full h-full object-cover" />
                 </div>
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-black/20 via-brand-950/80 to-brand-950" />
-                <div className="max-w-7xl mx-auto text-center relative z-10">
-                    <span className="inline-block border border-brand-GOLD/30 bg-brand-950/50 backdrop-blur-md text-brand-GOLD px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-8 animate-fade-in-up">
-                        Exclusive Inventory
+                <div className="absolute inset-0 bg-gradient-to-b from-brand-950/40 via-brand-950 to-brand-950" />
+                <div className="max-w-7xl mx-auto relative z-10">
+                    <span className="inline-block border border-brand-GOLD/30 bg-brand-950/50 backdrop-blur-md text-brand-GOLD px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.4em] mb-10 animate-fade-in-up">
+                        Asset Catalog 2026
                     </span>
-                    <h1 className="font-heading text-5xl md:text-8xl font-black text-white mb-8 tracking-tighter leading-[0.9]">
-                        <SplitText text={lang === 'zh' ? '新开发项目' : 'New Developments Panama'} delay={0.2} />
+                    <h1 className="font-heading text-6xl md:text-9xl font-black text-white mb-10 tracking-tighter leading-[0.8] uppercase italic">
+                        <SplitText text={lang === 'zh' ? '新开发项目' : 'The Investment'} delay={0.2} /> <br />
+                        <span className="text-brand-GOLD"><SplitText text={lang === 'zh' ? '巴拿马' : 'Inventory'} delay={0.8} /></span>
                     </h1>
-                    <p className="text-gray-300 text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed font-light">
-                        Curating the highest ROI <strong>panama real estate projects</strong> and exclusive <strong>panama luxury developments</strong> across the country's premium zones.
+                    <p className="text-slate-400 text-xl md:text-2xl max-w-2xl leading-relaxed font-medium italic border-l-4 border-brand-GOLD/20 pl-12">
+                        Curating high-liquidity <strong>Panama real estate assets</strong> and exclusive <strong>luxury developments</strong> for the global elite.
                     </p>
                 </div>
             </div>
 
             {/* Filters Bar */}
-            <div className="relative lg:sticky lg:top-[72px] z-40 bg-brand-950/80 backdrop-blur-xl border-b border-white/5 py-6 shadow-2xl">
+            <div className="relative lg:sticky lg:top-[72px] z-40 bg-brand-950/70 backdrop-blur-2xl border-b border-white/5 py-8 shadow-2xl">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-wrap items-center justify-between gap-6">
-                        <div className="flex flex-wrap gap-10 items-center">
-                            <div className="flex items-center gap-3">
-                                <Filter size={14} className="text-brand-GOLD" />
-                                <div className="relative">
+                    <div className="flex flex-wrap items-center justify-between gap-10">
+                        <div className="flex flex-wrap gap-12 items-center">
+                            <div className="flex items-center gap-4">
+                                <Filter size={16} className="text-brand-GOLD" />
+                                <div className="relative group">
                                     <select
-                                        className="bg-transparent font-bold text-xs uppercase tracking-widest focus:outline-none cursor-pointer pr-6 appearance-none text-white"
+                                        className="bg-transparent font-black text-[11px] uppercase tracking-[0.2em] focus:outline-none cursor-pointer pr-8 appearance-none text-white hover:text-brand-GOLD transition-colors"
                                         value={activeZone}
                                         onChange={(e) => setActiveZone(e.target.value)}
                                         aria-label="Neighborhood Filter"
@@ -81,15 +81,15 @@ const ProjectsPageContent: React.FC = () => {
                                         <option value="Mountain" className="text-brand-950">{lang === 'zh' ? '山区' : 'Highlands'}</option>
                                         <option value="Caribbean" className="text-brand-950">{lang === 'zh' ? '加勒比海' : 'Caribbean'}</option>
                                     </select>
-                                    <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 text-neutral-400 pointer-events-none" size={12} />
+                                    <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 text-brand-GOLD/50 pointer-events-none group-hover:text-brand-GOLD transition-colors" size={14} />
                                 </div>
                             </div>
 
-                            <div className="flex items-center gap-3">
-                                <Map size={14} className="text-brand-GOLD" />
-                                <div className="relative">
+                            <div className="flex items-center gap-4">
+                                <Map size={16} className="text-brand-GOLD" />
+                                <div className="relative group">
                                     <select
-                                        className="bg-transparent font-bold text-xs uppercase tracking-widest focus:outline-none cursor-pointer pr-6 appearance-none text-white"
+                                        className="bg-transparent font-black text-[11px] uppercase tracking-[0.2em] focus:outline-none cursor-pointer pr-8 appearance-none text-white hover:text-brand-GOLD transition-colors"
                                         value={activeType}
                                         onChange={(e) => setActiveType(e.target.value)}
                                         aria-label="Property Type Filter"
@@ -99,25 +99,25 @@ const ProjectsPageContent: React.FC = () => {
                                         <option value="House" className="text-brand-950">{lang === 'zh' ? '住宅' : 'Single Family'}</option>
                                         <option value="Villa" className="text-brand-950">{lang === 'zh' ? '别墅' : 'Luxury Villas'}</option>
                                     </select>
-                                    <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 text-neutral-400 pointer-events-none" size={12} />
+                                    <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 text-brand-GOLD/50 pointer-events-none group-hover:text-brand-GOLD transition-colors" size={14} />
                                 </div>
                             </div>
                         </div>
 
-                        <div className="flex-grow md:max-w-sm relative">
+                        <div className="flex-grow md:max-w-md relative">
                             <input
                                 type="text"
                                 value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)}
-                                placeholder={lang === 'zh' ? "搜索项目..." : "Search project by keyword..."}
+                                placeholder={lang === 'zh' ? "搜索项目..." : "Search Project Portfolio..."}
                                 aria-label="Search projects by keyword"
-                                className="w-full pl-12 pr-10 py-3 bg-white/5 rounded-xl text-sm border border-white/10 text-white focus:ring-2 focus:ring-brand-GOLD outline-none transition-all placeholder:text-slate-500"
+                                className="w-full pl-14 pr-10 py-5 bg-white/5 rounded-2xl text-[11px] font-black uppercase tracking-widest border border-white/5 text-white focus:ring-1 focus:ring-brand-GOLD/50 outline-none transition-all placeholder:text-slate-600 shadow-inner"
                             />
-                            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-neutral-400" size={18} />
+                            <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-brand-GOLD/50" size={20} />
                             {searchTerm && (
                                 <button
                                     onClick={() => setSearchTerm('')}
-                                    className="absolute right-3 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-white"
+                                    className="absolute right-4 top-1/2 -translate-y-1/2 text-neutral-500 hover:text-white"
                                 >
                                     <span className="sr-only">Clear</span>
                                     &times;
@@ -155,18 +155,18 @@ const ProjectsPageContent: React.FC = () => {
                     </div>
 
                     {filteredProjects.length === 0 && (
-                        <div className="text-center py-20 bg-white/5 rounded-3xl border border-white/10">
-                            <p className="text-xl text-gray-400 mb-2">No projects found matching your criteria.</p>
-                            <p className="text-sm text-gray-500 mb-6">Try adjusting your filters or search term.</p>
+                        <div className="text-center py-32 glass-card rounded-[4rem] border-white/5 shadow-2xl">
+                            <p className="text-2xl text-gray-400 mb-4 font-black uppercase tracking-tighter">No assets found matching your criteria.</p>
+                            <p className="text-sm text-gray-500 mb-12 font-medium">Try broadening your search for maximum ROI opportunities.</p>
                             <button
                                 onClick={() => {
-                                    setActiveType('All');
+                                    setActiveType('Any');
                                     setActiveZone('All');
                                     setSearchTerm('');
                                 }}
-                                className="bg-brand-GOLD text-brand-950 px-6 py-2 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-white transition-colors"
+                                className="btn-3d btn-3d-gold px-12 py-6 rounded-xl font-black text-xs uppercase tracking-widest"
                             >
-                                Clear All Filters
+                                RESET GLOBAL FILTERS
                             </button>
                         </div>
                     )}
