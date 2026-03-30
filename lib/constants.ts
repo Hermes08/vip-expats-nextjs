@@ -1547,6 +1547,105 @@ export const PROJECTS: Project[] = [
 
       **Privacidad y Panorámicas**
       Cada residencia ocupa medio piso entero, asegurando privacidad. Paredes de vidrio de piso a techo ofrecen vistas de 270 grados al campo de golf y al océano.
+      **Amenidades de Clase Mundial**
+      Áreas sociales que rivalizan con hoteles de cinco estrellas: piscinas, gimnasio Technogym y salón de baile. ENTREGA INMEDIATA.`
+    },
+    locationAnalysis: {
+      en: `**Neighborhood Analysis**
+      Santa Maria is Panama City's most prestigious address. The community centers around the Jack Nicklaus Signature golf course. Residents enjoy safety, exclusivity, and proximity to Costa del Este and the airport.`,
+      es: `**Análisis del Vecindario**
+      Santa María es la dirección más prestigiosa de Panamá, centrada en el campo de golf Jack Nicklaus. Seguridad, exclusividad y cercanía a Costa del Este.`
+    },
+    investmentAnalysis: {
+      en: `**Investment Analysis**
+      Empire Residences represents the ultra-luxury segment.
+      *   **Rental Income:** $3,500-$5,500/month.
+      *   **Occupancy:** Near 100% for furnished units.
+      *   **Target Tenant:** C-Suite Executives and Diplomats.`,
+      es: `**Análisis de Inversión**
+      Representa el segmento de ultra lujo. Ingresos de alquiler de $3,500-$5,500/mes. Objetivo: Ejecutivos y Diplomáticos.`
+    },
+    buyerProfile: {
+      en: `**Ideal Buyer Profile**
+      *   **C-Suite Executives:** Prestige address and privacy.
+      *   **Golf Enthusiasts:** Direct course access and views.
+      *   **Wealth Preservation:** Stable luxury asset.`,
+      es: `**Perfil del Comprador**
+      Ejecutivos C-Suite, entusiastas del golf y preservación de patrimonio.`
+    },
+    videoUrl: 'https://www.youtube.com/watch?v=JjRQCPdkrrs',
+    floorplans: [
+      {
+        name: { en: 'Model A - 3 Bed Classic', es: 'Modelo A - 3 Rec Clásico', zh: 'A型' },
+        size: '322 m2',
+        price: 1030000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['3 Beds', '3.5 Baths', 'Private Foyer', 'Golf Views'],
+          es: ['3 Recámaras', '3.5 Baños', 'Foyer Privado', 'Vistas al Golf'],
+          zh: ['3 卧室', '3.5 浴室', '高尔夫景观']
+        }
+      },
+      {
+        name: { en: 'Model C - 4 Bed Estate', es: 'Modelo C - 4 Rec Estate', zh: 'C型' },
+        size: '368 m2',
+        price: 1185000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['4 Beds', '4.5 Baths', 'Panoramic 270° Views', 'Family Room'],
+          es: ['4 Recámaras', '4.5 Baños', 'Vistas Panorámicas 270°', 'Sala Familiar'],
+          zh: ['4 卧室', '4.5 浴室', '270度全景']
+        }
+      },
+      {
+        name: { en: 'Penthouse Collection', es: 'Colección Penthouse', zh: '顶层公寓' },
+        size: '400 - 450 m2',
+        price: 1450000,
+        image: '/images/placeholders/luxury_villa_floorplan.png',
+        characteristics: {
+          en: ['4 Beds + Den', '5+ Baths', 'Double Height', 'Rooftop Terrace'],
+          es: ['4 Rec + Den', '5+ Baños', 'Doble Altura', 'Terraza Rooftop'],
+          zh: ['4 卧室 + 书房', '5+ 浴室', '顶层露台']
+        }
+      }
+    ],
+    images: ['https://images.unsplash.com/photo-1519046904884-53103b34b206?w=1200&q=80', 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80'],
+    priceFrom: 1030000,
+    beds: '3-4',
+    baths: '3.5-5',
+    sqft: '322 - 450',
+    unitsAvailable: 6,
+    amenities: {
+      en: ['Infinity Pool', 'Technogym', 'Ballroom', 'Golf Views'],
+      es: ['Piscina Infinity', 'Technogym', 'Salón de Baile', 'Vistas al Golf'],
+      zh: ['无边泳池', '健身房', '宴会厅', '高尔夫景观']
+    },
+    highlights: {
+      en: ['Private Lobby per unit', 'Immedidate Occupancy', 'Saul Bassan Design'],
+      es: ['Lobby Privado por unidad', 'Ocupación Inmediata', 'Diseño de Saúl Bassan'],
+      zh: ['私人大堂', '即刻入住', '设计']
+    },
+    keywords: ["empire residences", "santa maria panama", "luxury golf condos panama"],
+    marketAnalysis: {
+      en: "Exclusive half-floor layouts create scarce value in high-end market.",
+      es: "Los diseños exclusivos de medio piso crean un valor escaso en el mercado de alta gama.",
+      zh: "独特的半层布局在高端市场创造了稀缺价值。"
+    },
+    faqs: [],
+    residencyInfo: {
+      en: `Empire Residences is the gold standard for **panama residency through real estate**. Every unit easily surpasses the $300,000 threshold for the Qualified Investor Visa, granting faster permanent residency to **relocate to panama** in luxury.
+
+      It is the residence of choice for elite retirees on the **pensionado visa panama** who demand golf course living. The **friendly nations visa panama** is also fully supported.
+
+      Our **panama real estate legal guide** provides VIP-level due diligence, ensuring your high-value asset is protected with the strictest legal standards in the country.`,
+      es: `Empire Residences es el estándar de oro para la **residencia en panamá**. Cada unidad supera el umbral para la Visa de Inversionista Calificado.
+
+      Es la residencia elegida por jubilados de élite con **visa pensionado panamá**. La **visa de naciones amigas** también es totalmente compatible.
+
+      Nuestra **guía legal** ofrece diligencia debida nivel VIP, asegurando que su activo de alto valor esté protegido.`
+    }
+  }
+];
 
 export const CONTENT: ContentDictionary = {
   en: {
@@ -1761,52 +1860,6 @@ export const CONTENT: ContentDictionary = {
 
         **¿Es seguro invertir en bienes raíces en Panamá?**
         Sí, siempre que realice una debida diligencia adecuada. Panamá utiliza un sistema de Registro Público centralizado donde se registra cada título.`
-    },
-      invest: "Invertir",
-      projects: "Proyectos",
-      quiz: "Quiz de Barrios",
-      relocate: "Relocar",
-      relocationHub: "Hub de Relocación",
-      tours: "Tours de Descubrimiento",
-      visas: "Visas y Legal",
-      legal: "Hub Legal",
-      guides: "Guías Regionales",
-      cost: "Costo y Proceso",
-      reviews: "Testimonios",
-      media: "Media",
-      blog: "Blog",
-      podcast: "Podcast",
-      contact: "Contacto",
-      search: "Buscar"
-    },
-    labels: {
-      beds: "Hab.",
-      baths: "Baños",
-      startingAt: "Desde",
-      viewDetails: "Ver Detalles",
-      relatedArticles: "Informes del Mercado",
-      similarProjects: "Proyectos Similares",
-      readReport: "Leer Reporte Completo"
-    },
-    hero: {
-      badge: "Inmuebles Panamá 2026",
-      title: "Donde los Expats se Convierten en Rockstars",
-      subtitle: "Acceso a los mejores bienes raíces en panamá y tours de relocación panamá. Ya sea para la visa pensionado panamá o inversión inmobiliaria en panamá.",
-      cta: "Ver Proyectos"
-    },
-    homepage: {
-      introTitle: "La Guía Definitiva del Mercado Inmobiliario en Panamá 2026",
-      introBody: `Navegar por el panorama de bienes raíces en panamá en 2026 requiere más que solo mirar anuncios de apartamentos frente al mar en panamá. Requiere una inmersión profunda en el costo de vida en panamá y entender la dinámica de los diferentes vecindarios, desde condominios en la ciudad de panamá en punta pacífica hasta bienes raíces en boquete en las montañas. Ya sea que esté buscando apartamentos en la playa en panamá en playa bonita panama o buscando casas frente al mar en venta en panamá cerca de bienes raíces en coronado panama, ExpatRockstars proporciona la experiencia local que necesita para realizar una inversión inmobiliaria segura.
-
-        Panamá sigue siendo uno de los mejores lugares para jubilarse en panamá para norteamericanos y europeos debido a los beneficios de jubilación en panamá y al legendario programa de visa pensionado panamá. Los jubilados estadounidenses en panamá a menudo eligen comunidades de jubilados en boquete panama debido al clima de primavera eterna y a las comunidades de expatriados establecidas en panamá. Nuestra misión es guiarlo a través de los pros y contras de vivir en panamá y ayudarlo a encontrar la casa de sus sueños en panamá que se ajuste a sus objetivos específicos de bienes raíces de jubilación.`,
-      investmentTitle: "Inversión Inmobiliaria en Panamá: Estrategia para ROI y Beneficios Fiscales",
-      investmentBody: `¿Por qué invertir en bienes raíces en panamá ahora? El país ofrece algunos de los beneficios fiscales de panamá más competitivos del mundo, incluida la visa de naciones amigas de panamá y la residencia mediante inversión inmobiliaria. Los inversores que buscan bienes raíces de alto ROI en panamá deben centrarse en los bienes raíces de la playa de la ciudad de panamá y en los nuevos desarrollos de panamá que ofrecen residencias de marca en panamá como las residencias de westin panama o margaritaville panama.
-
-        El buenaventura resort panama y otros desarrollos de estilo de vida en panamá están viendo una demanda masiva de propiedades de alquiler a corto plazo en panamá e inversión de airbnb frente al mar en panamá. Con el turismo en aumento, ser propietario de una casa de vacaciones en una comunidad cerrada de panamá garantiza una mayor ocupación y una mejor gestión de la propiedad. Nuestro análisis de oportunidades de inversión inmobiliaria en panamá cubre todo, desde los beneficios fiscales de bienes raíces en panamá hasta la guía legal para compradores internacionales.`,
-      expatLifeTitle: "Vida Internacional en Panamá: Lo Que Necesitas Saber",
-      expatLifeBody: `Múdate a panamá y experimenta un estilo de vida donde el estilo de vida de la playa de panamá se encuentra con la vida costera de lujo en panamá. El costo de la jubilación en panamá es un gran atractivo, pero la experiencia de vida internacional en panamá es lo que hace que la gente se quede. Desde los rascacielos de los apartamentos de costa del este hasta las serenas villas en bienes raíces de bocas del toro, hay una comunidad para cada expatriado.
-
-        Los pros y contras de jubilarse en panamá a menudo implican equilibrar la infraestructura moderna del turismo en la ciudad de panamá con el ambiente relajado de los alquileres de casas de playa. Ofrecemos servicios de reubicación en panamá que incluyen recorridos inmobiliarios de reubicación en panamá para ayudarlo a ver los mejores lugares para que los expatriados vivan en panamá de primera mano. Nuestros asesores de jubilación en panamá se dedican a hacer que su transición sea lo más fluida posible, desde la residencia en panamá a través de bienes raíces hasta la configuración de su nueva vida tropical.`
     },
     projectsPage: {
       neighborhoodTitle: "¿Dónde Invertir? Analizando los Mejores Barrios de Panamá",
