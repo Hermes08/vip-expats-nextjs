@@ -24,6 +24,12 @@
   --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   --animate-spin-slow: spin 12s linear infinite;
 
+  /* Premium Spacing Tokens */
+  --section-py: clamp(4rem, 10vh, 10rem);
+  --section-px: clamp(1rem, 5vw, 4rem);
+  --container-max-w: 80rem; /* 1280px */
+  --prose-max-w: 45rem; /* 720px - ideal for readability */
+
   @keyframes float {
 
     0%,
@@ -121,9 +127,50 @@ body {
 
 .glass-card {
   background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none;
+}
+
+.section-container {
+  width: 100%;
+  max-width: var(--container-max-w);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--section-px);
+  padding-right: var(--section-px);
+}
+
+.prose-container {
+  max-width: var(--prose-max-w);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.premium-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+  .premium-grid-2 {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+  }
 }
 
 /* Parallax Scroll Containers */
