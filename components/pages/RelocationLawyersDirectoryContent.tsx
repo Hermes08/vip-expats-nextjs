@@ -66,24 +66,32 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
             </div>
 
             {/* Header / Hero */}
-            <section className="py-32 bg-brand-950 text-white relative overflow-hidden rounded-b-[4rem]">
-                <div className="absolute inset-0 opacity-10 pointer-events-none">
-                    <div className="absolute bottom-0 right-0 w-[800px] h-[800px] bg-brand-GOLD rounded-full blur-[150px]"></div>
+            <section className="relative min-h-[80vh] flex items-center overflow-hidden border-b border-white/5 bg-brand-950">
+                <div className="absolute inset-0 z-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80"
+                        alt="Legal scales in a modern Panama law office"
+                        className="w-full h-full object-cover opacity-10 scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/80 to-transparent"></div>
                 </div>
-                <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
-                    <span className="inline-block px-5 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
-                        Vetted. Verified. Elite.
-                    </span>
-                    <h1 className="text-5xl md:text-9xl font-heading font-black mb-10 uppercase tracking-tighter leading-[0.85]">
-                        Panama <span className="text-brand-GOLD italic">Immigration</span> <br /> Lawyer Directory
-                    </h1>
-                    <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-medium mb-12">
-                        Don't leave your residency to chance. The <strong>panama immigration lawyer</strong> role is the most critical part of your move. We've vetted the top 1% of attorneys to ensure your 2026 application is flawless.
-                    </p>
-                    <div className="flex justify-center gap-6">
-                        <Link href="#directory" className="px-12 py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-white transition-all shadow-2xl">
-                            Browse Top Attorneys
-                        </Link>
+
+                <div className="relative z-10 max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-20 items-center">
+                    <div>
+                        <span className="inline-block px-6 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full backdrop-blur-md mb-12">
+                            Vetted. Verified. 2026.
+                        </span>
+                        <h1 className="font-heading text-6xl md:text-9xl font-black mb-12 leading-[0.8] tracking-tighter uppercase italic text-white">
+                            PANAMA <br /> <span className="text-brand-GOLD">LEGAL</span> <br /> DIRECTORY
+                        </h1>
+                        <p className="text-xl md:text-2xl text-slate-400 max-w-xl leading-relaxed font-medium mb-16 italic border-l-4 border-brand-GOLD/20 pl-12 opacity-80">
+                            The top 1% of attorneys for the 2026 move. We've vetted every <strong>panama immigration lawyer</strong> to ensure your application is flawless.
+                        </p>
+                        <div className="flex flex-wrap gap-8">
+                            <Link href="#directory" className="btn-3d btn-3d-gold px-12 py-6 rounded-xl font-black uppercase tracking-[0.2em] text-[11px]">
+                                BROWSE ATTORNEYS
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -174,7 +182,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {lawyers.map((lawyer, i) => (
-                        <div key={i} className="group bg-white rounded-[4rem] border border-neutral-100 p-10 hover:border-brand-GOLD transition-all shadow-sm">
+                        <div key={i} className="group glass-card rounded-[4rem] border-neutral-100/10 p-10 hover:border-brand-GOLD transition-all shadow-sm bg-white">
                             <div className="relative h-64 w-full rounded-[3rem] overflow-hidden mb-8">
                                 <Image src={lawyer.image} alt={lawyer.name} fill className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
                                 <div className="absolute top-6 right-6 px-4 py-2 bg-brand-950 text-white rounded-full text-[10px] font-black uppercase tracking-widest">
@@ -194,14 +202,14 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                             <div className="space-y-4 mb-10">
                                 <div className="flex items-center gap-3">
                                     <Briefcase size={16} className="text-neutral-400" />
-                                    <span className="text-xs font-bold text-neutral-600">{lawyer.specialty}</span>
+                                    <span className="text-xs font-black uppercase tracking-widest text-neutral-500">{lawyer.specialty}</span>
                                 </div>
                                 <p className="text-sm text-neutral-500 font-medium leading-relaxed italic border-l-2 border-brand-GOLD/30 pl-4">
                                     "{lawyer.description}"
                                 </p>
                             </div>
-                            <button className="w-full py-5 bg-brand-GOLD/10 text-brand-GOLD text-[10px] font-black uppercase tracking-widest rounded-2xl group-hover:bg-brand-GOLD group-hover:text-brand-950 transition-all">
-                                Request Introduction
+                            <button className="btn-3d btn-3d-gold w-full py-5 rounded-xl font-black uppercase tracking-widest text-[10px]">
+                                REQUEST INTRODUCTION
                             </button>
                         </div>
                     ))}
@@ -285,8 +293,8 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                     <p className="text-xl md:text-2xl font-bold mb-16 opacity-80 max-w-2xl mx-auto leading-relaxed">
                         Ready to speak with the best <strong>panama immigration lawyer</strong> for your specific needs? Let us make the introduction and guarantee your success.
                     </p>
-                    <Link href={`/${lang}/contact`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl inline-block">
-                        Introduce Me to an Attorney
+                    <Link href={`/${lang}/contact`} className="btn-3d btn-3d-navy px-16 py-8 rounded-2xl font-black uppercase tracking-[0.3em] text-xs inline-block">
+                        INTRODUCE ME TO AN ATTORNEY
                     </Link>
                 </div>
             </section>

@@ -20,30 +20,32 @@ const RelocationToursContent: React.FC = () => {
             <BreadcrumbSchema items={breadcrumbItems} />
 
             {/* Hero Section */}
-            <section className="bg-brand-950 py-32 text-white relative overflow-hidden rounded-b-[5rem]">
-                <div className="absolute inset-0 opacity-20">
-                    <Image
+            <section className="relative min-h-[90vh] flex items-center overflow-hidden border-b border-white/5 bg-brand-950">
+                <div className="absolute inset-0 z-0">
+                    <img
                         src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80"
                         alt="Expats exploring beautiful local landscapes during a Panama Relocation Tour"
-                        fill
-                        className="object-cover"
-                        priority
+                        className="w-full h-full object-cover opacity-10 scale-110"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/80 to-transparent"></div>
                 </div>
-                <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
-                    <span className="inline-block px-5 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
-                        The 2026 Discovery Experience
-                    </span>
-                    <h1 className="text-6xl md:text-9xl font-heading font-black mb-10 uppercase tracking-tighter leading-[0.8] italic">
-                        The <span className="text-brand-GOLD underline italic">Boots</span> <br /> Ground <br /> Protocol.
-                    </h1>
-                    <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-medium mb-16">
-                        Don't buy a life you haven't lived. Our <strong>panama relocation discovery tours</strong> are designed to bridge the gap between "Internet Research" and "Actual Living." Explore the <strong>best places for expats to live in panama</strong> with the Panama Real Estate Sale team.
-                    </p>
-                    <div className="flex flex-col sm:flex-row justify-center gap-8">
-                        <Link href={`/${lang}/contacto`} className="px-16 py-8 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-xs rounded-3xl hover:bg-white transition-all shadow-2xl">
-                            Reserve My Discovery Slot
-                        </Link>
+
+                <div className="relative z-10 max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-20 items-center">
+                    <div>
+                        <span className="inline-block px-6 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full backdrop-blur-md mb-12">
+                            The 2026 Discovery Experience
+                        </span>
+                        <h1 className="font-heading text-6xl md:text-9xl font-black mb-12 leading-[0.8] tracking-tighter uppercase italic text-white">
+                            THE BOOTS <br /> <span className="text-brand-GOLD italic">GROUND</span> <br /> PROTOCOL.
+                        </h1>
+                        <p className="text-xl md:text-2xl text-slate-400 max-w-xl leading-relaxed font-medium mb-16 italic border-l-4 border-brand-GOLD/20 pl-12 opacity-80">
+                            Don't buy a life you haven't lived. Explore the <strong>best places for expats to live in panama</strong> with the Panama Real Estate Sale team.
+                        </p>
+                        <div className="flex flex-wrap gap-8">
+                            <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-gold px-12 py-6 rounded-xl font-black uppercase tracking-[0.2em] text-[11px]">
+                                RESERVE MY DISCOVERY SLOT
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -206,8 +208,8 @@ const RelocationToursContent: React.FC = () => {
                         Our Discovery Tours are limited to 4 families per month. This isn't a bus tour; it's an elite relocation mission. Secure your dates for the 2026 season.
                     </p>
                     <div className="flex justify-center flex-col sm:flex-row gap-8">
-                        <Link href={`/${lang}/contacto`} className="inline-flex items-center justify-center gap-4 px-16 py-8 bg-brand-950 text-white rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-black transition-all shadow-2xl">
-                            Request My Custom Itinerary <ArrowRight size={14} />
+                        <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-16 py-8 rounded-2xl font-black uppercase tracking-[0.3em] text-xs inline-flex items-center gap-4">
+                            REQUEST MY CUSTOM ITINERARY <ArrowRight size={14} />
                         </Link>
                     </div>
                 </div>

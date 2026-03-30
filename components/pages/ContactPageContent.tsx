@@ -7,17 +7,31 @@ import SplitText from '@/components/ui/SplitText';
 
 const ContactPageContent: React.FC = () => {
     return (
-        <div className="pt-24 min-h-screen bg-slate-50">
-            <section className="bg-brand-900 py-24 text-white text-center">
-                <h1 className="font-serif text-4xl md:text-6xl font-bold mb-4">
-                    <SplitText text="Hablemos de tu inversión" />
-                </h1>
-                <p className="text-slate-300 text-lg max-w-2xl mx-auto">Nuestro equipo de expertos bilingües de Panama Real Estate Sale está listo para asistirte en cada paso.</p>
+        <div className="pt-24 min-h-screen bg-white">
+            {/* Hero Section */}
+            <section className="relative min-h-[60vh] flex items-center overflow-hidden border-b border-white/5 bg-brand-950">
+                <div className="absolute inset-0 z-0">
+                    <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--brand-GOLD)_0%,_transparent_100%)] opacity-[0.03] scale-150"></div>
+                </div>
+
+                <div className="relative z-10 max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-20 items-center">
+                    <div>
+                        <span className="inline-block px-6 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full backdrop-blur-md mb-12">
+                            Secure Infrastructure
+                        </span>
+                        <h1 className="font-heading text-6xl md:text-9xl font-black mb-12 leading-[0.8] tracking-tighter uppercase italic text-white">
+                            DIRECT <br /> <span className="text-brand-GOLD italic">CONCIERGE</span> <br /> ACCESS.
+                        </h1>
+                        <p className="text-xl md:text-2xl text-slate-400 max-w-xl leading-relaxed font-medium mb-16 italic border-l-4 border-brand-GOLD/20 pl-12 opacity-80">
+                            Our team of bilingual experts is ready to assist in every phase of your Panama move. No generic support—direct elite intelligence.
+                        </p>
+                    </div>
+                </div>
             </section>
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-16 mb-24">
-                <div className="grid lg:grid-cols-3 gap-8">
-                    <div className="lg:col-span-2 bg-white rounded-3xl shadow-2xl p-8 md:p-12 border-t-4 border-brand-GOLD">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10">
+                <div className="grid lg:grid-cols-3 gap-16">
+                    <div className="lg:col-span-2 glass-card rounded-[4rem] border-neutral-100/10 p-12 md:p-16 bg-white shadow-sm border-t-8 border-brand-GOLD">
                         <form onSubmit={async (e) => {
                             e.preventDefault();
                             const form = e.target as HTMLFormElement;
@@ -68,8 +82,8 @@ const ContactPageContent: React.FC = () => {
                                 <label className="text-sm font-bold text-slate-500 uppercase tracking-widest">Mensaje</label>
                                 <textarea name="message" className="w-full h-32 px-4 py-3 bg-slate-50 border border-slate-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none" placeholder="I am interested in..." />
                             </div>
-                            <button type="submit" className="md:col-span-2 bg-brand-900 text-white font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-brand-GOLD hover:text-brand-900 transition-all shadow-xl">
-                                <Send size={18} /> Enviar Mensaje
+                            <button type="submit" className="md:col-span-2 btn-3d btn-3d-gold py-5 rounded-xl font-black uppercase tracking-widest text-[11px] flex items-center justify-center gap-4 group">
+                                <Send size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" /> ENVIAR CONSULTA
                             </button>
                         </form>
                     </div>

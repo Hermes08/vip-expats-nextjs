@@ -39,24 +39,32 @@ const RelocationFriendlyNationsContent: React.FC = () => {
             </div>
 
             {/* Header / Hero */}
-            <section className="py-32 bg-brand-950 text-white relative overflow-hidden rounded-b-[4rem]">
-                <div className="absolute inset-0 opacity-10 pointer-events-none">
-                    <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-brand-GOLD rounded-full blur-[120px]"></div>
+            <section className="relative min-h-screen flex items-center overflow-hidden border-b border-white/5 bg-brand-950">
+                <div className="absolute inset-0 z-0">
+                    <img
+                        src="https://images.unsplash.com/photo-1554188248-986adbb73be4?w=1600&q=80"
+                        alt="Panama City skyline reflecting professional residency opportunities"
+                        className="w-full h-full object-cover opacity-10 scale-110"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/80 to-transparent"></div>
                 </div>
-                <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
-                    <span className="inline-block px-5 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
-                        The Professional's Fast Track
-                    </span>
-                    <h1 className="text-5xl md:text-9xl font-heading font-black mb-8 uppercase tracking-tighter leading-[0.85]">
-                        Friendly <span className="text-brand-GOLD italic">Nations</span> <br /> Visa Guide 2026
-                    </h1>
-                    <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-medium mb-12">
-                        Your VIP pass to one of the world's fastest-growing economies. The <strong>friendly nations visa panama</strong> remains the premier residency path for citizens of 50+ pro-business countries seeking <strong>international living in panama</strong>.
-                    </p>
-                    <div className="flex justify-center gap-6">
-                        <Link href={`/${lang}/contacto`} className="px-12 py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-white transition-all shadow-2xl">
-                            Check My Eligibility
-                        </Link>
+
+                <div className="relative z-10 max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-20 items-center">
+                    <div>
+                        <span className="inline-block px-6 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full backdrop-blur-md mb-12">
+                            The Professional's Fast Track 2026
+                        </span>
+                        <h1 className="font-heading text-6xl md:text-9xl font-black mb-12 leading-[0.8] tracking-tighter uppercase italic text-white">
+                            FRIENDLY <br /> <span className="text-brand-GOLD">NATIONS</span> <br /> VISA GUIDE
+                        </h1>
+                        <p className="text-xl md:text-2xl text-slate-400 max-w-xl leading-relaxed font-medium mb-16 italic border-l-4 border-brand-GOLD/20 pl-12 opacity-80">
+                            Your VIP pass to one of the world's fastest-growing economies. The premier residency path for citizens of 50+ pro-business countries seeking <strong>international living in panama</strong>.
+                        </p>
+                        <div className="flex flex-wrap gap-8">
+                            <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-gold px-12 py-6 rounded-xl font-black uppercase tracking-[0.2em] text-[11px]">
+                                CHECK MY ELIGIBILITY
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -156,62 +164,50 @@ const RelocationFriendlyNationsContent: React.FC = () => {
 
                 <div className="grid lg:grid-cols-2 gap-12">
                     {/* Professional Path */}
-                    <div className="p-16 border border-neutral-200 rounded-[4rem] group hover:border-brand-GOLD transition-all">
+                    <div className="p-16 glass-card rounded-[4rem] group hover:border-brand-GOLD/50 transition-all border-white/5">
                         <Briefcase className="text-brand-GOLD mb-10" size={64} />
                         <h3 className="text-4xl font-black uppercase tracking-tighter mb-8 italic">The Professional Path</h3>
-                        <p className="text-lg text-neutral-600 font-medium leading-relaxed mb-10">
-                            Ideal for those with a high-level corporate career or a specific skill set. You must be hired by a Panamanian company that pays into the social security system.
+                        <p className="text-lg text-slate-400 font-medium leading-relaxed mb-10 opacity-80">
+                            Ideal for those with a corporate career or specific niche skills. You must be hired by a Panamanian company that pays into the social security system.
                         </p>
                         <ul className="space-y-6">
                             <li className="flex gap-4">
-                                <div className="w-6 h-6 bg-brand-GOLD/10 rounded-full flex items-center justify-center shrink-0">
-                                    <Check size={12} className="text-brand-GOLD" />
+                                <div className="w-8 h-8 rounded-full bg-brand-GOLD/10 flex items-center justify-center shrink-0 shadow-[0_0_10px_theme(colors.brand.GOLD)]/10">
+                                    <Check size={14} className="text-brand-GOLD" />
                                 </div>
-                                <div>
-                                    <h4 className="font-black uppercase tracking-widest text-[10px] mb-1">Local Job Offer</h4>
-                                    <p className="text-xs text-neutral-400 font-medium">Agreement with a company that has "quota" for foreign workers.</p>
-                                </div>
+                                <div className="text-xs font-black uppercase tracking-widest text-slate-300">Local Job Offer Verified</div>
                             </li>
                             <li className="flex gap-4">
-                                <div className="w-6 h-6 bg-brand-GOLD/10 rounded-full flex items-center justify-center shrink-0">
-                                    <Check size={12} className="text-brand-GOLD" />
+                                <div className="w-8 h-8 rounded-full bg-brand-GOLD/10 flex items-center justify-center shrink-0 shadow-[0_0_10px_theme(colors.brand.GOLD)]/10">
+                                    <Check size={14} className="text-brand-GOLD" />
                                 </div>
-                                <div>
-                                    <h4 className="font-black uppercase tracking-widest text-[10px] mb-1">Social Security</h4>
-                                    <p className="text-xs text-neutral-400 font-medium">Paying into the "Caja de Seguro Social" (CSS) for a minimum of 2 years.</p>
-                                </div>
+                                <div className="text-xs font-black uppercase tracking-widest text-slate-300">Social Security Compliance</div>
                             </li>
                         </ul>
                     </div>
 
                     {/* Investment Path */}
-                    <div className="p-16 bg-neutral-950 text-white rounded-[4rem] relative overflow-hidden group">
+                    <div className="p-16 bg-neutral-950 text-white rounded-[4rem] relative overflow-hidden group border border-white/10">
                         <div className="absolute top-0 right-0 p-12 opacity-5 scale-150 rotate-12">
                             <Landmark size={200} />
                         </div>
                         <Landmark className="text-brand-GOLD mb-10" size={64} />
                         <h3 className="text-4xl font-black uppercase tracking-tighter mb-8 italic text-brand-GOLD">The Investment Path</h3>
                         <p className="text-lg text-gray-400 font-medium leading-relaxed mb-10">
-                            The "Buy-In" option. Perfect for those who want residency without the need for local employment. High success rate and predictable timeline.
+                            The "Buy-In" option. Perfect for those seeking residency without local employment. High success rate and predictable 2026 timeline.
                         </p>
                         <ul className="space-y-6">
                             <li className="flex gap-4">
-                                <div className="w-6 h-6 bg-brand-GOLD/20 rounded-full flex items-center justify-center shrink-0">
-                                    <Check size={12} className="text-brand-GOLD" />
+                                <div className="w-8 h-8 rounded-full bg-brand-GOLD/20 flex items-center justify-center shrink-0">
+                                    <Check size={14} className="text-brand-GOLD" />
                                 </div>
-                                <div>
-                                    <h4 className="font-black uppercase tracking-widest text-[10px] mb-1 text-white">Real Estate ($200k+)</h4>
-                                    <p className="text-xs text-gray-500 font-medium">Purchase of a property with a minimum value of $200,000 USD.</p>
-                                </div>
+                                <div className="text-xs font-black uppercase tracking-widest text-white">Real Estate ($200k+)</div>
                             </li>
                             <li className="flex gap-4">
-                                <div className="w-6 h-6 bg-brand-GOLD/20 rounded-full flex items-center justify-center shrink-0">
-                                    <Check size={12} className="text-brand-GOLD" />
+                                <div className="w-8 h-8 rounded-full bg-brand-GOLD/20 flex items-center justify-center shrink-0">
+                                    <Check size={14} className="text-brand-GOLD" />
                                 </div>
-                                <div>
-                                    <h4 className="font-black uppercase tracking-widest text-[10px] mb-1 text-white">Fixed Deposit ($200k+)</h4>
-                                    <p className="text-xs text-gray-500 font-medium">Certificate of deposit for 3 years in a local Panamanian bank.</p>
-                                </div>
+                                <div className="text-xs font-black uppercase tracking-widest text-white">Bank Deposit ($200k+)</div>
                             </li>
                         </ul>
                     </div>
@@ -234,8 +230,8 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                                 <li className="flex gap-3"><Check size={16} /> Health Certificate (Provided by us in Panama)</li>
                             </ul>
                         </div>
-                        <button className="px-12 py-6 bg-brand-950 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all shadow-2xl">
-                            Download Full 2026 PDF Checklist
+                        <button className="btn-3d btn-3d-navy px-12 py-6 rounded-xl font-black uppercase tracking-widest text-[11px] shadow-2xl">
+                            DOWNLOAD 2026 PDF CHECKLIST
                         </button>
                     </div>
                     <div className="bg-white/90 p-12 rounded-[4rem] text-sm font-medium leading-[1.8] border border-brand-950/10 shadow-2xl">
@@ -290,8 +286,8 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                         <p className="text-gray-400 font-medium leading-relaxed mb-10">
                             We pre-audit your entire <strong>friendly nations visa dossier</strong> before you even book your flight. By the time our <strong>panama immigration lawyers</strong> see your file, it's already 95% cleared for approval.
                         </p>
-                        <button className="w-full py-6 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-xs rounded-2xl hover:bg-white transition-all">
-                            Book Pre-Audit Consultation
+                        <button className="btn-3d btn-3d-gold w-full py-6 rounded-xl font-black uppercase tracking-widest text-[11px]">
+                            BOOK PRE-AUDIT CONSULTATION
                         </button>
                     </div>
                 </div>
@@ -516,8 +512,8 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                     <p className="text-xl text-neutral-500 mb-16 font-medium leading-relaxed">
                         Don't let the 50-country list confuse you. We know exactly which path is fastest for your specific profile.
                     </p>
-                    <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
-                        Start Initial Consultation
+                    <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-navy px-16 py-8 rounded-2xl font-black uppercase tracking-[0.3em] text-xs inline-block">
+                        START INITIAL CONSULTATION
                     </Link>
                 </div>
             </section>
