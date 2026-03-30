@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, CheckCircle, TrendingUp, Globe, Building2, Landmark, ShieldCheck, Waves, Sun, Coffee, HeartHeader, Plane } from 'lucide-react';
+import { ArrowRight, CheckCircle, TrendingUp, Globe, Building2, Landmark, ShieldCheck, Waves, Sun, Coffee, Heart, Plane } from 'lucide-react';
 import BlogPostSchema from '@/components/seo/BlogPostSchema';
 
 export async function generateMetadata(
@@ -29,7 +29,7 @@ const guideSections = [
     {
         title: 'Luxury Expat Lifestyle',
         desc: 'From world-class healthcare to elite private schools, Panama offers a first-world lifestyle at a lower cost.',
-        icon: HeartHeader,
+        icon: Heart,
     },
     {
         title: 'Fast-Track Residency',
