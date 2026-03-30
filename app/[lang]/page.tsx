@@ -10,6 +10,8 @@ import { useLanguage } from '@/context/LanguageContext';
 import HeroTilt from '@/components/ui/HeroTilt';
 import SplitText from '@/components/ui/SplitText';
 import VideoThumbnail from '@/components/ui/VideoThumbnail';
+import Magnetic from '@/components/ui/Magnetic';
+import { motion } from 'framer-motion';
 import VideoSchema from '@/components/seo/VideoSchema';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
@@ -22,11 +24,11 @@ const HeroCarousel: React.FC = () => {
   }, []);
 
   return (
-    <div className="absolute inset-0 z-0 bg-brand-950 overflow-hidden">
+    <div className="absolute inset-0 z-0 bg-brand-950 overflow-hidden bg-mesh-glow">
       {IMAGES.heroSlides.map((slide, index) => (
-        <div key={index} className={`absolute inset-0 transition-all duration-[3000ms] ease-in-out ${index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-110'}`}>
+        <div key={index} className={`absolute inset-0 transition-all duration-[3000ms] ease-in-out ${index === currentSlide ? 'opacity-40 scale-100' : 'opacity-0 scale-105'}`}>
           <img src={slide} alt={`Luxury Panama Real Estate Experience - Slide ${index + 1}`} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-b from-brand-950/90 via-brand-950/40 to-brand-950" />
+          <div className="absolute inset-0 bg-gradient-to-b from-brand-950/95 via-brand-950/20 to-brand-950" />
         </div>
       ))}
     </div>
@@ -72,36 +74,69 @@ export default function Home() {
         <HeroCarousel />
 
         <div className="relative z-20 max-w-7xl mx-auto px-4 w-full pt-20 perspective-1000">
-          <HeroTilt intensity={5} className="max-w-4xl mx-auto text-center">
-            <div className="inline-flex items-center gap-3 px-4 py-2 glass-card rounded-full mb-8 animate-in fade-in slide-in-from-top-4 duration-1000" style={{ transform: 'translateZ(40px)' }}>
-              <div className="w-2 h-2 bg-brand-GOLD rounded-full animate-ping"></div>
-              <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white">Market Intelligence 2026</span>
-            </div>
+          <HeroTilt intensity={3} className="max-w-4xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+              className="inline-flex items-center gap-3 px-6 py-2 glass-card rounded-full mb-12 shadow-2xl"
+              style={{ transform: 'translateZ(40px)' }}
+            >
+              <div className="w-2 h-2 bg-brand-GOLD rounded-full animate-pulse shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div>
+              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white">Market Intelligence <span className="text-brand-GOLD">2026</span></span>
+            </motion.div>
 
             <div style={{ transform: 'translateZ(60px)' }}>
-              <h1 className="font-heading text-6xl md:text-8xl lg:text-9xl font-black text-white mb-8 leading-[0.85] tracking-tighter uppercase italic">
-                <SplitText text={lang === 'es' ? "Bienes Raíces" : "Panama Real Estate"} delay={0.2} className="block" />
+              <motion.h1
+                initial={{ opacity: 0, y: 40 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.2, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+                className="font-heading text-7xl md:text-9xl font-black text-white mb-8 leading-[0.8] tracking-tighter uppercase italic"
+              >
+                {lang === 'es' ? "Bienes Raíces" : "Panama Real Estate"} <br />
                 <span className="text-brand-GOLD">
-                  <SplitText text={lang === 'es' ? "en Venta 2026" : "for Sale 2026"} delay={0.8} />
+                  {lang === 'es' ? "en Venta 2026" : "for Sale 2026"}
                 </span>
-              </h1>
-              <p className="text-xl md:text-2xl text-white/90 font-bold mb-4 uppercase tracking-[0.2em] opacity-80">
+              </motion.h1>
+
+              <motion.p
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1.5, delay: 0.8 }}
+                className="text-xl md:text-2xl text-white/90 font-black mb-12 uppercase tracking-[0.4em] font-serif-luxury"
+              >
                 Luxury Beachfront & City Portfolio
-              </p>
+              </motion.p>
             </div>
 
-            <p className="text-xl md:text-2xl text-slate-300 mb-12 leading-relaxed max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-400 font-medium" style={{ transform: 'translateZ(30px)' }}>
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1, ease: [0.22, 1, 0.36, 1] }}
+              className="text-xl md:text-2xl text-slate-300 mb-16 leading-relaxed max-w-2xl mx-auto font-medium opacity-80"
+              style={{ transform: 'translateZ(30px)' }}
+            >
               Your trusted guide to buying property in Panama. From beachfront condos to mountain retreats, we connect international investors with the best real estate opportunities.
-            </p>
+            </motion.p>
 
-            <div className="flex flex-col sm:flex-row gap-8 justify-center animate-in fade-in zoom-in duration-1000 delay-700" style={{ transform: 'translateZ(50px)' }}>
-              <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-gold px-12 py-6 rounded-full font-black uppercase tracking-[0.2em] text-xs transition-all flex items-center justify-center">
-                EXPLORE ASSETS
-              </Link>
-              <Link href={`/${lang}/tours`} className="btn-3d btn-3d-navy px-12 py-6 rounded-full font-black uppercase tracking-[0.2em] text-xs transition-all bg-white/5 backdrop-blur-xl border border-white/10 flex items-center justify-center gap-3">
-                <PlayCircle size={20} className="text-brand-GOLD" /> DISCOVERY TOURS
-              </Link>
-            </div>
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 1.4, ease: [0.23, 1, 0.32, 1] }}
+              className="flex flex-col sm:flex-row gap-12 justify-center"
+              style={{ transform: 'translateZ(50px)' }}
+            >
+              <Magnetic strength={0.4}>
+                <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-gold px-12 py-7 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] flex items-center justify-center">
+                  EXPLORE ASSETS
+                </Link>
+              </Magnetic>
+              <Magnetic strength={0.4}>
+                <Link href={`/${lang}/tours`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10 flex items-center justify-center gap-3">
+                  <PlayCircle size={20} className="text-brand-GOLD" /> DISCOVERY TOURS
+                </Link>
+              </Magnetic>
+            </motion.div>
           </HeroTilt>
         </div>
 

@@ -10,6 +10,8 @@ import { useCMS } from '@/context/CMSContext';
 import { Project, ProjectType, ProjectZone } from '@/lib/types';
 import ParallaxSection from '@/components/ui/ParallaxSection';
 import SplitText from '@/components/ui/SplitText';
+import Magnetic from '@/components/ui/Magnetic';
+import HeroTilt from '@/components/ui/HeroTilt';
 
 const ProjectsPageContent: React.FC = () => {
     const { lang } = useLanguage();
@@ -42,23 +44,38 @@ const ProjectsPageContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-brand-950">
-            {/* Header */}
-            <div className="relative pt-48 pb-32 px-4 overflow-hidden border-b border-white/5">
-                <div className="absolute inset-0 opacity-20">
-                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80" alt="" className="w-full h-full object-cover" />
+            {/* Header: 3.0 Cinematic */}
+            <div className="relative pt-48 pb-32 px-4 overflow-hidden border-b border-white/5 bg-mesh-glow">
+                <div className="absolute inset-0 z-0 scale-105 overflow-hidden">
+                    <motion.img
+                        initial={{ opacity: 0, scale: 1.1 }}
+                        animate={{ opacity: 0.15, scale: 1 }}
+                        transition={{ duration: 3, ease: 'easeOut' }}
+                        src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80"
+                        alt=""
+                        className="w-full h-full object-cover"
+                    />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-b from-brand-950/40 via-brand-950 to-brand-950" />
+                <div className="absolute inset-0 bg-gradient-to-b from-brand-950/60 via-brand-950/40 to-brand-950" />
                 <div className="max-w-7xl mx-auto relative z-10">
-                    <span className="inline-block border border-brand-GOLD/30 bg-brand-950/50 backdrop-blur-md text-brand-GOLD px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.4em] mb-10 animate-fade-in-up">
-                        Asset Catalog 2026
-                    </span>
-                    <h1 className="font-heading text-6xl md:text-9xl font-black text-white mb-10 tracking-tighter leading-[0.8] uppercase italic">
-                        <SplitText text={lang === 'zh' ? '新开发项目' : 'The Investment'} delay={0.2} /> <br />
-                        <span className="text-brand-GOLD"><SplitText text={lang === 'zh' ? '巴拿马' : 'Inventory'} delay={0.8} /></span>
-                    </h1>
-                    <p className="text-slate-400 text-xl md:text-2xl max-w-2xl leading-relaxed font-medium italic border-l-4 border-brand-GOLD/20 pl-12">
-                        Curating high-liquidity <strong>Panama real estate assets</strong> and exclusive <strong>luxury developments</strong> for the global elite.
-                    </p>
+                    <HeroTilt intensity={2}>
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+                        >
+                            <span className="inline-block border border-brand-GOLD/30 bg-brand-950/50 backdrop-blur-md text-brand-GOLD px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.5em] mb-12 shadow-[0_0_20px_rgba(233,195,73,0.1)]">
+                                Asset Catalog <span className="text-white">2026</span>
+                            </span>
+                            <h1 className="font-heading text-6xl md:text-9xl font-black text-white mb-10 tracking-tighter leading-[0.8] uppercase italic">
+                                THE INVESTMENT <br />
+                                <span className="text-brand-GOLD italic">INVENTORY.</span>
+                            </h1>
+                            <p className="text-xl md:text-2xl text-slate-400 max-w-2xl leading-relaxed font-black italic border-l-4 border-brand-GOLD/20 pl-12 opacity-90 font-serif-luxury tracking-normal">
+                                Curating high-liquidity <strong>Panama real estate assets</strong> and exclusive <strong>luxury developments</strong> for the global elite.
+                            </p>
+                        </motion.div>
+                    </HeroTilt>
                 </div>
             </div>
 
@@ -105,15 +122,17 @@ const ProjectsPageContent: React.FC = () => {
                         </div>
 
                         <div className="flex-grow md:max-w-md relative">
-                            <input
-                                type="text"
-                                value={searchTerm}
-                                onChange={(e) => setSearchTerm(e.target.value)}
-                                placeholder={lang === 'zh' ? "搜索项目..." : "Search Project Portfolio..."}
-                                aria-label="Search projects by keyword"
-                                className="w-full pl-14 pr-10 py-5 bg-white/5 rounded-2xl text-[11px] font-black uppercase tracking-widest border border-white/5 text-white focus:ring-1 focus:ring-brand-GOLD/50 outline-none transition-all placeholder:text-slate-600 shadow-inner"
-                            />
-                            <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-brand-GOLD/50" size={20} />
+                            <Magnetic strength={0.1}>
+                                <input
+                                    type="text"
+                                    value={searchTerm}
+                                    onChange={(e) => setSearchTerm(e.target.value)}
+                                    placeholder={lang === 'zh' ? "搜索项目..." : "Search Project Portfolio..."}
+                                    aria-label="Search projects by keyword"
+                                    className="w-full pl-14 pr-10 py-5 bg-white/5 rounded-2xl text-[11px] font-black uppercase tracking-widest border border-white/5 text-white focus:ring-1 focus:ring-brand-GOLD/50 outline-none transition-all placeholder:text-slate-600 shadow-inner"
+                                />
+                                <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-brand-GOLD/50" size={20} />
+                            </Magnetic>
                             {searchTerm && (
                                 <button
                                     onClick={() => setSearchTerm('')}
