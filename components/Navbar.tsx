@@ -7,6 +7,8 @@ import { Menu, X, Search, Sparkles, ChevronDown } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
 import { CONTENT } from '@/lib/constants';
 import { useLanguage } from '@/context/LanguageContext';
+import { motion, AnimatePresence } from 'framer-motion';
+import Magnetic from './ui/Magnetic';
 
 const Navbar: React.FC = () => {
     const { lang } = useLanguage();
@@ -71,14 +73,21 @@ const Navbar: React.FC = () => {
     };
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-[rgba(7,10,20,0.86)] backdrop-blur-xl border-b border-white/5 py-3 shadow-2xl' : 'bg-transparent py-6'}`}>
+        <motion.nav
+            initial={{ y: -100 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+            className={`fixed w-full z-50 transition-all duration-700 ${isScrolled ? 'bg-brand-950/80 backdrop-blur-3xl border-b border-white/5 py-3 shadow-2xl' : 'bg-transparent py-8'}`}
+        >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
-                    <Link href={`/${lang}`} className="z-50 focus:outline-none group">
-                        <span className="font-heading text-xl md:text-3xl font-black tracking-tighter transition-opacity group-hover:opacity-90">
-                            <span className="text-brand-GOLD uppercase">PANAMA</span><span className="uppercase text-white">REALESTATESALE</span>
-                        </span>
-                    </Link>
+                    <Magnetic strength={0.2}>
+                        <Link href={`/${lang}`} className="z-50 focus:outline-none group">
+                            <span className="font-heading text-xl md:text-3xl font-black tracking-tighter transition-opacity group-hover:opacity-90">
+                                <span className="text-brand-GOLD uppercase">PANAMA</span><span className="uppercase text-white font-serif-luxury lowercase tracking-normal -ml-1">Sale</span>
+                            </span>
+                        </Link>
+                    </Magnetic>
 
                     <div className="hidden lg:flex items-center gap-10">
                         <div className="flex gap-8 text-[11px] font-black uppercase tracking-[0.2em] text-gray-200">
@@ -113,9 +122,11 @@ const Navbar: React.FC = () => {
                         </div>
                         <div className="flex items-center gap-6">
                             <LanguageSwitcher currentLang={lang} />
-                            <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-gold px-8 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center gap-2">
-                                <Search size={14} /> {t.nav.search}
-                            </Link>
+                            <Magnetic strength={0.3}>
+                                <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-gold px-8 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center gap-2">
+                                    <Search size={14} /> {t.nav.search}
+                                </Link>
+                            </Magnetic>
                         </div>
                     </div>
 
@@ -137,7 +148,7 @@ const Navbar: React.FC = () => {
             {isMobileMenuOpen && (
                 <div
                     id="mobile-menu"
-                    className="absolute top-full left-0 w-full h-[calc(100vh-80px)] overflow-y-auto bg-brand-950 shadow-2xl border-t border-white/5 p-8 flex flex-col gap-6 lg:hidden animate-in slide-in-from-top-4 duration-500"
+                    className="absolute top-full left-0 w-full h-[calc(100vh-80px)] overflow-y-auto bg-brand-950/95 backdrop-blur-3xl shadow-2xl border-t border-white/5 p-8 flex flex-col gap-6 lg:hidden animate-in slide-in-from-top-4 duration-500"
                 >
                     {Object.entries(navItems).map(([key, group]) => (
                         <div key={key} className="flex flex-col gap-4">
@@ -172,7 +183,7 @@ const Navbar: React.FC = () => {
                     </div>
                 </div>
             )}
-        </nav>
+        </motion.nav>
     );
 };
 

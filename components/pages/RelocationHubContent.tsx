@@ -1,12 +1,15 @@
 'use client';
 
 import React from 'react';
-import { Compass, ShieldCheck, Map, ArrowRight, Star, Home, Users, Briefcase, Heart, Building2, Scale, Globe, Zap, AlertTriangle, Hammer, Utensils, Tv } from 'lucide-react';
+import { Compass, ShieldCheck, Map, ArrowRight, Star, Home, Users, Briefcase, Heart, Building2, Scale, Globe, Zap, AlertTriangle, Hammer, Utensils, Tv, PlayCircle } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import Breadcrumbs from '@/components/ui/Breadcrumbs';
 import { useLanguage } from '@/context/LanguageContext';
+import { motion } from 'framer-motion';
+import Magnetic from '@/components/ui/Magnetic';
+import HeroTilt from '@/components/ui/HeroTilt';
 
 const RelocationHubContent: React.FC = () => {
     const { lang } = useLanguage();
@@ -18,41 +21,54 @@ const RelocationHubContent: React.FC = () => {
         <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
 
-            <div className="max-w-7xl mx-auto px-4 mt-8 relative z-50">
+            <div className="max-w-7xl mx-auto px-4 mt-12 relative z-50">
                 <Breadcrumbs items={breadcrumbItems} />
             </div>
 
-            {/* Premium Hero Section */}
-            <section className="relative min-h-screen flex items-center overflow-hidden border-b border-white/5">
-                <div className="absolute inset-0 z-0">
-                    <img
+            {/* Premium Hero Section: 3.0 Cinematic */}
+            <section className="relative min-h-screen flex items-center overflow-hidden border-b border-white/5 bg-mesh-glow">
+                <div className="absolute inset-0 z-0 scale-105 overflow-hidden">
+                    <motion.img
+                        initial={{ opacity: 0, scale: 1.1 }}
+                        animate={{ opacity: 0.25, scale: 1 }}
+                        transition={{ duration: 3, ease: 'easeOut' }}
                         src="https://images.unsplash.com/photo-1544644011-87b829283197?w=1600&q=80"
                         alt="Aerial view of Panama City skyline, a primary destination for panama relocation tours"
-                        className="w-full h-full object-cover opacity-20 scale-110"
+                        className="w-full h-full object-cover"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/80 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-r from-brand-950 via-brand-950/90 to-transparent"></div>
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-20 items-center">
-                    <div>
-                        <span className="inline-block px-6 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full backdrop-blur-md mb-12">
-                            The Expat Gateway 2026
-                        </span>
-                        <h1 className="font-heading text-6xl md:text-9xl font-black mb-12 leading-[0.8] tracking-tighter uppercase italic">
-                            THE PANAMA <br /> <span className="text-brand-GOLD">RELOCATION</span> <br /> MASTERCLASS
-                        </h1>
-                        <p className="text-xl md:text-2xl text-slate-400 max-w-xl leading-relaxed font-medium mb-16 italic border-l-4 border-brand-GOLD/20 pl-12 opacity-80">
-                            Don't just move to Panama. <strong>Relocate with strategy.</strong> Explore our elite <strong>relocation tours</strong> and master the <strong>pensionado visa</strong> with the world's #1 expat team.
-                        </p>
-                        <div className="flex flex-wrap gap-8">
-                            <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-gold px-12 py-6 rounded-xl font-black uppercase tracking-[0.2em] text-[11px]">
-                                BOOK DISCOVERY TOUR
-                            </Link>
-                            <Link href={`/${lang}/relocation/visas`} className="btn-3d btn-3d-navy px-12 py-6 rounded-xl font-black uppercase tracking-[0.2em] text-[11px]">
-                                VISA REQUIREMENTS
-                            </Link>
-                        </div>
-                    </div>
+                    <HeroTilt intensity={2}>
+                        <motion.div
+                            initial={{ opacity: 0, x: -40 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+                        >
+                            <span className="inline-block px-6 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full backdrop-blur-md mb-12 shadow-[0_0_20px_theme(colors.brand.GOLD/0.1)]">
+                                The Expat Gateway <span className="text-white">2026</span>
+                            </span>
+                            <h1 className="font-heading text-6xl md:text-9xl font-black mb-12 leading-[0.8] tracking-tighter uppercase italic text-white">
+                                THE PANAMA <br /> <span className="text-brand-GOLD">RELOCATION</span> <br /> MASTERCLASS
+                            </h1>
+                            <p className="text-xl md:text-2xl text-slate-400 max-w-xl leading-relaxed font-black mb-16 italic border-l-4 border-brand-GOLD/20 pl-12 opacity-90 font-serif-luxury tracking-normal">
+                                Don't just move to Panama. <span className="text-white">Relocate with strategy.</span> Explore our elite <strong>relocation tours</strong> and master the <strong>pensionado visa</strong> with the world's #1 expat team.
+                            </p>
+                            <div className="flex flex-wrap gap-10">
+                                <Magnetic strength={0.4}>
+                                    <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-gold px-12 py-7 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] flex items-center justify-center min-w-[240px]">
+                                        BOOK DISCOVERY TOUR
+                                    </Link>
+                                </Magnetic>
+                                <Magnetic strength={0.4}>
+                                    <Link href={`/${lang}/relocation/visas`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] flex items-center justify-center min-w-[240px] gap-3">
+                                        <PlayCircle size={18} className="text-brand-GOLD" /> VISA REQUIREMENTS
+                                    </Link>
+                                </Magnetic>
+                            </div>
+                        </motion.div>
+                    </HeroTilt>
                 </div>
             </section>
 
@@ -90,9 +106,15 @@ const RelocationHubContent: React.FC = () => {
                         <p className="text-gray-500 text-lg uppercase tracking-widest font-black">Everything you need to relocate to Panama, categorized.</p>
                     </div>
 
-                    <div className="grid lg:grid-cols-3 gap-8">
+                    <div className="grid lg:grid-cols-3 gap-12">
                         {/* Pillar 1: Exploration */}
-                        <div className="glass-card p-16 rounded-[4rem] border-white/5 hover:border-brand-GOLD/30 transition-all group relative overflow-hidden">
+                        <motion.div
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8, delay: 0.1 }}
+                            className="glass-card p-16 rounded-[4rem] border-white/5 hover:border-brand-GOLD/30 transition-all group relative overflow-hidden"
+                        >
                             <div className="absolute top-0 right-0 w-48 h-48 bg-brand-GOLD/5 rounded-full -mr-24 -mt-24 blur-3xl group-hover:bg-brand-GOLD/10 transition-all"></div>
                             <Compass className="text-brand-GOLD mb-12" size={64} />
                             <h3 className="text-4xl font-black mb-8 uppercase tracking-tighter italic leading-none">Discovery <br /> & Tours</h3>
@@ -101,19 +123,27 @@ const RelocationHubContent: React.FC = () => {
                             </p>
                             <ul className="space-y-6 mb-16">
                                 <li className="flex items-center gap-4 text-xs font-black uppercase tracking-widest text-slate-300">
-                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div> VIP Experience
+                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)] group-hover:animate-ping"></div> VIP Experience
                                 </li>
                                 <li className="flex items-center gap-4 text-xs font-black uppercase tracking-widest text-slate-300">
-                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div> Regional Deep Dives
+                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)] group-hover:animate-ping"></div> Regional Deep Dives
                                 </li>
                             </ul>
-                            <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-gold px-10 py-5 rounded-xl font-black uppercase tracking-[0.3em] text-[9px] w-full text-center">
-                                EXPLORE TOURS
-                            </Link>
-                        </div>
+                            <Magnetic strength={0.3}>
+                                <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-gold px-10 py-5 rounded-xl font-black uppercase tracking-[0.3em] text-[9px] w-full text-center">
+                                    EXPLORE TOURS
+                                </Link>
+                            </Magnetic>
+                        </motion.div>
 
                         {/* Pillar 2: Residency */}
-                        <div className="glass-card p-16 rounded-[4rem] border-white/5 hover:border-brand-GOLD/30 transition-all group relative overflow-hidden md:mt-24">
+                        <motion.div
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8, delay: 0.3 }}
+                            className="glass-card p-16 rounded-[4rem] border-white/5 hover:border-brand-GOLD/30 transition-all group relative overflow-hidden md:mt-24"
+                        >
                             <ShieldCheck className="text-brand-GOLD mb-12" size={64} />
                             <h3 className="text-4xl font-black mb-8 uppercase tracking-tighter italic leading-none">Legal <br /> & Residency</h3>
                             <p className="text-slate-400 leading-relaxed mb-12 font-medium opacity-80">
@@ -121,19 +151,27 @@ const RelocationHubContent: React.FC = () => {
                             </p>
                             <ul className="space-y-6 mb-16">
                                 <li className="flex items-center gap-4 text-xs font-black uppercase tracking-widest text-slate-300">
-                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div> Legal HQ Access
+                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)] group-hover:animate-ping"></div> Legal HQ Access
                                 </li>
                                 <li className="flex items-center gap-4 text-xs font-black uppercase tracking-widest text-slate-300">
-                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div> Visa Comparison
+                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)] group-hover:animate-ping"></div> Visa Comparison
                                 </li>
                             </ul>
-                            <Link href={`/${lang}/relocation/legal`} className="btn-3d btn-3d-navy px-10 py-5 rounded-xl font-black uppercase tracking-[0.3em] text-[9px] w-full text-center">
-                                LEGAL HUB
-                            </Link>
-                        </div>
+                            <Magnetic strength={0.3}>
+                                <Link href={`/${lang}/relocation/legal`} className="btn-3d btn-3d-navy px-10 py-5 rounded-xl font-black uppercase tracking-[0.3em] text-[9px] w-full text-center">
+                                    LEGAL HUB
+                                </Link>
+                            </Magnetic>
+                        </motion.div>
 
                         {/* Pillar 3: Research */}
-                        <div className="glass-card p-16 rounded-[4rem] border-white/5 hover:border-brand-GOLD/30 transition-all group relative overflow-hidden">
+                        <motion.div
+                            initial={{ opacity: 0, y: 40 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.8, delay: 0.5 }}
+                            className="glass-card p-16 rounded-[4rem] border-white/5 hover:border-brand-GOLD/30 transition-all group relative overflow-hidden"
+                        >
                             <Map className="text-brand-GOLD mb-12" size={64} />
                             <h3 className="text-4xl font-black mb-8 uppercase tracking-tighter italic leading-none">Regional <br /> Research</h3>
                             <p className="text-slate-400 leading-relaxed mb-12 font-medium opacity-80">
@@ -141,16 +179,18 @@ const RelocationHubContent: React.FC = () => {
                             </p>
                             <ul className="space-y-6 mb-16">
                                 <li className="flex items-center gap-4 text-xs font-black uppercase tracking-widest text-slate-300">
-                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div> Cost Analysis
+                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)] group-hover:animate-ping"></div> Cost Analysis
                                 </li>
                                 <li className="flex items-center gap-4 text-xs font-black uppercase tracking-widest text-slate-300">
-                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div> Weather Intelligence
+                                    <div className="w-2 h-2 rounded-full bg-brand-GOLD shadow-[0_0_10px_theme(colors.brand.GOLD)] group-hover:animate-ping"></div> Weather Intelligence
                                 </li>
                             </ul>
-                            <Link href={`/${lang}/relocation/guides`} className="btn-3d btn-3d-gold px-10 py-5 rounded-xl font-black uppercase tracking-[0.3em] text-[9px] w-full text-center">
-                                VIEW GUIDES
-                            </Link>
-                        </div>
+                            <Magnetic strength={0.3}>
+                                <Link href={`/${lang}/relocation/guides`} className="btn-3d btn-3d-gold px-10 py-5 rounded-xl font-black uppercase tracking-[0.3em] text-[9px] w-full text-center">
+                                    VIEW GUIDES
+                                </Link>
+                            </Magnetic>
+                        </motion.div>
                     </div>
                 </div>
             </section>

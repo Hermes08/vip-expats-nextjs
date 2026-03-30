@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat, Manrope } from "next/font/google";
+import { Inter, Montserrat, Manrope, Cormorant_Garamond } from "next/font/google";
 import Script from "next/script";
 import "../globals.css";
 import { CMSProvider } from "@/context/CMSContext";
@@ -7,6 +7,7 @@ import { LanguageProvider } from "@/context/LanguageContext";
 import MainLayout from "@/components/MainLayout";
 import ScrollAnimationObserver from "@/components/ScrollAnimationObserver";
 import ZeroGravityWrapper from '@/components/GoldParticles/ZeroGravityWrapper';
+import SmoothScroll from "@/components/providers/SmoothScroll";
 import OrganizationSchema from '@/components/seo/OrganizationSchema';
 
 const inter = Inter({
@@ -24,6 +25,12 @@ const manrope = Manrope({
   variable: "--font-manrope",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
+});
+
+const cormorant = Cormorant_Garamond({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
@@ -126,20 +133,22 @@ export default async function RootLayout({
         </Script>
       </head>
       <body
-        className={`${inter.variable} ${montserrat.variable} ${manrope.variable} antialiased overflow-x-hidden selection:bg-brand-GOLD selection:text-brand-900 bg-brand-950`}
+        className={`${inter.variable} ${montserrat.variable} ${manrope.variable} ${cormorant.variable} antialiased overflow-x-hidden selection:bg-brand-GOLD selection:text-brand-900 bg-brand-950`}
       >
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 z-[100] px-6 py-3 bg-brand-GOLD text-brand-950 font-bold rounded-lg shadow-xl ring-2 ring-white">
           Skip to content
         </a>
         <OrganizationSchema lang={lang as 'es' | 'en'} />
         <LanguageProvider initialLang={lang as 'es' | 'en'}>
-          <ScrollAnimationObserver />
-          <ZeroGravityWrapper />
-          <CMSProvider>
-            <MainLayout>
-              {children}
-            </MainLayout>
-          </CMSProvider>
+          <SmoothScroll>
+            <ScrollAnimationObserver />
+            <ZeroGravityWrapper />
+            <CMSProvider>
+              <MainLayout>
+                {children}
+              </MainLayout>
+            </CMSProvider>
+          </SmoothScroll>
         </LanguageProvider>
       </body>
     </html>
