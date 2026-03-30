@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
                 <div className="flex justify-between items-center">
                     <Link href={`/${lang}`} className="z-50 focus:outline-none group">
                         <span className="font-heading text-xl md:text-3xl font-black tracking-tighter transition-opacity group-hover:opacity-90">
-                            <span className="text-brand-GOLD uppercase text-shadow-sm">PANAMA</span><span className="uppercase text-white text-shadow-sm">REALESTATESALE</span>
+                            <span className="text-brand-GOLD uppercase">PANAMA</span><span className="uppercase text-white">REALESTATESALE</span>
                         </span>
                     </Link>
 
@@ -113,7 +113,7 @@ const Navbar: React.FC = () => {
                         </div>
                         <div className="flex items-center gap-6">
                             <LanguageSwitcher currentLang={lang} />
-                            <Link href={`/${lang}/proyectos`} className="bg-brand-GOLD text-brand-950 px-6 py-2.5 rounded-full font-black text-[10px] uppercase tracking-widest flex items-center gap-2 border-[4px] border-white/5 hover:bg-[#FCD34D] hover:border-white/10 transition-all shadow-lg hover:shadow-brand-GOLD/20">
+                            <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-gold px-8 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center gap-2">
                                 <Search size={14} /> {t.nav.search}
                             </Link>
                         </div>
@@ -166,7 +166,7 @@ const Navbar: React.FC = () => {
                     <Link href={`/${lang}/contacto`} className={`text-2xl font-black uppercase tracking-tighter ${isActive('/contacto') ? 'text-brand-GOLD' : 'text-white'}`}>{t.nav.contact}</Link>
 
                     <div className="mt-auto py-8">
-                        <Link href={`/${lang}/proyectos`} className="w-full bg-brand-GOLD text-brand-950 px-8 py-5 rounded-2xl font-black text-xs uppercase tracking-widest flex items-center justify-center gap-3 shadow-xl">
+                        <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-gold w-full px-8 py-5 rounded-2xl font-black text-xs uppercase tracking-widest flex items-center justify-center gap-3">
                             <Search size={20} /> {t.nav.search}
                         </Link>
                     </div>
