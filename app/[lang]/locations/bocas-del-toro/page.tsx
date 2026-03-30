@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Ship, Anchor, Sun, Waves, Palmtree, Map, ArrowRight, ShieldCheck, TrendingUp } from 'lucide-center-icons'; // Assuming these exist or using lucide
+import { Ship, Anchor, Sun, Waves, Palmtree, Map, ArrowRight, ShieldCheck, TrendingUp } from 'lucide-react';
 import { Compass, Shell, Fish } from 'lucide-react';
 import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
