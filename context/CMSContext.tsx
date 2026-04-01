@@ -4,6 +4,13 @@ import React, { createContext, useContext, useEffect, useState } from 'react';
 import { BlogPost, Project, QuizSubmission } from '@/lib/types';
 import { BLOG_POSTS, PROJECTS } from '@/lib/constants';
 import { supabase } from '@/lib/supabase';
+import {
+    fetchWPBlogPosts,
+    fetchWPProjects,
+    mergeWPBlogPosts,
+    mergeWPProjects,
+    isWordPressConfigured,
+} from '@/lib/wordpress';
 
 interface CMSContextType {
     blogPosts: BlogPost[];
@@ -40,57 +47,78 @@ export const CMSProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         !process.env.NEXT_PUBLIC_SUPABASE_URL.includes('tu-proyecto'));
 
     const refreshData = async () => {
+        // ── Step 1: Local/static fallback if Supabase not configured ────────────
         if (!isSupabaseConfigured) {
-            console.warn("Supabase not configured. Using in-memory/local data.");
+            console.warn("Supabase not configured. Using static data.");
             if (typeof window !== 'undefined') {
                 const localLeads = window.localStorage.getItem('pres_leads');
                 if (localLeads) {
-                    try {
-                        setQuizSubmissions(JSON.parse(localLeads));
-                    } catch (e) {
-                        console.error("Error parsing local leads:", e);
-                    }
+                    try { setQuizSubmissions(JSON.parse(localLeads)); } catch (e) { console.error(e); }
                 }
+            }
+            // Still try to pull from WordPress even without Supabase
+            if (isWordPressConfigured()) {
+                const [wpPosts, wpProjects] = await Promise.all([
+                    fetchWPBlogPosts(),
+                    fetchWPProjects(),
+                ]);
+                if (wpPosts.length) setBlogPosts(mergeWPBlogPosts(BLOG_POSTS, wpPosts));
+                if (wpProjects.length) setProjects(mergeWPProjects(PROJECTS, wpProjects));
             }
             return;
         }
 
         try {
-            // Load Projects and merge with static
-            const { data: pData } = await supabase.from('projects').select('*');
-            if (pData) {
-                const dbProjects = pData as Project[];
-                // Strategy: Start with static projects. 
-                // If a DB version exists (matching ID), use DB version.
-                // If DB has projects NOT in static (newly created), add them too.
+            // ── Step 2: Load from Supabase ───────────────────────────────────────
+            const [pResult, bResult, qResult] = await Promise.all([
+                supabase.from('projects').select('*'),
+                supabase.from('blog_posts').select('*').order('created_at', { ascending: false }),
+                supabase.from('quiz_submissions').select('*').order('timestamp', { ascending: false }),
+            ]);
 
+            // Merge projects: static → Supabase overrides
+            let mergedProjects = PROJECTS;
+            if (pResult.data) {
+                const dbProjects = pResult.data as Project[];
                 const staticWithOverrides = PROJECTS.map(staticP => {
                     const dbVersion = dbProjects.find(p => p.id === staticP.id);
                     return dbVersion || staticP;
                 });
                 const newDbProjects = dbProjects.filter(dbP => !PROJECTS.some(p => p.id === dbP.id));
-
-                setProjects([...staticWithOverrides, ...newDbProjects]);
+                mergedProjects = [...staticWithOverrides, ...newDbProjects];
             }
 
-            // Load Blog Posts and merge
-            const { data: bData } = await supabase.from('blog_posts').select('*').order('created_at', { ascending: false });
-            if (bData) {
-                const dbPosts = bData as BlogPost[];
+            // Merge blog posts: static → Supabase overrides
+            let mergedPosts = BLOG_POSTS;
+            if (bResult.data) {
+                const dbPosts = bResult.data as BlogPost[];
                 const staticWithOverrides = BLOG_POSTS.map(staticP => {
                     const dbVersion = dbPosts.find(p => p.id === staticP.id);
                     return dbVersion || staticP;
                 });
                 const newDbPosts = dbPosts.filter(dbP => !BLOG_POSTS.some(p => p.id === dbP.id));
-                setBlogPosts([...staticWithOverrides, ...newDbPosts]);
+                mergedPosts = [...staticWithOverrides, ...newDbPosts];
             }
 
-            // Load Quiz Submissions
-            const { data: qData } = await supabase.from('quiz_submissions').select('*').order('timestamp', { ascending: false });
-            if (qData) setQuizSubmissions(qData);
+            if (qResult.data) setQuizSubmissions(qResult.data);
+
+            // ── Step 3: Layer WordPress posts on top (new content only) ──────────
+            // WordPress adds NEW posts that aren't in Supabase/static.
+            // Supabase always takes priority for overlapping slugs.
+            if (isWordPressConfigured()) {
+                const [wpPosts, wpProjects] = await Promise.all([
+                    fetchWPBlogPosts(),
+                    fetchWPProjects(),
+                ]);
+                if (wpPosts.length) mergedPosts = mergeWPBlogPosts(mergedPosts, wpPosts);
+                if (wpProjects.length) mergedProjects = mergeWPProjects(mergedProjects, wpProjects);
+            }
+
+            setBlogPosts(mergedPosts);
+            setProjects(mergedProjects);
 
         } catch (e) {
-            console.error("Supabase refresh error:", e);
+            console.error("Data refresh error:", e);
         }
     };
 
