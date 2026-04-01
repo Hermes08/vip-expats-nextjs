@@ -1,7 +1,65 @@
 export type Language = 'en' | 'es' | 'de' | 'zh';
-export type ProjectZone = 'Beach' | 'Mountain' | 'Caribbean' | 'City';
-export type ProjectType = 'Condo' | 'House' | 'Resort' | 'Villa';
+
+// ── Shared enums used by both Projects and Listings ───────────────────────────
+export type Zone = 'Beach' | 'Mountain' | 'Caribbean' | 'City' | 'Interior';
+export type PropertyType = 'Condo' | 'House' | 'Resort' | 'Villa' | 'Land' | 'Commercial' | 'Penthouse';
+
+// ── Project-specific (new developments: presale, under construction) ──────────
+export type ProjectZone = Zone;        // alias — keeps backward compat
+export type ProjectType = PropertyType; // alias — keeps backward compat
 export type ProjectStatus = 'Presale' | 'Under Construction' | 'Ready to Move';
+
+// ── Listing-specific (existing / resale properties) ───────────────────────────
+export type ListingStatus = 'For Sale' | 'For Rent' | 'Sold' | 'Rented';
+
+/**
+ * Listing — individual property for sale or rent (resale, existing homes, etc.)
+ * Stored in Supabase `listings` table. Managed via MCP.
+ *
+ * Separate from Project (new developments) so both can have
+ * different detail pages, filters, and search UX.
+ */
+export interface Listing {
+  id: string;
+  slug: string;
+  ref?: string;                        // e.g. "PLS-20051" — agent reference
+  title: Record<string, string>;       // { en: '...', es: '...' }
+  description: Record<string, string>;
+  excerpt?: Record<string, string>;    // Short summary for cards
+  price: number;                       // in USD
+  pricePerSqft?: number;
+  status: ListingStatus;
+  type: PropertyType;
+  zone: Zone;
+  // Location
+  city: string;                        // e.g. "Panama City", "Boquete"
+  neighborhood?: string;               // e.g. "Punta Pacifica", "El Cangrejo"
+  province?: string;                   // e.g. "Panamá", "Chiriquí"
+  // Details
+  beds?: number;
+  baths?: number;
+  sqft?: number;
+  lotSqft?: number;
+  yearBuilt?: number;
+  // Media
+  images: string[];
+  videoUrl?: string;
+  // Features
+  amenities?: string[];
+  features?: string[];
+  featured?: boolean;
+  // Contact
+  agentName?: string;
+  agentWhatsapp?: string;
+  agentEmail?: string;
+  // SEO
+  metaTitle?: Record<string, string>;
+  metaDescription?: Record<string, string>;
+  keywords?: string[];
+  // Timestamps
+  createdAt?: string;
+  updatedAt?: string;
+}
 
 export interface SEOSection {
   title: string;
