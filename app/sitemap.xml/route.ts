@@ -40,6 +40,7 @@ export async function GET() {
     // Static pages
     const staticPages = [
         '',
+        '/propiedades',
         '/proyectos',
         '/panama-real-estate',
         '/about',
@@ -49,9 +50,23 @@ export async function GET() {
         '/quiz',
         '/podcast',
         '/relocation',
+        '/relocation/tours',
         '/relocation/visas',
+        '/relocation/visas/pensionado',
+        '/relocation/visas/friendly-nations',
+        '/relocation/visas/qualified-investor',
+        '/relocation/legal',
+        '/relocation/cost',
         '/relocation/cost-of-living',
         '/relocation/guides',
+        '/relocation/guides/boquete',
+        '/relocation/guides/coronado',
+        '/relocation/reviews',
+        '/guides/pensionado-visa-panama',
+        '/guides/friendly-nations-visa-panama',
+        '/guides/expat-living-in-panama',
+        '/locations/bocas-del-toro',
+        '/locations/boquete-real-estate',
     ];
 
     let xml = `<?xml version="1.0" encoding="UTF-8"?>

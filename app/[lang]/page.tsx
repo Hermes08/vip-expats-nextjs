@@ -5,6 +5,8 @@ import ProjectCard from '@/components/ProjectCard';
 import LeadMagnet from '@/components/LeadMagnet';
 import { ArrowRight, Compass, ShieldCheck, Globe, TrendingUp, CheckCircle, Star } from 'lucide-react';
 import HeroSection from '@/components/home/HeroSection';
+import QuickSearchStrip from '@/components/home/QuickSearchStrip';
+import FeaturedListings from '@/components/home/FeaturedListings';
 import VideoThumbnail from '@/components/ui/VideoThumbnail';
 import VideoSchema from '@/components/seo/VideoSchema';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
@@ -34,6 +36,12 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       
       {/* HERO EXPERIENCE (CLIENT COMPONENT) */}
       <HeroSection lang={lang} />
+
+      {/* QUICK ACCESS STRIP */}
+      <QuickSearchStrip lang={lang} />
+
+      {/* FEATURED LISTINGS (from Supabase) */}
+      <FeaturedListings lang={lang} />
 
       {/* SEO INTELLIGENCE WALL */}
       <section className="py-32 bg-brand-950 relative overflow-hidden">

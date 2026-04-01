@@ -71,8 +71,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
             style={{ transform: 'translateZ(50px)' }}
           >
             <Magnetic strength={0.4}>
-              <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-gold px-12 py-7 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] flex items-center justify-center">
-                EXPLORE ASSETS
+              <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-gold px-12 py-7 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] flex items-center justify-center">
+                {lang === 'es' ? 'VER PROPIEDADES' : 'BROWSE PROPERTIES'}
               </Link>
             </Magnetic>
             <Magnetic strength={0.4}>

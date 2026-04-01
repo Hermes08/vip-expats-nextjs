@@ -46,8 +46,9 @@ const Navbar: React.FC = () => {
         invest: {
             label: t.nav.invest,
             items: [
-                { path: '/panama-real-estate', label: lang === 'es' ? 'Bienes Raíces' : 'Panama Real Estate' },
+                { path: '/propiedades', label: lang === 'es' ? 'Propiedades' : 'Properties' },
                 { path: '/proyectos', label: t.nav.projects },
+                { path: '/panama-real-estate', label: lang === 'es' ? 'Guía Inmobiliaria' : 'Real Estate Guide' },
                 { path: '/quiz', label: t.nav.quiz, icon: <Sparkles size={12} className="text-brand-GOLD" /> },
             ]
         },
@@ -123,8 +124,8 @@ const Navbar: React.FC = () => {
                         <div className="flex items-center gap-6">
                             <LanguageSwitcher currentLang={lang} />
                             <Magnetic strength={0.3}>
-                                <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-gold px-8 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center gap-2">
-                                    <Search size={14} /> {t.nav.search}
+                                <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-gold px-8 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center gap-2">
+                                    <Search size={14} /> {lang === 'es' ? 'Ver Propiedades' : 'Properties'}
                                 </Link>
                             </Magnetic>
                         </div>
@@ -177,8 +178,8 @@ const Navbar: React.FC = () => {
                     <Link href={`/${lang}/contacto`} className={`text-2xl font-black uppercase tracking-tighter ${isActive('/contacto') ? 'text-brand-GOLD' : 'text-white'}`}>{t.nav.contact}</Link>
 
                     <div className="mt-auto py-8">
-                        <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-gold w-full px-8 py-5 rounded-2xl font-black text-xs uppercase tracking-widest flex items-center justify-center gap-3">
-                            <Search size={20} /> {t.nav.search}
+                        <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-gold w-full px-8 py-5 rounded-2xl font-black text-xs uppercase tracking-widest flex items-center justify-center gap-3">
+                            <Search size={20} /> {lang === 'es' ? 'Ver Propiedades' : 'Properties'}
                         </Link>
                     </div>
                 </div>
