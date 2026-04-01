@@ -65,8 +65,29 @@ export default function PropertyDetailPage() {
     ? `https://wa.me/${listing.agentWhatsapp.replace(/\D/g, '')}?text=${whatsappMsg}`
     : `https://wa.me/50767610315?text=${whatsappMsg}`;
 
+  const locationStr = [listing.neighborhood, listing.city, listing.province].filter(Boolean).join(', ') || 'Panama';
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'RealEstateListing',
+    name: title,
+    description: description,
+    price: listing.price,
+    priceCurrency: 'USD',
+    url: `https://panamarealestatesale.com/${lang}/propiedades/${listing.slug}`,
+    address: {
+      '@type': 'PostalAddress',
+      addressLocality: locationStr,
+      addressCountry: 'PA',
+    },
+    identifier: listing.slug,
+  };
+
   return (
     <main className="min-h-screen bg-brand-950 pt-24 pb-32">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="max-w-7xl mx-auto px-4">
 
         {/* Breadcrumb */}

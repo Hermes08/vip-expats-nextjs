@@ -5,6 +5,7 @@ import ProjectCard from '@/components/ProjectCard';
 import LeadMagnet from '@/components/LeadMagnet';
 import { ArrowRight, Compass, ShieldCheck, Globe, TrendingUp, CheckCircle, Star } from 'lucide-react';
 import HeroSection from '@/components/home/HeroSection';
+import TrustBar from '@/components/home/TrustBar';
 import QuickSearchStrip from '@/components/home/QuickSearchStrip';
 import FeaturedListings from '@/components/home/FeaturedListings';
 import VideoThumbnail from '@/components/ui/VideoThumbnail';
@@ -34,8 +35,20 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         ]}
       />
       
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'RealEstateAgent',
+          name: 'VIP Expats Panama',
+          url: 'https://panamarealestatesale.com',
+          telephone: '+50767610315',
+        }) }}
+      />
+
       {/* HERO EXPERIENCE (CLIENT COMPONENT) */}
       <HeroSection lang={lang} />
+      <TrustBar />
 
       {/* QUICK ACCESS STRIP */}
       <QuickSearchStrip lang={lang} />

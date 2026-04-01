@@ -9,6 +9,7 @@ import ScrollAnimationObserver from "@/components/ScrollAnimationObserver";
 import ZeroGravityWrapper from '@/components/GoldParticles/ZeroGravityWrapper';
 import SmoothScroll from "@/components/providers/SmoothScroll";
 import OrganizationSchema from '@/components/seo/OrganizationSchema';
+import WhatsAppFloat from '@/components/WhatsAppFloat';
 
 const inter = Inter({
   variable: "--font-inter",
@@ -150,6 +151,7 @@ export default async function RootLayout({
             </CMSProvider>
           </SmoothScroll>
         </LanguageProvider>
+        <WhatsAppFloat />
       </body>
     </html>
   );
