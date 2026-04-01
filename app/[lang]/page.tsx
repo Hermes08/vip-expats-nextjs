@@ -1,150 +1,39 @@
-'use client';
-
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Link from 'next/link';
 import { PROJECTS, IMAGES, CONTENT } from '@/lib/constants';
 import ProjectCard from '@/components/ProjectCard';
 import LeadMagnet from '@/components/LeadMagnet';
-import { ArrowRight, Compass, ShieldCheck, Globe, TrendingUp, CheckCircle, PlayCircle, Star } from 'lucide-react';
-import { useLanguage } from '@/context/LanguageContext';
-import HeroTilt from '@/components/ui/HeroTilt';
-import SplitText from '@/components/ui/SplitText';
+import { ArrowRight, Compass, ShieldCheck, Globe, TrendingUp, CheckCircle, Star } from 'lucide-react';
+import HeroSection from '@/components/home/HeroSection';
 import VideoThumbnail from '@/components/ui/VideoThumbnail';
-import Magnetic from '@/components/ui/Magnetic';
-import { motion } from 'framer-motion';
 import VideoSchema from '@/components/seo/VideoSchema';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
 
-const HeroCarousel: React.FC = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  useEffect(() => {
-    const timer = setInterval(() => setCurrentSlide((prev) => (prev + 1) % IMAGES.heroSlides.length), 7000);
-    return () => clearInterval(timer);
-  }, []);
-
-  return (
-    <div className="absolute inset-0 z-0 bg-brand-950 overflow-hidden bg-mesh-glow">
-      {IMAGES.heroSlides.map((slide, index) => (
-        <div key={index} className={`absolute inset-0 transition-all duration-[3000ms] ease-in-out ${index === currentSlide ? 'opacity-40 scale-100' : 'opacity-0 scale-105'}`}>
-          <img src={slide} alt={`Luxury Panama Real Estate Experience - Slide ${index + 1}`} className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-b from-brand-950/95 via-brand-950/20 to-brand-950" />
-        </div>
-      ))}
-    </div>
-  );
-};
-
-export default function Home() {
-  const { lang } = useLanguage();
+export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
+  const resolvedParams = await params;
+  const lang = (resolvedParams?.lang || 'es') as 'en' | 'es';
   const t = CONTENT[lang] || CONTENT['en'];
-
-  useEffect(() => {
-    // Only run intersection observer on client
-    if (typeof window === 'undefined') return;
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-        }
-      });
-    }, { threshold: 0.15 });
-
-    document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
-    return () => observer.disconnect();
-  }, [lang]); // Re-run if lang changes (content might shift)
 
   return (
     <>
       <LocalBusinessSchema />
       <FAQSchema
         questions={lang === 'es' ? [
-          { question: "¿Es seguro vivir en Panamá en 2026?", answer: "Panamá sigue siendo uno de los países más seguros de América Latina para expatriados, con una comunidad internacional creciente y estabilidad política." },
-          { question: "¿Cuál es el costo de vida en Panamá?", answer: "El costo de vida varía, pero una pareja puede vivir cómodamente con un presupuesto desde $2,500 en la ciudad o menos en áreas rurales, disfrutando de infraestructura de primer nivel." },
-          { question: "¿Cómo puedo obtener la residencia en Panamá?", answer: "Existen múltiples opciones como la Visa de Naciones Amigas, Jubilado o Inversionista Calificado, cada una con requisitos específicos de inversión." }
+          { question: "¿Pueden los extranjeros comprar propiedades en Panamá?", answer: "Sí. Los extranjeros tienen los mismos derechos que los ciudadanos panameños cuando se trata de la propiedad de bienes raíces. Puede titular a su nombre personal o a través de una corporación/fundación panameña." },
+          { question: "¿Qué es la Visa de Pensionado de Panamá?", answer: "Es uno de los programas de jubilación más populares del mundo. Proporciona residencia permanente a cualquier persona con una pensión vitalicia de $1,000 o más al mes, con beneficios como 25% de descuento en servicios públicos y 50% en cine." },
+          { question: "¿Hay impuestos sobre la propiedad en Panamá?", answer: "Sí, pero son bajos. Muchos nuevos desarrollos califican para exenciones de impuestos de construcción por varios años. La residencia principal también disfruta de una exención significativa sobre los primeros $120,000 del valor registrado." },
+          { question: "¿Es seguro invertir en bienes raíces en Panamá?", answer: "Sí, siempre que realice una debida diligencia adecuada. Panamá utiliza un sistema de Registro Público centralizado donde se registra cada título, proporcionando un alto nivel de seguridad." }
         ] : [
-          { question: "Is Panama safe to live in 2026?", answer: "Panama remains one of the safest countries in Latin America for expats, featuring a growing international community and political stability." },
-          { question: "What is the cost of living in Panama?", answer: "The cost of living varies, but a couple can live comfortably starting at $2,500 in the city or less in rural areas, enjoying world-class infrastructure." },
-          { question: "How can I get residency in Panama?", answer: "There are multiple options like the Friendly Nations, Pensionado, or Qualified Investor Visa, each with specific investment requirements." }
+          { question: "Can foreigners buy property in Panama?", answer: "Yes. Foreigners have the same rights as Panamanian citizens when it comes to property ownership. You can hold title in your personal name or through a Panamanian corporation or foundation." },
+          { question: "What is the Panama Pensionado Visa?", answer: "It is one of the world's most popular retirement programs. It provides permanent residency to anyone with a lifetime pension of $1,000 or more per month, with benefits like 25% off utility bills and 50% off movie tickets." },
+          { question: "Are there property taxes in Panama?", answer: "Yes, but they are relatively low. Many new developments qualify for property tax exemptions on the construction value for several years. Primary residences also enjoy significant exemptions on the first $120,000." },
+          { question: "Is it safe to invest in Panama real estate?", answer: "Yes, provided you conduct proper due diligence. Panama uses a centralized Public Registry system where every title is recorded, providing a high level of security for investors." }
         ]}
       />
-      {/* HERO EXPERIENCE */}
-      <section className="relative h-screen min-h-[800px] flex items-center justify-center overflow-hidden">
-        <HeroCarousel />
-
-        <div className="relative z-20 max-w-7xl mx-auto px-4 w-full pt-20 perspective-1000">
-          <HeroTilt intensity={3} className="max-w-4xl mx-auto text-center">
-            <motion.div
-              initial={{ opacity: 0, y: -20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-              className="inline-flex items-center gap-3 px-6 py-2 glass-card rounded-full mb-12 shadow-2xl"
-              style={{ transform: 'translateZ(40px)' }}
-            >
-              <div className="w-2 h-2 bg-brand-GOLD rounded-full animate-pulse shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div>
-              <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white">Market Intelligence <span className="text-brand-GOLD">2026</span></span>
-            </motion.div>
-
-            <div style={{ transform: 'translateZ(60px)' }}>
-              <motion.h1
-                initial={{ opacity: 0, y: 40 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 1.2, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-                className="font-heading text-7xl md:text-9xl font-black text-white mb-8 leading-[0.8] tracking-tighter uppercase italic"
-              >
-                {lang === 'es' ? "Bienes Raíces" : "Panama Real Estate"} <br />
-                <span className="text-brand-GOLD">
-                  {lang === 'es' ? "en Venta 2026" : "for Sale 2026"}
-                </span>
-              </motion.h1>
-
-              <motion.p
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 1.5, delay: 0.8 }}
-                className="text-xl md:text-2xl text-white/90 font-black mb-12 uppercase tracking-[0.4em] font-serif-luxury"
-              >
-                Luxury Beachfront & City Portfolio
-              </motion.p>
-            </div>
-
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 1, delay: 1, ease: [0.22, 1, 0.36, 1] }}
-              className="text-xl md:text-2xl text-slate-300 mb-16 leading-relaxed max-w-2xl mx-auto font-medium opacity-80"
-              style={{ transform: 'translateZ(30px)' }}
-            >
-              Your trusted guide to buying property in Panama. From beachfront condos to mountain retreats, we connect international investors with the best real estate opportunities.
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 1.4, ease: [0.23, 1, 0.32, 1] }}
-              className="flex flex-col sm:flex-row gap-12 justify-center"
-              style={{ transform: 'translateZ(50px)' }}
-            >
-              <Magnetic strength={0.4}>
-                <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-gold px-12 py-7 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] flex items-center justify-center">
-                  EXPLORE ASSETS
-                </Link>
-              </Magnetic>
-              <Magnetic strength={0.4}>
-                <Link href={`/${lang}/tours`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10 flex items-center justify-center gap-3">
-                  <PlayCircle size={20} className="text-brand-GOLD" /> DISCOVERY TOURS
-                </Link>
-              </Magnetic>
-            </motion.div>
-          </HeroTilt>
-        </div>
-
-        <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-30 animate-bounce">
-          <span className="text-[9px] font-black uppercase tracking-widest text-white">Scroll to Discover</span>
-          <div className="w-px h-10 bg-gradient-to-b from-brand-GOLD to-transparent"></div>
-        </div>
-      </section>
+      
+      {/* HERO EXPERIENCE (CLIENT COMPONENT) */}
+      <HeroSection lang={lang} />
 
       {/* SEO INTELLIGENCE WALL */}
       <section className="py-32 bg-brand-950 relative overflow-hidden">
@@ -166,7 +55,7 @@ export default function Home() {
                 { label: "Community", val: "25k+", icon: Globe },
                 { label: "Tax Benefits", val: "Tier-1", icon: Star }
               ].map((stat, i) => (
-                <div key={i} className={`glass-card p-12 rounded-[2.5rem] text-center border-white/5 hover:border-brand-GOLD/30 transition-all group ${i % 2 === 1 ? 'mt-12' : ''}`}>
+                <div key={i} className={`glass-card p-12 rounded-[2.5rem] text-center border-white/5 hover:border-brand-GOLD/30 transition-all group ${i % 2 === 1 ? 'mt-12' : 'mb-0'}`}>
                   <stat.icon className="mx-auto mb-6 text-brand-GOLD group-hover:scale-125 transition-transform" size={32} />
                   <div className="text-4xl font-black text-white mb-3 tracking-tighter">{stat.val}</div>
                   <div className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-500">{stat.label}</div>
@@ -202,6 +91,54 @@ export default function Home() {
         </div>
       </section >
 
+      {/* MARKET OVERVIEW: DATA DRIVEN LUXURY */}
+      <section className="py-48 bg-black relative">
+        <div className="absolute inset-0 bg-mesh-glow opacity-20 pointer-events-none"></div>
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <div className="grid lg:grid-cols-12 gap-20 items-center">
+            <div className="lg:col-span-7 reveal-on-scroll">
+              <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block">Economic Foresight 2026</span>
+              <h2 className="text-5xl md:text-8xl font-heading font-black text-white mb-12 tracking-tighter uppercase italic leading-[0.8]">{t.homepage.marketTitle}</h2>
+              <div className="prose prose-invert prose-2xl text-slate-400 font-medium leading-relaxed mb-16 whitespace-pre-line">
+                {t.homepage.marketBody}
+              </div>
+              <div className="flex flex-wrap gap-12">
+                <div className="flex items-center gap-6">
+                  <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-brand-GOLD">
+                    <TrendingUp size={28} />
+                  </div>
+                  <div>
+                    <p className="text-white font-black text-xl tracking-tighter uppercase italic">Appreciation</p>
+                    <p className="text-slate-500 text-sm font-bold uppercase tracking-widest">+12% Annualized</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-6">
+                  <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-brand-GOLD">
+                    <ShieldCheck size={28} />
+                  </div>
+                  <div>
+                    <p className="text-white font-black text-xl tracking-tighter uppercase italic">Currency</p>
+                    <p className="text-slate-500 text-sm font-bold uppercase tracking-widest">Full USD Dollarization</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="lg:col-span-5 reveal-on-scroll stagger-2">
+              <div className="relative group rounded-[4rem] overflow-hidden border-8 border-white/5 aspect-[4/5] shadow-2xl">
+                <img src={IMAGES.heroSlides[2]} alt="Panama Real Estate Market Trends" className="w-full h-full object-cover transition-transform duration-[8000ms] group-hover:scale-110" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+                <div className="absolute bottom-16 left-16 right-16">
+                  <div className="glass-card p-10 rounded-3xl border-white/10 backdrop-blur-3xl">
+                    <p className="text-[10px] font-black uppercase tracking-[0.4em] text-brand-GOLD mb-4">Investment Insight</p>
+                    <p className="text-white text-xl font-bold leading-tight uppercase italic tracking-tighter">"Panama remains the only safe-haven asset class in Latin America for true capital preservation."</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FEATURED ASSETS: FLOATING CARDS */}
       < section className="py-32 bg-black relative" >
         <div className="max-w-7xl mx-auto px-4 relative z-10">
@@ -222,6 +159,44 @@ export default function Home() {
           </div>
         </div>
       </section >
+
+      {/* NEIGHBORHOOD GUIDE: THE MATRIX */}
+      <section className="py-48 bg-brand-950 border-y border-white/5 overflow-hidden relative">
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <div className="text-center max-w-4xl mx-auto mb-32 reveal-on-scroll">
+            <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">Strategic Geography</span>
+            <h2 className="text-5xl md:text-9xl font-heading font-black text-white mb-12 tracking-tighter uppercase italic leading-[0.8]">{t.homepage.neighborhoodsTitle}</h2>
+            <div className="text-xl md:text-2xl text-slate-400 font-medium leading-relaxed whitespace-pre-line opacity-80">
+              {t.homepage.neighborhoodBody}
+            </div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10 reveal-on-scroll">
+            {[
+              { id: 'punta-pacifica', name: 'Punta Pacifica', level: 'Urban Luxury', yield: '6-8%' },
+              { id: 'santa-maria', name: 'Santa Maria', level: 'Golf Exclusive', yield: '7-9%' },
+              { id: 'coronado', name: 'Coronado Beach', level: 'Coastal Living', yield: '8-10%' },
+              { id: 'boquete', name: 'Boquete', level: 'Mountain Retreat', yield: '5-7%' }
+            ].map((area, idx) => (
+              <div key={idx} className="glass-card p-12 rounded-[3.5rem] border-white/5 hover:border-brand-GOLD/40 transition-all group reveal-on-scroll stagger-1">
+                <div className="text-brand-GOLD mb-8 group-hover:scale-110 transition-transform"><Compass size={40} /></div>
+                <h4 className="text-2xl font-black text-white mb-4 uppercase italic tracking-tighter">{area.name}</h4>
+                <div className="flex flex-col gap-3">
+                  <div className="flex justify-between items-center text-[10px] font-black uppercase tracking-widest text-slate-500">
+                    <span>Profile</span>
+                    <span className="text-white">{area.level}</span>
+                  </div>
+                  <div className="flex justify-between items-center text-[10px] font-black uppercase tracking-widest text-slate-500">
+                    <span>Avg ROI</span>
+                    <span className="text-brand-GOLD">{area.yield}</span>
+                  </div>
+                </div>
+                <Link href={`/${lang}/locations`} className="mt-10 block text-[9px] font-black uppercase tracking-[0.4em] text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all hover:translate-x-2">VIEW INVENTORY →</Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
       {/* INVESTMENT ROI: PREMIUM DARK EXPERIENCE */}
       <section className="py-48 bg-brand-950 border-y border-white/5 relative overflow-hidden">
@@ -268,6 +243,39 @@ export default function Home() {
         <LeadMagnet />
       </div>
 
+      {/* BUYING PROCESS: THE EXPAT ROADMAP */}
+      <section className="py-48 bg-black relative">
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <div className="flex flex-col lg:flex-row gap-32 items-center mb-40 reveal-on-scroll">
+            <div className="lg:w-1/2">
+              <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block">Acquisition Framework</span>
+              <h2 className="text-6xl md:text-8xl font-heading font-black text-white mb-12 tracking-tighter uppercase italic leading-[0.8]">{t.homepage.buyingProcessTitle}</h2>
+              <div className="text-2xl text-slate-400 font-medium leading-relaxed italic border-l-4 border-brand-GOLD/20 pl-12">
+                {t.homepage.buyingProcessBody}
+              </div>
+            </div>
+            <div className="lg:w-1/2 relative">
+               <div className="grid gap-12">
+                 {[
+                   { step: "01", title: "Asset Selection", desc: "Identification of properties matching your ROI or lifestyle goals with full title verification." },
+                   { step: "02", title: "Purchase Commitment", desc: "Signing of the Promise to Purchase and 10% deposit into secure escrow." },
+                   { step: "03", title: "Legal Onboarding", desc: "Dedicated Panama attorney performs multi-layer due diligence and title search." },
+                   { step: "04", title: "Closing & Transfer", desc: "Final deed signing before Notary and registration with the National Public Registry." }
+                 ].map((stage, i) => (
+                   <div key={i} className="flex gap-10 reveal-on-scroll stagger-1">
+                     <div className="text-brand-GOLD font-heading text-5xl font-black opacity-30 italic">{stage.step}</div>
+                     <div>
+                       <h4 className="text-white text-2xl font-black uppercase italic tracking-tighter mb-2">{stage.title}</h4>
+                       <p className="text-slate-500 font-medium">{stage.desc}</p>
+                     </div>
+                   </div>
+                 ))}
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* THE JOURNEY: ASYMMETRIC MINIMALISM */}
       <section className="py-48 bg-black text-white overflow-hidden relative">
         <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-brand-GOLD/10 to-transparent"></div>
@@ -294,6 +302,47 @@ export default function Home() {
                 <p className="text-slate-400 group-hover:text-brand-900 text-lg font-medium leading-relaxed opacity-80 group-hover:opacity-100" dangerouslySetInnerHTML={{ __html: item.desc }}></p>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ SECTION: ENHANCED UX */}
+      <section className="py-48 bg-brand-950 relative overflow-hidden">
+        <div className="max-w-5xl mx-auto px-4 relative z-10 reveal-on-scroll">
+          <div className="text-center mb-32">
+            <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">Intelligence Base</span>
+            <h2 className="text-5xl md:text-8xl font-heading font-black text-white mb-12 tracking-tighter uppercase italic leading-[0.8]">{t.homepage.faqTitle}</h2>
+          </div>
+          
+          <div className="grid gap-8">
+            {(lang === 'es' ? [
+              { q: "¿Pueden los extranjeros comprar propiedades en Panamá?", a: "Sí. Los extranjeros tienen los mismos derechos que los ciudadanos panameños cuando se trata de la propiedad de bienes raíces. Puede titular a su nombre personal o a través de una corporación/fundación panameña." },
+              { q: "¿Qué es la Visa de Pensionado de Panamá?", a: "Es uno de los programas de jubilación más populares del mundo. Proporciona residencia permanente a cualquier persona con una pensión vitalicia de $1,000 o más al mes, con beneficios como 25% de descuento en servicios públicos y 50% en cine." },
+              { q: "¿Hay impuestos sobre la propiedad en Panamá?", a: "Sí, pero son bajos. Muchos nuevos desarrollos califican para exenciones de impuestos de construcción por varios años. La residencia principal también disfruta de una exención significativa sobre los primeros $120,000 del valor registrado." },
+              { q: "¿Es seguro invertir en bienes raíces en Panamá?", a: "Sí, siempre que realice una debida diligencia adecuada. Panamá utiliza un sistema de Registro Público centralizado donde se registra cada título, proporcionando un alto nivel de seguridad." }
+            ] : [
+              { q: "Can foreigners buy property in Panama?", answer: "Yes. Foreigners have the same rights as Panamanian citizens when it comes to property ownership. You can hold title in your personal name or through a Panamanian corporation or foundation." },
+              { q: "What is the Panama Pensionado Visa?", answer: "It is one of the world's most popular retirement programs. It provides permanent residency to anyone with a lifetime pension of $1,000 or more per month, with benefits like 25% off utility bills and 50% off movie tickets." },
+              { q: "Are there property taxes in Panama?", answer: "Yes, but they are relatively low. Many new developments qualify for property tax exemptions on the construction value for several years. Primary residences also enjoy significant exemptions on the first $120,000." },
+              { q: "Is it safe to invest in Panama real estate?", answer: "Yes, provided you conduct proper due diligence. Panama uses a centralized Public Registry system where every title is recorded, providing a high level of security for investors." }
+            ]).map((faq, i) => (
+              <div key={i} className="glass-card p-12 rounded-3xl border-white/5 hover:border-brand-GOLD/30 transition-all reveal-on-scroll stagger-1">
+                <h4 className="text-xl font-black text-white mb-6 uppercase italic tracking-tighter flex items-center gap-4">
+                  <div className="w-8 h-8 rounded-full bg-brand-GOLD text-brand-900 flex items-center justify-center text-xs font-black not-italic">?</div>
+                  {faq.q || faq.question}
+                </h4>
+                <p className="text-slate-400 font-medium leading-relaxed pl-12 opacity-80">{faq.a || faq.answer}</p>
+              </div>
+            ))}
+          </div>
+          
+          <div className="mt-32 text-center">
+             <p className="text-slate-500 font-black uppercase tracking-[0.4em] text-[10px] mb-10">Deep Dive into {lang === 'es' ? 'el Mercado' : 'the Market'}</p>
+             <div className="flex flex-wrap justify-center gap-8">
+               <Link href={`/${lang}/guides/pensionado-visa-panama`} className="text-brand-GOLD font-bold uppercase tracking-widest text-[11px] border-b border-brand-GOLD/30 pb-2 hover:border-brand-GOLD transition-all">PENSIONADO GUIDE →</Link>
+               <Link href={`/${lang}/guides/friendly-nations-visa-panama`} className="text-brand-GOLD font-bold uppercase tracking-widest text-[11px] border-b border-brand-GOLD/30 pb-2 hover:border-brand-GOLD transition-all">FRIENDLY NATIONS GUIDE →</Link>
+               <Link href={`/${lang}/locations/boquete-real-estate`} className="text-brand-GOLD font-bold uppercase tracking-widest text-[11px] border-b border-brand-GOLD/30 pb-2 hover:border-brand-GOLD transition-all">BOQUETE ANALYSIS →</Link>
+             </div>
           </div>
         </div>
       </section>

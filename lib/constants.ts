@@ -1547,7 +1547,6 @@ export const PROJECTS: Project[] = [
 
       **Privacidad y Panorámicas**
       Cada residencia ocupa medio piso entero, asegurando privacidad. Paredes de vidrio de piso a techo ofrecen vistas de 270 grados al campo de golf y al océano.
-
       **Amenidades de Clase Mundial**
       Áreas sociales que rivalizan con hoteles de cinco estrellas: piscinas, gimnasio Technogym y salón de baile. ENTREGA INMEDIATA.`
     },
@@ -1688,6 +1687,34 @@ export const CONTENT: ContentDictionary = {
       introBody: `Navigating the panama real estate landscape in 2026 requires more than just looking at beachfront condos panama listings. It requires a deep dive into the cost of living panama and understanding the different neighborhood dynamics from panama city condos in punta pacifica to boquete real estate in the mountains. Whether you are searching for panama condos on the beach at playa bonita panama or looking for beachfront homes for sale in panama near coronado panama real estate, ExpatRockstars provides the local expertise you need to make a secure real estate investment.
 
         Panama remains one of the best places to retire panama for North Americans and Europeans due to the panama retirement benefits and the legendary pensionado visa panama program. American retirees in panama often choose boquete panama retire communities because of the eternal spring weather and established expat communities in panama. Our mission is to guide you through the pros and cons of living in panama and help you find the panama dream home that fits your specific retirement real estate goals.`,
+      marketTitle: "Panama Real Estate Market Overview 2026",
+      marketBody: `The **Panama real estate market in 2026** continues to demonstrate remarkable resilience and growth. As a dollarized economy with a strategic location, Panama remains the premier choice for international investors looking for **secure real estate investments** in Latin America. Recent data shows a steady appreciation in property values across major hotspots, driven by a combination of high-demand **panama beachfront condos** and the growing popularity of mountain retreats.
+
+        One of the core drivers of the **Panama property market** is the influx of multinational companies establishing regional headquarters in Panama City. This creates a consistent demand for luxury **panama city condos** and high-end rentals in areas like Costa del Este and Santa Maria. Furthermore, the expansion of the **Panama Canal** and the modernization of infrastructure, such as the new Metro lines, have significantly boosted property values in the metropolitan area.
+
+        For those looking at **panama investment property**, the rental market is currently yielding between 6% and 9% in prime zones. The **panama tax benefits** for new constructions continue to be a major incentive, allowing owners to enjoy property tax exemptions for up to 10 years. Whether you are focusing on **panama high ROI real estate** or a long-term capital preservation play, the 2026 market offers unique opportunities that are hard to find elsewhere in the region.`,
+      neighborhoodsTitle: "Top Panama Neighborhoods for Expats & Investors",
+      neighborhoodBody: `Choosing where to live or invest is critical. In 2026, four key areas dominate the **panama real estate** scene:
+
+        **1. Punta Pacifica & Paitilla:** The pinnacle of urban luxury. These neighborhoods offer high-density **panama city condos** with panoramic ocean views and proximity to world-class hospitals and shopping centers. This is the preferred choice for high-net-worth individuals and corporate executives.
+
+        **2. Boquete (The Highlands):** Reaching the highest rankings for **best places for expats to live in panama**, Boquete offers a cooler climate and a tight-knit community. **Boquete panama real estate** is famous for its "Eternal Spring" weather and lush landscapes, making it the top destination for **panama luxury retirement**.
+
+        **3. Coronado & The Pacific Riviera:** For those seeking the **panama beach lifestyle**, Coronado remains the most established hub. With full infrastructure, including malls and private schools, it's the gold standard for **beachfront homes for sale in panama**.
+
+        **4. Costa del Este:** A master-planned community that feels like a city within a city. **Costa del este apartments** are highly sought after by families and professionals due to the pedestrian-friendly layout and the presence of multinational HQs.`,
+      buyingProcessTitle: "The Step-by-Step Guide to Buying Property in Panama",
+      buyingProcessBody: `The process of **buying real estate in panama** is straightforward but requires professional guidance to ensure a secure transaction. Here is the standard roadmap for 2026:
+
+        **Step 1: Property Search & Selection:** Work with a trusted **panama real estate advisor** to identify properties that meet your ROI or lifestyle goals. Ensure the property has a clear title in the Public Registry.
+
+        **Step 2: Promise to Purchase Agreement:** Once a price is agreed upon, a Promise to Purchase contract is signed. This typically requires a 10% deposit held in escrow. This document outlines the terms, conditions, and deadlines for the final closing.
+
+        **Step 3: Due Diligence:** Your legal team will perform a title search, verify tax payments, and ensure there are no liens or encumbrances on the property. This is a critical step in **panama real estate legal** procedures.
+
+        **Step 4: Final Closing & Title Transfer:** The final Purchase and Sale Agreement is signed before a Notary Public. The remaining balance is paid, and the deed is filed with the Public Registry. Once registered, you are the legal owner.
+
+        **Step 5: Residency & Incentives:** If your purchase meets the threshold for **panama residency through real estate**, your lawyer can now file for your Qualified Investor or Friendly Nations visa.`,
       investmentTitle: "Panama Investment Property: Strategy for ROI and Tax Benefits",
       investmentBody: `Why invest panama real estate now? The country offers some of the most competitive panama tax benefits in the world, including the friendly nations visa panama and residency through real estate investment. Investors seeking panama high ROI real estate should focus on panama city beach real estate and new developments panama that offer panama branded residences like the westin panama residences or margaritaville panama.
 
@@ -1695,7 +1722,19 @@ export const CONTENT: ContentDictionary = {
       expatLifeTitle: "International Living in Panama: What You Need to Know",
       expatLifeBody: `Relocate to panama and experience a lifestyle where the panama beach lifestyle meets high-end panama coastal living. The cost of retirement in panama is a major draw, but the international living in panama experience is what makes people stay. From the skyscrapers of costa del este apartments to the serene villas in bocas del toro real estate, there is a community for every expat.
 
-        Retiring in panama pros and cons often involve balancing the modern infrastructure of panama city tourism with the laid-back vibe of beach house rentals. We provide panama relocation services that include panama relocation real estate tours to help you see the best places for expats to live in panama first hand. Our panama retirement advisors are dedicated to making your transition as smooth as possible, from panama residency through real estate to setting up your new tropical life.`
+        Retiring in panama pros and cons often involve balancing the modern infrastructure of panama city tourism with the laid-back vibe of beach house rentals. We provide panama relocation services that include panama relocation real estate tours to help you see the best places for expats to live in panama first hand. Our panama retirement advisors are dedicated to making your transition as smooth as possible, from panama residency through real estate to setting up your new tropical life.`,
+      faqTitle: "Panama Real Estate FAQ 2026",
+      faqBody: `**Can foreigners buy property in Panama?**
+        Yes. Foreigners have the same rights as Panamanian citizens when it comes to property ownership. You can hold title in your personal name or through a Panamanian corporation or foundation.
+
+        **What is the Panama Pensionado Visa?**
+        It is one of the world's most popular retirement programs. It provides permanent residency to anyone with a lifetime pension of $1,000 or more per month. Benefits include 25% off utility bills, 50% off movie tickets, and significant discounts on healthcare and flights.
+
+        **Are there property taxes in Panama?**
+        Yes, but they are relatively low. Many **new developments panama** qualify for property tax exemptions on the construction value for several years. The primary residence also enjoys a significant exemption on the first $120,000 of the registered value.
+
+        **Is it safe to invest in Panama real estate?**
+        Yes, provided you conduct proper due diligence. Panama uses a centralized Public Registry system where every title is recorded. This provides a high level of security for **panama real estate investment**.`
     },
     projectsPage: {
       neighborhoodTitle: "Where to Invest? Analyzing Panama's Top Neighborhoods",
@@ -1773,6 +1812,34 @@ export const CONTENT: ContentDictionary = {
       introBody: `Navegar por el panorama de bienes raíces en panamá en 2026 requiere más que solo mirar anuncios de apartamentos frente al mar en panamá. Requiere una inmersión profunda en el costo de vida en panamá y entender la dinámica de los diferentes vecindarios, desde condominios en la ciudad de panamá en punta pacífica hasta bienes raíces en boquete en las montañas. Ya sea que esté buscando apartamentos en la playa en panamá en playa bonita panama o buscando casas frente al mar en venta en panamá cerca de bienes raíces en coronado panama, ExpatRockstars proporciona la experiencia local que necesita para realizar una inversión inmobiliaria segura.
 
         Panamá sigue siendo uno de los mejores lugares para jubilarse en panamá para norteamericanos y europeos debido a los beneficios de jubilación en panamá y al legendario programa de visa pensionado panamá. Los jubilados estadounidenses en panamá a menudo eligen comunidades de jubilados en boquete panama debido al clima de primavera eterna y a las comunidades de expatriados establecidas en panamá. Nuestra misión es guiarlo a través de los pros y contras de vivir en panamá y ayudarlo a encontrar la casa de sus sueños en panamá que se ajuste a sus objetivos específicos de bienes raíces de jubilación.`,
+      marketTitle: "Descripción del Mercado Inmobiliario en Panamá 2026",
+      marketBody: `El **mercado inmobiliario de Panamá en 2026** continúa demostrando una notable resiliencia y crecimiento. Como una economía dolarizada con una ubicación estratégica, Panamá sigue siendo la opción preferida para los inversores internacionales que buscan **inversiones inmobiliarias seguras** en América Latina. Datos recientes muestran una apreciación constante de los valores de las propiedades en los principales puntos críticos, impulsada por una combinación de alta demanda de **apartamentos frente al mar en panamá** y la creciente popularidad de los retiros en la montaña.
+
+        Uno de los principales impulsores del **mercado de propiedades en Panamá** es la llegada de empresas multinacionales que establecen sedes regionales en la Ciudad de Panamá. Esto crea una demanda constante de de **apartamentos de lujo en la ciudad** y alquileres de alta gama en zonas como Costa del Este y Santa María. Además, la expansión del **Canal de Panamá** y la modernización de la infraestructura, como las nuevas líneas del Metro, han impulsado significativamente los valores de las propiedades.
+
+        Para aquellos que buscan **inmuebles de inversión en panamá**, el mercado de alquiler actualmente está rindiendo entre un 6% y un 9% en zonas premium. Los **beneficios fiscales en panamá** para nuevas construcciones siguen siendo un incentivo importante, permitiendo a los propietarios disfrutar de exenciones de impuestos sobre la propiedad por hasta 10 años.`,
+      neighborhoodsTitle: "Los Mejores Barrios de Panamá para Expatriados e Inversores",
+      neighborhoodBody: `Elegir dónde vivir o invertir es crítico. En 2026, cuatro áreas clave dominan la escena de **bienes raíces en panamá**:
+
+        **1. Punta Pacifica y Paitilla:** El pináculo del lujo urbano. Estos vecindarios ofrecen de **de condominios en la ciudad de panamá** con vistas panorámicas al mar y proximidad a hospitales de clase mundial.
+
+        **2. Boquete (Tierras Altas):** Alcanzando las calificaciones más altas como los **mejores lugares para vivir en panamá**, Boquete ofrece un clima más fresco. **Bienes raíces en boquete panama** es famoso por su clima de "Eterna Primavera".
+
+        **3. Coronado y la Riviera Pacífica:** Para aquellos que buscan el **estilo de vida de playa en panamá**, Coronado sigue siendo el centro más establecido para **casas frente al mar en venta en panamá**.
+
+        **4. Costa del Este:** Una comunidad planificada que se siente como una ciudad dentro de una ciudad. Los **apartamentos en costa del este** son muy buscados por familias y profesionales.`,
+      buyingProcessTitle: "Guía Paso a Paso para Comprar Propiedades en Panamá",
+      buyingProcessBody: `El proceso de **compra de bienes raíces en panamá** es sencillo pero requiere orientación profesional. Aquí está la hoja de ruta estándar para 2026:
+
+        **Paso 1: Búsqueda y Selección:** Trabaje con un **asesor inmobiliario en panamá** de confianza para identificar propiedades que cumplan con sus objetivos de ROI o estilo de vida.
+
+        **Paso 2: Contrato de Promesa de Compraventa:** Una vez acordado el precio, se firma un contrato de Promesa de Compra. Esto generalmente requiere un depósito del 10%.
+
+        **Paso 3: Debida Diligencia:** Su equipo legal realizará una búsqueda de títulos y verificará los pagos de impuestos de la propiedad. Este es un paso crítico en los procedimientos de **ley inmobiliaria en panamá**.
+
+        **Paso 4: Cierre Final y Transferencia de Título:** El Acuerdo final de Compraventa se firma ante un Notario Público. Se paga el saldo restante y la escritura se presenta en el Registro Público.
+
+        **Paso 5: Residencia e Incentivos:** Si su compra cumple con el umbral para la **residencia en panamá a través de bienes raíces**, su abogado puede tramitar su visa.`,
       investmentTitle: "Inversión Inmobiliaria en Panamá: Estrategia para ROI y Beneficios Fiscales",
       investmentBody: `¿Por qué invertir en bienes raíces en panamá ahora? El país ofrece algunos de los beneficios fiscales de panamá más competitivos del mundo, incluida la visa de naciones amigas de panamá y la residencia mediante inversión inmobiliaria. Los inversores que buscan bienes raíces de alto ROI en panamá deben centrarse en los bienes raíces de la playa de la ciudad de panamá y en los nuevos desarrollos de panamá que ofrecen residencias de marca en panamá como las residencias de westin panama o margaritaville panama.
 
@@ -1780,7 +1847,19 @@ export const CONTENT: ContentDictionary = {
       expatLifeTitle: "Vida Internacional en Panamá: Lo Que Necesitas Saber",
       expatLifeBody: `Múdate a panamá y experimenta un estilo de vida donde el estilo de vida de la playa de panamá se encuentra con la vida costera de lujo en panamá. El costo de la jubilación en panamá es un gran atractivo, pero la experiencia de vida internacional en panamá es lo que hace que la gente se quede. Desde los rascacielos de los apartamentos de costa del este hasta las serenas villas en bienes raíces de bocas del toro, hay una comunidad para cada expatriado.
 
-        Los pros y contras de jubilarse en panamá a menudo implican equilibrar la infraestructura moderna del turismo en la ciudad de panamá con el ambiente relajado de los alquileres de casas de playa. Ofrecemos servicios de reubicación en panamá que incluyen recorridos inmobiliarios de reubicación en panamá para ayudarlo a ver los mejores lugares para que los expatriados vivan en panamá de primera mano. Nuestros asesores de jubilación en panamá se dedican a hacer que su transición sea lo más fluida posible, desde la residencia en panamá a través de bienes raíces hasta la configuración de su nueva vida tropical.`
+        Los pros y contras de jubilarse en panamá a menudo implican equilibrar la infraestructura moderna del turismo en la ciudad de panamá con el ambiente relajado de los alquileres de casas de playa. Ofrecemos servicios de reubicación en panamá que incluyen recorridos inmobiliarios de reubicación en panamá para ayudarlo a ver los mejores lugares para que los expatriados vivan en panamá de primera mano. Nuestros asesores de jubilación en panamá se dedican a hacer que su transición sea lo más fluida posible, desde la residencia en panamá a través de bienes raíces hasta la configuración de su nueva vida tropical.`,
+      faqTitle: "Preguntas Frecuentes sobre Inmuebles en Panamá 2026",
+      faqBody: `**¿Pueden los extranjeros comprar propiedades en Panamá?**
+        Sí. Los extranjeros tienen los mismos derechos que los ciudadanos panameños cuando se trata de la propiedad de bienes raíces.
+
+        **¿Qué es la Visa de Pensionado de Panamá?**
+        Es uno de los programas de jubilación más populares del mundo. Proporciona residencia permanente a cualquier persona con una pensión de $1,000 o más al mes.
+
+        **¿Hay impuestos sobre la propiedad en Panamá?**
+        Sí, pero son relativamente bajos. Muchos **nuevos desarrollos en panamá** califican para exenciones de impuestos sobre la propiedad sobre el valor de la construcción.
+
+        **¿Es seguro invertir en bienes raíces en Panamá?**
+        Sí, siempre que realice una debida diligencia adecuada. Panamá utiliza un sistema de Registro Público centralizado donde se registra cada título.`
     },
     projectsPage: {
       neighborhoodTitle: "¿Dónde Invertir? Analizando los Mejores Barrios de Panamá",
