@@ -1,23 +1,13 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import dynamic from 'next/dynamic';
 import { PROJECTS, IMAGES, CONTENT } from '@/lib/constants';
 import ProjectCard from '@/components/ProjectCard';
 import LeadMagnet from '@/components/LeadMagnet';
 import { ArrowRight, Compass, ShieldCheck, Globe, TrendingUp, CheckCircle, Star } from 'lucide-react';
 import HeroSection from '@/components/home/HeroSection';
 import TrustBar from '@/components/home/TrustBar';
-
-const QuickSearchStrip = dynamic(() => import('@/components/home/QuickSearchStrip'), {
-  ssr: false,
-  loading: () => <div className="animate-pulse bg-gray-200 h-20 w-full rounded" />,
-});
-
-const FeaturedListings = dynamic(() => import('@/components/home/FeaturedListings'), {
-  ssr: false,
-  loading: () => <div className="animate-pulse bg-gray-200 h-48 w-full rounded" />,
-});
+import ClientSections from './ClientSections';
 import VideoThumbnail from '@/components/ui/VideoThumbnail';
 import VideoSchema from '@/components/seo/VideoSchema';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
@@ -60,11 +50,8 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <HeroSection lang={lang} />
       <TrustBar />
 
-      {/* QUICK SEARCH */}
-      <QuickSearchStrip lang={lang} />
-
-      {/* FEATURED LISTINGS */}
-      <FeaturedListings lang={lang} />
+      {/* QUICK SEARCH + FEATURED LISTINGS (client-side, SSR disabled) */}
+      <ClientSections lang={lang} />
 
       {/* MARKET STATS + VIDEO — compact 2-col */}
       <section className="py-14 bg-brand-950 relative overflow-hidden">
