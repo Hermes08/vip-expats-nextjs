@@ -65,8 +65,19 @@ export async function GET() {
         '/guides/pensionado-visa-panama',
         '/guides/friendly-nations-visa-panama',
         '/guides/expat-living-in-panama',
+        '/guides/cost-of-living-panama-2026',
+        '/guides/best-areas-retire-panama',
+        '/guides/panama-real-estate-for-expats',
+        '/guides/buying-property-panama-us-citizens',
+        '/guides/panama-city-condos-for-sale',
+        '/guides/safest-neighborhoods-panama-city',
         '/locations/bocas-del-toro',
         '/locations/boquete-real-estate',
+        '/relocation/early-retirement',
+        '/relocation/digital-nomad',
+        '/relocation/families',
+        '/relocation/lgbtq-expats',
+        '/proyectos/panama-city-real-estate',
     ];
 
     let xml = `<?xml version="1.0" encoding="UTF-8"?>

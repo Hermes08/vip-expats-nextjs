@@ -76,10 +76,31 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
               </Link>
             </Magnetic>
             <Magnetic strength={0.3}>
-              <Link href={`/${lang}/tours`} className="btn-3d btn-3d-navy px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10 flex items-center justify-center gap-3">
-                <PlayCircle size={18} className="text-brand-GOLD" /> DISCOVERY TOURS
+              <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10 flex items-center justify-center gap-3">
+                {lang === 'es' ? 'CONSULTA GRATIS' : 'FREE CONSULTATION'}
               </Link>
             </Magnetic>
+          </motion.div>
+
+          {/* Above-fold social proof stats */}
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, delay: 1.8 }}
+            className="flex flex-wrap justify-center gap-8 mt-8"
+            style={{ transform: 'translateZ(20px)' }}
+          >
+            {[
+              { val: '200+', label: lang === 'es' ? 'Propiedades' : 'Properties' },
+              { val: '7+', label: lang === 'es' ? 'Años de experiencia' : 'Years Experience' },
+              { val: '100%', label: lang === 'es' ? 'USD · Sin riesgo cambiario' : 'USD · No Currency Risk' },
+            ].map((stat, i) => (
+              <div key={i} className="flex items-center gap-2 text-white/70">
+                <span className="text-brand-GOLD font-black text-lg">{stat.val}</span>
+                <span className="text-[10px] font-bold uppercase tracking-widest">{stat.label}</span>
+                {i < 2 && <span className="ml-4 w-px h-4 bg-white/20 hidden sm:block" />}
+              </div>
+            ))}
           </motion.div>
         </HeroTilt>
       </div>
