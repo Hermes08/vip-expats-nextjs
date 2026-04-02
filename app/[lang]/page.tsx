@@ -9,6 +9,7 @@ import TrustBar from '@/components/home/TrustBar';
 import ClientSections from './ClientSections';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
+import TestimonialsSection from '@/components/home/TestimonialsSection';
 
 export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
   const resolvedParams = await params;
@@ -74,7 +75,10 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         </div>
       </section>
 
-      {/* 5 — WHY VIP EXPATS */}
+      {/* 5 — TESTIMONIALS */}
+      <TestimonialsSection />
+
+      {/* 6 — WHY VIP EXPATS */}
       <section className="py-14 bg-black text-white overflow-hidden relative border-t border-white/5">
         <div className="max-w-6xl mx-auto px-4 relative">
           <div className="text-center mb-10 reveal-on-scroll">
@@ -112,12 +116,12 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
         </div>
       </section>
 
-      {/* 6 — LEAD MAGNET */}
+      {/* 7 — LEAD MAGNET */}
       <div className="reveal-on-scroll">
         <LeadMagnet />
       </div>
 
-      {/* 7 — FAQ */}
+      {/* 8 — FAQ */}
       <section className="py-14 bg-brand-950 relative overflow-hidden">
         <div className="max-w-3xl mx-auto px-4 relative z-10 reveal-on-scroll">
           <div className="text-center mb-10">

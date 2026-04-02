@@ -71,7 +71,7 @@ const PensionadoVisaPage = () => {
               transition={{ duration: 1 }}
             >
               <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block">Relocation Guide 2026</span>
-              <h1 className="text-6xl md:text-9xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-[0.8]">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-[0.8]">
                 {content.title.split(': ')[0]} <br />
                 <span className="text-brand-GOLD">{content.title.split(': ')[1]}</span>
               </h1>
@@ -81,12 +81,12 @@ const PensionadoVisaPage = () => {
               
               <div className="flex flex-wrap justify-center gap-12">
                 <Magnetic strength={0.3}>
-                  <Link href={`/${lang}/tours`} className="btn-3d btn-3d-gold px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px]">
+                  <Link href={`/${lang}/tours`} className="btn-3d btn-3d-gold px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px]">
                     BOOK RELOCATION TOUR
                   </Link>
                 </Magnetic>
                 <Magnetic strength={0.3}>
-                  <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10">
+                  <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-navy px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10">
                     VIEW INVESTMENT ASSETS
                   </Link>
                 </Magnetic>
@@ -96,7 +96,7 @@ const PensionadoVisaPage = () => {
         </section>
 
         {/* INTRO CONTENT */}
-        <section className="py-32 border-t border-white/5">
+        <section className="py-14 border-t border-white/5">
           <div className="grid lg:grid-cols-2 gap-32 items-center">
             <div className="reveal-on-scroll">
               <h2 className="text-4xl md:text-6xl font-heading font-black text-white mb-12 uppercase italic tracking-tighter leading-[0.9]">
@@ -112,7 +112,7 @@ const PensionadoVisaPage = () => {
               </div>
             </div>
             <div className="relative reveal-on-scroll stagger-2">
-              <div className="glass-card p-16 rounded-[4rem] border-white/5 shadow-2xl relative overflow-hidden backdrop-blur-3xl">
+              <div className="glass-card p-8 rounded-2xl border-white/5 shadow-2xl relative overflow-hidden backdrop-blur-3xl">
                 <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-brand-GOLD/30 to-transparent" />
                 <Star className="text-brand-GOLD mb-10" size={64} fill="currentColor" />
                 <h3 className="text-3xl font-black text-white mb-8 uppercase italic tracking-tighter">Market Watch 2026</h3>
@@ -134,14 +134,14 @@ const PensionadoVisaPage = () => {
         </section>
 
         {/* BENEFITS GRID */}
-        <section className="py-32">
+        <section className="py-14">
           <div className="text-center mb-32 reveal-on-scroll">
              <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">Exclusive Privileges</span>
-             <h2 className="text-5xl md:text-8xl font-heading font-black text-white mb-12 tracking-tighter uppercase italic leading-[0.8]">{content.benefitsTitle}</h2>
+             <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-12 tracking-tighter uppercase italic leading-[0.8]">{content.benefitsTitle}</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-12">
             {content.benefits.map((benefit, i) => (
-              <div key={i} className="glass-card p-16 rounded-[4rem] border-white/5 hover:bg-brand-GOLD hover:text-brand-900 transition-all duration-700 reveal-on-scroll group">
+              <div key={i} className="glass-card p-8 rounded-2xl border-white/5 hover:bg-brand-GOLD hover:text-brand-900 transition-all duration-700 reveal-on-scroll group">
                 <benefit.icon className="text-brand-GOLD mb-12 group-hover:text-brand-900 transition-all transform group-hover:scale-110 group-hover:-rotate-12" size={64} />
                 <h4 className="text-3xl font-black mb-6 uppercase italic tracking-tighter">{benefit.title}</h4>
                 <p className="text-slate-400 group-hover:text-brand-900 text-xl font-medium leading-relaxed opacity-80 group-hover:opacity-100 italic">{benefit.desc}</p>
@@ -151,11 +151,11 @@ const PensionadoVisaPage = () => {
         </section>
 
         {/* REQUIREMENTS SECTION */}
-        <section className="py-48 bg-brand-900/40 rounded-[6rem] border border-white/5 px-20 reveal-on-scroll">
+        <section className="py-16 bg-brand-900/40 rounded-[6rem] border border-white/5 px-20 reveal-on-scroll">
           <div className="grid lg:grid-cols-2 gap-32 items-center">
             <div>
               <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">Eligibility Benchmarks</span>
-              <h2 className="text-5xl md:text-8xl font-heading font-black text-white mb-12 tracking-tighter uppercase italic leading-[0.8]">{content.requirementsTitle}</h2>
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-12 tracking-tighter uppercase italic leading-[0.8]">{content.requirementsTitle}</h2>
               <div className="space-y-12 mt-20">
                 {content.requirements.map((req, i) => (
                   <div key={i} className="flex gap-8 items-start reveal-on-scroll stagger-1">
@@ -167,7 +167,7 @@ const PensionadoVisaPage = () => {
                 ))}
               </div>
             </div>
-            <div className="relative h-[600px] rounded-[4rem] overflow-hidden border-8 border-white/5 transform rotate-3">
+            <div className="relative h-[600px] rounded-2xl overflow-hidden border-8 border-white/5 transform rotate-3">
               <img src="https://images.unsplash.com/photo-1549420958-370146059d4c?w=1200&q=80" alt="Relaxing Panama Lifestyle" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-transparent to-transparent" />
             </div>
@@ -175,17 +175,17 @@ const PensionadoVisaPage = () => {
         </section>
 
         {/* FINAL CALL TO ACTION */}
-        <section className="py-48 text-center">
-            <h2 className="text-5xl md:text-9xl font-heading font-black text-white mb-16 tracking-tighter uppercase italic leading-[0.8]">{content.ctaTitle}</h2>
+        <section className="py-16 text-center">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-16 tracking-tighter uppercase italic leading-[0.8]">{content.ctaTitle}</h2>
             <p className="text-2xl text-slate-400 font-medium mb-20 max-w-2xl mx-auto leading-relaxed">{content.ctaDesc}</p>
             <div className="flex flex-wrap justify-center gap-10">
               <Magnetic strength={0.4}>
-                <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs transition-all shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)]">
+                <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-8 py-4 rounded-full font-black uppercase tracking-[0.3em] text-xs transition-all shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)]">
                   SPEAK WITH A SPECIALIST
                 </Link>
               </Magnetic>
               <Magnetic strength={0.4}>
-                <Link href={`/${lang}/tours`} className="btn-3d btn-3d-gold px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs transition-all">
+                <Link href={`/${lang}/tours`} className="btn-3d btn-3d-gold px-8 py-4 rounded-full font-black uppercase tracking-[0.3em] text-xs transition-all">
                   BOOK DISCOVERY TOUR
                 </Link>
               </Magnetic>
