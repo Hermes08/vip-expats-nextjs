@@ -83,7 +83,7 @@ export default function PropertyDetailPage() {
   };
 
   return (
-    <main className="min-h-screen bg-brand-950 pt-24 pb-32">
+    <main className="min-h-screen bg-brand-950 pt-20 pb-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -143,10 +143,10 @@ export default function PropertyDetailPage() {
                 <MapPin size={12} className="text-brand-GOLD" />
                 {[listing.neighborhood, listing.city, listing.province].filter(Boolean).join(', ')}
               </div>
-              <h1 className="font-heading text-4xl md:text-6xl font-black text-white uppercase italic tracking-tighter leading-[0.9] mb-6">
+              <h1 className="font-heading text-2xl md:text-4xl font-black text-white uppercase tracking-tight leading-tight mb-4">
                 {title}
               </h1>
-              <div className="text-4xl md:text-5xl font-black text-brand-GOLD tracking-tighter">
+              <div className="text-2xl md:text-3xl font-black text-brand-GOLD tracking-tight">
                 {formatPrice(listing.price, listing.status, lang)}
               </div>
               {listing.pricePerSqft && (
@@ -216,7 +216,7 @@ export default function PropertyDetailPage() {
             </div>
 
             {/* Description */}
-            <div className="glass-card p-10 rounded-3xl border-white/5">
+            <div className="glass-card p-6 rounded-2xl border-white/5">
               <h2 className="text-lg font-black text-white uppercase italic tracking-tighter mb-6">
                 {lang === 'es' ? 'Descripción' : 'Description'}
               </h2>
@@ -225,7 +225,7 @@ export default function PropertyDetailPage() {
 
             {/* Amenities */}
             {listing.amenities && listing.amenities.length > 0 && (
-              <div className="glass-card p-10 rounded-3xl border-white/5">
+              <div className="glass-card p-6 rounded-2xl border-white/5">
                 <h2 className="text-lg font-black text-white uppercase italic tracking-tighter mb-8">
                   {lang === 'es' ? 'Amenidades' : 'Amenities'}
                 </h2>

@@ -13,17 +13,17 @@ const Footer: React.FC = () => {
     const t = CONTENT[lang] || CONTENT['en'];
 
     return (
-        <footer className="bg-black text-white pt-24 pb-12 z-10 relative overflow-hidden">
+        <footer className="bg-black text-white pt-12 pb-8 z-10 relative overflow-hidden">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-brand-GOLD/20 to-transparent"></div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
                     <div className="col-span-1 md:col-span-2">
                         <Magnetic strength={0.2}>
                             <Link href={`/${lang}`} className="font-heading text-4xl font-black tracking-tighter mb-8 block uppercase">
                                 <span className="text-brand-GOLD">PANAMA</span> <span className="text-white font-serif-luxury lowercase tracking-normal -ml-2">Sale</span>
                             </Link>
                         </Magnetic>
-                        <p className="text-slate-400 max-w-sm mb-10 text-lg font-medium leading-relaxed italic border-l-4 border-brand-GOLD/30 pl-8">{t.footer.about}</p>
+                        <p className="text-slate-400 max-w-sm mb-6 text-sm font-medium leading-relaxed border-l-2 border-brand-GOLD/30 pl-5">{t.footer.about}</p>
                         <div className="flex gap-6">
                             <Magnetic strength={0.3}>
                                 <a href="#" aria-label="Instagram" className="p-4 glass-card rounded-2xl hover:bg-brand-GOLD hover:text-brand-900 transition-all transform hover:scale-110 border-white/5"><Instagram size={20} /></a>
@@ -34,8 +34,8 @@ const Footer: React.FC = () => {
                         </div>
                     </div>
                     <div>
-                        <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-[0.3em] mb-8">Navigation</h4>
-                        <ul className="space-y-6 text-slate-400 text-xs font-black uppercase tracking-widest">
+                        <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-[0.3em] mb-4">Navigation</h4>
+                        <ul className="space-y-3 text-slate-400 text-xs font-black uppercase tracking-widest">
                             <li><Magnetic strength={0.15}><Link href={`/${lang}/proyectos`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Developments</Link></Magnetic></li>
                             <li><Magnetic strength={0.15}><Link href={`/${lang}/quiz`} className="hover:text-white transition-colors flex items-center gap-2 group text-brand-GOLD"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Neighborhood Quiz</Link></Magnetic></li>
                             <li><Magnetic strength={0.15}><Link href={`/${lang}/relocation/tours`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Relocation Tours</Link></Magnetic></li>
@@ -44,8 +44,8 @@ const Footer: React.FC = () => {
                         </ul>
                     </div>
                     <div>
-                        <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-[0.3em] mb-8">Global Access</h4>
-                        <ul className="space-y-6 text-slate-300 text-sm font-medium">
+                        <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-[0.3em] mb-4">Global Access</h4>
+                        <ul className="space-y-3 text-slate-300 text-sm font-medium">
                             <li className="flex items-start gap-4"><Phone size={18} className="text-brand-GOLD shrink-0" /> {CONTACT_INFO.displayPhone}</li>
                             <li className="flex items-start gap-4"><Mail size={18} className="text-brand-GOLD shrink-0" /> {CONTACT_INFO.email}</li>
                             <li className="flex items-start gap-4"><MapPin size={18} className="text-brand-GOLD shrink-0" /> {CONTACT_INFO.address}</li>
@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="pt-12 border-t border-white/5 text-slate-500 text-[9px] font-black uppercase tracking-[0.4em] flex flex-col md:flex-row justify-between items-center gap-6">
+                <div className="pt-6 border-t border-white/5 text-slate-500 text-[9px] font-black uppercase tracking-[0.4em] flex flex-col md:flex-row justify-between items-center gap-6">
                     <p>&copy; {new Date().getFullYear()} PANAMAREALESTATESALE. {t.footer.rights}</p>
                     <div className="flex gap-10">
                         <Link href={`/${lang}/admin`} className="hover:text-white transition-all flex items-center gap-2"><Lock size={12} /> Admin Control</Link>

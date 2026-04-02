@@ -23,11 +23,11 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="inline-flex items-center gap-3 px-6 py-2 glass-card rounded-full mb-12 shadow-2xl"
+            className="inline-flex items-center gap-3 px-5 py-2 glass-card rounded-full mb-6 shadow-xl"
             style={{ transform: 'translateZ(40px)' }}
           >
             <div className="w-2 h-2 bg-brand-GOLD rounded-full animate-pulse shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div>
-            <span className="text-[10px] font-black uppercase tracking-[0.4em] text-white">Market Intelligence <span className="text-brand-GOLD">2026</span></span>
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white">Market Intelligence <span className="text-brand-GOLD">2026</span></span>
           </motion.div>
 
           <div style={{ transform: 'translateZ(60px)' }}>
@@ -35,7 +35,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="font-heading text-7xl md:text-9xl font-black text-white mb-8 leading-[0.8] tracking-tighter uppercase italic"
+              className="font-heading text-4xl sm:text-6xl md:text-7xl font-black text-white mb-5 leading-tight tracking-tight uppercase"
             >
               {lang === 'es' ? "Bienes Raíces" : "Panama Real Estate"} <br />
               <span className="text-brand-GOLD">
@@ -47,7 +47,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.5, delay: 0.8 }}
-              className="text-xl md:text-2xl text-white/90 font-black mb-12 uppercase tracking-[0.4em] font-serif-luxury"
+              className="text-sm md:text-base text-white/70 font-bold mb-5 uppercase tracking-[0.3em]"
             >
               Luxury Beachfront & City Portfolio
             </motion.p>
@@ -57,27 +57,27 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="text-xl md:text-2xl text-slate-300 mb-16 leading-relaxed max-w-2xl mx-auto font-medium opacity-80"
+            className="text-base md:text-lg text-slate-300 mb-8 leading-relaxed max-w-xl mx-auto font-medium"
             style={{ transform: 'translateZ(30px)' }}
           >
-            Your trusted guide to buying property in Panama. From beachfront condos to mountain retreats, we connect international investors with the best real estate opportunities.
+            Your trusted guide to buying property in Panama. From beachfront condos to mountain retreats, we connect international investors with the best opportunities.
           </motion.p>
 
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 1.4, ease: [0.23, 1, 0.32, 1] }}
-            className="flex flex-col sm:flex-row gap-12 justify-center"
+            className="flex flex-col sm:flex-row gap-4 justify-center"
             style={{ transform: 'translateZ(50px)' }}
           >
-            <Magnetic strength={0.4}>
-              <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-gold px-12 py-7 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] flex items-center justify-center">
+            <Magnetic strength={0.3}>
+              <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-gold px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] flex items-center justify-center">
                 {lang === 'es' ? 'VER PROPIEDADES' : 'BROWSE PROPERTIES'}
               </Link>
             </Magnetic>
-            <Magnetic strength={0.4}>
-              <Link href={`/${lang}/tours`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10 flex items-center justify-center gap-3">
-                <PlayCircle size={20} className="text-brand-GOLD" /> DISCOVERY TOURS
+            <Magnetic strength={0.3}>
+              <Link href={`/${lang}/tours`} className="btn-3d btn-3d-navy px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10 flex items-center justify-center gap-3">
+                <PlayCircle size={18} className="text-brand-GOLD" /> DISCOVERY TOURS
               </Link>
             </Magnetic>
           </motion.div>

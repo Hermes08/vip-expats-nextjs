@@ -78,7 +78,7 @@ const Navbar: React.FC = () => {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className={`fixed w-full z-50 transition-all duration-700 ${isScrolled ? 'bg-brand-950/80 backdrop-blur-3xl border-b border-white/5 py-3 shadow-2xl' : 'bg-transparent py-8'}`}
+            className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-brand-950/90 backdrop-blur-2xl border-b border-white/5 py-2 shadow-xl' : 'bg-gradient-to-b from-black/60 to-transparent py-4'}`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
