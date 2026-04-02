@@ -4,10 +4,45 @@ import React from 'react';
 import { Phone, Mail, MapPin, MessageCircle, Send } from 'lucide-react';
 import { CONTACT_INFO } from '@/lib/constants';
 import SplitText from '@/components/ui/SplitText';
+import Link from 'next/link';
 
 const ContactPageContent: React.FC = () => {
     return (
         <div className="pt-24 min-h-screen bg-brand-950">
+            {/* Talk to an Expert — top bar */}
+            <div className="bg-brand-GOLD/10 border-b border-brand-GOLD/20 py-4 px-4">
+              <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-center">
+                <span className="text-brand-GOLD font-black text-xs uppercase tracking-[0.3em]">
+                  Talk to an Expert Today
+                </span>
+                <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
+                  <a
+                    href={`tel:${CONTACT_INFO.phone}`}
+                    className="flex items-center gap-2 text-white font-bold text-sm hover:text-brand-GOLD transition-colors"
+                  >
+                    <Phone size={14} className="text-brand-GOLD" />
+                    {CONTACT_INFO.phone}
+                  </a>
+                  <a
+                    href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=Hi%20VIP%20Expats%2C%20I%27d%20like%20to%20speak%20with%20an%20expert`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-2 text-white font-bold text-sm hover:text-green-400 transition-colors"
+                  >
+                    <MessageCircle size={14} className="text-green-400" />
+                    WhatsApp
+                  </a>
+                  <a
+                    href={`mailto:${CONTACT_INFO.email}`}
+                    className="flex items-center gap-2 text-white font-bold text-sm hover:text-brand-GOLD transition-colors"
+                  >
+                    <Mail size={14} className="text-brand-GOLD" />
+                    {CONTACT_INFO.email}
+                  </a>
+                </div>
+              </div>
+            </div>
+
             {/* Hero Section */}
             <section className="relative py-16 flex items-center overflow-hidden border-b border-white/5 bg-brand-950">
                 <div className="absolute inset-0 z-0">

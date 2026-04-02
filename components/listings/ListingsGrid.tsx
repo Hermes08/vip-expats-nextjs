@@ -1,11 +1,12 @@
 'use client';
 
 import React, { useState, useMemo } from 'react';
+import Link from 'next/link';
 import { Listing } from '@/lib/types';
 import PropertyCard from './PropertyCard';
 import PropertySearchFilters, { FilterState, DEFAULT_FILTERS } from './PropertySearchFilters';
 import { useCMS } from '@/context/CMSContext';
-import { Building2 } from 'lucide-react';
+import { Building2, MessageCircle, ArrowRight } from 'lucide-react';
 
 interface Props {
   lang: 'en' | 'es';
@@ -55,8 +56,14 @@ export default function ListingsGrid({ lang, initialListings }: Props) {
   };
   const t = labels[lang];
 
+  const contactLabels = {
+    en: { msg: "Can't find what you're looking for?", cta: "Talk to an agent" },
+    es: { msg: "¿No encuentras lo que buscas?", cta: "Habla con un agente" },
+  };
+  const ct = contactLabels[lang];
+
   return (
-    <div className="min-h-screen bg-brand-950 pt-24 pb-10 px-4">
+    <div className="min-h-screen bg-brand-950 pt-24 pb-24 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-10 text-center">
@@ -91,6 +98,22 @@ export default function ListingsGrid({ lang, initialListings }: Props) {
             ))}
           </div>
         )}
+      </div>
+
+      {/* Sticky bottom CTA bar */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-brand-900/95 backdrop-blur-md border-t border-white/10 py-3 px-4">
+        <div className="max-w-5xl mx-auto flex items-center justify-center gap-3 sm:gap-6">
+          <div className="flex items-center gap-2">
+            <MessageCircle size={15} className="text-brand-GOLD flex-shrink-0" />
+            <span className="text-slate-300 text-xs sm:text-sm font-medium">{ct.msg}</span>
+          </div>
+          <Link
+            href={`/${lang}/contacto`}
+            className="inline-flex items-center gap-1.5 btn-3d btn-3d-gold px-4 py-2 rounded-lg font-black uppercase tracking-widest text-[10px] sm:text-xs whitespace-nowrap"
+          >
+            {ct.cta} <ArrowRight size={12} />
+          </Link>
+        </div>
       </div>
     </div>
   );

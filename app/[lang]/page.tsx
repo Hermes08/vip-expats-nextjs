@@ -6,6 +6,7 @@ import LeadMagnet from '@/components/LeadMagnet';
 import { ArrowRight, Compass, ShieldCheck, Globe, CheckCircle } from 'lucide-react';
 import HeroSection from '@/components/home/HeroSection';
 import TrustBar from '@/components/home/TrustBar';
+import QuizTeaser from '@/components/home/QuizTeaser';
 import ClientSections from './ClientSections';
 import LocalBusinessSchema from '@/components/seo/LocalBusinessSchema';
 import FAQSchema from '@/components/seo/FAQSchema';
@@ -49,6 +50,9 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
 
       {/* 2 — TRUST BAR */}
       <TrustBar />
+
+      {/* 2b — QUIZ TEASER */}
+      <QuizTeaser lang={lang} />
 
       {/* 3 — QUICK SEARCH + FEATURED LISTINGS */}
       <ClientSections lang={lang} />

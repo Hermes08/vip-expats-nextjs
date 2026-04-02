@@ -32,6 +32,26 @@ const testimonials = [
     stars: 5,
     tag: 'Investors',
   },
+  {
+    name: 'Catherine B.',
+    from: 'Attorney, London, UK',
+    location: 'Now in Punta Pacifica, Panama City',
+    visa: 'Friendly Nations Visa',
+    quote:
+      "I was skeptical about buying abroad, but the VIP Expats team walked me through every legal step. My beachside apartment is now generating 9% annual yield on Airbnb. I wish I'd done it a decade earlier.",
+    stars: 5,
+    tag: 'Investor',
+  },
+  {
+    name: 'Mark & Diane F.',
+    from: 'Retired Physicians, Arizona',
+    location: 'Now in Boquete, Chiriquí',
+    visa: 'Pensionado Visa',
+    quote:
+      "Boquete feels like Colorado at a fraction of the cost. The team found us a mountain coffee-farm home with a full guest suite. Our total cost of living dropped by 60%. Panama was the right call.",
+    stars: 5,
+    tag: 'Retirees',
+  },
 ];
 
 export default function TestimonialsSection() {
@@ -48,7 +68,7 @@ export default function TestimonialsSection() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 xl:grid-cols-5 gap-6">
           {testimonials.map((t, i) => (
             <div
               key={i}
