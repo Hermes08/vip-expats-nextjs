@@ -60,14 +60,14 @@ const RelocationDigitalNomadContent = () => {
                         <h1 className="text-6xl md:text-8xl font-heading font-black mb-10 uppercase tracking-tighter leading-none italic">
                             Work from <span className="text-brand-GOLD">Paradise</span>, <br /> Pay <span className="underline decoration-brand-GOLD">Zero</span> Tax.
                         </h1>
-                        <p className="text-xl text-gray-400 font-medium leading-relaxed mb-12">
+                        <p className="text-xl text-slate-400 font-medium leading-relaxed mb-12">
                             Stop commuting. Start living. The <strong>panama digital nomad visa</strong> is your legal shortcut to a tropical lifestyle with first-world connectivity and a territorial tax system that keeps your money in your pocket.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6">
-                            <Link href={`/${lang}/contacto`} className="px-10 py-5 bg-brand-GOLD text-brand-950 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-white hover:scale-105 transition-all text-center">
+                            <Link href={`/${lang}/contacto`} className="px-6 py-3 bg-brand-GOLD text-brand-950 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-white hover:scale-105 transition-all text-center">
                                 Claim My Nomad Visa
                             </Link>
-                            <Link href="#connectivity" className="px-10 py-5 bg-white/5 border border-white/10 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-white/10 transition-all text-center">
+                            <Link href="#connectivity" className="px-6 py-3 bg-white/5 border border-white/10 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-white/10 transition-all text-center">
                                 View Speed Tests
                             </Link>
                         </div>
@@ -76,7 +76,7 @@ const RelocationDigitalNomadContent = () => {
             </section>
 
             {/* The 3 Pillars of Nomad Success */}
-            <section className="py-24 bg-neutral-900 border-y border-white/5">
+            <section className="py-24 bg-black border-y border-white/5">
                 <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12">
                     {[
                         {
@@ -95,22 +95,22 @@ const RelocationDigitalNomadContent = () => {
                             desc: "Located at the center of the Americas. Easy 3-5 hour flights to major US hubs with minimal time-zone jetlag."
                         }
                     ].map((item, i) => (
-                        <div key={i} className="p-10 bg-white/5 rounded-[3rem] border border-white/10 hover:border-brand-GOLD/30 transition-all">
+                        <div key={i} className="p-10 bg-white/5 rounded-2xl border border-white/10 hover:border-brand-GOLD/30 transition-all">
                             <div className="mb-6">{item.icon}</div>
                             <h3 className="text-2xl font-black uppercase tracking-tighter mb-4 italic">{item.title}</h3>
-                            <p className="text-gray-400 font-medium text-sm leading-relaxed">{item.desc}</p>
+                            <p className="text-slate-400 font-medium text-sm leading-relaxed">{item.desc}</p>
                         </div>
                     ))}
                 </div>
             </section>
 
             {/* Connectivity Deep Dive */}
-            <section id="connectivity" className="py-32 relative overflow-hidden">
+            <section id="connectivity" className="py-14 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-20 items-center">
                         <div className="lg:w-1/2">
-                            <div className="p-1 bg-gradient-to-br from-brand-GOLD to-brand-950 rounded-[4rem]">
-                                <div className="bg-brand-950 rounded-[3.8rem] p-12 overflow-hidden relative group">
+                            <div className="p-1 bg-gradient-to-br from-brand-GOLD to-brand-950 rounded-2xl">
+                                <div className="bg-brand-950 rounded-[3.8rem] p-6 overflow-hidden relative group">
                                     <div className="relative z-10">
                                         <div className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest mb-6">Real Speed Test Data / Jan 2026</div>
                                         <div className="space-y-8">
@@ -147,8 +147,8 @@ const RelocationDigitalNomadContent = () => {
                             </div>
                         </div>
                         <div className="lg:w-1/2">
-                            <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The Most <br /> <span className="text-brand-GOLD">Connected</span> Hub <br /> in LatAm</h2>
-                            <p className="text-lg text-gray-400 font-medium leading-relaxed mb-10">
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The Most <br /> <span className="text-brand-GOLD">Connected</span> Hub <br /> in LatAm</h2>
+                            <p className="text-lg text-slate-400 font-medium leading-relaxed mb-10">
                                 Connectivity is the lifeline of the digital nomad. Panama hosts 7 of the world's most critical submarine fiber optic cables. This infrastructure means you enjoy lower latency than most cities in North America. Whether you are trading crypto, managing a dev team, or editing 4K video, our <strong>remote work panama</strong> guide ensures you choose a rental with guaranteed uptime.
                             </p>
                             <ul className="space-y-4 mb-10">
@@ -162,11 +162,11 @@ const RelocationDigitalNomadContent = () => {
             </section>
 
             {/* Nomad Neighborhoods */}
-            <section className="py-32 bg-white text-brand-950 rounded-[5rem] mx-4">
+            <section className="py-14 bg-black rounded-3xl mx-4">
                 <div className="max-w-7xl mx-auto px-8">
                     <div className="text-center mb-20">
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic text-brand-950 leading-none">Where the <span className="text-brand-GOLD">Panama Real Estate Sales</span> Hang</h2>
-                        <p className="text-xl text-neutral-500 font-medium max-w-2xl mx-auto italic">From colonial vibes to high-tech jungles, pick your vibe.</p>
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic text-brand-950 leading-none">Where the <span className="text-brand-GOLD">Panama Real Estate Sales</span> Hang</h2>
+                        <p className="text-xl text-slate-400 font-medium max-w-2xl mx-auto italic">From colonial vibes to high-tech jungles, pick your vibe.</p>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
@@ -191,7 +191,7 @@ const RelocationDigitalNomadContent = () => {
                             }
                         ].map((item, idx) => (
                             <div key={idx} className="group cursor-pointer">
-                                <div className="relative aspect-[4/5] rounded-[3rem] overflow-hidden mb-8">
+                                <div className="relative aspect-[4/5] rounded-2xl overflow-hidden mb-8">
                                     <Image src={item.img} alt={item.title} fill className="object-cover group-hover:scale-110 transition-transform duration-700" />
                                     <div className="absolute inset-0 bg-gradient-to-t from-brand-950 to-transparent opacity-60" />
                                     <div className="absolute bottom-10 left-10">
@@ -199,7 +199,7 @@ const RelocationDigitalNomadContent = () => {
                                         <h3 className="text-3xl font-black text-white uppercase tracking-tighter italic">{item.title}</h3>
                                     </div>
                                 </div>
-                                <p className="text-neutral-600 font-medium leading-relaxed px-6">{item.desc}</p>
+                                <p className="text-slate-400 font-medium leading-relaxed px-6">{item.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -207,31 +207,31 @@ const RelocationDigitalNomadContent = () => {
             </section>
 
             {/* Nomad FAQ Preview */}
-            <section className="py-32">
+            <section className="py-14">
                 <div className="max-w-4xl mx-auto px-4">
                     <div className="text-center mb-20 animate-fade-in-up">
                         <HelpCircle size={48} className="text-brand-GOLD mx-auto mb-6" />
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic leading-none">Nomad <span className="text-brand-GOLD italic underline">Intelligence</span></h2>
-                        <p className="text-lg text-gray-400 font-medium">Quick answers for high-speed relocation.</p>
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic leading-none">Nomad <span className="text-brand-GOLD italic underline">Intelligence</span></h2>
+                        <p className="text-lg text-slate-400 font-medium">Quick answers for high-speed relocation.</p>
                     </div>
 
                     <div className="space-y-6">
                         {faqs.map((faq, idx) => (
-                            <details key={idx} className="group bg-white/5 rounded-[2rem] border border-white/10 overflow-hidden transition-all hover:border-brand-GOLD/50">
+                            <details key={idx} className="group bg-white/5 rounded-xl border border-white/10 overflow-hidden transition-all hover:border-brand-GOLD/50">
                                 <summary className="flex items-center justify-between p-8 cursor-pointer list-none">
                                     <span className="text-xl font-black uppercase tracking-tighter italic pr-8">{faq.question}</span>
                                     <span className="text-brand-GOLD group-open:rotate-45 transition-transform duration-300">
                                         <Zap size={24} />
                                     </span>
                                 </summary>
-                                <div className="px-8 pb-8 text-gray-400 font-medium leading-relaxed border-t border-white/5 pt-6">
+                                <div className="px-8 pb-8 text-slate-400 font-medium leading-relaxed border-t border-white/5 pt-6">
                                     {faq.answer}
                                 </div>
                             </details>
                         ))}
                     </div>
 
-                    <div className="mt-20 p-16 bg-brand-GOLD text-brand-950 rounded-[4rem] text-center shadow-2xl relative overflow-hidden group">
+                    <div className="mt-20 p-8 bg-brand-GOLD text-brand-950 rounded-2xl text-center shadow-2xl relative overflow-hidden group">
                         <div className="relative z-10">
                             <h3 className="text-5xl font-black uppercase tracking-tighter italic mb-8">Ready to Go Panama Real Estate Sale?</h3>
                             <p className="text-lg font-black opacity-70 mb-10 max-w-xl mx-auto">

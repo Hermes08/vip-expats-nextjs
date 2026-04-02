@@ -44,7 +44,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <ServiceSchema
                 name="Panama Qualified Investor Visa VIP Services"
@@ -59,7 +59,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
             </div>
 
             {/* Hero Section */}
-            <section className="py-32 bg-brand-950 text-white relative overflow-hidden rounded-b-[4rem]">
+            <section className="py-14 bg-brand-950 text-white relative overflow-hidden rounded-b-[4rem]">
                 <div className="absolute inset-0 opacity-10 pointer-events-none">
                     <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-GOLD rounded-full blur-[150px]"></div>
                 </div>
@@ -67,10 +67,10 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
                     <span className="inline-block px-5 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
                         The Elite Golden Visa
                     </span>
-                    <h1 className="text-5xl md:text-9xl font-heading font-black mb-10 uppercase tracking-tighter leading-[0.85]">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-10 uppercase tracking-tighter leading-[0.85]">
                         Qualified <span className="text-brand-GOLD italic">Investor</span> <br /> Visa 2026
                     </h1>
-                    <p className="text-xl md:text-2xl text-gray-400 max-w-4xl mx-auto leading-relaxed font-medium mb-12">
+                    <p className="text-base md:text-lg text-slate-400 max-w-4xl mx-auto leading-relaxed font-medium mb-12">
                         Permanent residency in <strong>30 days</strong>. The <strong>panama qualified investor visa</strong> is the fastest and most prestigious residency program in the Americas, designed for the high-net-worth individual who values speed, efficiency, and ROI.
                     </p>
                     <div className="flex justify-center gap-6">
@@ -82,30 +82,30 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
             </section>
 
             {/* The Value Proposition: Speed vs. Cost */}
-            <section className="py-32 max-w-7xl mx-auto px-4">
+            <section className="py-14 max-w-7xl mx-auto px-4">
                 <div className="grid lg:grid-cols-2 gap-24 items-center">
                     <div>
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD">VIP</span> Lane</h2>
-                        <div className="space-y-8 text-lg text-neutral-600 font-medium leading-[1.8]">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD">VIP</span> Lane</h2>
+                        <div className="space-y-8 text-lg text-slate-400 font-medium leading-[1.8]">
                             <p>
                                 In 2026, time is the scarcest resource. While the <strong>friendly nations visa</strong> takes 2-3 years to reach permanent status, the **Qualified Investor path** grants you a permanent resident card (E-Cedula) almost immediately after your initial filing.
                             </p>
                             <p>
                                 Established under Executive Decree 722, this "Golden Visa" was created to attract elite capital. By investing $300,000 into Panama's burgeoning real estate market, you are not just buying a property; you are securing a **sovereign exit strategy** that is protected by law.
                             </p>
-                            <div className="grid grid-cols-2 gap-6 pt-8 border-t border-neutral-100">
+                            <div className="grid grid-cols-2 gap-6 pt-8 border-t border-white/10">
                                 <div>
                                     <h4 className="text-brand-GOLD font-black text-3xl mb-1">30 Days</h4>
-                                    <p className="text-[10px] uppercase font-black text-neutral-400">Processing Window</p>
+                                    <p className="text-[10px] uppercase font-black text-slate-400">Processing Window</p>
                                 </div>
                                 <div>
                                     <h4 className="text-brand-GOLD font-black text-3xl mb-1">$300k</h4>
-                                    <p className="text-[10px] uppercase font-black text-neutral-400">Min. Investment</p>
+                                    <p className="text-[10px] uppercase font-black text-slate-400">Min. Investment</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="relative aspect-square rounded-[4rem] overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-1000">
+                    <div className="relative aspect-square rounded-2xl overflow-hidden shadow-2xl grayscale hover:grayscale-0 transition-all duration-1000">
                         <Image
                             src="https://images.unsplash.com/photo-1554188248-986adbb73be4?w=1000&q=80"
                             alt="Luxury Panama City Real Estate representing Qualified Investor Visa"
@@ -117,10 +117,10 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
             </section>
 
             {/* NEW SECTION: COMPARISON WITH GLOBAL GOLDEN VISAS */}
-            <section className="py-32 bg-neutral-950 text-white rounded-[5rem] mx-4 overflow-hidden relative">
+            <section className="py-14 bg-black text-white rounded-3xl mx-4 overflow-hidden relative">
                 <div className="max-w-7xl mx-auto px-8 relative z-10">
                     <div className="text-center mb-24">
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic">Global <span className="text-brand-GOLD italic">Benchmark</span></h2>
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic">Global <span className="text-brand-GOLD italic">Benchmark</span></h2>
                         <p className="text-gray-500 text-lg uppercase tracking-widest font-black">Why Panama Beats Portugal, Greece, and Dubai.</p>
                     </div>
 
@@ -130,7 +130,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
                             { name: "Greece", price: "€250k - €800k", time: "5 Years Renewal", flaw: "No clear path to citizenship for most." },
                             { name: "Panama", price: "$300,000", time: "30 Days for PR", flaw: "Golden standard, 0% foreign tax.", highlight: true }
                         ].map((c, i) => (
-                            <div key={i} className={`p-12 rounded-[4rem] border ${c.highlight ? 'bg-brand-GOLD text-brand-950 border-brand-GOLD shadow-2xl' : 'bg-white/5 border-white/5'}`}>
+                            <div key={i} className={`p-12 rounded-2xl border ${c.highlight ? 'bg-brand-GOLD text-brand-950 border-brand-GOLD shadow-2xl' : 'bg-white/5 border-white/5'}`}>
                                 <h4 className="text-3xl font-black uppercase tracking-tighter mb-4 italic leading-none">{c.name}</h4>
                                 <div className="space-y-4 text-sm font-bold opacity-80 mb-8">
                                     <p className="flex justify-between"><span>Minimum:</span> <span>{c.price}</span></p>
@@ -144,10 +144,10 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
             </section>
 
             {/* Investment Options Deep Dive */}
-            <section className="py-32 max-w-7xl mx-auto px-4">
+            <section className="py-14 max-w-7xl mx-auto px-4">
                 <div className="text-center mb-24">
-                    <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic leading-none text-center italic">The Big <span className="text-brand-GOLD">Investment</span> Three</h2>
-                    <p className="text-neutral-500 text-lg uppercase tracking-widest font-black italic text-center">There are three ways to qualify for the VIP path.</p>
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic leading-none text-center italic">The Big <span className="text-brand-GOLD">Investment</span> Three</h2>
+                    <p className="text-slate-400 text-lg uppercase tracking-widest font-black italic text-center">There are three ways to qualify for the VIP path.</p>
                 </div>
 
                 <div className="grid lg:grid-cols-3 gap-8">
@@ -168,30 +168,30 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
                             desc: "The 'Cash' path. Place a fixed deposit in a local bank for 5 years. This allows you to earn interest while securing residency."
                         }
                     ].map((opt, i) => (
-                        <div key={i} className="p-12 bg-neutral-50 rounded-[4rem] border border-neutral-100 group hover:border-brand-GOLD transition-all">
+                        <div key={i} className="p-12 bg-brand-950 rounded-2xl border border-white/10 group hover:border-brand-GOLD transition-all">
                             <h4 className="text-brand-GOLD font-black text-xs uppercase tracking-widest mb-4">Min: {opt.amount}</h4>
                             <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 italic leading-none">{opt.title}</h3>
-                            <p className="text-sm text-neutral-500 font-medium leading-relaxed">{opt.desc}</p>
+                            <p className="text-sm text-slate-400 font-medium leading-relaxed">{opt.desc}</p>
                         </div>
                     ))}
                 </div>
             </section>
 
             {/* ROI Analysis: The 2026 Real Estate Market */}
-            <section className="py-32 bg-white">
+            <section className="py-14 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-24 items-center">
                         <div className="lg:w-1/2">
                             <BarChart3 size={64} className="text-brand-GOLD mb-10" />
-                            <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The Panama Real Estate Sale <br /><span className="text-brand-GOLD italic">ROI</span> Strategy</h2>
-                            <div className="space-y-8 text-lg text-neutral-600 font-medium leading-[1.8]">
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The Panama Real Estate Sale <br /><span className="text-brand-GOLD italic">ROI</span> Strategy</h2>
+                            <div className="space-y-8 text-lg text-slate-400 font-medium leading-[1.8]">
                                 <p>
                                     Buying property for the <strong>panama qualified investor visa</strong> shouldn't just be a legal checkbox—it should be an asset play. In 2026, our investment team focuses on high-yield zones like **Costa del Este** and **Avenida Balboa**, or short-term vacation rentals in **Coronado**.
                                 </p>
                                 <p>
                                     Expect net rental yields between 6% and 8% in Panama City, with a property tax exemption for the first several years on new builds. When you combine this with the tax benefits of the visa, your "Golden Residency" effectively pays for itself.
                                 </p>
-                                <div className="p-8 bg-neutral-900 text-white rounded-[3.5rem] italic font-bold">
+                                <div className="p-8 bg-black text-white rounded-[3.5rem] italic font-bold">
                                     "We find that Qualified Investors who purchase in 'Short Term Rental' permitted buildings in Casco Viejo see the fastest path to recouping their legal and relocation costs."
                                 </div>
                             </div>
@@ -203,9 +203,9 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
                                 { title: "Liquidity", desc: "US Dollar assets are easy to resell globally." },
                                 { title: "Protection", desc: "Investment backed by rigid civil-law ownership." }
                             ].map((s, i) => (
-                                <div key={i} className="p-8 bg-neutral-50 rounded-3xl border border-neutral-100 shadow-sm">
+                                <div key={i} className="p-8 bg-brand-950 rounded-3xl border border-white/10 shadow-sm">
                                     <h4 className="font-black text-brand-GOLD uppercase text-xs mb-2">{s.title}</h4>
-                                    <p className="text-xs text-neutral-500 font-bold">{s.desc}</p>
+                                    <p className="text-xs text-slate-400 font-bold">{s.desc}</p>
                                 </div>
                             ))}
                         </div>
@@ -214,11 +214,11 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
             </section>
 
             {/* Document Checklist & Timeline */}
-            <section className="py-32 bg-brand-GOLD text-brand-950 rounded-[5rem] mx-4 overflow-hidden relative">
+            <section className="py-14 bg-brand-GOLD text-brand-950 rounded-3xl mx-4 overflow-hidden relative">
                 <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-24 items-center">
                     <div>
                         <Zap size={64} className="mb-10 opacity-30" />
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The VIP <br /> Timeline</h2>
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The VIP <br /> Timeline</h2>
                         <div className="space-y-12">
                             {[
                                 { phase: "Day 1-5", title: "Document Pre-Audit", desc: "Gathering your FBI check and proof of funds. We pre-clear everything with Immigration via our lawyer network." },
@@ -236,10 +236,10 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="bg-brand-950 p-16 rounded-[4rem] text-white shadow-2xl skew-y-1">
+                    <div className="bg-brand-950 p-8 rounded-2xl text-white shadow-2xl skew-y-1">
                         <AlertCircle className="text-brand-GOLD mb-8" size={64} />
                         <h4 className="text-3xl font-black uppercase tracking-tighter mb-8 italic text-brand-GOLD">Crucial Warning</h4>
-                        <p className="text-gray-400 font-medium leading-relaxed mb-10">
+                        <p className="text-slate-400 font-medium leading-relaxed mb-10">
                             The $300,000 investment *must* be registered in the **Public Registry** and the funds must come from a foreign bank account directly to the escrow or developer in Panama. DIY investors who pay with local cashier's checks without an audit trail are often rejected.
                         </p>
                         <Link href={`/${lang}/relocation/legal`} className="text-[10px] font-black uppercase tracking-[0.3em] text-white border-b-2 border-brand-GOLD pb-2">
@@ -250,11 +250,11 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
             </section>
 
             {/* Neighborhood Spotlight for Investors */}
-            <section className="py-32">
+            <section className="py-14">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="text-center mb-20 px-4">
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic text-center underline italic decoration-brand-GOLD">Investment <span className="text-brand-GOLD">Hotspots</span></h2>
-                        <p className="text-neutral-500 text-lg uppercase tracking-widest font-black italic text-center">Where to park $300k+ in 2026.</p>
+                    <div className="text-center mb-10 px-4">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic text-center underline italic decoration-brand-GOLD">Investment <span className="text-brand-GOLD">Hotspots</span></h2>
+                        <p className="text-slate-400 text-lg uppercase tracking-widest font-black italic text-center">Where to park $300k+ in 2026.</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-12">
@@ -272,7 +272,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
                                 desc: "The multinational hub. Safe, high-end, and always in demand for family rentals."
                             }
                         ].map((spot, i) => (
-                            <div key={i} className="group relative overflow-hidden rounded-[4rem]">
+                            <div key={i} className="group relative overflow-hidden rounded-2xl">
                                 <div className="aspect-video relative">
                                     <Image src={spot.img} alt={spot.name} fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                                     <div className="absolute inset-0 bg-gradient-to-t from-brand-950 to-transparent opacity-80" />
@@ -289,36 +289,36 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
             </section>
 
             {/* Comprehensive FAQ Section */}
-            <section className="py-32 max-w-5xl mx-auto px-4">
+            <section className="py-14 max-w-5xl mx-auto px-4">
                 <div className="text-center mb-24">
-                    <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic">Qualified <br /><span className="text-brand-GOLD underline italic">Exposed</span> FAQ</h2>
-                    <p className="text-neutral-500 font-bold uppercase tracking-widest text-xs">The Final Word on Golden Residency.</p>
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic">Qualified <br /><span className="text-brand-GOLD underline italic">Exposed</span> FAQ</h2>
+                    <p className="text-slate-400 font-bold uppercase tracking-widest text-xs">The Final Word on Golden Residency.</p>
                 </div>
 
                 <div className="space-y-6">
                     {faqs.map((faq, i) => (
-                        <details key={i} className="group bg-neutral-50 rounded-[2.5rem] border border-neutral-100 overflow-hidden transition-all hover:border-brand-GOLD/50">
-                            <summary className="flex items-center justify-between p-10 cursor-pointer list-none">
+                        <details key={i} className="group bg-brand-950 rounded-2xl border border-white/10 overflow-hidden transition-all hover:border-brand-GOLD/50">
+                            <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
                                 <span className="text-xl font-black uppercase tracking-tighter italic pr-8">{faq.question}</span>
                                 <HelpCircle className="text-brand-GOLD" size={24} />
                             </summary>
-                            <div className="px-10 pb-10 text-neutral-500 font-medium leading-relaxed border-t border-neutral-100 pt-8" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                            <div className="px-10 pb-10 text-slate-400 font-medium leading-relaxed border-t border-white/10 pt-8" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                         </details>
                     ))}
                 </div>
             </section>
 
             {/* Final CTA */}
-            <section className="py-32 bg-brand-GOLD text-brand-950 text-center rounded-t-[5rem] relative overflow-hidden">
+            <section className="py-14 bg-brand-GOLD text-brand-950 text-center rounded-t-[5rem] relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-8 opacity-10">
                     <ShieldCheck size={200} />
                 </div>
                 <div className="max-w-4xl mx-auto px-4 relative z-10">
-                    <h2 className="text-5xl md:text-9xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-[0.85]">Become a <br /> Resident Today</h2>
-                    <p className="text-xl md:text-2xl font-bold mb-16 opacity-80 max-w-2xl mx-auto leading-relaxed">
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-[0.85]">Become a <br /> Resident Today</h2>
+                    <p className="text-base md:text-lg font-bold mb-16 opacity-80 max-w-2xl mx-auto leading-relaxed">
                         The <strong>panama qualified investor visa</strong> is only for those who are ready for the ultimate upgrade. Let the Panama Real Estate Sale legal and real estate teams handle every detail.
                     </p>
-                    <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl inline-block">
+                    <Link href={`/${lang}/relocation/tours`} className="px-8 py-4 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl inline-block">
                         Request Golden Visa Itinerary
                     </Link>
                 </div>

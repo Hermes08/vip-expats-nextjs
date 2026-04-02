@@ -32,7 +32,7 @@ const RelocationFamiliesContent = () => {
     ];
 
     return (
-        <div className="bg-white text-brand-950 min-h-screen font-sans">
+        <div className="bg-brand-950 text-white min-h-screen font-sans">
             <BreadcrumbSchema
                 items={[
                     { name: 'Relocation', item: `https://panamarealestatesale.com/${lang}/relocation` },
@@ -57,14 +57,14 @@ const RelocationFamiliesContent = () => {
                         <Star size={14} className="text-brand-GOLD" />
                         <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD">Expat Family Guide 2026</span>
                     </div>
-                    <h1 className="text-6xl md:text-9xl font-heading font-black mb-12 uppercase tracking-tighter leading-none italic">
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter">
                         The <span className="text-brand-GOLD underline italic">Family</span> <br /> Upgrade.
                     </h1>
-                    <p className="text-xl md:text-2xl text-gray-400 font-medium leading-relaxed mb-16 max-w-3xl mx-auto">
+                    <p className="text-base md:text-lg text-slate-400 font-medium leading-relaxed mb-8 max-w-3xl mx-auto">
                         Raising kids in Panama isn't just a move—it's a massive advantage. Give your family the <strong>international lifestyle</strong>, world-class education, and the safety they deserve in the <strong>best places to live in panama</strong>.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-8 justify-center">
-                        <Link href={`/${lang}/contacto`} className="px-16 py-8 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="px-8 py-4 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
                             Request Family Relocation Plan
                         </Link>
                     </div>
@@ -72,24 +72,24 @@ const RelocationFamiliesContent = () => {
             </section>
 
             {/* The Parent's Choice */}
-            <section className="py-32">
+            <section className="py-14">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="grid lg:grid-cols-2 gap-24 items-center">
                         <div>
-                            <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none text-brand-950">Safe, Diverse, <br /><span className="text-brand-GOLD underline italic">Elite.</span></h2>
-                            <div className="space-y-8 text-lg text-neutral-600 font-medium leading-[1.8]">
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none text-brand-950">Safe, Diverse, <br /><span className="text-brand-GOLD underline italic">Elite.</span></h2>
+                            <div className="space-y-8 text-lg text-slate-400 font-medium leading-[1.8]">
                                 <p>
                                     Why are <strong>expat families moving to panama</strong>? In 2026, the demand for safety and quality of education has never been higher. Panama offers a unique ecosystem where kids grow up trilingual, outdoors, and globally connected.
                                 </p>
                                 <p>
                                     From the <strong>Boquete</strong> highlands to the <strong>Coronado</strong> beaches, we specialize in finding the perfect "Panama Real Estate Sale" base that aligns with your children's schooling needs and your lifestyle goals.
                                 </p>
-                                <div className="p-8 bg-neutral-50 rounded-[4rem] border border-neutral-100 italic font-bold text-brand-950">
+                                <div className="p-8 bg-brand-950 rounded-2xl border border-white/10 italic font-bold text-brand-950">
                                     "We moved from Toronto to Clayton. Our kids are in the best school we've ever experienced, and they spend every afternoon in the pool or the park. The quality of life for families here is unmatched."
                                 </div>
                             </div>
                         </div>
-                        <div className="relative aspect-[4/5] rounded-[5rem] overflow-hidden shadow-2xl skew-y-3">
+                        <div className="relative aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl skew-y-3">
                             <Image
                                 src="https://images.unsplash.com/photo-1544644011-87b829283197?w=1000&q=80"
                                 alt="Expat family enjoying Panama"
@@ -102,11 +102,11 @@ const RelocationFamiliesContent = () => {
             </section>
 
             {/* Core Pillars for Families */}
-            <section className="py-32 bg-neutral-950 text-white rounded-[5rem] mx-4 relative overflow-hidden">
+            <section className="py-14 bg-black text-white rounded-3xl mx-4 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-8 relative z-10">
-                    <div className="text-center mb-20 px-4">
-                        <h2 className="text-4xl md:text-8xl font-heading font-black mb-6 uppercase tracking-tighter italic leading-none text-center">The <span className="text-brand-GOLD">Family</span> Pillars</h2>
-                        <p className="text-gray-400 font-black uppercase tracking-widest text-[10px] mx-auto text-center italic">Everything you need to know about the kids in Panama.</p>
+                    <div className="text-center mb-10 px-4">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic leading-none text-center">The <span className="text-brand-GOLD">Family</span> Pillars</h2>
+                        <p className="text-slate-400 font-black uppercase tracking-widest text-[10px] mx-auto text-center italic">Everything you need to know about the kids in Panama.</p>
                     </div>
 
                     <div className="grid lg:grid-cols-3 gap-8">
@@ -127,10 +127,10 @@ const RelocationFamiliesContent = () => {
                                 desc: "Pediatric care in Panama is exceptional. Most doctors are US-trained and speak perfect English. Private health insurance for kids is affordable and comprehensive."
                             }
                         ].map((pillar, idx) => (
-                            <div key={idx} className="p-12 bg-white/5 border border-white/5 rounded-[4rem] group hover:border-brand-GOLD/30 transition-all">
+                            <div key={idx} className="p-12 bg-white/5 border border-white/5 rounded-2xl group hover:border-brand-GOLD/30 transition-all">
                                 <div className="mb-8">{pillar.icon}</div>
                                 <h3 className="text-3xl font-black uppercase tracking-tighter italic mb-6 leading-none">{pillar.title}</h3>
-                                <p className="text-gray-400 font-medium text-sm leading-relaxed">{pillar.desc}</p>
+                                <p className="text-slate-400 font-medium text-sm leading-relaxed">{pillar.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -138,11 +138,11 @@ const RelocationFamiliesContent = () => {
             </section>
 
             {/* Neighborhood Spotlight */}
-            <section className="py-32">
+            <section className="py-14">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-24">
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic italic">Where to <span className="text-brand-GOLD underline italic text-center">Land?</span></h2>
-                        <p className="text-neutral-500 font-medium italic text-center">Top 3 hubs for expat families in 2026.</p>
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic italic">Where to <span className="text-brand-GOLD underline italic text-center">Land?</span></h2>
+                        <p className="text-slate-400 font-medium italic text-center">Top 3 hubs for expat families in 2026.</p>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-12">
@@ -166,7 +166,7 @@ const RelocationFamiliesContent = () => {
                                 desc: "Safe mountain village. Great for families seeking nature, coffee culture, and tranquility."
                             }
                         ].map((hub, idx) => (
-                            <div key={idx} className="relative group overflow-hidden rounded-[4rem]">
+                            <div key={idx} className="relative group overflow-hidden rounded-2xl">
                                 <div className="aspect-[4/5] relative">
                                     <Image src={hub.img} alt={hub.name} fill className="object-cover transition-transform duration-700 group-hover:scale-110" />
                                     <div className="absolute inset-0 bg-gradient-to-t from-brand-950 to-transparent opacity-80" />
@@ -183,17 +183,17 @@ const RelocationFamiliesContent = () => {
             </section>
 
             {/* Family FAQ */}
-            <section className="py-32 bg-neutral-50 border-t border-neutral-100">
+            <section className="py-14 bg-brand-950 border-t border-white/10">
                 <div className="max-w-3xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-6xl font-heading font-black mb-20 text-center uppercase tracking-tighter italic">Family <span className="text-brand-GOLD italic">Knowledge</span></h2>
+                    <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-black mb-20 text-center uppercase tracking-tighter italic">Family <span className="text-brand-GOLD italic">Knowledge</span></h2>
                     <div className="space-y-6">
                         {faqs.map((faq, idx) => (
-                            <details key={idx} className="group bg-white rounded-[2.5rem] border border-neutral-200 overflow-hidden transition-all hover:border-brand-GOLD/50">
-                                <summary className="flex items-center justify-between p-10 cursor-pointer list-none">
+                            <details key={idx} className="group bg-white rounded-2xl border border-white/10 overflow-hidden transition-all hover:border-brand-GOLD/50">
+                                <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
                                     <span className="text-lg font-black uppercase tracking-tighter italic pr-8 text-brand-950">{faq.question}</span>
                                     <HelpCircle className="text-brand-GOLD" size={24} />
                                 </summary>
-                                <div className="px-10 pb-10 text-neutral-500 font-medium leading-relaxed border-t border-neutral-100 pt-8" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                                <div className="px-10 pb-10 text-slate-400 font-medium leading-relaxed border-t border-white/10 pt-8" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                             </details>
                         ))}
                     </div>
@@ -204,12 +204,12 @@ const RelocationFamiliesContent = () => {
             <section className="py-40 bg-brand-950 text-white text-center relative overflow-hidden flex flex-col items-center">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-GOLD opacity-10 rounded-full blur-[150px]"></div>
                 <div className="max-w-4xl mx-auto px-4 relative z-10 flex flex-col items-center text-center">
-                    <h2 className="text-5xl md:text-9xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none text-center">The Next <br /> <span className="text-brand-GOLD underline italic">Generation</span> <br /> Awaits.</h2>
-                    <p className="text-xl md:text-2xl font-medium mb-16 text-gray-400 max-w-2xl mx-auto leading-relaxed text-center">
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none text-center">The Next <br /> <span className="text-brand-GOLD underline italic">Generation</span> <br /> Awaits.</h2>
+                    <p className="text-base md:text-lg font-medium mb-16 text-slate-400 max-w-2xl mx-auto leading-relaxed text-center">
                         Don't just move your family. Upgrade their future. Let the Panama Real Estate Sale team handle the logistics while you focus on the memories.
                     </p>
                     <div className="flex justify-center flex-col sm:flex-row gap-8">
-                        <Link href={`/${lang}/contacto`} className="inline-flex items-center justify-center gap-4 px-16 py-8 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="inline-flex items-center justify-center gap-4 px-8 py-4 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
                             Design My Family Relocation <ArrowRight size={14} />
                         </Link>
                     </div>

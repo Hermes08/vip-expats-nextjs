@@ -49,20 +49,20 @@ const RelocationHubContent: React.FC = () => {
                             <span className="inline-block px-6 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full backdrop-blur-md mb-12 shadow-[0_0_20px_theme(colors.brand.GOLD/0.1)]">
                                 The Expat Gateway <span className="text-white">2026</span>
                             </span>
-                            <h1 className="font-heading text-6xl md:text-9xl font-black mb-12 leading-[0.8] tracking-tighter uppercase italic text-white">
+                            <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-black mb-12 leading-[0.8] tracking-tighter uppercase italic text-white">
                                 THE PANAMA <br /> <span className="text-brand-GOLD">RELOCATION</span> <br /> MASTERCLASS
                             </h1>
-                            <p className="text-xl md:text-2xl text-slate-400 max-w-xl leading-relaxed font-black mb-16 italic border-l-4 border-brand-GOLD/20 pl-12 opacity-90 font-serif-luxury tracking-normal">
+                            <p className="text-base md:text-lg text-slate-400 max-w-xl leading-relaxed font-black mb-16 italic border-l-4 border-brand-GOLD/20 pl-12 opacity-90 font-serif-luxury tracking-normal">
                                 Don't just move to Panama. <span className="text-white">Relocate with strategy.</span> Explore our elite <strong>relocation tours</strong> and master the <strong>pensionado visa</strong> with the world's #1 expat team.
                             </p>
                             <div className="flex flex-wrap gap-10">
                                 <Magnetic strength={0.4}>
-                                    <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-gold px-12 py-7 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] flex items-center justify-center min-w-[240px]">
+                                    <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-gold px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] flex items-center justify-center min-w-[240px]">
                                         BOOK DISCOVERY TOUR
                                     </Link>
                                 </Magnetic>
                                 <Magnetic strength={0.4}>
-                                    <Link href={`/${lang}/relocation/visas`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] flex items-center justify-center min-w-[240px] gap-3">
+                                    <Link href={`/${lang}/relocation/visas`} className="btn-3d btn-3d-navy px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] flex items-center justify-center min-w-[240px] gap-3">
                                         <PlayCircle size={18} className="text-brand-GOLD" /> VISA REQUIREMENTS
                                     </Link>
                                 </Magnetic>
@@ -73,9 +73,9 @@ const RelocationHubContent: React.FC = () => {
             </section>
 
             {/* The 2026 Context: Why Relocate to Panama Now? */}
-            <section className="py-32 max-w-7xl mx-auto px-4">
+            <section className="py-14 max-w-7xl mx-auto px-4">
                 <div className="grid lg:grid-cols-2 gap-24 items-center">
-                    <div className="relative aspect-video rounded-[4rem] overflow-hidden group">
+                    <div className="relative aspect-video rounded-2xl overflow-hidden group">
                         <Image
                             src="https://images.unsplash.com/photo-1558449028-s549c1d27996?w=1000&q=80"
                             alt="The modern skyline of Panama City, a hub for expat panama living"
@@ -85,8 +85,8 @@ const RelocationHubContent: React.FC = () => {
                         <div className="absolute inset-0 bg-brand-950/20 group-hover:bg-transparent transition-all"></div>
                     </div>
                     <div>
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD">Expat Panama</span> <br /> Explosion</h2>
-                        <div className="space-y-8 text-lg text-neutral-400 font-medium leading-[1.8]">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD">Expat Panama</span> <br /> Explosion</h2>
+                        <div className="space-y-8 text-lg text-slate-400 font-medium leading-[1.8]">
                             <p>
                                 In 2026, the global landscape has shifted, and <strong>living in panama</strong> has evolved from a "retirement secret" to a mainstream strategy for high-net-worth individuals, tech professionals, and families seeking a <strong>Plan B</strong>.
                             </p>
@@ -99,7 +99,7 @@ const RelocationHubContent: React.FC = () => {
             </section>
 
             {/* The Three Pillars of Relocation */}
-            <section className="py-32 relative">
+            <section className="py-14 relative">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-24">
                         <h2 className="text-4xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter">The 3 Pillars of <span className="text-brand-GOLD">Relocation</span></h2>
@@ -113,7 +113,7 @@ const RelocationHubContent: React.FC = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.1 }}
-                            className="glass-card p-16 rounded-[4rem] border-white/5 hover:border-brand-GOLD/30 transition-all group relative overflow-hidden"
+                            className="glass-card p-8 rounded-2xl border-white/5 hover:border-brand-GOLD/30 transition-all group relative overflow-hidden"
                         >
                             <div className="absolute top-0 right-0 w-48 h-48 bg-brand-GOLD/5 rounded-full -mr-24 -mt-24 blur-3xl group-hover:bg-brand-GOLD/10 transition-all"></div>
                             <Compass className="text-brand-GOLD mb-12" size={64} />
@@ -130,7 +130,7 @@ const RelocationHubContent: React.FC = () => {
                                 </li>
                             </ul>
                             <Magnetic strength={0.3}>
-                                <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-gold px-10 py-5 rounded-xl font-black uppercase tracking-[0.3em] text-[9px] w-full text-center">
+                                <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-gold px-6 py-3 rounded-xl font-black uppercase tracking-[0.3em] text-[9px] w-full text-center">
                                     EXPLORE TOURS
                                 </Link>
                             </Magnetic>
@@ -142,7 +142,7 @@ const RelocationHubContent: React.FC = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.3 }}
-                            className="glass-card p-16 rounded-[4rem] border-white/5 hover:border-brand-GOLD/30 transition-all group relative overflow-hidden md:mt-24"
+                            className="glass-card p-8 rounded-2xl border-white/5 hover:border-brand-GOLD/30 transition-all group relative overflow-hidden md:mt-24"
                         >
                             <ShieldCheck className="text-brand-GOLD mb-12" size={64} />
                             <h3 className="text-4xl font-black mb-8 uppercase tracking-tighter italic leading-none">Legal <br /> & Residency</h3>
@@ -158,7 +158,7 @@ const RelocationHubContent: React.FC = () => {
                                 </li>
                             </ul>
                             <Magnetic strength={0.3}>
-                                <Link href={`/${lang}/relocation/legal`} className="btn-3d btn-3d-navy px-10 py-5 rounded-xl font-black uppercase tracking-[0.3em] text-[9px] w-full text-center">
+                                <Link href={`/${lang}/relocation/legal`} className="btn-3d btn-3d-navy px-6 py-3 rounded-xl font-black uppercase tracking-[0.3em] text-[9px] w-full text-center">
                                     LEGAL HUB
                                 </Link>
                             </Magnetic>
@@ -170,7 +170,7 @@ const RelocationHubContent: React.FC = () => {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.8, delay: 0.5 }}
-                            className="glass-card p-16 rounded-[4rem] border-white/5 hover:border-brand-GOLD/30 transition-all group relative overflow-hidden"
+                            className="glass-card p-8 rounded-2xl border-white/5 hover:border-brand-GOLD/30 transition-all group relative overflow-hidden"
                         >
                             <Map className="text-brand-GOLD mb-12" size={64} />
                             <h3 className="text-4xl font-black mb-8 uppercase tracking-tighter italic leading-none">Regional <br /> Research</h3>
@@ -186,7 +186,7 @@ const RelocationHubContent: React.FC = () => {
                                 </li>
                             </ul>
                             <Magnetic strength={0.3}>
-                                <Link href={`/${lang}/relocation/guides`} className="btn-3d btn-3d-gold px-10 py-5 rounded-xl font-black uppercase tracking-[0.3em] text-[9px] w-full text-center">
+                                <Link href={`/${lang}/relocation/guides`} className="btn-3d btn-3d-gold px-6 py-3 rounded-xl font-black uppercase tracking-[0.3em] text-[9px] w-full text-center">
                                     VIEW GUIDES
                                 </Link>
                             </Magnetic>
@@ -196,15 +196,15 @@ const RelocationHubContent: React.FC = () => {
             </section>
 
             {/* Lifestyle Ecosystem: Beyond the Visa */}
-            <section className="py-32 bg-white text-brand-950 rounded-[5rem] mx-4 border border-neutral-100 shadow-2xl relative overflow-hidden">
+            <section className="py-14 bg-black rounded-3xl mx-4 border border-white/10 shadow-2xl relative overflow-hidden">
                 <div className="absolute top-0 left-0 p-20 opacity-5">
                     <Hammer size={200} />
                 </div>
                 <div className="max-w-7xl mx-auto px-8 relative z-10">
                     <div className="grid lg:grid-cols-2 gap-24 items-center">
                         <div>
-                            <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The Lifestyle <br /><span className="text-brand-GOLD italic">Ecosystem</span></h2>
-                            <div className="space-y-8 text-lg text-neutral-600 font-medium leading-[1.8]">
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The Lifestyle <br /><span className="text-brand-GOLD italic">Ecosystem</span></h2>
+                            <div className="space-y-8 text-lg text-slate-400 font-medium leading-[1.8]">
                                 <p>
                                     Relocating to Panama is more than just getting a stamp in your passport. It's about building a new support system. From finding a reliable <strong>A/C technician in Coronado</strong> to discovering the best <strong>farm-to-table restaurants in Boquete</strong>, the logistics of daily life are where we excel.
                                 </p>
@@ -214,18 +214,18 @@ const RelocationHubContent: React.FC = () => {
                             </div>
                         </div>
                         <div className="grid grid-cols-1 gap-6">
-                            <div className="p-8 bg-neutral-50 rounded-[3rem] border border-neutral-100 flex gap-6 items-start">
+                            <div className="p-8 bg-brand-950 rounded-2xl border border-white/10 flex gap-6 items-start">
                                 <Zap className="text-brand-GOLD shrink-0" size={32} />
                                 <div>
                                     <h4 className="font-black uppercase tracking-widest text-[10px] mb-2">Utility Care</h4>
-                                    <p className="text-xs text-neutral-500">A/C units need monthly filter checks and bi-annual deep cleans. We provide you with the vetted contacts to keep your <strong>panama electric bill</strong> low.</p>
+                                    <p className="text-xs text-slate-400">A/C units need monthly filter checks and bi-annual deep cleans. We provide you with the vetted contacts to keep your <strong>panama electric bill</strong> low.</p>
                                 </div>
                             </div>
-                            <div className="p-8 bg-neutral-950 text-white rounded-[3rem] flex gap-6 items-start">
+                            <div className="p-8 bg-black text-white rounded-2xl flex gap-6 items-start">
                                 <Utensils className="text-brand-GOLD shrink-0" size={32} />
                                 <div>
                                     <h4 className="font-black uppercase tracking-widest text-[10px] text-brand-GOLD mb-2">Dining & Social</h4>
-                                    <p className="text-xs text-gray-400">Whether you want a $5 "Menu del Dia" or a $100 tasting menu, we've cataloged the best-kept culinary secrets across the country.</p>
+                                    <p className="text-xs text-slate-400">Whether you want a $5 "Menu del Dia" or a $100 tasting menu, we've cataloged the best-kept culinary secrets across the country.</p>
                                 </div>
                             </div>
                         </div>
@@ -234,8 +234,8 @@ const RelocationHubContent: React.FC = () => {
             </section>
 
             {/* Featured Panama Relocation Video */}
-            <section className="py-32 max-w-7xl mx-auto px-4">
-                <div className="relative aspect-video rounded-[4rem] overflow-hidden border-8 border-brand-950/5 shadow-[0_0_100px_rgba(0,0,0,0.1)]">
+            <section className="py-14 max-w-7xl mx-auto px-4">
+                <div className="relative aspect-video rounded-2xl overflow-hidden border-8 border-brand-950/5 shadow-[0_0_100px_rgba(0,0,0,0.1)]">
                     <iframe
                         className="absolute inset-0 w-full h-full"
                         src="https://www.youtube.com/embed/9-LPE1R6bCo"
@@ -248,32 +248,32 @@ const RelocationHubContent: React.FC = () => {
             </section>
 
             {/* The Demographic Shift: Who is the Expat Panama? */}
-            <section className="py-32 bg-white text-brand-950 rounded-[5rem] mx-4">
+            <section className="py-14 bg-black rounded-3xl mx-4">
                 <div className="max-w-7xl mx-auto px-8">
                     <div className="text-center mb-24">
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic">The 2026 <span className="text-brand-GOLD">Expat</span> Profile</h2>
-                        <p className="text-neutral-500 font-black uppercase tracking-widest text-xs">Who is actually moving to Panama today?</p>
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic">The 2026 <span className="text-brand-GOLD">Expat</span> Profile</h2>
+                        <p className="text-slate-400 font-black uppercase tracking-widest text-xs">Who is actually moving to Panama today?</p>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-12">
-                        <div className="p-12 bg-neutral-50 rounded-[4rem] border border-neutral-100">
+                        <div className="p-12 bg-brand-950 rounded-2xl border border-white/10">
                             <div className="w-12 h-12 bg-brand-GOLD text-brand-950 rounded-2xl flex items-center justify-center mb-8 font-black italic">01</div>
                             <h4 className="text-2xl font-black uppercase tracking-tighter mb-4 italic">The Digital Maverick</h4>
-                            <p className="text-sm text-neutral-500 font-medium leading-relaxed">
+                            <p className="text-sm text-slate-400 font-medium leading-relaxed">
                                 Entrepreneurs and remote workers using the <strong>panama visa for remote workers</strong> to escape high-tax jurisdictions while staying in the EST time zone. They prioritize high-speed internet and coworking communities.
                             </p>
                         </div>
-                        <div className="p-12 bg-neutral-900 text-white rounded-[4rem]">
+                        <div className="p-12 bg-black text-white rounded-2xl">
                             <div className="w-12 h-12 bg-brand-GOLD text-brand-950 rounded-2xl flex items-center justify-center mb-8 font-black italic">02</div>
                             <h4 className="text-2xl font-black uppercase tracking-tighter mb-4 italic">The FIRE Retiree</h4>
-                            <p className="text-sm text-gray-400 font-medium leading-relaxed">
+                            <p className="text-sm text-slate-400 font-medium leading-relaxed">
                                 Why wait until 65? The <strong>panama residency under 50</strong> paths through Friendly Nations and Qualified Investor visas are allowing a new generation to <strong>retire early to panama</strong> and live on half their previous budget.
                             </p>
                         </div>
-                        <div className="p-12 bg-neutral-50 rounded-[4rem] border border-neutral-100">
+                        <div className="p-12 bg-brand-950 rounded-2xl border border-white/10">
                             <div className="w-12 h-12 bg-brand-GOLD text-brand-950 rounded-2xl flex items-center justify-center mb-8 font-black italic">03</div>
                             <h4 className="text-2xl font-black uppercase tracking-tighter mb-4 italic">The Heritage Family</h4>
-                            <p className="text-sm text-neutral-500 font-medium leading-relaxed">
+                            <p className="text-sm text-slate-400 font-medium leading-relaxed">
                                 Families using the <strong>panama visa with children</strong> and <strong>three generation visa</strong> to bring their parents and kids into a safer, more traditional environment with world-class international schools.
                             </p>
                         </div>
@@ -282,11 +282,11 @@ const RelocationHubContent: React.FC = () => {
             </section>
 
             {/* Anatomy of a VIP Panama Relocation Tour */}
-            <section className="py-32 max-w-7xl mx-auto px-4">
+            <section className="py-14 max-w-7xl mx-auto px-4">
                 <div className="flex flex-col lg:flex-row gap-24 items-center">
                     <div className="lg:w-1/2">
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Anatomy of a <br /><span className="text-brand-GOLD">VIP Tour</span></h2>
-                        <div className="space-y-8 text-lg text-neutral-400 font-medium leading-[1.8]">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Anatomy of a <br /><span className="text-brand-GOLD">VIP Tour</span></h2>
+                        <div className="space-y-8 text-lg text-slate-400 font-medium leading-[1.8]">
                             <p>
                                 Our <strong>panama relocation tours</strong> aren't just bus rides through the city. They are strategic deep-dives designed to answer the "What If?" questions that keep you awake at night.
                             </p>
@@ -312,7 +312,7 @@ const RelocationHubContent: React.FC = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="lg:w-1/2 relative aspect-square rounded-[4rem] overflow-hidden">
+                    <div className="lg:w-1/2 relative aspect-square rounded-2xl overflow-hidden">
                         <Image
                             src="https://images.unsplash.com/photo-1549439602-43ebca2327af?w=1000&q=80"
                             alt="Expats exploring real estate in Panama during a relocation tour"
@@ -324,7 +324,7 @@ const RelocationHubContent: React.FC = () => {
             </section>
 
             {/* Quick Stats Grid */}
-            <section className="py-24 bg-brand-GOLD rounded-[5rem] mx-4 text-brand-950">
+            <section className="py-24 bg-brand-GOLD rounded-3xl mx-4 text-brand-950">
                 <div className="max-w-7xl mx-auto px-8">
                     <div className="grid md:grid-cols-4 gap-12 text-center">
                         <div>
@@ -348,7 +348,7 @@ const RelocationHubContent: React.FC = () => {
             </section>
 
             {/* Common Relocation Mistakes Section (SEO Deep Dive) */}
-            <section className="py-32 bg-neutral-900 border-y border-white/5 relative overflow-hidden">
+            <section className="py-14 bg-black border-y border-white/5 relative overflow-hidden">
                 <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
                     <div className="absolute top-0 left-1/4 w-96 h-96 bg-brand-GOLD rounded-full blur-[120px]"></div>
                 </div>
@@ -358,7 +358,7 @@ const RelocationHubContent: React.FC = () => {
                         <div className="lg:w-2/3">
                             <h2 className="text-4xl md:text-6xl font-heading font-black mb-12 uppercase tracking-tighter italic">10 Fatal <span className="text-brand-GOLD">Relocation Mistakes</span> to Avoid</h2>
 
-                            <div className="space-y-16 text-lg text-gray-400 leading-relaxed font-medium">
+                            <div className="space-y-16 text-lg text-slate-400 leading-relaxed font-medium">
                                 <div className="space-y-6">
                                     <h3 className="text-2xl font-black text-white uppercase tracking-tight italic flex items-center gap-4">
                                         <span className="text-brand-GOLD text-4xl">01</span> Buying Property on Day One
@@ -398,7 +398,7 @@ const RelocationHubContent: React.FC = () => {
                         </div>
 
                         <div className="lg:w-1/3">
-                            <div className="sticky top-32 p-10 bg-brand-GOLD rounded-[3rem] text-brand-950 shadow-[0_0_50px_rgba(212,175,55,0.2)]">
+                            <div className="sticky top-32 p-6 bg-brand-GOLD rounded-2xl text-brand-950 shadow-[0_0_50px_rgba(212,175,55,0.2)]">
                                 <h4 className="text-2xl font-black uppercase tracking-tighter mb-6 italic">Relocation Blueprint</h4>
                                 <p className="text-sm font-bold mb-8 opacity-80 leading-relaxed">
                                     Get our <strong>2026 Panama Relocation Checklist</strong>. Avoiding just one of these mistakes pays for your entire tour.
@@ -424,14 +424,14 @@ const RelocationHubContent: React.FC = () => {
             </section>
 
             {/* The 2026 Legal Blueprint Section */}
-            <section className="py-32 bg-white text-brand-950">
+            <section className="py-14 bg-white text-brand-950">
                 <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-20 items-center">
                     <div className="lg:w-1/2">
                         <div className="w-16 h-16 bg-brand-GOLD/10 rounded-2xl flex items-center justify-center mb-10">
                             <Scale className="text-brand-GOLD" size={32} />
                         </div>
-                        <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Your <span className="text-brand-GOLD underline">Legal</span> Blueprint</h2>
-                        <div className="space-y-8 text-lg text-neutral-600 font-medium leading-[1.8]">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Your <span className="text-brand-GOLD underline">Legal</span> Blueprint</h2>
+                        <div className="space-y-8 text-lg text-slate-400 font-medium leading-[1.8]">
                             <p>
                                 Relocating to Panama is a legal marathon, not a sprint. In 2026, the complexity of <strong>panama residency requirements</strong> has never been higher, but neither has the reward.
                             </p>
@@ -449,44 +449,44 @@ const RelocationHubContent: React.FC = () => {
                         </div>
                     </div>
                     <div className="lg:w-1/2 grid grid-cols-2 gap-6">
-                        <div className="p-10 bg-neutral-50 rounded-[4rem] border border-neutral-100">
+                        <div className="p-10 bg-brand-950 rounded-2xl border border-white/10">
                             <ShieldCheck className="text-brand-GOLD mb-6" size={40} />
                             <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic">Asset Protection</h4>
-                            <p className="text-xs text-neutral-500 font-medium">Panama Foundations are the world's gold standard for family wealth security.</p>
+                            <p className="text-xs text-slate-400 font-medium">Panama Foundations are the world's gold standard for family wealth security.</p>
                         </div>
-                        <div className="p-10 bg-neutral-900 text-white rounded-[4rem]">
+                        <div className="p-10 bg-black text-white rounded-2xl">
                             <Zap className="text-brand-GOLD mb-6" size={40} />
                             <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic">Fast Track</h4>
-                            <p className="text-xs text-gray-400 font-medium">Get your <strong>panama work permit</strong> and residency filing in record time with VIP processing.</p>
+                            <p className="text-xs text-slate-400 font-medium">Get your <strong>panama work permit</strong> and residency filing in record time with VIP processing.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
             {/* Choosing Your Path Comparison */}
-            <section className="py-32 bg-neutral-50 rounded-[5rem] mx-4 overflow-hidden relative">
+            <section className="py-14 bg-brand-950 rounded-3xl mx-4 overflow-hidden relative">
                 <div className="max-w-7xl mx-auto px-8 relative z-10">
                     <div className="text-center mb-24">
-                        <h2 className="text-4xl md:text-8xl font-heading font-black mb-6 uppercase tracking-tighter italic">Choose Your <span className="text-brand-GOLD">Trajectory</span></h2>
-                        <p className="text-neutral-500 text-lg uppercase tracking-widest font-black">Two Iconic Paths. One Goal.</p>
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic">Choose Your <span className="text-brand-GOLD">Trajectory</span></h2>
+                        <p className="text-slate-400 text-lg uppercase tracking-widest font-black">Two Iconic Paths. One Goal.</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-12">
-                        <div className="bg-white p-16 rounded-[5rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-xl group">
+                        <div className="bg-white p-8 rounded-3xl border border-white/10 hover:border-brand-GOLD transition-all shadow-xl group">
                             <h3 className="text-3xl font-black uppercase tracking-tighter mb-8 italic text-brand-950 group-hover:text-brand-GOLD transition-colors">The Pensioner</h3>
-                            <p className="text-neutral-500 font-medium leading-relaxed mb-10">
+                            <p className="text-slate-400 font-medium leading-relaxed mb-10">
                                 Perfect for those with a lifetime pension. The <strong>panama retirement visa</strong> offers the world's best discounts on everything from movies to medical bills.
                             </p>
                             <Link href={`/${lang}/relocation/visas/pensionado`} className="inline-flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.3em] text-brand-950 border-b-2 border-brand-GOLD pb-2">
                                 Pensionado Guide <ArrowRight size={14} />
                             </Link>
                         </div>
-                        <div className="bg-neutral-950 text-white p-16 rounded-[5rem] relative overflow-hidden group">
-                            <div className="absolute top-0 right-0 p-12 opacity-5 scale-150 rotate-12">
+                        <div className="bg-neutral-950 text-white p-8 rounded-3xl relative overflow-hidden group">
+                            <div className="absolute top-0 right-0 p-6 opacity-5 scale-150 rotate-12">
                                 <Globe size={200} />
                             </div>
                             <h3 className="text-3xl font-black uppercase tracking-tighter mb-8 italic text-brand-GOLD">The Professional</h3>
-                            <p className="text-gray-400 font-medium leading-relaxed mb-10">
+                            <p className="text-slate-400 font-medium leading-relaxed mb-10">
                                 The choice for tech workers, digital nomads, and investors from 50+ countries. The <strong>friendly nations visa panama</strong> is your business pass.
                             </p>
                             <Link href={`/${lang}/relocation/visas/friendly-nations`} className="inline-flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.3em] text-brand-GOLD">
@@ -498,13 +498,13 @@ const RelocationHubContent: React.FC = () => {
             </section>
 
             {/* Final Vision Callout */}
-            <section className="py-32 bg-white text-center">
+            <section className="py-14 bg-white text-center">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-4xl md:text-7xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none">Your New <span className="text-brand-GOLD italic">Frontier</span></h2>
-                    <p className="text-xl text-neutral-500 mb-16 font-medium leading-relaxed">
+                    <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none">Your New <span className="text-brand-GOLD italic">Frontier</span></h2>
+                    <p className="text-xl text-slate-400 mb-16 font-medium leading-relaxed">
                         Don't just move to Panama. Master it. From the financial district of Panama City to the cool highlands of Boquete, your elite journey starts with the right <strong>panama relocation services</strong>.
                     </p>
-                    <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-navy px-16 py-8 rounded-2xl font-black uppercase tracking-[0.3em] text-xs inline-block">
+                    <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-navy px-8 py-4 rounded-2xl font-black uppercase tracking-[0.3em] text-xs inline-block">
                         CUSTOMIZE YOUR TOUR
                     </Link>
                 </div>
@@ -515,7 +515,7 @@ const RelocationHubContent: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4 text-center">
                     <div className="max-w-3xl mx-auto">
                         <h2 className="text-3xl font-black mb-8 uppercase tracking-tighter">Planning your Scouting Trip?</h2>
-                        <p className="text-gray-400 mb-12 font-medium">
+                        <p className="text-slate-400 mb-12 font-medium">
                             The <strong>best time to visit panama</strong> depends on what you're looking for. From the dry summer season to the lush green season, each month offers a different perspective on <strong>international living in panama</strong>.
                         </p>
                         <Link href={`/${lang}/relocation/weather`} className="inline-flex items-center gap-3 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] hover:gap-5 transition-all">
@@ -526,10 +526,10 @@ const RelocationHubContent: React.FC = () => {
             </section>
 
             {/* Final CTA Footer */}
-            <section className="py-32 bg-brand-GOLD text-brand-950 text-center">
+            <section className="py-14 bg-brand-GOLD text-brand-950 text-center">
                 <div className="max-w-5xl mx-auto px-4">
-                    <h2 className="text-5xl md:text-8xl font-heading font-black mb-12 uppercase tracking-tighter italic">Ready to Begin?</h2>
-                    <p className="text-xl md:text-2xl font-bold mb-16 opacity-80">Stop dreaming. Start Relocating. Our team is standing by.</p>
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-12 uppercase tracking-tighter italic">Ready to Begin?</h2>
+                    <p className="text-base md:text-lg font-bold mb-16 opacity-80">Stop dreaming. Start Relocating. Our team is standing by.</p>
                     <div className="flex flex-wrap justify-center gap-10">
                         <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-20 py-10 rounded-3xl font-black uppercase tracking-[0.4em] text-sm flex items-center justify-center min-w-[320px]">
                             REQUEST PROPOSAL
