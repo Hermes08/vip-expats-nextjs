@@ -77,7 +77,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, className = '' }) =>
                         <MapPin size={12} />
                         {project.location[lang] || project.location.en}
                     </div>
-                    <h3 className="text-3xl font-heading font-black text-white mb-6 group-hover:text-brand-GOLD transition-colors uppercase tracking-tighter italic">
+                    <h3 className="text-xl md:text-2xl font-heading font-black text-white mb-4 group-hover:text-brand-GOLD transition-colors uppercase tracking-tighter italic">
                         {project.name[lang] || project.name.en}
                     </h3>
 

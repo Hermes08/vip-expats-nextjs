@@ -4,12 +4,12 @@ import dynamic from 'next/dynamic';
 
 const QuickSearchStrip = dynamic(() => import('@/components/home/QuickSearchStrip'), {
   ssr: false,
-  loading: () => <div className="animate-pulse bg-gray-200 h-20 w-full rounded" />,
+  loading: () => <div className="animate-pulse bg-white/5 h-16 w-full rounded" />,
 });
 
 const FeaturedListings = dynamic(() => import('@/components/home/FeaturedListings'), {
   ssr: false,
-  loading: () => <div className="animate-pulse bg-gray-200 h-48 w-full rounded" />,
+  loading: () => <div className="animate-pulse bg-white/5 h-40 w-full rounded" />,
 });
 
 interface ClientSectionsProps {

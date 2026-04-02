@@ -41,10 +41,13 @@ export default function VideoThumbnail({ videoUrl, title, className = '' }: Vide
             onClick={() => setIsPlaying(true)}
             aria-label={`Play video: ${title}`}
         >
+            {/* Fallback gradient shown when YouTube thumbnail is blocked */}
+            <div className="absolute inset-0 bg-gradient-to-br from-brand-900 via-brand-800 to-brand-950" />
             <img
                 src={`https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`}
                 alt={title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                onError={(e) => { (e.target as HTMLImageElement).style.display = 'none'; }}
             />
             <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors duration-500" />
 

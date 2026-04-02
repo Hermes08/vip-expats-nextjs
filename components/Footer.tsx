@@ -2,7 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
-import { ArrowRight, Phone, Mail, MapPin, Instagram, Lock } from 'lucide-react';
+import { ArrowRight, Phone, Mail, MapPin, Instagram } from 'lucide-react';
 import { CONTENT, CONTACT_INFO } from '@/lib/constants';
 import { useLanguage } from '@/context/LanguageContext';
 import { motion } from 'framer-motion';
@@ -40,7 +40,6 @@ const Footer: React.FC = () => {
                             <li><Magnetic strength={0.15}><Link href={`/${lang}/quiz`} className="hover:text-white transition-colors flex items-center gap-2 group text-brand-GOLD"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Neighborhood Quiz</Link></Magnetic></li>
                             <li><Magnetic strength={0.15}><Link href={`/${lang}/relocation/tours`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Relocation Tours</Link></Magnetic></li>
                             <li><Magnetic strength={0.15}><Link href={`/${lang}/blog`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Market Intelligence</Link></Magnetic></li>
-                            <li><Magnetic strength={0.15}><Link href={`/${lang}/api-docs`} className="hover:text-white transition-colors flex items-center gap-2 group text-brand-GOLD"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> API Interaction</Link></Magnetic></li>
                         </ul>
                     </div>
                     <div>
@@ -56,7 +55,7 @@ const Footer: React.FC = () => {
                 <div className="pt-6 border-t border-white/5 text-slate-500 text-[9px] font-black uppercase tracking-[0.4em] flex flex-col md:flex-row justify-between items-center gap-6">
                     <p>&copy; {new Date().getFullYear()} PANAMAREALESTATESALE. {t.footer.rights}</p>
                     <div className="flex gap-10">
-                        <Link href={`/${lang}/admin`} className="hover:text-white transition-all flex items-center gap-2"><Lock size={12} /> Admin Control</Link>
+                        <Link href={`/${lang}/admin`} className="opacity-20 hover:opacity-60 transition-all text-slate-600 text-[8px]">Admin</Link>
                     </div>
                 </div>
             </div>

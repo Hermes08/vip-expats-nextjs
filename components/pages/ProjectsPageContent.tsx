@@ -45,7 +45,7 @@ const ProjectsPageContent: React.FC = () => {
     return (
         <div className="pt-24 min-h-screen bg-brand-950">
             {/* Header: 3.0 Cinematic */}
-            <div className="relative pt-48 pb-32 px-4 overflow-hidden border-b border-white/5 bg-mesh-glow">
+            <div className="relative pt-20 pb-14 px-4 overflow-hidden border-b border-white/5 bg-mesh-glow">
                 <div className="absolute inset-0 z-0 scale-105 overflow-hidden">
                     <motion.img
                         initial={{ opacity: 0, scale: 1.1 }}
@@ -64,14 +64,13 @@ const ProjectsPageContent: React.FC = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                         >
-                            <span className="inline-block border border-brand-GOLD/30 bg-brand-950/50 backdrop-blur-md text-brand-GOLD px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.5em] mb-12 shadow-[0_0_20px_rgba(233,195,73,0.1)]">
+                            <span className="inline-block border border-brand-GOLD/30 bg-brand-950/50 backdrop-blur-md text-brand-GOLD px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.5em] mb-6 shadow-[0_0_20px_rgba(233,195,73,0.1)]">
                                 Asset Catalog <span className="text-white">2026</span>
                             </span>
-                            <h1 className="font-heading text-6xl md:text-9xl font-black text-white mb-10 tracking-tighter leading-[0.8] uppercase italic">
-                                THE INVESTMENT <br />
-                                <span className="text-brand-GOLD italic">INVENTORY.</span>
+                            <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl font-black text-white mb-5 tracking-tight leading-tight uppercase">
+                                THE INVESTMENT <span className="text-brand-GOLD">INVENTORY.</span>
                             </h1>
-                            <p className="text-xl md:text-2xl text-slate-400 max-w-2xl leading-relaxed font-black italic border-l-4 border-brand-GOLD/20 pl-12 opacity-90 font-serif-luxury tracking-normal">
+                            <p className="text-base md:text-lg text-slate-400 max-w-2xl leading-relaxed font-medium italic border-l-2 border-brand-GOLD/20 pl-5 opacity-90">
                                 Curating high-liquidity <strong>Panama real estate assets</strong> and exclusive <strong>luxury developments</strong> for the global elite.
                             </p>
                         </motion.div>
@@ -148,7 +147,7 @@ const ProjectsPageContent: React.FC = () => {
             </div>
 
             {/* Main Grid Content */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-48 pb-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-14">
                 <div className="flex justify-between items-center mb-16">
                     <p className="text-sm font-black text-brand-GOLD uppercase tracking-[0.2em] mb-4">
                         Showing {filteredProjects.length} Verified Rockstar Assets
@@ -156,7 +155,7 @@ const ProjectsPageContent: React.FC = () => {
                 </div>
 
                 {/* Projects Grid */}
-                <div className="container mx-auto px-4 py-16 sm:px-6 lg:px-8 relative z-20">
+                <div className="container mx-auto px-4 py-6 sm:px-6 lg:px-8 relative z-20">
                     <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
                         {filteredProjects.map((project, index) => (
                             <motion.div

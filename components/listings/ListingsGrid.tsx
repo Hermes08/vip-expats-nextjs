@@ -5,7 +5,6 @@ import { Listing } from '@/lib/types';
 import PropertyCard from './PropertyCard';
 import PropertySearchFilters, { FilterState, DEFAULT_FILTERS } from './PropertySearchFilters';
 import { useCMS } from '@/context/CMSContext';
-import SplitText from '@/components/ui/SplitText';
 import { Building2 } from 'lucide-react';
 
 interface Props {
@@ -57,7 +56,7 @@ export default function ListingsGrid({ lang, initialListings }: Props) {
   const t = labels[lang];
 
   return (
-    <div className="min-h-screen bg-brand-950 pt-24 pb-24 px-4">
+    <div className="min-h-screen bg-brand-950 pt-24 pb-10 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-10 text-center">
@@ -65,7 +64,7 @@ export default function ListingsGrid({ lang, initialListings }: Props) {
             <Building2 size={13} /> {lang === 'es' ? 'Propiedades Disponibles' : 'Available Properties'}
           </div>
           <h1 className="font-heading text-4xl md:text-6xl font-black text-white mb-4">
-            <SplitText text={t.heading} delay={0.1} />
+            {t.heading}
           </h1>
           <p className="text-neutral-400 max-w-xl mx-auto text-sm leading-relaxed">{t.sub}</p>
         </div>
