@@ -293,7 +293,7 @@ export default function PanamaRealEstateMarket2026() {
             {
               title: 'Friendly Nations Visa',
               description:
-                'Panama's Friendly Nations Visa allows citizens of 50+ countries to obtain residency by purchasing a $120K property. This drives sustained demand from pensioners, remote workers, and investors seeking visa pathways.',
+                "Panama's Friendly Nations Visa allows citizens of 50+ countries to obtain residency by purchasing a $120K property. This drives sustained demand from pensioners, remote workers, and investors seeking visa pathways.",
             },
             {
               title: 'Growing Expat Infrastructure',
@@ -303,7 +303,7 @@ export default function PanamaRealEstateMarket2026() {
             {
               title: 'Geographic & Economic Hub',
               description:
-                'Panama serves as Central America's business and finance hub. The Panama Canal, Colon Free Zone, and financial sector create job opportunities and attract corporate relocations, benefiting real estate demand.',
+                "Panama serves as Central America's business and finance hub. The Panama Canal, Colon Free Zone, and financial sector create job opportunities and attract corporate relocations, benefiting real estate demand.",
             },
           ].map((point, i) => (
             <div
@@ -713,7 +713,7 @@ export default function PanamaRealEstateMarket2026() {
 
           <ul className="space-y-3">
             {[
-              'Panama's real estate market grew 18% YoY (2024–2026) and is expected to sustain 12–18% growth through 2027.',
+              "Panama's real estate market grew 18% YoY (2024–2026) and is expected to sustain 12–18% growth through 2027.",
               'Structural advantages (dollar economy, territorial tax, zero foreign restrictions) make Panama attractive to international investors.',
               'Market segments: luxury ($800K–$5M+), mid-range ($150K–$450K), and beach/resort ($120K–$800K).',
               'Neighborhood pricing ranges from $1,200/sqm (emerging areas) to $6,200/sqm (ultra-luxury).',
