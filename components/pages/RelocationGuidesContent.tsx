@@ -60,7 +60,7 @@ const RelocationGuidesContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}/` }, ...breadcrumbItems]} />
 
             <div className="max-w-7xl mx-auto px-4 mt-8">
@@ -97,7 +97,7 @@ const RelocationGuidesContent: React.FC = () => {
                                 <p className="text-slate-400 font-medium leading-relaxed mb-8">{cat.desc}</p>
                                 <div className="flex flex-wrap gap-3">
                                     {cat.links.map((link, j) => (
-                                        <span key={j} className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-slate-400 cursor-default">
+                                        <span key={j} className="px-4 py-2 bg-white/5 border border-brand-100 rounded-full text-[10px] font-black uppercase tracking-widest text-slate-400 cursor-default">
                                             {link}
                                         </span>
                                     ))}
@@ -144,7 +144,7 @@ const RelocationGuidesContent: React.FC = () => {
                                 a: "It depends on your vibe. <strong>Boquete</strong> is best for mountain weather and coffee culture. <strong>Coronado</strong> is the beach hub for weekenders and retirees. <strong>Panama City</strong> offers urban luxury and the best dining."
                             }
                         ].map((faq, i) => (
-                            <div key={i} className="group border-b border-white/5 pb-12">
+                            <div key={i} className="group border-b border-brand-100 pb-12">
                                 <div className="flex gap-6 items-start">
                                     <HelpCircle className="text-brand-GOLD shrink-0 mt-1" size={24} />
                                     <div>
@@ -192,7 +192,7 @@ const RelocationGuidesContent: React.FC = () => {
                         Join 10,000+ prospective expats who receive our weekly insights on <strong>expat life in panama</strong>.
                     </p>
                     <div className="flex flex-col md:flex-row gap-4 justify-center">
-                        <input type="email" placeholder="Your Email" className="px-8 py-5 bg-white/5 border border-white/10 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-GOLD font-medium w-full md:w-80 text-white" />
+                        <input type="email" placeholder="Your Email" className="px-8 py-5 bg-white/5 border border-brand-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-GOLD font-medium w-full md:w-80 text-white" />
                         <button className="btn-3d btn-3d-gold px-12 py-5 rounded-2xl font-black uppercase tracking-widest text-[10px]">
                             Download Guide
                         </button>

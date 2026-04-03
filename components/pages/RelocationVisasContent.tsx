@@ -65,7 +65,7 @@ const RelocationVisasContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <FAQSchema questions={faqs} />
             <ServiceSchema
@@ -128,7 +128,7 @@ const RelocationVisasContent: React.FC = () => {
                             { title: "Cédula", desc: "The 'E' Cédula is your ticket to local life, bank accounts, and health discounts." },
                             { title: "Citizenship", desc: "Most residency paths lead to a path for naturalization after 5 years." }
                         ].map((item, idx) => (
-                            <div key={idx} className="p-8 bg-brand-950 rounded-2xl border border-white/10">
+                            <div key={idx} className="p-8 bg-brand-950 rounded-2xl border border-brand-100">
                                 <h4 className="text-xs font-black uppercase tracking-widest text-brand-GOLD mb-4">{item.title}</h4>
                                 <p className="text-xs text-slate-400 font-bold leading-relaxed">{item.desc}</p>
                             </div>
@@ -144,7 +144,7 @@ const RelocationVisasContent: React.FC = () => {
 
                 <div className="grid lg:grid-cols-3 gap-8 mb-32">
                     {visaTypes.map((visa, i) => (
-                        <div key={i} className="border border-white/10 p-6 rounded-2xl flex flex-col hover:shadow-2xl transition-all group relative overflow-hidden">
+                        <div key={i} className="border border-brand-100 p-6 rounded-2xl flex flex-col hover:shadow-2xl transition-all group relative overflow-hidden">
                             <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-all">
                                 <visa.icon size={120} />
                             </div>
@@ -222,7 +222,7 @@ const RelocationVisasContent: React.FC = () => {
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8 mb-32">
-                    <div className="p-12 bg-brand-950 rounded-2xl border border-white/10 flex flex-col justify-between">
+                    <div className="p-12 bg-brand-950 rounded-2xl border border-brand-100 flex flex-col justify-between">
                         <div>
                             <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD mb-4 block">Best for Families & Professionals</span>
                             <h4 className="text-3xl font-black uppercase tracking-tighter italic mb-6">Friendly Nations</h4>
@@ -264,7 +264,7 @@ const RelocationVisasContent: React.FC = () => {
                     <h2 className="text-4xl md:text-6xl font-heading font-black mb-16 text-center uppercase tracking-tighter italic italic underline decoration-brand-GOLD">Visa <span className="text-brand-GOLD">Intel</span> FAQ</h2>
                     <div className="space-y-6">
                         {faqs.map((faq, i) => (
-                            <details key={i} className="group bg-brand-950 rounded-2xl border border-white/10 overflow-hidden transition-all hover:border-brand-GOLD/50">
+                            <details key={i} className="group bg-brand-950 rounded-2xl border border-brand-100 overflow-hidden transition-all hover:border-brand-GOLD/50">
                                 <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
                                     <span className="text-xl font-black uppercase tracking-tighter italic pr-8">{faq.question}</span>
                                     <HelpCircle className="text-brand-GOLD" size={24} />
@@ -296,19 +296,19 @@ const RelocationVisasContent: React.FC = () => {
                             </tr>
                         </thead>
                         <tbody className="text-sm font-medium">
-                            <tr className="border-b border-white/5 group hover:bg-white/5 transition-colors">
+                            <tr className="border-b border-brand-100 group hover:bg-white/5 transition-colors">
                                 <td className="py-8 font-black uppercase tracking-widest text-[10px] text-gray-500">Min. Investment</td>
                                 <td className="py-8">$200,000 Property / Job</td>
                                 <td className="py-8">$1,000/mo Lifetime Pension</td>
                                 <td className="py-8">$300,000 Real Estate</td>
                             </tr>
-                            <tr className="border-b border-white/5 group hover:bg-white/5 transition-colors">
+                            <tr className="border-b border-brand-100 group hover:bg-white/5 transition-colors">
                                 <td className="py-8 font-black uppercase tracking-widest text-[10px] text-gray-500">Time to PR</td>
                                 <td className="py-8">2 Years (Provisional)</td>
                                 <td className="py-8">Immediate</td>
                                 <td className="py-8">Immediate (30 days)</td>
                             </tr>
-                            <tr className="border-b border-white/5 group hover:bg-white/5 transition-colors">
+                            <tr className="border-b border-brand-100 group hover:bg-white/5 transition-colors">
                                 <td className="py-8 font-black uppercase tracking-widest text-[10px] text-gray-500">Work Permit</td>
                                 <td className="py-8">Yes (Eligible)</td>
                                 <td className="py-8">No</td>

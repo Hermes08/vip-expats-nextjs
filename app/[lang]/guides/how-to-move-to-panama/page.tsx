@@ -111,9 +111,9 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
     await params;
 
     return (
-        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+        <article className="bg-white min-h-screen pt-28 pb-20">
             {/* Hero */}
-            <section className="bg-brand-900 py-24 relative overflow-hidden">
+            <section className="section-dark py-24 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600&q=80" alt="Moving to Panama" className="w-full h-full object-cover" />
                 </div>
@@ -135,28 +135,28 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
                     <p className="text-xl font-semibold text-white border-l-4 border-brand-TEAL pl-5 leading-relaxed">
                         Panama is the easiest country in Latin America to move to as an American. Dollarized economy, English widely spoken, Johns Hopkins-affiliated hospital, 2.5 hours from Miami — and the most generous retiree discount program in the hemisphere.
                     </p>
-                    <p className="text-slate-400 mt-5 leading-relaxed">
+                    <p className="text-slate-500 mt-5 leading-relaxed">
                         This guide covers the practical mechanics of the move — not the theory. Every section is based on what our clients actually do when they relocate.
                     </p>
                 </section>
 
                 {/* Visa options */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-brand-950 text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         Step 1 — Choose Your Visa Pathway
                     </h2>
                     <div className="space-y-4">
                         {visas.map((v, i) => (
-                            <div key={i} className="glass-card rounded-xl p-6 border border-white/5">
+                            <div key={i} className="glass-card rounded-xl p-6 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-3 mb-2">
                                     <div>
                                         <span className={`text-[10px] font-black uppercase tracking-widest ${v.tagColor}`}>{v.tag}</span>
-                                        <h3 className="text-white font-bold text-lg">{v.name}</h3>
+                                        <h3 className="text-brand-950 font-bold text-lg">{v.name}</h3>
                                     </div>
                                     <span className="text-slate-500 text-xs font-bold">{v.time}</span>
                                 </div>
-                                <p className="text-slate-400 text-sm mb-1"><span className="text-slate-300 font-bold">Requires: </span>{v.req}</p>
-                                <p className="text-slate-400 text-sm"><span className="text-slate-300 font-bold">Gets you: </span>{v.benefit}</p>
+                                <p className="text-slate-500 text-sm mb-1"><span className="text-slate-300 font-bold">Requires: </span>{v.req}</p>
+                                <p className="text-slate-500 text-sm"><span className="text-slate-300 font-bold">Gets you: </span>{v.benefit}</p>
                             </div>
                         ))}
                     </div>
@@ -172,23 +172,23 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
 
                 {/* Timeline */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-brand-950 text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         Step 2 — Your 6-Month Timeline
                     </h2>
                     <div className="space-y-4">
                         {timeline.map((phase, i) => {
                             const Icon = phase.icon;
                             return (
-                                <div key={i} className="glass-card rounded-xl p-6 border border-white/5">
+                                <div key={i} className="glass-card rounded-xl p-6 border border-brand-100">
                                     <div className="flex items-center gap-3 mb-4">
                                         <div className="w-9 h-9 rounded-full bg-brand-TEAL/10 border border-brand-TEAL/30 flex items-center justify-center flex-shrink-0">
                                             <Icon size={15} className="text-brand-TEAL" />
                                         </div>
-                                        <h3 className="text-white font-bold">{phase.phase}</h3>
+                                        <h3 className="text-brand-950 font-bold">{phase.phase}</h3>
                                     </div>
                                     <ul className="space-y-2">
                                         {phase.tasks.map((task, j) => (
-                                            <li key={j} className="flex items-start gap-3 text-slate-400 text-sm">
+                                            <li key={j} className="flex items-start gap-3 text-slate-500 text-sm">
                                                 <CheckCircle size={13} className="text-brand-TEAL mt-0.5 flex-shrink-0" />
                                                 {task}
                                             </li>
@@ -202,14 +202,14 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
 
                 {/* Move budget */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-brand-950 text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         <DollarSign className="inline text-brand-GOLD mr-1" size={22} />
                         Step 3 — Budget Your Move
                     </h2>
                     <div className="space-y-2">
                         {costs.map((item, i) => (
-                            <div key={i} className={`flex justify-between items-center px-5 py-3 rounded-xl ${i === costs.length - 1 ? 'bg-brand-GOLD/10 border border-brand-GOLD/20' : 'bg-brand-900 border border-white/5'}`}>
-                                <span className={`text-sm ${i === costs.length - 1 ? 'text-white font-bold' : 'text-slate-400'}`}>{item.item}</span>
+                            <div key={i} className={`flex justify-between items-center px-5 py-3 rounded-xl ${i === costs.length - 1 ? 'bg-brand-GOLD/10 border border-brand-GOLD/20' : 'bg-brand-900 border border-brand-100'}`}>
+                                <span className={`text-sm ${i === costs.length - 1 ? 'text-white font-bold' : 'text-slate-500'}`}>{item.item}</span>
                                 <span className={`font-black text-sm ${i === costs.length - 1 ? 'text-brand-GOLD' : 'text-white'}`}>{item.range}</span>
                             </div>
                         ))}
@@ -218,15 +218,15 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
 
                 {/* Banking */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-brand-950 text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         Step 4 — Banking in Panama
                     </h2>
-                    <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                    <p className="text-slate-500 text-sm leading-relaxed mb-4">
                         Banking is the most frustrating part of the move. Panama tightened its financial regulations post-FATF, making account opening harder for foreigners. Start early and use a local attorney.
                     </p>
                     <div className="space-y-2">
                         {bankingFacts.map((fact, i) => (
-                            <div key={i} className="flex items-start gap-3 bg-brand-900 rounded-xl px-5 py-3 border border-white/5">
+                            <div key={i} className="flex items-start gap-3 bg-brand-50 rounded-xl px-5 py-3 border border-brand-100">
                                 <CheckCircle size={13} className="text-brand-TEAL mt-0.5 flex-shrink-0" />
                                 <span className="text-slate-300 text-sm">{fact}</span>
                             </div>
@@ -236,11 +236,11 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
 
                 {/* Healthcare */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-4 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-brand-950 text-2xl font-heading font-bold mb-4 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         <Heart className="inline text-brand-CORAL mr-1" size={22} />
                         Step 5 — Healthcare Setup
                     </h2>
-                    <p className="text-slate-400 text-sm leading-relaxed mb-4">
+                    <p className="text-slate-500 text-sm leading-relaxed mb-4">
                         Panama City has Johns Hopkins-affiliated Hospital Punta Pacifica — the best private hospital in Central America. Specialist visits cost $50–$80. Private health insurance for a 60-year-old runs $200–$350/month.
                     </p>
                     <div className="grid sm:grid-cols-3 gap-3">
@@ -249,8 +249,8 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
                             { label: 'Find your GP first week', detail: 'Ask expat groups for English-speaking doctors' },
                             { label: 'Bring 6-month prescription supply', detail: 'Most US medications available but plan ahead' },
                         ].map((item, i) => (
-                            <div key={i} className="bg-brand-900 rounded-xl p-4 border border-white/5">
-                                <div className="text-white font-bold text-xs mb-1">{item.label}</div>
+                            <div key={i} className="bg-brand-50 rounded-xl p-4 border border-brand-100">
+                                <div className="text-brand-950 font-bold text-xs mb-1">{item.label}</div>
                                 <div className="text-slate-500 text-[11px] leading-relaxed">{item.detail}</div>
                             </div>
                         ))}
@@ -262,7 +262,7 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
                     <h3 className="text-white font-heading text-2xl font-bold mb-3 uppercase italic tracking-tighter">
                         Ready to Make the Move?
                     </h3>
-                    <p className="text-slate-400 mb-6 max-w-md mx-auto text-sm leading-relaxed">
+                    <p className="text-slate-500 mb-6 max-w-md mx-auto text-sm leading-relaxed">
                         We have helped hundreds of Americans relocate to Panama. One free call can save you months of research — and expensive mistakes.
                     </p>
                     <Link
@@ -281,7 +281,7 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
                         { label: 'Best Areas to Live in Panama', href: '/en/guides/best-areas-retire-panama' },
                         { label: 'Living in Panama City Guide', href: '/en/blog/living-in-panama-city' },
                     ].map((link, i) => (
-                        <Link key={i} href={link.href} className="flex items-center justify-between glass-card p-4 rounded-xl border border-white/5 hover:border-brand-TEAL/30 transition-all group">
+                        <Link key={i} href={link.href} className="flex items-center justify-between glass-card p-4 rounded-xl border border-brand-100 hover:border-brand-TEAL/30 transition-all group">
                             <span className="text-white text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-TEAL opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>

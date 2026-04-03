@@ -48,7 +48,7 @@ const RelocationWeatherContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <FAQSchema questions={faqs} />
             <ServiceSchema
@@ -85,7 +85,7 @@ const RelocationWeatherContent: React.FC = () => {
 
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
                     {months.map((m, i) => (
-                        <div key={i} className={`p-8 rounded-3xl border ${m.season === 'Dry' ? 'border-brand-GOLD/30 bg-brand-GOLD/5' : 'border-white/10 bg-brand-900/40'} flex flex-col items-center text-center transition-transform hover:-translate-y-2`}>
+                        <div key={i} className={`p-8 rounded-3xl border ${m.season === 'Dry' ? 'border-brand-GOLD/30 bg-brand-GOLD/5' : 'border-white/10 bg-brand-50'} flex flex-col items-center text-center transition-transform hover:-translate-y-2`}>
                             <m.icon className={m.season === 'Dry' ? 'text-brand-GOLD' : 'text-blue-400'} size={32} />
                             <h4 className="mt-6 font-black uppercase tracking-tighter text-lg leading-none">{m.name}</h4>
                             <div className="mt-4 flex flex-col gap-2">
@@ -136,7 +136,7 @@ const RelocationWeatherContent: React.FC = () => {
             </section>
 
             {/* The Science of Microclimates: The Panama Real Estate Sale Truth */}
-            <section className="py-14 bg-black rounded-3xl mx-4 border border-white/10 shadow-2xl relative overflow-hidden">
+            <section className="py-14 bg-black rounded-3xl mx-4 border border-brand-100 shadow-2xl relative overflow-hidden">
                 <div className="absolute top-0 left-0 p-20 opacity-5">
                     <Compass size={200} />
                 </div>
@@ -160,7 +160,7 @@ const RelocationWeatherContent: React.FC = () => {
                                     The central mountain range acts as a wall. While the Caribbean side (Bocas del Toro) stays wet year-round, the Pacific side (Coronado) enjoys a distinct dry season.
                                 </p>
                             </div>
-                            <div className="p-10 bg-brand-950 rounded-2xl border border-white/10">
+                            <div className="p-10 bg-brand-950 rounded-2xl border border-brand-100">
                                 <h4 className="text-xl font-black uppercase tracking-widest text-brand-950 mb-4 italic">Elevation vs Humidity</h4>
                                 <p className="text-sm text-slate-400 leading-relaxed">
                                     For every 1,000 feet of elevation gain, the temperature drops by about 3.5°F. This is why Boquete at 3,500ft is the "Eternal Spring" compared to sea-level Panama City.
@@ -236,11 +236,11 @@ const RelocationWeatherContent: React.FC = () => {
                                     On our <strong>panama relocation tours</strong>, we recommend a three-layer system. A breathable base for the humidity, a light sweater for the mountains, and a rain shell for the <strong>panama green season</strong>.
                                 </p>
                                 <div className="grid grid-cols-2 gap-4 pt-8">
-                                    <div className="p-6 bg-white/5 rounded-3xl border border-white/5">
+                                    <div className="p-6 bg-white/5 rounded-3xl border border-brand-100">
                                         <h5 className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD mb-2">Essential</h5>
                                         <p className="text-xs">Quick-dry fabrics (Cotton is your enemy in humidity).</p>
                                     </div>
-                                    <div className="p-6 bg-white/5 rounded-3xl border border-white/5">
+                                    <div className="p-6 bg-white/5 rounded-3xl border border-brand-100">
                                         <h5 className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD mb-2">Tech</h5>
                                         <p className="text-xs">Waterproof bags for your passport and electronics.</p>
                                     </div>
@@ -272,13 +272,13 @@ const RelocationWeatherContent: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-8">
                     <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-slate-400 mb-12 text-center">Complete Your Research</h4>
                     <div className="grid md:grid-cols-2 gap-8">
-                        <Link href={`/${lang}/relocation/cost-of-living`} className="group p-6 bg-white rounded-2xl border border-white/10 hover:border-brand-GOLD transition-all shadow-sm">
+                        <Link href={`/${lang}/relocation/cost-of-living`} className="group p-6 bg-white rounded-2xl border border-brand-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Zap className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Cost of Living 2026</h5>
                             <p className="text-xs text-slate-400 font-medium mb-6">Compare the exact costs of Boquete vs Coronado vs Panama City.</p>
                             <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">View Guide <ArrowRight size={12} /></span>
                         </Link>
-                        <Link href={`/${lang}/relocation/guides/boquete-vs-coronado`} className="group p-6 bg-white rounded-2xl border border-white/10 hover:border-brand-GOLD transition-all shadow-sm">
+                        <Link href={`/${lang}/relocation/guides/boquete-vs-coronado`} className="group p-6 bg-white rounded-2xl border border-brand-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Compass className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Boquete vs Coronado</h5>
                             <p className="text-xs text-slate-400 font-medium mb-6">The definitive showdown between the mountains and the beach.</p>

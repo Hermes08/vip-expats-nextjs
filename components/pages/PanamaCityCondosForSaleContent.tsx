@@ -119,7 +119,7 @@ const PanamaCityCondosForSaleContent = () => {
   };
 
   return (
-    <div className="bg-brand-950 min-h-screen pt-24 pb-40 overflow-hidden">
+    <div className="bg-white min-h-screen pt-24 pb-40 overflow-hidden">
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-1/2 left-1/2 w-[1200px] h-[1200px] bg-brand-GOLD/5 rounded-full blur-[180px] -translate-x-1/2 -translate-y-1/2" />
       </div>
@@ -141,7 +141,7 @@ const PanamaCityCondosForSaleContent = () => {
                 </Link>
               </Magnetic>
               <Magnetic strength={0.3}>
-                <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10">
+                <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-brand-100">
                   {isEn ? 'Get Expert Advice' : 'Obtener Consejo Experto'}
                 </Link>
               </Magnetic>

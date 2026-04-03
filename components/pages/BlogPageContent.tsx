@@ -15,35 +15,37 @@ const BlogPageContent: React.FC<{ lang?: 'en' | 'es' }> = ({ lang: propLang }) =
     const { blogPosts } = useCMS();
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 pb-20">
+        <div className="pt-24 min-h-screen bg-white">
             <BreadcrumbSchema
                 items={[
                     { name: 'Blog', item: `https://panamarealestatesale.com/${lang}/blog` }
                 ]}
             />
 
-            {/* Header */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-6">
-                <div className="text-center mb-16">
-                    <span className="tag-teal mb-5 inline-block">
+            {/* Page header — light teal tinted */}
+            <div className="bg-brand-50 border-b border-brand-100 py-16">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <span className="tag-teal-light mb-4 inline-block">
                         {lang === 'es' ? 'ARTÍCULOS & GUÍAS' : 'ARTICLES & GUIDES'}
                     </span>
-                    <h1 className="font-heading text-4xl md:text-5xl font-black text-white mb-6 uppercase italic tracking-tighter mt-4">
+                    <h1 className="font-heading text-4xl md:text-5xl font-black text-brand-950 uppercase italic tracking-tighter mb-4 mt-3">
                         {t.nav.blog}
                     </h1>
-                    <p className="text-brand-300 text-lg max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-slate-500 text-base max-w-xl mx-auto leading-relaxed">
                         {lang === 'es'
                             ? 'Las últimas tendencias del mercado inmobiliario panameño, guías de inversión y consejos de vida para el expatriado moderno.'
                             : 'The latest trends in the Panamanian property market, investment guides, and lifestyle tips for the modern expat.'}
                     </p>
                 </div>
+            </div>
 
-                {/* Post grid */}
+            {/* Post grid */}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {blogPosts.map((post) => (
                         <article
                             key={post.id}
-                            className="glass-card rounded-2xl overflow-hidden flex flex-col group border border-white/5 hover:border-brand-TEAL/30 transition-all duration-300"
+                            className="card-light rounded-2xl overflow-hidden flex flex-col group"
                         >
                             <Link href={`/${lang}/blog/${post.slug}`} className="block h-52 overflow-hidden relative flex-shrink-0">
                                 <img
@@ -51,7 +53,7 @@ const BlogPageContent: React.FC<{ lang?: 'en' | 'es' }> = ({ lang: propLang }) =
                                     alt={post.title[lang] || post.title.en}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent" />
+                                <div className="absolute inset-0 bg-gradient-to-t from-brand-950/30 to-transparent" />
                                 <div className="absolute top-3 left-3">
                                     <span className="tag-teal text-[10px]">
                                         {post.category}
@@ -60,18 +62,18 @@ const BlogPageContent: React.FC<{ lang?: 'en' | 'es' }> = ({ lang: propLang }) =
                             </Link>
 
                             <div className="p-6 flex flex-col flex-grow">
-                                <div className="text-brand-600 text-[11px] font-bold uppercase tracking-widest mb-3">{post.date}</div>
-                                <h2 className="font-heading text-lg font-bold text-white mb-3 group-hover:text-brand-TEAL transition-colors leading-tight">
+                                <div className="text-brand-500 text-[11px] font-bold uppercase tracking-widest mb-2">{post.date}</div>
+                                <h2 className="font-heading text-lg font-black text-brand-950 mb-3 group-hover:text-brand-600 transition-colors leading-tight">
                                     <Link href={`/${lang}/blog/${post.slug}`}>
                                         {post.title[lang] || post.title.en}
                                     </Link>
                                 </h2>
-                                <p className="text-slate-400 mb-6 leading-relaxed flex-grow line-clamp-3 text-sm">
+                                <p className="text-slate-500 mb-5 leading-relaxed flex-grow line-clamp-3 text-sm">
                                     {post.excerpt[lang] || post.excerpt.en}
                                 </p>
                                 <Link
                                     href={`/${lang}/blog/${post.slug}`}
-                                    className="inline-flex items-center gap-2 text-brand-TEAL font-bold hover:gap-3 transition-all text-xs uppercase tracking-widest"
+                                    className="inline-flex items-center gap-2 text-brand-TEAL-dark font-black hover:gap-3 transition-all text-xs uppercase tracking-widest"
                                 >
                                     {lang === 'es' ? 'Leer artículo' : 'Read Article'} <ArrowRight size={12} />
                                 </Link>

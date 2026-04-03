@@ -41,7 +41,7 @@ const RelocationReviewsContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}/` }, ...breadcrumbItems]} />
             <ReviewSchema
                 itemReviewedName="Panama Relocation Discovery Tours"
@@ -72,7 +72,7 @@ const RelocationReviewsContent: React.FC = () => {
 
             {/* Featured Video Placeholder */}
             <section className="py-12 max-w-5xl mx-auto px-4">
-                <div className="relative aspect-video rounded-2xl overflow-hidden border border-white/10 group cursor-pointer">
+                <div className="relative aspect-video rounded-2xl overflow-hidden border border-brand-100 group cursor-pointer">
                     <img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1200&q=80" alt="Panama Real Estate Sale Interview" className="w-full h-full object-cover opacity-50 transition-transform duration-700 group-hover:scale-105" />
                     <div className="absolute inset-0 flex items-center justify-center">
                         <div className="w-24 h-24 bg-brand-GOLD text-brand-950 rounded-full flex items-center justify-center shadow-2xl transform transition-transform group-hover:scale-110">
@@ -92,7 +92,7 @@ const RelocationReviewsContent: React.FC = () => {
             <section className="py-14 max-w-7xl mx-auto px-4">
                 <div className="grid md:grid-cols-3 gap-8">
                     {reviews.map((review, i) => (
-                        <div key={i} className="bg-white/5 border border-white/5 p-6 rounded-2xl hover:border-brand-GOLD/30 transition-all flex flex-col items-center text-center">
+                        <div key={i} className="bg-white/5 border border-brand-100 p-6 rounded-2xl hover:border-brand-GOLD/30 transition-all flex flex-col items-center text-center">
                             <div className="w-24 h-24 rounded-full overflow-hidden mb-8 border-2 border-brand-GOLD/20">
                                 <img src={review.image} alt={review.name} className="w-full h-full object-cover" />
                             </div>

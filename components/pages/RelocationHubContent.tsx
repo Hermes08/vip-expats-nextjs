@@ -18,7 +18,7 @@ const RelocationHubContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
 
             <div className="max-w-7xl mx-auto px-4 mt-12 relative z-50">
@@ -26,7 +26,7 @@ const RelocationHubContent: React.FC = () => {
             </div>
 
             {/* Premium Hero Section: 3.0 Cinematic */}
-            <section className="relative min-h-screen flex items-center overflow-hidden border-b border-white/5 bg-mesh-glow">
+            <section className="relative min-h-screen flex items-center overflow-hidden border-b border-brand-100 bg-mesh-glow">
                 <div className="absolute inset-0 z-0 scale-105 overflow-hidden">
                     <motion.img
                         initial={{ opacity: 0, scale: 1.1 }}
@@ -196,7 +196,7 @@ const RelocationHubContent: React.FC = () => {
             </section>
 
             {/* Lifestyle Ecosystem: Beyond the Visa */}
-            <section className="py-14 bg-black rounded-3xl mx-4 border border-white/10 shadow-2xl relative overflow-hidden">
+            <section className="py-14 bg-black rounded-3xl mx-4 border border-brand-100 shadow-2xl relative overflow-hidden">
                 <div className="absolute top-0 left-0 p-20 opacity-5">
                     <Hammer size={200} />
                 </div>
@@ -214,7 +214,7 @@ const RelocationHubContent: React.FC = () => {
                             </div>
                         </div>
                         <div className="grid grid-cols-1 gap-6">
-                            <div className="p-8 bg-brand-950 rounded-2xl border border-white/10 flex gap-6 items-start">
+                            <div className="p-8 bg-brand-950 rounded-2xl border border-brand-100 flex gap-6 items-start">
                                 <Zap className="text-brand-GOLD shrink-0" size={32} />
                                 <div>
                                     <h4 className="font-black uppercase tracking-widest text-[10px] mb-2">Utility Care</h4>
@@ -256,7 +256,7 @@ const RelocationHubContent: React.FC = () => {
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-12">
-                        <div className="p-12 bg-brand-950 rounded-2xl border border-white/10">
+                        <div className="p-12 bg-brand-950 rounded-2xl border border-brand-100">
                             <div className="w-12 h-12 bg-brand-GOLD text-brand-950 rounded-2xl flex items-center justify-center mb-8 font-black italic">01</div>
                             <h4 className="text-2xl font-black uppercase tracking-tighter mb-4 italic">The Digital Maverick</h4>
                             <p className="text-sm text-slate-400 font-medium leading-relaxed">
@@ -270,7 +270,7 @@ const RelocationHubContent: React.FC = () => {
                                 Why wait until 65? The <strong>panama residency under 50</strong> paths through Friendly Nations and Qualified Investor visas are allowing a new generation to <strong>retire early to panama</strong> and live on half their previous budget.
                             </p>
                         </div>
-                        <div className="p-12 bg-brand-950 rounded-2xl border border-white/10">
+                        <div className="p-12 bg-brand-950 rounded-2xl border border-brand-100">
                             <div className="w-12 h-12 bg-brand-GOLD text-brand-950 rounded-2xl flex items-center justify-center mb-8 font-black italic">03</div>
                             <h4 className="text-2xl font-black uppercase tracking-tighter mb-4 italic">The Heritage Family</h4>
                             <p className="text-sm text-slate-400 font-medium leading-relaxed">
@@ -294,15 +294,15 @@ const RelocationHubContent: React.FC = () => {
                                 Most <strong>panama relocation tours reviews</strong> focus on the scenery. We focus on the logistics. During your 5-day experience, we walk you through the bank account opening process, visit hospitals for <strong>panama healthcare for expats</strong> audits, and tour the most exclusive <strong>gated communities in coronado panama</strong>.
                             </p>
                             <div className="grid grid-cols-2 gap-4 pt-8">
-                                <div className="p-6 bg-white/5 border border-white/5 rounded-3xl">
+                                <div className="p-6 bg-white/5 border border-brand-100 rounded-3xl">
                                     <h5 className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] mb-2">Day 1-2</h5>
                                     <p className="text-[11px]">Metropolis Navigation & Banking Setup</p>
                                 </div>
-                                <div className="p-6 bg-white/5 border border-white/5 rounded-3xl">
+                                <div className="p-6 bg-white/5 border border-brand-100 rounded-3xl">
                                     <h5 className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] mb-2">Day 3-4</h5>
                                     <p className="text-[11px]">The Gold Coast (Coronado & Pacific Beaches)</p>
                                 </div>
-                                <div className="p-6 bg-white/5 border border-white/5 rounded-3xl">
+                                <div className="p-6 bg-white/5 border border-brand-100 rounded-3xl">
                                     <h5 className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] mb-2">Day 5</h5>
                                     <p className="text-[11px]">The Highlands (Boquete & Volcan Scouting)</p>
                                 </div>
@@ -424,7 +424,7 @@ const RelocationHubContent: React.FC = () => {
             </section>
 
             {/* The 2026 Legal Blueprint Section */}
-            <section className="py-14 bg-brand-900">
+            <section className="py-14 bg-brand-50">
                 <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-20 items-center">
                     <div className="lg:w-1/2">
                         <div className="w-16 h-16 bg-brand-GOLD/10 rounded-2xl flex items-center justify-center mb-10">
@@ -449,7 +449,7 @@ const RelocationHubContent: React.FC = () => {
                         </div>
                     </div>
                     <div className="lg:w-1/2 grid grid-cols-2 gap-6">
-                        <div className="p-10 bg-brand-950 rounded-2xl border border-white/10">
+                        <div className="p-10 bg-brand-950 rounded-2xl border border-brand-100">
                             <ShieldCheck className="text-brand-GOLD mb-6" size={40} />
                             <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic">Asset Protection</h4>
                             <p className="text-xs text-slate-400 font-medium">Panama Foundations are the world's gold standard for family wealth security.</p>
@@ -472,7 +472,7 @@ const RelocationHubContent: React.FC = () => {
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-12">
-                        <div className="bg-white p-8 rounded-3xl border border-white/10 hover:border-brand-GOLD transition-all shadow-xl group">
+                        <div className="bg-white p-8 rounded-3xl border border-brand-100 hover:border-brand-GOLD transition-all shadow-xl group">
                             <h3 className="text-3xl font-black uppercase tracking-tighter mb-8 italic text-brand-950 group-hover:text-brand-GOLD transition-colors">The Pensioner</h3>
                             <p className="text-slate-400 font-medium leading-relaxed mb-10">
                                 Perfect for those with a lifetime pension. The <strong>panama retirement visa</strong> offers the world's best discounts on everything from movies to medical bills.

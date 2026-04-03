@@ -84,7 +84,7 @@ const RelocationFamiliesContent = () => {
                                 <p>
                                     From the <strong>Boquete</strong> highlands to the <strong>Coronado</strong> beaches, we specialize in finding the perfect "Panama Real Estate Sale" base that aligns with your children's schooling needs and your lifestyle goals.
                                 </p>
-                                <div className="p-8 bg-brand-950 rounded-2xl border border-white/10 italic font-bold text-brand-950">
+                                <div className="p-8 bg-brand-950 rounded-2xl border border-brand-100 italic font-bold text-brand-950">
                                     "We moved from Toronto to Clayton. Our kids are in the best school we've ever experienced, and they spend every afternoon in the pool or the park. The quality of life for families here is unmatched."
                                 </div>
                             </div>
@@ -127,7 +127,7 @@ const RelocationFamiliesContent = () => {
                                 desc: "Pediatric care in Panama is exceptional. Most doctors are US-trained and speak perfect English. Private health insurance for kids is affordable and comprehensive."
                             }
                         ].map((pillar, idx) => (
-                            <div key={idx} className="p-12 bg-white/5 border border-white/5 rounded-2xl group hover:border-brand-GOLD/30 transition-all">
+                            <div key={idx} className="p-12 bg-white/5 border border-brand-100 rounded-2xl group hover:border-brand-GOLD/30 transition-all">
                                 <div className="mb-8">{pillar.icon}</div>
                                 <h3 className="text-3xl font-black uppercase tracking-tighter italic mb-6 leading-none">{pillar.title}</h3>
                                 <p className="text-slate-400 font-medium text-sm leading-relaxed">{pillar.desc}</p>
@@ -188,7 +188,7 @@ const RelocationFamiliesContent = () => {
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-black mb-20 text-center uppercase tracking-tighter italic">Family <span className="text-brand-GOLD italic">Knowledge</span></h2>
                     <div className="space-y-6">
                         {faqs.map((faq, idx) => (
-                            <details key={idx} className="group bg-brand-900/60 rounded-2xl border border-white/5 overflow-hidden transition-all hover:border-brand-GOLD/50">
+                            <details key={idx} className="group bg-brand-50 rounded-2xl border border-brand-100 overflow-hidden transition-all hover:border-brand-GOLD/50">
                                 <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
                                     <span className="text-lg font-black uppercase tracking-tighter italic pr-8 text-brand-950">{faq.question}</span>
                                     <HelpCircle className="text-brand-GOLD" size={24} />

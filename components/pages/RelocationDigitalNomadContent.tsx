@@ -67,7 +67,7 @@ const RelocationDigitalNomadContent = () => {
                             <Link href={`/${lang}/contacto`} className="px-6 py-3 bg-brand-GOLD text-brand-950 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-white hover:scale-105 transition-all text-center">
                                 Claim My Nomad Visa
                             </Link>
-                            <Link href="#connectivity" className="px-6 py-3 bg-white/5 border border-white/10 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-white/10 transition-all text-center">
+                            <Link href="#connectivity" className="px-6 py-3 bg-white/5 border border-brand-100 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-white/10 transition-all text-center">
                                 View Speed Tests
                             </Link>
                         </div>
@@ -95,7 +95,7 @@ const RelocationDigitalNomadContent = () => {
                             desc: "Located at the center of the Americas. Easy 3-5 hour flights to major US hubs with minimal time-zone jetlag."
                         }
                     ].map((item, i) => (
-                        <div key={i} className="p-10 bg-white/5 rounded-2xl border border-white/10 hover:border-brand-GOLD/30 transition-all">
+                        <div key={i} className="p-10 bg-white/5 rounded-2xl border border-brand-100 hover:border-brand-GOLD/30 transition-all">
                             <div className="mb-6">{item.icon}</div>
                             <h3 className="text-2xl font-black uppercase tracking-tighter mb-4 italic">{item.title}</h3>
                             <p className="text-slate-400 font-medium text-sm leading-relaxed">{item.desc}</p>
@@ -217,7 +217,7 @@ const RelocationDigitalNomadContent = () => {
 
                     <div className="space-y-6">
                         {faqs.map((faq, idx) => (
-                            <details key={idx} className="group bg-white/5 rounded-xl border border-white/10 overflow-hidden transition-all hover:border-brand-GOLD/50">
+                            <details key={idx} className="group bg-white/5 rounded-xl border border-brand-100 overflow-hidden transition-all hover:border-brand-GOLD/50">
                                 <summary className="flex items-center justify-between p-8 cursor-pointer list-none">
                                     <span className="text-xl font-black uppercase tracking-tighter italic pr-8">{faq.question}</span>
                                     <span className="text-brand-GOLD group-open:rotate-45 transition-transform duration-300">

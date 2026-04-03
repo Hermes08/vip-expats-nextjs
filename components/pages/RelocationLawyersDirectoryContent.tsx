@@ -56,7 +56,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}/` }, ...breadcrumbItems]} />
             <ServiceSchema
                 name="Panama Immigration Lawyer Directory"
@@ -69,7 +69,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
             </div>
 
             {/* Header / Hero: 3.0 Cinematic */}
-            <section className="relative min-h-[85vh] flex items-center overflow-hidden border-b border-white/5 bg-mesh-glow">
+            <section className="relative min-h-[85vh] flex items-center overflow-hidden border-b border-brand-100 bg-mesh-glow">
                 <div className="absolute inset-0 z-0 scale-105 overflow-hidden">
                     <motion.img
                         initial={{ opacity: 0, scale: 1.1 }}
@@ -122,7 +122,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                             <p>
                                 A bad lawyer can cost you months of delays, thousands in lost fees, and potentially a permanent black mark on your immigration record. Our directory exists to eliminate that risk.
                             </p>
-                            <div className="p-8 bg-brand-950 rounded-2xl border border-white/10">
+                            <div className="p-8 bg-brand-950 rounded-2xl border border-brand-100">
                                 <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-widest mb-4">Panama Real Estate Sale Verification Stats</h4>
                                 <ul className="space-y-4">
                                     <li className="flex gap-3 text-sm text-neutral-800 font-bold">
@@ -163,7 +163,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                             { title: "Government Costs", price: "$1,050 - $1,300", desc: "Fixed fees paid to the Panamanian government for processing, health certificates, and the residency card itself." },
                             { title: "Repatriation Bond", price: "$800 - $1,000", desc: "A refundable bond (or insurance equivalent) required for most visas to cover potential deportation costs (Rarely used)." }
                         ].map((c, i) => (
-                            <div key={i} className="bg-white/5 border border-white/5 p-6 rounded-[3.5rem] hover:border-brand-GOLD/30 transition-all group">
+                            <div key={i} className="bg-white/5 border border-brand-100 p-6 rounded-[3.5rem] hover:border-brand-GOLD/30 transition-all group">
                                 <span className="text-brand-GOLD text-3xl font-black italic mb-4 block">{c.price}</span>
                                 <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic text-white">{c.title}</h4>
                                 <p className="text-slate-400 font-medium text-sm leading-relaxed">{c.desc}</p>
@@ -171,7 +171,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                         ))}
                     </div>
 
-                    <div className="mt-20 p-6 bg-white/5 rounded-2xl border border-white/10 text-center">
+                    <div className="mt-20 p-6 bg-white/5 rounded-2xl border border-brand-100 text-center">
                         <p className="text-slate-400 font-medium max-w-3xl mx-auto">
                             <strong>Warning:</strong> Be wary of "budget" lawyers charging under $1,000. These often lead to hidden "expense" charges later or, worse, incomplete filings that result in permanent residency denial.
                         </p>
@@ -189,7 +189,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                     <div className="flex gap-4">
                         <div className="relative">
                             <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
-                            <input type="text" placeholder="Search by name..." className="pl-14 pr-10 py-5 bg-brand-950 border border-white/10 rounded-2xl text-xs font-bold w-64 focus:border-brand-GOLD outline-none transition-all" />
+                            <input type="text" placeholder="Search by name..." className="pl-14 pr-10 py-5 bg-brand-950 border border-brand-100 rounded-2xl text-xs font-bold w-64 focus:border-brand-GOLD outline-none transition-all" />
                         </div>
                     </div>
                 </div>
@@ -257,12 +257,12 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                                 We don't just "list" lawyers. We **engineer** the relationship. Every attorney in our <strong>panama immigration lawyer directory</strong> undergoes a rigorous quarterly audit.
                             </p>
                             <div className="grid grid-cols-2 gap-6">
-                                <div className="p-8 bg-white rounded-3xl shadow-sm border border-white/10">
+                                <div className="p-8 bg-white rounded-3xl shadow-sm border border-brand-100">
                                     <Star className="text-brand-GOLD mb-4" size={24} />
                                     <h4 className="text-xs font-black uppercase tracking-widest mb-2">Review Guard</h4>
                                     <p className="text-[10px] text-slate-400 leading-relaxed font-bold">We manually verify every client review to ensure authenticity.</p>
                                 </div>
-                                <div className="p-8 bg-white rounded-3xl shadow-sm border border-white/10">
+                                <div className="p-8 bg-white rounded-3xl shadow-sm border border-brand-100">
                                     <ShieldCheck className="text-brand-GOLD mb-4" size={24} />
                                     <h4 className="text-xs font-black uppercase tracking-widest mb-2">Ethics Check</h4>
                                     <p className="text-[10px] text-slate-400 leading-relaxed font-bold">Search of Bar Association records for any disciplinary actions.</p>
@@ -293,7 +293,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                         { q: "What are 'Protected Professions' in 2026?", a: "Panama protects dozens of professions (Nursing, Engineering, Law, etc.) for citizens only. A good lawyer will review your degree and help you structure your role as 'Consultant' to ensure compliance." },
                         { q: "Do I need a Power of Attorney?", a: "Yes. You will sign a limited Power of Attorney (Especial) so the lawyer can represent you before the National Immigration Service." }
                     ].map((faq, i) => (
-                        <div key={i} className="p-10 border-b border-white/10 group hover:bg-brand-900/40 transition-all rounded-2xl">
+                        <div key={i} className="p-10 border-b border-white/10 group hover:bg-brand-50 transition-all rounded-2xl">
                             <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic group-hover:text-brand-GOLD transition-colors">{faq.q}</h4>
                             <p className="text-sm text-slate-400 font-medium leading-relaxed">{faq.a}</p>
                         </div>

@@ -34,7 +34,7 @@ const RelocationCostContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <ServiceSchema
                 name="Panama Cost of Living Analysis 2026"
@@ -78,11 +78,11 @@ const RelocationCostContent: React.FC = () => {
                                     Expect to pay <strong>$40 - $60 per unit</strong> for a professional cleaning every 4-6 months. Neglecting this can double your monthly <strong>panama electric bill</strong> and lead to costly evaporator coil failures.
                                 </p>
                                 <div className="grid grid-cols-2 gap-4 pt-8">
-                                    <div className="p-6 bg-white/5 rounded-3xl border border-white/10">
+                                    <div className="p-6 bg-white/5 rounded-3xl border border-brand-100">
                                         <h5 className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD mb-2">A/C Service</h5>
                                         <p className="text-xl font-bold italic">$50/visit</p>
                                     </div>
-                                    <div className="p-6 bg-white/5 rounded-3xl border border-white/10">
+                                    <div className="p-6 bg-white/5 rounded-3xl border border-brand-100">
                                         <h5 className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD mb-2">Handyman</h5>
                                         <p className="text-xl font-bold italic">$15 - $25/hr</p>
                                     </div>
@@ -120,7 +120,7 @@ const RelocationCostContent: React.FC = () => {
                         </div>
                     </div>
                     <div className="grid grid-cols-2 gap-6">
-                        <div className="p-8 bg-brand-950 rounded-2xl border border-white/10">
+                        <div className="p-8 bg-brand-950 rounded-2xl border border-brand-100">
                             <ShoppingCart className="text-brand-GOLD mb-4" size={32} />
                             <h4 className="font-black uppercase tracking-widest text-[10px] mb-2">Groceries</h4>
                             <p className="text-2xl font-black italic">$400 - $800</p>
@@ -135,7 +135,7 @@ const RelocationCostContent: React.FC = () => {
                             <h4 className="font-black uppercase tracking-widest text-[10px] mb-2">Rent (Expat)</h4>
                             <p className="text-2xl font-black italic text-brand-GOLD">$1k - $2.5k</p>
                         </div>
-                        <div className="p-8 bg-brand-950 rounded-2xl border border-white/10">
+                        <div className="p-8 bg-brand-950 rounded-2xl border border-brand-100">
                             <PiggyBank className="text-brand-GOLD mb-4" size={32} />
                             <h4 className="font-black uppercase tracking-widest text-[10px] mb-2">Misc Fees</h4>
                             <p className="text-2xl font-black italic">$200+</p>
@@ -154,7 +154,7 @@ const RelocationCostContent: React.FC = () => {
 
                     <div className="grid md:grid-cols-2 gap-12">
                         {budgetTiers.map((tier, i) => (
-                            <div key={i} className="bg-white p-8 rounded-2xl border border-white/10 hover:border-brand-GOLD transition-all group">
+                            <div key={i} className="bg-white p-8 rounded-2xl border border-brand-100 hover:border-brand-GOLD transition-all group">
                                 <h3 className="text-2xl font-black uppercase tracking-tighter mb-4 italic">{tier.name}</h3>
                                 <div className="text-4xl font-black text-brand-GOLD mb-8 italic">{tier.price}<span className="text-xs font-bold text-slate-400"> / mo</span></div>
                                 <p className="text-slate-400 text-sm font-medium mb-10 leading-relaxed">{tier.desc}</p>
@@ -189,7 +189,7 @@ const RelocationCostContent: React.FC = () => {
                                             <h5 className="text-xl font-black italic">$10 - $15</h5>
                                         </div>
                                     </div>
-                                    <div className="p-8 bg-brand-950 rounded-2xl border border-white/10">
+                                    <div className="p-8 bg-brand-950 rounded-2xl border border-brand-100">
                                         <Utensils className="text-brand-GOLD mb-4" size={24} />
                                         <h6 className="font-black uppercase tracking-widest text-[9px] mb-2">The Local Fonda</h6>
                                         <p className="text-xs text-slate-400 font-medium">A full plate of rice, beans, and protein (Menu del Dia) will cost you just $5 - $7 in 2026.</p>
@@ -244,7 +244,7 @@ const RelocationCostContent: React.FC = () => {
                             { id: "9-LPE1R6bCo", title: "Expat Life Stories" },
                             { id: "qmTurzRTr3g", title: "Moving Logistics" }
                         ].map((video, idx) => (
-                            <div key={idx} className="bg-white p-4 rounded-2xl shadow-xl border border-white/10 hover:scale-105 transition-all">
+                            <div key={idx} className="bg-white p-4 rounded-2xl shadow-xl border border-brand-100 hover:scale-105 transition-all">
                                 <div className="relative aspect-video rounded-xl overflow-hidden mb-6">
                                     <iframe
                                         className="absolute inset-0 w-full h-full"
@@ -265,7 +265,7 @@ const RelocationCostContent: React.FC = () => {
             {/* Comparison Table */}
             <section className="py-14 max-w-7xl mx-auto px-4">
                 <h2 className="text-3xl font-black uppercase tracking-tighter mb-16 italic text-center">Regional <span className="text-brand-GOLD italic">Price</span> Index</h2>
-                <div className="overflow-x-auto rounded-2xl border border-white/10">
+                <div className="overflow-x-auto rounded-2xl border border-brand-100">
                     <table className="w-full text-left bg-white">
                         <thead>
                             <tr className="bg-neutral-900 text-white">
@@ -300,13 +300,13 @@ const RelocationCostContent: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-8">
                     <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-slate-400 mb-12 text-center">Complete Your Research</h4>
                     <div className="grid md:grid-cols-2 gap-8">
-                        <Link href={`/${lang}/relocation/weather`} className="group p-6 bg-white rounded-2xl border border-white/10 hover:border-brand-GOLD transition-all shadow-sm">
+                        <Link href={`/${lang}/relocation/weather`} className="group p-6 bg-white rounded-2xl border border-brand-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Sun className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Weather Guide 2026</h5>
                             <p className="text-xs text-slate-400 font-medium mb-6">Discover the best time to visit and how microclimates affect your move.</p>
                             <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">View Guide <ArrowRight size={12} /></span>
                         </Link>
-                        <Link href={`/${lang}/relocation/guides/boquete-vs-coronado`} className="group p-6 bg-white rounded-2xl border border-white/10 hover:border-brand-GOLD transition-all shadow-sm">
+                        <Link href={`/${lang}/relocation/guides/boquete-vs-coronado`} className="group p-6 bg-white rounded-2xl border border-brand-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Compass className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Boquete vs Coronado</h5>
                             <p className="text-xs text-slate-400 font-medium mb-6">The definitive showdown between the mountains and the beach.</p>

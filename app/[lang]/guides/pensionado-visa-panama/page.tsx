@@ -67,9 +67,9 @@ export default async function PensionadoVisaPage({ params }: Props) {
     await params;
 
     return (
-        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+        <article className="bg-white min-h-screen pt-28 pb-20">
             {/* Hero */}
-            <section className="bg-brand-900 py-24 relative overflow-hidden">
+            <section className="section-dark py-24 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <img src="https://images.unsplash.com/photo-1549420958-370146059d4c?w=1600&q=80" alt="Panama Retirement" className="w-full h-full object-cover" />
                 </div>
@@ -91,24 +91,24 @@ export default async function PensionadoVisaPage({ params }: Props) {
                     <p className="text-xl font-semibold text-white border-l-4 border-brand-GOLD pl-5 leading-relaxed">
                         The Pensionado Visa is Panama&apos;s permanent residency program for retirees. Require just $1,000/month in lifetime pension income — and it comes with the most generous discount card in the Western Hemisphere.
                     </p>
-                    <p className="text-slate-400 mt-5 leading-relaxed">
+                    <p className="text-slate-500 mt-5 leading-relaxed">
                         Unlike Costa Rica&apos;s Pensionado program (which requires annual renewal), Panama&apos;s is truly permanent. Get it once, keep it forever. After 5 years of residency, you qualify for Panamanian citizenship.
                     </p>
                 </section>
 
                 {/* The discount card */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-brand-950 text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         The Jubilado Discount Card — What You Actually Get
                     </h2>
-                    <p className="text-slate-400 text-sm leading-relaxed mb-5">
+                    <p className="text-slate-500 text-sm leading-relaxed mb-5">
                         Every approved Pensionado receives a Jubilado ID card issued by MIDES. Present it at the point of sale. The discounts are legally mandated — businesses are required to honor them.
                     </p>
                     <div className="grid sm:grid-cols-3 gap-3">
                         {benefits.map((b, i) => (
-                            <div key={i} className="glass-card rounded-xl p-4 border border-white/5">
+                            <div key={i} className="glass-card rounded-xl p-4 border border-brand-100">
                                 <div className="text-brand-GOLD font-black text-xl mb-1">{b.discount}</div>
-                                <div className="text-white font-bold text-xs mb-1">{b.category}</div>
+                                <div className="text-brand-950 font-bold text-xs mb-1">{b.category}</div>
                                 <div className="text-slate-500 text-[11px] leading-relaxed">{b.detail}</div>
                             </div>
                         ))}
@@ -117,23 +117,23 @@ export default async function PensionadoVisaPage({ params }: Props) {
 
                 {/* Requirements */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-brand-950 text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         <ShieldCheck className="inline text-brand-TEAL mr-1" size={22} />
                         Requirements
                     </h2>
                     <div className="space-y-3">
                         {requirements.map((item, i) => (
-                            <div key={i} className="flex items-start gap-4 glass-card rounded-xl p-5 border border-white/5">
+                            <div key={i} className="flex items-start gap-4 glass-card rounded-xl p-5 border border-brand-100">
                                 <CheckCircle size={15} className="text-brand-TEAL mt-0.5 flex-shrink-0" />
                                 <div>
-                                    <div className="text-white font-bold text-sm mb-1">{item.req}</div>
-                                    <div className="text-slate-400 text-xs leading-relaxed">{item.detail}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{item.req}</div>
+                                    <div className="text-slate-500 text-xs leading-relaxed">{item.detail}</div>
                                 </div>
                             </div>
                         ))}
                     </div>
                     <div className="mt-4 bg-brand-900 rounded-xl px-5 py-4 border border-brand-GOLD/20">
-                        <p className="text-slate-400 text-xs leading-relaxed">
+                        <p className="text-slate-500 text-xs leading-relaxed">
                             <span className="text-brand-GOLD font-bold">Social Security note: </span>
                             A single person&apos;s full Social Security benefit — the average in 2026 is $1,907/mo — qualifies comfortably. Many retirees apply the same week they file for SS.
                         </p>
@@ -142,18 +142,18 @@ export default async function PensionadoVisaPage({ params }: Props) {
 
                 {/* Process */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-brand-950 text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         The Application Process: 6 Steps
                     </h2>
                     <div className="space-y-3">
                         {processSteps.map((s, i) => (
-                            <div key={i} className="flex items-start gap-4 glass-card rounded-xl p-5 border border-white/5">
+                            <div key={i} className="flex items-start gap-4 glass-card rounded-xl p-5 border border-brand-100">
                                 <div className="w-8 h-8 rounded-full bg-brand-GOLD/10 border border-brand-GOLD/30 flex items-center justify-center flex-shrink-0">
                                     <span className="text-brand-GOLD font-black text-xs">{s.n}</span>
                                 </div>
                                 <div>
-                                    <div className="text-white font-bold text-sm mb-1">{s.t}</div>
-                                    <div className="text-slate-400 text-xs leading-relaxed">{s.b}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{s.t}</div>
+                                    <div className="text-slate-500 text-xs leading-relaxed">{s.b}</div>
                                 </div>
                             </div>
                         ))}
@@ -162,17 +162,17 @@ export default async function PensionadoVisaPage({ params }: Props) {
 
                 {/* Comparison */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-5 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-white text-2xl font-heading font-bold mb-5 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         Pensionado vs Other Panama Visa Options
                     </h2>
                     <div className="overflow-x-auto">
                         <table className="w-full text-sm border-collapse">
                             <thead>
-                                <tr className="border-b border-white/10">
+                                <tr className="border-b border-brand-100">
                                     <th className="text-left text-slate-500 text-[10px] uppercase tracking-widest py-3 pr-4">Factor</th>
                                     <th className="text-left text-brand-GOLD text-[10px] uppercase tracking-widest py-3 px-3">Pensionado</th>
                                     <th className="text-left text-brand-TEAL text-[10px] uppercase tracking-widest py-3 px-3">Friendly Nations</th>
-                                    <th className="text-left text-slate-400 text-[10px] uppercase tracking-widest py-3 px-3">Investor</th>
+                                    <th className="text-left text-slate-500 text-[10px] uppercase tracking-widest py-3 px-3">Investor</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -184,10 +184,10 @@ export default async function PensionadoVisaPage({ params }: Props) {
                                     { f: 'Citizenship eligibility', p: 'After 5 years', fn: 'After 5 years', inv: 'After 5 years' },
                                 ].map((row, i) => (
                                     <tr key={i} className="border-b border-white/5">
-                                        <td className="text-slate-400 text-xs py-3 pr-4 font-medium">{row.f}</td>
+                                        <td className="text-slate-500 text-xs py-3 pr-4 font-medium">{row.f}</td>
                                         <td className="text-white text-xs py-3 px-3 font-bold">{row.p}</td>
                                         <td className="text-slate-300 text-xs py-3 px-3">{row.fn}</td>
-                                        <td className="text-slate-400 text-xs py-3 px-3">{row.inv}</td>
+                                        <td className="text-slate-500 text-xs py-3 px-3">{row.inv}</td>
                                     </tr>
                                 ))}
                             </tbody>
@@ -200,7 +200,7 @@ export default async function PensionadoVisaPage({ params }: Props) {
                     <h3 className="text-white font-heading text-2xl font-bold mb-3 uppercase italic tracking-tighter">
                         Ready to Start Your Pensionado Application?
                     </h3>
-                    <p className="text-slate-400 mb-6 max-w-md mx-auto text-sm leading-relaxed">
+                    <p className="text-slate-500 mb-6 max-w-md mx-auto text-sm leading-relaxed">
                         We work with licensed Panama immigration attorneys. Book a free 30-minute call — we will confirm if you qualify and outline the next steps.
                     </p>
                     <Link
@@ -219,7 +219,7 @@ export default async function PensionadoVisaPage({ params }: Props) {
                         { label: 'How to Move to Panama', href: '/en/guides/how-to-move-to-panama' },
                         { label: 'Cost of Living Panama 2026', href: '/en/guides/cost-of-living-panama-2026' },
                     ].map((link, i) => (
-                        <Link key={i} href={link.href} className="flex items-center justify-between glass-card p-4 rounded-xl border border-white/5 hover:border-brand-GOLD/30 transition-all group">
+                        <Link key={i} href={link.href} className="flex items-center justify-between glass-card p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group">
                             <span className="text-white text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>

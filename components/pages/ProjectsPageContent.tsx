@@ -128,7 +128,7 @@ const ProjectsPageContent: React.FC = () => {
                                     onChange={(e) => setSearchTerm(e.target.value)}
                                     placeholder={lang === 'zh' ? "搜索项目..." : "Search Project Portfolio..."}
                                     aria-label="Search projects by keyword"
-                                    className="w-full pl-14 pr-10 py-5 bg-white/5 rounded-2xl text-[11px] font-black uppercase tracking-widest border border-white/5 text-white focus:ring-1 focus:ring-brand-GOLD/50 outline-none transition-all placeholder:text-slate-600 shadow-inner"
+                                    className="w-full pl-14 pr-10 py-5 bg-white/5 rounded-2xl text-[11px] font-black uppercase tracking-widest border border-brand-100 text-white focus:ring-1 focus:ring-brand-GOLD/50 outline-none transition-all placeholder:text-slate-600 shadow-inner"
                                 />
                                 <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-brand-GOLD/50" size={20} />
                             </Magnetic>

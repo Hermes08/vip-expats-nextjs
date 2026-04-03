@@ -69,20 +69,20 @@ const Navbar: React.FC = () => {
             initial={{ y: -100 }}
             animate={{ y: 0 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-brand-950/90 backdrop-blur-2xl border-b border-white/5 py-2 shadow-xl' : 'bg-gradient-to-b from-black/60 to-transparent py-4'}`}
+            className={`fixed w-full z-50 transition-all duration-500 ${isScrolled ? 'bg-white/95 backdrop-blur-2xl border-b border-brand-100 py-2 shadow-sm' : 'bg-gradient-to-b from-black/50 to-transparent py-4'}`}
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
                     <Magnetic strength={0.2}>
                         <Link href={`/${lang}`} className="z-50 focus:outline-none group">
                             <span className="font-heading text-xl md:text-3xl font-black tracking-tighter transition-opacity group-hover:opacity-90">
-                                <span className="text-brand-GOLD uppercase">PANAMA</span><span className="uppercase text-white font-serif-luxury lowercase tracking-normal -ml-1">Sale</span>
+                                <span className="text-brand-GOLD uppercase">PANAMA</span><span className={`uppercase font-serif-luxury lowercase tracking-normal -ml-1 ${isScrolled ? 'text-brand-950' : 'text-white'}`}>Sale</span>
                             </span>
                         </Link>
                     </Magnetic>
 
                     <div className="hidden lg:flex items-center gap-10">
-                        <div className="flex gap-8 text-[11px] font-black uppercase tracking-[0.2em] text-gray-200">
+                        <div className={`flex gap-8 text-[11px] font-black uppercase tracking-[0.2em] ${isScrolled ? 'text-brand-800' : 'text-gray-200'}`}>
                             {Object.entries(navItems).map(([key, group]) => (
                                 <div
                                     key={key}
@@ -90,7 +90,7 @@ const Navbar: React.FC = () => {
                                     onMouseEnter={() => setActiveDropdown(key)}
                                     onMouseLeave={() => setActiveDropdown(null)}
                                 >
-                                    <button className={`flex items-center gap-1 hover:text-white transition-all ${group.items.some(i => isActive(i.path)) ? 'text-brand-GOLD' : ''}`}>
+                                    <button className={`flex items-center gap-1 transition-all ${isScrolled ? 'hover:text-brand-TEAL-dark' : 'hover:text-white'} ${group.items.some(i => isActive(i.path)) ? 'text-brand-TEAL-dark' : ''}`}>
                                         {group.label} <ChevronDown size={12} className={`transition-transform duration-300 ${activeDropdown === key ? 'rotate-180' : ''}`} />
                                     </button>
 
@@ -110,8 +110,8 @@ const Navbar: React.FC = () => {
                                     </div>
                                 </div>
                             ))}
-                            <Link href={`/${lang}/podcast`} className={isActive('/podcast') ? 'text-brand-GOLD py-4' : 'hover:text-white transition-all py-4'}>{lang === 'es' ? 'Podcast' : 'Podcast'}</Link>
-                            <Link href={`/${lang}/contacto`} className={isActive('/contacto') ? 'text-brand-GOLD py-4' : 'hover:text-white transition-all py-4'}>{t.nav.contact}</Link>
+                            <Link href={`/${lang}/podcast`} className={`py-4 transition-all ${isActive('/podcast') ? 'text-brand-TEAL-dark' : isScrolled ? 'hover:text-brand-TEAL-dark' : 'hover:text-white'}`}>{lang === 'es' ? 'Podcast' : 'Podcast'}</Link>
+                            <Link href={`/${lang}/contacto`} className={`py-4 transition-all ${isActive('/contacto') ? 'text-brand-TEAL-dark' : isScrolled ? 'hover:text-brand-TEAL-dark' : 'hover:text-white'}`}>{t.nav.contact}</Link>
                         </div>
                         <div className="flex items-center gap-6">
                             <LanguageSwitcher currentLang={lang} />

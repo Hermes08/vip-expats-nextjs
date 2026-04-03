@@ -30,7 +30,7 @@ const BoqueteGuideContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={breadcrumbItems} />
             <FAQSchema questions={faqs} />
 
@@ -83,7 +83,7 @@ const BoqueteGuideContent: React.FC = () => {
                             keywords: "pino alto boquete investment"
                         }
                     ].map((n, i) => (
-                        <div key={i} className="bg-brand-900/40 p-10 rounded-[4rem] border border-white/5 hover:shadow-2xl transition-all h-full flex flex-col">
+                        <div key={i} className="bg-brand-50 p-10 rounded-[4rem] border border-brand-100 hover:shadow-2xl transition-all h-full flex flex-col">
                             <Home className="text-brand-GOLD mb-8" size={48} />
                             <h4 className="text-2xl font-black uppercase tracking-tighter mb-4 italic text-white">{n.name}</h4>
                             <p className="text-sm text-neutral-500 font-medium leading-relaxed mb-6 flex-grow">{n.desc}</p>
@@ -120,7 +120,7 @@ const BoqueteGuideContent: React.FC = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className="order-1 lg:order-2 relative aspect-video overflow-hidden rounded-[4rem] shadow-2xl border border-white/5">
+                        <div className="order-1 lg:order-2 relative aspect-video overflow-hidden rounded-[4rem] shadow-2xl border border-brand-100">
                             <Image
                                 src="https://images.unsplash.com/photo-1544644011-87b829283197?w=1000&q=80"
                                 alt="Expat lifestyle in the lush mountains of Boquete, Panama"
@@ -134,7 +134,7 @@ const BoqueteGuideContent: React.FC = () => {
 
             {/* ROI & Investment */}
             <section className="py-32 max-w-7xl mx-auto px-4">
-                <div className="bg-brand-900/40 p-16 rounded-[4rem] flex flex-col md:flex-row gap-16 items-center">
+                <div className="bg-brand-50 p-16 rounded-[4rem] flex flex-col md:flex-row gap-16 items-center">
                     <div className="md:w-1/2">
                         <h2 className="text-4xl font-heading font-black mb-8 uppercase tracking-tighter italic text-white">Highlands <span className="text-brand-GOLD">ROI</span></h2>
                         <p className="text-neutral-500 font-medium leading-relaxed mb-8">
@@ -150,11 +150,11 @@ const BoqueteGuideContent: React.FC = () => {
                         </div>
                     </div>
                     <div className="md:w-1/2 grid grid-cols-2 gap-4">
-                        <div className="p-8 bg-white rounded-3xl border border-white/5 shadow-sm text-center">
+                        <div className="p-8 bg-white rounded-3xl border border-brand-100 shadow-sm text-center">
                             <div className="text-3xl font-black italic text-white mb-2">8%</div>
                             <div className="text-[9px] font-black uppercase tracking-widest text-neutral-400">Rental Yield</div>
                         </div>
-                        <div className="p-8 bg-white rounded-3xl border border-white/5 shadow-sm text-center">
+                        <div className="p-8 bg-white rounded-3xl border border-brand-100 shadow-sm text-center">
                             <div className="text-3xl font-black italic text-white mb-2">12k+</div>
                             <div className="text-[9px] font-black uppercase tracking-widest text-neutral-400">Expats</div>
                         </div>

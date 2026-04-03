@@ -64,7 +64,7 @@ const RelocationEarlyRetirementContent = () => {
                         <Link href={`/${lang}/contacto`} className="px-8 py-4 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
                             Unlock My Early Exit
                         </Link>
-                        <Link href={`/${lang}/relocation/legal`} className="px-8 py-4 bg-white/5 border border-white/10 text-white rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white/10 transition-all">
+                        <Link href={`/${lang}/relocation/legal`} className="px-8 py-4 bg-white/5 border border-brand-100 text-white rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white/10 transition-all">
                             View Visa Paths
                         </Link>
                     </div>
@@ -139,7 +139,7 @@ const RelocationEarlyRetirementContent = () => {
                                 desc: "No minimum age. If you have a $1,000/mo government or corporate pension, you are IN. Includes all Law-6 discounts immediately."
                             }
                         ].map((path, idx) => (
-                            <div key={idx} className="p-12 bg-white/5 border border-white/5 rounded-2xl group hover:border-brand-GOLD/30 transition-all">
+                            <div key={idx} className="p-12 bg-white/5 border border-brand-100 rounded-2xl group hover:border-brand-GOLD/30 transition-all">
                                 <div className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest mb-4 flex justify-between">
                                     <span>{path.speed}</span>
                                     <span>{path.target}</span>
@@ -170,7 +170,7 @@ const RelocationEarlyRetirementContent = () => {
                             { icon: <Globe className="text-brand-GOLD" size={32} />, title: "Travel Base", desc: "Use Tocumen (Hub of the Americas) to explore the continent with ease and zero jetlag." },
                             { icon: <Home className="text-brand-GOLD" size={32} />, title: "Asset Build", desc: "Build wealth through Panama's growing luxury hospitality and short-term rental market." }
                         ].map((item, idx) => (
-                            <div key={idx} className="p-10 bg-brand-950 rounded-2xl border border-white/10 hover:bg-white hover:shadow-xl transition-all">
+                            <div key={idx} className="p-10 bg-brand-950 rounded-2xl border border-brand-100 hover:bg-white hover:shadow-xl transition-all">
                                 <div className="mb-6">{item.icon}</div>
                                 <h3 className="text-xl font-black uppercase tracking-tighter mb-4 italic leading-tight">{item.title}</h3>
                                 <p className="text-slate-400 font-medium text-xs leading-relaxed">{item.desc}</p>
@@ -186,7 +186,7 @@ const RelocationEarlyRetirementContent = () => {
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-black mb-20 text-center uppercase tracking-tighter italic italic">Early Relocation <span className="text-brand-GOLD">Intel</span></h2>
                     <div className="space-y-6">
                         {faqs.map((faq, idx) => (
-                            <details key={idx} className="group bg-white/5 border border-white/10 rounded-2xl overflow-hidden transition-all hover:border-brand-GOLD/50">
+                            <details key={idx} className="group bg-white/5 border border-brand-100 rounded-2xl overflow-hidden transition-all hover:border-brand-GOLD/50">
                                 <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
                                     <span className="text-lg font-black uppercase tracking-tighter italic pr-8">{faq.question}</span>
                                     <HelpCircle className="text-brand-GOLD/50 group-hover:text-brand-GOLD transition-colors" size={24} />

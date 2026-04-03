@@ -44,7 +44,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <ServiceSchema
                 name="Panama Qualified Investor Visa VIP Services"
@@ -168,7 +168,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
                             desc: "The 'Cash' path. Place a fixed deposit in a local bank for 5 years. This allows you to earn interest while securing residency."
                         }
                     ].map((opt, i) => (
-                        <div key={i} className="p-12 bg-brand-950 rounded-2xl border border-white/10 group hover:border-brand-GOLD transition-all">
+                        <div key={i} className="p-12 bg-brand-950 rounded-2xl border border-brand-100 group hover:border-brand-GOLD transition-all">
                             <h4 className="text-brand-GOLD font-black text-xs uppercase tracking-widest mb-4">Min: {opt.amount}</h4>
                             <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 italic leading-none">{opt.title}</h3>
                             <p className="text-sm text-slate-400 font-medium leading-relaxed">{opt.desc}</p>
@@ -178,7 +178,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
             </section>
 
             {/* ROI Analysis: The 2026 Real Estate Market */}
-            <section className="py-14 bg-brand-900">
+            <section className="py-14 bg-brand-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-24 items-center">
                         <div className="lg:w-1/2">
@@ -203,7 +203,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
                                 { title: "Liquidity", desc: "US Dollar assets are easy to resell globally." },
                                 { title: "Protection", desc: "Investment backed by rigid civil-law ownership." }
                             ].map((s, i) => (
-                                <div key={i} className="p-8 bg-brand-950 rounded-3xl border border-white/10 shadow-sm">
+                                <div key={i} className="p-8 bg-brand-950 rounded-3xl border border-brand-100 shadow-sm">
                                     <h4 className="font-black text-brand-GOLD uppercase text-xs mb-2">{s.title}</h4>
                                     <p className="text-xs text-slate-400 font-bold">{s.desc}</p>
                                 </div>
@@ -297,7 +297,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
 
                 <div className="space-y-6">
                     {faqs.map((faq, i) => (
-                        <details key={i} className="group bg-brand-950 rounded-2xl border border-white/10 overflow-hidden transition-all hover:border-brand-GOLD/50">
+                        <details key={i} className="group bg-brand-950 rounded-2xl border border-brand-100 overflow-hidden transition-all hover:border-brand-GOLD/50">
                             <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
                                 <span className="text-xl font-black uppercase tracking-tighter italic pr-8">{faq.question}</span>
                                 <HelpCircle className="text-brand-GOLD" size={24} />

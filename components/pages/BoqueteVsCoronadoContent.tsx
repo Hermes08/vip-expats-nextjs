@@ -34,7 +34,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <FAQSchema questions={faqs.map(f => ({ question: f.q, answer: f.a }))} />
             <ServiceSchema
@@ -91,11 +91,11 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                             <h4 className="text-xl font-black uppercase tracking-widest text-brand-GOLD">Quick Verdict</h4>
                         </div>
                         <div className="space-y-6">
-                            <div className="p-6 bg-white/5 rounded-3xl border border-white/5">
+                            <div className="p-6 bg-white/5 rounded-3xl border border-brand-100">
                                 <h5 className="font-black uppercase tracking-widest text-xs mb-2">Choose Boquete If...</h5>
                                 <p className="text-sm text-gray-400">You love nature, hiking, cooler temperatures, and a small-town community feel.</p>
                             </div>
-                            <div className="p-6 bg-white/5 rounded-3xl border border-white/5">
+                            <div className="p-6 bg-white/5 rounded-3xl border border-brand-100">
                                 <h5 className="font-black uppercase tracking-widest text-xs mb-2">Choose Coronado If...</h5>
                                 <p className="text-sm text-gray-400">You want beach access, golf, active social scenes, and 1-hour access to Panama City.</p>
                             </div>
@@ -129,11 +129,11 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                                 <Image src="https://images.unsplash.com/photo-1549439602-43ebca2327af?w=600&q=80" alt="Mountain view in Boquete" fill className="object-cover" />
                             </div>
                             <div className="space-y-6">
-                                <div className="p-8 bg-white/5 rounded-[3rem] border border-white/10">
+                                <div className="p-8 bg-white/5 rounded-[3rem] border border-brand-100">
                                     <h4 className="text-2xl font-black italic text-brand-GOLD">$1.2k+</h4>
                                     <p className="text-[10px] font-black uppercase tracking-widest opacity-60">Avg Monthly Living</p>
                                 </div>
-                                <div className="p-8 bg-white/5 rounded-[3rem] border border-white/10">
+                                <div className="p-8 bg-white/5 rounded-[3rem] border border-brand-100">
                                     <h4 className="text-2xl font-black italic text-brand-GOLD">68°F</h4>
                                     <p className="text-[10px] font-black uppercase tracking-widest opacity-60">Avg Temperature</p>
                                 </div>
@@ -224,7 +224,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             </section>
 
             {/* Weather Wars: The Critical Factor */}
-            <section className="py-32 bg-brand-900/40 rounded-[5rem] mx-4">
+            <section className="py-32 bg-brand-50 rounded-[5rem] mx-4">
                 <div className="max-w-7xl mx-auto px-8">
                     <div className="text-center mb-24">
                         <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic">Systems <br /><span className="text-brand-GOLD">& Maintenance</span></h2>
@@ -290,7 +290,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                             <p>
                                 However, expert safety means being smart. Petty theft is the most common issue. We teach our <strong>panama relocation tours</strong> clients the "Golden Rules" of security, like not leaving valuables in cars at remote trailheads in Boquete or being discreet with high-end jewelry in the city.
                             </p>
-                            <div className="flex gap-4 p-8 bg-white/5 rounded-3xl border border-white/5">
+                            <div className="flex gap-4 p-8 bg-white/5 rounded-3xl border border-brand-100">
                                 <div className="text-brand-GOLD font-black text-2xl">92%</div>
                                 <p className="text-[10px] font-black uppercase tracking-widest leading-relaxed">of Expats report feeling safer in Panama than in their home country's major cities.</p>
                             </div>
@@ -329,7 +329,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             </section>
 
             {/* Schooling and Families section */}
-            <section className="py-32 bg-brand-900/40 rounded-[5rem] mx-4">
+            <section className="py-32 bg-brand-50 rounded-[5rem] mx-4">
                 <div className="max-w-7xl mx-auto px-8 text-center mb-24">
                     <h2 className="text-4xl md:text-7xl font-heading font-black mb-8 uppercase tracking-tighter italic underline italic leading-none">The <span className="text-brand-GOLD">Education</span> <br /> Blueprint</h2>
                     <p className="max-w-3xl mx-auto text-lg text-neutral-500 font-medium">
@@ -338,7 +338,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                 </div>
 
                 <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-20">
-                    <div className="p-16 bg-white rounded-[4rem] shadow-xl border border-white/5">
+                    <div className="p-16 bg-white rounded-[4rem] shadow-xl border border-brand-100">
                         <h4 className="text-2xl font-black uppercase tracking-tighter mb-8 italic">Boquete Schools</h4>
                         <p className="text-neutral-500 leading-relaxed mb-8">
                             Boquete offers several bilingual and international options like <strong>The Boquete International School</strong> and <strong>Academia Internacional Boquete</strong>. The focus is often on project-based learning and environmental awareness.
@@ -347,7 +347,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                             <Zap size={14} /> Curriculum: US/Panama Hybrid
                         </div>
                     </div>
-                    <div className="p-16 bg-neutral-900 text-white rounded-[4rem] shadow-2xl border border-white/5">
+                    <div className="p-16 bg-neutral-900 text-white rounded-[4rem] shadow-2xl border border-brand-100">
                         <h4 className="text-2xl font-black uppercase tracking-tighter mb-8 italic text-brand-GOLD">Coronado Schools</h4>
                         <p className="text-slate-400 leading-relaxed mb-8">
                             Coronado features the prestigious <strong>Coronado International School</strong>. Proximity to the city guarantees superior resources for extracurriculars including competitive surf and golf academies.
@@ -403,7 +403,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             {/* Comparison Table (SEO Powerhouse) */}
             <section className="py-32 max-w-7xl mx-auto px-4">
                 <h2 className="text-4xl font-heading font-black mb-16 uppercase tracking-tighter italic text-center">Side-By-Side <span className="text-brand-GOLD italic">Logic</span></h2>
-                <div className="overflow-x-auto rounded-[3rem] border border-white/5 shadow-2xl">
+                <div className="overflow-x-auto rounded-[3rem] border border-brand-100 shadow-2xl">
                     <table className="w-full text-left bg-white border-collapse">
                         <thead>
                             <tr className="bg-brand-950 text-white">
@@ -421,7 +421,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                                 { m: "Social Scene", b: "Quiet, Yoga, Arts", c: "Active, Golf, Bars" },
                                 { m: "Connectivity", b: "Great Fiber Optics", c: "Excellent Starlink + Fiber" }
                             ].map((row, i) => (
-                                <tr key={i} className="border-b border-neutral-50 hover:bg-brand-900/40 transition-colors">
+                                <tr key={i} className="border-b border-neutral-50 hover:bg-brand-50 transition-colors">
                                     <td className="p-10 font-black uppercase tracking-widest text-[10px] text-brand-950">{row.m}</td>
                                     <td className="p-10">{row.b}</td>
                                     <td className="p-10">{row.c}</td>
@@ -433,17 +433,17 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             </section>
 
             {/* Related Resources: The Topic Cluster */}
-            <section className="py-24 bg-brand-900/40 rounded-[5rem] mx-4 mb-32">
+            <section className="py-24 bg-brand-50 rounded-[5rem] mx-4 mb-32">
                 <div className="max-w-7xl mx-auto px-8">
                     <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-neutral-400 mb-12 text-center">Complete Your Research</h4>
                     <div className="grid md:grid-cols-2 gap-8">
-                        <Link href={`/${lang}/relocation/pricing`} className="group p-10 bg-white rounded-[3rem] border border-white/5 hover:border-brand-GOLD transition-all shadow-sm">
+                        <Link href={`/${lang}/relocation/pricing`} className="group p-10 bg-white rounded-[3rem] border border-brand-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Zap className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Cost of Living 2026</h5>
                             <p className="text-xs text-neutral-500 font-medium mb-6">Compare the exact costs of Boquete vs Coronado vs Panama City.</p>
                             <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">View Guide <ArrowRight size={12} /></span>
                         </Link>
-                        <Link href={`/${lang}/relocation/guides`} className="group p-10 bg-white rounded-[3rem] border border-white/5 hover:border-brand-GOLD transition-all shadow-sm">
+                        <Link href={`/${lang}/relocation/guides`} className="group p-10 bg-white rounded-[3rem] border border-brand-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Sun className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Weather Guide 2026</h5>
                             <p className="text-xs text-neutral-500 font-medium mb-6">Discover the best time to visit and how microclimates affect your move.</p>

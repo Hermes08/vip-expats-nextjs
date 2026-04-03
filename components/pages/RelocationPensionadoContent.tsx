@@ -44,7 +44,7 @@ const RelocationPensionadoContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <ServiceSchema
                 name="Panama Pensionado Visa Services"
@@ -92,7 +92,7 @@ const RelocationPensionadoContent: React.FC = () => {
                             <p>
                                 <strong>Panama's pensionado program</strong> is backed by law and cannot be revoked once granted. It provides a unique "First World Service at Third World Prices" experience, especially in hubs like <strong>Boquete</strong> and <strong>Coronado</strong>.
                             </p>
-                            <div className="p-8 bg-brand-950 rounded-2xl border border-white/10">
+                            <div className="p-8 bg-brand-950 rounded-2xl border border-brand-100">
                                 <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-widest mb-4">The Elite ROI</h4>
                                 <ul className="space-y-4">
                                     <li className="flex gap-3 text-sm text-neutral-800 font-bold">
@@ -139,7 +139,7 @@ const RelocationPensionadoContent: React.FC = () => {
                             { title: "25% Off Flights", desc: "Discounts on international tickets originating from Panama. Ideal for visiting family back home." },
                             { title: "One-Time Tax Exempt", desc: "Import your household goods (up to $10,000) and a new car (every 2 years) tax-free." }
                         ].map((b, i) => (
-                            <div key={i} className="bg-white/5 border border-white/5 p-6 rounded-[3.5rem] hover:border-brand-GOLD/30 transition-all group">
+                            <div key={i} className="bg-white/5 border border-brand-100 p-6 rounded-[3.5rem] hover:border-brand-GOLD/30 transition-all group">
                                 <h4 className="text-2xl font-black uppercase tracking-tighter mb-4 italic text-brand-GOLD">{b.title}</h4>
                                 <p className="text-slate-400 font-medium text-sm leading-relaxed">{b.desc}</p>
                             </div>
@@ -149,7 +149,7 @@ const RelocationPensionadoContent: React.FC = () => {
             </section>
 
             {/* The Retirement Revolution 2026 */}
-            <section className="py-14 bg-brand-900">
+            <section className="py-14 bg-brand-50">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-24 items-center">
                         <div className="lg:w-1/2">
@@ -198,7 +198,7 @@ const RelocationPensionadoContent: React.FC = () => {
                                 { title: "San Fernando", desc: "Highly regarded for geriatric and specialized care." },
                                 { title: "Coronado Clinic", desc: "Local emergency care for the beach community." }
                             ].map((h, i) => (
-                                <div key={i} className="p-8 bg-white rounded-3xl border border-white/10 shadow-sm">
+                                <div key={i} className="p-8 bg-white rounded-3xl border border-brand-100 shadow-sm">
                                     <h4 className="font-black text-brand-GOLD uppercase text-xs mb-2">{h.title}</h4>
                                     <p className="text-xs text-slate-400">{h.desc}</p>
                                 </div>
@@ -209,7 +209,7 @@ const RelocationPensionadoContent: React.FC = () => {
             </section>
 
             {/* NEW SECTION: PET RELOCATION */}
-            <section className="py-14 bg-brand-900">
+            <section className="py-14 bg-brand-50">
                 <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row-reverse gap-20 items-center">
                     <div className="lg:w-1/2">
                         <Cat size={64} className="text-brand-GOLD mb-10" />
@@ -235,19 +235,19 @@ const RelocationPensionadoContent: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-8 relative z-10 grid lg:grid-cols-2 gap-24 items-center">
                     <div className="order-2 lg:order-1">
                         <div className="grid grid-cols-2 gap-8">
-                            <div className="p-8 bg-white/5 rounded-3xl border border-white/5">
+                            <div className="p-8 bg-white/5 rounded-3xl border border-brand-100">
                                 <h4 className="text-brand-GOLD font-black uppercase text-xs mb-2">Container Shipping</h4>
                                 <p className="text-xs text-slate-400">Door-to-door service from North America/Europe to Panama City or Boquete.</p>
                             </div>
-                            <div className="p-8 bg-white/5 rounded-3xl border border-white/5">
+                            <div className="p-8 bg-white/5 rounded-3xl border border-brand-100">
                                 <h4 className="text-brand-GOLD font-black uppercase text-xs mb-2">Customs Clearing</h4>
                                 <p className="text-xs text-slate-400">One-time tax exemption for $10k in household goods for Pensionados.</p>
                             </div>
-                            <div className="p-8 bg-white/5 rounded-3xl border border-white/5">
+                            <div className="p-8 bg-white/5 rounded-3xl border border-brand-100">
                                 <h4 className="text-brand-GOLD font-black uppercase text-xs mb-2">Vehicle Import</h4>
                                 <p className="text-xs text-slate-400">Import one vehicle tax-free every 2 years. We handle the exoneration paperwork.</p>
                             </div>
-                            <div className="p-8 bg-white/5 rounded-3xl border border-white/5">
+                            <div className="p-8 bg-white/5 rounded-3xl border border-brand-100">
                                 <h4 className="text-brand-GOLD font-black uppercase text-xs mb-2">Inventory Lists</h4>
                                 <p className="text-xs text-slate-400">Specific Spanish/English inventory lists required for Consulate approval.</p>
                             </div>
@@ -283,7 +283,7 @@ const RelocationPensionadoContent: React.FC = () => {
                             { title: "DIY Bank Openings", desc: "Trying to open a bank account alone. 90% of expats fail here. Without professional pre-clearance, you cannot deposit your retirement funds." },
                             { title: "Translation Errors", desc: "Panama requires certified Panamanian translations. Using a translator from your home country is a guaranteed rejection at the desk." }
                         ].map((p, i) => (
-                            <div key={i} className="p-10 bg-white/5 rounded-2xl border border-white/5">
+                            <div key={i} className="p-10 bg-white/5 rounded-2xl border border-brand-100">
                                 <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic text-brand-GOLD italic">{p.title}</h4>
                                 <p className="text-sm text-slate-400 font-medium leading-relaxed">{p.desc}</p>
                             </div>
@@ -306,7 +306,7 @@ const RelocationPensionadoContent: React.FC = () => {
                         { step: "Phase 3: Processing (Month 4-6)", title: "Temporary to Permanent", desc: "You receive your temporary card immediately. Permanent residency usually takes 90-120 days. No need to stay in the country for this part. We monitor the 'E-Cedula' process for you." },
                         { step: "Phase 4: The Perks (Month 7+)", title: "Activating Your Discounts", desc: "Once your permanent card is issued, we help you register for electricity, water, and airline discounts. This is where your ROI begins." }
                     ].map((step, i) => (
-                        <div key={i} className="flex flex-col md:flex-row gap-10 p-6 bg-brand-950 rounded-2xl border border-white/10 items-center">
+                        <div key={i} className="flex flex-col md:flex-row gap-10 p-6 bg-brand-950 rounded-2xl border border-brand-100 items-center">
                             <div className="md:w-1/4">
                                 <span className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-GOLD">{step.step}</span>
                             </div>
@@ -329,7 +329,7 @@ const RelocationPensionadoContent: React.FC = () => {
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-12">
-                    <div className="p-12 bg-brand-950 rounded-2xl border border-white/10 relative overflow-hidden group">
+                    <div className="p-12 bg-brand-950 rounded-2xl border border-brand-100 relative overflow-hidden group">
                         <div className="absolute top-0 right-0 p-8 opacity-5 group-hover:opacity-10 transition-all">
                             <Compass size={120} />
                         </div>
@@ -392,19 +392,19 @@ const RelocationPensionadoContent: React.FC = () => {
                         </div>
                     </div>
                     <div className="lg:w-1/2 grid grid-cols-2 gap-6">
-                        <div className="p-8 bg-brand-950 rounded-3xl border border-white/10 flex flex-col justify-between">
+                        <div className="p-8 bg-brand-950 rounded-3xl border border-brand-100 flex flex-col justify-between">
                             <h4 className="text-xs font-black uppercase tracking-widest text-brand-GOLD">Banking</h4>
                             <p className="text-xs text-slate-400 font-bold mt-4 leading-relaxed">Full compliance support and intro to private banking managers.</p>
                         </div>
-                        <div className="p-8 bg-brand-950 rounded-3xl border border-white/10 flex flex-col justify-between">
+                        <div className="p-8 bg-brand-950 rounded-3xl border border-brand-100 flex flex-col justify-between">
                             <h4 className="text-xs font-black uppercase tracking-widest text-brand-GOLD">Taxes</h4>
                             <p className="text-xs text-slate-400 font-bold mt-4 leading-relaxed">Tax residency certificates to help you exit your home tax system legally.</p>
                         </div>
-                        <div className="p-8 bg-brand-950 rounded-3xl border border-white/10 flex flex-col justify-between">
+                        <div className="p-8 bg-brand-950 rounded-3xl border border-brand-100 flex flex-col justify-between">
                             <h4 className="text-xs font-black uppercase tracking-widest text-brand-GOLD">Wills</h4>
                             <p className="text-xs text-slate-400 font-bold mt-4 leading-relaxed">Creation of Panama-specific wills to protect your local assets.</p>
                         </div>
-                        <div className="p-8 bg-brand-950 rounded-3xl border border-white/10 flex flex-col justify-between">
+                        <div className="p-8 bg-brand-950 rounded-3xl border border-brand-100 flex flex-col justify-between">
                             <h4 className="text-xs font-black uppercase tracking-widest text-brand-GOLD">Estate</h4>
                             <p className="text-xs text-slate-400 font-bold mt-4 leading-relaxed">Advice on using Panama Foundations for asset protection.</p>
                         </div>
@@ -421,7 +421,7 @@ const RelocationPensionadoContent: React.FC = () => {
 
                 <div className="space-y-6">
                     {faqs.map((faq, i) => (
-                        <details key={i} className="group bg-brand-950 rounded-2xl border border-white/10 overflow-hidden transition-all hover:border-brand-GOLD/50">
+                        <details key={i} className="group bg-brand-950 rounded-2xl border border-brand-100 overflow-hidden transition-all hover:border-brand-GOLD/50">
                             <summary className="flex items-center justify-between p-8 cursor-pointer list-none">
                                 <span className="text-xl font-black uppercase tracking-tighter italic pr-8">{faq.question}</span>
                                 <span className="text-brand-GOLD group-open:rotate-180 transition-transform duration-300">

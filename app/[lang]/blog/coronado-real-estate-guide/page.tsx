@@ -95,7 +95,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
     await params;
 
     return (
-        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+        <article className="bg-white min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-900 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -137,7 +137,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                             { stat: '5,000+', label: 'Expats already living here' },
                             { stat: '90 min', label: 'Drive to Panama City airport' },
                         ].map((s, i) => (
-                            <div key={i} className="bg-brand-900 rounded-2xl p-5 text-center border border-white/5">
+                            <div key={i} className="bg-brand-900 rounded-2xl p-5 text-center border border-brand-100">
                                 <div className="text-2xl font-black text-brand-GOLD mb-1">{s.stat}</div>
                                 <div className="text-slate-400 text-xs leading-relaxed">{s.label}</div>
                             </div>
@@ -153,7 +153,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                     </h2>
                     <div className="space-y-5">
                         {propertyTypes.map((p, i) => (
-                            <div key={i} className="glass-card rounded-2xl p-7 border border-white/5">
+                            <div key={i} className="glass-card rounded-2xl p-7 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-4 mb-3">
                                     <h3 className="text-xl font-heading font-black text-white">{p.type}</h3>
                                     <div className="flex gap-4 text-right">
@@ -185,7 +185,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                     </h2>
                     <div className="grid sm:grid-cols-2 gap-5">
                         {neighborhoods.map((n, i) => (
-                            <div key={i} className="glass-card rounded-2xl p-6 border border-white/5">
+                            <div key={i} className="glass-card rounded-2xl p-6 border border-brand-100">
                                 <div className="flex justify-between items-start mb-3">
                                     <h3 className="text-white font-heading font-bold text-lg">{n.name}</h3>
                                     <span className="text-brand-GOLD font-black text-sm">{n.priceIndex}</span>
@@ -204,7 +204,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                     </h2>
                     <div className="grid sm:grid-cols-2 gap-4">
                         {whyInvest.map((item, i) => (
-                            <div key={i} className="flex items-start gap-3 glass-card rounded-xl p-5 border border-white/5">
+                            <div key={i} className="flex items-start gap-3 glass-card rounded-xl p-5 border border-brand-100">
                                 <CheckCircle size={16} className="text-brand-GOLD mt-1 flex-shrink-0" />
                                 <div>
                                     <div className="text-white font-bold text-sm mb-1">{item.title}</div>
@@ -247,7 +247,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
 
                 {/* Who it is for / not for */}
                 <section className="reveal-on-scroll grid md:grid-cols-2 gap-6">
-                    <div className="glass-card rounded-2xl p-6 border border-white/5">
+                    <div className="glass-card rounded-2xl p-6 border border-brand-100">
                         <div className="text-brand-GOLD font-black uppercase tracking-widest text-xs mb-4">Coronado is Perfect For</div>
                         <ul className="space-y-2">
                             {[
@@ -264,7 +264,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                             ))}
                         </ul>
                     </div>
-                    <div className="glass-card rounded-2xl p-6 border border-white/5">
+                    <div className="glass-card rounded-2xl p-6 border border-brand-100">
                         <div className="text-slate-500 font-black uppercase tracking-widest text-xs mb-4">Consider Elsewhere If You Want</div>
                         <ul className="space-y-2">
                             {[
@@ -297,7 +297,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                             { n: '5', t: 'Arrange financing or wire transfer', b: 'Most foreign buyers pay cash. Panamanian mortgages for non-residents are available but limited. Some developers offer direct financing on new builds.' },
                             { n: '6', t: 'Close at a Notary Public', b: 'Panama property transfers are executed through a Notary Public. Once registered in the Public Registry, the property is yours. The entire process takes 30–90 days.' },
                         ].map((s, i) => (
-                            <div key={i} className="flex items-start gap-4 glass-card rounded-xl p-5 border border-white/5">
+                            <div key={i} className="flex items-start gap-4 glass-card rounded-xl p-5 border border-brand-100">
                                 <div className="w-8 h-8 rounded-full bg-brand-GOLD/10 border border-brand-GOLD/30 flex items-center justify-center flex-shrink-0">
                                     <span className="text-brand-GOLD font-black text-xs">{s.n}</span>
                                 </div>
@@ -344,7 +344,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                         <Link
                             key={i}
                             href={link.href}
-                            className="flex items-center justify-between glass-card p-4 rounded-xl border border-white/5 hover:border-brand-GOLD/30 transition-all group"
+                            className="flex items-center justify-between glass-card p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                         >
                             <span className="text-white text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />

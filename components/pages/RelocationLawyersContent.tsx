@@ -51,7 +51,7 @@ const RelocationLawyersContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <FAQSchema questions={faqs.map(f => ({ question: f.q, answer: f.a }))} />
 
@@ -99,7 +99,7 @@ const RelocationLawyersContent: React.FC = () => {
                                     <div className="text-3xl font-black italic text-brand-GOLD mb-2">100%</div>
                                     <div className="text-[9px] font-black uppercase tracking-widest opacity-60">Filing Success Rate</div>
                                 </div>
-                                <div className="p-8 bg-brand-950 rounded-2xl border border-white/10">
+                                <div className="p-8 bg-brand-950 rounded-2xl border border-brand-100">
                                     <div className="text-3xl font-black italic text-brand-950 mb-2">24/7</div>
                                     <div className="text-[9px] font-black uppercase tracking-widest text-slate-400">Legal Support</div>
                                 </div>
@@ -128,7 +128,7 @@ const RelocationLawyersContent: React.FC = () => {
 
                     <div className="grid md:grid-cols-3 gap-8">
                         {lawyerSpecialties.map((spec, i) => (
-                            <div key={i} className="bg-white p-6 rounded-2xl border border-white/10 shadow-sm hover:border-brand-GOLD transition-all group">
+                            <div key={i} className="bg-white p-6 rounded-2xl border border-brand-100 shadow-sm hover:border-brand-GOLD transition-all group">
                                 <spec.icon className="text-brand-GOLD mb-8 group-hover:scale-110 transition-transform" size={48} />
                                 <h3 className="text-2xl font-black uppercase tracking-tighter mb-6 italic">{spec.title}</h3>
                                 <p className="text-slate-400 text-sm font-medium leading-relaxed mb-10" dangerouslySetInnerHTML={{ __html: spec.desc }}></p>
@@ -168,15 +168,15 @@ const RelocationLawyersContent: React.FC = () => {
                             </ul>
                         </div>
                         <div className="lg:w-1/2 grid grid-cols-2 gap-4">
-                            <div className="p-8 bg-white/5 border border-white/5 rounded-3xl text-center">
+                            <div className="p-8 bg-white/5 border border-brand-100 rounded-3xl text-center">
                                 <Award className="text-brand-GOLD mx-auto mb-4" size={32} />
                                 <div className="text-xs font-black uppercase tracking-widest">Top Rated 2024</div>
                             </div>
-                            <div className="p-8 bg-white/5 border border-white/5 rounded-3xl text-center">
+                            <div className="p-8 bg-white/5 border border-brand-100 rounded-3xl text-center">
                                 <UserCheck className="text-brand-GOLD mx-auto mb-4" size={32} />
                                 <div className="text-xs font-black uppercase tracking-widest">Vetted In-Person</div>
                             </div>
-                            <div className="p-8 bg-white/5 border border-white/5 rounded-3xl text-center">
+                            <div className="p-8 bg-white/5 border border-brand-100 rounded-3xl text-center">
                                 <MessageSquare className="text-brand-GOLD mx-auto mb-4" size={32} />
                                 <div className="text-xs font-black uppercase tracking-widest">Fast Response</div>
                             </div>

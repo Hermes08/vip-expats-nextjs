@@ -82,7 +82,7 @@ const QuizPageContent: React.FC = () => {
 
     if (isSubmitted) {
         return (
-            <div className="pt-32 pb-20 bg-brand-950 min-h-screen">
+            <div className="pt-32 pb-20 bg-white min-h-screen">
                 <div className="max-w-5xl mx-auto px-4">
                     <div className="text-center mb-16 animate-in fade-in duration-700">
                         <div className="w-20 h-20 bg-brand-GOLD text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
@@ -111,7 +111,7 @@ const QuizPageContent: React.FC = () => {
 
                     <div className="grid md:grid-cols-3 gap-8">
                         {recommendations.slice(1, 4).map((p, idx) => (
-                            <div key={idx} className="glass-card rounded-3xl overflow-hidden border border-white/5 flex flex-col hover:shadow-2xl transition-all">
+                            <div key={idx} className="glass-card rounded-3xl overflow-hidden border border-brand-100 flex flex-col hover:shadow-2xl transition-all">
                                 <div className="h-48 overflow-hidden">
                                     <img src={p.images[0]} className="w-full h-full object-cover" alt="" />
                                 </div>
@@ -129,7 +129,7 @@ const QuizPageContent: React.FC = () => {
                         ))}
                     </div>
 
-                    <div className="mt-20 text-center p-12 bg-brand-900/60 rounded-[2.5rem] border border-white/5">
+                    <div className="mt-20 text-center p-12 bg-brand-50 rounded-[2.5rem] border border-brand-100">
                         <h3 className="text-2xl font-bold text-white mb-4">Want a guided experience?</h3>
                         <p className="text-slate-500 mb-8 max-w-xl mx-auto">Our advisors are ready to walk you through these neighborhoods in person or via video call.</p>
                         <button onClick={() => router.push('/contacto')} className="bg-brand-900 text-white px-12 py-5 rounded-full font-black uppercase tracking-widest text-xs shadow-2xl hover:bg-brand-GOLD hover:text-white transition-all">Schedule Discovery Call</button>
@@ -152,7 +152,7 @@ const QuizPageContent: React.FC = () => {
     );
 
     return (
-        <div className="pt-32 pb-20 bg-brand-950 min-h-screen">
+        <div className="pt-32 pb-20 bg-white min-h-screen">
             <div className="max-w-2xl mx-auto px-4">
                 {/* Progress Bar */}
                 <div className="mb-12">
@@ -165,7 +165,7 @@ const QuizPageContent: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="bg-brand-900/70 rounded-[2.5rem] p-10 md:p-16 relative overflow-hidden">
+                <div className="bg-brand-50 rounded-[2.5rem] p-10 md:p-16 relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-48 h-48 bg-brand-GOLD/5 rounded-full -mr-24 -mt-24 blur-3xl"></div>
 
                     <form onSubmit={handleSubmit} className="space-y-12">
@@ -336,7 +336,7 @@ const QuizPageContent: React.FC = () => {
                         )}
 
                         <div className="pt-8 border-t border-slate-100 flex justify-between gap-4">
-                            <button type="button" onClick={handlePrev} disabled={step === 1} className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold uppercase text-[10px] tracking-widest transition-all ${step === 1 ? 'opacity-0 invisible' : 'bg-brand-900/60 text-slate-400 hover:bg-brand-800'}`}>
+                            <button type="button" onClick={handlePrev} disabled={step === 1} className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold uppercase text-[10px] tracking-widest transition-all ${step === 1 ? 'opacity-0 invisible' : 'bg-brand-50 text-slate-400 hover:bg-brand-800'}`}>
                                 <ChevronLeft size={16} /> Previous
                             </button>
                             <button type="submit" className="flex items-center gap-2 bg-brand-900 text-white px-10 py-4 rounded-xl font-black uppercase text-[10px] tracking-[0.2em] hover:bg-brand-GOLD hover:text-white transition-all shadow-xl">

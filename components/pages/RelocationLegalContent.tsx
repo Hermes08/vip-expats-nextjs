@@ -99,7 +99,7 @@ const RelocationLegalContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
 
             <div className="max-w-7xl mx-auto px-4 mt-8">
@@ -142,7 +142,7 @@ const RelocationLegalContent: React.FC = () => {
             <section className="py-24 max-w-7xl mx-auto px-4">
                 <div className="grid md:grid-cols-3 gap-8">
                     {legalServices.map((service, i) => (
-                        <div key={i} className="bg-white/5 border border-white/5 p-6 rounded-2xl hover:border-brand-GOLD/30 transition-all group">
+                        <div key={i} className="bg-white/5 border border-brand-100 p-6 rounded-2xl hover:border-brand-GOLD/30 transition-all group">
                             <service.icon className="text-brand-GOLD mb-8 group-hover:scale-110 transition-transform" size={48} />
                             <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 italic">{service.title}</h3>
                             <p className="text-slate-400 font-medium leading-relaxed mb-8" dangerouslySetInnerHTML={{ __html: service.desc }}></p>
@@ -169,7 +169,7 @@ const RelocationLegalContent: React.FC = () => {
                             <p>
                                 Many firms will try to charge you $2,000 for a "Real Estate Purchase Review" or a "Car Buying Escrow." For most standard transactions, a reputable broker and a simple notary-certified contract are sufficient.
                             </p>
-                            <div className="p-8 bg-white/5 rounded-2xl border border-white/10">
+                            <div className="p-8 bg-white/5 rounded-2xl border border-brand-100">
                                 <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-widest mb-4">Save Your Money On:</h4>
                                 <ul className="grid grid-cols-2 gap-4 text-[10px] font-black uppercase tracking-widest">
                                     <li className="flex gap-2"><Check size={12} className="text-brand-GOLD" /> Standard Rental Leases</li>
@@ -208,15 +208,15 @@ const RelocationLegalContent: React.FC = () => {
                         </div>
                         <div className="lg:w-1/2">
                             <div className="grid grid-cols-2 gap-4">
-                                <div className="p-8 bg-black text-white rounded-2xl text-center border border-white/10">
+                                <div className="p-8 bg-black text-white rounded-2xl text-center border border-brand-100">
                                     <div className="text-4xl font-black italic text-brand-GOLD mb-2">15+</div>
                                     <div className="text-[9px] font-black uppercase tracking-widest opacity-60">Years of Experience</div>
                                 </div>
-                                <div className="p-8 bg-white/5 rounded-2xl text-center border border-white/10">
+                                <div className="p-8 bg-white/5 rounded-2xl text-center border border-brand-100">
                                     <div className="text-4xl font-black italic text-brand-950 mb-2">2,500+</div>
                                     <div className="text-[9px] font-black uppercase tracking-widest text-slate-400">Visas Processed</div>
                                 </div>
-                                <div className="p-8 bg-white/5 rounded-2xl text-center border border-white/10">
+                                <div className="p-8 bg-white/5 rounded-2xl text-center border border-brand-100">
                                     <div className="text-4xl font-black italic text-brand-950 mb-2">100%</div>
                                     <div className="text-[9px] font-black uppercase tracking-widest text-slate-400">Success Rate</div>
                                 </div>
@@ -239,7 +239,7 @@ const RelocationLegalContent: React.FC = () => {
 
                 <div className="space-y-10">
                     {faqs.map((faq, idx) => (
-                        <details key={idx} className="group bg-black rounded-2xl border border-white/5 overflow-hidden transition-all hover:border-brand-GOLD/50">
+                        <details key={idx} className="group bg-black rounded-2xl border border-brand-100 overflow-hidden transition-all hover:border-brand-GOLD/50">
                             <summary className="flex items-center justify-between p-8 cursor-pointer list-none">
                                 <span className="text-xl font-black uppercase tracking-tighter italic pr-8">{faq.question}</span>
                                 <span className="text-brand-GOLD group-open:rotate-180 transition-transform duration-300">

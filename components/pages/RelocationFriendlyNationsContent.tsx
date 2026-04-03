@@ -21,7 +21,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <ServiceSchema
                 name="Panama Friendly Nations Visa Services"
@@ -39,7 +39,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
             </div>
 
             {/* Header / Hero */}
-            <section className="relative min-h-screen flex items-center overflow-hidden border-b border-white/5 bg-brand-950">
+            <section className="relative min-h-screen flex items-center overflow-hidden border-b border-brand-100 bg-brand-950">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="https://images.unsplash.com/photo-1554188248-986adbb73be4?w=1600&q=80"
@@ -111,7 +111,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                        <div className="p-10 bg-white rounded-2xl shadow-sm border border-white/10">
+                        <div className="p-10 bg-white rounded-2xl shadow-sm border border-brand-100">
                             <h4 className="text-xl font-black uppercase tracking-tighter mb-6 italic text-brand-950">The Americas</h4>
                             <ul className="space-y-3 text-xs font-bold text-slate-400">
                                 <li>USA & Canada</li>
@@ -121,7 +121,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                                 <li>Paraguay</li>
                             </ul>
                         </div>
-                        <div className="p-10 bg-white rounded-2xl shadow-sm border border-white/10">
+                        <div className="p-10 bg-white rounded-2xl shadow-sm border border-brand-100">
                             <h4 className="text-xl font-black uppercase tracking-tighter mb-6 italic text-brand-950">Europe (Tier 1)</h4>
                             <ul className="space-y-3 text-xs font-bold text-slate-400">
                                 <li>UK & Ireland</li>
@@ -131,7 +131,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                                 <li>Netherlands & Belgium</li>
                             </ul>
                         </div>
-                        <div className="p-10 bg-white rounded-2xl shadow-sm border border-white/10">
+                        <div className="p-10 bg-white rounded-2xl shadow-sm border border-brand-100">
                             <h4 className="text-xl font-black uppercase tracking-tighter mb-6 italic text-brand-950">Europe (Tier 2)</h4>
                             <ul className="space-y-3 text-xs font-bold text-slate-400">
                                 <li>Andorra & Austria</li>
@@ -141,7 +141,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                                 <li>Finland & Greece</li>
                             </ul>
                         </div>
-                        <div className="p-10 bg-white rounded-2xl shadow-sm border border-white/10">
+                        <div className="p-10 bg-white rounded-2xl shadow-sm border border-brand-100">
                             <h4 className="text-xl font-black uppercase tracking-tighter mb-6 italic text-brand-950">APAC & Others</h4>
                             <ul className="space-y-3 text-xs font-bold text-slate-400">
                                 <li>Australia & NZ</li>
@@ -187,7 +187,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                     </div>
 
                     {/* Investment Path */}
-                    <div className="p-16 bg-black text-white rounded-2xl relative overflow-hidden group border border-white/10">
+                    <div className="p-16 bg-black text-white rounded-2xl relative overflow-hidden group border border-brand-100">
                         <div className="absolute top-0 right-0 p-6 opacity-5 scale-150 rotate-12">
                             <Landmark size={200} />
                         </div>
@@ -307,7 +307,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                             { title: "Punta Pacifica", desc: "High-end, waterfront living. Closest to the top hospitals and the financial district. Ideal for those working in private equity or tech." },
                             { title: "Casco Viejo", desc: "For the 'Creative' Friendly Nation. Historic charm, world-class nightlife, and a growing community of tech entrepreneurs." }
                         ].map((h, i) => (
-                            <div key={i} className="bg-white/5 p-6 rounded-2xl border border-white/5 hover:border-brand-GOLD transition-all">
+                            <div key={i} className="bg-white/5 p-6 rounded-2xl border border-brand-100 hover:border-brand-GOLD transition-all">
                                 <h4 className="text-2xl font-black uppercase tracking-tighter mb-6 italic text-brand-GOLD">{h.title}</h4>
                                 <p className="text-slate-400 text-sm font-medium leading-relaxed">{h.desc}</p>
                             </div>
@@ -329,10 +329,10 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                             Panama is no longer just a canal and a bank. It is becoming a tech and logistics hub for the entire region. For those on the **Professional Path** of the <strong>friendly nations visa</strong>, certain sectors are desperate for talent.
                         </p>
                         <ul className="grid grid-cols-2 gap-4">
-                            <li className="p-6 bg-brand-950 rounded-2xl border border-white/10 font-black uppercase tracking-tighter text-xs">FinTech & Crypto</li>
-                            <li className="p-6 bg-brand-950 rounded-2xl border border-white/10 font-black uppercase tracking-tighter text-xs">Cybersecurity</li>
-                            <li className="p-6 bg-brand-950 rounded-2xl border border-white/10 font-black uppercase tracking-tighter text-xs">Supply Chain Tech</li>
-                            <li className="p-6 bg-brand-950 rounded-2xl border border-white/10 font-black uppercase tracking-tighter text-xs">Renewable Energy</li>
+                            <li className="p-6 bg-brand-950 rounded-2xl border border-brand-100 font-black uppercase tracking-tighter text-xs">FinTech & Crypto</li>
+                            <li className="p-6 bg-brand-950 rounded-2xl border border-brand-100 font-black uppercase tracking-tighter text-xs">Cybersecurity</li>
+                            <li className="p-6 bg-brand-950 rounded-2xl border border-brand-100 font-black uppercase tracking-tighter text-xs">Supply Chain Tech</li>
+                            <li className="p-6 bg-brand-950 rounded-2xl border border-brand-100 font-black uppercase tracking-tighter text-xs">Renewable Energy</li>
                         </ul>
                         <p>
                             However, remember the <strong>protected professions</strong>. If you are an architect, nurse, or attorney in your home country, you CANNOT practice those specific roles in Panama even with the Friendly Nations visa. You must pivot to "Consulting" or "Management" roles to stay compliant.
@@ -359,7 +359,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-16 uppercase tracking-tighter italic leading-none border-l-8 border-brand-GOLD pl-10">Real Estate <br /> vs. <span className="text-brand-GOLD">Bank Deposit</span></h2>
                     <div className="grid lg:grid-cols-2 gap-20">
                         <div className="space-y-10">
-                            <div className="p-10 bg-brand-950 rounded-2xl border border-white/10">
+                            <div className="p-10 bg-brand-950 rounded-2xl border border-brand-100">
                                 <h3 className="text-2xl font-black uppercase italic mb-6">Option A: The $200k Property Play</h3>
                                 <p className="text-lg text-slate-400 font-medium leading-relaxed mb-8">
                                     In 2026, $200,000 in Panama City can still secure a high-end 1-bedroom in **San Francisco** or a luxury condo in **Coronado**.
@@ -454,7 +454,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="lg:w-1/2 aspect-video bg-white/5 rounded-2xl flex items-center justify-center p-20 border border-white/10">
+                    <div className="lg:w-1/2 aspect-video bg-white/5 rounded-2xl flex items-center justify-center p-20 border border-brand-100">
                         <div className="w-full aspect-[1.6/1] bg-black rounded-3xl p-6 border-t-4 border-brand-GOLD shadow-2xl">
                             <div className="flex justify-between items-start mb-10">
                                 <div className="w-16 h-16 bg-white/10 rounded-full"></div>
@@ -496,7 +496,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                         { q: "What is an E-Cedula?", a: "It is your official Panamanian ID card. It looks just like a local ID and makes daily life (banking, utilities, travel) significantly easier. You receive this after your residency is approved." },
                         { q: "Can I buy a property with a mortgage?", a: "For the investment path, the first $200,000 must be PAID IN FULL. Any amount above that can be financed via a Panamanian mortgage." }
                     ].map((faq, i) => (
-                        <div key={i} className="p-10 border-b border-white/10 group hover:bg-brand-900/40 transition-all rounded-2xl">
+                        <div key={i} className="p-10 border-b border-white/10 group hover:bg-brand-50 transition-all rounded-2xl">
                             <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic group-hover:text-brand-GOLD transition-colors">{faq.q}</h4>
                             <p className="text-sm text-slate-400 font-medium leading-relaxed">{faq.a}</p>
                         </div>

@@ -204,7 +204,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
     await params;
 
     return (
-        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+        <article className="bg-white min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-900 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -249,7 +249,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                     </p>
                     <div className="space-y-6">
                         {neighborhoods.map((n, i) => (
-                            <div key={i} className="glass-card rounded-2xl p-7 border border-white/5">
+                            <div key={i} className="glass-card rounded-2xl p-7 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-4 mb-4">
                                     <div>
                                         <div className="flex items-center gap-2 mb-1">
@@ -283,7 +283,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                     </p>
                     <div className="grid md:grid-cols-3 gap-6">
                         {monthlyBudgets.map((budget, i) => (
-                            <div key={i} className="glass-card rounded-2xl p-6 border border-white/5">
+                            <div key={i} className="glass-card rounded-2xl p-6 border border-brand-100">
                                 <div className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] mb-2">{budget.tier}</div>
                                 <div className="text-white font-black text-xl mb-4">
                                     {budget.total}<span className="text-slate-500 font-normal text-sm">/mo</span>
@@ -312,7 +312,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                     </p>
                     <div className="grid sm:grid-cols-2 gap-4">
                         {healthcareCosts.map((item, i) => (
-                            <div key={i} className="flex justify-between items-center bg-brand-900 rounded-xl px-5 py-4 border border-white/5">
+                            <div key={i} className="flex justify-between items-center bg-brand-900 rounded-xl px-5 py-4 border border-brand-100">
                                 <span className="text-slate-300 text-sm">{item.label}</span>
                                 <span className="text-brand-GOLD font-black text-sm">{item.cost}</span>
                             </div>
@@ -367,7 +367,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                 </section>
 
                 {/* Who thrives */}
-                <section className="reveal-on-scroll glass-card rounded-2xl p-8 border border-white/5">
+                <section className="reveal-on-scroll glass-card rounded-2xl p-8 border border-brand-100">
                     <h2 className="text-white text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic">
                         <Users className="inline text-brand-GOLD mr-2" size={24} />
                         Who Thrives in Panama City?
@@ -389,7 +389,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                     </h2>
                     <div className="space-y-3">
                         {visas.map((item, i) => (
-                            <div key={i} className="glass-card rounded-xl p-5 border border-white/5">
+                            <div key={i} className="glass-card rounded-xl p-5 border border-brand-100">
                                 <div className="flex flex-wrap gap-x-8 gap-y-2">
                                     <div>
                                         <div className="text-brand-GOLD font-black text-sm">{item.visa}</div>
@@ -434,7 +434,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                         <Link
                             key={i}
                             href={link.href}
-                            className="flex items-center justify-between glass-card p-4 rounded-xl border border-white/5 hover:border-brand-GOLD/30 transition-all group"
+                            className="flex items-center justify-between glass-card p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                         >
                             <span className="text-white text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />

@@ -16,7 +16,7 @@ const RelocationPricingContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={breadcrumbItems} />
             <div className="max-w-7xl mx-auto px-4 mt-8">
                 <Breadcrumbs items={breadcrumbItems} />
@@ -40,7 +40,7 @@ const RelocationPricingContent: React.FC = () => {
             <section className="py-14 max-w-7xl mx-auto px-4">
                 <div className="grid lg:grid-cols-3 gap-8">
                     {/* Tier 1: The Scout */}
-                    <div className="border border-white/10 p-6 rounded-2xl flex flex-col h-full hover:shadow-2xl transition-all group">
+                    <div className="border border-brand-100 p-6 rounded-2xl flex flex-col h-full hover:shadow-2xl transition-all group">
                         <div className="mb-10">
                             <h3 className="text-2xl font-black uppercase tracking-tighter mb-2 italic">The Scout</h3>
                             <p className="text-slate-400 font-bold uppercase tracking-widest text-[10px]">Digital Intelligence Pack</p>
@@ -105,7 +105,7 @@ const RelocationPricingContent: React.FC = () => {
                     </div>
 
                     {/* Tier 3: The Legend */}
-                    <div className="border border-white/10 p-6 rounded-2xl flex flex-col h-full hover:shadow-2xl transition-all group">
+                    <div className="border border-brand-100 p-6 rounded-2xl flex flex-col h-full hover:shadow-2xl transition-all group">
                         <div className="mb-10">
                             <h3 className="text-2xl font-black uppercase tracking-tighter mb-2 italic">The Legend</h3>
                             <p className="text-slate-400 font-bold uppercase tracking-widest text-[10px]">Full Relocation Concierge</p>
@@ -153,7 +153,7 @@ const RelocationPricingContent: React.FC = () => {
                             { icon: Globe, title: "VIP Life", desc: "Keys in hand, residency approved. Welcome to the Panama Real Estate Sale members community." }
                         ].map((step, i) => (
                             <div key={i} className="text-center">
-                                <div className="w-20 h-20 bg-brand-900/60 border border-white/10 shadow-xl rounded-full flex items-center justify-center mx-auto mb-8 text-brand-GOLD group hover:bg-brand-950 hover:text-white transition-all duration-500">
+                                <div className="w-20 h-20 bg-brand-50 border border-brand-100 shadow-xl rounded-full flex items-center justify-center mx-auto mb-8 text-brand-GOLD group hover:bg-brand-950 hover:text-white transition-all duration-500">
                                     <step.icon size={32} />
                                 </div>
                                 <div className="mb-4 text-brand-GOLD font-black text-xs uppercase tracking-widest">Step 0{i + 1}</div>

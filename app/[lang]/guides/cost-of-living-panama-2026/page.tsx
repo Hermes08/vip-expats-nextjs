@@ -81,8 +81,8 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
     await params;
 
     return (
-        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
-            <section className="bg-brand-900 py-24 relative overflow-hidden">
+        <article className="bg-white min-h-screen pt-28 pb-20">
+            <section className="section-dark py-24 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <img src="https://images.unsplash.com/photo-1556742111-a301076d9d18?w=1600&q=80" alt="Panama cost of living" className="w-full h-full object-cover" />
                 </div>
@@ -107,13 +107,13 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
 
                 {/* Budget tiers */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-brand-950 text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         <DollarSign className="inline text-brand-GOLD mr-1" size={22} />
                         Monthly Budget Tiers
                     </h2>
                     <div className="space-y-6">
                         {budgetTiers.map((tier, i) => (
-                            <div key={i} className="glass-card rounded-2xl p-6 border border-white/5">
+                            <div key={i} className="glass-card rounded-2xl p-6 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-center mb-4 gap-2">
                                     <div>
                                         <span className="text-brand-GOLD font-black uppercase tracking-widest text-[10px]">{tier.label} lifestyle</span>
@@ -124,7 +124,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
                                 <div className="grid sm:grid-cols-2 gap-2">
                                     {tier.items.map((item, j) => (
                                         <div key={j} className="flex justify-between items-center bg-brand-950 rounded-lg px-4 py-2.5">
-                                            <span className="text-slate-400 text-xs">{item.category}</span>
+                                            <span className="text-slate-500 text-xs">{item.category}</span>
                                             <span className="text-white font-bold text-xs">{item.cost}</span>
                                         </div>
                                     ))}
@@ -136,23 +136,23 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
 
                 {/* US vs Panama */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-brand-950 text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         Panama vs the US — Side by Side
                     </h2>
                     <div className="overflow-x-auto">
                         <table className="w-full text-sm border-collapse">
                             <thead>
-                                <tr className="border-b border-white/10">
+                                <tr className="border-b border-brand-100">
                                     <th className="text-left text-slate-500 text-[10px] uppercase tracking-widest py-3 pr-4">Expense</th>
-                                    <th className="text-left text-slate-400 text-[10px] uppercase tracking-widest py-3 px-3">USA</th>
+                                    <th className="text-left text-slate-500 text-[10px] uppercase tracking-widest py-3 px-3">USA</th>
                                     <th className="text-left text-brand-TEAL text-[10px] uppercase tracking-widest py-3 px-3">Panama</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {usVsPanama.map((row, i) => (
                                     <tr key={i} className="border-b border-white/5">
-                                        <td className="text-slate-400 text-xs py-3 pr-4 font-medium">{row.item}</td>
-                                        <td className="text-slate-400 text-xs py-3 px-3">{row.us}</td>
+                                        <td className="text-slate-500 text-xs py-3 pr-4 font-medium">{row.item}</td>
+                                        <td className="text-slate-500 text-xs py-3 px-3">{row.us}</td>
                                         <td className="text-brand-TEAL font-bold text-xs py-3 px-3">{row.panama}</td>
                                     </tr>
                                 ))}
@@ -163,15 +163,15 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
 
                 {/* Location comparison */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-brand-950 text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         Cost by Location
                     </h2>
                     <div className="space-y-3">
                         {locationComparison.map((loc, i) => (
-                            <div key={i} className="glass-card rounded-xl p-5 border border-white/5">
+                            <div key={i} className="glass-card rounded-xl p-5 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-3 mb-1">
                                     <div>
-                                        <div className="text-white font-bold text-sm">{loc.city}</div>
+                                        <div className="text-brand-950 font-bold text-sm">{loc.city}</div>
                                         <div className="text-slate-500 text-[11px]">{loc.tier}</div>
                                     </div>
                                     <div className="text-right">
@@ -189,7 +189,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
                 </section>
 
                 {/* What costs more */}
-                <section className="reveal-on-scroll glass-card rounded-2xl p-6 border border-white/5">
+                <section className="reveal-on-scroll glass-card rounded-2xl p-6 border border-brand-100">
                     <h2 className="text-white text-xl font-heading font-bold mb-4 uppercase tracking-tighter italic">
                         What Costs MORE in Panama (Honest)
                     </h2>
@@ -204,7 +204,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
                                 <span className="text-brand-CORAL font-black flex-shrink-0">↑</span>
                                 <div>
                                     <span className="text-white font-bold text-xs">{item.item}: </span>
-                                    <span className="text-slate-400 text-xs">{item.note}</span>
+                                    <span className="text-slate-500 text-xs">{item.note}</span>
                                 </div>
                             </div>
                         ))}
@@ -216,7 +216,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
                     <h3 className="text-white font-heading text-2xl font-bold mb-3 uppercase italic tracking-tighter">
                         Want a Personalized Budget Breakdown?
                     </h3>
-                    <p className="text-slate-400 mb-6 max-w-md mx-auto text-sm leading-relaxed">
+                    <p className="text-slate-500 mb-6 max-w-md mx-auto text-sm leading-relaxed">
                         Our advisors will build you a real monthly budget based on your target neighborhood and lifestyle — before you commit to anything.
                     </p>
                     <Link href="/contacto" className="inline-flex items-center gap-3 btn-3d btn-3d-teal px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs">
@@ -231,7 +231,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
                         { label: 'Apartments for Rent — Panama City', href: '/en/blog/apartments-for-rent-panama-city' },
                         { label: 'Pensionado Visa Guide', href: '/en/guides/pensionado-visa-panama' },
                     ].map((link, i) => (
-                        <Link key={i} href={link.href} className="flex items-center justify-between glass-card p-4 rounded-xl border border-white/5 hover:border-brand-TEAL/30 transition-all group">
+                        <Link key={i} href={link.href} className="flex items-center justify-between glass-card p-4 rounded-xl border border-brand-100 hover:border-brand-TEAL/30 transition-all group">
                             <span className="text-white text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-TEAL opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>

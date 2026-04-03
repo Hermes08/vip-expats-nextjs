@@ -107,7 +107,7 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
     await params;
 
     return (
-        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+        <article className="bg-white min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-900 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -157,7 +157,7 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                             { title: 'Johns Hopkins-Affiliated Hospital', body: 'Hospital Punta Pacifica in Panama City is a Johns Hopkins Medicine International affiliate. Specialists cost $50–$80 per visit.' },
                             { title: 'Massive Expat Community', body: 'Tens of thousands of North Americans live in Panama. In Boquete and Coronado, you will be surrounded by English speakers who have already figured it all out.' },
                         ].map((item, i) => (
-                            <div key={i} className="glass-card rounded-xl p-5 border border-white/5 flex items-start gap-3">
+                            <div key={i} className="glass-card rounded-xl p-5 border border-brand-100 flex items-start gap-3">
                                 <CheckCircle size={16} className="text-brand-GOLD mt-1 flex-shrink-0" />
                                 <div>
                                     <div className="text-white font-bold text-sm mb-1">{item.title}</div>
@@ -201,7 +201,7 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                     </h2>
                     <div className="grid md:grid-cols-3 gap-6">
                         {retirementBudgets.map((b, i) => (
-                            <div key={i} className="glass-card rounded-2xl p-6 border border-white/5">
+                            <div key={i} className="glass-card rounded-2xl p-6 border border-brand-100">
                                 <div className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] mb-2">{b.style}</div>
                                 <div className="text-white font-black text-xl mb-3">{b.monthly}<span className="text-slate-500 font-normal text-sm">/mo</span></div>
                                 <p className="text-slate-400 text-xs leading-relaxed mb-3">{b.desc}</p>
@@ -221,7 +221,7 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                     </h2>
                     <div className="space-y-5">
                         {locations.map((loc, i) => (
-                            <div key={i} className="glass-card rounded-2xl p-7 border border-white/5">
+                            <div key={i} className="glass-card rounded-2xl p-7 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-4 mb-3">
                                     <div>
                                         <div className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest mb-1">{loc.tag}</div>
@@ -273,7 +273,7 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                 </section>
 
                 {/* Healthcare */}
-                <section className="reveal-on-scroll glass-card rounded-2xl p-8 border border-white/5">
+                <section className="reveal-on-scroll glass-card rounded-2xl p-8 border border-brand-100">
                     <h2 className="text-white text-2xl font-heading font-bold mb-5 uppercase tracking-tighter italic">
                         <Heart className="inline text-brand-GOLD mr-2" size={24} />
                         Healthcare for Retirees
@@ -305,7 +305,7 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                     </h2>
                     <div className="space-y-4">
                         {steps.map((s, i) => (
-                            <div key={i} className="flex items-start gap-5 glass-card rounded-xl p-5 border border-white/5">
+                            <div key={i} className="flex items-start gap-5 glass-card rounded-xl p-5 border border-brand-100">
                                 <div className="w-10 h-10 rounded-full bg-brand-GOLD/10 border border-brand-GOLD/30 flex items-center justify-center flex-shrink-0">
                                     <span className="text-brand-GOLD font-black text-sm">{s.step}</span>
                                 </div>
@@ -352,7 +352,7 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                         <Link
                             key={i}
                             href={link.href}
-                            className="flex items-center justify-between glass-card p-4 rounded-xl border border-white/5 hover:border-brand-GOLD/30 transition-all group"
+                            className="flex items-center justify-between glass-card p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                         >
                             <span className="text-white text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />

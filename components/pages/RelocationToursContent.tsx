@@ -20,7 +20,7 @@ const RelocationToursContent: React.FC = () => {
             <BreadcrumbSchema items={breadcrumbItems} />
 
             {/* Hero Section */}
-            <section className="relative min-h-[90vh] flex items-center overflow-hidden border-b border-white/5 bg-brand-950">
+            <section className="relative min-h-[90vh] flex items-center overflow-hidden border-b border-brand-100 bg-brand-950">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80"
@@ -129,7 +129,7 @@ const RelocationToursContent: React.FC = () => {
                             desc: "Return to Panama City. Individual 1-on-1 strategy sessions. Finalize your <strong>panama residency visa</strong> timeline and property shortlist. Helicopter optional: Caribbean frontier tour of Playa Escondida."
                         }
                     ].map((item, idx) => (
-                        <div key={idx} className="bg-brand-900/40 p-6 rounded-2xl border border-white/10 group hover:shadow-2xl transition-all">
+                        <div key={idx} className="bg-brand-50 p-6 rounded-2xl border border-brand-100 group hover:shadow-2xl transition-all">
                             <div className="flex flex-col lg:flex-row gap-12 items-center">
                                 <div className="lg:w-1/4">
                                     <div className="text-8xl font-black text-brand-GOLD/10 group-hover:text-brand-GOLD/40 transition-all duration-700 leading-none mb-4">{item.day}</div>
@@ -162,7 +162,7 @@ const RelocationToursContent: React.FC = () => {
                             { icon: <Users className="text-brand-GOLD" />, title: "Resident Access", desc: "Real talk from real expats. No sugarcoating allowed." },
                             { icon: <ShieldCheck className="text-brand-GOLD" />, title: "Due Diligence", desc: "We pre-audit every property for title and tax liens before you see it." }
                         ].map((p, i) => (
-                            <div key={i} className="p-8 bg-white/5 border border-white/10 rounded-2xl text-center flex flex-col items-center">
+                            <div key={i} className="p-8 bg-white/5 border border-brand-100 rounded-2xl text-center flex flex-col items-center">
                                 <div className="mb-6">{p.icon}</div>
                                 <h4 className="text-lg font-black uppercase italic mb-2 leading-none">{p.title}</h4>
                                 <p className="text-[10px] text-slate-400 font-medium">{p.desc}</p>

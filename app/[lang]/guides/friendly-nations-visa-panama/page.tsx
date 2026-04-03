@@ -59,8 +59,8 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
     await params;
 
     return (
-        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
-            <section className="bg-brand-900 py-24 relative overflow-hidden">
+        <article className="bg-white min-h-screen pt-28 pb-20">
+            <section className="section-dark py-24 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80" alt="Panama Friendly Nations Visa" className="w-full h-full object-cover" />
                 </div>
@@ -81,20 +81,20 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
                     <p className="text-xl font-semibold text-white border-l-4 border-brand-TEAL pl-5 leading-relaxed">
                         The Friendly Nations Visa is the fastest residency option Panama offers. While the Pensionado Visa takes 4–6 months, the Friendly Nations Visa can be approved in 3–4 weeks — and it does not require retirement income.
                     </p>
-                    <p className="text-slate-400 mt-5 leading-relaxed">
+                    <p className="text-slate-500 mt-5 leading-relaxed">
                         It is the go-to option for working expats, digital nomads, entrepreneurs, and anyone who does not yet qualify for the Pensionado program. The only real requirement: show a legitimate economic connection to Panama.
                     </p>
                 </section>
 
                 {/* Eligible countries */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-5 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-white text-2xl font-heading font-bold mb-5 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         <Globe className="inline text-brand-TEAL mr-1" size={22} />
                         Are You Eligible? — 50 Countries Qualify
                     </h2>
                     <div className="flex flex-wrap gap-2">
                         {eligibleCountries.map((country, i) => (
-                            <span key={i} className="bg-brand-900 border border-white/5 text-slate-300 text-[11px] font-bold px-3 py-1.5 rounded-lg">
+                            <span key={i} className="bg-brand-900 border border-brand-100 text-slate-300 text-[11px] font-bold px-3 py-1.5 rounded-lg">
                                 {country}
                             </span>
                         ))}
@@ -104,16 +104,16 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
 
                 {/* Requirements */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-5 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-white text-2xl font-heading font-bold mb-5 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         What You Need
                     </h2>
                     <div className="space-y-3">
                         {requirements.map((item, i) => (
-                            <div key={i} className="flex items-start gap-4 glass-card rounded-xl p-5 border border-white/5">
+                            <div key={i} className="flex items-start gap-4 glass-card rounded-xl p-5 border border-brand-100">
                                 <CheckCircle size={15} className="text-brand-TEAL mt-0.5 flex-shrink-0" />
                                 <div>
-                                    <div className="text-white font-bold text-sm mb-1">{item.req}</div>
-                                    <div className="text-slate-400 text-xs leading-relaxed">{item.detail}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{item.req}</div>
+                                    <div className="text-slate-500 text-xs leading-relaxed">{item.detail}</div>
                                 </div>
                             </div>
                         ))}
@@ -122,18 +122,18 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
 
                 {/* Economic ties */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-3 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-white text-2xl font-heading font-bold mb-3 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         Establishing Economic Ties — Your 4 Options
                     </h2>
-                    <p className="text-slate-400 text-sm mb-5 leading-relaxed">
+                    <p className="text-slate-500 text-sm mb-5 leading-relaxed">
                         You need one of these. Owning property is by far the most popular because it serves double duty — it qualifies you for the visa AND builds your Panama asset base.
                     </p>
                     <div className="grid sm:grid-cols-2 gap-4">
                         {economicTiesOptions.map((item, i) => (
-                            <div key={i} className="glass-card rounded-xl p-5 border border-white/5">
+                            <div key={i} className="glass-card rounded-xl p-5 border border-brand-100">
                                 <div className="text-brand-TEAL font-black text-[10px] uppercase tracking-widest mb-2">Option {i + 1}</div>
-                                <div className="text-white font-bold text-sm mb-2">{item.option}</div>
-                                <div className="text-slate-400 text-xs leading-relaxed">{item.detail}</div>
+                                <div className="text-brand-950 font-bold text-sm mb-2">{item.option}</div>
+                                <div className="text-slate-500 text-xs leading-relaxed">{item.detail}</div>
                             </div>
                         ))}
                     </div>
@@ -141,18 +141,18 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
 
                 {/* Process */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-5 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-white text-2xl font-heading font-bold mb-5 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         The Application Process
                     </h2>
                     <div className="space-y-3">
                         {processSteps.map((s, i) => (
-                            <div key={i} className="flex items-start gap-4 glass-card rounded-xl p-5 border border-white/5">
+                            <div key={i} className="flex items-start gap-4 glass-card rounded-xl p-5 border border-brand-100">
                                 <div className="w-8 h-8 rounded-full bg-brand-TEAL/10 border border-brand-TEAL/30 flex items-center justify-center flex-shrink-0">
                                     <span className="text-brand-TEAL font-black text-xs">{s.n}</span>
                                 </div>
                                 <div>
-                                    <div className="text-white font-bold text-sm mb-1">{s.t}</div>
-                                    <div className="text-slate-400 text-xs leading-relaxed">{s.b}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{s.t}</div>
+                                    <div className="text-slate-500 text-xs leading-relaxed">{s.b}</div>
                                 </div>
                             </div>
                         ))}
@@ -161,7 +161,7 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
 
                 {/* FN vs Pensionado */}
                 <section className="reveal-on-scroll">
-                    <h2 className="text-white text-2xl font-heading font-bold mb-5 uppercase tracking-tighter italic border-b border-white/10 pb-3">
+                    <h2 className="text-white text-2xl font-heading font-bold mb-5 uppercase tracking-tighter italic border-b border-brand-100 pb-3">
                         Friendly Nations vs Pensionado — Which is Right for You?
                     </h2>
                     <div className="grid sm:grid-cols-2 gap-4">
@@ -207,7 +207,7 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
                     <h3 className="text-white font-heading text-2xl font-bold mb-3 uppercase italic tracking-tighter">
                         Ready to Start Your Visa Application?
                     </h3>
-                    <p className="text-slate-400 mb-6 max-w-md mx-auto text-sm leading-relaxed">
+                    <p className="text-slate-500 mb-6 max-w-md mx-auto text-sm leading-relaxed">
                         We connect you with licensed Panama immigration attorneys and can coordinate property purchase and visa application simultaneously.
                     </p>
                     <Link href="/contacto" className="inline-flex items-center gap-3 btn-3d btn-3d-teal px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs">
@@ -222,7 +222,7 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
                         { label: 'Panama Real Estate Investment', href: '/en/blog/panama-real-estate-investments' },
                         { label: 'Condos for Sale — Buyer\'s Guide', href: '/en/blog/condos-for-sale-panama-buyers-guide' },
                     ].map((link, i) => (
-                        <Link key={i} href={link.href} className="flex items-center justify-between glass-card p-4 rounded-xl border border-white/5 hover:border-brand-TEAL/30 transition-all group">
+                        <Link key={i} href={link.href} className="flex items-center justify-between glass-card p-4 rounded-xl border border-brand-100 hover:border-brand-TEAL/30 transition-all group">
                             <span className="text-white text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-TEAL opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>

@@ -30,7 +30,7 @@ const CoronadoGuideContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={breadcrumbItems} />
             <FAQSchema questions={faqs} />
 
@@ -83,7 +83,7 @@ const CoronadoGuideContent: React.FC = () => {
                             desc: "Miles of black and white speckled volcanic sand beaches perfect for long walks, surfing, and year-round swimming."
                         }
                     ].map((n, i) => (
-                        <div key={i} className="bg-brand-900/40 p-10 rounded-[4rem] border border-white/5 hover:shadow-2xl transition-all h-full flex flex-col">
+                        <div key={i} className="bg-brand-50 p-10 rounded-[4rem] border border-brand-100 hover:shadow-2xl transition-all h-full flex flex-col">
                             <n.icon className="text-brand-GOLD mb-8" size={48} />
                             <h4 className="text-2xl font-black uppercase tracking-tighter mb-4 italic text-white">{n.name}</h4>
                             <p className="text-sm text-neutral-500 font-medium leading-relaxed flex-grow">{n.desc}</p>
@@ -97,7 +97,7 @@ const CoronadoGuideContent: React.FC = () => {
                 <div className="absolute top-0 right-0 w-96 h-96 bg-brand-GOLD/5 rounded-full -mr-48 -mt-48 blur-3xl"></div>
                 <div className="max-w-7xl mx-auto px-8">
                     <div className="grid lg:grid-cols-2 gap-20 items-center">
-                        <div className="relative aspect-video overflow-hidden rounded-[4rem] shadow-2xl border border-white/5">
+                        <div className="relative aspect-video overflow-hidden rounded-[4rem] shadow-2xl border border-brand-100">
                             <Image
                                 src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1000&q=80"
                                 alt="Expat families enjoying the Pacific beach lifestyle in Coronado, Panama"
@@ -133,7 +133,7 @@ const CoronadoGuideContent: React.FC = () => {
 
             {/* Real Estate & ROI */}
             <section className="py-32 max-w-7xl mx-auto px-4">
-                <div className="bg-brand-900/40 p-16 rounded-[4rem] flex flex-col md:flex-row gap-16 items-center">
+                <div className="bg-brand-50 p-16 rounded-[4rem] flex flex-col md:flex-row gap-16 items-center">
                     <div className="md:w-1/2 text-right order-2 md:order-1">
                         <div className="space-y-4 inline-block text-left">
                             <div className="flex items-center gap-3 text-white font-black text-xs uppercase tracking-widest">
