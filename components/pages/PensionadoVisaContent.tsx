@@ -71,7 +71,7 @@ const PensionadoVisaPage = () => {
               transition={{ duration: 1 }}
             >
               <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block">Relocation Guide 2026</span>
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-[0.8]">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-tight md:leading-[0.8]">
                 {content.title.split(': ')[0]} <br />
                 <span className="text-brand-GOLD">{content.title.split(': ')[1]}</span>
               </h1>
@@ -79,7 +79,7 @@ const PensionadoVisaPage = () => {
                 {content.subtitle}
               </p>
               
-              <div className="flex flex-wrap justify-center gap-12">
+              <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-12">
                 <Magnetic strength={0.3}>
                   <Link href={`/${lang}/tours`} className="btn-3d btn-3d-gold px-8 py-4 rounded-xl font-black uppercase tracking-widest text-[11px]">
                     BOOK RELOCATION TOUR
@@ -97,12 +97,12 @@ const PensionadoVisaPage = () => {
 
         {/* INTRO CONTENT */}
         <section className="py-14 border-t border-white/5">
-          <div className="grid lg:grid-cols-2 gap-32 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-32 items-center">
             <div className="reveal-on-scroll">
-              <h2 className="text-4xl md:text-6xl font-heading font-black text-white mb-12 uppercase italic tracking-tighter leading-[0.9]">
+              <h2 className="text-4xl md:text-6xl font-heading font-black text-white mb-12 uppercase italic tracking-tighter leading-tight md:leading-[0.9]">
                 {isEn ? "The Gold Standard of Residency" : "El Estándar de Oro de la Residencia"}
               </h2>
-              <div className="prose prose-invert prose-2xl text-slate-400 font-medium leading-relaxed space-y-10">
+              <div className="prose prose-invert prose-base md:prose-2xl text-slate-400 font-medium leading-relaxed space-y-10">
                 <p>{content.intro}</p>
                 <p>
                   {isEn 
@@ -135,11 +135,11 @@ const PensionadoVisaPage = () => {
 
         {/* BENEFITS GRID */}
         <section className="py-14">
-          <div className="text-center mb-32 reveal-on-scroll">
+          <div className="text-center mb-16 md:mb-32 reveal-on-scroll">
              <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">Exclusive Privileges</span>
-             <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-12 tracking-tighter uppercase italic leading-[0.8]">{content.benefitsTitle}</h2>
+             <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-12 tracking-tighter uppercase italic leading-tight md:leading-[0.8]">{content.benefitsTitle}</h2>
           </div>
-          <div className="grid md:grid-cols-2 gap-12">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-12">
             {content.benefits.map((benefit, i) => (
               <div key={i} className="glass-card p-8 rounded-2xl border-white/5 hover:bg-brand-GOLD hover:text-brand-900 transition-all duration-700 reveal-on-scroll group">
                 <benefit.icon className="text-brand-GOLD mb-12 group-hover:text-brand-900 transition-all transform group-hover:scale-110 group-hover:-rotate-12" size={64} />
@@ -151,23 +151,23 @@ const PensionadoVisaPage = () => {
         </section>
 
         {/* REQUIREMENTS SECTION */}
-        <section className="py-16 bg-brand-900/40 rounded-[6rem] border border-white/5 px-20 reveal-on-scroll">
-          <div className="grid lg:grid-cols-2 gap-32 items-center">
+        <section className="py-16 bg-brand-900/40 rounded-3xl sm:rounded-[4rem] lg:rounded-[6rem] border border-white/5 px-5 sm:px-12 lg:px-20 reveal-on-scroll">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-32 items-center">
             <div>
               <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">Eligibility Benchmarks</span>
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-12 tracking-tighter uppercase italic leading-[0.8]">{content.requirementsTitle}</h2>
-              <div className="space-y-12 mt-20">
+              <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-12 tracking-tighter uppercase italic leading-tight md:leading-[0.8]">{content.requirementsTitle}</h2>
+              <div className="space-y-6 md:space-y-12 mt-10 md:mt-20">
                 {content.requirements.map((req, i) => (
                   <div key={i} className="flex gap-8 items-start reveal-on-scroll stagger-1">
                     <div className="bg-brand-GOLD text-brand-900 p-3 rounded-2xl shadow-[0_10px_30px_-5px_theme(colors.brand.GOLD/0.5)]">
                       <CheckCircle size={28} />
                     </div>
-                    <p className="text-2xl text-slate-300 font-medium leading-relaxed">{req}</p>
+                    <p className="text-base md:text-2xl text-slate-300 font-medium leading-relaxed">{req}</p>
                   </div>
                 ))}
               </div>
             </div>
-            <div className="relative h-[600px] rounded-2xl overflow-hidden border-8 border-white/5 transform rotate-3">
+            <div className="relative h-[400px] sm:h-[600px] rounded-2xl overflow-hidden border-8 border-white/5 rotate-0 sm:rotate-3">
               <img src="https://images.unsplash.com/photo-1549420958-370146059d4c?w=1200&q=80" alt="Relaxing Panama Lifestyle" className="w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-transparent to-transparent" />
             </div>
@@ -176,9 +176,9 @@ const PensionadoVisaPage = () => {
 
         {/* FINAL CALL TO ACTION */}
         <section className="py-16 text-center">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-16 tracking-tighter uppercase italic leading-[0.8]">{content.ctaTitle}</h2>
-            <p className="text-2xl text-slate-400 font-medium mb-20 max-w-2xl mx-auto leading-relaxed">{content.ctaDesc}</p>
-            <div className="flex flex-wrap justify-center gap-10">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black text-white mb-8 md:mb-16 tracking-tighter uppercase italic leading-tight md:leading-[0.8]">{content.ctaTitle}</h2>
+            <p className="text-lg md:text-2xl text-slate-400 font-medium mb-10 md:mb-20 max-w-2xl mx-auto leading-relaxed">{content.ctaDesc}</p>
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center gap-4 sm:gap-10">
               <Magnetic strength={0.4}>
                 <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-8 py-4 rounded-full font-black uppercase tracking-[0.3em] text-xs transition-all shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)]">
                   SPEAK WITH A SPECIALIST

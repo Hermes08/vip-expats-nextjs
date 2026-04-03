@@ -81,8 +81,8 @@ const ProjectsPageContent: React.FC = () => {
             {/* Filters Bar */}
             <div className="relative lg:sticky lg:top-[72px] z-40 bg-brand-950/70 backdrop-blur-2xl border-b border-white/5 py-8 shadow-2xl">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-wrap items-center justify-between gap-10">
-                        <div className="flex flex-wrap gap-12 items-center">
+                    <div className="flex flex-wrap items-center justify-between gap-4 sm:gap-10">
+                        <div className="flex flex-wrap gap-4 sm:gap-12 items-center">
                             <div className="flex items-center gap-4">
                                 <Filter size={16} className="text-brand-GOLD" />
                                 <div className="relative group">
@@ -155,7 +155,7 @@ const ProjectsPageContent: React.FC = () => {
                 </div>
 
                 {/* Projects Grid */}
-                <div className="container mx-auto px-4 py-6 sm:px-6 lg:px-8 relative z-20">
+                <div className="container mx-auto py-6 relative z-20">
                     <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
                         {filteredProjects.map((project, index) => (
                             <motion.div
