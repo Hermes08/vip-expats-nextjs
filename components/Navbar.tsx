@@ -49,28 +49,19 @@ const Navbar: React.FC = () => {
                 { path: '/propiedades', label: lang === 'es' ? 'Propiedades' : 'Properties' },
                 { path: '/proyectos', label: t.nav.projects },
                 { path: '/panama-real-estate', label: lang === 'es' ? 'Guía Inmobiliaria' : 'Real Estate Guide' },
-                { path: '/quiz', label: t.nav.quiz, icon: <Sparkles size={12} className="text-brand-GOLD" /> },
+                { path: '/quiz', label: t.nav.quiz, icon: <Sparkles size={12} className="text-brand-TEAL" /> },
             ]
         },
-        relocate: {
-            label: t.nav.relocate,
+        guides: {
+            label: lang === 'es' ? 'Guías' : 'Guides',
             items: [
-                { path: '/blog', label: lang === 'es' ? 'Blog & Guías' : 'Blog & Guides' },
+                { path: '/blog', label: lang === 'es' ? 'Blog & Artículos' : 'Blog & Articles' },
                 { path: '/guides/how-to-move-to-panama', label: lang === 'es' ? 'Cómo Mudarse a Panamá' : 'How to Move to Panama' },
-                { path: '/guides/best-areas-retire-panama', label: lang === 'es' ? 'Mejores Zonas para Vivir' : 'Best Areas to Live' },
-                { path: '/guides/cost-of-living-panama-2026', label: lang === 'es' ? 'Costo de Vida 2026' : 'Cost of Living 2026' },
                 { path: '/guides/pensionado-visa-panama', label: lang === 'es' ? 'Visa Pensionado' : 'Pensionado Visa' },
                 { path: '/guides/friendly-nations-visa-panama', label: lang === 'es' ? 'Visa Naciones Amigas' : 'Friendly Nations Visa' },
-                { path: '/guides/safest-neighborhoods-panama-city', label: lang === 'es' ? 'Vecindarios Seguros' : 'Safe Neighborhoods' },
+                { path: '/guides/cost-of-living-panama-2026', label: lang === 'es' ? 'Costo de Vida 2026' : 'Cost of Living 2026' },
             ]
         },
-        media: {
-            label: t.nav.media,
-            items: [
-                { path: '/blog', label: t.nav.blog },
-                { path: '/podcast', label: t.nav.podcast },
-            ]
-        }
     };
 
     return (
@@ -119,12 +110,13 @@ const Navbar: React.FC = () => {
                                     </div>
                                 </div>
                             ))}
+                            <Link href={`/${lang}/podcast`} className={isActive('/podcast') ? 'text-brand-GOLD py-4' : 'hover:text-white transition-all py-4'}>{lang === 'es' ? 'Podcast' : 'Podcast'}</Link>
                             <Link href={`/${lang}/contacto`} className={isActive('/contacto') ? 'text-brand-GOLD py-4' : 'hover:text-white transition-all py-4'}>{t.nav.contact}</Link>
                         </div>
                         <div className="flex items-center gap-6">
                             <LanguageSwitcher currentLang={lang} />
                             <Magnetic strength={0.3}>
-                                <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-gold px-8 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center gap-2">
+                                <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-teal px-8 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center gap-2">
                                     <Search size={14} /> {lang === 'es' ? 'Ver Propiedades' : 'Properties'}
                                 </Link>
                             </Magnetic>
@@ -175,10 +167,11 @@ const Navbar: React.FC = () => {
                             )}
                         </div>
                     ))}
+                    <Link href={`/${lang}/podcast`} className={`text-2xl font-black uppercase tracking-tighter ${isActive('/podcast') ? 'text-brand-GOLD' : 'text-white'}`}>Podcast</Link>
                     <Link href={`/${lang}/contacto`} className={`text-2xl font-black uppercase tracking-tighter ${isActive('/contacto') ? 'text-brand-GOLD' : 'text-white'}`}>{t.nav.contact}</Link>
 
                     <div className="mt-auto py-8">
-                        <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-gold w-full px-8 py-5 rounded-2xl font-black text-xs uppercase tracking-widest flex items-center justify-center gap-3">
+                        <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-teal w-full px-8 py-5 rounded-2xl font-black text-xs uppercase tracking-widest flex items-center justify-center gap-3">
                             <Search size={20} /> {lang === 'es' ? 'Ver Propiedades' : 'Properties'}
                         </Link>
                     </div>
