@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Globe, Heart, Shield, DollarSign, Utensils, Hospital, Coffee, Sun } from 'lucide-react';
 import Link from 'next/link';
@@ -140,10 +141,11 @@ const ExpatLivingPage = () => {
           <div className="flex gap-12 animate-marquee inline-flex whitespace-nowrap">
             {[1, 2, 3, 4, 5].map((i) => (
               <div key={i} className="w-[500px] h-[350px] rounded-[3rem] overflow-hidden border-4 border-white/5 shadow-2xl relative group">
-                 <img 
-                  src={`https://images.unsplash.com/photo-${i % 2 === 0 ? '1589405709121-081e7d23d8c5' : '1554469384-e58fac16e23a'}?w=1000&q=80`} 
-                  alt="Panama Rockstar Life" 
-                  className="w-full h-full object-cover transition-transform duration-[5000ms] group-hover:scale-110" 
+                 <Image
+                  src={`https://images.unsplash.com/photo-${i % 2 === 0 ? '1589405709121-081e7d23d8c5' : '1554469384-e58fac16e23a'}?w=1000&q=80`}
+                  alt="Panama Rockstar Life"
+                  fill
+                  className="object-cover transition-transform duration-[5000ms] group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-brand-950/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
               </div>

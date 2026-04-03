@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Ship, Anchor, Sun, Waves, Palmtree, Map, ArrowRight, ShieldCheck, TrendingUp } from 'lucide-react';
 import { Compass, Shell, Fish } from 'lucide-react';
@@ -107,7 +108,7 @@ const BocasLocationPage = () => {
             </div>
             
             <div className="lg:col-span-6 relative h-[600px] rounded-[5rem] overflow-hidden border-8 border-white/5 shadow-2xl reveal-on-scroll">
-               <img src="https://images.unsplash.com/photo-1589405709121-081e7d23d8c5?w=1200&q=80" alt="Beautiful Bocas del Toro Island" className="w-full h-full object-cover" />
+               <Image src="https://images.unsplash.com/photo-1589405709121-081e7d23d8c5?w=1200&q=80" alt="Beautiful Bocas del Toro Island" fill className="object-cover" />
                <div className="absolute inset-0 bg-gradient-to-t from-brand-950/80 to-transparent" />
             </div>
             

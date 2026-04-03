@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, Building, MapPin, TrendingUp, ShieldCheck, DollarSign } from 'lucide-react';
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export default function PanamaCityRealEstatePage() {
             {/* Context-Aware Hero Section */}
             <section className="bg-brand-900 py-32 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-20">
-                    <img src="https://images.unsplash.com/photo-1544644011-87b829283197?w=1600&q=80" alt="Panama City Skyline" className="w-full h-full object-cover" />
+                    <Image src="https://images.unsplash.com/photo-1544644011-87b829283197?w=1600&q=80" alt="Panama City Skyline" fill className="object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-950 to-transparent"></div>
                 </div>
                 <div className="max-w-5xl mx-auto px-4 text-center relative z-10">

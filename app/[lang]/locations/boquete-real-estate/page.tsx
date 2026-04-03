@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { Coffee, Mountain, Sun, Cloud, Thermometer, Wind, ArrowRight, ShieldCheck, TrendingUp } from 'lucide-react';
 import Link from 'next/link';
@@ -99,7 +100,7 @@ const BoqueteLocationPage = () => {
         <section className="py-32">
           <div className="grid lg:grid-cols-2 gap-32 items-center">
             <div className="relative h-[700px] rounded-[5rem] overflow-hidden border-8 border-white/5 shadow-2xl reveal-on-scroll">
-              <img src="https://images.unsplash.com/photo-1549420958-370146059d4c?w=1200&q=80" alt="Luxury Boquete Estate" className="w-full h-full object-cover" />
+              <Image src="https://images.unsplash.com/photo-1549420958-370146059d4c?w=1200&q=80" alt="Luxury Boquete Estate" fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-transparent to-transparent opacity-60" />
               <div className="absolute top-10 right-10 bg-brand-GOLD text-brand-900 px-6 py-3 rounded-full text-[10px] font-black uppercase tracking-widest">Featured District</div>
             </div>

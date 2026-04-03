@@ -2340,6 +2340,120 @@ export const BLOG_POSTS: BlogPost[] = [
     date: 'April 3, 2026',
     image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80',
     category: 'Relocation'
+  },
+  {
+    id: 'blog-best-beaches-panama-expats',
+    slug: 'best-beaches-panama-expats',
+    title: {
+      en: 'Best Beaches in Panama for Expats 2026 | Beachfront Property Guide',
+      es: 'Mejores Playas de Panamá para Expatriados 2026 | Guía de Propiedades en la Playa'
+    },
+    excerpt: {
+      en: 'Coronado vs Bocas del Toro vs Pedasi — compare Panama beach towns for expat living, real estate prices, and investment yield.',
+      es: 'Coronado vs Bocas del Toro vs Pedasí — compara los pueblos costeros de Panamá para vivir como expatriado, precios inmobiliarios y rentabilidad.'
+    },
+    content: {
+      en: 'A detailed comparison of the top beach towns in Panama for expats — lifestyle, real estate prices, rental yields, and who each location is best for.',
+      es: 'Una comparación detallada de los mejores pueblos costeros de Panamá para expatriados — estilo de vida, precios, rendimientos y para quién es mejor cada lugar.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80',
+    category: 'Beach Living'
+  },
+  {
+    id: 'blog-panama-real-estate-investments',
+    slug: 'panama-real-estate-investments',
+    title: {
+      en: 'Investing in Panama: The Definitive Real Estate & Expat Lifestyle Guide 2026',
+      es: 'Invertir en Panamá: La Guía Definitiva de Bienes Raíces y Estilo de Vida Expatriado 2026'
+    },
+    excerpt: {
+      en: 'From beachfront properties in Bocas del Toro to Panama City penthouses — why high-net-worth expats are choosing Panama as their financial and lifestyle headquarters.',
+      es: 'Desde propiedades frente al mar en Bocas del Toro hasta penthouses en Ciudad de Panamá — por qué los expatriados eligen Panamá como su sede financiera y de estilo de vida.'
+    },
+    content: {
+      en: 'The complete investor guide to Panama real estate — territorial tax advantages, dollarized economy, residency pathways, top locations, and rental yields.',
+      es: 'La guía completa del inversor inmobiliario en Panamá — ventajas fiscales territoriales, economía dolarizada, vías de residencia, mejores ubicaciones y rendimientos de alquiler.'
+    },
+    date: 'April 1, 2026',
+    image: 'https://images.unsplash.com/photo-1589553416260-f586c8f1514f?w=800&q=80',
+    category: 'Investment'
+  },
+  {
+    id: 'blog-santa-catalina-panama',
+    slug: 'santa-catalina-panama',
+    title: {
+      en: 'Santa Catalina Panama: Surf, Coiba & Real Estate Investment Guide 2026',
+      es: 'Santa Catalina Panamá: Surf, Coiba y Guía de Inversión Inmobiliaria 2026'
+    },
+    excerpt: {
+      en: 'Santa Catalina is Panama\'s top surf destination and an emerging real estate market. World-class waves, UNESCO-protected Coiba Island, and land prices still below regional averages.',
+      es: 'Santa Catalina es el principal destino de surf de Panamá y un mercado inmobiliario emergente. Olas de clase mundial, Isla Coiba protegida por la UNESCO y precios de terrenos aún bajos.'
+    },
+    content: {
+      en: 'A complete guide to Santa Catalina Panama — surfing, diving, Coiba National Park, real estate prices, investment potential, and how to get there.',
+      es: 'Una guía completa de Santa Catalina Panamá — surf, buceo, Parque Nacional Coiba, precios inmobiliarios, potencial de inversión y cómo llegar.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1505459668311-8dfac7952bf0?w=800&q=80',
+    category: 'Beach Living'
+  },
+  {
+    id: 'blog-playa-venao-panama',
+    slug: 'playa-venao-panama',
+    title: {
+      en: 'Playa Venao Panama: Surf Investment & Expat Living Guide 2026',
+      es: 'Playa Venao Panamá: Guía de Inversión en Surf y Vida Expatriada 2026'
+    },
+    excerpt: {
+      en: 'Playa Venao is one of Panama\'s best-kept secrets — world-class surf, Azuero Peninsula culture, and real estate prices a fraction of Costa Rica. Here\'s why investors are paying attention.',
+      es: 'Playa Venao es uno de los mejores secretos de Panamá — surf de clase mundial, cultura de la Península de Azuero y precios inmobiliarios una fracción de los de Costa Rica.'
+    },
+    content: {
+      en: 'Why Playa Venao is becoming one of Panama\'s hottest surf investment destinations — real estate prices, rental yields, lifestyle, and how it compares to Costa Rica.',
+      es: 'Por qué Playa Venao se está convirtiendo en uno de los destinos de inversión surf más candentes de Panamá — precios, rendimientos, estilo de vida y comparación con Costa Rica.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80',
+    category: 'Beach Living'
+  },
+  {
+    id: 'blog-retire-in-panama',
+    slug: 'retire-in-panama',
+    title: {
+      en: 'Retire in Panama 2026: The Complete Guide for Americans & Expats',
+      es: 'Jubilarse en Panamá 2026: La Guía Completa para Americanos y Expatriados'
+    },
+    excerpt: {
+      en: 'Costs, visa options, healthcare, best locations, and why thousands of Americans choose Panama over Mexico or Costa Rica for retirement.',
+      es: 'Costos, opciones de visa, atención médica, mejores ubicaciones y por qué miles de estadounidenses eligen Panamá sobre México o Costa Rica para jubilarse.'
+    },
+    content: {
+      en: 'A comprehensive retirement guide for Panama covering the Pensionado Visa, real costs, best locations (Boquete, Coronado, Panama City), healthcare, and a step-by-step action plan.',
+      es: 'Una guía de jubilación completa para Panamá que cubre la Visa Pensionado, costos reales, mejores ubicaciones, atención médica y un plan de acción paso a paso.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1514565131-fce0801e6785?w=800&q=80',
+    category: 'Retirement'
+  },
+  {
+    id: 'blog-coronado-real-estate-guide',
+    slug: 'coronado-real-estate-guide',
+    title: {
+      en: 'Coronado Real Estate Guide 2026 | Panama Beach Property & Investment',
+      es: 'Guía Inmobiliaria de Coronado 2026 | Propiedad en Playa y Inversión en Panamá'
+    },
+    excerpt: {
+      en: 'Property prices, rental yields, neighborhoods, and everything you need to know before buying in Coronado — Panama\'s premier Pacific beach expat community.',
+      es: 'Precios de propiedades, rendimientos de alquiler, vecindarios y todo lo que necesitas saber antes de comprar en Coronado — la premier comunidad expatriada de la playa del Pacífico de Panamá.'
+    },
+    content: {
+      en: 'The complete Coronado real estate guide — property types, price ranges, neighborhoods, rental yields, buying process, and how Coronado compares to other Panama locations.',
+      es: 'La guía completa de bienes raíces de Coronado — tipos de propiedades, rangos de precios, vecindarios, rendimientos de alquiler, proceso de compra y cómo se compara con otras ubicaciones de Panamá.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80',
+    category: 'Investment'
   }
 ];
 
