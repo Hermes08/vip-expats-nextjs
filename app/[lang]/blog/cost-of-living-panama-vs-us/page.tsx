@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { ArrowRight, CheckCircle, TrendingDown, DollarSign, Home, HeartPulse } from 'lucide-react';
 import OrganizationSchema from '@/components/seo/OrganizationSchema';
 
@@ -15,7 +16,7 @@ export default function CostOfLivingArticle() {
             {/* Context-Aware Header */}
             <section className="bg-brand-900 py-32 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
-                    <img src="https://images.unsplash.com/photo-1574577457811-2eb2292021f1?w=1600&q=80" alt="Panama City Skyline" className="w-full h-full object-cover" />
+                    <Image src="https://images.unsplash.com/photo-1574577457811-2eb2292021f1?w=1600&q=80" alt="Panama City Skyline" fill className="object-cover" />
                 </div>
                 <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
                     <span className="text-[10px] font-bold text-brand-GOLD uppercase tracking-[0.4em] mb-4 block">ECONOMIC INTELLIGENCE 2026</span>

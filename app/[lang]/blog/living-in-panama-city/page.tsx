@@ -5,9 +5,7 @@ type Props = {
   params: Promise<{ lang: string }>;
 };
 
-export const generateMetadata = async (props: Props): Promise<Metadata> => {
-  const params = await props.params;
-
+export async function generateMetadata(): Promise<Metadata> {
   return {
     title: 'Living in Panama City: The Honest 2026 Expat Guide',
     description: 'Everything about living in Panama City as an expat — best neighborhoods, real costs, healthcare, pros and cons, and what long-term residents say.',
@@ -18,7 +16,7 @@ export const generateMetadata = async (props: Props): Promise<Metadata> => {
       type: 'article',
     },
   };
-};
+}
 
 export default async function LivingInPanamaCityPage(props: Props) {
   const params = await props.params;

@@ -114,7 +114,7 @@ const bocasActivities = [
 ];
 
 // Boquete attractions
-const boqu etteAttractions = [
+const boqueteAttractions = [
   {
     title: 'Volcán Barú Summit Hike',
     description: 'Panama\'s highest peak at 3,475 meters (11,401 feet). Start before dawn to reach the summit at sunrise and see both the Pacific Ocean and Caribbean Sea from the top.',
