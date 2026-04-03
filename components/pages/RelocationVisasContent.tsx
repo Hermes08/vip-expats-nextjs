@@ -79,7 +79,7 @@ const RelocationVisasContent: React.FC = () => {
             </div>
 
             {/* Hero Section */}
-            <section className="bg-brand-950 py-14 text-white relative overflow-hidden rounded-b-[5rem]">
+            <section className="bg-white py-14 text-white relative overflow-hidden rounded-b-[5rem]">
                 <div className="absolute inset-0 opacity-10 pointer-events-none">
                     <div className="absolute bottom-0 right-0 w-[800px] h-[800px] bg-brand-GOLD rounded-full blur-[150px]"></div>
                 </div>
@@ -90,7 +90,7 @@ const RelocationVisasContent: React.FC = () => {
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-10 uppercase tracking-tighter leading-none">
                         Panama <br /> <span className="text-brand-GOLD italic">Real Estate</span> <br /> Sale
                     </h1>
-                    <p className="text-base md:text-lg text-slate-400 max-w-4xl mx-auto leading-relaxed font-medium mb-12">
+                    <p className="text-base md:text-lg text-slate-500 max-w-4xl mx-auto leading-relaxed font-medium mb-12">
                         Everything you need to know about navigating the <strong>panama residency visa</strong> ecosystem. From the <strong>friendly nations visa</strong> to the elite <strong>pensionado program</strong>, we provide the blueprint for your legal relocation.
                     </p>
                     <div className="flex flex-col sm:flex-row justify-center gap-6">
@@ -106,14 +106,14 @@ const RelocationVisasContent: React.FC = () => {
                 <div className="grid lg:grid-cols-2 gap-24 items-center mb-32">
                     <div>
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The 2026 <br /><span className="text-brand-GOLD underline">Legal Reality</span></h2>
-                        <div className="space-y-8 text-lg text-slate-400 font-medium leading-[1.8]">
+                        <div className="space-y-8 text-lg text-slate-500 font-medium leading-[1.8]">
                             <p>
                                 Panama's immigration system is one of the most stable in the world, but in 2026, the complexity of <strong>compliance and anti-money laundering (AML)</strong> has reached an all-time high. Gone are the days of simple "walk-in" residency.
                             </p>
                             <p>
                                 A successful <strong>panama immigration</strong> strategy now requires an elite level of preparation. This means matching your specific financial profile (Digital Nomad income vs. Corporate Pension vs. Asset Liquidity) to the right legal vehicle before you even book your flight.
                             </p>
-                            <div className="p-10 bg-black text-white rounded-2xl border-l-8 border-brand-GOLD">
+                            <div className="p-10 bg-brand-50 text-brand-950 rounded-2xl border-l-8 border-brand-GOLD">
                                 <h4 className="text-brand-GOLD text-xs font-black uppercase tracking-widest mb-4">Expert Pro Tip</h4>
                                 <p className="text-sm font-medium leading-relaxed italic">
                                     "Most rejections happen because of aging documents. In Panama, an FBI report or Pension letter is only considered 'fresh' for 6 months from the date of issuance. Timing your apostilles is critical."
@@ -128,9 +128,9 @@ const RelocationVisasContent: React.FC = () => {
                             { title: "Cédula", desc: "The 'E' Cédula is your ticket to local life, bank accounts, and health discounts." },
                             { title: "Citizenship", desc: "Most residency paths lead to a path for naturalization after 5 years." }
                         ].map((item, idx) => (
-                            <div key={idx} className="p-8 bg-brand-950 rounded-2xl border border-brand-100">
+                            <div key={idx} className="p-8 bg-white rounded-2xl border border-brand-100">
                                 <h4 className="text-xs font-black uppercase tracking-widest text-brand-GOLD mb-4">{item.title}</h4>
-                                <p className="text-xs text-slate-400 font-bold leading-relaxed">{item.desc}</p>
+                                <p className="text-xs text-slate-500 font-bold leading-relaxed">{item.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -139,7 +139,7 @@ const RelocationVisasContent: React.FC = () => {
                 {/* Main Visa Grid */}
                 <div className="text-center mb-10 px-4">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic text-center underline italic">The Big <span className="text-brand-GOLD">Three</span></h2>
-                    <p className="text-slate-400 text-lg uppercase tracking-widest font-black italic text-center">90% of Successful Expats choose one of these paths.</p>
+                    <p className="text-slate-500 text-lg uppercase tracking-widest font-black italic text-center">90% of Successful Expats choose one of these paths.</p>
                 </div>
 
                 <div className="grid lg:grid-cols-3 gap-8 mb-32">
@@ -151,7 +151,7 @@ const RelocationVisasContent: React.FC = () => {
                             <div className="mb-10 relative z-10">
                                 <visa.icon className="text-brand-GOLD mb-8" size={56} strokeWidth={1.5} />
                                 <h3 className="text-3xl font-black uppercase tracking-tighter mb-4 italic leading-none">{visa.title}</h3>
-                                <p className="text-sm text-slate-400 font-medium leading-relaxed">{visa.description}</p>
+                                <p className="text-sm text-slate-500 font-medium leading-relaxed">{visa.description}</p>
                             </div>
                             <ul className="space-y-4 mb-12 flex-grow relative z-10">
                                 {visa.benefits.map((benefit, j) => (
@@ -160,7 +160,7 @@ const RelocationVisasContent: React.FC = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <Link href={visa.path} className="w-full py-5 bg-brand-950 text-white text-center font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-GOLD hover:text-brand-950 transition-all relative z-10">
+                            <Link href={visa.path} className="w-full py-5 bg-white text-white text-center font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-GOLD hover:text-brand-950 transition-all relative z-10">
                                 View Requirements
                             </Link>
                         </div>
@@ -181,7 +181,7 @@ const RelocationVisasContent: React.FC = () => {
                                 </div>
                                 <div>
                                     <h4 className="text-xl font-black uppercase italic mb-2">Improper Authentication</h4>
-                                    <p className="text-sm text-slate-400 font-medium leading-relaxed">Using a simple notary when an Apostille is required at the federal level.</p>
+                                    <p className="text-sm text-slate-500 font-medium leading-relaxed">Using a simple notary when an Apostille is required at the federal level.</p>
                                 </div>
                             </div>
                             <div className="flex gap-6">
@@ -190,7 +190,7 @@ const RelocationVisasContent: React.FC = () => {
                                 </div>
                                 <div>
                                     <h4 className="text-xl font-black uppercase italic mb-2">Inaccurate Transitions</h4>
-                                    <p className="text-sm text-slate-400 font-medium leading-relaxed">Failing to have documents translated by a Panamanian-certified translator.</p>
+                                    <p className="text-sm text-slate-500 font-medium leading-relaxed">Failing to have documents translated by a Panamanian-certified translator.</p>
                                 </div>
                             </div>
                             <div className="flex gap-6">
@@ -199,7 +199,7 @@ const RelocationVisasContent: React.FC = () => {
                                 </div>
                                 <div>
                                     <h4 className="text-xl font-black uppercase italic mb-2">Timing Mismatches</h4>
-                                    <p className="text-sm text-slate-400 font-medium leading-relaxed">Gathering papers too early and having them expire before the filing appointment.</p>
+                                    <p className="text-sm text-slate-500 font-medium leading-relaxed">Gathering papers too early and having them expire before the filing appointment.</p>
                                 </div>
                             </div>
                             <div className="flex gap-6">
@@ -208,7 +208,7 @@ const RelocationVisasContent: React.FC = () => {
                                 </div>
                                 <div>
                                     <h4 className="text-xl font-black uppercase italic mb-2">Financial Vagueness</h4>
-                                    <p className="text-sm text-slate-400 font-medium leading-relaxed">Providing bank statements that do not clearly show the legitimate source of funds.</p>
+                                    <p className="text-sm text-slate-500 font-medium leading-relaxed">Providing bank statements that do not clearly show the legitimate source of funds.</p>
                                 </div>
                             </div>
                         </div>
@@ -218,15 +218,15 @@ const RelocationVisasContent: React.FC = () => {
                 {/* The Comparison Hub */}
                 <div className="text-center mb-10 px-4">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic text-center italic leading-none">Match Your <span className="text-brand-GOLD underline italic">Lifestyle</span></h2>
-                    <p className="text-slate-400 text-lg uppercase tracking-widest font-black italic text-center">Which visa fits your current reality?</p>
+                    <p className="text-slate-500 text-lg uppercase tracking-widest font-black italic text-center">Which visa fits your current reality?</p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8 mb-32">
-                    <div className="p-12 bg-brand-950 rounded-2xl border border-brand-100 flex flex-col justify-between">
+                    <div className="p-12 bg-white rounded-2xl border border-brand-100 flex flex-col justify-between">
                         <div>
                             <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD mb-4 block">Best for Families & Professionals</span>
                             <h4 className="text-3xl font-black uppercase tracking-tighter italic mb-6">Friendly Nations</h4>
-                            <p className="text-slate-400 font-medium text-sm leading-relaxed mb-8">
+                            <p className="text-slate-500 font-medium text-sm leading-relaxed mb-8">
                                 If you are under 50, want to work locally, or start a business, this is the gold standard. It requires a $200k real estate investment or a verified Panamanian job offer.
                             </p>
                         </div>
@@ -240,11 +240,11 @@ const RelocationVisasContent: React.FC = () => {
                         </Link>
                     </div>
 
-                    <div className="p-12 bg-black text-white rounded-2xl flex flex-col justify-between">
+                    <div className="p-12 bg-brand-50 text-brand-950 rounded-2xl flex flex-col justify-between">
                         <div>
                             <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD mb-4 block">Best for Retirees & High Yielders</span>
                             <h4 className="text-3xl font-black uppercase tracking-tighter italic mb-6">Pensionado Program</h4>
-                            <p className="text-slate-400 font-medium text-sm leading-relaxed mb-8">
+                            <p className="text-slate-500 font-medium text-sm leading-relaxed mb-8">
                                 The most efficient residency program on the planet. Requires a $1,000/mo lifetime pension and grants immediate, permanent residency with lifetime sales tax discounts.
                             </p>
                         </div>
@@ -264,12 +264,12 @@ const RelocationVisasContent: React.FC = () => {
                     <h2 className="text-4xl md:text-6xl font-heading font-black mb-16 text-center uppercase tracking-tighter italic italic underline decoration-brand-GOLD">Visa <span className="text-brand-GOLD">Intel</span> FAQ</h2>
                     <div className="space-y-6">
                         {faqs.map((faq, i) => (
-                            <details key={i} className="group bg-brand-950 rounded-2xl border border-brand-100 overflow-hidden transition-all hover:border-brand-GOLD/50">
+                            <details key={i} className="group bg-white rounded-2xl border border-brand-100 overflow-hidden transition-all hover:border-brand-GOLD/50">
                                 <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
                                     <span className="text-xl font-black uppercase tracking-tighter italic pr-8">{faq.question}</span>
                                     <HelpCircle className="text-brand-GOLD" size={24} />
                                 </summary>
-                                <div className="px-10 pb-10 text-slate-400 font-medium leading-relaxed border-t border-white/10 pt-8" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                                <div className="px-10 pb-10 text-slate-500 font-medium leading-relaxed border-t border-brand-100 pt-8" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                             </details>
                         ))}
                     </div>
@@ -277,7 +277,7 @@ const RelocationVisasContent: React.FC = () => {
             </section>
 
             {/* Quick Summary Table */}
-            <section className="py-14 bg-brand-950 text-white rounded-3xl mx-4 mb-20 overflow-hidden relative">
+            <section className="py-14 bg-white text-white rounded-3xl mx-4 mb-20 overflow-hidden relative">
                 <div className="absolute inset-0 opacity-5 pointer-events-none">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white rounded-full blur-[150px]"></div>
                 </div>
@@ -288,7 +288,7 @@ const RelocationVisasContent: React.FC = () => {
                     </div>
                     <table className="w-full text-left">
                         <thead>
-                            <tr className="border-b border-white/10">
+                            <tr className="border-b border-brand-100">
                                 <th className="py-10 text-[10px] font-black uppercase tracking-[0.4em] text-brand-GOLD">Feature</th>
                                 <th className="py-10 text-[10px] font-black uppercase tracking-[0.4em]">Friendly Nations</th>
                                 <th className="py-10 text-[10px] font-black uppercase tracking-[0.4em]">Pensionado</th>
@@ -330,11 +330,11 @@ const RelocationVisasContent: React.FC = () => {
                 <div className="max-w-4xl mx-auto flex flex-col items-center">
                     <ShieldCheck className="text-brand-GOLD mx-auto mb-8" size={64} />
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none text-center">Plan Your <br /> <span className="text-brand-GOLD underline italic">Secure</span> Exit.</h2>
-                    <p className="text-base md:text-lg text-slate-400 mb-16 font-medium leading-relaxed italic text-center">
+                    <p className="text-base md:text-lg text-slate-500 mb-16 font-medium leading-relaxed italic text-center">
                         Don't guess with your future. Relocating to Panama is a high-stakes move that requires <strong>panama relocation expert</strong> precision.
                     </p>
                     <div className="flex justify-center flex-col sm:flex-row gap-8">
-                        <Link href={`/${lang}/relocation/tours`} className="px-8 py-4 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-[11px] rounded-full hover:bg-black transition-all shadow-2xl inline-block">
+                        <Link href={`/${lang}/relocation/tours`} className="px-8 py-4 bg-white text-white font-black uppercase tracking-[0.3em] text-[11px] rounded-full hover:bg-brand-50 transition-all shadow-2xl inline-block">
                             Start My Discovery Journey
                         </Link>
                     </div>

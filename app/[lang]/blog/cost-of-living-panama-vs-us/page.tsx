@@ -12,15 +12,15 @@ export const metadata: Metadata = {
 
 export default function CostOfLivingArticle() {
     return (
-        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+        <article className="bg-white min-h-screen pt-28 pb-20">
             {/* Context-Aware Header */}
-            <section className="bg-brand-900 py-32 relative overflow-hidden">
+            <section className="bg-brand-50 py-32 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <Image src="https://images.unsplash.com/photo-1574577457811-2eb2292021f1?w=1600&q=80" alt="Panama City Skyline" fill className="object-cover" />
                 </div>
                 <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
                     <span className="text-[10px] font-bold text-brand-GOLD uppercase tracking-[0.4em] mb-4 block">ECONOMIC INTELLIGENCE 2026</span>
-                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">Cost of Living: Panama vs. The United States</h1>
+                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-brand-950 mb-8 leading-tight">Cost of Living: Panama vs. The United States</h1>
                     <p className="text-xl text-brand-300 leading-relaxed font-medium">Why the American middle class is upgrading to the Panamanian elite class.</p>
                 </div>
             </section>
@@ -41,13 +41,13 @@ export default function CostOfLivingArticle() {
                     </p>
 
                     {/* Aesthetic Stats Block extracted from Context */}
-                    <div className="glass-card p-10 rounded-3xl border border-white/5 not-prose my-16 reveal-on-scroll">
-                        <h3 className="text-2xl font-bold text-white mb-8 uppercase italic text-center">Monthly Budget Comparison (Couple)</h3>
+                    <div className="card-light p-10 rounded-3xl border border-brand-100 not-prose my-16 reveal-on-scroll">
+                        <h3 className="text-2xl font-bold text-brand-950 mb-8 uppercase italic text-center">Monthly Budget Comparison (Couple)</h3>
                         <div className="grid md:grid-cols-2 gap-8">
-                            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
-                                <div className="text-slate-400 font-bold uppercase tracking-widest text-[10px] mb-2">Average US Metro</div>
-                                <div className="text-4xl font-black text-white mb-6">$6,500<span className="text-sm text-slate-400 font-medium">/mo</span></div>
-                                <ul className="space-y-4 text-sm font-medium text-slate-300">
+                            <div className="bg-white/5 p-8 rounded-2xl border border-brand-100">
+                                <div className="text-slate-500 font-bold uppercase tracking-widest text-[10px] mb-2">Average US Metro</div>
+                                <div className="text-4xl font-black text-brand-950 mb-6">$6,500<span className="text-sm text-slate-500 font-medium">/mo</span></div>
+                                <ul className="space-y-4 text-sm font-medium text-slate-500">
                                     <li className="flex justify-between border-b pb-2"><span>Housing (Rent/Mortgage)</span> <span>$2,800</span></li>
                                     <li className="flex justify-between border-b pb-2"><span>Healthcare (Premiums+Out of Pocket)</span> <span>$1,200</span></li>
                                     <li className="flex justify-between border-b pb-2"><span>Groceries & Dining</span> <span>$1,000</span></li>
@@ -55,15 +55,15 @@ export default function CostOfLivingArticle() {
                                     <li className="flex justify-between pb-2"><span>Transportation & Insurance</span> <span>$1,100</span></li>
                                 </ul>
                             </div>
-                            <div className="bg-brand-900 text-white p-8 rounded-2xl shadow-xl relative overflow-hidden">
+                            <div className="bg-brand-50 text-white p-8 rounded-2xl shadow-xl relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-brand-GOLD/20 rounded-full -mr-16 -mt-16 blur-xl"></div>
                                 <div className="text-brand-GOLD font-bold uppercase tracking-widest text-[10px] mb-2 relative z-10">Panama (Luxury Standard)</div>
-                                <div className="text-4xl font-black text-white mb-6 relative z-10">$3,200<span className="text-sm text-brand-400 font-medium">/mo</span></div>
+                                <div className="text-4xl font-black text-brand-950 mb-6 relative z-10">$3,200<span className="text-sm text-brand-400 font-medium">/mo</span></div>
                                 <ul className="space-y-4 text-sm font-medium text-brand-200 relative z-10">
-                                    <li className="flex justify-between border-b border-white/10 pb-2"><span>Oceanview Condo Rent</span> <span className="text-white font-bold">$1,500</span></li>
-                                    <li className="flex justify-between border-b border-white/10 pb-2"><span>Premium Local Health Insurance</span> <span className="text-white font-bold">$250</span></li>
-                                    <li className="flex justify-between border-b border-white/10 pb-2"><span>Groceries & Fine Dining</span> <span className="text-white font-bold">$800</span></li>
-                                    <li className="flex justify-between border-b border-white/10 pb-2"><span>Utilities (A/C & Fiber Optic)</span> <span className="text-white font-bold">$150</span></li>
+                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Oceanview Condo Rent</span> <span className="text-white font-bold">$1,500</span></li>
+                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Premium Local Health Insurance</span> <span className="text-white font-bold">$250</span></li>
+                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Groceries & Fine Dining</span> <span className="text-white font-bold">$800</span></li>
+                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Utilities (A/C & Fiber Optic)</span> <span className="text-white font-bold">$150</span></li>
                                     <li className="flex justify-between pb-2"><span>Transportation & Maid (1x/week)</span> <span className="text-white font-bold">$500</span></li>
                                 </ul>
                             </div>
@@ -100,7 +100,7 @@ export default function CostOfLivingArticle() {
                     </ul>
 
                     {/* Context-Aware CTA block */}
-                    <div className="bg-brand-950 p-10 rounded-3xl mt-16 not-prose text-center border-t-4 border-brand-GOLD">
+                    <div className="bg-white p-10 rounded-3xl mt-16 not-prose text-center border-t-4 border-brand-GOLD">
                         <h3 className="text-white font-heading text-3xl font-bold mb-4 uppercase italic tracking-tighter">Ready to Verify the Math?</h3>
                         <p className="text-brand-300 mb-8 max-w-xl mx-auto">Stop reading and start experiencing. Work with our Panama advisors to show you the real costs, neighborhoods, and lifestyles available to you.</p>
                         <Link href="/contacto" className="inline-flex items-center gap-3 bg-brand-GOLD text-brand-950 px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-white transition-all shadow-xl">

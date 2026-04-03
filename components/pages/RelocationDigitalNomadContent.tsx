@@ -35,7 +35,7 @@ const RelocationDigitalNomadContent = () => {
     ];
 
     return (
-        <div className="bg-brand-950 text-white min-h-screen">
+        <div className="bg-white text-white min-h-screen">
             <BreadcrumbSchema
                 items={[
                     { name: 'Relocation', item: `https://panamarealestatesale.com/${lang}/relocation` },
@@ -60,7 +60,7 @@ const RelocationDigitalNomadContent = () => {
                         <h1 className="text-6xl md:text-8xl font-heading font-black mb-10 uppercase tracking-tighter leading-none italic">
                             Work from <span className="text-brand-GOLD">Paradise</span>, <br /> Pay <span className="underline decoration-brand-GOLD">Zero</span> Tax.
                         </h1>
-                        <p className="text-xl text-slate-400 font-medium leading-relaxed mb-12">
+                        <p className="text-xl text-slate-500 font-medium leading-relaxed mb-12">
                             Stop commuting. Start living. The <strong>panama digital nomad visa</strong> is your legal shortcut to a tropical lifestyle with first-world connectivity and a territorial tax system that keeps your money in your pocket.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6">
@@ -76,7 +76,7 @@ const RelocationDigitalNomadContent = () => {
             </section>
 
             {/* The 3 Pillars of Nomad Success */}
-            <section className="py-24 bg-black border-y border-white/5">
+            <section className="py-24 bg-brand-50 border-y border-brand-100">
                 <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-3 gap-12">
                     {[
                         {
@@ -98,7 +98,7 @@ const RelocationDigitalNomadContent = () => {
                         <div key={i} className="p-10 bg-white/5 rounded-2xl border border-brand-100 hover:border-brand-GOLD/30 transition-all">
                             <div className="mb-6">{item.icon}</div>
                             <h3 className="text-2xl font-black uppercase tracking-tighter mb-4 italic">{item.title}</h3>
-                            <p className="text-slate-400 font-medium text-sm leading-relaxed">{item.desc}</p>
+                            <p className="text-slate-500 font-medium text-sm leading-relaxed">{item.desc}</p>
                         </div>
                     ))}
                 </div>
@@ -110,7 +110,7 @@ const RelocationDigitalNomadContent = () => {
                     <div className="flex flex-col lg:flex-row gap-20 items-center">
                         <div className="lg:w-1/2">
                             <div className="p-1 bg-gradient-to-br from-brand-GOLD to-brand-950 rounded-2xl">
-                                <div className="bg-brand-950 rounded-[3.8rem] p-6 overflow-hidden relative group">
+                                <div className="bg-white rounded-[3.8rem] p-6 overflow-hidden relative group">
                                     <div className="relative z-10">
                                         <div className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest mb-6">Real Speed Test Data / Jan 2026</div>
                                         <div className="space-y-8">
@@ -148,7 +148,7 @@ const RelocationDigitalNomadContent = () => {
                         </div>
                         <div className="lg:w-1/2">
                             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The Most <br /> <span className="text-brand-GOLD">Connected</span> Hub <br /> in LatAm</h2>
-                            <p className="text-lg text-slate-400 font-medium leading-relaxed mb-10">
+                            <p className="text-lg text-slate-500 font-medium leading-relaxed mb-10">
                                 Connectivity is the lifeline of the digital nomad. Panama hosts 7 of the world's most critical submarine fiber optic cables. This infrastructure means you enjoy lower latency than most cities in North America. Whether you are trading crypto, managing a dev team, or editing 4K video, our <strong>remote work panama</strong> guide ensures you choose a rental with guaranteed uptime.
                             </p>
                             <ul className="space-y-4 mb-10">
@@ -162,11 +162,11 @@ const RelocationDigitalNomadContent = () => {
             </section>
 
             {/* Nomad Neighborhoods */}
-            <section className="py-14 bg-black rounded-3xl mx-4">
+            <section className="py-14 bg-brand-50 rounded-3xl mx-4">
                 <div className="max-w-7xl mx-auto px-8">
                     <div className="text-center mb-20">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic text-brand-950 leading-none">Where the <span className="text-brand-GOLD">Panama Real Estate Sales</span> Hang</h2>
-                        <p className="text-xl text-slate-400 font-medium max-w-2xl mx-auto italic">From colonial vibes to high-tech jungles, pick your vibe.</p>
+                        <p className="text-xl text-slate-500 font-medium max-w-2xl mx-auto italic">From colonial vibes to high-tech jungles, pick your vibe.</p>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
@@ -199,7 +199,7 @@ const RelocationDigitalNomadContent = () => {
                                         <h3 className="text-3xl font-black text-white uppercase tracking-tighter italic">{item.title}</h3>
                                     </div>
                                 </div>
-                                <p className="text-slate-400 font-medium leading-relaxed px-6">{item.desc}</p>
+                                <p className="text-slate-500 font-medium leading-relaxed px-6">{item.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -212,7 +212,7 @@ const RelocationDigitalNomadContent = () => {
                     <div className="text-center mb-20 animate-fade-in-up">
                         <HelpCircle size={48} className="text-brand-GOLD mx-auto mb-6" />
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic leading-none">Nomad <span className="text-brand-GOLD italic underline">Intelligence</span></h2>
-                        <p className="text-lg text-slate-400 font-medium">Quick answers for high-speed relocation.</p>
+                        <p className="text-lg text-slate-500 font-medium">Quick answers for high-speed relocation.</p>
                     </div>
 
                     <div className="space-y-6">
@@ -224,7 +224,7 @@ const RelocationDigitalNomadContent = () => {
                                         <Zap size={24} />
                                     </span>
                                 </summary>
-                                <div className="px-8 pb-8 text-slate-400 font-medium leading-relaxed border-t border-white/5 pt-6">
+                                <div className="px-8 pb-8 text-slate-500 font-medium leading-relaxed border-t border-brand-100 pt-6">
                                     {faq.answer}
                                 </div>
                             </details>
@@ -237,7 +237,7 @@ const RelocationDigitalNomadContent = () => {
                             <p className="text-lg font-black opacity-70 mb-10 max-w-xl mx-auto">
                                 Skip the digital nomad bureaucracy. We handle your entire visa filing and 6-month fiber-guaranteed housing contract in one package.
                             </p>
-                            <Link href={`/${lang}/contacto`} className="inline-flex items-center gap-4 px-12 py-6 bg-brand-950 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all">
+                            <Link href={`/${lang}/contacto`} className="inline-flex items-center gap-4 px-12 py-6 bg-white text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all">
                                 Get The Nomad Bundle <ArrowRight size={14} />
                             </Link>
                         </div>

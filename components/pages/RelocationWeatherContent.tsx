@@ -62,7 +62,7 @@ const RelocationWeatherContent: React.FC = () => {
             </div>
 
             {/* Hero Section */}
-            <section className="bg-brand-950 py-14 text-white relative overflow-hidden rounded-b-[4rem]">
+            <section className="bg-white py-14 text-white relative overflow-hidden rounded-b-[4rem]">
                 <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
                     <span className="inline-block px-5 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
                         The 2026 Climate Blueprint
@@ -70,7 +70,7 @@ const RelocationWeatherContent: React.FC = () => {
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-8 uppercase tracking-tighter italic leading-none">
                         Panama <span className="text-brand-GOLD italic">Weather</span> <br /> By Month
                     </h1>
-                    <p className="text-base md:text-lg text-slate-400 max-w-4xl mx-auto leading-relaxed font-black uppercase tracking-tight">
+                    <p className="text-base md:text-lg text-slate-500 max-w-4xl mx-auto leading-relaxed font-black uppercase tracking-tight">
                         Timing is everything for your <strong>panama relocation discovery tour</strong>. Discover the difference between the 'Summer' dry season and the lush 'Green' season.
                     </p>
                 </div>
@@ -80,19 +80,19 @@ const RelocationWeatherContent: React.FC = () => {
             <section className="py-14 max-w-7xl mx-auto px-4">
                 <div className="text-center mb-24">
                     <h2 className="text-4xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter italic">The Monthly <span className="text-brand-GOLD italic">Breakdown</span></h2>
-                    <p className="text-slate-400 text-lg uppercase tracking-widest font-black italic">A 12-month guide to Panama's tropical pulse.</p>
+                    <p className="text-slate-500 text-lg uppercase tracking-widest font-black italic">A 12-month guide to Panama's tropical pulse.</p>
                 </div>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
                     {months.map((m, i) => (
-                        <div key={i} className={`p-8 rounded-3xl border ${m.season === 'Dry' ? 'border-brand-GOLD/30 bg-brand-GOLD/5' : 'border-white/10 bg-brand-50'} flex flex-col items-center text-center transition-transform hover:-translate-y-2`}>
+                        <div key={i} className={`p-8 rounded-3xl border ${m.season === 'Dry' ? 'border-brand-GOLD/30 bg-brand-GOLD/5' : 'border-brand-100 bg-brand-50'} flex flex-col items-center text-center transition-transform hover:-translate-y-2`}>
                             <m.icon className={m.season === 'Dry' ? 'text-brand-GOLD' : 'text-blue-400'} size={32} />
                             <h4 className="mt-6 font-black uppercase tracking-tighter text-lg leading-none">{m.name}</h4>
                             <div className="mt-4 flex flex-col gap-2">
-                                <span className={`text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full ${m.season === 'Dry' ? 'bg-brand-GOLD text-brand-950' : m.season === 'Shoulder' ? 'bg-neutral-200 text-slate-400' : 'bg-blue-100 text-blue-600'}`}>
+                                <span className={`text-[9px] font-black uppercase tracking-widest px-3 py-1 rounded-full ${m.season === 'Dry' ? 'bg-brand-GOLD text-brand-950' : m.season === 'Shoulder' ? 'bg-neutral-200 text-slate-500' : 'bg-blue-100 text-blue-600'}`}>
                                     {m.season}
                                 </span>
-                                <span className="text-xs font-bold text-slate-400">{m.temp}</span>
+                                <span className="text-xs font-bold text-slate-500">{m.temp}</span>
                             </div>
                         </div>
                     ))}
@@ -105,7 +105,7 @@ const RelocationWeatherContent: React.FC = () => {
                     <div className="flex flex-col lg:flex-row gap-20">
                         <div className="lg:w-1/2">
                             <h3 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-8 italic text-brand-900 leading-tight">Dry Season <br /> (Jan - April)</h3>
-                            <p className="text-slate-400 leading-relaxed font-medium mb-10">
+                            <p className="text-slate-500 leading-relaxed font-medium mb-10">
                                 This is the high season for <strong>panama luxury developments</strong> and tourism. Expect clear blue skies, strong trade winds (Alisios), and perfect beach weather. This is the <strong>best time to visit panama</strong> for those who want consistent sunshine.
                             </p>
                             <ul className="space-y-4">
@@ -119,7 +119,7 @@ const RelocationWeatherContent: React.FC = () => {
                         </div>
                         <div className="lg:w-1/2">
                             <h3 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-8 italic text-brand-900 leading-tight">Green Season <br /> (May - Dec)</h3>
-                            <p className="text-slate-400 leading-relaxed font-medium mb-10">
+                            <p className="text-slate-500 leading-relaxed font-medium mb-10">
                                 Don't let wait the name scare you. The <strong>green season panama</strong> usually features sunny mornings followed by heavy afternoon rain showers. This is when the mountains of Boquete are at their most vibrant and lush.
                             </p>
                             <ul className="space-y-4">
@@ -136,7 +136,7 @@ const RelocationWeatherContent: React.FC = () => {
             </section>
 
             {/* The Science of Microclimates: The Panama Real Estate Sale Truth */}
-            <section className="py-14 bg-black rounded-3xl mx-4 border border-brand-100 shadow-2xl relative overflow-hidden">
+            <section className="py-14 bg-brand-50 rounded-3xl mx-4 border border-brand-100 shadow-2xl relative overflow-hidden">
                 <div className="absolute top-0 left-0 p-20 opacity-5">
                     <Compass size={200} />
                 </div>
@@ -144,7 +144,7 @@ const RelocationWeatherContent: React.FC = () => {
                     <div className="grid lg:grid-cols-2 gap-24 items-center">
                         <div>
                             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD italic">Microclimate</span> <br /> Paradox</h2>
-                            <div className="space-y-8 text-lg text-slate-400 font-medium leading-[1.8]">
+                            <div className="space-y-8 text-lg text-slate-500 font-medium leading-[1.8]">
                                 <p>
                                     Panama is geographically unique. It is a narrow bridge between two oceans, meaning weather can change within a 15-minute drive. For the <strong>expat panama</strong> community, this isn't just a curiosity—it's a lifestyle determinant.
                                 </p>
@@ -154,15 +154,15 @@ const RelocationWeatherContent: React.FC = () => {
                             </div>
                         </div>
                         <div className="grid grid-cols-1 gap-8">
-                            <div className="p-10 bg-black text-white rounded-2xl">
+                            <div className="p-10 bg-brand-50 text-brand-950 rounded-2xl">
                                 <h4 className="text-xl font-black uppercase tracking-widest text-brand-GOLD mb-4 italic italic">The Continental Divide</h4>
-                                <p className="text-sm text-slate-400 leading-relaxed">
+                                <p className="text-sm text-slate-500 leading-relaxed">
                                     The central mountain range acts as a wall. While the Caribbean side (Bocas del Toro) stays wet year-round, the Pacific side (Coronado) enjoys a distinct dry season.
                                 </p>
                             </div>
-                            <div className="p-10 bg-brand-950 rounded-2xl border border-brand-100">
+                            <div className="p-10 bg-white rounded-2xl border border-brand-100">
                                 <h4 className="text-xl font-black uppercase tracking-widest text-brand-950 mb-4 italic">Elevation vs Humidity</h4>
-                                <p className="text-sm text-slate-400 leading-relaxed">
+                                <p className="text-sm text-slate-500 leading-relaxed">
                                     For every 1,000 feet of elevation gain, the temperature drops by about 3.5°F. This is why Boquete at 3,500ft is the "Eternal Spring" compared to sea-level Panama City.
                                 </p>
                             </div>
@@ -175,7 +175,7 @@ const RelocationWeatherContent: React.FC = () => {
             <section className="py-14 max-w-7xl mx-auto px-4">
                 <div className="text-center mb-24">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic">Regional <span className="text-brand-GOLD italic">Atmospheres</span></h2>
-                    <p className="text-slate-400 font-black uppercase tracking-widest text-xs">Different strokes for different folks.</p>
+                    <p className="text-slate-500 font-black uppercase tracking-widest text-xs">Different strokes for different folks.</p>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-12">
@@ -188,7 +188,7 @@ const RelocationWeatherContent: React.FC = () => {
                                 <p className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD">Hot & Humid</p>
                             </div>
                         </div>
-                        <p className="text-sm text-slate-400 leading-relaxed px-4">
+                        <p className="text-sm text-slate-500 leading-relaxed px-4">
                             Expect 85-90°F with high humidity. The <strong>best time to visit panama city</strong> is during the 'Summer' (Jan-March) when the trade winds blow away the coastal haze.
                         </p>
                     </div>
@@ -201,7 +201,7 @@ const RelocationWeatherContent: React.FC = () => {
                                 <p className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD underline">Cool Mist</p>
                             </div>
                         </div>
-                        <p className="text-sm text-slate-400 leading-relaxed px-4">
+                        <p className="text-sm text-slate-500 leading-relaxed px-4">
                             The <strong>Boquete weather 2026</strong> forecast remains consistent: 65-75°F. The "Bajareque" mist is your best friend or worst enemy depending on your mood.
                         </p>
                     </div>
@@ -214,7 +214,7 @@ const RelocationWeatherContent: React.FC = () => {
                                 <p className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD">Arco Seco</p>
                             </div>
                         </div>
-                        <p className="text-sm text-slate-400 leading-relaxed px-4">
+                        <p className="text-sm text-slate-500 leading-relaxed px-4">
                             In the <strong>Coronado panama</strong> dry arc, you'll see 20% less rain than the rest of the country. If you are a sun-seeker, this is your <strong>best places in panama for expats</strong> choice.
                         </p>
                     </div>
@@ -222,13 +222,13 @@ const RelocationWeatherContent: React.FC = () => {
             </section>
 
             {/* Preparation and What to Pack */}
-            <section className="py-14 bg-black text-white rounded-3xl mx-4">
+            <section className="py-14 bg-brand-50 text-brand-950 rounded-3xl mx-4">
                 <div className="max-w-7xl mx-auto px-8">
                     <div className="flex flex-col lg:flex-row gap-24 items-center">
                         <div className="lg:w-1/2">
                             <Star className="text-brand-GOLD mb-10" size={64} />
                             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD italic">Packer's</span> <br /> Manifesto</h2>
-                            <div className="space-y-8 text-lg text-slate-400 font-medium leading-[1.8]">
+                            <div className="space-y-8 text-lg text-slate-500 font-medium leading-[1.8]">
                                 <p>
                                     Most visitors pack for "Tropical Paradise" only to find themselves freezing in the Boquete highlands or at a high-end restaurant in the city.
                                 </p>
@@ -251,15 +251,15 @@ const RelocationWeatherContent: React.FC = () => {
                             <h4 className="text-3xl font-black uppercase tracking-tighter mb-8 italic italic">Seasonal Logic</h4>
                             <ul className="space-y-6">
                                 <li className="flex gap-4">
-                                    <div className="w-10 h-10 bg-brand-950 text-white rounded-xl flex items-center justify-center shrink-0 font-black italic">!</div>
+                                    <div className="w-10 h-10 bg-white text-white rounded-xl flex items-center justify-center shrink-0 font-black italic">!</div>
                                     <p className="text-sm font-medium leading-relaxed"><strong>Jan - March:</strong> Strong winds mean the Pacific is choppy. Great for kitesurfing, tough for fishing.</p>
                                 </li>
                                 <li className="flex gap-4">
-                                    <div className="w-10 h-10 bg-brand-950 text-white rounded-xl flex items-center justify-center shrink-0 font-black italic">!</div>
+                                    <div className="w-10 h-10 bg-white text-white rounded-xl flex items-center justify-center shrink-0 font-black italic">!</div>
                                     <p className="text-sm font-medium leading-relaxed"><strong>Oct - Nov:</strong> Peak rain. The best time to see the <strong>Mist over Boquete</strong> but avoid the Darien gap tours.</p>
                                 </li>
                             </ul>
-                            <Link href={`/${lang}/relocation/tours`} className="mt-12 w-full block py-6 bg-brand-950 text-white text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all">
+                            <Link href={`/${lang}/relocation/tours`} className="mt-12 w-full block py-6 bg-white text-white text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all">
                                 Custom Packing Guide
                             </Link>
                         </div>
@@ -268,20 +268,20 @@ const RelocationWeatherContent: React.FC = () => {
             </section>
 
             {/* Related Resources: The Topic Cluster */}
-            <section className="py-24 bg-brand-950 rounded-3xl mx-4 mb-32">
+            <section className="py-24 bg-white rounded-3xl mx-4 mb-32">
                 <div className="max-w-7xl mx-auto px-8">
-                    <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-slate-400 mb-12 text-center">Complete Your Research</h4>
+                    <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-slate-500 mb-12 text-center">Complete Your Research</h4>
                     <div className="grid md:grid-cols-2 gap-8">
                         <Link href={`/${lang}/relocation/cost-of-living`} className="group p-6 bg-white rounded-2xl border border-brand-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Zap className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Cost of Living 2026</h5>
-                            <p className="text-xs text-slate-400 font-medium mb-6">Compare the exact costs of Boquete vs Coronado vs Panama City.</p>
+                            <p className="text-xs text-slate-500 font-medium mb-6">Compare the exact costs of Boquete vs Coronado vs Panama City.</p>
                             <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">View Guide <ArrowRight size={12} /></span>
                         </Link>
                         <Link href={`/${lang}/relocation/guides/boquete-vs-coronado`} className="group p-6 bg-white rounded-2xl border border-brand-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Compass className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Boquete vs Coronado</h5>
-                            <p className="text-xs text-slate-400 font-medium mb-6">The definitive showdown between the mountains and the beach.</p>
+                            <p className="text-xs text-slate-500 font-medium mb-6">The definitive showdown between the mountains and the beach.</p>
                             <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">View Guide <ArrowRight size={12} /></span>
                         </Link>
                     </div>
@@ -294,7 +294,7 @@ const RelocationWeatherContent: React.FC = () => {
                 <p className="text-base md:text-lg font-bold mb-16 opacity-80 max-w-2xl mx-auto">
                     Ready to book your <strong>panama relocation discovery tour</strong>? Let's find the best dates for your scouting journey.
                 </p>
-                <Link href={`/${lang}/relocation/tours`} className="px-8 py-4 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl">
+                <Link href={`/${lang}/relocation/tours`} className="px-8 py-4 bg-white text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-50 transition-all shadow-2xl">
                     Check Tour Availability
                 </Link>
             </section>

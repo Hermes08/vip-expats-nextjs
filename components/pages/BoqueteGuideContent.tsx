@@ -35,7 +35,7 @@ const BoqueteGuideContent: React.FC = () => {
             <FAQSchema questions={faqs} />
 
             {/* Hero Section */}
-            <section className="bg-brand-950 py-32 text-white relative overflow-hidden rounded-b-[4rem]">
+            <section className="bg-white py-32 text-white relative overflow-hidden rounded-b-[4rem]">
                 <div className="absolute inset-0 opacity-30">
                     <Image
                         src="https://images.unsplash.com/photo-1544644011-87b829283197?w=1600&q=80"
@@ -169,7 +169,7 @@ const BoqueteGuideContent: React.FC = () => {
                     <p className="text-xl md:text-2xl font-bold mb-16 opacity-80">
                         See the neighborhoods, meeting the community, and find your <strong>boquete dream home</strong> on our specialized Highlands tour.
                     </p>
-                    <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-black transition-all shadow-2xl">
+                    <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-white text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-50 transition-all shadow-2xl">
                         Request Boquete Itinerary
                     </Link>
                 </div>

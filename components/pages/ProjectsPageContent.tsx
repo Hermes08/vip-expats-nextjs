@@ -43,9 +43,9 @@ const ProjectsPageContent: React.FC = () => {
     });
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950">
+        <div className="pt-24 min-h-screen bg-white">
             {/* Header: 3.0 Cinematic */}
-            <div className="relative pt-20 pb-14 px-4 overflow-hidden border-b border-white/5 bg-mesh-glow">
+            <div className="relative pt-20 pb-14 px-4 overflow-hidden border-b border-brand-100 bg-brand-50">
                 <div className="absolute inset-0 z-0 scale-105 overflow-hidden">
                     <motion.img
                         initial={{ opacity: 0, scale: 1.1 }}
@@ -64,13 +64,13 @@ const ProjectsPageContent: React.FC = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                         >
-                            <span className="inline-block border border-brand-GOLD/30 bg-brand-950/50 backdrop-blur-md text-brand-GOLD px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.5em] mb-6 shadow-[0_0_20px_rgba(233,195,73,0.1)]">
+                            <span className="inline-block border border-brand-GOLD/30 bg-brand-TEAL/50 backdrop-blur-md text-brand-GOLD px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.5em] mb-6 shadow-[0_0_20px_rgba(233,195,73,0.1)]">
                                 Asset Catalog <span className="text-white">2026</span>
                             </span>
                             <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl font-black text-white mb-5 tracking-tight leading-tight uppercase">
                                 THE INVESTMENT <span className="text-brand-GOLD">INVENTORY.</span>
                             </h1>
-                            <p className="text-base md:text-lg text-slate-400 max-w-2xl leading-relaxed font-medium italic border-l-2 border-brand-GOLD/20 pl-5 opacity-90">
+                            <p className="text-base md:text-lg text-slate-500 max-w-2xl leading-relaxed font-medium italic border-l-2 border-brand-GOLD/20 pl-5 opacity-90">
                                 Curating high-liquidity <strong>Panama real estate assets</strong> and exclusive <strong>luxury developments</strong> for the global elite.
                             </p>
                         </motion.div>
@@ -79,7 +79,7 @@ const ProjectsPageContent: React.FC = () => {
             </div>
 
             {/* Filters Bar */}
-            <div className="relative lg:sticky lg:top-[72px] z-40 bg-brand-950/70 backdrop-blur-2xl border-b border-white/5 py-8 shadow-2xl">
+            <div className="relative lg:sticky lg:top-[72px] z-40 bg-brand-TEAL/70 backdrop-blur-2xl border-b border-brand-100 py-8 shadow-2xl">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex flex-wrap items-center justify-between gap-4 sm:gap-10">
                         <div className="flex flex-wrap gap-4 sm:gap-12 items-center">
@@ -173,7 +173,7 @@ const ProjectsPageContent: React.FC = () => {
                     </div>
 
                     {filteredProjects.length === 0 && (
-                        <div className="text-center py-32 glass-card rounded-[4rem] border-white/5 shadow-2xl">
+                        <div className="text-center py-32 card-light rounded-[4rem] border-brand-100 shadow-2xl">
                             <p className="text-2xl text-gray-400 mb-4 font-black uppercase tracking-tighter">No assets found matching your criteria.</p>
                             <p className="text-sm text-gray-500 mb-12 font-medium">Try broadening your search for maximum ROI opportunities.</p>
                             <button
@@ -191,12 +191,12 @@ const ProjectsPageContent: React.FC = () => {
                 </div>
 
                 {/* SECTION: MASSIVE NEIGHBORHOOD ANALYSIS */}
-                <div className="mt-32 pt-20 border-t border-white/5">
+                <div className="mt-32 pt-20 border-t border-brand-100">
                     <div className="max-w-5xl mx-auto">
                         <div className="text-center mb-16">
                             <span className="bg-brand-GOLD/10 text-brand-GOLD px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-4 inline-block">Market Intelligence</span>
                             <h2 className="text-3xl md:text-5xl font-heading font-bold text-white mb-8">{t.projectsPage.neighborhoodTitle}</h2>
-                            <div className="prose prose-lg text-slate-400 max-w-none text-left leading-relaxed whitespace-pre-line font-medium">
+                            <div className="prose prose-lg text-slate-500 max-w-none text-left leading-relaxed whitespace-pre-line font-medium">
                                 {t.projectsPage.neighborhoodBody}
                             </div>
                         </div>
@@ -204,22 +204,22 @@ const ProjectsPageContent: React.FC = () => {
                         <div className="grid md:grid-cols-2 gap-16 mt-20">
                             <div className="space-y-10">
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-3"><TrendingUp className="text-brand-GOLD" /> Beachfront Investment Hotspots</h3>
-                                    <p className="text-sm leading-relaxed text-slate-400">The <strong>panama condos on the beach</strong> market has expanded significantly towards <strong>playa caracol panama</strong> and Playa Bonita. These areas represent <strong>panama beachfront investment</strong> opportunities with the highest potential for short-term rental yields. Benchmark these against the traditional <strong>coronado panama real estate</strong> market to see how <strong>panama city beach real estate</strong> is evolving towards a younger, lifestyle-oriented demographic.</p>
+                                    <h3 className="text-xl font-bold text-brand-950 mb-4 flex items-center gap-3"><TrendingUp className="text-brand-GOLD" /> Beachfront Investment Hotspots</h3>
+                                    <p className="text-sm leading-relaxed text-slate-500">The <strong>panama condos on the beach</strong> market has expanded significantly towards <strong>playa caracol panama</strong> and Playa Bonita. These areas represent <strong>panama beachfront investment</strong> opportunities with the highest potential for short-term rental yields. Benchmark these against the traditional <strong>coronado panama real estate</strong> market to see how <strong>panama city beach real estate</strong> is evolving towards a younger, lifestyle-oriented demographic.</p>
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-3"><Map className="text-brand-GOLD" /> The Highlands & Retiro Life</h3>
-                                    <p className="text-sm leading-relaxed text-slate-400">For <strong>panama mountain homes for sale</strong>, Boquete is the undisputed king. The <strong>boquete panama real estate</strong> market is driven by <strong>american retirees in panama</strong> looking for world-class wellness facilities and established <strong>expat communities in panama</strong>. Explore <strong>property in boquete panama</strong> as a defensive asset in your portfolio, providing stability and excellent quality of life under the <strong>pensionado visa panama</strong> benefits.</p>
+                                    <h3 className="text-xl font-bold text-brand-950 mb-4 flex items-center gap-3"><Map className="text-brand-GOLD" /> The Highlands & Retiro Life</h3>
+                                    <p className="text-sm leading-relaxed text-slate-500">For <strong>panama mountain homes for sale</strong>, Boquete is the undisputed king. The <strong>boquete panama real estate</strong> market is driven by <strong>american retirees in panama</strong> looking for world-class wellness facilities and established <strong>expat communities in panama</strong>. Explore <strong>property in boquete panama</strong> as a defensive asset in your portfolio, providing stability and excellent quality of life under the <strong>pensionado visa panama</strong> benefits.</p>
                                 </div>
                             </div>
                             <div className="space-y-10">
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-3"><Info className="text-brand-GOLD" /> Urban Luxury & Branded Residences</h3>
-                                    <p className="text-sm leading-relaxed text-slate-400"><strong>Panama city condos</strong> continue to lead the region in sophistication. Projects like <strong>ocean reef islands panama</strong> and <strong>westin panama residences</strong> are the pinnacle of <strong>panama branded residences</strong>. These properties appeal to international buyers seeking <strong>panama high end real estate</strong> with the security of a global hotel brand. Benchmark these against <strong>punta pacifica condos</strong> like <strong>ph oceanaire</strong> to understand the premium of hotel-managed inventory.</p>
+                                    <h3 className="text-xl font-bold text-brand-950 mb-4 flex items-center gap-3"><Info className="text-brand-GOLD" /> Urban Luxury & Branded Residences</h3>
+                                    <p className="text-sm leading-relaxed text-slate-500"><strong>Panama city condos</strong> continue to lead the region in sophistication. Projects like <strong>ocean reef islands panama</strong> and <strong>westin panama residences</strong> are the pinnacle of <strong>panama branded residences</strong>. These properties appeal to international buyers seeking <strong>panama high end real estate</strong> with the security of a global hotel brand. Benchmark these against <strong>punta pacifica condos</strong> like <strong>ph oceanaire</strong> to understand the premium of hotel-managed inventory.</p>
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-white mb-4 flex items-center gap-3"><ShieldCheck className="text-brand-GOLD" /> Buyer's Checklist for Panama</h3>
-                                    <p className="text-sm leading-relaxed text-slate-400">When <strong>buying real estate in panama</strong>, always verify the developer's track record and the <strong>panama real estate projects</strong>' history of appreciation. Our <strong>panama property investment guide</strong> recommends prioritizing <strong>panama gated communities</strong> with professional maintenance. Whether you seek <strong>panama expat real estate</strong> or a <strong>panama second home</strong>, the Rockstar advisors provide full transparency on closing costs and tax exemptions.</p>
+                                    <h3 className="text-xl font-bold text-brand-950 mb-4 flex items-center gap-3"><ShieldCheck className="text-brand-GOLD" /> Buyer's Checklist for Panama</h3>
+                                    <p className="text-sm leading-relaxed text-slate-500">When <strong>buying real estate in panama</strong>, always verify the developer's track record and the <strong>panama real estate projects</strong>' history of appreciation. Our <strong>panama property investment guide</strong> recommends prioritizing <strong>panama gated communities</strong> with professional maintenance. Whether you seek <strong>panama expat real estate</strong> or a <strong>panama second home</strong>, the Rockstar advisors provide full transparency on closing costs and tax exemptions.</p>
                                 </div>
                             </div>
                         </div>
@@ -228,7 +228,7 @@ const ProjectsPageContent: React.FC = () => {
             </div>
 
             {/* Search Grounding Wall */}
-            <section className="bg-black py-20 border-t border-white/5">
+            <section className="bg-brand-50 py-20 border-t border-brand-100">
                 <div className="max-w-7xl mx-auto px-4">
                     <h2 className="text-[10px] font-black text-neutral-600 uppercase tracking-[0.3em] mb-10 text-center">Global Property Search Hub</h2>
                     <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-40 text-[11px] font-bold text-brand-GOLD grayscale hover:grayscale-0 transition-all">

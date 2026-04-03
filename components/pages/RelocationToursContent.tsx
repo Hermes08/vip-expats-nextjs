@@ -16,11 +16,11 @@ const RelocationToursContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-brand-950 selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-white selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={breadcrumbItems} />
 
             {/* Hero Section */}
-            <section className="relative min-h-[90vh] flex items-center overflow-hidden border-b border-brand-100 bg-brand-950">
+            <section className="relative min-h-[90vh] flex items-center overflow-hidden border-b border-brand-100 bg-white">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80"
@@ -38,7 +38,7 @@ const RelocationToursContent: React.FC = () => {
                         <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-black mb-12 leading-[0.8] tracking-tighter uppercase italic text-white">
                             THE BOOTS <br /> <span className="text-brand-GOLD italic">GROUND</span> <br /> PROTOCOL.
                         </h1>
-                        <p className="text-base md:text-lg text-slate-400 max-w-xl leading-relaxed font-medium mb-16 italic border-l-4 border-brand-GOLD/20 pl-12 opacity-80">
+                        <p className="text-base md:text-lg text-slate-500 max-w-xl leading-relaxed font-medium mb-16 italic border-l-4 border-brand-GOLD/20 pl-12 opacity-80">
                             Don't buy a life you haven't lived. Explore the <strong>best places for expats to live in panama</strong> with the Panama Real Estate Sale team.
                         </p>
                         <div className="flex flex-wrap gap-8">
@@ -55,26 +55,26 @@ const RelocationToursContent: React.FC = () => {
                 <div className="grid lg:grid-cols-2 gap-24 items-center mb-32">
                     <div>
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Why a <br /> <span className="text-brand-GOLD underline italic">Tour</span> Matters.</h2>
-                        <div className="space-y-8 text-lg text-slate-400 font-medium leading-[1.8]">
+                        <div className="space-y-8 text-lg text-slate-500 font-medium leading-[1.8]">
                             <p>
                                 In 2026, Panama's real estate market is moving faster than ever. From <strong>luxury condos in Panama City</strong> to high-yield <strong>short-term rentals in Coronado</strong>, knowing which building has the best management and which neighborhood has the best infrastructure isn't something you can find on a listing site.
                             </p>
                             <p>
                                 A Panama Real Estate Sale <strong>relocation tour</strong> is a curated, high-intensity immersion into the <strong>panama expat lifestyle</strong>. We don't just show you houses; we introduce you to the community, the legal team, and the coffee shops where the "real" expat deals happen.
                             </p>
-                            <div className="grid grid-cols-2 gap-8 pt-12 border-t border-white/10 italic font-bold">
+                            <div className="grid grid-cols-2 gap-8 pt-12 border-t border-brand-100 italic font-bold">
                                 <div className="flex gap-4">
                                     <ShieldCheck className="text-brand-GOLD shrink-0" size={32} />
                                     <div>
                                         <h4 className="text-xs uppercase font-black mb-2 italic">Legal Vetting</h4>
-                                        <p className="text-[10px] text-slate-400 font-medium">Every project we visit is pre-checked for title and zoning compliance.</p>
+                                        <p className="text-[10px] text-slate-500 font-medium">Every project we visit is pre-checked for title and zoning compliance.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4">
                                     <Heart className="text-brand-GOLD shrink-0" size={32} />
                                     <div>
                                         <h4 className="text-xs uppercase font-black mb-2 italic">Social Access</h4>
-                                        <p className="text-[10px] text-slate-400 font-medium">Private meet-and-greets with current residents in Boquete and Coronado.</p>
+                                        <p className="text-[10px] text-slate-500 font-medium">Private meet-and-greets with current residents in Boquete and Coronado.</p>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +93,7 @@ const RelocationToursContent: React.FC = () => {
                 {/* 5-DAY ITINERARY: THE MASTER ROADMAP */}
                 <div className="text-center mb-24 underline italic">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic text-center leading-none">The <span className="text-brand-GOLD">Master</span> Itinerary</h2>
-                    <p className="text-slate-400 text-lg uppercase tracking-widest font-black italic text-center">5 Days de 2,000% Clarity.</p>
+                    <p className="text-slate-500 text-lg uppercase tracking-widest font-black italic text-center">5 Days de 2,000% Clarity.</p>
                 </div>
 
                 <div className="space-y-8">
@@ -137,8 +137,8 @@ const RelocationToursContent: React.FC = () => {
                                 </div>
                                 <div className="lg:w-3/4">
                                     <h3 className="text-3xl font-black uppercase tracking-tighter italic mb-4 leading-none">{item.title}</h3>
-                                    <p className="text-xs font-black uppercase tracking-widest text-slate-400 mb-6 italic">{item.focus}</p>
-                                    <p className="text-sm text-slate-400 font-medium leading-relaxed" dangerouslySetInnerHTML={{ __html: item.desc }} />
+                                    <p className="text-xs font-black uppercase tracking-widest text-slate-500 mb-6 italic">{item.focus}</p>
+                                    <p className="text-sm text-slate-500 font-medium leading-relaxed" dangerouslySetInnerHTML={{ __html: item.desc }} />
                                 </div>
                             </div>
                         </div>
@@ -147,13 +147,13 @@ const RelocationToursContent: React.FC = () => {
             </section>
 
             {/* Legal Proof of Concept */}
-            <section className="py-14 bg-brand-950 text-white rounded-[5xl] mx-4 relative overflow-hidden flex flex-col items-center">
+            <section className="py-14 bg-white text-white rounded-[5xl] mx-4 relative overflow-hidden flex flex-col items-center">
                 <div className="absolute inset-0 opacity-10 pointer-events-none">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-brand-GOLD rounded-full blur-[200px]"></div>
                 </div>
                 <div className="max-w-4xl mx-auto px-4 relative z-10 text-center flex flex-col items-center">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none text-center italic">The <span className="text-brand-GOLD">Legal</span> Shield.</h2>
-                    <p className="text-base md:text-lg text-slate-400 font-medium mb-16 leading-relaxed text-center">
+                    <p className="text-base md:text-lg text-slate-500 font-medium mb-16 leading-relaxed text-center">
                         Our tours are the only ones in Panama that integrate a <strong>mandatory legal consultation</strong>. Why? Because a house is only a home if your <strong>panama residency</strong> is 100% airtight.
                     </p>
                     <div className="grid md:grid-cols-3 gap-8 w-full">
@@ -165,7 +165,7 @@ const RelocationToursContent: React.FC = () => {
                             <div key={i} className="p-8 bg-white/5 border border-brand-100 rounded-2xl text-center flex flex-col items-center">
                                 <div className="mb-6">{p.icon}</div>
                                 <h4 className="text-lg font-black uppercase italic mb-2 leading-none">{p.title}</h4>
-                                <p className="text-[10px] text-slate-400 font-medium">{p.desc}</p>
+                                <p className="text-[10px] text-slate-500 font-medium">{p.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -177,7 +177,7 @@ const RelocationToursContent: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-24 italic underline">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic text-center underline italic leading-none">Boots on the <span className="text-brand-GOLD">Ground</span></h2>
-                        <p className="text-slate-400 text-lg uppercase tracking-widest font-black italic text-center">Every corner, every community.</p>
+                        <p className="text-slate-500 text-lg uppercase tracking-widest font-black italic text-center">Every corner, every community.</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

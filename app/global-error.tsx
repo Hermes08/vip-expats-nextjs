@@ -17,11 +17,11 @@ export default function GlobalError({
     return (
         <html>
             <body className="flex flex-col items-center justify-center min-h-screen bg-slate-950 text-white p-4">
-                <div className="glass-card p-12 rounded-[3rem] border-white/5 max-w-2xl text-center">
+                <div className="card-light p-12 rounded-[3rem] border-brand-100 max-w-2xl text-center">
                     <h2 className="text-4xl font-heading font-black mb-8 uppercase italic tracking-tighter">
                         Something went wrong
                     </h2>
-                    <p className="text-slate-400 mb-8 font-medium">
+                    <p className="text-slate-500 mb-8 font-medium">
                         We apologize for the inconvenience. A technical error occurred during the render.
                     </p>
                     {error.digest && (

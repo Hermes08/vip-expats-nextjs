@@ -138,18 +138,18 @@ const pricingTable = [
 
 export default function ApartmentsForRentPanamaGuide() {
   return (
-    <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+    <article className="bg-white min-h-screen pt-28 pb-20">
       <div className="max-w-4xl mx-auto px-4">
 
         {/* Header */}
         <div className="mb-12 reveal-on-scroll">
-          <span className="text-brand-GOLD font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
+          <span className="text-brand-TEAL font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
             Rental Guide · Expat Edition · 2026
           </span>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6 tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-brand-950 mb-6 tracking-tight leading-tight">
             Apartments for Rent in Panama City
           </h1>
-          <p className="text-slate-400 text-lg font-medium leading-relaxed border-l-2 border-brand-GOLD/30 pl-5">
+          <p className="text-slate-500 text-lg font-medium leading-relaxed border-l-2 border-brand-GOLD/30 pl-5">
             Renting in Panama City is affordable, straightforward, and expat-friendly. This guide covers pricing by neighborhood, lease agreements, utilities, and insider tips for finding your ideal apartment.
           </p>
         </div>
@@ -164,7 +164,7 @@ export default function ApartmentsForRentPanamaGuide() {
           ].map((stat, i) => {
             const Icon = stat.icon;
             return (
-              <div key={i} className="glass-card p-5 rounded-xl border-white/5 reveal-on-scroll">
+              <div key={i} className="card-light p-5 rounded-xl border-brand-100 reveal-on-scroll">
                 <Icon size={18} className="text-brand-GOLD mb-3" />
                 <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-1">{stat.label}</p>
                 <p className="text-white text-lg font-black mb-1">{stat.value}</p>
@@ -175,9 +175,9 @@ export default function ApartmentsForRentPanamaGuide() {
         </div>
 
         {/* Introduction Section */}
-        <div className="glass-card p-8 rounded-2xl border-white/5 mb-12 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-4 tracking-tight">Why Rent in Panama City?</h2>
-          <div className="space-y-4 text-slate-300 text-sm leading-relaxed">
+        <div className="card-light p-8 rounded-2xl border-brand-100 mb-12 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-4 tracking-tight">Why Rent in Panama City?</h2>
+          <div className="space-y-4 text-slate-500 text-sm leading-relaxed">
             <p>
               Panama City attracts expats worldwide for its affordability, expat-friendly infrastructure, and proximity to the Canal. Rental apartments range from $500/month studios to $3,500+ luxury units. Whether you're relocating temporarily or settling long-term, the rental market offers flexibility and value.
             </p>
@@ -200,10 +200,10 @@ export default function ApartmentsForRentPanamaGuide() {
         </div>
 
         {/* Neighborhood Cards */}
-        <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-8 tracking-tight reveal-on-scroll">Neighborhoods: Pricing & Vibes</h2>
+        <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-8 tracking-tight reveal-on-scroll">Neighborhoods: Pricing & Vibes</h2>
         <div className="space-y-10">
           {neighborhoods.map((area, i) => (
-            <div key={i} className="glass-card rounded-2xl border-white/5 overflow-hidden reveal-on-scroll">
+            <div key={i} className="card-light rounded-2xl border-brand-100 overflow-hidden reveal-on-scroll">
               <div className="p-7 md:p-8">
                 {/* Header */}
                 <div className="flex flex-wrap items-start justify-between gap-4 mb-5">
@@ -212,7 +212,7 @@ export default function ApartmentsForRentPanamaGuide() {
                       <MapPin size={14} className="text-brand-GOLD" />
                       <span className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest">{area.tagline}</span>
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-heading font-black text-white tracking-tight">{area.name}</h3>
+                    <h3 className="text-2xl md:text-3xl font-heading font-black text-brand-950 tracking-tight">{area.name}</h3>
                   </div>
                   <div className="flex gap-4 text-right">
                     <div>
@@ -227,17 +227,17 @@ export default function ApartmentsForRentPanamaGuide() {
                 </div>
 
                 {/* Description */}
-                <p className="text-slate-400 text-sm leading-relaxed mb-6">{area.description}</p>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">{area.description}</p>
 
                 {/* Utilities */}
-                <div className="grid sm:grid-cols-2 gap-4 mb-6 pb-6 border-b border-white/5">
+                <div className="grid sm:grid-cols-2 gap-4 mb-6 pb-6 border-b border-brand-100">
                   <div>
                     <p className="text-slate-500 text-[9px] font-black uppercase tracking-widest mb-1">Monthly Utilities</p>
                     <p className="text-white font-black text-sm">{area.utilities}</p>
                   </div>
                   <div>
                     <p className="text-slate-500 text-[9px] font-black uppercase tracking-widest mb-1">Best For</p>
-                    <p className="text-slate-300 text-sm">{area.bestFor}</p>
+                    <p className="text-slate-500 text-sm">{area.bestFor}</p>
                   </div>
                 </div>
 
@@ -249,7 +249,7 @@ export default function ApartmentsForRentPanamaGuide() {
                     </p>
                     <ul className="space-y-2">
                       {area.pros.map((pro, j) => (
-                        <li key={j} className="text-slate-300 text-sm leading-snug">{pro}</li>
+                        <li key={j} className="text-slate-500 text-sm leading-snug">{pro}</li>
                       ))}
                     </ul>
                   </div>
@@ -261,7 +261,7 @@ export default function ApartmentsForRentPanamaGuide() {
                     </p>
                     <ul className="space-y-2">
                       {area.cons.map((con, j) => (
-                        <li key={j} className="text-slate-300 text-sm leading-snug">{con}</li>
+                        <li key={j} className="text-slate-500 text-sm leading-snug">{con}</li>
                       ))}
                     </ul>
                   </div>
@@ -272,28 +272,28 @@ export default function ApartmentsForRentPanamaGuide() {
         </div>
 
         {/* Pricing Table */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-white/5 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">Apartment Rental Prices by Neighborhood</h2>
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-100 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">Apartment Rental Prices by Neighborhood</h2>
 
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-white/10">
-                  <th className="text-left py-3 px-3 text-slate-400 font-black uppercase text-[10px] tracking-widest">Unit Type</th>
-                  <th className="text-center py-3 px-3 text-slate-400 font-black uppercase text-[10px] tracking-widest">El Cangrejo</th>
-                  <th className="text-center py-3 px-3 text-slate-400 font-black uppercase text-[10px] tracking-widest">Costa del Este</th>
-                  <th className="text-center py-3 px-3 text-slate-400 font-black uppercase text-[10px] tracking-widest">Miraflores</th>
-                  <th className="text-center py-3 px-3 text-slate-400 font-black uppercase text-[10px] tracking-widest">Casco Viejo</th>
+                <tr className="border-b border-brand-100">
+                  <th className="text-left py-3 px-3 text-slate-500 font-black uppercase text-[10px] tracking-widest">Unit Type</th>
+                  <th className="text-center py-3 px-3 text-slate-500 font-black uppercase text-[10px] tracking-widest">El Cangrejo</th>
+                  <th className="text-center py-3 px-3 text-slate-500 font-black uppercase text-[10px] tracking-widest">Costa del Este</th>
+                  <th className="text-center py-3 px-3 text-slate-500 font-black uppercase text-[10px] tracking-widest">Miraflores</th>
+                  <th className="text-center py-3 px-3 text-slate-500 font-black uppercase text-[10px] tracking-widest">Casco Viejo</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/5">
                 {pricingTable.map((row, i) => (
                   <tr key={i}>
-                    <td className="py-3 px-3 text-slate-300 font-bold">{row.type}</td>
-                    <td className="text-center py-3 px-3 text-slate-400">{row.elCangrejo}</td>
-                    <td className="text-center py-3 px-3 text-slate-400">{row.costaDel}</td>
-                    <td className="text-center py-3 px-3 text-slate-400">{row.miraflores}</td>
-                    <td className="text-center py-3 px-3 text-slate-400">{row.cascoViejo}</td>
+                    <td className="py-3 px-3 text-slate-500 font-bold">{row.type}</td>
+                    <td className="text-center py-3 px-3 text-slate-500">{row.elCangrejo}</td>
+                    <td className="text-center py-3 px-3 text-slate-500">{row.costaDel}</td>
+                    <td className="text-center py-3 px-3 text-slate-500">{row.miraflores}</td>
+                    <td className="text-center py-3 px-3 text-slate-500">{row.cascoViejo}</td>
                   </tr>
                 ))}
               </tbody>
@@ -305,15 +305,15 @@ export default function ApartmentsForRentPanamaGuide() {
         </div>
 
         {/* Furnished vs Unfurnished */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-white/5 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">Furnished vs Unfurnished Apartments</h2>
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-100 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">Furnished vs Unfurnished Apartments</h2>
 
           <div className="space-y-6">
-            <div className="border-b border-white/5 pb-6">
+            <div className="border-b border-brand-100 pb-6">
               <h3 className="text-lg font-heading font-black text-brand-GOLD mb-3 flex items-center gap-2">
                 <Home size={16} /> Furnished Apartments
               </h3>
-              <div className="space-y-2 text-slate-400 text-sm">
+              <div className="space-y-2 text-slate-500 text-sm">
                 <p><span className="font-bold text-white">Price Premium:</span> 25–40% more than unfurnished</p>
                 <p><span className="font-bold text-white">What's Included:</span> Furniture, kitchen appliances, linens, some electronics</p>
                 <p><span className="font-bold text-white">Best For:</span> Short-term renters (1–12 months), relocating professionals, those avoiding furniture shopping</p>
@@ -326,7 +326,7 @@ export default function ApartmentsForRentPanamaGuide() {
               <h3 className="text-lg font-heading font-black text-brand-GOLD mb-3 flex items-center gap-2">
                 <Home size={16} /> Unfurnished Apartments
               </h3>
-              <div className="space-y-2 text-slate-400 text-sm">
+              <div className="space-y-2 text-slate-500 text-sm">
                 <p><span className="font-bold text-white">Price Range:</span> Standard rental market rates (30–40% cheaper)</p>
                 <p><span className="font-bold text-white">What's Included:</span> Walls, flooring, kitchen with basic appliances, A/C, hot water</p>
                 <p><span className="font-bold text-white">Best For:</span> Long-term residents (1+ years), families, those seeking affordability</p>
@@ -338,13 +338,13 @@ export default function ApartmentsForRentPanamaGuide() {
         </div>
 
         {/* Short-Term vs Long-Term */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-white/5 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">Short-Term vs Long-Term Leases</h2>
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-100 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">Short-Term vs Long-Term Leases</h2>
 
           <div className="space-y-6">
-            <div className="border-b border-white/5 pb-6">
+            <div className="border-b border-brand-100 pb-6">
               <h3 className="text-lg font-heading font-black text-brand-GOLD mb-3">Short-Term Rentals (1–6 months)</h3>
-              <ul className="space-y-2 text-slate-400 text-sm">
+              <ul className="space-y-2 text-slate-500 text-sm">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 size={14} className="text-brand-GOLD flex-shrink-0 mt-1" />
                   <span><span className="font-bold text-white">Premium:</span> Expect 15–25% higher monthly rent</span>
@@ -366,7 +366,7 @@ export default function ApartmentsForRentPanamaGuide() {
 
             <div>
               <h3 className="text-lg font-heading font-black text-brand-GOLD mb-3">Long-Term Rentals (1+ years)</h3>
-              <ul className="space-y-2 text-slate-400 text-sm">
+              <ul className="space-y-2 text-slate-500 text-sm">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 size={14} className="text-brand-GOLD flex-shrink-0 mt-1" />
                   <span><span className="font-bold text-white">Best Value:</span> Standard market rates, best price-to-value ratio</span>
@@ -389,8 +389,8 @@ export default function ApartmentsForRentPanamaGuide() {
         </div>
 
         {/* How to Find Rentals */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-white/5 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">How to Find Apartments in Panama City</h2>
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-100 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">How to Find Apartments in Panama City</h2>
 
           <div className="space-y-6">
             {[
@@ -419,26 +419,26 @@ export default function ApartmentsForRentPanamaGuide() {
                 details: 'Companies like Expat Relocations Panama, ACI Relocation, and others specialize in housing for incoming expats. Higher cost but streamlined process.',
               },
             ].map((item, i) => (
-              <div key={i} className="border-b border-white/5 pb-6 last:border-0">
+              <div key={i} className="border-b border-brand-100 pb-6 last:border-0">
                 <h4 className="text-brand-GOLD font-black text-sm uppercase tracking-wider mb-2 flex items-center gap-2">
                   <Search size={14} /> {item.title}
                 </h4>
-                <p className="text-slate-400 text-sm">{item.details}</p>
+                <p className="text-slate-500 text-sm">{item.details}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* What's Included in Rent */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-white/5 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">What's Included in Rent? Utilities & HOA</h2>
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-100 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">What's Included in Rent? Utilities & HOA</h2>
 
           <div className="space-y-6">
-            <div className="border-b border-white/5 pb-6">
+            <div className="border-b border-brand-100 pb-6">
               <h3 className="text-lg font-heading font-black text-brand-GOLD mb-3 flex items-center gap-2">
                 <Zap size={16} /> Typical Utilities (Monthly)
               </h3>
-              <div className="grid sm:grid-cols-2 gap-4 text-slate-400 text-sm">
+              <div className="grid sm:grid-cols-2 gap-4 text-slate-500 text-sm">
                 <div>
                   <p className="font-bold text-white mb-2">Usually Separate:</p>
                   <ul className="space-y-1">
@@ -464,10 +464,10 @@ export default function ApartmentsForRentPanamaGuide() {
               <h3 className="text-lg font-heading font-black text-brand-GOLD mb-3 flex items-center gap-2">
                 <Droplet size={16} /> HOA Fees & Building Costs
               </h3>
-              <p className="text-slate-400 text-sm mb-4">
+              <p className="text-slate-500 text-sm mb-4">
                 Most apartment buildings charge HOA (condominium fees) covering maintenance, security, cleaning, and amenities.
               </p>
-              <ul className="space-y-2 text-slate-400 text-sm">
+              <ul className="space-y-2 text-slate-500 text-sm">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 size={14} className="text-brand-GOLD flex-shrink-0 mt-1" />
                   <span><span className="font-bold text-white">Budget Buildings:</span> $50–$150/mo (basic security, cleaning)</span>
@@ -486,8 +486,8 @@ export default function ApartmentsForRentPanamaGuide() {
         </div>
 
         {/* Lease Agreements for Expats */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-white/5 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">Lease Agreements for Expats: What You Need to Know</h2>
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-100 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">Lease Agreements for Expats: What You Need to Know</h2>
 
           <div className="space-y-6">
             {[
@@ -524,37 +524,37 @@ export default function ApartmentsForRentPanamaGuide() {
                 details: 'Panama doesn\'t require formal rental registration, but record all payments and correspondence. Consider rental insurance ($15–$30/mo) for belongings.',
               },
             ].map((item, i) => (
-              <div key={i} className="border-b border-white/5 pb-6 last:border-0">
+              <div key={i} className="border-b border-brand-100 pb-6 last:border-0">
                 <h4 className="text-brand-GOLD font-black text-sm uppercase tracking-wider mb-2">{item.title}</h4>
-                <p className="text-slate-400 text-sm">{item.details}</p>
+                <p className="text-slate-500 text-sm">{item.details}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Cost Breakdown Example */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-white/5 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">Sample Monthly Budget (2-Bed Apartment, El Cangrejo)</h2>
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-100 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">Sample Monthly Budget (2-Bed Apartment, El Cangrejo)</h2>
 
           <div className="space-y-3 text-sm">
-            <div className="flex justify-between border-b border-white/5 pb-3">
-              <span className="text-slate-400">Rent (unfurnished)</span>
+            <div className="flex justify-between border-b border-brand-100 pb-3">
+              <span className="text-slate-500">Rent (unfurnished)</span>
               <span className="text-white font-bold">$900</span>
             </div>
-            <div className="flex justify-between border-b border-white/5 pb-3">
-              <span className="text-slate-400">HOA/Building fee</span>
+            <div className="flex justify-between border-b border-brand-100 pb-3">
+              <span className="text-slate-500">HOA/Building fee</span>
               <span className="text-white font-bold">$100</span>
             </div>
-            <div className="flex justify-between border-b border-white/5 pb-3">
-              <span className="text-slate-400">Electricity (A/C heavy)</span>
+            <div className="flex justify-between border-b border-brand-100 pb-3">
+              <span className="text-slate-500">Electricity (A/C heavy)</span>
               <span className="text-white font-bold">$120</span>
             </div>
-            <div className="flex justify-between border-b border-white/5 pb-3">
-              <span className="text-slate-400">Water</span>
+            <div className="flex justify-between border-b border-brand-100 pb-3">
+              <span className="text-slate-500">Water</span>
               <span className="text-white font-bold">$30</span>
             </div>
-            <div className="flex justify-between border-b border-white/5 pb-3">
-              <span className="text-slate-400">Internet / Cable TV</span>
+            <div className="flex justify-between border-b border-brand-100 pb-3">
+              <span className="text-slate-500">Internet / Cable TV</span>
               <span className="text-white font-bold">$50</span>
             </div>
             <div className="flex justify-between pt-3">
@@ -568,15 +568,15 @@ export default function ApartmentsForRentPanamaGuide() {
         </div>
 
         {/* Red Flags & Safety Tips */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-white/5 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">Red Flags & Safety Tips When Renting</h2>
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-100 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">Red Flags & Safety Tips When Renting</h2>
 
           <div className="space-y-6">
             <div>
               <h3 className="text-orange-400 text-sm font-black uppercase tracking-wider mb-3 flex items-center gap-2">
                 <AlertCircle size={14} /> Red Flags to Avoid
               </h3>
-              <ul className="space-y-2 text-slate-400 text-sm">
+              <ul className="space-y-2 text-slate-500 text-sm">
                 {[
                   'Landlord refuses written lease — always get it in writing',
                   'Wants cash-only payments with no receipts — use traceable transfers',
@@ -594,11 +594,11 @@ export default function ApartmentsForRentPanamaGuide() {
               </ul>
             </div>
 
-            <div className="border-t border-white/5 pt-6">
+            <div className="border-t border-brand-100 pt-6">
               <h3 className="text-green-400 text-sm font-black uppercase tracking-wider mb-3 flex items-center gap-2">
                 <CheckCircle2 size={14} /> Safety Checklist
               </h3>
-              <ul className="space-y-2 text-slate-400 text-sm">
+              <ul className="space-y-2 text-slate-500 text-sm">
                 {[
                   'Visit the neighborhood at different times (day & evening) to assess safety',
                   'Test water pressure, A/C, hot water, and appliances before signing',
@@ -620,10 +620,10 @@ export default function ApartmentsForRentPanamaGuide() {
         </div>
 
         {/* Visa Requirements */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-white/5 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">Visa Requirements for Renting in Panama</h2>
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-100 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">Visa Requirements for Renting in Panama</h2>
 
-          <div className="space-y-4 text-slate-400 text-sm">
+          <div className="space-y-4 text-slate-500 text-sm">
             <p>
               <span className="font-bold text-white">Temporary Resident Visa (TRV):</span> Most expat renters use this visa. Requires proof of monthly income ($1,000+ USD) from pension, salary, or passive income. Processing: 1–2 months. Cost: ~$500.
             </p>
@@ -636,16 +636,16 @@ export default function ApartmentsForRentPanamaGuide() {
             <p>
               <span className="font-bold text-white">Tourist Permit:</span> 180 days visa-free for many nationalities (US, EU, Canada). Can be renewed. Some expats skip formal visas and renew this instead — less common now.
             </p>
-            <p className="text-xs text-slate-500 italic border-t border-white/5 pt-4">
+            <p className="text-xs text-slate-500 italic border-t border-brand-100 pt-4">
               Rental agreements can help support visa applications by showing proof of residence. Request a certified copy from your landlord.
             </p>
           </div>
         </div>
 
         {/* CTA */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-brand-GOLD/20 text-center reveal-on-scroll">
-          <h3 className="text-xl font-heading font-black text-white mb-3 tracking-tight">Ready to Find Your Perfect Apartment in Panama City?</h3>
-          <p className="text-slate-400 text-sm mb-6 leading-relaxed">
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-GOLD/20 text-center reveal-on-scroll">
+          <h3 className="text-xl font-heading font-black text-brand-950 mb-3 tracking-tight">Ready to Find Your Perfect Apartment in Panama City?</h3>
+          <p className="text-slate-500 text-sm mb-6 leading-relaxed">
             Our team specializes in helping expats find ideal rental apartments across Panama City neighborhoods. Get personalized recommendations, lease negotiation support, and expert guidance. Contact us for a free 30-minute rental consultation.
           </p>
           <Link
@@ -666,7 +666,7 @@ export default function ApartmentsForRentPanamaGuide() {
             <Link
               key={i}
               href={link.href}
-              className="flex items-center justify-between glass-card p-4 rounded-xl border-white/5 hover:border-brand-GOLD/30 transition-all group"
+              className="flex items-center justify-between card-light p-4 rounded-xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
               <span className="text-white text-xs font-bold">{link.label}</span>
               <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />

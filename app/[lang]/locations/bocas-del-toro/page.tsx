@@ -43,7 +43,7 @@ const BocasLocationPage = () => {
   const displayProjects = bocasProjects.length > 0 ? bocasProjects : PROJECTS.slice(0, 3);
 
   return (
-    <div className="bg-brand-950 min-h-screen pt-24 pb-40 overflow-hidden">
+    <div className="bg-white min-h-screen pt-24 pb-40 overflow-hidden">
       {/* BACKGROUND ELEMENTS */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-[1200px] h-[1200px] bg-cyan-500/5 rounded-full blur-[200px] -mr-[600px] -mt-[600px] opacity-40" />
@@ -60,11 +60,11 @@ const BocasLocationPage = () => {
               transition={{ duration: 1, ease: "easeOut" }}
             >
               <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block font-serif">Caribbean Portfolio 2026</span>
-              <h1 className="text-6xl md:text-9xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-[0.8]">
+              <h1 className="text-6xl md:text-9xl font-heading font-black text-brand-950 mb-10 tracking-tighter uppercase italic leading-[0.8]">
                 {content.title.split(': ')[0]} <br />
                 <span className="text-brand-GOLD">{content.title.split(': ')[1]}</span>
               </h1>
-              <p className="text-xl md:text-2xl text-slate-400 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic opacity-80">
+              <p className="text-xl md:text-2xl text-slate-500 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic opacity-80">
                 {content.subtitle}
               </p>
               
@@ -75,7 +75,7 @@ const BocasLocationPage = () => {
                   </Link>
                 </Magnetic>
                 <Magnetic strength={0.3}>
-                  <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10">
+                  <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-brand-100">
                     ISLAND CONSULTATION
                   </Link>
                 </Magnetic>
@@ -85,10 +85,10 @@ const BocasLocationPage = () => {
         </section>
 
         {/* BOCAS DATA GRID */}
-        <section className="py-32 border-t border-white/5">
+        <section className="py-32 border-t border-brand-100">
            <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
               {content.stats.map((stat, i) => (
-                <div key={i} className="glass-card p-12 rounded-[4rem] text-center border-white/5 reveal-on-scroll stagger-1 group hover:border-cyan-500/30 transition-all">
+                <div key={i} className="card-light p-12 rounded-[4rem] text-center border-brand-100 reveal-on-scroll stagger-1 group hover:border-cyan-500/30 transition-all">
                    <div className="text-cyan-400 mb-8 group-hover:scale-125 transition-transform"><stat.icon size={44} /></div>
                    <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-4">{stat.label}</p>
                    <p className="text-white text-3xl font-black italic tracking-tighter uppercase">{stat.value}</p>
@@ -102,12 +102,12 @@ const BocasLocationPage = () => {
           <div className="grid lg:grid-cols-12 gap-32 items-center">
             <div className="lg:col-span-12 reveal-on-scroll mb-20">
                <div className="text-center max-w-4xl mx-auto">
-                 <h2 className="text-5xl md:text-8xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-[0.8]">{isEn ? "The Panama Archipelago Advantage" : "La Ventaja del Archipiélago de Panamá"}</h2>
-                 <p className="text-2xl text-slate-400 font-medium leading-relaxed italic opacity-80">{content.intro}</p>
+                 <h2 className="text-5xl md:text-8xl font-heading font-black text-brand-950 mb-10 tracking-tighter uppercase italic leading-[0.8]">{isEn ? "The Panama Archipelago Advantage" : "La Ventaja del Archipiélago de Panamá"}</h2>
+                 <p className="text-2xl text-slate-500 font-medium leading-relaxed italic opacity-80">{content.intro}</p>
                </div>
             </div>
             
-            <div className="lg:col-span-6 relative h-[600px] rounded-[5rem] overflow-hidden border-8 border-white/5 shadow-2xl reveal-on-scroll">
+            <div className="lg:col-span-6 relative h-[600px] rounded-[5rem] overflow-hidden border-8 border-brand-100 shadow-2xl reveal-on-scroll">
                <Image src="https://images.unsplash.com/photo-1589405709121-081e7d23d8c5?w=1200&q=80" alt="Beautiful Bocas del Toro Island" fill className="object-cover" />
                <div className="absolute inset-0 bg-gradient-to-t from-brand-950/80 to-transparent" />
             </div>
@@ -129,10 +129,10 @@ const BocasLocationPage = () => {
         </section>
 
         {/* INVENTORY FOCUS */}
-        <section className="py-48 bg-mesh-glow rounded-[6rem] border border-white/5 relative overflow-hidden text-center px-4">
+        <section className="py-48 bg-brand-50 rounded-[6rem] border border-brand-100 relative overflow-hidden text-center px-4">
            <div className="reveal-on-scroll">
              <Shell className="text-brand-GOLD mx-auto mb-12 animate-float" size={80} />
-             <h2 className="text-5xl md:text-9xl font-heading font-black text-white mb-16 tracking-tighter uppercase italic leading-[0.8]">{isEn ? "Luxury Island Assets" : "Activos de Lujo en la Isla"}</h2>
+             <h2 className="text-5xl md:text-9xl font-heading font-black text-brand-950 mb-16 tracking-tighter uppercase italic leading-[0.8]">{isEn ? "Luxury Island Assets" : "Activos de Lujo en la Isla"}</h2>
            </div>
            
            <div className="grid lg:grid-cols-3 gap-16 max-w-7xl mx-auto mb-32 reveal-on-scroll">
@@ -151,8 +151,8 @@ const BocasLocationPage = () => {
         {/* FINAL CTA */}
         <section className="py-48 text-center px-4 reveal-on-scroll">
             <Fish className="text-cyan-400 mx-auto mb-16 opacity-50" size={64} />
-            <h2 className="text-5xl md:text-9xl font-heading font-black text-white mb-16 tracking-tighter uppercase italic leading-[0.8]">{content.ctaTitle}</h2>
-            <p className="text-2xl text-slate-400 font-medium mb-20 max-w-2xl mx-auto leading-relaxed font-serif italic">{content.ctaDesc}</p>
+            <h2 className="text-5xl md:text-9xl font-heading font-black text-brand-950 mb-16 tracking-tighter uppercase italic leading-[0.8]">{content.ctaTitle}</h2>
+            <p className="text-2xl text-slate-500 font-medium mb-20 max-w-2xl mx-auto leading-relaxed font-serif italic">{content.ctaDesc}</p>
             <div className="flex flex-wrap justify-center gap-10">
               <Magnetic strength={0.4}>
                 <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-gold px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs shadow-2xl">

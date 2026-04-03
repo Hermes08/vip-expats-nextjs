@@ -54,7 +54,7 @@ const ExpatLivingPage = () => {
   };
 
   return (
-    <div className="bg-brand-950 min-h-screen pt-24 pb-40 overflow-hidden">
+    <div className="bg-white min-h-screen pt-24 pb-40 overflow-hidden">
       {/* BACKGROUND ELEMENTS */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-1/2 left-1/2 w-[1200px] h-[1200px] bg-brand-GOLD/5 rounded-full blur-[180px] -translate-x-1/2 -translate-y-1/2" />
@@ -70,11 +70,11 @@ const ExpatLivingPage = () => {
               transition={{ duration: 1.2 }}
             >
               <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block">International Living 2026</span>
-              <h1 className="text-6xl md:text-9xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-[0.8]">
+              <h1 className="text-6xl md:text-9xl font-heading font-black text-brand-950 mb-10 tracking-tighter uppercase italic leading-[0.8]">
                 {content.title.split(': ')[0]} <br />
                 <span className="text-brand-GOLD">{content.title.split(': ')[1]}</span>
               </h1>
-              <p className="text-xl md:text-2xl text-slate-400 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic">
+              <p className="text-xl md:text-2xl text-slate-500 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic">
                 {content.subtitle}
               </p>
               
@@ -85,7 +85,7 @@ const ExpatLivingPage = () => {
                   </Link>
                 </Magnetic>
                 <Magnetic strength={0.3}>
-                  <Link href={`/${lang}/tours`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10">
+                  <Link href={`/${lang}/tours`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-brand-100">
                     DISCOVERY TOURS
                   </Link>
                 </Magnetic>
@@ -95,16 +95,16 @@ const ExpatLivingPage = () => {
         </section>
 
         {/* LIFESTYLE FACTORS */}
-        <section className="py-48 border-t border-white/5">
+        <section className="py-48 border-t border-brand-100">
           <div className="text-center mb-32 reveal-on-scroll">
              <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">Quality of Life Benchmarks</span>
-             <h2 className="text-5xl md:text-8xl font-heading font-black text-white mb-12 tracking-tighter uppercase italic leading-[0.8]">{content.factorsTitle}</h2>
+             <h2 className="text-5xl md:text-8xl font-heading font-black text-brand-950 mb-12 tracking-tighter uppercase italic leading-[0.8]">{content.factorsTitle}</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
             {content.factors.map((factor, i) => (
-              <div key={i} className="glass-card p-12 rounded-[3.5rem] border-white/5 hover:border-brand-GOLD/40 transition-all group reveal-on-scroll stagger-1">
+              <div key={i} className="card-light p-12 rounded-[3.5rem] border-brand-100 hover:border-brand-GOLD/40 transition-all group reveal-on-scroll stagger-1">
                 <factor.icon className="text-brand-GOLD mb-10 group-hover:scale-125 transition-transform" size={48} />
-                <h4 className="text-2xl font-black text-white mb-6 uppercase italic tracking-tighter">{factor.title}</h4>
+                <h4 className="text-2xl font-black text-brand-950 mb-6 uppercase italic tracking-tighter">{factor.title}</h4>
                 <p className="text-slate-500 font-medium leading-relaxed opacity-80 group-hover:opacity-100 italic">{factor.desc}</p>
               </div>
             ))}
@@ -116,8 +116,8 @@ const ExpatLivingPage = () => {
           <div className="grid lg:grid-cols-2 gap-32 items-center">
             <div className="reveal-on-scroll">
               <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">Curation of Hotspots</span>
-              <h2 className="text-5xl md:text-7xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-[0.8]">{content.communitiesTitle}</h2>
-              <div className="prose prose-invert prose-xl text-slate-400 font-medium leading-relaxed mb-16">
+              <h2 className="text-5xl md:text-7xl font-heading font-black text-brand-950 mb-10 tracking-tighter uppercase italic leading-[0.8]">{content.communitiesTitle}</h2>
+              <div className="prose prose-invert prose-xl text-slate-500 font-medium leading-relaxed mb-16">
                 <p>{content.intro}</p>
                 <Link href={`/${lang}/quiz`} className="inline-flex items-center gap-4 text-brand-GOLD font-black uppercase tracking-[0.3em] text-xs hover:gap-6 transition-all mt-10 italic">
                   Take the Neighborhood Quiz <ArrowRight size={16} />
@@ -126,9 +126,9 @@ const ExpatLivingPage = () => {
             </div>
             <div className="grid grid-cols-2 gap-8 reveal-on-scroll stagger-2">
               {content.communities.map((community, i) => (
-                <div key={i} className="glass-card p-10 rounded-3xl border-white/5 hover:bg-brand-900 transition-all group">
+                <div key={i} className="card-light p-10 rounded-3xl border-brand-100 hover:bg-brand-50 transition-all group">
                   <p className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-500 mb-4">{community.type}</p>
-                  <h4 className="text-2xl font-black text-white mb-2 uppercase italic tracking-tighter">{community.name}</h4>
+                  <h4 className="text-2xl font-black text-brand-950 mb-2 uppercase italic tracking-tighter">{community.name}</h4>
                   <p className="text-brand-GOLD text-[9px] font-black uppercase tracking-widest">{community.vibe}</p>
                 </div>
               ))}
@@ -140,7 +140,7 @@ const ExpatLivingPage = () => {
         <section className="py-48 overflow-hidden">
           <div className="flex gap-12 animate-marquee inline-flex whitespace-nowrap">
             {[1, 2, 3, 4, 5].map((i) => (
-              <div key={i} className="w-[500px] h-[350px] rounded-[3rem] overflow-hidden border-4 border-white/5 shadow-2xl relative group">
+              <div key={i} className="w-[500px] h-[350px] rounded-[3rem] overflow-hidden border-4 border-brand-100 shadow-2xl relative group">
                  <Image
                   src={`https://images.unsplash.com/photo-${i % 2 === 0 ? '1589405709121-081e7d23d8c5' : '1554469384-e58fac16e23a'}?w=1000&q=80`}
                   alt="Panama Rockstar Life"
@@ -165,7 +165,7 @@ const ExpatLivingPage = () => {
                 </Link>
               </Magnetic>
               <Magnetic strength={0.4}>
-                <Link href={`/${lang}/quiz`} className="btn-3d btn-3d-gold bg-brand-950 text-white px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs">
+                <Link href={`/${lang}/quiz`} className="btn-3d btn-3d-gold bg-white text-white px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs">
                   FIND MY NEIGHBORHOOD
                 </Link>
               </Magnetic>

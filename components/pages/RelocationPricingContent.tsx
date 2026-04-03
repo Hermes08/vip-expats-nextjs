@@ -22,7 +22,7 @@ const RelocationPricingContent: React.FC = () => {
                 <Breadcrumbs items={breadcrumbItems} />
             </div>
             {/* Header / Hero */}
-            <section className="py-24 bg-brand-950 text-white relative overflow-hidden rounded-b-[4rem]">
+            <section className="py-24 bg-white text-white relative overflow-hidden rounded-b-[4rem]">
                 <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
                     <span className="inline-block px-5 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
                         Transparent Logistics
@@ -30,7 +30,7 @@ const RelocationPricingContent: React.FC = () => {
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-8 uppercase tracking-tighter">
                         Investment <br /> & <span className="text-brand-GOLD italic">Process</span>
                     </h1>
-                    <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed font-medium">
+                    <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-medium">
                         Relocating to Panama shouldn't be a gamble. We provide clear, tiered pricing and a structured roadmap for your <strong>panama relocation discovery tour</strong>.
                     </p>
                 </div>
@@ -43,12 +43,12 @@ const RelocationPricingContent: React.FC = () => {
                     <div className="border border-brand-100 p-6 rounded-2xl flex flex-col h-full hover:shadow-2xl transition-all group">
                         <div className="mb-10">
                             <h3 className="text-2xl font-black uppercase tracking-tighter mb-2 italic">The Scout</h3>
-                            <p className="text-slate-400 font-bold uppercase tracking-widest text-[10px]">Digital Intelligence Pack</p>
+                            <p className="text-slate-500 font-bold uppercase tracking-widest text-[10px]">Digital Intelligence Pack</p>
                         </div>
                         <div className="mb-10">
                             <span className="text-5xl font-black italic">$499</span>
                         </div>
-                        <p className="text-sm text-slate-400 mb-8 font-medium leading-relaxed">
+                        <p className="text-sm text-slate-500 mb-8 font-medium leading-relaxed">
                             Perfect for those in the early research phase who want the absolute truth about <strong>panama relocation services</strong> without the flight yet.
                         </p>
                         <ul className="space-y-4 mb-12 flex-grow">
@@ -64,13 +64,13 @@ const RelocationPricingContent: React.FC = () => {
                                 </li>
                             ))}
                         </ul>
-                        <button className="w-full py-5 bg-white/5 text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl group-hover:bg-brand-950 group-hover:text-white transition-all">
+                        <button className="w-full py-5 bg-white/5 text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl group-hover:bg-brand-TEAL group-hover:text-white transition-all">
                             Get the Kit
                         </button>
                     </div>
 
                     {/* Tier 2: The Elite Professional (Popular) */}
-                    <div className="border-4 border-brand-GOLD p-6 rounded-2xl flex flex-col h-full shadow-2xl relative bg-brand-950 text-white transform lg:-translate-y-8">
+                    <div className="border-4 border-brand-GOLD p-6 rounded-2xl flex flex-col h-full shadow-2xl relative bg-white text-white transform lg:-translate-y-8">
                         <div className="absolute top-0 right-10 -translate-y-1/2 bg-brand-GOLD text-brand-950 px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl">
                             Most Popular
                         </div>
@@ -82,7 +82,7 @@ const RelocationPricingContent: React.FC = () => {
                             <span className="text-5xl font-black italic">$2,499</span>
                             <span className="text-xs text-brand-GOLD/60 block mt-2">*Per couple (plus travel)</span>
                         </div>
-                        <p className="text-sm text-slate-400 mb-8 font-medium leading-relaxed">
+                        <p className="text-sm text-slate-500 mb-8 font-medium leading-relaxed">
                             The gold standard of <strong>panama discovery tours</strong>. 5 days of intensive boots-on-the-ground research led by our experts.
                         </p>
                         <ul className="space-y-4 mb-12 flex-grow">
@@ -108,12 +108,12 @@ const RelocationPricingContent: React.FC = () => {
                     <div className="border border-brand-100 p-6 rounded-2xl flex flex-col h-full hover:shadow-2xl transition-all group">
                         <div className="mb-10">
                             <h3 className="text-2xl font-black uppercase tracking-tighter mb-2 italic">The Legend</h3>
-                            <p className="text-slate-400 font-bold uppercase tracking-widest text-[10px]">Full Relocation Concierge</p>
+                            <p className="text-slate-500 font-bold uppercase tracking-widest text-[10px]">Full Relocation Concierge</p>
                         </div>
                         <div className="mb-10">
                             <span className="text-5xl font-black italic">$4,999+</span>
                         </div>
-                        <p className="text-sm text-slate-400 mb-8 font-medium leading-relaxed">
+                        <p className="text-sm text-slate-500 mb-8 font-medium leading-relaxed">
                             End-to-end management of your move. We handle the <strong>pensionado visa panama</strong> process and full logistics.
                         </p>
                         <ul className="space-y-4 mb-12 flex-grow">
@@ -130,7 +130,7 @@ const RelocationPricingContent: React.FC = () => {
                                 </li>
                             ))}
                         </ul>
-                        <button className="w-full py-5 bg-white/5 text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl group-hover:bg-brand-950 group-hover:text-white transition-all">
+                        <button className="w-full py-5 bg-white/5 text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl group-hover:bg-brand-TEAL group-hover:text-white transition-all">
                             Request Interview
                         </button>
                     </div>
@@ -138,11 +138,11 @@ const RelocationPricingContent: React.FC = () => {
             </section>
 
             {/* The 4-Step Process */}
-            <section className="py-14 bg-brand-950 rounded-2xl mx-4">
+            <section className="py-14 bg-white rounded-2xl mx-4">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-20">
                         <h2 className="text-4xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter text-brand-900">The VIP <br /> <span className="text-brand-GOLD italic">Relocation Process</span></h2>
-                        <p className="text-slate-400 text-lg uppercase tracking-widest font-black">From curiosity to community in 4 steps.</p>
+                        <p className="text-slate-500 text-lg uppercase tracking-widest font-black">From curiosity to community in 4 steps.</p>
                     </div>
 
                     <div className="grid md:grid-cols-4 gap-12">
@@ -153,12 +153,12 @@ const RelocationPricingContent: React.FC = () => {
                             { icon: Globe, title: "VIP Life", desc: "Keys in hand, residency approved. Welcome to the Panama Real Estate Sale members community." }
                         ].map((step, i) => (
                             <div key={i} className="text-center">
-                                <div className="w-20 h-20 bg-brand-50 border border-brand-100 shadow-xl rounded-full flex items-center justify-center mx-auto mb-8 text-brand-GOLD group hover:bg-brand-950 hover:text-white transition-all duration-500">
+                                <div className="w-20 h-20 bg-brand-50 border border-brand-100 shadow-xl rounded-full flex items-center justify-center mx-auto mb-8 text-brand-GOLD group hover:bg-brand-TEAL hover:text-white transition-all duration-500">
                                     <step.icon size={32} />
                                 </div>
                                 <div className="mb-4 text-brand-GOLD font-black text-xs uppercase tracking-widest">Step 0{i + 1}</div>
                                 <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic text-brand-900">{step.title}</h4>
-                                <p className="text-sm text-slate-400 font-medium leading-relaxed">{step.desc}</p>
+                                <p className="text-sm text-slate-500 font-medium leading-relaxed">{step.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -184,10 +184,10 @@ const RelocationPricingContent: React.FC = () => {
             </section>
 
             {/* FAQ Intro */}
-            <section className="py-24 border-t border-white/10">
+            <section className="py-24 border-t border-brand-100">
                 <div className="max-w-7xl mx-auto px-4 text-center">
                     <h2 className="text-3xl font-black uppercase tracking-tighter mb-8 italic">Still have questions?</h2>
-                    <p className="text-slate-400 mb-12 font-medium max-w-2xl mx-auto">
+                    <p className="text-slate-500 mb-12 font-medium max-w-2xl mx-auto">
                         Concerned about <strong>healthcare in panama</strong>, safety, or shipping your household goods? Our experts have the answers.
                     </p>
                     <Link href={`/${lang}/relocation/guides`} className="inline-flex items-center gap-3 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] hover:gap-5 transition-all">

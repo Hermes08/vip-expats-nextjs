@@ -42,7 +42,7 @@ const BoqueteLocationPage = () => {
   const displayProjects = boqueteProjects.length > 0 ? boqueteProjects : PROJECTS.slice(0, 3);
 
   return (
-    <div className="bg-brand-950 min-h-screen pt-24 pb-40 overflow-hidden">
+    <div className="bg-white min-h-screen pt-24 pb-40 overflow-hidden">
       {/* BACKGROUND ELEMENTS */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-0 right-0 w-[1200px] h-[1200px] bg-brand-GOLD/5 rounded-full blur-[180px] -mr-[600px] -mt-[600px]" />
@@ -59,11 +59,11 @@ const BoqueteLocationPage = () => {
               transition={{ duration: 1.2, ease: "easeOut" }}
             >
               <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block">Highlands Portfolio 2026</span>
-              <h1 className="text-6xl md:text-9xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-[0.8]">
+              <h1 className="text-6xl md:text-9xl font-heading font-black text-brand-950 mb-10 tracking-tighter uppercase italic leading-[0.8]">
                 {content.title.split(': ')[0]} <br />
                 <span className="text-brand-GOLD">{content.title.split(': ')[1]}</span>
               </h1>
-              <p className="text-xl md:text-2xl text-slate-400 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic font-serif">
+              <p className="text-xl md:text-2xl text-slate-500 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic font-serif">
                 {content.subtitle}
               </p>
               
@@ -74,7 +74,7 @@ const BoqueteLocationPage = () => {
                   </Link>
                 </Magnetic>
                 <Magnetic strength={0.3}>
-                  <Link href={`/${lang}/tours`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10">
+                  <Link href={`/${lang}/tours`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-brand-100">
                     BOOK MOUNTAIN TOUR
                   </Link>
                 </Magnetic>
@@ -84,10 +84,10 @@ const BoqueteLocationPage = () => {
         </section>
 
         {/* CLIMATE & DATA STATS */}
-        <section className="py-32 border-t border-white/5">
+        <section className="py-32 border-t border-brand-100">
            <div className="grid grid-cols-2 lg:grid-cols-4 gap-12">
               {content.stats.map((stat, i) => (
-                <div key={i} className="glass-card p-12 rounded-[4rem] text-center border-white/5 reveal-on-scroll stagger-1 group">
+                <div key={i} className="card-light p-12 rounded-[4rem] text-center border-brand-100 reveal-on-scroll stagger-1 group">
                    <div className="text-brand-GOLD mb-8 group-hover:scale-125 transition-transform"><stat.icon size={44} /></div>
                    <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-4">{stat.label}</p>
                    <p className="text-white text-3xl font-black italic tracking-tighter uppercase">{stat.value}</p>
@@ -99,15 +99,15 @@ const BoqueteLocationPage = () => {
         {/* INTRO CONTENT WITH IMAGE */}
         <section className="py-32">
           <div className="grid lg:grid-cols-2 gap-32 items-center">
-            <div className="relative h-[700px] rounded-[5rem] overflow-hidden border-8 border-white/5 shadow-2xl reveal-on-scroll">
+            <div className="relative h-[700px] rounded-[5rem] overflow-hidden border-8 border-brand-100 shadow-2xl reveal-on-scroll">
               <Image src="https://images.unsplash.com/photo-1549420958-370146059d4c?w=1200&q=80" alt="Luxury Boquete Estate" fill className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-transparent to-transparent opacity-60" />
               <div className="absolute top-10 right-10 bg-brand-GOLD text-brand-900 px-6 py-3 rounded-full text-[10px] font-black uppercase tracking-widest">Featured District</div>
             </div>
             <div className="reveal-on-scroll stagger-2">
               <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">Strategic Geography</span>
-              <h2 className="text-5xl md:text-8xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-[0.8]">{isEn ? "The Eternal Spring Advantage" : "La Ventaja de la Eterna Primavera"}</h2>
-              <div className="prose prose-invert prose-2xl text-slate-400 font-medium leading-relaxed italic space-y-10 mb-16">
+              <h2 className="text-5xl md:text-8xl font-heading font-black text-brand-950 mb-10 tracking-tighter uppercase italic leading-[0.8]">{isEn ? "The Eternal Spring Advantage" : "La Ventaja de la Eterna Primavera"}</h2>
+              <div className="prose prose-invert prose-2xl text-slate-500 font-medium leading-relaxed italic space-y-10 mb-16">
                 <p>{content.intro}</p>
                 <p>{isEn ? "Boquete offers a lifestyle that combines European charm with tropical luxury. From the legendary Geisha coffee farms to the premier gated golf communities, your investment here is backed by established demand." : "Boquete ofrece un estilo de vida que combina el encanto europeo con el lujo tropical."}</p>
               </div>
@@ -127,10 +127,10 @@ const BoqueteLocationPage = () => {
         </section>
 
         {/* FEATURED INVENTORY FOR LOCATION */}
-        <section className="py-48 bg-black relative rounded-[6rem] border border-white/5 px-10">
+        <section className="py-48 bg-brand-50 relative rounded-[6rem] border border-brand-100 px-10">
            <div className="text-center mb-32 reveal-on-scroll">
               <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">Curated highland assets</span>
-              <h2 className="text-5xl md:text-8xl font-heading font-black text-white mb-12 tracking-tighter uppercase italic leading-[0.8]">{isEn ? "Featured Boquete Units" : "Unidades Destacadas en Boquete"}</h2>
+              <h2 className="text-5xl md:text-8xl font-heading font-black text-brand-950 mb-12 tracking-tighter uppercase italic leading-[0.8]">{isEn ? "Featured Boquete Units" : "Unidades Destacadas en Boquete"}</h2>
            </div>
            
            <div className="grid lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
@@ -150,8 +150,8 @@ const BoqueteLocationPage = () => {
 
         {/* FINAL CTA */}
         <section className="py-48 text-center px-4 reveal-on-scroll">
-            <h2 className="text-5xl md:text-9xl font-heading font-black text-white mb-16 tracking-tighter uppercase italic leading-[0.8]">{content.ctaTitle}</h2>
-            <p className="text-2xl text-slate-400 font-medium mb-20 max-w-2xl mx-auto leading-relaxed font-serif italic">{content.ctaDesc}</p>
+            <h2 className="text-5xl md:text-9xl font-heading font-black text-brand-950 mb-16 tracking-tighter uppercase italic leading-[0.8]">{content.ctaTitle}</h2>
+            <p className="text-2xl text-slate-500 font-medium mb-20 max-w-2xl mx-auto leading-relaxed font-serif italic">{content.ctaDesc}</p>
             <div className="flex flex-wrap justify-center gap-10">
               <Magnetic strength={0.4}>
                 <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs shadow-2xl">

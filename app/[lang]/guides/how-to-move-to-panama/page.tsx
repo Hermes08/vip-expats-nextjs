@@ -119,7 +119,7 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
                 </div>
                 <div className="max-w-3xl mx-auto px-4 text-center relative z-10">
                     <span className="tag-teal mb-5 inline-block">RELOCATION GUIDE · 2026</span>
-                    <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6 leading-tight mt-4">
+                    <h1 className="font-heading text-4xl md:text-5xl font-bold text-brand-950 mb-6 leading-tight mt-4">
                         How to Move to Panama<br />from the USA
                     </h1>
                     <p className="text-lg text-slate-500 leading-relaxed max-w-xl mx-auto">
@@ -147,7 +147,7 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
                     </h2>
                     <div className="space-y-4">
                         {visas.map((v, i) => (
-                            <div key={i} className="glass-card rounded-xl p-6 border border-brand-100">
+                            <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-3 mb-2">
                                     <div>
                                         <span className={`text-[10px] font-black uppercase tracking-widest ${v.tagColor}`}>{v.tag}</span>
@@ -155,8 +155,8 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
                                     </div>
                                     <span className="text-slate-500 text-xs font-bold">{v.time}</span>
                                 </div>
-                                <p className="text-slate-500 text-sm mb-1"><span className="text-slate-300 font-bold">Requires: </span>{v.req}</p>
-                                <p className="text-slate-500 text-sm"><span className="text-slate-300 font-bold">Gets you: </span>{v.benefit}</p>
+                                <p className="text-slate-500 text-sm mb-1"><span className="text-slate-500 font-bold">Requires: </span>{v.req}</p>
+                                <p className="text-slate-500 text-sm"><span className="text-slate-500 font-bold">Gets you: </span>{v.benefit}</p>
                             </div>
                         ))}
                     </div>
@@ -179,7 +179,7 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
                         {timeline.map((phase, i) => {
                             const Icon = phase.icon;
                             return (
-                                <div key={i} className="glass-card rounded-xl p-6 border border-brand-100">
+                                <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
                                     <div className="flex items-center gap-3 mb-4">
                                         <div className="w-9 h-9 rounded-full bg-brand-TEAL/10 border border-brand-TEAL/30 flex items-center justify-center flex-shrink-0">
                                             <Icon size={15} className="text-brand-TEAL" />
@@ -208,7 +208,7 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
                     </h2>
                     <div className="space-y-2">
                         {costs.map((item, i) => (
-                            <div key={i} className={`flex justify-between items-center px-5 py-3 rounded-xl ${i === costs.length - 1 ? 'bg-brand-GOLD/10 border border-brand-GOLD/20' : 'bg-brand-900 border border-brand-100'}`}>
+                            <div key={i} className={`flex justify-between items-center px-5 py-3 rounded-xl ${i === costs.length - 1 ? 'bg-brand-GOLD/10 border border-brand-GOLD/20' : 'bg-brand-50 border border-brand-100'}`}>
                                 <span className={`text-sm ${i === costs.length - 1 ? 'text-white font-bold' : 'text-slate-500'}`}>{item.item}</span>
                                 <span className={`font-black text-sm ${i === costs.length - 1 ? 'text-brand-GOLD' : 'text-white'}`}>{item.range}</span>
                             </div>
@@ -228,7 +228,7 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
                         {bankingFacts.map((fact, i) => (
                             <div key={i} className="flex items-start gap-3 bg-brand-50 rounded-xl px-5 py-3 border border-brand-100">
                                 <CheckCircle size={13} className="text-brand-TEAL mt-0.5 flex-shrink-0" />
-                                <span className="text-slate-300 text-sm">{fact}</span>
+                                <span className="text-slate-500 text-sm">{fact}</span>
                             </div>
                         ))}
                     </div>
@@ -258,7 +258,7 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
                 </section>
 
                 {/* CTA */}
-                <section className="reveal-on-scroll bg-brand-900 p-8 rounded-2xl border-t-4 border-brand-TEAL text-center">
+                <section className="reveal-on-scroll bg-brand-50 p-8 rounded-2xl border-t-4 border-brand-TEAL text-center">
                     <h3 className="text-white font-heading text-2xl font-bold mb-3 uppercase italic tracking-tighter">
                         Ready to Make the Move?
                     </h3>
@@ -281,7 +281,7 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
                         { label: 'Best Areas to Live in Panama', href: '/en/guides/best-areas-retire-panama' },
                         { label: 'Living in Panama City Guide', href: '/en/blog/living-in-panama-city' },
                     ].map((link, i) => (
-                        <Link key={i} href={link.href} className="flex items-center justify-between glass-card p-4 rounded-xl border border-brand-100 hover:border-brand-TEAL/30 transition-all group">
+                        <Link key={i} href={link.href} className="flex items-center justify-between card-light p-4 rounded-xl border border-brand-100 hover:border-brand-TEAL/30 transition-all group">
                             <span className="text-white text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-TEAL opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>

@@ -129,11 +129,11 @@ const PanamaCityCondosForSaleContent = () => {
         <section className="py-20 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block">{content.badge}</span>
-            <h1 className="text-5xl md:text-8xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-[0.85]">
+            <h1 className="text-5xl md:text-8xl font-heading font-black text-brand-950 mb-10 tracking-tighter uppercase italic leading-[0.85]">
               {isEn ? 'Panama City' : 'Ciudad de Panamá'} <br />
               <span className="text-brand-GOLD">{isEn ? 'Condos For Sale' : 'Condos en Venta'}</span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-400 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic">{content.subtitle}</p>
+            <p className="text-xl md:text-2xl text-slate-500 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic">{content.subtitle}</p>
             <div className="flex flex-wrap justify-center gap-8">
               <Magnetic strength={0.3}>
                 <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-gold px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px]">
@@ -150,24 +150,24 @@ const PanamaCityCondosForSaleContent = () => {
         </section>
 
         {/* INTRO */}
-        <section className="py-24 border-t border-white/5 max-w-4xl mx-auto">
-          <p className="text-xl text-slate-300 leading-relaxed font-medium">{content.intro}</p>
+        <section className="py-24 border-t border-brand-100 max-w-4xl mx-auto">
+          <p className="text-xl text-slate-600 leading-relaxed font-medium">{content.intro}</p>
         </section>
 
         {/* NEIGHBORHOODS */}
-        <section className="py-24 border-t border-white/5">
+        <section className="py-24 border-t border-brand-100">
           <div className="text-center mb-20">
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">Where to Buy</span>
-            <h2 className="text-5xl md:text-7xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.8]">{content.neighborhoodsTitle}</h2>
+            <h2 className="text-5xl md:text-7xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.8]">{content.neighborhoodsTitle}</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {content.neighborhoods.map((n, i) => (
-              <div key={i} className="glass-card p-10 rounded-3xl border-white/5 hover:border-brand-GOLD/30 transition-all">
+              <div key={i} className="card-light p-10 rounded-3xl border-brand-100 hover:border-brand-GOLD/30 transition-all">
                 <div className="flex justify-between items-start mb-4">
                   <p className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-500">{n.type}</p>
                   <span className="text-brand-GOLD font-black text-sm">{n.price}</span>
                 </div>
-                <h3 className="text-2xl font-black text-white mb-4 uppercase italic tracking-tighter">{n.name}</h3>
+                <h3 className="text-2xl font-black text-brand-950 mb-4 uppercase italic tracking-tighter">{n.name}</h3>
                 <p className="text-slate-500 text-sm font-medium leading-relaxed">{n.desc}</p>
               </div>
             ))}
@@ -175,16 +175,16 @@ const PanamaCityCondosForSaleContent = () => {
         </section>
 
         {/* FEATURES */}
-        <section className="py-24 border-t border-white/5">
+        <section className="py-24 border-t border-brand-100">
           <div className="text-center mb-20">
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">What's Included</span>
-            <h2 className="text-5xl md:text-7xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.8]">{content.featuresTitle}</h2>
+            <h2 className="text-5xl md:text-7xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.8]">{content.featuresTitle}</h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {content.features.map((feature, i) => (
-              <div key={i} className="glass-card p-10 rounded-[3rem] border-white/5 hover:border-brand-GOLD/30 transition-all group">
+              <div key={i} className="card-light p-10 rounded-[3rem] border-brand-100 hover:border-brand-GOLD/30 transition-all group">
                 <feature.icon className="text-brand-GOLD mb-8 group-hover:scale-125 transition-transform" size={40} />
-                <h3 className="text-xl font-black text-white mb-4 uppercase italic tracking-tighter">{feature.title}</h3>
+                <h3 className="text-xl font-black text-brand-950 mb-4 uppercase italic tracking-tighter">{feature.title}</h3>
                 <p className="text-slate-500 text-sm font-medium leading-relaxed">{feature.desc}</p>
               </div>
             ))}
@@ -192,16 +192,16 @@ const PanamaCityCondosForSaleContent = () => {
         </section>
 
         {/* KEY FACTS */}
-        <section className="py-24 border-t border-white/5 max-w-4xl mx-auto">
+        <section className="py-24 border-t border-brand-100 max-w-4xl mx-auto">
           <div className="mb-12">
             <MapPin className="text-brand-GOLD mb-6" size={36} />
-            <h2 className="text-4xl md:text-6xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.85] mb-10">{content.buyingTitle}</h2>
+            <h2 className="text-4xl md:text-6xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.85] mb-10">{content.buyingTitle}</h2>
           </div>
           <div className="space-y-5">
             {content.facts.map((fact, i) => (
               <div key={i} className="flex items-start gap-5">
                 <CheckCircle className="text-brand-GOLD mt-1 flex-shrink-0" size={20} />
-                <p className="text-slate-300 font-medium leading-relaxed">{fact}</p>
+                <p className="text-slate-500 font-medium leading-relaxed">{fact}</p>
               </div>
             ))}
           </div>
@@ -219,7 +219,7 @@ const PanamaCityCondosForSaleContent = () => {
               </Link>
             </Magnetic>
             <Magnetic strength={0.4}>
-              <Link href={`/${lang}/guides/buying-property-panama-us-citizens`} className="btn-3d btn-3d-gold bg-brand-950 text-white px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs">
+              <Link href={`/${lang}/guides/buying-property-panama-us-citizens`} className="btn-3d btn-3d-gold bg-white text-white px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs">
                 {isEn ? 'Buyer\'s Guide' : 'Guía del Comprador'}
               </Link>
             </Magnetic>

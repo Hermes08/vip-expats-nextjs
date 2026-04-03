@@ -12,7 +12,7 @@ const HeroCarousel: React.FC = () => {
   }, []);
 
   return (
-    <div className="absolute inset-0 z-0 bg-brand-950 overflow-hidden bg-mesh-glow">
+    <div className="absolute inset-0 z-0 bg-white overflow-hidden bg-brand-50">
       {IMAGES.heroSlides.map((slide, index) => (
         <div 
           key={index} 

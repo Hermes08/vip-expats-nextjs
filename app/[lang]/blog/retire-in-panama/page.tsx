@@ -109,7 +109,7 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
     return (
         <article className="bg-white min-h-screen pt-28 pb-20">
             {/* Hero */}
-            <section className="bg-brand-900 py-28 relative overflow-hidden">
+            <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <img
                         src="https://images.unsplash.com/photo-1514565131-fce0801e6785?w=1600&q=80"
@@ -121,7 +121,7 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                     <span className="text-[10px] font-bold text-brand-GOLD uppercase tracking-[0.4em] mb-4 block">
                         RETIREMENT GUIDE · 2026 EDITION
                     </span>
-                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-brand-950 mb-8 leading-tight">
                         Retire in Panama:<br />The Complete Guide
                     </h1>
                     <p className="text-xl text-brand-300 leading-relaxed font-medium max-w-2xl mx-auto">
@@ -137,7 +137,7 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                     <p className="text-2xl font-semibold text-white border-l-4 border-brand-GOLD pl-6 leading-relaxed">
                         Panama has ranked among the top retirement destinations in the world for over a decade — and the fundamentals that made it compelling in 2015 are even stronger in 2026. A dollarized economy, zero tax on foreign income, one of the hemisphere&apos;s best pensioner programs, and a modern healthcare system make it uniquely suited for American retirees.
                     </p>
-                    <p className="text-slate-400 mt-6 text-lg leading-relaxed">
+                    <p className="text-slate-500 mt-6 text-lg leading-relaxed">
                         This guide covers everything: what it costs, the Pensionado Visa, the best locations, how Panama compares to other destinations, and the practical steps to make the move happen.
                     </p>
                 </section>
@@ -157,11 +157,11 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                             { title: 'Johns Hopkins-Affiliated Hospital', body: 'Hospital Punta Pacifica in Panama City is a Johns Hopkins Medicine International affiliate. Specialists cost $50–$80 per visit.' },
                             { title: 'Massive Expat Community', body: 'Tens of thousands of North Americans live in Panama. In Boquete and Coronado, you will be surrounded by English speakers who have already figured it all out.' },
                         ].map((item, i) => (
-                            <div key={i} className="glass-card rounded-xl p-5 border border-brand-100 flex items-start gap-3">
+                            <div key={i} className="card-light rounded-xl p-5 border border-brand-100 flex items-start gap-3">
                                 <CheckCircle size={16} className="text-brand-GOLD mt-1 flex-shrink-0" />
                                 <div>
                                     <div className="text-white font-bold text-sm mb-1">{item.title}</div>
-                                    <div className="text-slate-400 text-xs leading-relaxed">{item.body}</div>
+                                    <div className="text-slate-500 text-xs leading-relaxed">{item.body}</div>
                                 </div>
                             </div>
                         ))}
@@ -174,15 +174,15 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                         <Sun className="inline text-brand-GOLD mr-2" size={28} />
                         The Pensionado Visa: Your Fast Track to Panama
                     </h2>
-                    <p className="text-slate-400 mb-6 leading-relaxed">
+                    <p className="text-slate-500 mb-6 leading-relaxed">
                         The Pensionado Visa is Panama&apos;s retiree residency program — and it is one of the most generous in the world. Any foreigner with a verifiable lifetime income of at least $1,000/month qualifies. That includes US Social Security, a government or corporate pension, or military retirement pay.
                     </p>
-                    <div className="bg-brand-900 rounded-2xl p-6 mb-6 border border-brand-GOLD/20">
+                    <div className="bg-brand-50 rounded-2xl p-6 mb-6 border border-brand-GOLD/20">
                         <div className="text-brand-GOLD font-black uppercase tracking-widest text-xs mb-4">Pensionado Discount Card — What You Actually Get</div>
                         <div className="grid sm:grid-cols-2 gap-2">
                             {pensionadoDiscounts.map((item, i) => (
-                                <div key={i} className="flex items-center justify-between bg-brand-950 rounded-lg px-4 py-2.5">
-                                    <span className="text-slate-300 text-xs">{item.benefit}</span>
+                                <div key={i} className="flex items-center justify-between bg-white rounded-lg px-4 py-2.5">
+                                    <span className="text-slate-500 text-xs">{item.benefit}</span>
                                     <span className="text-brand-GOLD font-black text-xs ml-3">{item.discount}</span>
                                 </div>
                             ))}
@@ -201,13 +201,13 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                     </h2>
                     <div className="grid md:grid-cols-3 gap-6">
                         {retirementBudgets.map((b, i) => (
-                            <div key={i} className="glass-card rounded-2xl p-6 border border-brand-100">
+                            <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] mb-2">{b.style}</div>
                                 <div className="text-white font-black text-xl mb-3">{b.monthly}<span className="text-slate-500 font-normal text-sm">/mo</span></div>
-                                <p className="text-slate-400 text-xs leading-relaxed mb-3">{b.desc}</p>
-                                <div className="border-t border-white/5 pt-3">
+                                <p className="text-slate-500 text-xs leading-relaxed mb-3">{b.desc}</p>
+                                <div className="border-t border-brand-100 pt-3">
                                     <span className="text-slate-500 text-[10px] font-bold uppercase tracking-widest">Best for: </span>
-                                    <span className="text-slate-400 text-[10px]">{b.best}</span>
+                                    <span className="text-slate-500 text-[10px]">{b.best}</span>
                                 </div>
                             </div>
                         ))}
@@ -221,11 +221,11 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                     </h2>
                     <div className="space-y-5">
                         {locations.map((loc, i) => (
-                            <div key={i} className="glass-card rounded-2xl p-7 border border-brand-100">
+                            <div key={i} className="card-light rounded-2xl p-7 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-4 mb-3">
                                     <div>
                                         <div className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest mb-1">{loc.tag}</div>
-                                        <h3 className="text-xl font-heading font-black text-white">{loc.name}</h3>
+                                        <h3 className="text-xl font-heading font-black text-brand-950">{loc.name}</h3>
                                         <span className="text-slate-500 text-[10px] font-bold">{loc.vibe}</span>
                                     </div>
                                     <div className="text-right">
@@ -233,7 +233,7 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                                         <div className="text-slate-600 text-[9px] uppercase font-bold tracking-widest">Typical monthly budget</div>
                                     </div>
                                 </div>
-                                <p className="text-slate-400 text-sm leading-relaxed">{loc.why}</p>
+                                <p className="text-slate-500 text-sm leading-relaxed">{loc.why}</p>
                             </div>
                         ))}
                     </div>
@@ -245,26 +245,26 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                         <TrendingUp className="inline text-brand-GOLD mr-2" size={28} />
                         Panama vs Mexico vs Costa Rica
                     </h2>
-                    <p className="text-slate-400 mb-6 leading-relaxed">
+                    <p className="text-slate-500 mb-6 leading-relaxed">
                         Most American retirees are choosing between Panama, Mexico (Cancun/Puerto Vallarta/Lake Chapala), and Costa Rica. Here is how they compare on the metrics that matter most:
                     </p>
                     <div className="overflow-x-auto">
                         <table className="w-full text-sm border-collapse">
                             <thead>
-                                <tr className="border-b border-white/10">
+                                <tr className="border-b border-brand-100">
                                     <th className="text-left text-slate-500 text-[10px] uppercase tracking-widest py-3 pr-4">Factor</th>
                                     <th className="text-left text-brand-GOLD text-[10px] uppercase tracking-widest py-3 px-3">Panama</th>
-                                    <th className="text-left text-slate-400 text-[10px] uppercase tracking-widest py-3 px-3">Mexico</th>
-                                    <th className="text-left text-slate-400 text-[10px] uppercase tracking-widest py-3 px-3">Costa Rica</th>
+                                    <th className="text-left text-slate-500 text-[10px] uppercase tracking-widest py-3 px-3">Mexico</th>
+                                    <th className="text-left text-slate-500 text-[10px] uppercase tracking-widest py-3 px-3">Costa Rica</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {comparisonData.map((row, i) => (
-                                    <tr key={i} className="border-b border-white/5">
-                                        <td className="text-slate-400 text-xs py-3 pr-4 font-medium">{row.factor}</td>
+                                    <tr key={i} className="border-b border-brand-100">
+                                        <td className="text-slate-500 text-xs py-3 pr-4 font-medium">{row.factor}</td>
                                         <td className="text-white text-xs py-3 px-3 font-bold">{row.panama}</td>
-                                        <td className="text-slate-400 text-xs py-3 px-3">{row.mexico}</td>
-                                        <td className="text-slate-400 text-xs py-3 px-3">{row.costaRica}</td>
+                                        <td className="text-slate-500 text-xs py-3 px-3">{row.mexico}</td>
+                                        <td className="text-slate-500 text-xs py-3 px-3">{row.costaRica}</td>
                                     </tr>
                                 ))}
                             </tbody>
@@ -273,12 +273,12 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                 </section>
 
                 {/* Healthcare */}
-                <section className="reveal-on-scroll glass-card rounded-2xl p-8 border border-brand-100">
+                <section className="reveal-on-scroll card-light rounded-2xl p-8 border border-brand-100">
                     <h2 className="text-white text-2xl font-heading font-bold mb-5 uppercase tracking-tighter italic">
                         <Heart className="inline text-brand-GOLD mr-2" size={24} />
                         Healthcare for Retirees
                     </h2>
-                    <p className="text-slate-400 leading-relaxed mb-4">
+                    <p className="text-slate-500 leading-relaxed mb-4">
                         Healthcare quality and cost are the top two concerns for most retirees considering a move abroad. Panama addresses both exceptionally well.
                     </p>
                     <div className="grid sm:grid-cols-2 gap-3">
@@ -290,9 +290,9 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                             'Specialist consultation: $50–$80 (vs $300–$500+ in the US)',
                             'Pensionado cardholders receive 15–20% off all medical services',
                         ].map((item, i) => (
-                            <div key={i} className="flex items-start gap-3 bg-brand-950 rounded-xl p-4">
+                            <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-4">
                                 <CheckCircle size={14} className="text-brand-GOLD mt-0.5 flex-shrink-0" />
-                                <span className="text-slate-300 text-xs leading-relaxed">{item}</span>
+                                <span className="text-slate-500 text-xs leading-relaxed">{item}</span>
                             </div>
                         ))}
                     </div>
@@ -305,13 +305,13 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                     </h2>
                     <div className="space-y-4">
                         {steps.map((s, i) => (
-                            <div key={i} className="flex items-start gap-5 glass-card rounded-xl p-5 border border-brand-100">
+                            <div key={i} className="flex items-start gap-5 card-light rounded-xl p-5 border border-brand-100">
                                 <div className="w-10 h-10 rounded-full bg-brand-GOLD/10 border border-brand-GOLD/30 flex items-center justify-center flex-shrink-0">
                                     <span className="text-brand-GOLD font-black text-sm">{s.step}</span>
                                 </div>
                                 <div>
                                     <div className="text-white font-bold text-sm mb-1">{s.title}</div>
-                                    <div className="text-slate-400 text-xs leading-relaxed">{s.body}</div>
+                                    <div className="text-slate-500 text-xs leading-relaxed">{s.body}</div>
                                 </div>
                             </div>
                         ))}
@@ -319,7 +319,7 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                 </section>
 
                 {/* CTA */}
-                <section className="reveal-on-scroll bg-brand-950 p-10 rounded-3xl border-t-4 border-brand-GOLD text-center">
+                <section className="reveal-on-scroll bg-white p-10 rounded-3xl border-t-4 border-brand-GOLD text-center">
                     <h3 className="text-white font-heading text-3xl font-bold mb-4 uppercase italic tracking-tighter">
                         Start Your Panama Retirement Plan
                     </h3>
@@ -352,7 +352,7 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                         <Link
                             key={i}
                             href={link.href}
-                            className="flex items-center justify-between glass-card p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
+                            className="flex items-center justify-between card-light p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                         >
                             <span className="text-white text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />

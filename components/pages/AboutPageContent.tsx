@@ -14,21 +14,20 @@ const AboutPageContent: React.FC = () => {
         <div className="pt-24 min-h-screen bg-white text-brand-950">
 
             {/* Hero — dark section with photo */}
-            <section className="section-dark py-28 relative overflow-hidden">
+            <section className="section-teal-soft py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80" alt="" className="w-full h-full object-cover" />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-brand-950/80" />
-                <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
+                                <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
                     <span className="tag-teal mb-5 inline-block">
                         {lang === 'es' ? 'QUIÉNES SOMOS' : 'WHO WE ARE'}
                     </span>
-                    <h1 className="font-heading text-4xl md:text-6xl font-black text-white mb-6 leading-tight uppercase italic tracking-tighter mt-4">
+                    <h1 className="font-heading text-4xl md:text-6xl font-black text-brand-950 mb-6 leading-tight uppercase italic tracking-tighter mt-4">
                         {lang === 'es'
                             ? 'Bienes Raíces en Panamá,\nPor Expats Para Expats.'
                             : 'Panama Real Estate,\nGuided by Expats for Expats.'}
                     </h1>
-                    <p className="text-lg text-slate-300 leading-relaxed font-medium max-w-2xl mx-auto">
+                    <p className="text-lg text-slate-600 leading-relaxed font-medium max-w-2xl mx-auto">
                         {lang === 'es'
                             ? 'Fundada por expatriados que vivieron el proceso antes de asesorar — bienes raíces de lujo y servicios de reubicación en Panamá.'
                             : 'Founded by international expats who lived the process before advising others — luxury real estate and relocation services in Panama.'}
@@ -191,7 +190,7 @@ const AboutPageContent: React.FC = () => {
             {/* SEO keyword wall — alt section */}
             <section className="py-12 section-alt border-t border-brand-100">
                 <div className="max-w-7xl mx-auto px-4">
-                    <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
+                    <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 text-[10px] font-bold text-slate-500 uppercase tracking-tighter">
                         {SEO_KEYWORDS_LIST.map((k, i) => (
                             <span key={i} className="hover:text-brand-TEAL transition-colors cursor-default">{k}</span>
                         ))}

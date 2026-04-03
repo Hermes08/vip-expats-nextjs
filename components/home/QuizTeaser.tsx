@@ -21,10 +21,10 @@ export default function QuizTeaser({ lang = 'en' }: Props) {
   const t = text[lang as 'en' | 'es'] ?? text.en;
 
   return (
-    <div className="w-full bg-brand-950 border-b border-white/5 py-3 px-4">
+    <div className="w-full bg-white border-b border-brand-100 py-3 px-4">
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center sm:text-left">
         <HelpCircle size={16} className="text-brand-GOLD flex-shrink-0 hidden sm:block" />
-        <span className="text-slate-400 text-xs font-medium">
+        <span className="text-slate-500 text-xs font-medium">
           {t.label}
         </span>
         <Link

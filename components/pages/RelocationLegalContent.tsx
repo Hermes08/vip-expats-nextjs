@@ -132,7 +132,7 @@ const RelocationLegalContent: React.FC = () => {
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-10 uppercase tracking-tighter">
                         Secure Your <br /><span className="text-brand-GOLD italic">Panama</span> Future
                     </h1>
-                    <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed font-medium">
+                    <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-medium">
                         We aren't just tour guides; we are the bridge to your new life. While we handle the logistics, our <strong>panama immigration lawyers</strong> handle the law.
                     </p>
                 </div>
@@ -145,7 +145,7 @@ const RelocationLegalContent: React.FC = () => {
                         <div key={i} className="bg-white/5 border border-brand-100 p-6 rounded-2xl hover:border-brand-GOLD/30 transition-all group">
                             <service.icon className="text-brand-GOLD mb-8 group-hover:scale-110 transition-transform" size={48} />
                             <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 italic">{service.title}</h3>
-                            <p className="text-slate-400 font-medium leading-relaxed mb-8" dangerouslySetInnerHTML={{ __html: service.desc }}></p>
+                            <p className="text-slate-500 font-medium leading-relaxed mb-8" dangerouslySetInnerHTML={{ __html: service.desc }}></p>
                             <Link href={`/${lang}/relocation/visas`} className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">
                                 Discover More <ArrowRight size={14} />
                             </Link>
@@ -155,14 +155,14 @@ const RelocationLegalContent: React.FC = () => {
             </section>
 
             {/* The "No-Lawyer" Reality Check */}
-            <section className="py-14 bg-black border-y border-white/5 relative overflow-hidden">
+            <section className="py-14 bg-brand-50 border-y border-brand-100 relative overflow-hidden">
                 <div className="absolute top-0 right-0 p-20 opacity-5">
                     <Scale size={200} />
                 </div>
                 <div className="max-w-7xl mx-auto px-4 relative z-10 grid lg:grid-cols-2 gap-24 items-center">
                     <div>
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">When You <span className="text-brand-GOLD">DON'T</span> <br /> Need a Lawyer</h2>
-                        <div className="space-y-8 text-lg text-slate-400 font-medium leading-[1.8]">
+                        <div className="space-y-8 text-lg text-slate-500 font-medium leading-[1.8]">
                             <p>
                                 Transparency is our core value. While you <strong>must</strong> have a <strong>panama immigration lawyer</strong> for the visa filing itself, you do NOT need a lawyer for everything.
                             </p>
@@ -185,7 +185,7 @@ const RelocationLegalContent: React.FC = () => {
                         <p className="font-bold opacity-80 leading-relaxed mb-8 text-lg">
                             We believe in the "Hybrid" model: Use the lawyers for the visa and the heavy corporate lifting, but use our **Logistics Specialists** for the ground-level move. This saves our clients an average of **$1,500 - $3,000** in unnecessary legal fees.
                         </p>
-                        <Link href={`/${lang}/contacto`} className="px-6 py-3 bg-brand-950 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all inline-block shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="px-6 py-3 bg-white text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all inline-block shadow-2xl">
                             Get My Logistic Proposal
                         </Link>
                     </div>
@@ -193,32 +193,32 @@ const RelocationLegalContent: React.FC = () => {
             </section>
 
             {/* Value Proposition: The Lawyer Connection */}
-            <section className="py-14 bg-black rounded-3xl mx-4 overflow-hidden relative">
+            <section className="py-14 bg-brand-50 rounded-3xl mx-4 overflow-hidden relative">
                 <div className="max-w-7xl mx-auto px-8 relative z-10">
                     <div className="flex flex-col lg:flex-row gap-20 items-center">
                         <div className="lg:w-1/2">
                             <UserCheck size={64} className="text-brand-GOLD mb-10" />
                             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none text-brand-950">The <span className="text-brand-GOLD underline">In-House</span> Advantage</h2>
-                            <p className="text-xl text-slate-400 font-medium leading-[1.8] mb-12">
+                            <p className="text-xl text-slate-500 font-medium leading-[1.8] mb-12">
                                 Navigating <strong>panama visa requirements</strong> alone is a liability. Our platform exists to connect you with verified <strong>panama visa attorneys</strong> who have a proven track record. No "cousin-of-a-friend" deals. Just vetted, professional legal counsel.
                             </p>
-                            <Link href={`/${lang}/relocation/legal/lawyers-directory`} className="px-12 py-6 bg-brand-950 text-white font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-GOLD hover:text-brand-950 transition-all inline-block shadow-2xl">
+                            <Link href={`/${lang}/relocation/legal/lawyers-directory`} className="px-12 py-6 bg-white text-white font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-GOLD hover:text-brand-950 transition-all inline-block shadow-2xl">
                                 Browse Verified Lawyers
                             </Link>
                         </div>
                         <div className="lg:w-1/2">
                             <div className="grid grid-cols-2 gap-4">
-                                <div className="p-8 bg-black text-white rounded-2xl text-center border border-brand-100">
+                                <div className="p-8 bg-brand-50 text-brand-950 rounded-2xl text-center border border-brand-100">
                                     <div className="text-4xl font-black italic text-brand-GOLD mb-2">15+</div>
                                     <div className="text-[9px] font-black uppercase tracking-widest opacity-60">Years of Experience</div>
                                 </div>
                                 <div className="p-8 bg-white/5 rounded-2xl text-center border border-brand-100">
                                     <div className="text-4xl font-black italic text-brand-950 mb-2">2,500+</div>
-                                    <div className="text-[9px] font-black uppercase tracking-widest text-slate-400">Visas Processed</div>
+                                    <div className="text-[9px] font-black uppercase tracking-widest text-slate-500">Visas Processed</div>
                                 </div>
                                 <div className="p-8 bg-white/5 rounded-2xl text-center border border-brand-100">
                                     <div className="text-4xl font-black italic text-brand-950 mb-2">100%</div>
-                                    <div className="text-[9px] font-black uppercase tracking-widest text-slate-400">Success Rate</div>
+                                    <div className="text-[9px] font-black uppercase tracking-widest text-slate-500">Success Rate</div>
                                 </div>
                                 <div className="p-8 bg-brand-GOLD text-brand-950 rounded-2xl text-center shadow-xl">
                                     <div className="text-4xl font-black italic mb-2">Elite</div>
@@ -234,12 +234,12 @@ const RelocationLegalContent: React.FC = () => {
             <section className="py-14 max-w-5xl mx-auto px-4">
                 <div className="text-center mb-20">
                     <h2 className="text-4xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter italic"><span className="text-brand-GOLD">Legal</span> FAQ</h2>
-                    <p className="text-slate-400 text-lg uppercase tracking-widest font-black">Clearing the path for your relocation.</p>
+                    <p className="text-slate-500 text-lg uppercase tracking-widest font-black">Clearing the path for your relocation.</p>
                 </div>
 
                 <div className="space-y-10">
                     {faqs.map((faq, idx) => (
-                        <details key={idx} className="group bg-black rounded-2xl border border-brand-100 overflow-hidden transition-all hover:border-brand-GOLD/50">
+                        <details key={idx} className="group bg-brand-50 rounded-2xl border border-brand-100 overflow-hidden transition-all hover:border-brand-GOLD/50">
                             <summary className="flex items-center justify-between p-8 cursor-pointer list-none">
                                 <span className="text-xl font-black uppercase tracking-tighter italic pr-8">{faq.question}</span>
                                 <span className="text-brand-GOLD group-open:rotate-180 transition-transform duration-300">
@@ -247,7 +247,7 @@ const RelocationLegalContent: React.FC = () => {
                                 </span>
                             </summary>
                             <div
-                                className="px-8 pb-8 text-slate-400 font-medium leading-relaxed border-t border-white/5 pt-6"
+                                className="px-8 pb-8 text-slate-500 font-medium leading-relaxed border-t border-brand-100 pt-6"
                                 dangerouslySetInnerHTML={{ __html: faq.answer }}
                             />
                         </details>
@@ -263,10 +263,10 @@ const RelocationLegalContent: React.FC = () => {
                         Don't let <strong>panama entry requirements</strong> or complex forms slow you down. Get the legal clarity you need today.
                     </p>
                     <div className="flex flex-col md:flex-row gap-6 justify-center">
-                        <Link href={`/${lang}/contacto`} className="px-12 py-6 bg-brand-950 text-white font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-black transition-all">
+                        <Link href={`/${lang}/contacto`} className="px-12 py-6 bg-white text-white font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-50 transition-all">
                             Book Legal Consultation
                         </Link>
-                        <Link href={`/${lang}/relocation/visas`} className="px-12 py-6 bg-white border-2 border-brand-950 text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-950 hover:text-white transition-all">
+                        <Link href={`/${lang}/relocation/visas`} className="px-12 py-6 bg-white border-2 border-brand-950 text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-TEAL hover:text-white transition-all">
                             View Visa Options
                         </Link>
                     </div>
@@ -274,7 +274,7 @@ const RelocationLegalContent: React.FC = () => {
             </section>
 
             {/* Keyword Footer SEO */}
-            <section className="py-24 border-t border-white/5 opacity-40 text-center">
+            <section className="py-24 border-t border-brand-100 opacity-40 text-center">
                 <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-x-8 gap-y-4 text-[9px] font-black uppercase tracking-widest">
                     <span>Panama Immigration Lawyer</span>
                     <span>Friendly Nations Visa Requirements</span>

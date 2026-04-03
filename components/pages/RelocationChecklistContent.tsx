@@ -72,7 +72,7 @@ const RelocationChecklistContent: React.FC = () => {
             {/* Hero Section */}
             <section className="py-24 bg-brand-GOLD text-brand-950 relative overflow-hidden rounded-b-[4rem]">
                 <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
-                    <span className="inline-block px-5 py-2 bg-brand-950 text-white text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
+                    <span className="inline-block px-5 py-2 bg-white text-white text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
                         The Master Dossier
                     </span>
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-8 uppercase tracking-tighter leading-[0.85]">
@@ -106,12 +106,12 @@ const RelocationChecklistContent: React.FC = () => {
                             <div className="space-y-10">
                                 {section.items.map((item, i) => (
                                     <div key={i} className="flex gap-6 group">
-                                        <div className="w-10 h-10 border-2 border-white/10 rounded-lg flex items-center justify-center shrink-0 group-hover:border-brand-GOLD transition-all group-hover:bg-brand-GOLD/10">
+                                        <div className="w-10 h-10 border-2 border-brand-100 rounded-lg flex items-center justify-center shrink-0 group-hover:border-brand-GOLD transition-all group-hover:bg-brand-GOLD/10">
                                             <div className="w-4 h-4 rounded-sm bg-transparent group-hover:bg-brand-GOLD transition-all"></div>
                                         </div>
                                         <div>
                                             <h4 className="text-xl font-black uppercase tracking-tighter mb-2 italic text-brand-950">{item.title}</h4>
-                                            <p className="text-sm text-slate-400 font-medium leading-relaxed">{item.desc}</p>
+                                            <p className="text-sm text-slate-500 font-medium leading-relaxed">{item.desc}</p>
                                         </div>
                                     </div>
                                 ))}
@@ -122,13 +122,13 @@ const RelocationChecklistContent: React.FC = () => {
             </section>
 
             {/* Pro-Tips / Panama Real Estate Sale Insights */}
-            <section className="py-14 bg-black text-white rounded-3xl mx-4 overflow-hidden relative">
+            <section className="py-14 bg-brand-50 text-brand-950 rounded-3xl mx-4 overflow-hidden relative">
                 <div className="max-w-7xl mx-auto px-8 relative z-10">
                     <div className="flex flex-col lg:flex-row gap-20 items-center">
                         <div className="lg:w-1/2">
                             <Zap className="text-brand-GOLD mb-10" size={64} />
                             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD underline">Panama Real Estate Sale</span> Secret</h2>
-                            <p className="text-xl text-slate-400 font-medium leading-relaxed mb-12">
+                            <p className="text-xl text-slate-500 font-medium leading-relaxed mb-12">
                                 Navigating <strong>panama residency requirements</strong> isn't just about the list; it's about the timing. We manage the entire schedule for you.
                             </p>
                             <div className="space-y-6">
@@ -160,16 +160,16 @@ const RelocationChecklistContent: React.FC = () => {
                     <div className="flex flex-col lg:flex-row gap-24 items-center">
                         <div className="lg:w-1/2">
                             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The Art of <br /><span className="text-brand-GOLD italic">Timing</span></h2>
-                            <div className="space-y-8 text-lg text-slate-400 font-medium leading-[1.8]">
+                            <div className="space-y-8 text-lg text-slate-500 font-medium leading-[1.8]">
                                 <p>
                                     The #1 reason <strong>panama visa requirements</strong> fail is not a lack of money or intent—it's <strong>document expiration</strong>. Panama defines "Valid" as having been issued within 180 days of the file hitting the desk at the Ministry of Security.
                                 </p>
                                 <p>
                                     If you order your FBI check 5 months before your move, and then your flight is delayed by 3 weeks, your entire legal folder is junk. You have to start over.
                                 </p>
-                                <div className="p-10 bg-black text-white rounded-2xl shadow-2xl">
+                                <div className="p-10 bg-brand-50 text-brand-950 rounded-2xl shadow-2xl">
                                     <h4 className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest mb-6 text-center">Panama Real Estate Sale Timeline Management</h4>
-                                    <div className="grid grid-cols-2 gap-8 border-t border-white/10 pt-8">
+                                    <div className="grid grid-cols-2 gap-8 border-t border-brand-100 pt-8">
                                         <div>
                                             <span className="text-[10px] font-black uppercase tracking-widest text-gray-500">Day -90</span>
                                             <p className="text-xs font-bold mt-2">Order certified Marriage/Birth certificates.</p>
@@ -206,7 +206,7 @@ const RelocationChecklistContent: React.FC = () => {
             <section className="py-14 max-w-5xl mx-auto px-4">
                 <div className="text-center mb-24">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic leading-none text-brand-950 underline decoration-brand-GOLD decoration-8 underline-offset-8">Requirement <span className="text-brand-GOLD italic">FAQ</span></h2>
-                    <p className="text-slate-400 font-black uppercase tracking-widest text-xs mt-8">Deep Answers for Document Procurement.</p>
+                    <p className="text-slate-500 font-black uppercase tracking-widest text-xs mt-8">Deep Answers for Document Procurement.</p>
                 </div>
 
                 <div className="space-y-8">
@@ -218,9 +218,9 @@ const RelocationChecklistContent: React.FC = () => {
                         { q: "Do I need to bring my kids for the filing?", a: "Yes. Every dependent included in the visa must be physically present in Panama for the initial filing and to receive their temporary residency card." },
                         { q: "Can I use 'Digital' documents for the filing?", a: "Immigration requires **Originals** with wet signatures or the original apostilled federal printouts. Scans are only used for pre-clearance. You must travel with the physical folder." }
                     ].map((faq, i) => (
-                        <div key={i} className="p-10 border-b border-white/10 group hover:bg-brand-50 transition-all rounded-2xl">
+                        <div key={i} className="p-10 border-b border-brand-100 group hover:bg-brand-50 transition-all rounded-2xl">
                             <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic group-hover:text-brand-GOLD transition-colors">{faq.q}</h4>
-                            <p className="text-sm text-slate-400 font-medium leading-relaxed">{faq.a}</p>
+                            <p className="text-sm text-slate-500 font-medium leading-relaxed">{faq.a}</p>
                         </div>
                     ))}
                 </div>
@@ -230,10 +230,10 @@ const RelocationChecklistContent: React.FC = () => {
             <section className="py-14 text-center">
                 <div className="max-w-4xl mx-auto px-4">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none">Ready for <br /> Day One?</h2>
-                    <p className="text-xl text-slate-400 mb-16 font-medium leading-relaxed">
+                    <p className="text-xl text-slate-500 mb-16 font-medium leading-relaxed">
                         Don't risk your move on a missing paper. Get the full verified 2026 checklist and a 1-on-1 legal review.
                     </p>
-                    <Link href={`/${lang}/contacto`} className="px-8 py-4 bg-brand-950 text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
+                    <Link href={`/${lang}/contacto`} className="px-8 py-4 bg-white text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
                         Talk to a Document Expert
                     </Link>
                 </div>

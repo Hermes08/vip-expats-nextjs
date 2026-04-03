@@ -54,7 +54,7 @@ const MediaGallery: React.FC = () => {
                     >
                         <RefreshCw size={18} className={loading ? 'animate-spin' : ''} />
                     </button>
-                    <label className={`cursor-pointer bg-brand-900 text-white px-4 py-2 rounded-lg font-bold text-sm tracking-wide hover:bg-brand-800 transition-all flex items-center gap-2 ${uploading ? 'opacity-50 pointer-events-none' : ''}`}>
+                    <label className={`cursor-pointer bg-brand-50 text-white px-4 py-2 rounded-lg font-bold text-sm tracking-wide hover:bg-brand-100 transition-all flex items-center gap-2 ${uploading ? 'opacity-50 pointer-events-none' : ''}`}>
                         {uploading ? <Loader2 size={16} className="animate-spin" /> : 'Upload New'}
                         <input type="file" accept="image/*" className="hidden" onChange={handleFileUpload} />
                     </label>
@@ -63,7 +63,7 @@ const MediaGallery: React.FC = () => {
 
             <div className="p-6 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 max-h-[500px] overflow-y-auto">
                 {loading && images.length === 0 ? (
-                    <div className="col-span-full py-10 text-center text-slate-400 flex flex-col items-center">
+                    <div className="col-span-full py-10 text-center text-slate-500 flex flex-col items-center">
                         <Loader2 size={32} className="animate-spin mb-2" />
                         <p>Loading images...</p>
                     </div>
@@ -71,7 +71,7 @@ const MediaGallery: React.FC = () => {
                     images.map((url, idx) => (
                         <div key={idx} className="group relative aspect-square bg-slate-100 rounded-lg overflow-hidden border border-slate-200">
                             <img src={url} alt={`Media ${idx}`} className="w-full h-full object-cover" />
-                            <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
+                            <div className="absolute inset-0 bg-brand-50/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2">
                                 <button
                                     onClick={() => copyToClipboard(url)}
                                     className="p-2 bg-white text-slate-900 rounded-full hover:bg-brand-GOLD hover:scale-110 transition-all"
@@ -92,7 +92,7 @@ const MediaGallery: React.FC = () => {
                         </div>
                     ))
                 ) : (
-                    <div className="col-span-full py-10 text-center text-slate-400">
+                    <div className="col-span-full py-10 text-center text-slate-500">
                         No images found in library.
                     </div>
                 )}

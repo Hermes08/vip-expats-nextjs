@@ -23,7 +23,7 @@ export default function FeaturedListings({ lang }: FeaturedListingsProps) {
   if (featured.length === 0) return null;
 
   return (
-    <section className="py-16 md:py-32 bg-brand-950 border-t border-white/5 relative">
+    <section className="py-16 md:py-32 bg-white border-t border-brand-100 relative">
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         {/* Section header */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 reveal-on-scroll">

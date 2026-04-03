@@ -38,12 +38,12 @@ export default function PropertyDetailPage() {
 
   if (!listing) {
     return (
-      <div className="min-h-screen bg-brand-950 flex flex-col items-center justify-center px-4 text-center pt-32">
+      <div className="min-h-screen bg-white flex flex-col items-center justify-center px-4 text-center pt-32">
         <Home size={48} className="text-brand-GOLD mb-6 opacity-50" />
         <h1 className="text-4xl font-black text-white uppercase italic tracking-tighter mb-4">
           {lang === 'es' ? 'Propiedad no encontrada' : 'Property not found'}
         </h1>
-        <p className="text-slate-400 mb-10">
+        <p className="text-slate-500 mb-10">
           {lang === 'es'
             ? 'Esta propiedad ya no está disponible o el enlace es incorrecto.'
             : 'This property is no longer available or the link is incorrect.'}
@@ -86,7 +86,7 @@ export default function PropertyDetailPage() {
   };
 
   return (
-    <main className="min-h-screen bg-brand-950 pt-20 pb-16">
+    <main className="min-h-screen bg-white pt-20 pb-16">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -101,7 +101,7 @@ export default function PropertyDetailPage() {
             {lang === 'es' ? 'Propiedades' : 'Properties'}
           </Link>
           <span>/</span>
-          <span className="text-slate-300 truncate max-w-xs">{title}</span>
+          <span className="text-slate-500 truncate max-w-xs">{title}</span>
         </nav>
 
         <div className="grid lg:grid-cols-3 gap-12 items-start">
@@ -110,7 +110,7 @@ export default function PropertyDetailPage() {
           <div className="lg:col-span-2 space-y-8">
 
             {/* Hero image */}
-            <div className="relative rounded-[3rem] overflow-hidden aspect-[16/9] border border-white/5 shadow-2xl group">
+            <div className="relative rounded-[3rem] overflow-hidden aspect-[16/9] border border-brand-100 shadow-2xl group">
               <Image
                 src={images[0]}
                 alt={title}
@@ -127,7 +127,7 @@ export default function PropertyDetailPage() {
                 {statusLabel}
               </div>
               {listing.featured && (
-                <div className="absolute top-6 right-6 flex items-center gap-1.5 px-4 py-2 bg-brand-950/80 backdrop-blur rounded-full border border-brand-GOLD/30">
+                <div className="absolute top-6 right-6 flex items-center gap-1.5 px-4 py-2 bg-brand-TEAL/80 backdrop-blur rounded-full border border-brand-GOLD/30">
                   <Star size={10} className="text-brand-GOLD fill-brand-GOLD" />
                   <span className="text-[9px] font-black uppercase tracking-widest text-brand-GOLD">Featured</span>
                 </div>
@@ -138,7 +138,7 @@ export default function PropertyDetailPage() {
             {images.length > 1 && (
               <div className="flex gap-3 overflow-x-auto pb-2">
                 {images.slice(1, 5).map((img, i) => (
-                  <div key={i} className="w-28 h-20 flex-shrink-0 rounded-2xl overflow-hidden border border-white/10 relative">
+                  <div key={i} className="w-28 h-20 flex-shrink-0 rounded-2xl overflow-hidden border border-brand-100 relative">
                     <Image
                       src={img}
                       alt={`${title} ${i + 2}`}
@@ -176,7 +176,7 @@ export default function PropertyDetailPage() {
             {/* Stats row */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
               {listing.beds != null && (
-                <div className="glass-card p-6 rounded-2xl border-white/5 flex items-center gap-3">
+                <div className="card-light p-6 rounded-2xl border-brand-100 flex items-center gap-3">
                   <Bed size={18} className="text-brand-GOLD flex-shrink-0" />
                   <div>
                     <p className="text-white font-black text-lg">{listing.beds}</p>
@@ -185,7 +185,7 @@ export default function PropertyDetailPage() {
                 </div>
               )}
               {listing.baths != null && (
-                <div className="glass-card p-6 rounded-2xl border-white/5 flex items-center gap-3">
+                <div className="card-light p-6 rounded-2xl border-brand-100 flex items-center gap-3">
                   <Bath size={18} className="text-brand-GOLD flex-shrink-0" />
                   <div>
                     <p className="text-white font-black text-lg">{listing.baths}</p>
@@ -194,7 +194,7 @@ export default function PropertyDetailPage() {
                 </div>
               )}
               {listing.sqft != null && (
-                <div className="glass-card p-6 rounded-2xl border-white/5 flex items-center gap-3">
+                <div className="card-light p-6 rounded-2xl border-brand-100 flex items-center gap-3">
                   <Maximize2 size={18} className="text-brand-GOLD flex-shrink-0" />
                   <div>
                     <p className="text-white font-black text-lg">{listing.sqft.toLocaleString()}</p>
@@ -203,7 +203,7 @@ export default function PropertyDetailPage() {
                 </div>
               )}
               {listing.yearBuilt != null && (
-                <div className="glass-card p-6 rounded-2xl border-white/5 flex items-center gap-3">
+                <div className="card-light p-6 rounded-2xl border-brand-100 flex items-center gap-3">
                   <Calendar size={18} className="text-brand-GOLD flex-shrink-0" />
                   <div>
                     <p className="text-white font-black text-lg">{listing.yearBuilt}</p>
@@ -216,39 +216,39 @@ export default function PropertyDetailPage() {
             {/* Tags row */}
             <div className="flex flex-wrap gap-3">
               {listing.zone && (
-                <span className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-slate-300 flex items-center gap-2">
+                <span className="px-4 py-2 bg-white/5 border border-brand-100 rounded-full text-[10px] font-black uppercase tracking-widest text-slate-500 flex items-center gap-2">
                   <MapPin size={10} className="text-brand-GOLD" /> {listing.zone}
                 </span>
               )}
               {listing.property_type && (
-                <span className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-slate-300 flex items-center gap-2">
+                <span className="px-4 py-2 bg-white/5 border border-brand-100 rounded-full text-[10px] font-black uppercase tracking-widest text-slate-500 flex items-center gap-2">
                   <Building2 size={10} className="text-brand-GOLD" /> {listing.property_type}
                 </span>
               )}
               {listing.ref && (
-                <span className="px-4 py-2 bg-white/5 border border-white/10 rounded-full text-[10px] font-black uppercase tracking-widest text-slate-400 flex items-center gap-2">
+                <span className="px-4 py-2 bg-white/5 border border-brand-100 rounded-full text-[10px] font-black uppercase tracking-widest text-slate-500 flex items-center gap-2">
                   <Tag size={10} /> Ref: {listing.ref}
                 </span>
               )}
             </div>
 
             {/* Description */}
-            <div className="glass-card p-6 rounded-2xl border-white/5">
+            <div className="card-light p-6 rounded-2xl border-brand-100">
               <h2 className="text-lg font-black text-white uppercase italic tracking-tighter mb-6">
                 {lang === 'es' ? 'Descripción' : 'Description'}
               </h2>
-              <p className="text-slate-400 leading-relaxed font-medium whitespace-pre-line">{description}</p>
+              <p className="text-slate-500 leading-relaxed font-medium whitespace-pre-line">{description}</p>
             </div>
 
             {/* Amenities */}
             {listing.amenities && listing.amenities.length > 0 && (
-              <div className="glass-card p-6 rounded-2xl border-white/5">
+              <div className="card-light p-6 rounded-2xl border-brand-100">
                 <h2 className="text-lg font-black text-white uppercase italic tracking-tighter mb-8">
                   {lang === 'es' ? 'Amenidades' : 'Amenities'}
                 </h2>
                 <div className="grid grid-cols-2 gap-4">
                   {listing.amenities.map((amenity, i) => (
-                    <div key={i} className="flex items-center gap-3 text-slate-300 text-sm font-medium">
+                    <div key={i} className="flex items-center gap-3 text-slate-500 text-sm font-medium">
                       <CheckCircle size={14} className="text-brand-GOLD flex-shrink-0" />
                       {amenity}
                     </div>
@@ -262,7 +262,7 @@ export default function PropertyDetailPage() {
           <div className="lg:col-span-1 space-y-6 lg:sticky lg:top-28">
 
             {/* Price card */}
-            <div className="glass-card p-8 rounded-3xl border border-brand-GOLD/20 bg-gradient-to-b from-brand-GOLD/5 to-transparent">
+            <div className="card-light p-8 rounded-3xl border border-brand-GOLD/20 bg-gradient-to-b from-brand-GOLD/5 to-transparent">
               <p className="text-[10px] font-black uppercase tracking-[0.4em] text-brand-GOLD mb-2">
                 {statusLabel}
               </p>
@@ -277,7 +277,7 @@ export default function PropertyDetailPage() {
             </div>
 
             {/* Agent card */}
-            <div className="glass-card p-8 rounded-3xl border-white/5 space-y-5">
+            <div className="card-light p-8 rounded-3xl border-brand-100 space-y-5">
               <div>
                 <p className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-500 mb-1">
                   {lang === 'es' ? 'Agente' : 'Agent'}
@@ -300,7 +300,7 @@ export default function PropertyDetailPage() {
               {listing.agentEmail && (
                 <a
                   href={`mailto:${listing.agentEmail}?subject=${encodeURIComponent(title)}`}
-                  className="w-full px-6 py-4 rounded-2xl font-black text-[11px] uppercase tracking-widest flex items-center justify-center gap-3 border border-white/10 text-slate-300 hover:border-brand-GOLD/30 hover:text-brand-GOLD transition-all"
+                  className="w-full px-6 py-4 rounded-2xl font-black text-[11px] uppercase tracking-widest flex items-center justify-center gap-3 border border-brand-100 text-slate-500 hover:border-brand-GOLD/30 hover:text-brand-GOLD transition-all"
                 >
                   <Mail size={16} />
                   {lang === 'es' ? 'Enviar Email' : 'Send Email'}

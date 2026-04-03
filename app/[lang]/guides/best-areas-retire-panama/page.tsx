@@ -234,7 +234,7 @@ const BestAreasRetirePanamaPage = () => {
   };
 
   return (
-    <div className="bg-brand-950 min-h-screen pt-24 pb-40 overflow-hidden">
+    <div className="bg-white min-h-screen pt-24 pb-40 overflow-hidden">
       {/* BACKGROUND GLOW */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-1/2 left-1/2 w-[1200px] h-[1200px] bg-brand-GOLD/5 rounded-full blur-[180px] -translate-x-1/2 -translate-y-1/2" />
@@ -262,11 +262,11 @@ const BestAreasRetirePanamaPage = () => {
               <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">
                 {content.badge}
               </span>
-              <h1 className="text-5xl md:text-9xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-[0.85]">
+              <h1 className="text-5xl md:text-9xl font-heading font-black text-brand-950 mb-10 tracking-tighter uppercase italic leading-[0.85]">
                 {content.title} <br />
                 <span className="text-brand-GOLD">{content.titleAccent}</span>
               </h1>
-              <p className="text-xl md:text-2xl text-slate-400 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic">
+              <p className="text-xl md:text-2xl text-slate-500 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic">
                 {content.subtitle}
               </p>
               <div className="flex flex-wrap justify-center gap-8">
@@ -283,7 +283,7 @@ const BestAreasRetirePanamaPage = () => {
                 <Magnetic strength={0.3}>
                   <Link
                     href={`/${lang}/propiedades`}
-                    className="btn-3d btn-3d-navy px-12 py-6 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10"
+                    className="btn-3d btn-3d-navy px-12 py-6 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-brand-100"
                   >
                     {content.ctaProperties}
                   </Link>
@@ -294,27 +294,27 @@ const BestAreasRetirePanamaPage = () => {
         </section>
 
         {/* INTRO */}
-        <section className="py-24 border-t border-white/5">
+        <section className="py-24 border-t border-brand-100">
           <div className="max-w-4xl mx-auto text-center reveal-on-scroll">
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">
               {isEn ? 'Why Panama' : 'Por Qué Panamá'}
             </span>
-            <h2 className="text-4xl md:text-7xl font-heading font-black text-white mb-12 tracking-tighter uppercase italic leading-[0.85]">
+            <h2 className="text-4xl md:text-7xl font-heading font-black text-brand-950 mb-12 tracking-tighter uppercase italic leading-[0.85]">
               {content.introTitle}
             </h2>
-            <p className="text-lg md:text-xl text-slate-400 font-medium leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-500 font-medium leading-relaxed">
               {content.intro}
             </p>
           </div>
         </section>
 
         {/* AREAS */}
-        <section className="py-24 border-t border-white/5">
+        <section className="py-24 border-t border-brand-100">
           <div className="text-center mb-20 reveal-on-scroll">
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">
               {isEn ? 'Location Deep Dives' : 'Análisis por Ubicación'}
             </span>
-            <h2 className="text-4xl md:text-7xl font-heading font-black text-white mb-6 tracking-tighter uppercase italic leading-[0.85]">
+            <h2 className="text-4xl md:text-7xl font-heading font-black text-brand-950 mb-6 tracking-tighter uppercase italic leading-[0.85]">
               {content.areasTitle}
             </h2>
           </div>
@@ -327,7 +327,7 @@ const BestAreasRetirePanamaPage = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.1 }}
-                className="glass-card rounded-[3rem] border border-white/5 hover:border-brand-GOLD/30 transition-all overflow-hidden"
+                className="card-light rounded-[3rem] border border-brand-100 hover:border-brand-GOLD/30 transition-all overflow-hidden"
               >
                 <div className="p-10 md:p-14">
                   {/* Header */}
@@ -345,7 +345,7 @@ const BestAreasRetirePanamaPage = () => {
                             {area.highlight}
                           </span>
                         </div>
-                        <h3 className="text-3xl md:text-5xl font-heading font-black text-white uppercase italic tracking-tighter leading-none">
+                        <h3 className="text-3xl md:text-5xl font-heading font-black text-brand-950 uppercase italic tracking-tighter leading-none">
                           {area.name}
                         </h3>
                         <p className="text-brand-GOLD font-bold italic mt-2 text-lg">{area.tagline}</p>
@@ -354,7 +354,7 @@ const BestAreasRetirePanamaPage = () => {
                     <div className="flex flex-col gap-2 text-right">
                       <span className="text-brand-GOLD font-black text-2xl italic">{area.costRange}</span>
                       <span className="text-slate-500 text-xs font-bold uppercase tracking-widest">{isEn ? 'per month' : 'por mes'}</span>
-                      <span className="text-slate-400 text-sm font-medium italic mt-2">{area.climate}</span>
+                      <span className="text-slate-500 text-sm font-medium italic mt-2">{area.climate}</span>
                     </div>
                   </div>
 
@@ -363,7 +363,7 @@ const BestAreasRetirePanamaPage = () => {
                     <span className="text-brand-GOLD font-black text-[9px] uppercase tracking-[0.4em] italic block mb-2">
                       {isEn ? 'Ideal For' : 'Ideal Para'}
                     </span>
-                    <p className="text-slate-300 font-medium italic">{area.idealFor}</p>
+                    <p className="text-slate-500 font-medium italic">{area.idealFor}</p>
                   </div>
 
                   {/* Pros & Cons */}
@@ -375,7 +375,7 @@ const BestAreasRetirePanamaPage = () => {
                       </h4>
                       <ul className="space-y-3">
                         {area.pros.map((pro, j) => (
-                          <li key={j} className="flex items-start gap-3 text-sm text-slate-400 font-medium italic">
+                          <li key={j} className="flex items-start gap-3 text-sm text-slate-500 font-medium italic">
                             <CheckCircle size={13} className="text-brand-GOLD mt-0.5 flex-shrink-0" />
                             {pro}
                           </li>
@@ -384,7 +384,7 @@ const BestAreasRetirePanamaPage = () => {
                     </div>
                     <div>
                       <h4 className="text-white font-black uppercase tracking-widest text-[10px] mb-5 flex items-center gap-2">
-                        <MapPin size={12} className="text-slate-400" />
+                        <MapPin size={12} className="text-slate-500" />
                         {isEn ? 'Things to Consider' : 'Cosas a Considerar'}
                       </h4>
                       <ul className="space-y-3">
@@ -404,13 +404,13 @@ const BestAreasRetirePanamaPage = () => {
         </section>
 
         {/* COMPARISON TABLE */}
-        <section className="py-24 border-t border-white/5">
+        <section className="py-24 border-t border-brand-100">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16 reveal-on-scroll">
               <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">
                 {isEn ? 'Match Yourself' : 'Encuéntrese'}
               </span>
-              <h2 className="text-4xl md:text-6xl font-heading font-black text-white mb-6 tracking-tighter uppercase italic leading-[0.85]">
+              <h2 className="text-4xl md:text-6xl font-heading font-black text-brand-950 mb-6 tracking-tighter uppercase italic leading-[0.85]">
                 {content.comparisonTitle}
               </h2>
             </div>
@@ -422,9 +422,9 @@ const BestAreasRetirePanamaPage = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.06 }}
-                  className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 glass-card p-7 rounded-3xl border border-white/5 hover:border-brand-GOLD/30 transition-all group"
+                  className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 card-light p-7 rounded-3xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                 >
-                  <p className="text-slate-300 font-medium italic group-hover:text-white transition-colors">{item.type}</p>
+                  <p className="text-slate-500 font-medium italic group-hover:text-white transition-colors">{item.type}</p>
                   <span className="text-brand-GOLD font-black italic text-sm whitespace-nowrap">{item.answer}</span>
                 </motion.div>
               ))}
@@ -433,15 +433,15 @@ const BestAreasRetirePanamaPage = () => {
         </section>
 
         {/* PENSIONADO VISA CALLOUT */}
-        <section className="py-24 border-t border-white/5">
-          <div className="max-w-4xl mx-auto glass-card rounded-[3rem] border border-brand-GOLD/20 bg-brand-GOLD/5 p-12 md:p-16 text-center reveal-on-scroll">
+        <section className="py-24 border-t border-brand-100">
+          <div className="max-w-4xl mx-auto card-light rounded-[3rem] border border-brand-GOLD/20 bg-brand-GOLD/5 p-12 md:p-16 text-center reveal-on-scroll">
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">
               {isEn ? 'Key Advantage' : 'Ventaja Clave'}
             </span>
-            <h2 className="text-3xl md:text-5xl font-heading font-black text-white mb-8 tracking-tighter uppercase italic leading-[0.85]">
+            <h2 className="text-3xl md:text-5xl font-heading font-black text-brand-950 mb-8 tracking-tighter uppercase italic leading-[0.85]">
               {content.pensionadoTitle}
             </h2>
-            <p className="text-lg text-slate-400 font-medium leading-relaxed italic">
+            <p className="text-lg text-slate-500 font-medium leading-relaxed italic">
               {content.pensionadoText}
             </p>
             <div className="mt-10">
@@ -457,13 +457,13 @@ const BestAreasRetirePanamaPage = () => {
         </section>
 
         {/* NEXT STEPS */}
-        <section className="py-24 border-t border-white/5">
+        <section className="py-24 border-t border-brand-100">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16 reveal-on-scroll">
               <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">
                 {isEn ? 'Action Plan' : 'Plan de Acción'}
               </span>
-              <h2 className="text-4xl md:text-6xl font-heading font-black text-white mb-6 tracking-tighter uppercase italic leading-[0.85]">
+              <h2 className="text-4xl md:text-6xl font-heading font-black text-brand-950 mb-6 tracking-tighter uppercase italic leading-[0.85]">
                 {content.nextStepsTitle}
               </h2>
             </div>
@@ -475,12 +475,12 @@ const BestAreasRetirePanamaPage = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.08 }}
-                  className="flex items-start gap-6 glass-card p-8 rounded-3xl border border-white/5 hover:border-brand-GOLD/30 transition-all group"
+                  className="flex items-start gap-6 card-light p-8 rounded-3xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                 >
                   <span className="text-brand-GOLD font-black text-3xl italic leading-none min-w-[2rem]">
                     {String(i + 1).padStart(2, '0')}
                   </span>
-                  <p className="text-slate-300 font-medium leading-relaxed group-hover:text-white transition-colors">{step}</p>
+                  <p className="text-slate-500 font-medium leading-relaxed group-hover:text-white transition-colors">{step}</p>
                 </motion.div>
               ))}
             </div>
@@ -510,7 +510,7 @@ const BestAreasRetirePanamaPage = () => {
             <Magnetic strength={0.4}>
               <Link
                 href={`/${lang}/propiedades`}
-                className="btn-3d btn-3d-gold bg-brand-950 text-white px-14 py-7 rounded-full font-black uppercase tracking-[0.3em] text-xs"
+                className="btn-3d btn-3d-gold bg-white text-white px-14 py-7 rounded-full font-black uppercase tracking-[0.3em] text-xs"
               >
                 {content.ctaProperties} <ArrowRight className="inline ml-2" size={14} />
               </Link>

@@ -72,14 +72,14 @@ const RelocationGuidesContent: React.FC = () => {
             {/* Hero Section */}
             <section className="py-24 relative overflow-hidden">
                 <div className="section-container text-center relative z-10">
-                    <span className="inline-block px-5 py-2 glass-card text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
+                    <span className="inline-block px-5 py-2 card-light text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
                         The Expat Knowledge Base
                     </span>
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-8 uppercase tracking-tighter">
                         Living in <br /> <span className="text-brand-GOLD italic">Panama</span> Guide
                     </h1>
                     <div className="prose-container">
-                        <p className="text-xl text-slate-400 leading-relaxed font-medium">
+                        <p className="text-xl text-slate-500 leading-relaxed font-medium">
                             Master the logistics of <strong>international living in panama</strong>. From healthcare to safety, we provide the raw data expats need to thrive.
                         </p>
                     </div>
@@ -90,14 +90,14 @@ const RelocationGuidesContent: React.FC = () => {
             <section className="py-14 section-container">
                 <div className="grid md:grid-cols-12 gap-12">
                     {categories.map((cat, i) => (
-                        <div key={i} className={`glass-card p-6 rounded-[3.5rem] transition-all group ${i % 2 === 0 ? 'md:col-span-7' : 'md:col-span-5 md:mt-24'}`}>
+                        <div key={i} className={`card-light p-6 rounded-[3.5rem] transition-all group ${i % 2 === 0 ? 'md:col-span-7' : 'md:col-span-5 md:mt-24'}`}>
                             <div className="relative z-10">
                                 <cat.icon size={56} className="text-brand-GOLD mb-10 group-hover:scale-110 transition-transform duration-500" />
                                 <h3 className="text-3xl font-black uppercase tracking-tighter mb-6 italic">{cat.title}</h3>
-                                <p className="text-slate-400 font-medium leading-relaxed mb-8">{cat.desc}</p>
+                                <p className="text-slate-500 font-medium leading-relaxed mb-8">{cat.desc}</p>
                                 <div className="flex flex-wrap gap-3">
                                     {cat.links.map((link, j) => (
-                                        <span key={j} className="px-4 py-2 bg-white/5 border border-brand-100 rounded-full text-[10px] font-black uppercase tracking-widest text-slate-400 cursor-default">
+                                        <span key={j} className="px-4 py-2 bg-white/5 border border-brand-100 rounded-full text-[10px] font-black uppercase tracking-widest text-slate-500 cursor-default">
                                             {link}
                                         </span>
                                     ))}
@@ -117,9 +117,9 @@ const RelocationGuidesContent: React.FC = () => {
                         </h2>
                         <p className="text-gray-500 text-lg uppercase tracking-[0.3em] font-black mb-12">The raw truth about moving to Panama.</p>
                         
-                        <div className="p-8 glass-card border-brand-GOLD/20 rounded-2xl">
+                        <div className="p-8 card-light border-brand-GOLD/20 rounded-2xl">
                             <h4 className="text-brand-GOLD font-black uppercase tracking-widest text-xs mb-4">Did you know?</h4>
-                            <p className="text-sm text-slate-400 leading-relaxed font-medium">
+                            <p className="text-sm text-slate-500 leading-relaxed font-medium">
                                 Panama uses the USD, has no capital gains tax on foreign income, and offers a 25% discount on utility bills for retirees.
                             </p>
                         </div>
@@ -149,7 +149,7 @@ const RelocationGuidesContent: React.FC = () => {
                                     <HelpCircle className="text-brand-GOLD shrink-0 mt-1" size={24} />
                                     <div>
                                         <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic group-hover:text-brand-GOLD transition-colors">{faq.q}</h4>
-                                        <p className="text-sm text-slate-400 font-medium leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.a }}></p>
+                                        <p className="text-sm text-slate-500 font-medium leading-relaxed" dangerouslySetInnerHTML={{ __html: faq.a }}></p>
                                     </div>
                                 </div>
                             </div>
@@ -161,10 +161,10 @@ const RelocationGuidesContent: React.FC = () => {
             {/* Comparison Callout - Premium Grid */}
             <section className="py-24 section-container">
                 <div className="bg-brand-GOLD p-1 rounded-2xl overflow-hidden">
-                    <div className="bg-brand-950 p-6 md:p-24 rounded-[3.8rem] flex flex-col md:flex-row items-center justify-between gap-12">
+                    <div className="bg-white p-6 md:p-24 rounded-[3.8rem] flex flex-col md:flex-row items-center justify-between gap-12">
                         <div className="md:w-1/2">
                             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black uppercase tracking-tighter mb-6 leading-[0.85] italic">Beach <br /> vs <br /> <span className="text-brand-GOLD">Mountain?</span></h2>
-                            <p className="text-lg font-medium text-slate-400 mb-8 max-w-md">
+                            <p className="text-lg font-medium text-slate-500 mb-8 max-w-md">
                                 Can't decide between the surf of Coronado and the cool breeze of Boquete? Our comparison guide breaks down the weather, lifestyle, and real estate ROI.
                             </p>
                             <Link href={`/${lang}/relocation/guides/boquete-vs-coronado`} className="btn-3d btn-3d-gold inline-flex items-center gap-4 text-[10px] font-black uppercase tracking-[0.3em] px-10 py-6 rounded-2xl">
@@ -188,7 +188,7 @@ const RelocationGuidesContent: React.FC = () => {
             <section className="py-14 text-center section-container">
                 <div className="prose-container">
                     <h2 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-10 italic">Get the Ultimate <br /> <span className="text-brand-GOLD">Relocation Dossier</span></h2>
-                    <p className="text-slate-400 mb-12 font-medium">
+                    <p className="text-slate-500 mb-12 font-medium">
                         Join 10,000+ prospective expats who receive our weekly insights on <strong>expat life in panama</strong>.
                     </p>
                     <div className="flex flex-col md:flex-row gap-4 justify-center">

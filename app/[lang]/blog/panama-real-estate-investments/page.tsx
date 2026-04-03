@@ -48,9 +48,9 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
     const resolvedParams = await params;
     const lang = resolvedParams.lang || 'en';
     return (
-        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+        <article className="bg-white min-h-screen pt-28 pb-20">
             {/* Hero */}
-            <section className="bg-brand-900 py-32 relative overflow-hidden">
+            <section className="bg-brand-50 py-32 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <img
                         src="https://images.unsplash.com/photo-1589553416260-f586c8f1514f?w=1600&q=80"
@@ -62,7 +62,7 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
                     <span className="text-[10px] font-bold text-brand-GOLD uppercase tracking-[0.4em] mb-4 block">
                         THE EXPAT INVESTOR'S GUIDE · 2026 EDITION
                     </span>
-                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-brand-950 mb-8 leading-tight">
                         Investing in Panama: The Definitive Guide to Real Estate, Expat Lifestyle & Retirement
                     </h1>
                     <p className="text-xl text-brand-300 leading-relaxed font-medium max-w-2xl mx-auto">
@@ -83,7 +83,7 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
                         {investmentHighlights.map((item, i) => {
                             const Icon = item.icon;
                             return (
-                                <div key={i} className="bg-brand-950 rounded-2xl p-6 text-center">
+                                <div key={i} className="bg-white rounded-2xl p-6 text-center">
                                     <Icon size={20} className="text-brand-GOLD mx-auto mb-3" />
                                     <div className="text-2xl font-black text-white mb-1">{item.stat}</div>
                                     <div className="text-brand-400 text-xs leading-relaxed">{item.label}</div>
@@ -107,7 +107,7 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
                         ].map((item, i) => (
                             <li key={i} className="flex items-start gap-4">
                                 <CheckCircle size={20} className="text-brand-GOLD mt-1 flex-shrink-0" />
-                                <span className="text-slate-300">
+                                <span className="text-slate-500">
                                     <strong className="text-slate-900">{item.title}:</strong> {item.body}
                                 </span>
                             </li>
@@ -120,9 +120,9 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
 
                     <div className="space-y-6 not-prose reveal-on-scroll">
                         {topLocations.map((loc, i) => (
-                            <div key={i} className="glass-card rounded-2xl p-8 border border-white/5">
+                            <div key={i} className="card-light rounded-2xl p-8 border border-brand-100">
                                 <h3 className="font-heading font-bold text-white text-xl mb-3">{loc.name}</h3>
-                                <p className="text-slate-400 mb-4 leading-relaxed">{loc.description}</p>
+                                <p className="text-slate-500 mb-4 leading-relaxed">{loc.description}</p>
                                 <div className="flex items-center gap-2">
                                     <span className="text-brand-GOLD font-bold text-xs uppercase tracking-widest">Best For:</span>
                                     <span className="text-slate-500 text-sm">{loc.bestFor}</span>
@@ -156,7 +156,7 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
                             '50% off entertainment (movies, concerts, sports events)',
                             '25% off restaurant meals',
                         ].map((b, i) => (
-                            <li key={i} className="flex items-center gap-3 text-slate-300">
+                            <li key={i} className="flex items-center gap-3 text-slate-500">
                                 <CheckCircle size={16} className="text-brand-GOLD flex-shrink-0" />
                                 {b}
                             </li>
@@ -164,7 +164,7 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
                     </ul>
 
                     {/* CTA */}
-                    <div className="bg-brand-950 p-10 rounded-3xl mt-16 not-prose text-center border-t-4 border-brand-GOLD">
+                    <div className="bg-white p-10 rounded-3xl mt-16 not-prose text-center border-t-4 border-brand-GOLD">
                         <h3 className="text-white font-heading text-3xl font-bold mb-4 uppercase italic tracking-tighter">
                             Your Panama Investment Starts Here
                         </h3>

@@ -66,7 +66,7 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
                 </div>
                 <div className="max-w-3xl mx-auto px-4 text-center relative z-10">
                     <span className="tag-teal mb-5 inline-block">VISA GUIDE · 2026</span>
-                    <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6 leading-tight mt-4">
+                    <h1 className="font-heading text-4xl md:text-5xl font-bold text-brand-950 mb-6 leading-tight mt-4">
                         Friendly Nations Visa:<br />The Fastest Path to Panama Residency
                     </h1>
                     <p className="text-lg text-slate-500 leading-relaxed max-w-xl mx-auto">
@@ -94,11 +94,11 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
                     </h2>
                     <div className="flex flex-wrap gap-2">
                         {eligibleCountries.map((country, i) => (
-                            <span key={i} className="bg-brand-900 border border-brand-100 text-slate-300 text-[11px] font-bold px-3 py-1.5 rounded-lg">
+                            <span key={i} className="bg-brand-50 border border-brand-100 text-slate-500 text-[11px] font-bold px-3 py-1.5 rounded-lg">
                                 {country}
                             </span>
                         ))}
-                        <span className="bg-brand-900 border border-brand-TEAL/20 text-brand-TEAL text-[11px] font-bold px-3 py-1.5 rounded-lg">+ 20 more</span>
+                        <span className="bg-brand-50 border border-brand-TEAL/20 text-brand-TEAL text-[11px] font-bold px-3 py-1.5 rounded-lg">+ 20 more</span>
                     </div>
                 </section>
 
@@ -109,7 +109,7 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
                     </h2>
                     <div className="space-y-3">
                         {requirements.map((item, i) => (
-                            <div key={i} className="flex items-start gap-4 glass-card rounded-xl p-5 border border-brand-100">
+                            <div key={i} className="flex items-start gap-4 card-light rounded-xl p-5 border border-brand-100">
                                 <CheckCircle size={15} className="text-brand-TEAL mt-0.5 flex-shrink-0" />
                                 <div>
                                     <div className="text-brand-950 font-bold text-sm mb-1">{item.req}</div>
@@ -130,7 +130,7 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
                     </p>
                     <div className="grid sm:grid-cols-2 gap-4">
                         {economicTiesOptions.map((item, i) => (
-                            <div key={i} className="glass-card rounded-xl p-5 border border-brand-100">
+                            <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
                                 <div className="text-brand-TEAL font-black text-[10px] uppercase tracking-widest mb-2">Option {i + 1}</div>
                                 <div className="text-brand-950 font-bold text-sm mb-2">{item.option}</div>
                                 <div className="text-slate-500 text-xs leading-relaxed">{item.detail}</div>
@@ -146,7 +146,7 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
                     </h2>
                     <div className="space-y-3">
                         {processSteps.map((s, i) => (
-                            <div key={i} className="flex items-start gap-4 glass-card rounded-xl p-5 border border-brand-100">
+                            <div key={i} className="flex items-start gap-4 card-light rounded-xl p-5 border border-brand-100">
                                 <div className="w-8 h-8 rounded-full bg-brand-TEAL/10 border border-brand-TEAL/30 flex items-center justify-center flex-shrink-0">
                                     <span className="text-brand-TEAL font-black text-xs">{s.n}</span>
                                 </div>
@@ -165,7 +165,7 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
                         Friendly Nations vs Pensionado — Which is Right for You?
                     </h2>
                     <div className="grid sm:grid-cols-2 gap-4">
-                        <div className="glass-card rounded-xl p-5 border border-brand-TEAL/20">
+                        <div className="card-light rounded-xl p-5 border border-brand-TEAL/20">
                             <div className="text-brand-TEAL font-black text-xs uppercase tracking-widest mb-3">Choose Friendly Nations if…</div>
                             <ul className="space-y-2">
                                 {[
@@ -175,14 +175,14 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
                                     'You are buying property in Panama anyway',
                                     'You are a digital nomad or entrepreneur',
                                 ].map((item, i) => (
-                                    <li key={i} className="flex items-start gap-2 text-slate-300 text-xs">
+                                    <li key={i} className="flex items-start gap-2 text-slate-500 text-xs">
                                         <CheckCircle size={12} className="text-brand-TEAL mt-0.5 flex-shrink-0" />
                                         {item}
                                     </li>
                                 ))}
                             </ul>
                         </div>
-                        <div className="glass-card rounded-xl p-5 border border-brand-GOLD/20">
+                        <div className="card-light rounded-xl p-5 border border-brand-GOLD/20">
                             <div className="text-brand-GOLD font-black text-xs uppercase tracking-widest mb-3">Choose Pensionado if…</div>
                             <ul className="space-y-2">
                                 {[
@@ -192,7 +192,7 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
                                     'You are retired and income-focused',
                                     'You want the fastest path to citizenship eligibility',
                                 ].map((item, i) => (
-                                    <li key={i} className="flex items-start gap-2 text-slate-300 text-xs">
+                                    <li key={i} className="flex items-start gap-2 text-slate-500 text-xs">
                                         <CheckCircle size={12} className="text-brand-GOLD mt-0.5 flex-shrink-0" />
                                         {item}
                                     </li>
@@ -203,7 +203,7 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
                 </section>
 
                 {/* CTA */}
-                <section className="reveal-on-scroll bg-brand-900 p-8 rounded-2xl border-t-4 border-brand-TEAL text-center">
+                <section className="reveal-on-scroll bg-brand-50 p-8 rounded-2xl border-t-4 border-brand-TEAL text-center">
                     <h3 className="text-white font-heading text-2xl font-bold mb-3 uppercase italic tracking-tighter">
                         Ready to Start Your Visa Application?
                     </h3>
@@ -222,7 +222,7 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
                         { label: 'Panama Real Estate Investment', href: '/en/blog/panama-real-estate-investments' },
                         { label: 'Condos for Sale — Buyer\'s Guide', href: '/en/blog/condos-for-sale-panama-buyers-guide' },
                     ].map((link, i) => (
-                        <Link key={i} href={link.href} className="flex items-center justify-between glass-card p-4 rounded-xl border border-brand-100 hover:border-brand-TEAL/30 transition-all group">
+                        <Link key={i} href={link.href} className="flex items-center justify-between card-light p-4 rounded-xl border border-brand-100 hover:border-brand-TEAL/30 transition-all group">
                             <span className="text-white text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-TEAL opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>

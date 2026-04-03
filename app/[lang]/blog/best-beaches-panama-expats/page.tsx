@@ -80,18 +80,18 @@ const beaches = [
 
 export default function BestBeachesPanamaExpats() {
   return (
-    <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+    <article className="bg-white min-h-screen pt-28 pb-20">
       <div className="max-w-4xl mx-auto px-4">
 
         {/* Header */}
         <div className="mb-12 reveal-on-scroll">
-          <span className="text-brand-GOLD font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
+          <span className="text-brand-TEAL font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
             Beach Living Guide · 2026
           </span>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6 tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-brand-950 mb-6 tracking-tight leading-tight">
             Best Beaches in Panama for Expats
           </h1>
-          <p className="text-slate-400 text-lg font-medium leading-relaxed border-l-2 border-brand-GOLD/30 pl-5">
+          <p className="text-slate-500 text-lg font-medium leading-relaxed border-l-2 border-brand-GOLD/30 pl-5">
             Panama has three very different beach experiences for expats — each with distinct price points, lifestyles, and investment profiles. Here is how to choose the right one for you.
           </p>
         </div>
@@ -99,7 +99,7 @@ export default function BestBeachesPanamaExpats() {
         {/* Beach cards */}
         <div className="space-y-10">
           {beaches.map((beach, i) => (
-            <div key={i} className="glass-card rounded-2xl border-white/5 overflow-hidden reveal-on-scroll">
+            <div key={i} className="card-light rounded-2xl border-brand-100 overflow-hidden reveal-on-scroll">
               <div className="p-7 md:p-8">
                 {/* Header */}
                 <div className="flex flex-wrap items-start justify-between gap-4 mb-5">
@@ -108,7 +108,7 @@ export default function BestBeachesPanamaExpats() {
                       <MapPin size={14} className="text-brand-GOLD" />
                       <span className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest">{beach.tagline}</span>
                     </div>
-                    <h2 className="text-2xl md:text-3xl font-heading font-black text-white tracking-tight">{beach.name}</h2>
+                    <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 tracking-tight">{beach.name}</h2>
                     <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mt-1">{beach.tag}</p>
                   </div>
                   <div className="flex gap-4">
@@ -124,12 +124,12 @@ export default function BestBeachesPanamaExpats() {
                 </div>
 
                 {/* Description */}
-                <p className="text-slate-400 text-sm leading-relaxed mb-6">{beach.description}</p>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">{beach.description}</p>
 
                 {/* Pros */}
                 <ul className="space-y-2">
                   {beach.pros.map((pro, j) => (
-                    <li key={j} className="flex items-start gap-3 text-sm text-slate-300">
+                    <li key={j} className="flex items-start gap-3 text-sm text-slate-500">
                       <span className="text-brand-GOLD font-black mt-0.5 flex-shrink-0">✓</span>
                       {pro}
                     </li>
@@ -137,9 +137,9 @@ export default function BestBeachesPanamaExpats() {
                 </ul>
 
                 {/* Climate */}
-                <div className="mt-5 pt-5 border-t border-white/5">
+                <div className="mt-5 pt-5 border-t border-brand-100">
                   <span className="text-slate-500 text-[10px] font-black uppercase tracking-widest">Climate: </span>
-                  <span className="text-slate-400 text-[10px] font-bold">{beach.climate}</span>
+                  <span className="text-slate-500 text-[10px] font-bold">{beach.climate}</span>
                 </div>
               </div>
             </div>
@@ -147,9 +147,9 @@ export default function BestBeachesPanamaExpats() {
         </div>
 
         {/* CTA */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-brand-GOLD/20 text-center reveal-on-scroll">
-          <h3 className="text-xl font-heading font-black text-white mb-3 tracking-tight">Not Sure Which Beach Is Right for You?</h3>
-          <p className="text-slate-400 text-sm mb-6 leading-relaxed">
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-GOLD/20 text-center reveal-on-scroll">
+          <h3 className="text-xl font-heading font-black text-brand-950 mb-3 tracking-tight">Not Sure Which Beach Is Right for You?</h3>
+          <p className="text-slate-500 text-sm mb-6 leading-relaxed">
             Our Panama advisors have personally visited every property we list. Book a free 30-minute call and we will match you to the right location based on your budget, lifestyle, and investment goals.
           </p>
           <Link
@@ -170,7 +170,7 @@ export default function BestBeachesPanamaExpats() {
             <Link
               key={i}
               href={link.href}
-              className="flex items-center justify-between glass-card p-4 rounded-xl border-white/5 hover:border-brand-GOLD/30 transition-all group"
+              className="flex items-center justify-between card-light p-4 rounded-xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
               <span className="text-white text-xs font-bold">{link.label}</span>
               <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />

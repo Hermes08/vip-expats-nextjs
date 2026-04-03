@@ -199,17 +199,17 @@ const neighborhoodPrices = [
 
 export default function PanamaRealEstateMarket2026() {
   return (
-    <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+    <article className="bg-white min-h-screen pt-28 pb-20">
       <div className="max-w-4xl mx-auto px-4">
         {/* Header */}
         <div className="mb-12 reveal-on-scroll">
-          <span className="text-brand-GOLD font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
+          <span className="text-brand-TEAL font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
             Market Analysis · 2026 Outlook
           </span>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6 tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-brand-950 mb-6 tracking-tight leading-tight">
             Panama Real Estate Market 2026
           </h1>
-          <p className="text-slate-400 text-lg font-medium leading-relaxed border-l-2 border-brand-GOLD/30 pl-5">
+          <p className="text-slate-500 text-lg font-medium leading-relaxed border-l-2 border-brand-GOLD/30 pl-5">
             Comprehensive analysis of Panama's real estate landscape: market growth, investor incentives, neighborhood pricing, rental yields, and 2026–2027 forecasts.
           </p>
         </div>
@@ -239,7 +239,7 @@ export default function PanamaRealEstateMarket2026() {
           ].map((stat, i) => {
             const Icon = stat.icon;
             return (
-              <div key={i} className="glass-card p-5 rounded-xl border-white/5 reveal-on-scroll">
+              <div key={i} className="card-light p-5 rounded-xl border-brand-100 reveal-on-scroll">
                 <Icon size={18} className="text-brand-GOLD mb-3" />
                 <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-1">
                   {stat.label}
@@ -252,11 +252,11 @@ export default function PanamaRealEstateMarket2026() {
         </div>
 
         {/* Executive Summary */}
-        <div className="glass-card p-8 rounded-2xl border-white/5 mb-12 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-4 tracking-tight">
+        <div className="card-light p-8 rounded-2xl border-brand-100 mb-12 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-4 tracking-tight">
             2026 Market Overview
           </h2>
-          <div className="space-y-4 text-slate-300 text-sm leading-relaxed">
+          <div className="space-y-4 text-slate-500 text-sm leading-relaxed">
             <p>
               Panama's real estate market has emerged as one of Latin America's most attractive investment destinations. From 2024–2026, the market has grown at an average annual rate of 18%, driven by sustained expat migration, institutional foreign investment, and structural advantages that appeal to international buyers.
             </p>
@@ -270,7 +270,7 @@ export default function PanamaRealEstateMarket2026() {
         </div>
 
         {/* Why Panama Attracts Investors */}
-        <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-8 tracking-tight reveal-on-scroll">
+        <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-8 tracking-tight reveal-on-scroll">
           Why Panama Is Attracting Global Investors
         </h2>
         <div className="space-y-6 mb-12">
@@ -308,31 +308,31 @@ export default function PanamaRealEstateMarket2026() {
           ].map((point, i) => (
             <div
               key={i}
-              className="glass-card p-6 rounded-2xl border-white/5 reveal-on-scroll border-l-2 border-l-brand-GOLD"
+              className="card-light p-6 rounded-2xl border-brand-100 reveal-on-scroll border-l-2 border-l-brand-GOLD"
             >
               <h3 className="text-lg font-heading font-black text-brand-GOLD mb-2">
                 {point.title}
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed">{point.description}</p>
+              <p className="text-slate-500 text-sm leading-relaxed">{point.description}</p>
             </div>
           ))}
         </div>
 
         {/* Market Segments */}
-        <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-8 tracking-tight reveal-on-scroll">
+        <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-8 tracking-tight reveal-on-scroll">
           Market Segments & Pricing Tiers
         </h2>
         <div className="space-y-10 mb-12">
           {marketSegments.map((segment, i) => (
             <div
               key={i}
-              className="glass-card rounded-2xl border-white/5 overflow-hidden reveal-on-scroll"
+              className="card-light rounded-2xl border-brand-100 overflow-hidden reveal-on-scroll"
             >
               <div className="p-7 md:p-8">
                 {/* Header */}
                 <div className="flex flex-wrap items-start justify-between gap-4 mb-5">
                   <div>
-                    <h3 className="text-2xl md:text-3xl font-heading font-black text-white tracking-tight mb-1">
+                    <h3 className="text-2xl md:text-3xl font-heading font-black text-brand-950 tracking-tight mb-1">
                       {segment.segment}
                     </h3>
                     <p className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest">
@@ -356,10 +356,10 @@ export default function PanamaRealEstateMarket2026() {
                 </div>
 
                 {/* Description */}
-                <p className="text-slate-400 text-sm leading-relaxed mb-6">{segment.description}</p>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">{segment.description}</p>
 
                 {/* Pricing */}
-                <div className="grid sm:grid-cols-2 gap-4 mb-6 pb-6 border-b border-white/5">
+                <div className="grid sm:grid-cols-2 gap-4 mb-6 pb-6 border-b border-brand-100">
                   <div>
                     <p className="text-slate-500 text-[9px] font-black uppercase tracking-widest mb-1">
                       Price Range
@@ -381,7 +381,7 @@ export default function PanamaRealEstateMarket2026() {
                   </p>
                   <ul className="space-y-2">
                     {segment.characteristics.map((char, j) => (
-                      <li key={j} className="text-slate-300 text-sm leading-snug">
+                      <li key={j} className="text-slate-500 text-sm leading-snug">
                         • {char}
                       </li>
                     ))}
@@ -393,25 +393,25 @@ export default function PanamaRealEstateMarket2026() {
         </div>
 
         {/* Neighborhood Price Table */}
-        <div className="mb-12 glass-card p-8 rounded-2xl border-white/5 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">
+        <div className="mb-12 card-light p-8 rounded-2xl border-brand-100 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">
             Neighborhood Pricing & Rental Yields
           </h2>
 
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-white/10">
-                  <th className="text-left py-3 px-3 text-slate-400 font-black uppercase text-[10px] tracking-widest">
+                <tr className="border-b border-brand-100">
+                  <th className="text-left py-3 px-3 text-slate-500 font-black uppercase text-[10px] tracking-widest">
                     Neighborhood
                   </th>
-                  <th className="text-center py-3 px-3 text-slate-400 font-black uppercase text-[10px] tracking-widest">
+                  <th className="text-center py-3 px-3 text-slate-500 font-black uppercase text-[10px] tracking-widest">
                     Avg Price/Sqm
                   </th>
-                  <th className="text-center py-3 px-3 text-slate-400 font-black uppercase text-[10px] tracking-widest">
+                  <th className="text-center py-3 px-3 text-slate-500 font-black uppercase text-[10px] tracking-widest">
                     YoY Growth
                   </th>
-                  <th className="text-center py-3 px-3 text-slate-400 font-black uppercase text-[10px] tracking-widest">
+                  <th className="text-center py-3 px-3 text-slate-500 font-black uppercase text-[10px] tracking-widest">
                     Rental Yield
                   </th>
                 </tr>
@@ -419,10 +419,10 @@ export default function PanamaRealEstateMarket2026() {
               <tbody className="divide-y divide-white/5">
                 {neighborhoodPrices.map((row, i) => (
                   <tr key={i}>
-                    <td className="py-3 px-3 text-slate-300 font-bold">{row.name}</td>
-                    <td className="text-center py-3 px-3 text-slate-400">${row.avgPrice}</td>
+                    <td className="py-3 px-3 text-slate-500 font-bold">{row.name}</td>
+                    <td className="text-center py-3 px-3 text-slate-500">${row.avgPrice}</td>
                     <td className="text-center py-3 px-3 text-brand-GOLD font-semibold">{row.growth}</td>
-                    <td className="text-center py-3 px-3 text-slate-400">{row.yield}</td>
+                    <td className="text-center py-3 px-3 text-slate-500">{row.yield}</td>
                   </tr>
                 ))}
               </tbody>
@@ -434,35 +434,35 @@ export default function PanamaRealEstateMarket2026() {
         </div>
 
         {/* Supply & Demand */}
-        <div className="glass-card p-8 rounded-2xl border-white/5 mb-12 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">
+        <div className="card-light p-8 rounded-2xl border-brand-100 mb-12 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">
             Supply & Demand Dynamics
           </h2>
 
           <div className="space-y-6">
-            <div className="border-b border-white/5 pb-6">
+            <div className="border-b border-brand-100 pb-6">
               <h3 className="text-lg font-heading font-black text-brand-GOLD mb-3">
                 Constrained Supply in Premium Segments
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed">
+              <p className="text-slate-500 text-sm leading-relaxed">
                 Luxury and mid-range segments face limited inventory. Costa del Este has ~800 active listings for 50,000+ residents seeking property. Beachfront supply is especially constrained — only 200–300 new units completed annually across all beach communities. This scarcity supports price appreciation of 18–24% YoY in prime locations.
               </p>
             </div>
 
-            <div className="border-b border-white/5 pb-6">
+            <div className="border-b border-brand-100 pb-6">
               <h3 className="text-lg font-heading font-black text-brand-GOLD mb-3">
                 Growing Expat Migration
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed">
+              <p className="text-slate-500 text-sm leading-relaxed">
                 Net migration to Panama is accelerating. The immigration authority registered 18,000 new residents in 2025, with projections of 25,000+ for 2026. Drivers include Friendly Nations Visa ease, cost-of-living advantage, and COVID-era remote work flexibility. Each new resident drives 0.8–1.2 property transactions (primary residence, investment, upgrade).
               </p>
             </div>
 
-            <div className="border-b border-white/5 pb-6">
+            <div className="border-b border-brand-100 pb-6">
               <h3 className="text-lg font-heading font-black text-brand-GOLD mb-3">
                 Robust Rental Market Demand
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed">
+              <p className="text-slate-500 text-sm leading-relaxed">
                 Tourism to Panama reached 1.2 million visitors in 2025 (up 22% YoY). Short-term rental demand via Airbnb, Booking.com, and Vrbo drives occupancy rates of 70–80% in city center properties and 75%+ in Coronado during peak season (Dec-Apr). This creates reliable income streams for investor-owners.
               </p>
             </div>
@@ -471,7 +471,7 @@ export default function PanamaRealEstateMarket2026() {
               <h3 className="text-lg font-heading font-black text-brand-GOLD mb-3">
                 New Development Pipeline
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed">
+              <p className="text-slate-500 text-sm leading-relaxed">
                 Developer projects represent ~30% of market turnover. Major projects include Costa del Este extensions (2,000+ units), Bethania revitalization (800 units), and Coronado expansion (400 beach units). Off-plan purchasing remains popular, with developer financing at 20–30% down and 24–36 month pay-out terms.
               </p>
             </div>
@@ -479,13 +479,13 @@ export default function PanamaRealEstateMarket2026() {
         </div>
 
         {/* Rental Market ROI */}
-        <div className="glass-card p-8 rounded-2xl border-white/5 mb-12 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">
+        <div className="card-light p-8 rounded-2xl border-brand-100 mb-12 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">
             Rental Market ROI: 8–14% Annual Yields
           </h2>
 
-          <div className="space-y-4 text-slate-400 text-sm leading-relaxed">
-            <div className="border-b border-white/5 pb-4">
+          <div className="space-y-4 text-slate-500 text-sm leading-relaxed">
+            <div className="border-b border-brand-100 pb-4">
               <h3 className="text-brand-GOLD font-black text-sm uppercase tracking-wider mb-2">
                 Short-Term Rental Performance (Airbnb/Booking)
               </h3>
@@ -494,7 +494,7 @@ export default function PanamaRealEstateMarket2026() {
               </p>
             </div>
 
-            <div className="border-b border-white/5 pb-4">
+            <div className="border-b border-brand-100 pb-4">
               <h3 className="text-brand-GOLD font-black text-sm uppercase tracking-wider mb-2">
                 Long-Term Rental Performance
               </h3>
@@ -515,28 +515,28 @@ export default function PanamaRealEstateMarket2026() {
         </div>
 
         {/* Regional Comparison */}
-        <div className="mb-12 glass-card p-8 rounded-2xl border-white/5 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">
+        <div className="mb-12 card-light p-8 rounded-2xl border-brand-100 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">
             Panama vs. Other LatAm Markets
           </h2>
 
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-white/10">
-                  <th className="text-left py-3 px-3 text-slate-400 font-black uppercase text-[10px] tracking-widest">
+                <tr className="border-b border-brand-100">
+                  <th className="text-left py-3 px-3 text-slate-500 font-black uppercase text-[10px] tracking-widest">
                     Country
                   </th>
-                  <th className="text-left py-3 px-3 text-slate-400 font-black uppercase text-[10px] tracking-widest">
+                  <th className="text-left py-3 px-3 text-slate-500 font-black uppercase text-[10px] tracking-widest">
                     Foreign Restrictions
                   </th>
-                  <th className="text-center py-3 px-3 text-slate-400 font-black uppercase text-[10px] tracking-widest">
+                  <th className="text-center py-3 px-3 text-slate-500 font-black uppercase text-[10px] tracking-widest">
                     Tax System
                   </th>
-                  <th className="text-center py-3 px-3 text-slate-400 font-black uppercase text-[10px] tracking-widest">
+                  <th className="text-center py-3 px-3 text-slate-500 font-black uppercase text-[10px] tracking-widest">
                     Avg Yield
                   </th>
-                  <th className="text-center py-3 px-3 text-slate-400 font-black uppercase text-[10px] tracking-widest">
+                  <th className="text-center py-3 px-3 text-slate-500 font-black uppercase text-[10px] tracking-widest">
                     Currency Risk
                   </th>
                 </tr>
@@ -544,15 +544,15 @@ export default function PanamaRealEstateMarket2026() {
               <tbody className="divide-y divide-white/5">
                 {marketComparison.map((row, i) => (
                   <tr key={i} className={i === 0 ? 'bg-brand-GOLD/5' : ''}>
-                    <td className="py-3 px-3 text-slate-300 font-bold">{row.country}</td>
-                    <td className="py-3 px-3 text-slate-400 text-xs">{row.foreignRestrictions}</td>
-                    <td className="text-center py-3 px-3 text-slate-400 text-xs">{row.taxSystem}</td>
+                    <td className="py-3 px-3 text-slate-500 font-bold">{row.country}</td>
+                    <td className="py-3 px-3 text-slate-500 text-xs">{row.foreignRestrictions}</td>
+                    <td className="text-center py-3 px-3 text-slate-500 text-xs">{row.taxSystem}</td>
                     <td className="text-center py-3 px-3 font-semibold">
-                      <span className={i === 0 ? 'text-brand-GOLD' : 'text-slate-400'}>
+                      <span className={i === 0 ? 'text-brand-GOLD' : 'text-slate-500'}>
                         {row.avgYield}
                       </span>
                     </td>
-                    <td className="text-center py-3 px-3 text-slate-400 text-xs">{row.currencyRisk}</td>
+                    <td className="text-center py-3 px-3 text-slate-500 text-xs">{row.currencyRisk}</td>
                   </tr>
                 ))}
               </tbody>
@@ -564,8 +564,8 @@ export default function PanamaRealEstateMarket2026() {
         </div>
 
         {/* Risks & Due Diligence */}
-        <div className="glass-card p-8 rounded-2xl border-white/5 mb-12 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">
+        <div className="card-light p-8 rounded-2xl border-brand-100 mb-12 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">
             Risks & Critical Due Diligence
           </h2>
 
@@ -602,24 +602,24 @@ export default function PanamaRealEstateMarket2026() {
                   'Many older buildings (20+ years) have deferred maintenance. Request building engineering reports, reserve fund statements, and litigation history. Do not rely on seller disclosures.',
               },
             ].map((item, i) => (
-              <div key={i} className="border-b border-white/5 pb-4">
+              <div key={i} className="border-b border-brand-100 pb-4">
                 <h4 className="text-brand-GOLD font-black text-sm uppercase tracking-wider mb-2">
                   {item.title}
                 </h4>
-                <p className="text-slate-400 text-sm">{item.details}</p>
+                <p className="text-slate-500 text-sm">{item.details}</p>
               </div>
             ))}
           </div>
         </div>
 
         {/* 2026–2027 Forecast */}
-        <div className="glass-card p-8 rounded-2xl border-white/5 mb-12 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">
+        <div className="card-light p-8 rounded-2xl border-brand-100 mb-12 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">
             Panama Real Estate Forecast: 2026–2027
           </h2>
 
-          <div className="space-y-6 text-slate-400 text-sm leading-relaxed">
-            <div className="border-b border-white/5 pb-6">
+          <div className="space-y-6 text-slate-500 text-sm leading-relaxed">
+            <div className="border-b border-brand-100 pb-6">
               <h3 className="text-brand-GOLD font-black text-sm uppercase tracking-wider mb-2">
                 Price Appreciation
               </h3>
@@ -628,7 +628,7 @@ export default function PanamaRealEstateMarket2026() {
               </p>
             </div>
 
-            <div className="border-b border-white/5 pb-6">
+            <div className="border-b border-brand-100 pb-6">
               <h3 className="text-brand-GOLD font-black text-sm uppercase tracking-wider mb-2">
                 Rental Yields
               </h3>
@@ -637,7 +637,7 @@ export default function PanamaRealEstateMarket2026() {
               </p>
             </div>
 
-            <div className="border-b border-white/5 pb-6">
+            <div className="border-b border-brand-100 pb-6">
               <h3 className="text-brand-GOLD font-black text-sm uppercase tracking-wider mb-2">
                 Expat Migration Trends
               </h3>
@@ -646,7 +646,7 @@ export default function PanamaRealEstateMarket2026() {
               </p>
             </div>
 
-            <div className="border-b border-white/5 pb-6">
+            <div className="border-b border-brand-100 pb-6">
               <h3 className="text-brand-GOLD font-black text-sm uppercase tracking-wider mb-2">
                 Interest Rate & Financing Environment
               </h3>
@@ -667,27 +667,27 @@ export default function PanamaRealEstateMarket2026() {
         </div>
 
         {/* Investment Strategy */}
-        <div className="glass-card p-8 rounded-2xl border-white/5 mb-12 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">
+        <div className="card-light p-8 rounded-2xl border-brand-100 mb-12 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">
             Investment Strategy: Three Approaches
           </h2>
 
           <div className="space-y-6">
-            <div className="border-b border-white/5 pb-6">
+            <div className="border-b border-brand-100 pb-6">
               <h3 className="text-lg font-heading font-black text-brand-GOLD mb-3">
                 1. Appreciation Play (Buy & Hold 5+ Years)
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-3">
+              <p className="text-slate-500 text-sm leading-relaxed mb-3">
                 Purchase in emerging neighborhoods (Las Cumbres, Bethania) or secondary premium areas (Amador, San Francisco) at $150K–$350K. Hold for 5–7 years, allowing 15–20% annual appreciation to compound. Rent the property to cover carrying costs. Expected outcome: $400K–$700K sale price, 150–200% total return including equity appreciation and rental income.
               </p>
               <p className="text-slate-500 text-xs font-bold">Best for: Value investors, long-term wealth builders, retirees</p>
             </div>
 
-            <div className="border-b border-white/5 pb-6">
+            <div className="border-b border-brand-100 pb-6">
               <h3 className="text-lg font-heading font-black text-brand-GOLD mb-3">
                 2. High-Yield Rental Income (7–12% Annual)
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-3">
+              <p className="text-slate-500 text-sm leading-relaxed mb-3">
                 Purchase furnished 1–2 bed units in high-tourism areas (El Cangrejo, Amador) for $200K–$350K. Manage actively (or hire property manager) for Airbnb + long-term rental mix. Target 70–80% occupancy and blended yield of 9–12%. Collect income quarterly; hold 3–5 years for appreciation upside.
               </p>
               <p className="text-slate-500 text-xs font-bold">Best for: Income investors, portfolio diversification, active managers</p>
@@ -697,7 +697,7 @@ export default function PanamaRealEstateMarket2026() {
               <h3 className="text-lg font-heading font-black text-brand-GOLD mb-3">
                 3. Visa Qualifier + Personal Use (Lifestyle + Appreciation)
               </h3>
-              <p className="text-slate-400 text-sm leading-relaxed mb-3">
+              <p className="text-slate-500 text-sm leading-relaxed mb-3">
                 Buy $120K–$250K condo to qualify for Friendly Nations Visa, live part-time, and rent during absences. Captures visa/residency benefit + passive income + appreciation. Typical scenario: $150K purchase, 6–9% rental yield ($9K–$13.5K annually), 15% appreciation ($22.5K gain per year). Total return on capital: 21–24% without active work.
               </p>
               <p className="text-slate-500 text-xs font-bold">Best for: Expats seeking visa, retirees, digital nomads with lifestyle goals</p>
@@ -706,8 +706,8 @@ export default function PanamaRealEstateMarket2026() {
         </div>
 
         {/* Key Takeaways */}
-        <div className="glass-card p-8 rounded-2xl border-white/5 mb-12 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6 tracking-tight">
+        <div className="card-light p-8 rounded-2xl border-brand-100 mb-12 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6 tracking-tight">
             Key Takeaways
           </h2>
 
@@ -724,7 +724,7 @@ export default function PanamaRealEstateMarket2026() {
               'Emerging neighborhoods (Las Cumbres, Bethania, Calidonia) offer 20–28% appreciation potential for early investors.',
               'The 2026–2027 market will see price appreciation compression (to 12–18%) as supply increases, but demand remains robust.',
             ].map((item, i) => (
-              <li key={i} className="flex items-start gap-3 text-slate-300 text-sm">
+              <li key={i} className="flex items-start gap-3 text-slate-500 text-sm">
                 <CheckCircle2 size={16} className="text-brand-GOLD flex-shrink-0 mt-0.5" />
                 <span>{item}</span>
               </li>
@@ -733,11 +733,11 @@ export default function PanamaRealEstateMarket2026() {
         </div>
 
         {/* CTA */}
-        <div className="glass-card p-8 rounded-2xl border-brand-GOLD/20 text-center mb-12 reveal-on-scroll">
-          <h3 className="text-xl font-heading font-black text-white mb-3 tracking-tight">
+        <div className="card-light p-8 rounded-2xl border-brand-GOLD/20 text-center mb-12 reveal-on-scroll">
+          <h3 className="text-xl font-heading font-black text-brand-950 mb-3 tracking-tight">
             Ready to Invest in Panama Real Estate?
           </h3>
-          <p className="text-slate-400 text-sm mb-6 leading-relaxed">
+          <p className="text-slate-500 text-sm mb-6 leading-relaxed">
             Our team has analyzed 500+ properties and completed 150+ transactions across all market segments. Get a personalized investment strategy tailored to your goals, budget, and timeline.
           </p>
           <Link
@@ -767,7 +767,7 @@ export default function PanamaRealEstateMarket2026() {
             <Link
               key={i}
               href={link.href}
-              className="flex items-center justify-between glass-card p-4 rounded-xl border-white/5 hover:border-brand-GOLD/30 transition-all group"
+              className="flex items-center justify-between card-light p-4 rounded-xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
               <span className="text-white text-xs font-bold">{link.label}</span>
               <ArrowRight

@@ -17,35 +17,35 @@ import {
 
 export default function ApiDocs() {
   return (
-    <div className="min-h-screen bg-brand-950 text-slate-300 py-20 px-4">
+    <div className="min-h-screen bg-white text-slate-500 py-20 px-4">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="mb-16 reveal-on-scroll">
-          <div className="inline-flex items-center gap-2 px-3 py-1 glass-card rounded-full mb-6 border-brand-GOLD/20">
+          <div className="inline-flex items-center gap-2 px-3 py-1 card-light rounded-full mb-6 border-brand-GOLD/20">
             <Settings className="w-3 h-3 text-brand-GOLD" />
             <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white">System Protocol v1.0</span>
           </div>
-          <h1 className="text-4xl md:text-7xl font-heading font-black text-white mb-6 uppercase tracking-tighter italic leading-none">
+          <h1 className="text-4xl md:text-7xl font-heading font-black text-brand-950 mb-6 uppercase tracking-tighter italic leading-none">
             OpenClaw <span className="text-brand-GOLD">Interaction</span> Protocol
           </h1>
-          <p className="text-xl text-slate-400 max-w-2xl leading-relaxed mt-6">
+          <p className="text-xl text-slate-600 max-w-2xl leading-relaxed mt-6">
             Technical specifications for AI Agents and automated tools to interface with the OpenClaw Dashboard and Automation Service.
           </p>
         </div>
 
         {/* Quick Links / Grid */}
         <div className="grid md:grid-cols-3 gap-6 mb-20 reveal-on-scroll stagger-1">
-          <div className="glass-card p-8 rounded-3xl border-white/5 hover:border-brand-GOLD/30 transition-all group">
+          <div className="card-light p-8 rounded-3xl border-brand-100 hover:border-brand-GOLD/30 transition-all group">
             <Cpu className="text-brand-GOLD mb-4 group-hover:scale-110 transition-transform" size={32} />
             <h3 className="text-white font-black uppercase tracking-tighter italic mb-2">Automated Flows</h3>
             <p className="text-sm">Scheduled SEO and Media workflows for all projects.</p>
           </div>
-          <div className="glass-card p-8 rounded-3xl border-white/5 hover:border-brand-GOLD/30 transition-all group">
+          <div className="card-light p-8 rounded-3xl border-brand-100 hover:border-brand-GOLD/30 transition-all group">
             <Workflow className="text-brand-GOLD mb-4 group-hover:scale-110 transition-transform" size={32} />
             <h3 className="text-white font-black uppercase tracking-tighter italic mb-2">Task Lifecycle</h3>
             <p className="text-sm">Discovery, execution, and status reporting logic.</p>
           </div>
-          <div className="glass-card p-8 rounded-3xl border-white/5 hover:border-brand-GOLD/30 transition-all group">
+          <div className="card-light p-8 rounded-3xl border-brand-100 hover:border-brand-GOLD/30 transition-all group">
             <Globe className="text-brand-GOLD mb-4 group-hover:scale-110 transition-transform" size={32} />
             <h3 className="text-white font-black uppercase tracking-tighter italic mb-2">Public API</h3>
             <p className="text-sm">Endpoints for fetching projects and updating tasks.</p>
@@ -58,7 +58,7 @@ export default function ApiDocs() {
                 <Layers className="text-brand-GOLD" />
                 <h2 className="text-2xl font-black text-white uppercase italic tracking-tighter">System Architecture</h2>
             </div>
-            <div className="glass-card p-8 rounded-[2.5rem] border-white/5 bg-white/5 backdrop-blur-sm">
+            <div className="card-light p-8 rounded-[2.5rem] border-brand-100 bg-white/5 backdrop-blur-sm">
                 <p className="mb-6 leading-relaxed">
                     The ecosystem consists of three primary components working in tandem to deliver autonomous project management:
                 </p>
@@ -85,9 +85,9 @@ export default function ApiDocs() {
                 <Shield className="text-brand-GOLD" />
                 <h2 className="text-2xl font-black text-white uppercase italic tracking-tighter">Authentication</h2>
             </div>
-            <div className="glass-card p-8 rounded-[2.5rem] border-white/5">
+            <div className="card-light p-8 rounded-[2.5rem] border-brand-100">
                 <p className="mb-6 leading-relaxed">Integrations must include the following header for all API requests:</p>
-                <div className="bg-black/80 p-6 rounded-2xl border border-white/5 font-mono text-sm group relative overflow-hidden">
+                <div className="bg-brand-50/80 p-6 rounded-2xl border border-brand-100 font-mono text-sm group relative overflow-hidden">
                     <div className="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-100 transition-opacity">
                         <Code2 className="text-brand-GOLD" size={20} />
                     </div>
@@ -105,7 +105,7 @@ export default function ApiDocs() {
             </div>
             
             <div className="space-y-12">
-                <div className="p-8 glass-card border-white/5 rounded-3xl">
+                <div className="p-8 card-light border-brand-100 rounded-3xl">
                     <div className="flex items-center gap-3 mb-4">
                         <span className="bg-blue-500 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">GET</span>
                         <code className="text-white font-black text-xl tracking-tighter">/api/projects</code>
@@ -113,13 +113,13 @@ export default function ApiDocs() {
                     <p className="text-sm mb-4 leading-relaxed">Fetch all active projects and their associated metadata including skills and current status.</p>
                 </div>
 
-                <div className="p-8 glass-card border-white/5 rounded-3xl">
+                <div className="p-8 card-light border-brand-100 rounded-3xl">
                     <div className="flex items-center gap-3 mb-4">
                         <span className="bg-blue-500 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">GET</span>
                         <code className="text-white font-black text-xl tracking-tighter">/api/projects/:id/tasks</code>
                     </div>
                     <p className="text-sm mb-6 leading-relaxed">Retrieve pending tasks for a specific project based on its unique identifier.</p>
-                    <div className="bg-black/80 p-6 rounded-2xl border border-white/5 font-mono text-xs overflow-x-auto">
+                    <div className="bg-brand-50/80 p-6 rounded-2xl border border-brand-100 font-mono text-xs overflow-x-auto">
                         <pre className="text-brand-GOLD">
 {`[
   {
@@ -133,13 +133,13 @@ export default function ApiDocs() {
                     </div>
                 </div>
 
-                <div className="p-8 glass-card border-white/5 rounded-3xl">
+                <div className="p-8 card-light border-brand-100 rounded-3xl">
                     <div className="flex items-center gap-3 mb-4">
                         <span className="bg-amber-500 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">PUT</span>
                         <code className="text-white font-black text-xl tracking-tighter">/api/tasks/:id</code>
                     </div>
                     <p className="text-sm mb-6 leading-relaxed">Update a task status to <span className="text-green-400 font-bold uppercase">completed</span> or <span className="text-red-400 font-bold uppercase">failed</span>.</p>
-                    <div className="bg-black/80 p-6 rounded-2xl border border-white/5 font-mono text-xs overflow-x-auto">
+                    <div className="bg-brand-50/80 p-6 rounded-2xl border border-brand-100 font-mono text-xs overflow-x-auto">
                         <pre className="text-brand-GOLD">
 {`{
   "status": "completed",
@@ -165,11 +165,11 @@ export default function ApiDocs() {
                     { step: "03", title: "Action", desc: "Agents perform the required modifications (e.g., SEO updates)." },
                     { step: "04", title: "Reporting", desc: "Agents submit result logs and update task status to finished." }
                 ].map((item, i) => (
-                    <div key={i} className="flex gap-8 items-center p-8 glass-card rounded-3xl border-white/5 hover:bg-white/5 transition-all text-left">
+                    <div key={i} className="flex gap-8 items-center p-8 card-light rounded-3xl border-brand-100 hover:bg-white/5 transition-all text-left">
                         <span className="text-brand-GOLD font-heading font-black text-5xl italic opacity-30">{item.step}</span>
                         <div>
                             <h4 className="text-white font-black uppercase tracking-tighter italic text-xl mb-1">{item.title}</h4>
-                            <p className="text-sm text-slate-400 font-medium">{item.desc}</p>
+                            <p className="text-sm text-slate-500 font-medium">{item.desc}</p>
                         </div>
                     </div>
                 ))}
@@ -177,9 +177,9 @@ export default function ApiDocs() {
         </section>
 
         {/* Footer / CTA */}
-        <div className="text-center py-20 border-t border-white/5 reveal-on-scroll">
+        <div className="text-center py-20 border-t border-brand-100 reveal-on-scroll">
             <Zap className="text-brand-GOLD mx-auto mb-8 animate-pulse" size={60} />
-            <h2 className="text-4xl md:text-7xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-none">
+            <h2 className="text-4xl md:text-7xl font-heading font-black text-brand-950 mb-10 tracking-tighter uppercase italic leading-none">
                 Autonomous <br /> <span className="text-brand-GOLD">INTELLIGENCE</span>
             </h2>
             <div className="flex justify-center gap-8">

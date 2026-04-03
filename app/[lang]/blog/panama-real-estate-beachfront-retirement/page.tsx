@@ -37,7 +37,7 @@ export default async function PanamaBeachfrontLifestyle({ params }: { params: Pr
     const lang = resolvedParams.lang || 'en';
 
     return (
-        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+        <article className="bg-white min-h-screen pt-28 pb-20">
             <BlogPostSchema
                 title="Beachfront Properties & Retirement: The Panama Expat Lifestyle"
                 description="A deep dive into why retirees and digital nomads are flocking to Panama's beaches in 2026."
@@ -48,7 +48,7 @@ export default async function PanamaBeachfrontLifestyle({ params }: { params: Pr
             />
 
             {/* Hero */}
-            <section className="bg-brand-900 py-32 relative overflow-hidden">
+            <section className="bg-brand-50 py-32 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-30">
                     <img
                         src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=1600&q=80"
@@ -60,7 +60,7 @@ export default async function PanamaBeachfrontLifestyle({ params }: { params: Pr
                     <span className="text-[10px] font-bold text-brand-GOLD uppercase tracking-[0.4em] mb-4 block">
                         LIFESTYLE GUIDE · 2026
                     </span>
-                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-brand-950 mb-8 leading-tight">
                         Beachfront Living & Retirement: The Panama Lifestyle
                     </h1>
                     <p className="text-xl text-brand-300 leading-relaxed font-medium max-w-2xl mx-auto">
@@ -92,12 +92,12 @@ export default async function PanamaBeachfrontLifestyle({ params }: { params: Pr
                         {lifestylePillars.map((item, i) => {
                             const Icon = item.icon;
                             return (
-                                <div key={i} className="glass-card p-10 rounded-2xl border border-white/5 shadow-sm hover:translate-y-[-5px] transition-transform">
+                                <div key={i} className="card-light p-10 rounded-2xl border border-brand-100 shadow-sm hover:translate-y-[-5px] transition-transform">
                                     <div className="w-14 h-14 rounded-full bg-brand-GOLD flex items-center justify-center mb-6">
                                         <Icon size={28} className="text-white" />
                                     </div>
-                                    <h3 className="text-xl font-black text-white mb-4 uppercase italic tracking-tighter">{item.title}</h3>
-                                    <p className="text-slate-400 leading-relaxed">{item.desc}</p>
+                                    <h3 className="text-xl font-black text-brand-950 mb-4 uppercase italic tracking-tighter">{item.title}</h3>
+                                    <p className="text-slate-500 leading-relaxed">{item.desc}</p>
                                 </div>
                             );
                         })}
@@ -123,7 +123,7 @@ export default async function PanamaBeachfrontLifestyle({ params }: { params: Pr
                     </ul>
 
                     {/* CTA */}
-                    <div className="bg-brand-950 p-10 rounded-3xl mt-16 not-prose text-center border-t-4 border-brand-GOLD">
+                    <div className="bg-white p-10 rounded-3xl mt-16 not-prose text-center border-t-4 border-brand-GOLD">
                         <h3 className="text-white font-heading text-3xl font-bold mb-4 uppercase italic tracking-tighter">
                             Discover Your Dream Lifestyle
                         </h3>

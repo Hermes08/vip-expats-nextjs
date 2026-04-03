@@ -37,7 +37,7 @@ export default async function PanamaInvestmentOpportunities({ params }: { params
     const lang = resolvedParams.lang || 'en';
 
     return (
-        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+        <article className="bg-white min-h-screen pt-28 pb-20">
             <BlogPostSchema
                 title="Panama Real Estate: Top Investment Opportunities for 2026"
                 description="A comprehensive guide to why Panama real estate is a top choice for global investors and expats in 2026."
@@ -48,7 +48,7 @@ export default async function PanamaInvestmentOpportunities({ params }: { params
             />
 
             {/* Hero */}
-            <section className="bg-brand-900 py-32 relative overflow-hidden">
+            <section className="bg-brand-50 py-32 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-20">
                     <img
                         src="https://images.unsplash.com/photo-1594818379496-da1e345b0ded?w=1600&q=80"
@@ -60,7 +60,7 @@ export default async function PanamaInvestmentOpportunities({ params }: { params
                     <span className="text-[10px] font-bold text-brand-GOLD uppercase tracking-[0.4em] mb-4 block">
                         INVESTMENT INSIGHT · 2026
                     </span>
-                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-brand-950 mb-8 leading-tight">
                         Panama Real Estate: Top Investment Opportunities in 2026
                     </h1>
                     <p className="text-xl text-brand-300 leading-relaxed font-medium max-w-2xl mx-auto">
@@ -89,12 +89,12 @@ export default async function PanamaInvestmentOpportunities({ params }: { params
                         {investmentHighlights.map((item, i) => {
                             const Icon = item.icon;
                             return (
-                                <div key={i} className="glass-card p-8 rounded-2xl border border-white/5 hover:shadow-lg transition-all group">
-                                    <div className="w-12 h-12 rounded-2xl bg-brand-900 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <div key={i} className="card-light p-8 rounded-2xl border border-brand-100 hover:shadow-lg transition-all group">
+                                    <div className="w-12 h-12 rounded-2xl bg-brand-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                                         <Icon size={24} className="text-brand-GOLD" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-white mb-3 uppercase italic tracking-tight">{item.title}</h3>
-                                    <p className="text-slate-400 leading-relaxed">{item.desc}</p>
+                                    <h3 className="text-xl font-bold text-brand-950 mb-3 uppercase italic tracking-tight">{item.title}</h3>
+                                    <p className="text-slate-500 leading-relaxed">{item.desc}</p>
                                 </div>
                             );
                         })}
@@ -119,7 +119,7 @@ export default async function PanamaInvestmentOpportunities({ params }: { params
                     </p>
 
                     {/* CTA */}
-                    <div className="bg-brand-950 p-10 rounded-3xl mt-16 not-prose text-center border-t-4 border-brand-GOLD">
+                    <div className="bg-white p-10 rounded-3xl mt-16 not-prose text-center border-t-4 border-brand-GOLD">
                         <h3 className="text-white font-heading text-3xl font-bold mb-4 uppercase italic tracking-tighter">
                             Secure Your Panama Investment
                         </h3>

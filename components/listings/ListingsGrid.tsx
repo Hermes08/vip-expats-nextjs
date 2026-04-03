@@ -63,7 +63,7 @@ export default function ListingsGrid({ lang, initialListings }: Props) {
   const ct = contactLabels[lang];
 
   return (
-    <div className="min-h-screen bg-brand-950 pt-24 pb-24 px-4">
+    <div className="min-h-screen bg-white pt-24 pb-24 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-10 text-center">
@@ -101,11 +101,11 @@ export default function ListingsGrid({ lang, initialListings }: Props) {
       </div>
 
       {/* Sticky bottom CTA bar */}
-      <div className="fixed bottom-0 left-0 right-0 z-40 bg-brand-900/95 backdrop-blur-md border-t border-white/10 py-3 px-4">
+      <div className="fixed bottom-0 left-0 right-0 z-40 bg-brand-50/95 backdrop-blur-md border-t border-brand-100 py-3 px-4">
         <div className="max-w-5xl mx-auto flex items-center justify-center gap-3 sm:gap-6">
           <div className="flex items-center gap-2">
             <MessageCircle size={15} className="text-brand-GOLD flex-shrink-0" />
-            <span className="text-slate-300 text-xs sm:text-sm font-medium">{ct.msg}</span>
+            <span className="text-slate-500 text-xs sm:text-sm font-medium">{ct.msg}</span>
           </div>
           <Link
             href={`/${lang}/contacto`}

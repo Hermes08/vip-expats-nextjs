@@ -48,7 +48,7 @@ export default async function PanamaRealEstateGuide2026({ params }: { params: Pr
     const lang = resolvedParams.lang || 'en';
 
     return (
-        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+        <article className="bg-white min-h-screen pt-28 pb-20">
             <BlogPostSchema
                 title="Panama Real Estate: Investment Opportunities, Expat Lifestyle, and Retirement in 2026"
                 description="The comprehensive 2026 guide for global investors and expats looking to capitalize on Panama's stable property market and luxury lifestyle."
@@ -59,7 +59,7 @@ export default async function PanamaRealEstateGuide2026({ params }: { params: Pr
             />
 
             {/* Hero Section */}
-            <section className="bg-brand-900 py-32 relative overflow-hidden">
+            <section className="bg-brand-50 py-32 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-25">
                     <img
                         src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=1600&q=80"
@@ -71,7 +71,7 @@ export default async function PanamaRealEstateGuide2026({ params }: { params: Pr
                     <span className="text-[10px] font-bold text-brand-GOLD uppercase tracking-[0.4em] mb-4 block">
                         EXPAT GUIDE · 2026
                     </span>
-                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-brand-950 mb-8 leading-tight">
                         Panama Real Estate: The Ultimate 2026 Guide
                     </h1>
                     <p className="text-xl text-brand-300 leading-relaxed font-medium max-w-2xl mx-auto">
@@ -84,17 +84,17 @@ export default async function PanamaRealEstateGuide2026({ params }: { params: Pr
             <section className="py-12 max-w-4xl mx-auto px-4">
                 <div className="space-y-10">
                     
-                    <p className="lead text-2xl font-semibold text-white border-l-4 border-brand-GOLD pl-6 text-slate-300">
+                    <p className="lead text-2xl font-semibold text-white border-l-4 border-brand-GOLD pl-6 text-slate-500">
                         As we move through 2026, the Panama real estate market has reached a new level of maturity. It is no longer just a "retirement destination," but a global hub for <strong>wealth preservation, remote work excellence, and luxury living</strong>.
                     </p>
 
                     <h2 className="text-white text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
                         The Investment Landscape: Why Panama Wins in 2026
                     </h2>
-                    <p className="text-slate-300">
+                    <p className="text-slate-500">
                         The core reason investors choose Panama remains its <strong>absolute stability</strong>. As a dollarized economy with a constitutional protection for foreign property ownership, Panama provides a "safe haven" environment that is rare in Latin America.
                     </p>
-                    <p className="text-slate-300">
+                    <p className="text-slate-500">
                         In 2026, we are seeing a shift toward <strong>branded residences</strong> and <strong>managed investment properties</strong>. Investors are no longer just looking for a condo; they are looking for a cash-flowing asset backed by hotel-grade management. This has led to consistent rental yields of 6-9% in premium zones like Costa del Este and Playa Bonita.
                     </p>
 
@@ -103,12 +103,12 @@ export default async function PanamaRealEstateGuide2026({ params }: { params: Pr
                         {guideSections.map((item, i) => {
                             const Icon = item.icon;
                             return (
-                                <div key={i} className="glass-card p-8 rounded-2xl border border-white/5 hover:shadow-lg transition-all group">
-                                    <div className="w-12 h-12 rounded-2xl bg-brand-900 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <div key={i} className="card-light p-8 rounded-2xl border border-brand-100 hover:shadow-lg transition-all group">
+                                    <div className="w-12 h-12 rounded-2xl bg-brand-50 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                                         <Icon size={24} className="text-brand-GOLD" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-white mb-3 uppercase italic tracking-tight">{item.title}</h3>
-                                    <p className="text-slate-300 leading-relaxed">{item.desc}</p>
+                                    <h3 className="text-xl font-bold text-brand-950 mb-3 uppercase italic tracking-tight">{item.title}</h3>
+                                    <p className="text-slate-500 leading-relaxed">{item.desc}</p>
                                 </div>
                             );
                         })}
@@ -117,30 +117,30 @@ export default async function PanamaRealEstateGuide2026({ params }: { params: Pr
                     <h2 className="text-white text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
                         The Expat Lifestyle: First-World Comforts in the Tropics
                     </h2>
-                    <p className="text-slate-300">
+                    <p className="text-slate-500">
                         For the modern expat, the transition to Panama is seamless. The infrastructure in Panama City rivals any major North American hub, with world-class hospitals (affiliated with Johns Hopkins) and high-speed fiber optic internet that makes it a <strong>digital nomad paradise</strong>.
                     </p>
-                    <p className="text-slate-300">
+                    <p className="text-slate-500">
                         The "VIP Expat" lifestyle is characterized by <strong>high-end amenities</strong>. Gated communities like Buenaventura and islands like Ocean Reef offer a level of security and luxury that is truly global. Whether your passion is sport fishing, golfing, or fine dining, Panama delivers at a fraction of the cost found in Miami or the Caribbean.
                     </p>
 
                     <h2 className="text-white text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
                         Retirement in Panama: The Gold Standard
                     </h2>
-                    <p className="text-slate-300">
+                    <p className="text-slate-500">
                         Panama&apos;s <strong>Pensionado Program</strong> remains the most attractive retirement incentive in the world. Discounts on everything from utility bills to movie tickets and medical procedures make living here on a fixed income not just comfortable, but luxurious.
                     </p>
-                    <p className="text-slate-300">
+                    <p className="text-slate-500">
                         Furthermore, the <strong>Qualified Investor Visa</strong> has revolutionized how retirees and investors gain residency. By investing $300,000 in real estate, you can secure permanent residency for your family in record time, providing a solid "Plan B" or a permanent change of scenery.
                     </p>
 
                     <h2 className="text-white text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
                         Beachfront vs. Urban: Finding Your Ecosystem
                     </h2>
-                    <p className="text-slate-300">
+                    <p className="text-slate-500">
                         In 2026, the choice between the city and the coast is no longer about sacrifice.
                     </p>
-                    <ul className="text-slate-300 space-y-3">
+                    <ul className="text-slate-500 space-y-3">
                         <li><strong>The Urban Professional:</strong> Costa del Este and Punta Pacifica offer a sophisticated, walkable lifestyle with luxury shopping and corporate proximity.</li>
                         <li><strong>The Beachfront Visionary:</strong> Projects like Margaritaville in Playa Caracol and the Westin Residences at Playa Bonita provide the ultimate beach escape while remaining within reaching distance of the capital.</li>
                         <li><strong>The Mountain Retreat:</strong> Boquete and Pino Alto offer the "Eternal Spring" climate for those who prefer lush greenery and cooler temperatures.</li>
@@ -161,15 +161,15 @@ export default async function PanamaRealEstateGuide2026({ params }: { params: Pr
                     <h2 className="text-white text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
                         Taking the Next Step
                     </h2>
-                    <p className="text-slate-300">
+                    <p className="text-slate-500">
                         Navigating the Panama real estate market requires local expertise and a deep understanding of upcoming trends. At <strong>Panama Real Estate Sale</strong>, we specialize in identifying high-value assets that align with both your lifestyle goals and your investment requirements.
                     </p>
-                    <p className="text-slate-300">
+                    <p className="text-slate-500">
                         The window of opportunity in 2026 is wide, but the best inventory—from beachfront lofts to high-altitude villas—moves quickly.
                     </p>
 
                     {/* CTA Box */}
-                    <div className="glass-card p-12 rounded-3xl mt-16 not-prose text-center border-t-4 border-brand-GOLD relative overflow-hidden reveal-on-scroll">
+                    <div className="card-light p-12 rounded-3xl mt-16 not-prose text-center border-t-4 border-brand-GOLD relative overflow-hidden reveal-on-scroll">
                         <div className="absolute top-0 right-0 p-4 opacity-10">
                             <Building2 size={120} className="text-white" />
                         </div>

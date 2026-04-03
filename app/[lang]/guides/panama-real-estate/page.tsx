@@ -171,7 +171,7 @@ const PanamaRealEstatePage = () => {
   };
 
   return (
-    <div className="bg-brand-950 min-h-screen pt-24 pb-40 overflow-hidden">
+    <div className="bg-white min-h-screen pt-24 pb-40 overflow-hidden">
       {/* BACKGROUND */}
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-1/2 left-1/2 w-[1200px] h-[1200px] bg-brand-GOLD/5 rounded-full blur-[180px] -translate-x-1/2 -translate-y-1/2" />
@@ -186,11 +186,11 @@ const PanamaRealEstatePage = () => {
             transition={{ duration: 1 }}
           >
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block">{content.badge}</span>
-            <h1 className="text-6xl md:text-9xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-[0.8]">
+            <h1 className="text-6xl md:text-9xl font-heading font-black text-brand-950 mb-10 tracking-tighter uppercase italic leading-[0.8]">
               {isEn ? 'Panama' : 'Panamá'} <br />
               <span className="text-brand-GOLD">{isEn ? 'Real Estate' : 'Bienes Raíces'}</span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-400 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic">
+            <p className="text-xl md:text-2xl text-slate-500 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic">
               {content.subtitle}
             </p>
             <div className="flex flex-wrap justify-center gap-8">
@@ -205,7 +205,7 @@ const PanamaRealEstatePage = () => {
               <Magnetic strength={0.3}>
                 <Link
                   href={`/${lang}/relocation/tours`}
-                  className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10"
+                  className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-brand-100"
                 >
                   {isEn ? 'Explore on a Tour' : 'Explorar en un Tour'}
                 </Link>
@@ -215,23 +215,23 @@ const PanamaRealEstatePage = () => {
         </section>
 
         {/* INTRO */}
-        <section className="py-24 border-t border-white/5 max-w-4xl mx-auto">
-          <p className="text-xl text-slate-300 leading-relaxed font-medium">{content.intro}</p>
+        <section className="py-24 border-t border-brand-100 max-w-4xl mx-auto">
+          <p className="text-xl text-slate-600 leading-relaxed font-medium">{content.intro}</p>
         </section>
 
         {/* TOP MARKETS */}
-        <section className="py-24 border-t border-white/5">
+        <section className="py-24 border-t border-brand-100">
           <div className="text-center mb-20">
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">
               {isEn ? 'Where to Buy' : 'Dónde Comprar'}
             </span>
-            <h2 className="text-5xl md:text-7xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.8]">
+            <h2 className="text-5xl md:text-7xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.8]">
               {content.marketsTitle}
             </h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {content.markets.map((market, i) => (
-              <div key={i} className="glass-card p-10 rounded-3xl border-white/5 hover:border-brand-GOLD/30 transition-all group">
+              <div key={i} className="card-light p-10 rounded-3xl border-brand-100 hover:border-brand-GOLD/30 transition-all group">
                 <market.icon className="text-brand-GOLD mb-6 group-hover:scale-110 transition-transform" size={36} />
                 <div className="flex justify-between items-start mb-4">
                   <div>
@@ -240,27 +240,27 @@ const PanamaRealEstatePage = () => {
                   </div>
                   <span className="text-brand-GOLD font-black text-sm whitespace-nowrap ml-4">{market.price}</span>
                 </div>
-                <p className="text-slate-400 font-medium leading-relaxed text-sm">{market.desc}</p>
+                <p className="text-slate-500 font-medium leading-relaxed text-sm">{market.desc}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* WHY BUY */}
-        <section className="py-24 border-t border-white/5">
+        <section className="py-24 border-t border-brand-100">
           <div className="text-center mb-20">
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">
               {isEn ? 'Key Advantages' : 'Ventajas Clave'}
             </span>
-            <h2 className="text-5xl md:text-7xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.8]">
+            <h2 className="text-5xl md:text-7xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.8]">
               {content.whyTitle}
             </h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {content.reasons.map((reason, i) => (
-              <div key={i} className="glass-card p-10 rounded-[3rem] border-white/5 hover:border-brand-GOLD/40 transition-all group">
+              <div key={i} className="card-light p-10 rounded-[3rem] border-brand-100 hover:border-brand-GOLD/40 transition-all group">
                 <reason.icon className="text-brand-GOLD mb-8 group-hover:scale-125 transition-transform" size={40} />
-                <h3 className="text-xl font-black text-white mb-4 uppercase italic tracking-tighter">{reason.title}</h3>
+                <h3 className="text-xl font-black text-brand-950 mb-4 uppercase italic tracking-tighter">{reason.title}</h3>
                 <p className="text-slate-500 font-medium leading-relaxed text-sm">{reason.desc}</p>
               </div>
             ))}
@@ -268,20 +268,20 @@ const PanamaRealEstatePage = () => {
         </section>
 
         {/* BUYING PROCESS */}
-        <section className="py-24 border-t border-white/5">
+        <section className="py-24 border-t border-brand-100">
           <div className="text-center mb-20">
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">
               {isEn ? 'Step by Step' : 'Paso a Paso'}
             </span>
-            <h2 className="text-5xl md:text-7xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.8]">
+            <h2 className="text-5xl md:text-7xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.8]">
               {content.processTitle}
             </h2>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {content.steps.map((step, i) => (
-              <div key={i} className="glass-card p-10 rounded-3xl border-white/5">
+              <div key={i} className="card-light p-10 rounded-3xl border-brand-100">
                 <span className="text-6xl font-black text-brand-GOLD/20 block mb-4">{step.step}</span>
-                <h3 className="text-xl font-black text-white mb-4 uppercase italic tracking-tighter">{step.title}</h3>
+                <h3 className="text-xl font-black text-brand-950 mb-4 uppercase italic tracking-tighter">{step.title}</h3>
                 <p className="text-slate-500 text-sm font-medium leading-relaxed">{step.desc}</p>
               </div>
             ))}
@@ -289,12 +289,12 @@ const PanamaRealEstatePage = () => {
         </section>
 
         {/* TAX BENEFITS */}
-        <section className="py-24 border-t border-white/5 max-w-4xl mx-auto">
+        <section className="py-24 border-t border-brand-100 max-w-4xl mx-auto">
           <div className="mb-12">
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">
               {isEn ? 'Tax Advantages' : 'Ventajas Fiscales'}
             </span>
-            <h2 className="text-5xl md:text-6xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.8] mb-12">
+            <h2 className="text-5xl md:text-6xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.8] mb-12">
               {content.taxTitle}
             </h2>
           </div>
@@ -302,19 +302,19 @@ const PanamaRealEstatePage = () => {
             {content.taxPoints.map((point, i) => (
               <div key={i} className="flex items-start gap-5">
                 <CheckCircle className="text-brand-GOLD mt-1 flex-shrink-0" size={22} />
-                <p className="text-slate-300 font-medium leading-relaxed">{point}</p>
+                <p className="text-slate-500 font-medium leading-relaxed">{point}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* RELATED GUIDES */}
-        <section className="py-24 border-t border-white/5">
+        <section className="py-24 border-t border-brand-100">
           <div className="text-center mb-16">
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">
               {isEn ? 'Go Deeper' : 'Profundice'}
             </span>
-            <h2 className="text-4xl md:text-6xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.8]">
+            <h2 className="text-4xl md:text-6xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.8]">
               {content.guidesTitle}
             </h2>
           </div>
@@ -323,7 +323,7 @@ const PanamaRealEstatePage = () => {
               <Link
                 key={i}
                 href={`/${lang}/guides/${guide.href}`}
-                className="glass-card p-8 rounded-3xl border-white/5 hover:border-brand-GOLD/40 transition-all group flex items-center justify-between"
+                className="card-light p-8 rounded-3xl border-brand-100 hover:border-brand-GOLD/40 transition-all group flex items-center justify-between"
               >
                 <span className="text-white font-black uppercase italic tracking-tight text-sm group-hover:text-brand-GOLD transition-colors">{guide.label}</span>
                 <ArrowRight className="text-brand-GOLD flex-shrink-0 ml-4 group-hover:translate-x-1 transition-transform" size={18} />
@@ -351,7 +351,7 @@ const PanamaRealEstatePage = () => {
             <Magnetic strength={0.4}>
               <Link
                 href={`/${lang}/contacto`}
-                className="btn-3d btn-3d-gold bg-brand-950 text-white px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs"
+                className="btn-3d btn-3d-gold bg-white text-white px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs"
               >
                 {isEn ? 'Speak to an Advisor' : 'Hablar con un Asesor'}
               </Link>

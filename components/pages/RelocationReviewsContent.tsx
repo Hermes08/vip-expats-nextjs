@@ -65,7 +65,7 @@ const RelocationReviewsContent: React.FC = () => {
                 <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-10 uppercase tracking-tighter">
                     Client <span className="text-brand-GOLD italic">Success</span> Stories
                 </h1>
-                <p className="text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed font-medium">
+                <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed font-medium">
                     Discover why 2,500+ expats have trusted Panama Real Estate Sale for their <strong>panama relocation discovery tour</strong> and investment strategy.
                 </p>
             </section>

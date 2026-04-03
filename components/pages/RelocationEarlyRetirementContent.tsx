@@ -32,7 +32,7 @@ const RelocationEarlyRetirementContent = () => {
     ];
 
     return (
-        <div className="bg-brand-950 text-white min-h-screen">
+        <div className="bg-white text-white min-h-screen">
             <BreadcrumbSchema
                 items={[
                     { name: 'Relocation', item: `https://panamarealestatesale.com/${lang}/relocation` },
@@ -48,7 +48,7 @@ const RelocationEarlyRetirementContent = () => {
             <LocalBusinessSchema />
 
             {/* Hero Section */}
-            <section className="relative pt-40 pb-32 bg-brand-950 text-white overflow-hidden rounded-b-[5rem]">
+            <section className="relative pt-40 pb-32 bg-white text-white overflow-hidden rounded-b-[5rem]">
                 <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-GOLD/10 border border-brand-GOLD/20 rounded-full mb-10">
                         <TrendingUp size={14} className="text-brand-GOLD" />
@@ -57,7 +57,7 @@ const RelocationEarlyRetirementContent = () => {
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter">
                         The <span className="text-brand-GOLD underline italic">Second</span> Act <br /> Begins Now.
                     </h1>
-                    <p className="text-base md:text-lg text-slate-400 font-medium leading-relaxed mb-8 max-w-3xl mx-auto">
+                    <p className="text-base md:text-lg text-slate-500 font-medium leading-relaxed mb-8 max-w-3xl mx-auto">
                         Why wait until 65? Panama is the ultimate destination for the <strong>early retirement</strong> community. Escape the grind and leverage your capital for a high-intensity lifestyle in the <strong>best places to retire in panama</strong>.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-8 justify-center">
@@ -88,21 +88,21 @@ const RelocationEarlyRetirementContent = () => {
                     </div>
                     <div>
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Your Capital, <br /> <span className="text-brand-GOLD underline">Magnified.</span></h2>
-                        <div className="space-y-8 text-lg text-slate-400 font-medium leading-[1.8]">
+                        <div className="space-y-8 text-lg text-slate-500 font-medium leading-[1.8]">
                             <p>
                                 For the <strong>early retiree under 50</strong>, the primary hurdle isn't the beach—it's the math. Panama's dual-currency system (USD) and tax-friendly environment mean your retirement fund lasts 2-3x longer than in Canada or the US.
                             </p>
                             <p>
                                 Leverage the <strong>friendly nations visa panama requirements</strong> to secure permanent residency via a $200,000 investment. This isn't just a visa; it's an asset play. You own the land, you own the visa, you own your time.
                             </p>
-                            <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/10">
+                            <div className="grid grid-cols-2 gap-8 pt-8 border-t border-brand-100">
                                 <div>
                                     <div className="text-brand-GOLD font-black text-3xl mb-2">Zero</div>
-                                    <p className="text-xs uppercase font-black text-slate-400">Capital Gains Tax*</p>
+                                    <p className="text-xs uppercase font-black text-slate-500">Capital Gains Tax*</p>
                                 </div>
                                 <div>
                                     <div className="text-brand-GOLD font-black text-3xl mb-2">Top-5</div>
-                                    <p className="text-xs uppercase font-black text-slate-400">Healthcare System</p>
+                                    <p className="text-xs uppercase font-black text-slate-500">Healthcare System</p>
                                 </div>
                             </div>
                         </div>
@@ -111,11 +111,11 @@ const RelocationEarlyRetirementContent = () => {
             </section>
 
             {/* Path for Under 50s */}
-            <section className="py-14 bg-black text-white rounded-3xl mx-4 relative overflow-hidden">
+            <section className="py-14 bg-brand-50 text-brand-950 rounded-3xl mx-4 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-8 relative z-10">
                     <div className="text-center mb-10 px-4">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic leading-none text-center">The <span className="text-brand-GOLD">Under 50</span> Playbook</h2>
-                        <p className="text-slate-400 font-black uppercase tracking-widest text-[10px] mx-auto text-center italic">Strategic Visa Selection for the FIRE Community.</p>
+                        <p className="text-slate-500 font-black uppercase tracking-widest text-[10px] mx-auto text-center italic">Strategic Visa Selection for the FIRE Community.</p>
                     </div>
 
                     <div className="grid lg:grid-cols-3 gap-8">
@@ -145,7 +145,7 @@ const RelocationEarlyRetirementContent = () => {
                                     <span>{path.target}</span>
                                 </div>
                                 <h3 className="text-3xl font-black uppercase tracking-tighter italic mb-6 leading-none">{path.title}</h3>
-                                <p className="text-slate-400 font-medium text-sm leading-relaxed mb-8">{path.desc}</p>
+                                <p className="text-slate-500 font-medium text-sm leading-relaxed mb-8">{path.desc}</p>
                                 <Link href={`/${lang}/relocation/legal`} className="inline-flex items-center gap-2 text-brand-GOLD font-black uppercase text-[10px] tracking-widest group-hover:gap-4 transition-all italic">
                                     Deep Dive <ArrowRight size={14} />
                                 </Link>
@@ -160,7 +160,7 @@ const RelocationEarlyRetirementContent = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-24">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic italic">Beyond the <span className="text-brand-GOLD underline italic">Beach</span></h2>
-                        <p className="text-slate-400 font-medium italic">What does an early retiree actually *do* in Panama?</p>
+                        <p className="text-slate-500 font-medium italic">What does an early retiree actually *do* in Panama?</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -170,10 +170,10 @@ const RelocationEarlyRetirementContent = () => {
                             { icon: <Globe className="text-brand-GOLD" size={32} />, title: "Travel Base", desc: "Use Tocumen (Hub of the Americas) to explore the continent with ease and zero jetlag." },
                             { icon: <Home className="text-brand-GOLD" size={32} />, title: "Asset Build", desc: "Build wealth through Panama's growing luxury hospitality and short-term rental market." }
                         ].map((item, idx) => (
-                            <div key={idx} className="p-10 bg-brand-950 rounded-2xl border border-brand-100 hover:bg-white hover:shadow-xl transition-all">
+                            <div key={idx} className="p-10 bg-white rounded-2xl border border-brand-100 hover:bg-white hover:shadow-xl transition-all">
                                 <div className="mb-6">{item.icon}</div>
                                 <h3 className="text-xl font-black uppercase tracking-tighter mb-4 italic leading-tight">{item.title}</h3>
-                                <p className="text-slate-400 font-medium text-xs leading-relaxed">{item.desc}</p>
+                                <p className="text-slate-500 font-medium text-xs leading-relaxed">{item.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -181,7 +181,7 @@ const RelocationEarlyRetirementContent = () => {
             </section>
 
             {/* FAQ */}
-            <section className="py-14 bg-brand-950 text-white border-t border-white/5">
+            <section className="py-14 bg-white text-white border-t border-brand-100">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-black mb-20 text-center uppercase tracking-tighter italic italic">Early Relocation <span className="text-brand-GOLD">Intel</span></h2>
                     <div className="space-y-6">
@@ -191,7 +191,7 @@ const RelocationEarlyRetirementContent = () => {
                                     <span className="text-lg font-black uppercase tracking-tighter italic pr-8">{faq.question}</span>
                                     <HelpCircle className="text-brand-GOLD/50 group-hover:text-brand-GOLD transition-colors" size={24} />
                                 </summary>
-                                <div className="px-10 pb-10 text-slate-400 font-medium leading-relaxed border-t border-white/5 pt-8">
+                                <div className="px-10 pb-10 text-slate-500 font-medium leading-relaxed border-t border-brand-100 pt-8">
                                     {faq.answer}
                                 </div>
                             </details>
@@ -208,7 +208,7 @@ const RelocationEarlyRetirementContent = () => {
                         The best time to retire was yesterday. The second best time is today. We guide the under-50 crowd to legal and lifestyle freedom in Panama.
                     </p>
                     <div className="flex justify-center flex-col sm:flex-row gap-8">
-                        <Link href={`/${lang}/contacto`} className="inline-flex items-center justify-center gap-4 px-8 py-4 bg-brand-950 text-white rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-black transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="inline-flex items-center justify-center gap-4 px-8 py-4 bg-white text-white rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all shadow-2xl">
                             Schedule My FIRE Audit <ArrowRight size={14} />
                         </Link>
                     </div>

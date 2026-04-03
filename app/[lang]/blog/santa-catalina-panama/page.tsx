@@ -103,17 +103,17 @@ const sections = [
 
 export default function SantaCatalinaPanama() {
   return (
-    <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+    <article className="bg-white min-h-screen pt-28 pb-20">
       <div className="max-w-4xl mx-auto px-4">
         {/* Header */}
         <div className="mb-16 reveal-on-scroll">
-          <span className="text-brand-GOLD font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
+          <span className="text-brand-TEAL font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
             Surf & Investment Guide · 2026
           </span>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6 tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-brand-950 mb-6 tracking-tight leading-tight">
             Santa Catalina Panama
           </h1>
-          <p className="text-slate-400 text-lg font-medium leading-relaxed border-l-2 border-brand-GOLD/30 pl-5">
+          <p className="text-slate-500 text-lg font-medium leading-relaxed border-l-2 border-brand-GOLD/30 pl-5">
             World-class point break, gateway to a UNESCO national park, and one of the last undiscovered investment opportunities in Central America.
           </p>
         </div>
@@ -125,7 +125,7 @@ export default function SantaCatalinaPanama() {
             { label: 'Prime Season', value: 'Apr–Oct', icon: '📅' },
             { label: 'Entry Price', value: '$30K–100K', icon: '💰' },
           ].map((stat, i) => (
-            <div key={i} className="glass-card p-5 rounded-xl border-white/5">
+            <div key={i} className="card-light p-5 rounded-xl border-brand-100">
               <p className="text-brand-GOLD text-2xl mb-1">{stat.icon}</p>
               <p className="text-white font-black text-sm">{stat.value}</p>
               <p className="text-slate-500 text-[9px] font-bold uppercase tracking-widest mt-1">{stat.label}</p>
@@ -138,21 +138,21 @@ export default function SantaCatalinaPanama() {
           {sections.map((section, i) => {
             const IconComponent = section.icon;
             return (
-              <div key={i} className="glass-card rounded-2xl border-white/5 overflow-hidden reveal-on-scroll">
+              <div key={i} className="card-light rounded-2xl border-brand-100 overflow-hidden reveal-on-scroll">
                 <div className="p-7 md:p-8">
                   {/* Section header */}
                   <div className="flex items-start gap-3 mb-5">
                     <IconComponent size={24} className="text-brand-GOLD flex-shrink-0 mt-1" />
-                    <h2 className="text-2xl md:text-3xl font-heading font-black text-white tracking-tight">{section.title}</h2>
+                    <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 tracking-tight">{section.title}</h2>
                   </div>
 
                   {/* Content */}
-                  <p className="text-slate-400 text-sm leading-relaxed mb-6">{section.content}</p>
+                  <p className="text-slate-500 text-sm leading-relaxed mb-6">{section.content}</p>
 
                   {/* Highlights */}
                   <ul className="space-y-2">
                     {section.highlights.map((highlight, j) => (
-                      <li key={j} className="flex items-start gap-3 text-sm text-slate-300">
+                      <li key={j} className="flex items-start gap-3 text-sm text-slate-500">
                         <span className="text-brand-GOLD font-black mt-0.5 flex-shrink-0">✓</span>
                         {highlight}
                       </li>
@@ -165,8 +165,8 @@ export default function SantaCatalinaPanama() {
         </div>
 
         {/* Investment thesis */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-brand-GOLD/20 reveal-on-scroll">
-          <h3 className="text-xl font-heading font-black text-white mb-4 tracking-tight flex items-center gap-2">
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-GOLD/20 reveal-on-scroll">
+          <h3 className="text-xl font-heading font-black text-brand-950 mb-4 tracking-tight flex items-center gap-2">
             <TrendingUp size={20} className="text-brand-GOLD" />
             Why Invest in Santa Catalina Now?
           </h3>
@@ -178,7 +178,7 @@ export default function SantaCatalinaPanama() {
               'Prices are 40–60% below Costa Rican equivalents — early-stage appreciation curve is steep',
               'First-mover advantage is still available — buy now before international attention and prices spike',
             ].map((point, i) => (
-              <li key={i} className="flex items-start gap-3 text-sm text-slate-300">
+              <li key={i} className="flex items-start gap-3 text-sm text-slate-500">
                 <span className="text-brand-GOLD font-black flex-shrink-0">→</span>
                 {point}
               </li>
@@ -187,9 +187,9 @@ export default function SantaCatalinaPanama() {
         </div>
 
         {/* CTA */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-brand-GOLD/20 text-center reveal-on-scroll">
-          <h3 className="text-xl font-heading font-black text-white mb-3 tracking-tight">Ready to Explore Santa Catalina?</h3>
-          <p className="text-slate-400 text-sm mb-6 leading-relaxed">
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-GOLD/20 text-center reveal-on-scroll">
+          <h3 className="text-xl font-heading font-black text-brand-950 mb-3 tracking-tight">Ready to Explore Santa Catalina?</h3>
+          <p className="text-slate-500 text-sm mb-6 leading-relaxed">
             Our Panama team has personally visited Santa Catalina multiple times and sourced off-market properties in the area. See available listings and connect with our investment advisors.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -201,7 +201,7 @@ export default function SantaCatalinaPanama() {
             </Link>
             <Link
               href="/en/contacto"
-              className="inline-flex items-center justify-center gap-2 glass-card px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] text-brand-GOLD border-brand-GOLD/30 hover:border-brand-GOLD/60 transition-all"
+              className="inline-flex items-center justify-center gap-2 card-light px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] text-brand-GOLD border-brand-GOLD/30 hover:border-brand-GOLD/60 transition-all"
             >
               Talk to an Advisor <ArrowRight size={14} />
             </Link>
@@ -218,7 +218,7 @@ export default function SantaCatalinaPanama() {
             <Link
               key={i}
               href={link.href}
-              className="flex items-center justify-between glass-card p-4 rounded-xl border-white/5 hover:border-brand-GOLD/30 transition-all group"
+              className="flex items-center justify-between card-light p-4 rounded-xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
               <span className="text-white text-xs font-bold">{link.label}</span>
               <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />

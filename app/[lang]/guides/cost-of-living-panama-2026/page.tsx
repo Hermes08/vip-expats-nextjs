@@ -88,7 +88,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
                 </div>
                 <div className="max-w-3xl mx-auto px-4 text-center relative z-10">
                     <span className="tag-teal mb-5 inline-block">COST OF LIVING GUIDE · 2026</span>
-                    <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6 leading-tight mt-4">
+                    <h1 className="font-heading text-4xl md:text-5xl font-bold text-brand-950 mb-6 leading-tight mt-4">
                         Cost of Living in Panama:<br />Real Budgets for 2026
                     </h1>
                     <p className="text-lg text-slate-500 leading-relaxed max-w-xl mx-auto">
@@ -113,7 +113,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
                     </h2>
                     <div className="space-y-6">
                         {budgetTiers.map((tier, i) => (
-                            <div key={i} className="glass-card rounded-2xl p-6 border border-brand-100">
+                            <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-center mb-4 gap-2">
                                     <div>
                                         <span className="text-brand-GOLD font-black uppercase tracking-widest text-[10px]">{tier.label} lifestyle</span>
@@ -123,7 +123,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
                                 </div>
                                 <div className="grid sm:grid-cols-2 gap-2">
                                     {tier.items.map((item, j) => (
-                                        <div key={j} className="flex justify-between items-center bg-brand-950 rounded-lg px-4 py-2.5">
+                                        <div key={j} className="flex justify-between items-center bg-white rounded-lg px-4 py-2.5">
                                             <span className="text-slate-500 text-xs">{item.category}</span>
                                             <span className="text-white font-bold text-xs">{item.cost}</span>
                                         </div>
@@ -150,7 +150,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
                             </thead>
                             <tbody>
                                 {usVsPanama.map((row, i) => (
-                                    <tr key={i} className="border-b border-white/5">
+                                    <tr key={i} className="border-b border-brand-100">
                                         <td className="text-slate-500 text-xs py-3 pr-4 font-medium">{row.item}</td>
                                         <td className="text-slate-500 text-xs py-3 px-3">{row.us}</td>
                                         <td className="text-brand-TEAL font-bold text-xs py-3 px-3">{row.panama}</td>
@@ -168,7 +168,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
                     </h2>
                     <div className="space-y-3">
                         {locationComparison.map((loc, i) => (
-                            <div key={i} className="glass-card rounded-xl p-5 border border-brand-100">
+                            <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-3 mb-1">
                                     <div>
                                         <div className="text-brand-950 font-bold text-sm">{loc.city}</div>
@@ -189,7 +189,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
                 </section>
 
                 {/* What costs more */}
-                <section className="reveal-on-scroll glass-card rounded-2xl p-6 border border-brand-100">
+                <section className="reveal-on-scroll card-light rounded-2xl p-6 border border-brand-100">
                     <h2 className="text-white text-xl font-heading font-bold mb-4 uppercase tracking-tighter italic">
                         What Costs MORE in Panama (Honest)
                     </h2>
@@ -200,7 +200,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
                             { item: 'Reliable car', note: 'Vehicles are imported and carry duties. A basic car costs 20–30% more than in the US.' },
                             { item: 'Banking delays', note: 'Not a cost but a time cost — opening accounts takes weeks. Factor this into your move plan.' },
                         ].map((item, i) => (
-                            <div key={i} className="flex items-start gap-3 bg-brand-950 rounded-xl px-4 py-3">
+                            <div key={i} className="flex items-start gap-3 bg-white rounded-xl px-4 py-3">
                                 <span className="text-brand-CORAL font-black flex-shrink-0">↑</span>
                                 <div>
                                     <span className="text-white font-bold text-xs">{item.item}: </span>
@@ -212,7 +212,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
                 </section>
 
                 {/* CTA */}
-                <section className="reveal-on-scroll bg-brand-900 p-8 rounded-2xl border-t-4 border-brand-TEAL text-center">
+                <section className="reveal-on-scroll bg-brand-50 p-8 rounded-2xl border-t-4 border-brand-TEAL text-center">
                     <h3 className="text-white font-heading text-2xl font-bold mb-3 uppercase italic tracking-tighter">
                         Want a Personalized Budget Breakdown?
                     </h3>
@@ -231,7 +231,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
                         { label: 'Apartments for Rent — Panama City', href: '/en/blog/apartments-for-rent-panama-city' },
                         { label: 'Pensionado Visa Guide', href: '/en/guides/pensionado-visa-panama' },
                     ].map((link, i) => (
-                        <Link key={i} href={link.href} className="flex items-center justify-between glass-card p-4 rounded-xl border border-brand-100 hover:border-brand-TEAL/30 transition-all group">
+                        <Link key={i} href={link.href} className="flex items-center justify-between card-light p-4 rounded-xl border border-brand-100 hover:border-brand-TEAL/30 transition-all group">
                             <span className="text-white text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-TEAL opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>

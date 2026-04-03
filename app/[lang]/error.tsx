@@ -15,11 +15,11 @@ export default function Error({
     }, [error]);
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-[400px] glass-card p-12 rounded-[3rem] border-white/5 my-12 text-center">
+        <div className="flex flex-col items-center justify-center min-h-[400px] card-light p-12 rounded-[3rem] border-brand-100 my-12 text-center">
             <h2 className="text-3xl font-heading font-black mb-6 uppercase italic tracking-tighter text-white">
                 Content Unavailable
             </h2>
-            <p className="text-slate-400 mb-8 font-medium max-w-md mx-auto">
+            <p className="text-slate-500 mb-8 font-medium max-w-md mx-auto">
                 There was an error loading this section. This is often caused by a hydration mismatch or stale data.
             </p>
             {error.digest && (

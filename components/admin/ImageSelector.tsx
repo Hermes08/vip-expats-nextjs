@@ -80,7 +80,7 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ onSelect, onCancel }) => 
                 {mode === 'library' && (
                     <div className="space-y-4">
                         {loading ? (
-                            <div className="flex flex-col items-center justify-center h-48 text-slate-400">
+                            <div className="flex flex-col items-center justify-center h-48 text-slate-500">
                                 <Loader2 size={32} className="animate-spin mb-2" />
                                 <p>Loading library...</p>
                             </div>
@@ -93,7 +93,7 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ onSelect, onCancel }) => 
                                         className="relative aspect-square rounded-lg overflow-hidden group border border-slate-200 hover:border-brand-GOLD transition-all"
                                     >
                                         <img src={url} className="w-full h-full object-cover" loading="lazy" />
-                                        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                                        <div className="absolute inset-0 bg-brand-50/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                                             <div className="bg-brand-GOLD text-brand-900 p-1.5 rounded-full">
                                                 <Check size={16} />
                                             </div>
@@ -102,7 +102,7 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ onSelect, onCancel }) => 
                                 ))}
                             </div>
                         ) : (
-                            <div className="text-center py-10 text-slate-400">
+                            <div className="text-center py-10 text-slate-500">
                                 No images found. Switch to "Upload" tab.
                             </div>
                         )}
@@ -119,7 +119,7 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ onSelect, onCancel }) => 
                             </div>
                         ) : (
                             <label className="cursor-pointer text-center w-full h-full flex flex-col items-center justify-center">
-                                <div className="p-4 bg-brand-900 text-white rounded-full mb-4 shadow-lg">
+                                <div className="p-4 bg-brand-50 text-white rounded-full mb-4 shadow-lg">
                                     <Upload size={24} />
                                 </div>
                                 <h3 className="text-lg font-bold text-slate-800 mb-1">Click to Upload</h3>
@@ -137,7 +137,7 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ onSelect, onCancel }) => 
                         <div>
                             <label className="block text-sm font-bold text-slate-700 mb-2">Paste Media URL</label>
                             <div className="relative">
-                                <LinkIcon size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+                                <LinkIcon size={18} className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-500" />
                                 <input
                                     type="url"
                                     required
@@ -150,7 +150,7 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ onSelect, onCancel }) => 
                         </div>
                         <button
                             type="submit"
-                            className="w-full py-3 bg-brand-900 text-white font-bold rounded-lg hover:bg-brand-800 transition-colors"
+                            className="w-full py-3 bg-brand-50 text-white font-bold rounded-lg hover:bg-brand-100 transition-colors"
                         >
                             Use This Media
                         </button>

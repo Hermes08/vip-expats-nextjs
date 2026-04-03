@@ -46,7 +46,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
     }
 
     return (
-        <div className="bg-brand-950 min-h-screen">
+        <div className="bg-white min-h-screen">
             <ZeroGravityWrapper />
             <VideoSchema
                 videoUrl={`https://www.youtube.com/watch?v=${episode.videoId}`}
@@ -72,7 +72,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
                     {/* Main Content */}
                     <div className="lg:col-span-2">
                         {/* Video Player */}
-                        <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border border-white/10 mb-8 bg-black">
+                        <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-2xl border border-brand-100 mb-8 bg-brand-50">
                             <iframe
                                 src={`https://www.youtube.com/embed/${episode.videoId}?rel=0`}
                                 className="absolute top-0 left-0 w-full h-full"
@@ -85,11 +85,11 @@ export default async function PodcastEpisodePage({ params }: Props) {
                         </div>
 
                         {/* Title & Meta */}
-                        <h1 className="text-3xl md:text-5xl font-heading font-black text-white mb-6 leading-tight">
+                        <h1 className="text-3xl md:text-5xl font-heading font-black text-brand-950 mb-6 leading-tight">
                             {episode.title[lang as 'en' | 'es']}
                         </h1>
 
-                        <div className="flex flex-wrap items-center gap-6 text-neutral-400 mb-8 pb-8 border-b border-white/10">
+                        <div className="flex flex-wrap items-center gap-6 text-neutral-400 mb-8 pb-8 border-b border-brand-100">
                             <div className="flex items-center gap-2">
                                 <Calendar size={18} className="text-brand-GOLD" />
                                 <span>{episode.publishDate}</span>
@@ -114,7 +114,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
                                 {episode.description[lang as 'en' | 'es']}
                             </p>
 
-                            <div className="bg-white/5 rounded-2xl p-8 border border-white/10 mt-8">
+                            <div className="bg-white/5 rounded-2xl p-8 border border-brand-100 mt-8">
                                 <h3 className="text-white font-bold mb-4 flex items-center gap-2">
                                     <span className="w-2 h-2 rounded-full bg-brand-GOLD"></span>
                                     {lang === 'es' ? 'Invitados' : 'Guests'}
@@ -132,8 +132,8 @@ export default async function PodcastEpisodePage({ params }: Props) {
 
                         {/* Takeaways Section */}
                         {episode.takeaways?.[lang as 'en' | 'es'] && (
-                            <div className="mb-12 bg-white/5 rounded-3xl p-8 border border-white/10">
-                                <h3 className="text-xl font-bold text-white mb-6 flex items-center gap-3">
+                            <div className="mb-12 bg-white/5 rounded-3xl p-8 border border-brand-100">
+                                <h3 className="text-xl font-bold text-brand-950 mb-6 flex items-center gap-3">
                                     <span className="w-8 h-8 rounded-full bg-brand-GOLD text-brand-900 flex items-center justify-center text-sm font-black italic">!</span>
                                     {lang === 'es' ? 'Puntos Clave' : 'Key Takeaways'}
                                 </h3>
@@ -154,7 +154,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
                                 <h3 className="text-brand-GOLD font-bold uppercase tracking-wider text-sm mb-4">
                                     {lang === 'es' ? 'Transcripción y Notas' : 'Transcript & Show Notes'}
                                 </h3>
-                                <div className="text-neutral-400 leading-relaxed text-base bg-black/30 p-8 rounded-2xl border border-white/5 italic">
+                                <div className="text-neutral-400 leading-relaxed text-base bg-brand-50/30 p-8 rounded-2xl border border-brand-100 italic">
                                     {episode.transcript[lang as 'en' | 'es']}
                                 </div>
                             </div>
@@ -167,7 +167,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
                         {/* CTA Card */}
                         <div className="bg-gradient-to-br from-brand-900 to-black p-8 rounded-3xl border border-brand-GOLD/30 shadow-2xl relative overflow-hidden group">
                             <div className="absolute top-0 right-0 w-32 h-32 bg-brand-GOLD/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 group-hover:bg-brand-GOLD/30 transition-all duration-700"></div>
-                            <h3 className="text-2xl font-black text-white mb-4 relative z-10">
+                            <h3 className="text-2xl font-black text-brand-950 mb-4 relative z-10">
                                 {lang === 'es' ? '¿Inspirado por este episodio?' : 'Inspired by this episode?'}
                             </h3>
                             <p className="text-neutral-300 mb-6 relative z-10">

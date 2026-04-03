@@ -218,17 +218,17 @@ const regions = [
 
 export default function PanamaWeatherGuide() {
   return (
-    <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+    <article className="bg-white min-h-screen pt-28 pb-20">
       <div className="max-w-4xl mx-auto px-4">
         {/* Hero */}
         <div className="mb-14 reveal-on-scroll">
-          <span className="text-brand-GOLD font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
+          <span className="text-brand-TEAL font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
             Weather Guide · 2026
           </span>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6 tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-brand-950 mb-6 tracking-tight leading-tight">
             Panama Weather Guide: Best Time to Visit by Region
           </h1>
-          <p className="text-slate-400 text-lg font-medium leading-relaxed border-l-2 border-brand-GOLD/30 pl-5">
+          <p className="text-slate-500 text-lg font-medium leading-relaxed border-l-2 border-brand-GOLD/30 pl-5">
             Panama has no winter. Instead, it has a dry season (December–April) and a rainy season (May–November) — but the Caribbean follows a different pattern. Learn which months to visit each region based on your preferences for sunshine, crowds, and price.
           </p>
         </div>
@@ -240,7 +240,7 @@ export default function PanamaWeatherGuide() {
             return (
               <div
                 key={i}
-                className="glass-card p-6 rounded-2xl border-white/5 hover:border-brand-GOLD/20 transition-all"
+                className="card-light p-6 rounded-2xl border-brand-100 hover:border-brand-GOLD/20 transition-all"
               >
                 <div className="flex items-start gap-3 mb-3">
                   <Icon size={24} className="text-brand-GOLD flex-shrink-0 mt-0.5" />
@@ -251,7 +251,7 @@ export default function PanamaWeatherGuide() {
                     </p>
                   </div>
                 </div>
-                <p className="text-slate-400 text-sm leading-relaxed">{card.description}</p>
+                <p className="text-slate-500 text-sm leading-relaxed">{card.description}</p>
               </div>
             );
           })}
@@ -260,18 +260,18 @@ export default function PanamaWeatherGuide() {
         {/* Monthly Breakdown */}
         <div className="mb-14 reveal-on-scroll">
           <div className="mb-6">
-            <h2 className="text-2xl md:text-3xl font-heading font-black text-white tracking-tight mb-2">
+            <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 tracking-tight mb-2">
               Monthly Weather Breakdown
             </h2>
-            <p className="text-slate-400 text-sm">
+            <p className="text-slate-500 text-sm">
               Reference guide for planning your visit. Weather varies by region — see regional sections below for details.
             </p>
           </div>
 
-          <div className="glass-card p-6 rounded-2xl border-white/5 overflow-x-auto">
+          <div className="card-light p-6 rounded-2xl border-brand-100 overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
-                <tr className="border-b border-white/10">
+                <tr className="border-b border-brand-100">
                   <th className="text-left py-3 px-3 text-brand-GOLD font-black uppercase tracking-widest text-[10px]">
                     Month
                   </th>
@@ -293,14 +293,14 @@ export default function PanamaWeatherGuide() {
                 {monthlyData.map((row, i) => (
                   <tr
                     key={i}
-                    className={`border-b border-white/5 ${
+                    className={`border-b border-brand-100 ${
                       row.recommendation.includes('⭐⭐') ? 'bg-brand-GOLD/5' : ''
                     }`}
                   >
                     <td className="py-3 px-3 text-white font-bold text-sm">{row.month}</td>
-                    <td className="py-3 px-3 text-slate-300 text-sm">{row.pacific}</td>
-                    <td className="py-3 px-3 text-slate-300 text-sm">{row.caribbean}</td>
-                    <td className="py-3 px-3 text-slate-300 text-sm">{row.boquete}</td>
+                    <td className="py-3 px-3 text-slate-500 text-sm">{row.pacific}</td>
+                    <td className="py-3 px-3 text-slate-500 text-sm">{row.caribbean}</td>
+                    <td className="py-3 px-3 text-slate-500 text-sm">{row.boquete}</td>
                     <td className="py-3 px-3 text-brand-GOLD font-bold text-sm">{row.recommendation}</td>
                   </tr>
                 ))}
@@ -311,7 +311,7 @@ export default function PanamaWeatherGuide() {
 
         {/* Regional Climate Cards */}
         <div className="mb-14 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white tracking-tight mb-8">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 tracking-tight mb-8">
             Climate by Region
           </h2>
 
@@ -321,13 +321,13 @@ export default function PanamaWeatherGuide() {
               return (
                 <div
                   key={i}
-                  className="glass-card p-7 md:p-8 rounded-2xl border-white/5 overflow-hidden reveal-on-scroll"
+                  className="card-light p-7 md:p-8 rounded-2xl border-brand-100 overflow-hidden reveal-on-scroll"
                 >
                   {/* Header */}
                   <div className="flex items-start gap-4 mb-4">
                     <Icon size={28} className="text-brand-GOLD flex-shrink-0 mt-1" />
                     <div>
-                      <h3 className="text-2xl md:text-3xl font-heading font-black text-white tracking-tight">
+                      <h3 className="text-2xl md:text-3xl font-heading font-black text-brand-950 tracking-tight">
                         {region.name}
                       </h3>
                       <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mt-1">
@@ -337,7 +337,7 @@ export default function PanamaWeatherGuide() {
                   </div>
 
                   {/* Description */}
-                  <p className="text-slate-400 text-sm leading-relaxed mb-6">{region.fullDesc}</p>
+                  <p className="text-slate-500 text-sm leading-relaxed mb-6">{region.fullDesc}</p>
 
                   {/* Highlights */}
                   <div className="mb-5">
@@ -346,7 +346,7 @@ export default function PanamaWeatherGuide() {
                     </p>
                     <ul className="space-y-2">
                       {region.highlights.map((highlight, j) => (
-                        <li key={j} className="flex items-start gap-3 text-sm text-slate-300">
+                        <li key={j} className="flex items-start gap-3 text-sm text-slate-500">
                           <span className="text-brand-GOLD font-black mt-0.5 flex-shrink-0">→</span>
                           {highlight}
                         </li>
@@ -355,7 +355,7 @@ export default function PanamaWeatherGuide() {
                   </div>
 
                   {/* Best Time */}
-                  <div className="pt-5 border-t border-white/5">
+                  <div className="pt-5 border-t border-brand-100">
                     <span className="text-slate-500 text-[10px] font-black uppercase tracking-widest">
                       Best Time:{' '}
                     </span>
@@ -369,21 +369,21 @@ export default function PanamaWeatherGuide() {
 
         {/* Find Your Perfect Climate CTA */}
         <div className="mb-14 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white tracking-tight mb-8">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 tracking-tight mb-8">
             Find Your Perfect Climate
           </h2>
 
           <div className="grid sm:grid-cols-2 gap-5">
             <Link
               href="/en/propiedades"
-              className="glass-card p-6 rounded-2xl border-white/5 hover:border-brand-GOLD/30 transition-all group"
+              className="card-light p-6 rounded-2xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <Sun size={24} className="text-brand-GOLD" />
                 <ArrowRight size={16} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
               </div>
               <h3 className="text-white font-black text-sm mb-2">Love the Dry Pacific?</h3>
-              <p className="text-slate-400 text-xs leading-relaxed mb-3">
+              <p className="text-slate-500 text-xs leading-relaxed mb-3">
                 Explore Coronado & Panama City properties with guaranteed sunshine December–April.
               </p>
               <p className="text-brand-GOLD text-[10px] font-bold uppercase tracking-widest">
@@ -393,14 +393,14 @@ export default function PanamaWeatherGuide() {
 
             <Link
               href="/en/propiedades"
-              className="glass-card p-6 rounded-2xl border-white/5 hover:border-brand-GOLD/30 transition-all group"
+              className="card-light p-6 rounded-2xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <Droplets size={24} className="text-brand-GOLD" />
                 <ArrowRight size={16} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
               </div>
               <h3 className="text-white font-black text-sm mb-2">Want Caribbean Vibes?</h3>
-              <p className="text-slate-400 text-xs leading-relaxed mb-3">
+              <p className="text-slate-500 text-xs leading-relaxed mb-3">
                 Discover Bocas del Toro properties with tropical warmth and unique dry windows (Feb–Mar, Sep–Oct).
               </p>
               <p className="text-brand-GOLD text-[10px] font-bold uppercase tracking-widest">
@@ -410,14 +410,14 @@ export default function PanamaWeatherGuide() {
 
             <Link
               href="/en/propiedades"
-              className="glass-card p-6 rounded-2xl border-white/5 hover:border-brand-GOLD/30 transition-all group"
+              className="card-light p-6 rounded-2xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <Cloud size={24} className="text-brand-GOLD" />
                 <ArrowRight size={16} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
               </div>
               <h3 className="text-white font-black text-sm mb-2">Prefer Eternal Spring?</h3>
-              <p className="text-slate-400 text-xs leading-relaxed mb-3">
+              <p className="text-slate-500 text-xs leading-relaxed mb-3">
                 See Boquete mountain properties with perfect 60–75°F weather year-round, no extreme heat.
               </p>
               <p className="text-brand-GOLD text-[10px] font-bold uppercase tracking-widest">
@@ -427,14 +427,14 @@ export default function PanamaWeatherGuide() {
 
             <Link
               href="/en/guides/best-areas-retire-panama"
-              className="glass-card p-6 rounded-2xl border-white/5 hover:border-brand-GOLD/30 transition-all group"
+              className="card-light p-6 rounded-2xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <MapPin size={24} className="text-brand-GOLD" />
                 <ArrowRight size={16} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
               </div>
               <h3 className="text-white font-black text-sm mb-2">Unsure? Compare All Regions</h3>
-              <p className="text-slate-400 text-xs leading-relaxed mb-3">
+              <p className="text-slate-500 text-xs leading-relaxed mb-3">
                 Read our complete guide to the best areas in Panama, including costs, lifestyle, and climate.
               </p>
               <p className="text-brand-GOLD text-[10px] font-bold uppercase tracking-widest">
@@ -445,8 +445,8 @@ export default function PanamaWeatherGuide() {
         </div>
 
         {/* Practical Tips */}
-        <div className="mb-14 glass-card p-8 rounded-2xl border-white/5 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white tracking-tight mb-6">
+        <div className="mb-14 card-light p-8 rounded-2xl border-brand-100 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 tracking-tight mb-6">
             Practical Weather Tips
           </h2>
 
@@ -456,21 +456,21 @@ export default function PanamaWeatherGuide() {
                 What to Pack by Season
               </h3>
               <ul className="space-y-2">
-                <li className="flex items-start gap-3 text-sm text-slate-300">
+                <li className="flex items-start gap-3 text-sm text-slate-500">
                   <span className="text-brand-GOLD font-black mt-0.5 flex-shrink-0">✓</span>
                   <span>
                     <strong>Dry Season (Dec–Apr):</strong> Light clothes, shorts, t-shirts, sunglasses, sunscreen, beach
                     cover-ups. A light sweater for air-conditioned interiors.
                   </span>
                 </li>
-                <li className="flex items-start gap-3 text-sm text-slate-300">
+                <li className="flex items-start gap-3 text-sm text-slate-500">
                   <span className="text-brand-GOLD font-black mt-0.5 flex-shrink-0">✓</span>
                   <span>
                     <strong>Rainy Season (May–Nov):</strong> All of the above PLUS a lightweight rain jacket or umbrella.
                     Showers are brief but sudden. Breathable fabrics work best in the humidity.
                   </span>
                 </li>
-                <li className="flex items-start gap-3 text-sm text-slate-300">
+                <li className="flex items-start gap-3 text-sm text-slate-500">
                   <span className="text-brand-GOLD font-black mt-0.5 flex-shrink-0">✓</span>
                   <span>
                     <strong>Boquete (Highlands):</strong> Add long pants, a light jacket, and closed-toe shoes. The
@@ -480,22 +480,22 @@ export default function PanamaWeatherGuide() {
               </ul>
             </div>
 
-            <div className="border-t border-white/5 pt-6">
+            <div className="border-t border-brand-100 pt-6">
               <h3 className="text-white font-black text-sm mb-3 uppercase tracking-widest">
                 Hurricane Season & Safety
               </h3>
-              <p className="text-slate-300 text-sm leading-relaxed mb-3">
+              <p className="text-slate-500 text-sm leading-relaxed mb-3">
                 <strong>Critical fact: Panama is OUTSIDE the Atlantic hurricane belt.</strong> The country sits south
                 and west of the zone where hurricanes typically develop. This is one of Panama's greatest advantages —
                 you get tropical weather without tropical storm risk. The rainy season brings heavy showers, not storms.
               </p>
             </div>
 
-            <div className="border-t border-white/5 pt-6">
+            <div className="border-t border-brand-100 pt-6">
               <h3 className="text-white font-black text-sm mb-3 uppercase tracking-widest">
                 UV Protection Year-Round
               </h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <p className="text-slate-500 text-sm leading-relaxed">
                 Panama sits close to the equator, meaning UV index is very high year-round — even on cloudy/rainy days.
                 Use SPF 50+ sunscreen daily, reapply every 2 hours if swimming, and wear a hat or UV-blocking beach
                 shirt. Sunburn happens fast, and the sun intensity is deceptive.
@@ -505,14 +505,14 @@ export default function PanamaWeatherGuide() {
         </div>
 
         {/* Conversion insight */}
-        <div className="mb-14 glass-card border-brand-GOLD/20 p-8 rounded-2xl reveal-on-scroll">
+        <div className="mb-14 card-light border-brand-GOLD/20 p-8 rounded-2xl reveal-on-scroll">
           <div className="flex items-start gap-4">
             <Sun size={24} className="text-brand-GOLD flex-shrink-0 mt-1" />
             <div>
               <h3 className="text-white font-black text-sm mb-2 uppercase tracking-widest">
                 Weather: Panama's Secret Weapon
               </h3>
-              <p className="text-slate-300 text-sm leading-relaxed">
+              <p className="text-slate-500 text-sm leading-relaxed">
                 Expats who visit during the dry season (December–April) often fall in love with the climate and start
                 looking at real estate within weeks. The combination of guaranteed sunshine, warm ocean water, and no
                 extreme seasons makes Panama incredibly attractive to those escaping cold winters. If you're considering
@@ -535,7 +535,7 @@ export default function PanamaWeatherGuide() {
               <Link
                 key={i}
                 href={link.href}
-                className="flex items-center justify-between glass-card p-4 rounded-xl border-white/5 hover:border-brand-GOLD/30 transition-all group"
+                className="flex items-center justify-between card-light p-4 rounded-xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
               >
                 <span className="text-white text-xs font-bold">{link.label}</span>
                 <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />

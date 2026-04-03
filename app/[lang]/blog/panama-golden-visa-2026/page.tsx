@@ -51,7 +51,7 @@ export default async function PanamaGoldenVisa2026({ params }: { params: Promise
   return (
     <div className="pt-24 min-h-screen bg-white text-slate-900">
       {/* Hero */}
-      <section className="bg-brand-900 py-32 relative overflow-hidden">
+      <section className="bg-brand-50 py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <img
             src="https://images.unsplash.com/photo-1594818379496-da1e345b0ded?w=1600&q=80"
@@ -63,7 +63,7 @@ export default async function PanamaGoldenVisa2026({ params }: { params: Promise
           <span className="text-[10px] font-bold text-brand-GOLD uppercase tracking-[0.4em] mb-4 block">
             INVESTMENT RESIDENCY · UPDATED 2026
           </span>
-          <h1 className="font-heading text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+          <h1 className="font-heading text-4xl md:text-6xl font-bold text-brand-950 mb-8 leading-tight">
             The Panama Golden Visa: Your 2026 Investment Residency Guide
           </h1>
           <p className="text-xl text-brand-300 leading-relaxed font-medium max-w-2xl mx-auto">
@@ -101,7 +101,7 @@ export default async function PanamaGoldenVisa2026({ params }: { params: Promise
                 return (
                   <div key={i} className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col gap-4">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 rounded-xl bg-brand-900 flex items-center justify-center flex-shrink-0">
+                      <div className="w-10 h-10 rounded-xl bg-brand-50 flex items-center justify-center flex-shrink-0">
                         <Icon size={18} className="text-brand-GOLD" />
                       </div>
                       <span className="font-bold text-slate-800 text-sm uppercase tracking-wide">{tier.label}</span>
@@ -112,7 +112,7 @@ export default async function PanamaGoldenVisa2026({ params }: { params: Promise
                 );
               })}
             </div>
-            <p className="text-center text-slate-400 text-xs mt-8">
+            <p className="text-center text-slate-500 text-xs mt-8">
               Requirements governed by Law 54 of 1998 and subsequent executive decrees. Consult a licensed Panamanian immigration attorney for your case.
             </p>
           </div>
@@ -150,7 +150,7 @@ export default async function PanamaGoldenVisa2026({ params }: { params: Promise
           </p>
 
           {/* CTA */}
-          <div className="bg-brand-950 p-10 rounded-3xl mt-16 not-prose text-center border-t-4 border-brand-GOLD">
+          <div className="bg-white p-10 rounded-3xl mt-16 not-prose text-center border-t-4 border-brand-GOLD">
             <h3 className="text-white font-heading text-3xl font-bold mb-4 uppercase italic tracking-tighter">
               Begin Your Panama Residency Journey
             </h3>

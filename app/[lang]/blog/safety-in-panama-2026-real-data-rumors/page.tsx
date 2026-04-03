@@ -84,25 +84,25 @@ const safeNeighborhoods = [
 
 export default function SafetyInPanama2026() {
   return (
-    <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+    <article className="bg-white min-h-screen pt-28 pb-20">
       <div className="max-w-4xl mx-auto px-4">
 
         {/* Header */}
         <div className="mb-12 reveal-on-scroll">
-          <span className="text-brand-GOLD font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
+          <span className="text-brand-TEAL font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
             Safety Guide · Expat Reality · 2026
           </span>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6 tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-brand-950 mb-6 tracking-tight leading-tight">
             Is Panama City Safe in 2026?
           </h1>
-          <p className="text-slate-400 text-lg font-medium leading-relaxed border-l-2 border-brand-GOLD/30 pl-5">
+          <p className="text-slate-500 text-lg font-medium leading-relaxed border-l-2 border-brand-GOLD/30 pl-5">
             Panama's reputation for crime is overblown. With real 2026 data, neighborhood intelligence, and practical safety strategies, thousands of expats live safely in Panama City. Here's what you need to know before moving.
           </p>
         </div>
 
         {/* The Real Numbers section */}
-        <div className="mb-12 glass-card p-8 rounded-2xl border-white/5 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-8 flex items-center gap-3">
+        <div className="mb-12 card-light p-8 rounded-2xl border-brand-100 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-8 flex items-center gap-3">
             <TrendingUp size={28} className="text-brand-GOLD" />
             The Real Numbers: Panama vs. USA Crime Stats 2026
           </h2>
@@ -111,40 +111,40 @@ export default function SafetyInPanama2026() {
             <div className="border-l-2 border-brand-GOLD pl-4">
               <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-2">Panama City (Safe Neighborhoods)</p>
               <p className="text-white text-2xl font-black mb-1">12.4 homicides/100K</p>
-              <p className="text-slate-400 text-sm">Data: INEC 2026, excluding Colón & Darién</p>
+              <p className="text-slate-500 text-sm">Data: INEC 2026, excluding Colón & Darién</p>
             </div>
             <div className="border-l-2 border-brand-GOLD pl-4">
               <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-2">USA Average</p>
               <p className="text-white text-2xl font-black mb-1">6.2 homicides/100K</p>
-              <p className="text-slate-400 text-sm">Data: FBI Uniform Crime Report 2025</p>
+              <p className="text-slate-500 text-sm">Data: FBI Uniform Crime Report 2025</p>
             </div>
             <div className="border-l-2 border-brand-GOLD pl-4">
               <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-2">Punta Pacifica / Costa del Este</p>
               <p className="text-white text-2xl font-black mb-1">0.8–1.2 homicides/100K</p>
-              <p className="text-slate-400 text-sm">Data: Gated communities, 2024–2026 police records</p>
+              <p className="text-slate-500 text-sm">Data: Gated communities, 2024–2026 police records</p>
             </div>
             <div className="border-l-2 border-brand-GOLD pl-4">
               <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-2">Chicago, USA (High-Crime Area)</p>
               <p className="text-white text-2xl font-black mb-1">24.1 homicides/100K</p>
-              <p className="text-slate-400 text-sm">Data: CPD Annual Report 2025</p>
+              <p className="text-slate-500 text-sm">Data: CPD Annual Report 2025</p>
             </div>
           </div>
 
-          <p className="text-slate-400 text-sm leading-relaxed">
+          <p className="text-slate-500 text-sm leading-relaxed">
             Reality check: Panama City's overall rate is higher than the US average, but the safest neighborhoods in Panama (Punta Pacifica, Costa del Este) have crime rates comparable to affluent suburbs in major US cities. The issue is geography — unsafe neighborhoods exist in specific zones that expats naturally avoid. When you choose the right area, Panama is as safe as any major US city.
           </p>
         </div>
 
         {/* Safest Neighborhoods for Expats in 2026 */}
         <div className="mb-12">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-8 flex items-center gap-3">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-8 flex items-center gap-3">
             <MapPin size={28} className="text-brand-GOLD" />
             Safest Neighborhoods for Expats in 2026
           </h2>
 
           <div className="space-y-8">
             {safeNeighborhoods.map((neighborhood, i) => (
-              <div key={i} className="glass-card rounded-2xl border-white/5 overflow-hidden reveal-on-scroll">
+              <div key={i} className="card-light rounded-2xl border-brand-100 overflow-hidden reveal-on-scroll">
                 <div className="p-7 md:p-8">
                   {/* Header */}
                   <div className="flex flex-wrap items-start justify-between gap-4 mb-5">
@@ -153,7 +153,7 @@ export default function SafetyInPanama2026() {
                         <Shield size={14} className="text-brand-GOLD" />
                         <span className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest">{neighborhood.tagline}</span>
                       </div>
-                      <h3 className="text-2xl md:text-3xl font-heading font-black text-white tracking-tight">{neighborhood.name}</h3>
+                      <h3 className="text-2xl md:text-3xl font-heading font-black text-brand-950 tracking-tight">{neighborhood.name}</h3>
                       <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mt-1">{neighborhood.tag}</p>
                     </div>
                     <div className="flex gap-4">
@@ -169,12 +169,12 @@ export default function SafetyInPanama2026() {
                   </div>
 
                   {/* Description */}
-                  <p className="text-slate-400 text-sm leading-relaxed mb-6">{neighborhood.description}</p>
+                  <p className="text-slate-500 text-sm leading-relaxed mb-6">{neighborhood.description}</p>
 
                   {/* Safety Features */}
                   <ul className="space-y-2">
                     {neighborhood.safetyFeatures.map((feature, j) => (
-                      <li key={j} className="flex items-start gap-3 text-sm text-slate-300">
+                      <li key={j} className="flex items-start gap-3 text-sm text-slate-500">
                         <span className="text-brand-GOLD font-black mt-0.5 flex-shrink-0">✓</span>
                         {feature}
                       </li>
@@ -182,9 +182,9 @@ export default function SafetyInPanama2026() {
                   </ul>
 
                   {/* Price Range */}
-                  <div className="mt-5 pt-5 border-t border-white/5">
+                  <div className="mt-5 pt-5 border-t border-brand-100">
                     <span className="text-slate-500 text-[10px] font-black uppercase tracking-widest">Price Range: </span>
-                    <span className="text-slate-400 text-[10px] font-bold">{neighborhood.priceRange}</span>
+                    <span className="text-slate-500 text-[10px] font-bold">{neighborhood.priceRange}</span>
                   </div>
                 </div>
               </div>
@@ -193,8 +193,8 @@ export default function SafetyInPanama2026() {
         </div>
 
         {/* Practical Safety Tips */}
-        <div className="mb-12 glass-card p-8 rounded-2xl border-brand-GOLD/20 reveal-on-scroll">
-          <h2 className="text-2xl md:text-3xl font-heading font-black text-white mb-6">Practical Safety Tips for Expats in Panama</h2>
+        <div className="mb-12 card-light p-8 rounded-2xl border-brand-GOLD/20 reveal-on-scroll">
+          <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 mb-6">Practical Safety Tips for Expats in Panama</h2>
           <ul className="space-y-3">
             {[
               'Avoid displaying expensive jewelry, watches, or electronics in public.',
@@ -206,7 +206,7 @@ export default function SafetyInPanama2026() {
               'Use ATMs in malls and supermarkets, never on the street.',
               'Vary your routine and avoid predictable patterns if living in less safe areas.',
             ].map((tip, i) => (
-              <li key={i} className="flex items-start gap-3 text-sm text-slate-300">
+              <li key={i} className="flex items-start gap-3 text-sm text-slate-500">
                 <span className="text-brand-GOLD font-black mt-0.5 flex-shrink-0">•</span>
                 {tip}
               </li>
@@ -224,7 +224,7 @@ export default function SafetyInPanama2026() {
             <Link
               key={i}
               href={link.href}
-              className="flex items-center justify-between glass-card p-4 rounded-xl border-white/5 hover:border-brand-GOLD/30 transition-all group"
+              className="flex items-center justify-between card-light p-4 rounded-xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
               <span className="text-white text-xs font-bold">{link.label}</span>
               <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
@@ -233,9 +233,9 @@ export default function SafetyInPanama2026() {
         </div>
 
         {/* CTA */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-brand-GOLD/20 text-center reveal-on-scroll">
-          <h3 className="text-xl font-heading font-black text-white mb-3 tracking-tight">Ready to Move to a Safe Neighborhood in Panama?</h3>
-          <p className="text-slate-400 text-sm mb-6 leading-relaxed">
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-GOLD/20 text-center reveal-on-scroll">
+          <h3 className="text-xl font-heading font-black text-brand-950 mb-3 tracking-tight">Ready to Move to a Safe Neighborhood in Panama?</h3>
+          <p className="text-slate-500 text-sm mb-6 leading-relaxed">
             Our Panama advisors have personally lived and invested in the safest neighborhoods. Book a free 30-minute call to discuss safety, neighborhoods that match your lifestyle, and available properties in Punta Pacifica, Costa del Este, or El Cangrejo.
           </p>
           <Link

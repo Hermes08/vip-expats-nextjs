@@ -42,7 +42,7 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
             <div className="max-w-3xl mx-auto px-4 py-12">
                 <Link
                     href={`/${lang}/blog`}
-                    className="inline-flex items-center gap-2 text-slate-400 hover:text-brand-TEAL font-bold uppercase tracking-widest text-[10px] mb-8 transition-colors"
+                    className="inline-flex items-center gap-2 text-slate-500 hover:text-brand-TEAL font-bold uppercase tracking-widest text-[10px] mb-8 transition-colors"
                 >
                     <ArrowLeft size={12} /> {lang === 'es' ? 'Volver al Blog' : 'Back to Blog'}
                 </Link>
@@ -56,7 +56,7 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
                 </h1>
 
                 <div className="flex items-center justify-between border-y border-brand-100 py-4 mb-10">
-                    <div className="flex items-center gap-5 text-slate-400 text-[11px] font-bold uppercase tracking-widest">
+                    <div className="flex items-center gap-5 text-slate-500 text-[11px] font-bold uppercase tracking-widest">
                         <div className="flex items-center gap-2">
                             <Calendar size={13} className="text-brand-TEAL" />
                             {post.date}
@@ -66,7 +66,7 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
                             Panama Real Estate Advisor
                         </div>
                     </div>
-                    <button className="text-slate-300 hover:text-brand-TEAL transition-colors">
+                    <button className="text-slate-500 hover:text-brand-TEAL transition-colors">
                         <Share2 size={16} />
                     </button>
                 </div>

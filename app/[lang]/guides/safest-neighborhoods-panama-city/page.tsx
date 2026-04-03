@@ -114,7 +114,7 @@ const SafestNeighborhoodsPanamaCityPage = () => {
   };
 
   return (
-    <div className="bg-brand-950 min-h-screen pt-24 pb-40 overflow-hidden">
+    <div className="bg-white min-h-screen pt-24 pb-40 overflow-hidden">
       <div className="fixed inset-0 pointer-events-none z-0">
         <div className="absolute top-1/2 left-1/2 w-[1200px] h-[1200px] bg-brand-GOLD/5 rounded-full blur-[180px] -translate-x-1/2 -translate-y-1/2" />
       </div>
@@ -124,11 +124,11 @@ const SafestNeighborhoodsPanamaCityPage = () => {
         <section className="py-20 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block">{content.badge}</span>
-            <h1 className="text-5xl md:text-8xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-[0.85]">
+            <h1 className="text-5xl md:text-8xl font-heading font-black text-brand-950 mb-10 tracking-tighter uppercase italic leading-[0.85]">
               {isEn ? 'Safest Neighborhoods' : 'Vecindarios Más Seguros'} <br />
               <span className="text-brand-GOLD">{isEn ? 'Panama City' : 'Ciudad de Panamá'}</span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-400 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic">{content.subtitle}</p>
+            <p className="text-xl md:text-2xl text-slate-500 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic">{content.subtitle}</p>
             <div className="flex flex-wrap justify-center gap-8">
               <Magnetic strength={0.3}>
                 <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-gold px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px]">
@@ -136,7 +136,7 @@ const SafestNeighborhoodsPanamaCityPage = () => {
                 </Link>
               </Magnetic>
               <Magnetic strength={0.3}>
-                <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10">
+                <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-navy px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px] bg-white/5 backdrop-blur-3xl border border-brand-100">
                   {isEn ? 'Neighborhood Tour' : 'Tour de Vecindarios'}
                 </Link>
               </Magnetic>
@@ -145,30 +145,30 @@ const SafestNeighborhoodsPanamaCityPage = () => {
         </section>
 
         {/* INTRO */}
-        <section className="py-24 border-t border-white/5 max-w-4xl mx-auto">
-          <p className="text-xl text-slate-300 leading-relaxed font-medium">{content.intro}</p>
+        <section className="py-24 border-t border-brand-100 max-w-4xl mx-auto">
+          <p className="text-xl text-slate-600 leading-relaxed font-medium">{content.intro}</p>
         </section>
 
         {/* NEIGHBORHOODS */}
-        <section className="py-24 border-t border-white/5">
+        <section className="py-24 border-t border-brand-100">
           <div className="text-center mb-20">
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">Ranked by Safety</span>
-            <h2 className="text-5xl md:text-7xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.8]">{content.neighborhoodsTitle}</h2>
+            <h2 className="text-5xl md:text-7xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.8]">{content.neighborhoodsTitle}</h2>
           </div>
           <div className="space-y-6">
             {content.neighborhoods.map((n, i) => (
-              <div key={i} className="glass-card p-10 md:p-12 rounded-3xl border-white/5 hover:border-brand-GOLD/20 transition-all grid md:grid-cols-[auto_1fr_auto] gap-8 items-start">
+              <div key={i} className="card-light p-10 md:p-12 rounded-3xl border-brand-100 hover:border-brand-GOLD/20 transition-all grid md:grid-cols-[auto_1fr_auto] gap-8 items-start">
                 <span className="text-6xl font-black text-brand-GOLD/20">{n.rank}</span>
                 <div>
                   <div className="flex items-center gap-4 mb-3">
                     <h3 className="text-2xl font-black text-white uppercase italic tracking-tighter">{n.name}</h3>
                     <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD border border-brand-GOLD/30 px-3 py-1 rounded-full">{n.safety}</span>
                   </div>
-                  <p className="text-slate-400 font-medium leading-relaxed">{n.desc}</p>
+                  <p className="text-slate-500 font-medium leading-relaxed">{n.desc}</p>
                 </div>
                 <div className="text-right">
                   <p className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-600 mb-1">{isEn ? 'Best For' : 'Ideal Para'}</p>
-                  <p className="text-slate-400 font-medium text-sm">{n.forWho}</p>
+                  <p className="text-slate-500 font-medium text-sm">{n.forWho}</p>
                 </div>
               </div>
             ))}
@@ -176,32 +176,32 @@ const SafestNeighborhoodsPanamaCityPage = () => {
         </section>
 
         {/* AREAS TO AVOID */}
-        <section className="py-24 border-t border-white/5 max-w-4xl mx-auto">
+        <section className="py-24 border-t border-brand-100 max-w-4xl mx-auto">
           <div className="mb-10">
             <AlertCircle className="text-amber-400 mb-6" size={36} />
-            <h2 className="text-4xl md:text-5xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.85] mb-10">{content.avoidTitle}</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.85] mb-10">{content.avoidTitle}</h2>
           </div>
           <div className="space-y-5">
             {content.avoidAreas.map((area, i) => (
               <div key={i} className="flex items-start gap-5">
                 <AlertCircle className="text-amber-400 mt-1 flex-shrink-0" size={20} />
-                <p className="text-slate-300 font-medium leading-relaxed">{area}</p>
+                <p className="text-slate-500 font-medium leading-relaxed">{area}</p>
               </div>
             ))}
           </div>
         </section>
 
         {/* SAFETY TIPS */}
-        <section className="py-24 border-t border-white/5 max-w-4xl mx-auto">
+        <section className="py-24 border-t border-brand-100 max-w-4xl mx-auto">
           <div className="mb-12">
             <Shield className="text-brand-GOLD mb-6" size={36} />
-            <h2 className="text-4xl md:text-5xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.85] mb-10">{content.tipsTitle}</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.85] mb-10">{content.tipsTitle}</h2>
           </div>
           <div className="space-y-5">
             {content.tips.map((tip, i) => (
               <div key={i} className="flex items-start gap-5">
                 <CheckCircle className="text-brand-GOLD mt-1 flex-shrink-0" size={20} />
-                <p className="text-slate-300 font-medium leading-relaxed">{tip}</p>
+                <p className="text-slate-500 font-medium leading-relaxed">{tip}</p>
               </div>
             ))}
           </div>
@@ -219,7 +219,7 @@ const SafestNeighborhoodsPanamaCityPage = () => {
               </Link>
             </Magnetic>
             <Magnetic strength={0.4}>
-              <Link href={`/${lang}/guides/panama-city-condos-for-sale`} className="btn-3d btn-3d-gold bg-brand-950 text-white px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs">
+              <Link href={`/${lang}/guides/panama-city-condos-for-sale`} className="btn-3d btn-3d-gold bg-white text-white px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs">
                 {isEn ? 'Condo Buyer Guide' : 'Guía de Compra de Condos'}
               </Link>
             </Magnetic>

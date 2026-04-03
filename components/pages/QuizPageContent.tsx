@@ -92,7 +92,7 @@ const QuizPageContent: React.FC = () => {
                         <p className="text-slate-500 text-lg">Based on your lifestyle and investment goals, we've identified these top Panama locations.</p>
                     </div>
 
-                    <div className="bg-brand-900 rounded-[3rem] overflow-hidden shadow-2xl flex flex-col md:flex-row mb-12 border-4 border-brand-GOLD">
+                    <div className="bg-brand-50 rounded-[3rem] overflow-hidden shadow-2xl flex flex-col md:flex-row mb-12 border-4 border-brand-GOLD">
                         <div className="md:w-1/2 h-80 md:h-auto overflow-hidden">
                             <img src={recommendations[0]?.images[0]} className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" alt="" />
                         </div>
@@ -111,7 +111,7 @@ const QuizPageContent: React.FC = () => {
 
                     <div className="grid md:grid-cols-3 gap-8">
                         {recommendations.slice(1, 4).map((p, idx) => (
-                            <div key={idx} className="glass-card rounded-3xl overflow-hidden border border-brand-100 flex flex-col hover:shadow-2xl transition-all">
+                            <div key={idx} className="card-light rounded-3xl overflow-hidden border border-brand-100 flex flex-col hover:shadow-2xl transition-all">
                                 <div className="h-48 overflow-hidden">
                                     <img src={p.images[0]} className="w-full h-full object-cover" alt="" />
                                 </div>
@@ -132,7 +132,7 @@ const QuizPageContent: React.FC = () => {
                     <div className="mt-20 text-center p-12 bg-brand-50 rounded-[2.5rem] border border-brand-100">
                         <h3 className="text-2xl font-bold text-white mb-4">Want a guided experience?</h3>
                         <p className="text-slate-500 mb-8 max-w-xl mx-auto">Our advisors are ready to walk you through these neighborhoods in person or via video call.</p>
-                        <button onClick={() => router.push('/contacto')} className="bg-brand-900 text-white px-12 py-5 rounded-full font-black uppercase tracking-widest text-xs shadow-2xl hover:bg-brand-GOLD hover:text-white transition-all">Schedule Discovery Call</button>
+                        <button onClick={() => router.push('/contacto')} className="bg-brand-50 text-white px-12 py-5 rounded-full font-black uppercase tracking-widest text-xs shadow-2xl hover:bg-brand-GOLD hover:text-white transition-all">Schedule Discovery Call</button>
                     </div>
                 </div>
             </div>
@@ -144,7 +144,7 @@ const QuizPageContent: React.FC = () => {
             <div className="mb-4 flex items-center gap-2 text-brand-GOLD font-black uppercase text-[10px] tracking-widest">
                 <Sparkles size={12} /> Step {step} of {totalSteps}
             </div>
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-8 leading-tight">{title}</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-brand-950 mb-8 leading-tight">{title}</h2>
             <div className="space-y-4">
                 {children}
             </div>
@@ -306,11 +306,11 @@ const QuizPageContent: React.FC = () => {
                             <QuestionFrame title="Awesome! Almost done. To get your results, please share your name">
                                 <div className="grid grid-cols-2 gap-4">
                                     <div className="space-y-2">
-                                        <label className="text-[10px] font-black uppercase text-slate-400">First Name</label>
+                                        <label className="text-[10px] font-black uppercase text-slate-500">First Name</label>
                                         <input required className="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-xl focus:border-brand-GOLD outline-none font-bold text-slate-700" value={formData.firstName} onChange={e => setFormData({ ...formData, firstName: e.target.value })} />
                                     </div>
                                     <div className="space-y-2">
-                                        <label className="text-[10px] font-black uppercase text-slate-400">Last Name</label>
+                                        <label className="text-[10px] font-black uppercase text-slate-500">Last Name</label>
                                         <input required className="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-xl focus:border-brand-GOLD outline-none font-bold text-slate-700" value={formData.lastName} onChange={e => setFormData({ ...formData, lastName: e.target.value })} />
                                     </div>
                                 </div>
@@ -321,25 +321,25 @@ const QuizPageContent: React.FC = () => {
                             <QuestionFrame title="And finally, your email address.">
                                 <div className="space-y-6">
                                     <div className="space-y-2">
-                                        <label className="text-[10px] font-black uppercase text-slate-400">Email Address</label>
+                                        <label className="text-[10px] font-black uppercase text-slate-500">Email Address</label>
                                         <input required type="email" className="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-xl focus:border-brand-GOLD outline-none font-bold text-slate-700" value={formData.email} onChange={e => setFormData({ ...formData, email: e.target.value })} />
                                     </div>
                                     <label className="flex items-start gap-4 cursor-pointer group">
                                         <input type="checkbox" className="mt-1 w-5 h-5 text-brand-GOLD rounded" checked={formData.consent} onChange={e => setFormData({ ...formData, consent: e.target.checked })} />
-                                        <span className="text-xs text-slate-400 leading-relaxed group-hover:text-slate-600 transition-colors">
+                                        <span className="text-xs text-slate-500 leading-relaxed group-hover:text-slate-600 transition-colors">
                                             I agree to receive other communications from Panama Real Estate Sale. You may unsubscribe at any time.
                                         </span>
                                     </label>
-                                    <p className="text-[9px] text-slate-300 font-bold uppercase tracking-widest leading-loose">By clicking submit, you consent to allow Panama Real Estate Sale to store and process your personal information.</p>
+                                    <p className="text-[9px] text-slate-500 font-bold uppercase tracking-widest leading-loose">By clicking submit, you consent to allow Panama Real Estate Sale to store and process your personal information.</p>
                                 </div>
                             </QuestionFrame>
                         )}
 
                         <div className="pt-8 border-t border-slate-100 flex justify-between gap-4">
-                            <button type="button" onClick={handlePrev} disabled={step === 1} className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold uppercase text-[10px] tracking-widest transition-all ${step === 1 ? 'opacity-0 invisible' : 'bg-brand-50 text-slate-400 hover:bg-brand-800'}`}>
+                            <button type="button" onClick={handlePrev} disabled={step === 1} className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold uppercase text-[10px] tracking-widest transition-all ${step === 1 ? 'opacity-0 invisible' : 'bg-brand-50 text-slate-500 hover:bg-brand-100'}`}>
                                 <ChevronLeft size={16} /> Previous
                             </button>
-                            <button type="submit" className="flex items-center gap-2 bg-brand-900 text-white px-10 py-4 rounded-xl font-black uppercase text-[10px] tracking-[0.2em] hover:bg-brand-GOLD hover:text-white transition-all shadow-xl">
+                            <button type="submit" className="flex items-center gap-2 bg-brand-50 text-white px-10 py-4 rounded-xl font-black uppercase text-[10px] tracking-[0.2em] hover:bg-brand-GOLD hover:text-white transition-all shadow-xl">
                                 {step === totalSteps ? 'Reveal Results' : 'Continue'} <ChevronRight size={16} />
                             </button>
                         </div>

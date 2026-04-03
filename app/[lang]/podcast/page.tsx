@@ -44,7 +44,7 @@ export default async function PodcastHub({ params }: Props) {
     const isEs = lang === 'es';
 
     return (
-        <div className="bg-brand-950 min-h-screen pt-24 pb-20">
+        <div className="bg-white min-h-screen pt-24 pb-20">
             <ZeroGravityWrapper />
             <BreadcrumbSchema
                 items={[
@@ -66,7 +66,7 @@ export default async function PodcastHub({ params }: Props) {
                     <span className="text-brand-GOLD font-black uppercase tracking-[0.2em] text-sm mb-4 block">
                         {isEs ? 'La Voz de los Bienes Raíces en Panamá' : 'The Voice of Panama Real Estate'}
                     </span>
-                    <h1 className="text-4xl md:text-6xl font-heading font-black text-white mb-6">
+                    <h1 className="text-4xl md:text-6xl font-heading font-black text-brand-950 mb-6">
                         Panama Real Estate Sale <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-GOLD to-yellow-500">Podcast</span>
                     </h1>
                     <p className="text-xl text-neutral-300 leading-relaxed">
@@ -87,7 +87,7 @@ export default async function PodcastHub({ params }: Props) {
                 </div>
 
                 <div className="mt-20 text-center">
-                    <div className="inline-block p-8 rounded-3xl bg-white/5 backdrop-blur-lg border border-white/10 max-w-2xl">
+                    <div className="inline-block p-8 rounded-3xl bg-white/5 backdrop-blur-lg border border-brand-100 max-w-2xl">
                         <h3 className="text-2xl font-bold text-white mb-4">
                             {isEs ? '¿Quiere ser un invitado?' : 'Want to be a guest?'}
                         </h3>

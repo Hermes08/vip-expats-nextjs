@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, className = '' }) =>
             href={`/${lang}/proyectos/${project.slug}`}
             className={`block group ${className}`}
         >
-            <TiltCard className="rounded-[2.5rem] overflow-hidden bg-brand-900 border border-white/5 shadow-2xl">
+            <TiltCard className="rounded-[2.5rem] overflow-hidden bg-brand-50 border border-brand-100 shadow-2xl">
                 {/* Image Container */}
                 <div className="relative aspect-[16/11] overflow-hidden">
                     <Image
@@ -72,24 +72,24 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, className = '' }) =>
                 </div>
 
                 {/* Content */}
-                <div className="p-10 relative z-20 bg-brand-900/95 backdrop-blur-sm flex flex-col flex-grow">
+                <div className="p-10 relative z-20 bg-brand-50/95 backdrop-blur-sm flex flex-col flex-grow">
                     <div className="flex items-center gap-2 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] mb-4">
                         <MapPin size={12} />
                         {project.location[lang] || project.location.en}
                     </div>
-                    <h3 className="text-xl md:text-2xl font-heading font-black text-white mb-4 group-hover:text-brand-GOLD transition-colors uppercase tracking-tighter italic">
+                    <h3 className="text-xl md:text-2xl font-heading font-black text-brand-950 mb-4 group-hover:text-brand-GOLD transition-colors uppercase tracking-tighter italic">
                         {project.name[lang] || project.name.en}
                     </h3>
 
                     {/* Specs Grid */}
-                    <div className="flex items-center justify-between mb-8 pb-8 border-b border-white/5">
+                    <div className="flex items-center justify-between mb-8 pb-8 border-b border-brand-100">
                         <div className="flex flex-col gap-1">
-                            <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{labels.beds}</span>
+                            <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest">{labels.beds}</span>
                             <div className="flex items-center gap-2 text-gray-200 font-black italic"><BedDouble size={14} className="text-brand-GOLD" /> {project.beds}</div>
                         </div>
                         <div className="w-px h-6 bg-white/10"></div>
                         <div className="flex flex-col gap-1">
-                            <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest">{labels.baths}</span>
+                            <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest">{labels.baths}</span>
                             <div className="flex items-center gap-2 text-gray-200 font-black italic"><Bath size={14} className="text-brand-GOLD" /> {project.baths}</div>
                         </div>
                         <div className="w-px h-6 bg-white/10"></div>
@@ -99,7 +99,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, className = '' }) =>
                         </div>
                     </div>
 
-                    <p className="text-slate-400 text-sm font-medium leading-relaxed mb-10 line-clamp-2 italic">
+                    <p className="text-slate-500 text-sm font-medium leading-relaxed mb-10 line-clamp-2 italic">
                         {project.description[lang] || project.description.en}
                     </p>
 

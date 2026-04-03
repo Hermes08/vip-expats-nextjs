@@ -56,14 +56,14 @@ const testimonials = [
 
 export default function TestimonialsSection() {
   return (
-    <section className="py-14 bg-black border-t border-white/5 relative overflow-hidden">
+    <section className="py-14 bg-brand-50 border-t border-brand-100 relative overflow-hidden">
       {/* Subtle gold glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-brand-GOLD/5 rounded-full blur-[80px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-10 reveal-on-scroll">
-          <span className="text-brand-GOLD font-black uppercase tracking-[0.4em] text-[10px] mb-2 block">Client Stories</span>
-          <h2 className="text-2xl md:text-4xl font-heading font-black text-white tracking-tight">
+          <span className="text-brand-TEAL font-black uppercase tracking-[0.4em] text-[10px] mb-2 block">Client Stories</span>
+          <h2 className="text-2xl md:text-4xl font-heading font-black text-brand-950 tracking-tight">
             Real People. <span className="text-brand-GOLD">Real Moves.</span>
           </h2>
         </div>
@@ -72,7 +72,7 @@ export default function TestimonialsSection() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className={`glass-card p-7 rounded-2xl border-white/5 hover:border-brand-GOLD/30 transition-all flex flex-col reveal-on-scroll stagger-${i + 1}`}
+              className={`card-light p-7 rounded-2xl border-brand-100 hover:border-brand-GOLD/30 transition-all flex flex-col reveal-on-scroll stagger-${i + 1}`}
             >
               {/* Quote icon + stars */}
               <div className="flex items-start justify-between mb-5">
@@ -85,12 +85,12 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Quote */}
-              <p className="text-slate-300 text-sm font-medium leading-relaxed flex-1 mb-6 italic">
+              <p className="text-slate-500 text-sm font-medium leading-relaxed flex-1 mb-6 italic">
                 &ldquo;{t.quote}&rdquo;
               </p>
 
               {/* Person */}
-              <div className="border-t border-white/5 pt-5">
+              <div className="border-t border-brand-100 pt-5">
                 <div className="flex items-center justify-between">
                   <div>
                     <p className="text-white font-black text-sm tracking-tight">{t.name}</p>

@@ -97,7 +97,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
     return (
         <article className="bg-white min-h-screen pt-28 pb-20">
             {/* Hero */}
-            <section className="bg-brand-900 py-28 relative overflow-hidden">
+            <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <img
                         src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600&q=80"
@@ -109,7 +109,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                     <span className="text-[10px] font-bold text-brand-GOLD uppercase tracking-[0.4em] mb-4 block">
                         REAL ESTATE GUIDE · 2026 EDITION
                     </span>
-                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-brand-950 mb-8 leading-tight">
                         Coronado Real Estate:<br />The Complete Buyer&apos;s Guide
                     </h1>
                     <p className="text-xl text-brand-300 leading-relaxed font-medium max-w-2xl mx-auto">
@@ -125,7 +125,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                     <p className="text-2xl font-semibold text-white border-l-4 border-brand-GOLD pl-6 leading-relaxed">
                         Coronado is the undisputed capital of expat beach living in Panama. Located 80 km west of Panama City on the Pacific coast, it combines the infrastructure of a modern resort town with an established international community that has been growing for over 30 years.
                     </p>
-                    <p className="text-slate-400 mt-6 text-lg leading-relaxed">
+                    <p className="text-slate-500 mt-6 text-lg leading-relaxed">
                         This is not a speculative emerging market. Coronado is Panama&apos;s most proven expat destination — fully built out, deeply liquid, and consistently appreciating. The question is not whether it is a good investment. The question is whether it is the right investment for your specific goals.
                     </p>
 
@@ -137,9 +137,9 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                             { stat: '5,000+', label: 'Expats already living here' },
                             { stat: '90 min', label: 'Drive to Panama City airport' },
                         ].map((s, i) => (
-                            <div key={i} className="bg-brand-900 rounded-2xl p-5 text-center border border-brand-100">
+                            <div key={i} className="bg-brand-50 rounded-2xl p-5 text-center border border-brand-100">
                                 <div className="text-2xl font-black text-brand-GOLD mb-1">{s.stat}</div>
-                                <div className="text-slate-400 text-xs leading-relaxed">{s.label}</div>
+                                <div className="text-slate-500 text-xs leading-relaxed">{s.label}</div>
                             </div>
                         ))}
                     </div>
@@ -153,9 +153,9 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                     </h2>
                     <div className="space-y-5">
                         {propertyTypes.map((p, i) => (
-                            <div key={i} className="glass-card rounded-2xl p-7 border border-brand-100">
+                            <div key={i} className="card-light rounded-2xl p-7 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-4 mb-3">
-                                    <h3 className="text-xl font-heading font-black text-white">{p.type}</h3>
+                                    <h3 className="text-xl font-heading font-black text-brand-950">{p.type}</h3>
                                     <div className="flex gap-4 text-right">
                                         <div>
                                             <div className="text-white font-black text-sm">{p.priceRange}</div>
@@ -167,7 +167,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                                         </div>
                                     </div>
                                 </div>
-                                <p className="text-slate-400 text-sm leading-relaxed mb-3">{p.desc}</p>
+                                <p className="text-slate-500 text-sm leading-relaxed mb-3">{p.desc}</p>
                                 <div className="flex items-center gap-2">
                                     <span className="text-brand-GOLD font-bold text-xs uppercase tracking-widest">Best for:</span>
                                     <span className="text-slate-500 text-xs">{p.best}</span>
@@ -185,12 +185,12 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                     </h2>
                     <div className="grid sm:grid-cols-2 gap-5">
                         {neighborhoods.map((n, i) => (
-                            <div key={i} className="glass-card rounded-2xl p-6 border border-brand-100">
+                            <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="flex justify-between items-start mb-3">
                                     <h3 className="text-white font-heading font-bold text-lg">{n.name}</h3>
                                     <span className="text-brand-GOLD font-black text-sm">{n.priceIndex}</span>
                                 </div>
-                                <p className="text-slate-400 text-xs leading-relaxed">{n.desc}</p>
+                                <p className="text-slate-500 text-xs leading-relaxed">{n.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -204,11 +204,11 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                     </h2>
                     <div className="grid sm:grid-cols-2 gap-4">
                         {whyInvest.map((item, i) => (
-                            <div key={i} className="flex items-start gap-3 glass-card rounded-xl p-5 border border-brand-100">
+                            <div key={i} className="flex items-start gap-3 card-light rounded-xl p-5 border border-brand-100">
                                 <CheckCircle size={16} className="text-brand-GOLD mt-1 flex-shrink-0" />
                                 <div>
                                     <div className="text-white font-bold text-sm mb-1">{item.title}</div>
-                                    <div className="text-slate-400 text-xs leading-relaxed">{item.body}</div>
+                                    <div className="text-slate-500 text-xs leading-relaxed">{item.body}</div>
                                 </div>
                             </div>
                         ))}
@@ -224,20 +224,20 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                     <div className="overflow-x-auto">
                         <table className="w-full text-sm border-collapse">
                             <thead>
-                                <tr className="border-b border-white/10">
+                                <tr className="border-b border-brand-100">
                                     <th className="text-left text-slate-500 text-[10px] uppercase tracking-widest py-3 pr-4"></th>
                                     <th className="text-left text-brand-GOLD text-[10px] uppercase tracking-widest py-3 px-3">Coronado</th>
-                                    <th className="text-left text-slate-400 text-[10px] uppercase tracking-widest py-3 px-3">Punta Pacifica</th>
-                                    <th className="text-left text-slate-400 text-[10px] uppercase tracking-widest py-3 px-3">Bocas del Toro</th>
+                                    <th className="text-left text-slate-500 text-[10px] uppercase tracking-widest py-3 px-3">Punta Pacifica</th>
+                                    <th className="text-left text-slate-500 text-[10px] uppercase tracking-widest py-3 px-3">Bocas del Toro</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {costComparison.map((row, i) => (
-                                    <tr key={i} className="border-b border-white/5">
-                                        <td className="text-slate-400 text-xs py-3 pr-4 font-medium">{row.item}</td>
+                                    <tr key={i} className="border-b border-brand-100">
+                                        <td className="text-slate-500 text-xs py-3 pr-4 font-medium">{row.item}</td>
                                         <td className="text-white text-xs py-3 px-3 font-bold">{row.coronado}</td>
-                                        <td className="text-slate-400 text-xs py-3 px-3">{row.puntaPacifica}</td>
-                                        <td className="text-slate-400 text-xs py-3 px-3">{row.bocas}</td>
+                                        <td className="text-slate-500 text-xs py-3 px-3">{row.puntaPacifica}</td>
+                                        <td className="text-slate-500 text-xs py-3 px-3">{row.bocas}</td>
                                     </tr>
                                 ))}
                             </tbody>
@@ -247,7 +247,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
 
                 {/* Who it is for / not for */}
                 <section className="reveal-on-scroll grid md:grid-cols-2 gap-6">
-                    <div className="glass-card rounded-2xl p-6 border border-brand-100">
+                    <div className="card-light rounded-2xl p-6 border border-brand-100">
                         <div className="text-brand-GOLD font-black uppercase tracking-widest text-xs mb-4">Coronado is Perfect For</div>
                         <ul className="space-y-2">
                             {[
@@ -257,14 +257,14 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                                 'Families wanting a weekend escape from Panama City (90 min)',
                                 'Golfers — Coronado Golf Club is one of the top courses in Central America',
                             ].map((item, i) => (
-                                <li key={i} className="flex items-start gap-2 text-slate-300 text-xs">
+                                <li key={i} className="flex items-start gap-2 text-slate-500 text-xs">
                                     <CheckCircle size={12} className="text-brand-GOLD mt-0.5 flex-shrink-0" />
                                     {item}
                                 </li>
                             ))}
                         </ul>
                     </div>
-                    <div className="glass-card rounded-2xl p-6 border border-brand-100">
+                    <div className="card-light rounded-2xl p-6 border border-brand-100">
                         <div className="text-slate-500 font-black uppercase tracking-widest text-xs mb-4">Consider Elsewhere If You Want</div>
                         <ul className="space-y-2">
                             {[
@@ -274,7 +274,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                                 'Entry-level prices — Pedasi or Gorgona offer similar lifestyle at lower cost',
                                 'Pure adventure / off-grid experience — Santa Catalina or Bocas',
                             ].map((item, i) => (
-                                <li key={i} className="flex items-start gap-2 text-slate-400 text-xs">
+                                <li key={i} className="flex items-start gap-2 text-slate-500 text-xs">
                                     <span className="text-slate-600 mt-0.5 flex-shrink-0 font-bold">—</span>
                                     {item}
                                 </li>
@@ -297,13 +297,13 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                             { n: '5', t: 'Arrange financing or wire transfer', b: 'Most foreign buyers pay cash. Panamanian mortgages for non-residents are available but limited. Some developers offer direct financing on new builds.' },
                             { n: '6', t: 'Close at a Notary Public', b: 'Panama property transfers are executed through a Notary Public. Once registered in the Public Registry, the property is yours. The entire process takes 30–90 days.' },
                         ].map((s, i) => (
-                            <div key={i} className="flex items-start gap-4 glass-card rounded-xl p-5 border border-brand-100">
+                            <div key={i} className="flex items-start gap-4 card-light rounded-xl p-5 border border-brand-100">
                                 <div className="w-8 h-8 rounded-full bg-brand-GOLD/10 border border-brand-GOLD/30 flex items-center justify-center flex-shrink-0">
                                     <span className="text-brand-GOLD font-black text-xs">{s.n}</span>
                                 </div>
                                 <div>
                                     <div className="text-white font-bold text-sm mb-1">{s.t}</div>
-                                    <div className="text-slate-400 text-xs leading-relaxed">{s.b}</div>
+                                    <div className="text-slate-500 text-xs leading-relaxed">{s.b}</div>
                                 </div>
                             </div>
                         ))}
@@ -311,7 +311,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                 </section>
 
                 {/* CTA */}
-                <section className="reveal-on-scroll bg-brand-950 p-10 rounded-3xl border-t-4 border-brand-GOLD text-center">
+                <section className="reveal-on-scroll bg-white p-10 rounded-3xl border-t-4 border-brand-GOLD text-center">
                     <h3 className="text-white font-heading text-3xl font-bold mb-4 uppercase italic tracking-tighter">
                         See Coronado Properties Now
                     </h3>
@@ -344,7 +344,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                         <Link
                             key={i}
                             href={link.href}
-                            className="flex items-center justify-between glass-card p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
+                            className="flex items-center justify-between card-light p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                         >
                             <span className="text-white text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />

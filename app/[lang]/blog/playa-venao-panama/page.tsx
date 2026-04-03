@@ -104,24 +104,24 @@ const highlights = [
 
 export default function PlayaVenaoPanama() {
   return (
-    <article className="bg-brand-950 min-h-screen pt-28 pb-20">
+    <article className="bg-white min-h-screen pt-28 pb-20">
       <div className="max-w-4xl mx-auto px-4">
         {/* Header */}
         <div className="mb-16 reveal-on-scroll">
-          <span className="text-brand-GOLD font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
+          <span className="text-brand-TEAL font-black uppercase tracking-[0.4em] text-[10px] mb-4 block">
             Emerging Destination · 2026
           </span>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-white mb-6 tracking-tight leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black text-brand-950 mb-6 tracking-tight leading-tight">
             Playa Venao Panama
           </h1>
-          <p className="text-slate-400 text-lg font-medium leading-relaxed border-l-2 border-brand-GOLD/30 pl-5">
+          <p className="text-slate-500 text-lg font-medium leading-relaxed border-l-2 border-brand-GOLD/30 pl-5">
             A consistent left-hand break, growing digital nomad hub, and a 40–60% cheaper alternative to Costa Rica's Nosara and Tamarindo.
           </p>
         </div>
 
         {/* Quick comparison */}
-        <div className="glass-card p-8 rounded-2xl border-brand-GOLD/20 mb-16 reveal-on-scroll">
-          <h3 className="text-lg font-heading font-black text-white mb-5 tracking-tight flex items-center gap-2">
+        <div className="card-light p-8 rounded-2xl border-brand-GOLD/20 mb-16 reveal-on-scroll">
+          <h3 className="text-lg font-heading font-black text-brand-950 mb-5 tracking-tight flex items-center gap-2">
             <TrendingUp size={20} className="text-brand-GOLD" />
             Playa Venao at a Glance
           </h3>
@@ -145,18 +145,18 @@ export default function PlayaVenaoPanama() {
         {/* Content sections */}
         <div className="space-y-10">
           {highlights.map((section, i) => (
-            <div key={i} className="glass-card rounded-2xl border-white/5 overflow-hidden reveal-on-scroll">
+            <div key={i} className="card-light rounded-2xl border-brand-100 overflow-hidden reveal-on-scroll">
               <div className="p-7 md:p-8">
                 {/* Section header */}
-                <h2 className="text-2xl md:text-3xl font-heading font-black text-white tracking-tight mb-5">{section.title}</h2>
+                <h2 className="text-2xl md:text-3xl font-heading font-black text-brand-950 tracking-tight mb-5">{section.title}</h2>
 
                 {/* Description */}
-                <p className="text-slate-400 text-sm leading-relaxed mb-6">{section.description}</p>
+                <p className="text-slate-500 text-sm leading-relaxed mb-6">{section.description}</p>
 
                 {/* Points */}
                 <ul className="space-y-2">
                   {section.points.map((point, j) => (
-                    <li key={j} className="flex items-start gap-3 text-sm text-slate-300">
+                    <li key={j} className="flex items-start gap-3 text-sm text-slate-500">
                       <span className="text-brand-GOLD font-black mt-0.5 flex-shrink-0">✓</span>
                       {point}
                     </li>
@@ -168,36 +168,36 @@ export default function PlayaVenaoPanama() {
         </div>
 
         {/* Getting there */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-brand-GOLD/20 reveal-on-scroll">
-          <h3 className="text-xl font-heading font-black text-white mb-4 tracking-tight flex items-center gap-2">
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-GOLD/20 reveal-on-scroll">
+          <h3 className="text-xl font-heading font-black text-brand-950 mb-4 tracking-tight flex items-center gap-2">
             <MapPin size={20} className="text-brand-GOLD" />
             How to Get to Playa Venao
           </h3>
           <div className="space-y-4">
             <div>
               <p className="text-brand-GOLD text-sm font-black uppercase tracking-widest mb-2">Option 1: Rent a Car (Recommended)</p>
-              <p className="text-slate-400 text-sm mb-3">This is the best option for exploring the Azuero Peninsula, day-tripping to nearby attractions (Isla Iguana, Las Tablas), and maintaining flexibility. The Pan-American Highway to Divisa, then the paved road to Pedasi is straightforward.</p>
+              <p className="text-slate-500 text-sm mb-3">This is the best option for exploring the Azuero Peninsula, day-tripping to nearby attractions (Isla Iguana, Las Tablas), and maintaining flexibility. The Pan-American Highway to Divisa, then the paved road to Pedasi is straightforward.</p>
               <ul className="space-y-1 pl-4 border-l-2 border-brand-GOLD/30">
-                <li className="text-slate-300 text-sm">• Time: 4.5–5 hours from Panama City</li>
-                <li className="text-slate-300 text-sm">• Cost: ~$50–70/day car rental</li>
-                <li className="text-slate-300 text-sm">• Gas: ~$25–30 round trip</li>
+                <li className="text-slate-500 text-sm">• Time: 4.5–5 hours from Panama City</li>
+                <li className="text-slate-500 text-sm">• Cost: ~$50–70/day car rental</li>
+                <li className="text-slate-500 text-sm">• Gas: ~$25–30 round trip</li>
               </ul>
             </div>
             <div>
               <p className="text-brand-GOLD text-sm font-black uppercase tracking-widest mb-2">Option 2: Bus + Shuttle</p>
-              <p className="text-slate-400 text-sm">Budget option for backpackers and repeated visitors. Take a bus from Albrook Bus Station to Pedasi (~4.5 hours, $15–20), then arrange a local shuttle to Playa Venao (30 min, $5–10).</p>
+              <p className="text-slate-500 text-sm">Budget option for backpackers and repeated visitors. Take a bus from Albrook Bus Station to Pedasi (~4.5 hours, $15–20), then arrange a local shuttle to Playa Venao (30 min, $5–10).</p>
               <ul className="space-y-1 pl-4 border-l-2 border-brand-GOLD/30">
-                <li className="text-slate-300 text-sm">• Total time: 5–6 hours</li>
-                <li className="text-slate-300 text-sm">• Cost: $25–35</li>
-                <li className="text-slate-300 text-sm">• Less flexible but budget-friendly</li>
+                <li className="text-slate-500 text-sm">• Total time: 5–6 hours</li>
+                <li className="text-slate-500 text-sm">• Cost: $25–35</li>
+                <li className="text-slate-500 text-sm">• Less flexible but budget-friendly</li>
               </ul>
             </div>
           </div>
         </div>
 
         {/* Nearby attractions */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-brand-GOLD/20 reveal-on-scroll">
-          <h3 className="text-xl font-heading font-black text-white mb-4 tracking-tight">Nearby Attractions & Day Trips</h3>
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-GOLD/20 reveal-on-scroll">
+          <h3 className="text-xl font-heading font-black text-brand-950 mb-4 tracking-tight">Nearby Attractions & Day Trips</h3>
           <ul className="space-y-3">
             {[
               {
@@ -217,18 +217,18 @@ export default function PlayaVenaoPanama() {
                 desc: 'UNESCO World Heritage marine site accessible from Pedasi. Day trips available for diving and snorkeling (1.5–2 hour boat ride).',
               },
             ].map((attraction, i) => (
-              <div key={i} className="border-b border-white/5 pb-3 last:border-0">
+              <div key={i} className="border-b border-brand-100 pb-3 last:border-0">
                 <p className="text-brand-GOLD text-sm font-black uppercase tracking-widest mb-1">{attraction.name}</p>
-                <p className="text-slate-400 text-sm">{attraction.desc}</p>
+                <p className="text-slate-500 text-sm">{attraction.desc}</p>
               </div>
             ))}
           </ul>
         </div>
 
         {/* Investment thesis */}
-        <div className="mt-14 glass-card p-8 rounded-2xl border-brand-GOLD/20 text-center reveal-on-scroll">
-          <h3 className="text-xl font-heading font-black text-white mb-3 tracking-tight">Invest in Playa Venao Before the Crowds Arrive</h3>
-          <p className="text-slate-400 text-sm mb-6 leading-relaxed">
+        <div className="mt-14 card-light p-8 rounded-2xl border-brand-GOLD/20 text-center reveal-on-scroll">
+          <h3 className="text-xl font-heading font-black text-brand-950 mb-3 tracking-tight">Invest in Playa Venao Before the Crowds Arrive</h3>
+          <p className="text-slate-500 text-sm mb-6 leading-relaxed">
             The Azuero Peninsula is at an inflection point. Infrastructure is improving, international tourism is accelerating, and property prices are still accessible. Early investors are capturing the cycle that took Costa Rica from a backwater to a $1B+ real estate market. The window is now.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -240,7 +240,7 @@ export default function PlayaVenaoPanama() {
             </Link>
             <Link
               href="/en/contacto"
-              className="inline-flex items-center justify-center gap-2 glass-card px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] text-brand-GOLD border-brand-GOLD/30 hover:border-brand-GOLD/60 transition-all"
+              className="inline-flex items-center justify-center gap-2 card-light px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] text-brand-GOLD border-brand-GOLD/30 hover:border-brand-GOLD/60 transition-all"
             >
               Talk to Our Advisors <ArrowRight size={14} />
             </Link>
@@ -257,7 +257,7 @@ export default function PlayaVenaoPanama() {
             <Link
               key={i}
               href={link.href}
-              className="flex items-center justify-between glass-card p-4 rounded-xl border-white/5 hover:border-brand-GOLD/30 transition-all group"
+              className="flex items-center justify-between card-light p-4 rounded-xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
               <span className="text-white text-xs font-bold">{link.label}</span>
               <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />

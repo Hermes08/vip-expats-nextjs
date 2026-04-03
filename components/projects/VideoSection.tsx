@@ -26,7 +26,7 @@ export default function VideoSection({ videoUrl, title = "Video presentation" }:
     };
 
     return (
-        <section className="py-16 bg-black overflow-hidden">
+        <section className="py-16 bg-brand-50 overflow-hidden">
             <div className="max-container">
                 <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl shadow-yellow-400/10 group">
                     {isYouTube || isVimeo ? (

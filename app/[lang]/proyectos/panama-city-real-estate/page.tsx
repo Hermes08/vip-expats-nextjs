@@ -13,14 +13,14 @@ export default function PanamaCityRealEstatePage() {
     return (
         <div className="pt-24 min-h-screen bg-white text-slate-900">
             {/* Context-Aware Hero Section */}
-            <section className="bg-brand-900 py-32 relative overflow-hidden">
+            <section className="bg-brand-50 py-32 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-20">
                     <Image src="https://images.unsplash.com/photo-1544644011-87b829283197?w=1600&q=80" alt="Panama City Skyline" fill className="object-cover" />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-950 to-transparent"></div>
                 </div>
                 <div className="max-w-5xl mx-auto px-4 text-center relative z-10">
                     <span className="text-[10px] font-bold text-brand-GOLD uppercase tracking-[0.4em] mb-4 block">THE METROPOLIS PORTFOLIO</span>
-                    <h1 className="font-heading text-5xl md:text-8xl font-black text-white mb-8 leading-[0.9] tracking-tighter uppercase italic">
+                    <h1 className="font-heading text-5xl md:text-8xl font-black text-brand-950 mb-8 leading-[0.9] tracking-tighter uppercase italic">
                         Panama City <br /><span className="text-brand-GOLD">Real Estate</span>
                     </h1>
                     <p className="text-xl text-brand-300 leading-relaxed font-medium max-w-2xl mx-auto">
@@ -108,7 +108,7 @@ export default function PanamaCityRealEstatePage() {
                                     </div>
                                 </li>
                             </ul>
-                            <Link href="/contacto" className="w-full block py-5 bg-brand-950 text-white text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-black transition-all shadow-xl">
+                            <Link href="/contacto" className="w-full block py-5 bg-white text-white text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all shadow-xl">
                                 Request Private Portfolio
                             </Link>
                         </div>
@@ -117,9 +117,9 @@ export default function PanamaCityRealEstatePage() {
             </section>
 
             {/* Context-Aware Lower CTA */}
-            <section className="py-24 bg-brand-950 text-center">
+            <section className="py-24 bg-white text-center">
                 <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-5xl font-heading font-black text-white mb-8 uppercase tracking-tighter italic">Explore The Inventory</h2>
+                    <h2 className="text-3xl md:text-5xl font-heading font-black text-brand-950 mb-8 uppercase tracking-tighter italic">Explore The Inventory</h2>
                     <p className="text-brand-400 font-medium mb-12 max-w-2xl mx-auto">Browse our curated selection of verified, high-yield developments across Panama City and the beaches.</p>
                     <Link href="/proyectos" className="inline-flex items-center gap-4 bg-transparent border-2 border-brand-GOLD text-brand-GOLD px-12 py-5 rounded-full font-black uppercase tracking-widest text-xs hover:bg-brand-GOLD hover:text-brand-950 transition-all">
                         View Live Projects <ArrowRight size={16} />

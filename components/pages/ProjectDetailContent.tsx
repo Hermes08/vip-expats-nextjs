@@ -53,7 +53,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                 <div className="absolute bottom-0 left-0 w-full p-6 md:p-12 pb-24">
                     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end gap-6">
                         <div className="text-white max-w-4xl relative z-20">
-                            <div className="inline-flex items-center gap-2 bg-black/60 backdrop-blur-md text-brand-GOLD font-bold uppercase tracking-widest text-[10px] mb-6 px-4 py-1.5 rounded-full border border-brand-100">
+                            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md text-brand-GOLD font-bold uppercase tracking-widest text-[10px] mb-6 px-4 py-1.5 rounded-full border border-brand-100">
                                 <MapPin size={12} /> {project.location[lang]}
                             </div>
                             <h1 className="font-heading text-4xl md:text-7xl font-black mb-6 leading-none md:leading-[0.9] tracking-tighter text-shadow-lg">
@@ -73,7 +73,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
 
                 {/* Thumbnail Selectors */}
                 {project.images.length > 1 && (
-                    <div className="absolute bottom-40 right-12 z-30 hidden lg:flex gap-3 p-2 bg-black/20 backdrop-blur-md rounded-2xl border border-brand-100">
+                    <div className="absolute bottom-40 right-12 z-30 hidden lg:flex gap-3 p-2 bg-brand-50/60 backdrop-blur-md rounded-2xl border border-brand-100">
                         {project.images.map((img, idx) => (
                             <button
                                 key={idx}
@@ -94,7 +94,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                     <div className="lg:col-span-2">
 
                         {/* Quick Specs */}
-                        <div className="grid grid-cols-3 gap-6 mb-16 py-8 border-y border-white/5 text-center">
+                        <div className="grid grid-cols-3 gap-6 mb-16 py-8 border-y border-brand-100 text-center">
                             <div>
                                 <span className="block text-xl font-bold text-white">{project.beds}</span>
                                 <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">{labels.beds}</span>
@@ -111,7 +111,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
 
                         {/* SECTION 1: Deep Dive */}
                         <article className="prose prose-lg max-w-none text-brand-600 mb-20 reveal-on-scroll">
-                            <h2 className="text-3xl font-heading font-bold text-white mb-8 border-b-2 border-brand-GOLD inline-block pb-2 uppercase tracking-tighter">
+                            <h2 className="text-3xl font-heading font-bold text-brand-950 mb-8 border-b-2 border-brand-GOLD inline-block pb-2 uppercase tracking-tighter">
                                 {lang === 'es' ? 'Análisis Profundo del Proyecto' : 'Project Deep Dive & Architectural Vision'}
                             </h2>
                             <div
@@ -136,7 +136,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
 
                         {/* SECTION 2: Location & Lifestyle */}
                         <article className="bg-brand-50 p-12 rounded-[3rem] border border-brand-100 mb-20 reveal-on-scroll">
-                            <h2 className="text-3xl font-heading font-bold text-white mb-8 flex items-center gap-4">
+                            <h2 className="text-3xl font-heading font-bold text-brand-950 mb-8 flex items-center gap-4">
                                 <Compass className="text-brand-GOLD" size={36} />
                                 {lang === 'es' ? 'Ubicación y Estilo de Vida' : 'Neighborhood Analysis & Coastal Lifestyle'}
                             </h2>
@@ -147,26 +147,26 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                         </article>
 
                         {/* SECTION 3: Investment Analysis (GOLD/GLASS POLISH) */}
-                        <article className="mb-20 p-12 rounded-[3rem] bg-brand-950 border border-brand-100 shadow-2xl relative overflow-hidden group reveal-on-scroll">
+                        <article className="mb-20 p-12 rounded-[3rem] bg-white border border-brand-100 shadow-2xl relative overflow-hidden group reveal-on-scroll">
                             <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-brand-GOLD/10 via-transparent to-transparent opacity-50"></div>
                             <div className="relative z-10">
                                 <div className="flex items-center gap-6 mb-10">
                                     <div className="w-20 h-20 bg-brand-GOLD/10 backdrop-blur-md border border-brand-GOLD/20 text-brand-GOLD rounded-2xl flex items-center justify-center shadow-[0_0_30px_-5px_rgba(212,175,55,0.3)] group-hover:scale-110 transition-transform duration-500">
                                         <TrendingUp size={40} />
                                     </div>
-                                    <h2 className="text-3xl md:text-5xl font-heading font-black text-white uppercase tracking-tighter italic">
+                                    <h2 className="text-3xl md:text-5xl font-heading font-black text-brand-950 uppercase tracking-tighter italic">
                                         {lang === 'es' ? 'Análisis de Inversión y ROI' : 'Investment Analysis & Market Trends'}
                                     </h2>
                                 </div>
                                 <div
-                                    className="prose prose-lg prose-invert max-w-none whitespace-pre-line text-slate-300 font-medium leading-relaxed"
+                                    className="prose prose-lg prose-invert max-w-none whitespace-pre-line text-slate-500 font-medium leading-relaxed"
                                     dangerouslySetInnerHTML={{ __html: project.investmentAnalysis?.[lang] || '' }}
                                 />
                             </div>
                         </article>
 
                         {/* SECTION 4: Buyer Profile */}
-                        <article className="bg-brand-900 text-white p-12 rounded-[3rem] mb-20 shadow-2xl relative overflow-hidden reveal-on-scroll">
+                        <article className="bg-brand-50 text-white p-12 rounded-[3rem] mb-20 shadow-2xl relative overflow-hidden reveal-on-scroll">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-GOLD/5 rounded-full blur-3xl"></div>
                             <h2 className="text-3xl font-heading font-bold mb-8 flex items-center gap-4">
                                 <UserCheck className="text-brand-GOLD" size={36} />
@@ -180,7 +180,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
 
                         {/* SECTION 5: Legal & Residency */}
                         <article className="mb-20 p-12 border-2 border-brand-GOLD/20 rounded-[3rem] reveal-on-scroll">
-                            <h2 className="text-3xl font-heading font-bold text-white mb-8 flex items-center gap-4">
+                            <h2 className="text-3xl font-heading font-bold text-brand-950 mb-8 flex items-center gap-4">
                                 <Gavel className="text-brand-GOLD" size={36} />
                                 {lang === 'es' ? 'Integración Legal y Residencia' : 'Legal Guide & Residency Pathways'}
                             </h2>
@@ -196,7 +196,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                     <div className="lg:col-span-1">
                         <div className="sticky top-32 space-y-8">
                             {/* Tour CTA */}
-                            <div className="bg-brand-950 text-white p-8 rounded-3xl shadow-2xl relative overflow-hidden">
+                            <div className="bg-white text-white p-8 rounded-3xl shadow-2xl relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-brand-GOLD/10 rounded-full -mr-16 -mt-16 blur-2xl"></div>
                                 <Compass className="text-brand-GOLD mb-6" size={40} />
                                 <h3 className="text-2xl font-bold mb-4 leading-tight">Request a Private Relocation Tour</h3>
@@ -206,8 +206,8 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
 
                             {/* Lead Magnet Book */}
                             {/* Lead Form */}
-                            <div className="bg-brand-900/80 rounded-3xl p-8 border border-brand-100 shadow-xl">
-                                <h3 className="font-bold text-white mb-4 uppercase tracking-widest text-[10px] flex items-center gap-2">
+                            <div className="bg-brand-50/80 rounded-3xl p-8 border border-brand-100 shadow-xl">
+                                <h3 className="font-bold text-brand-950 mb-4 uppercase tracking-widest text-[10px] flex items-center gap-2">
                                     <ShieldCheck size={14} className="text-brand-GOLD" /> Official Inquiry
                                 </h3>
                                 <p className="text-xs text-brand-500 mb-6 font-medium">Recieve the full brochure & pricing list for {project.name[lang]}</p>
@@ -240,7 +240,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                                     <input name="phone" required placeholder="Phone/WhatsApp" aria-label="Your Phone or WhatsApp" className="w-full px-4 py-3 bg-brand-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
                                     <textarea name="message" placeholder="I'm interested in..." aria-label="Message" rows={3} className="w-full px-4 py-3 bg-brand-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all resize-none"></textarea>
 
-                                    <button type="submit" className="w-full py-4 bg-brand-900 text-white font-black uppercase tracking-widest text-[10px] rounded-xl hover:bg-brand-GOLD hover:text-white transition-all shadow-lg">
+                                    <button type="submit" className="w-full py-4 bg-brand-50 text-white font-black uppercase tracking-widest text-[10px] rounded-xl hover:bg-brand-GOLD hover:text-white transition-all shadow-lg">
                                         Request Details
                                     </button>
                                 </form>
@@ -249,7 +249,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
 
                             {/* Amenities List */}
                             <div className="bg-brand-50 p-8 rounded-3xl">
-                                <h3 className="font-bold text-white mb-6 uppercase tracking-widest text-[10px] border-b border-white/8 pb-2 flex items-center gap-2">
+                                <h3 className="font-bold text-brand-950 mb-6 uppercase tracking-widest text-[10px] border-b border-white/8 pb-2 flex items-center gap-2">
                                     <Home size={14} className="text-brand-GOLD" /> Development Amenities
                                 </h3>
                                 <ul className="space-y-4">
@@ -264,7 +264,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                             {/* Related Content */}
                             {relatedPosts.length > 0 && (
                                 <div className="bg-brand-50 p-8 rounded-3xl">
-                                    <h3 className="font-bold text-white mb-6 uppercase tracking-widest text-[10px] border-b border-white/8 pb-2">Market Context</h3>
+                                    <h3 className="font-bold text-brand-950 mb-6 uppercase tracking-widest text-[10px] border-b border-white/8 pb-2">Market Context</h3>
                                     <div className="space-y-6">
                                         {relatedPosts.map(post => (
                                             <Link key={post.id} href={`/blog/${post.slug}`} className="block group">
@@ -281,7 +281,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
             </div>
 
             {/* Search Grounding Wall (SEO Booster) */}
-            <section className="bg-brand-50 py-20 border-t border-white/5">
+            <section className="bg-brand-50 py-20 border-t border-brand-100">
                 <div className="max-w-7xl mx-auto px-4">
                     <h2 className="text-[10px] font-black text-neutral-400 uppercase tracking-[0.3em] mb-10 text-center">Global Reach • Local Expertise • Panama Investment Hub</h2>
                     <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-40 text-[11px] font-bold text-white grayscale">

@@ -116,11 +116,11 @@ const BuyingPropertyPanamaUSCitizensContent = () => {
         <section className="py-20 text-center">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1 }}>
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block">{content.badge}</span>
-            <h1 className="text-5xl md:text-8xl font-heading font-black text-white mb-10 tracking-tighter uppercase italic leading-[0.85]">
+            <h1 className="text-5xl md:text-8xl font-heading font-black text-brand-950 mb-10 tracking-tighter uppercase italic leading-[0.85]">
               {isEn ? 'Buying Property in Panama' : 'Comprar en Panamá'} <br />
               <span className="text-brand-GOLD">{isEn ? 'As a US Citizen' : 'Como Ciudadano Americano'}</span>
             </h1>
-            <p className="text-xl md:text-2xl text-slate-400 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic">{content.subtitle}</p>
+            <p className="text-xl md:text-2xl text-slate-500 font-medium max-w-3xl mx-auto leading-relaxed mb-16 italic">{content.subtitle}</p>
             <div className="flex flex-wrap justify-center gap-8">
               <Magnetic strength={0.3}>
                 <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-gold px-12 py-7 rounded-xl font-black uppercase tracking-widest text-[11px]">
@@ -137,25 +137,25 @@ const BuyingPropertyPanamaUSCitizensContent = () => {
         </section>
 
         {/* CAN US CITIZENS BUY */}
-        <section className="py-24 border-t border-white/5">
+        <section className="py-24 border-t border-brand-100">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl md:text-6xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.85] mb-10">{content.canBuyTitle}</h2>
-            <p className="text-lg text-slate-300 leading-relaxed font-medium mb-6">{content.intro}</p>
-            <p className="text-lg text-slate-400 leading-relaxed font-medium">{content.canBuyText}</p>
+            <h2 className="text-4xl md:text-6xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.85] mb-10">{content.canBuyTitle}</h2>
+            <p className="text-lg text-slate-600 leading-relaxed font-medium mb-6">{content.intro}</p>
+            <p className="text-lg text-slate-500 leading-relaxed font-medium">{content.canBuyText}</p>
           </div>
         </section>
 
         {/* STEPS */}
-        <section className="py-24 border-t border-white/5">
+        <section className="py-24 border-t border-brand-100">
           <div className="text-center mb-20">
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">How It Works</span>
-            <h2 className="text-5xl md:text-7xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.8]">{content.stepsTitle}</h2>
+            <h2 className="text-5xl md:text-7xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.8]">{content.stepsTitle}</h2>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
             {content.steps.map((step, i) => (
-              <div key={i} className="glass-card p-10 rounded-3xl border-white/5">
+              <div key={i} className="card-light p-10 rounded-3xl border-brand-100">
                 <span className="text-6xl font-black text-brand-GOLD/20 block mb-4">{step.step}</span>
-                <h3 className="text-2xl font-black text-white mb-4 uppercase italic tracking-tighter">{step.title}</h3>
+                <h3 className="text-2xl font-black text-brand-950 mb-4 uppercase italic tracking-tighter">{step.title}</h3>
                 <p className="text-slate-500 font-medium leading-relaxed">{step.desc}</p>
               </div>
             ))}
@@ -163,14 +163,14 @@ const BuyingPropertyPanamaUSCitizensContent = () => {
         </section>
 
         {/* COSTS */}
-        <section className="py-24 border-t border-white/5">
+        <section className="py-24 border-t border-brand-100">
           <div className="max-w-3xl mx-auto">
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">Closing Costs</span>
-            <h2 className="text-4xl md:text-6xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.85] mb-12">{content.costsTitle}</h2>
+            <h2 className="text-4xl md:text-6xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.85] mb-12">{content.costsTitle}</h2>
             <div className="space-y-4">
               {content.costs.map((cost, i) => (
-                <div key={i} className="flex justify-between items-center py-5 border-b border-white/5">
-                  <span className="text-slate-300 font-medium">{cost.item}</span>
+                <div key={i} className="flex justify-between items-center py-5 border-b border-brand-100">
+                  <span className="text-slate-500 font-medium">{cost.item}</span>
                   <span className="text-brand-GOLD font-black">{cost.amount}</span>
                 </div>
               ))}
@@ -180,16 +180,16 @@ const BuyingPropertyPanamaUSCitizensContent = () => {
         </section>
 
         {/* RESIDENCY */}
-        <section className="py-24 border-t border-white/5">
+        <section className="py-24 border-t border-brand-100">
           <div className="text-center mb-20">
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-8 block italic">Residency Options</span>
-            <h2 className="text-5xl md:text-7xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.8]">{content.residencyTitle}</h2>
+            <h2 className="text-5xl md:text-7xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.8]">{content.residencyTitle}</h2>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
             {content.residencyOptions.map((option, i) => (
-              <div key={i} className="glass-card p-10 rounded-3xl border-white/5 hover:border-brand-GOLD/30 transition-all">
+              <div key={i} className="card-light p-10 rounded-3xl border-brand-100 hover:border-brand-GOLD/30 transition-all">
                 <Scale className="text-brand-GOLD mb-6" size={36} />
-                <h3 className="text-xl font-black text-white mb-4 uppercase italic tracking-tighter">{option.title}</h3>
+                <h3 className="text-xl font-black text-brand-950 mb-4 uppercase italic tracking-tighter">{option.title}</h3>
                 <p className="text-slate-500 text-sm font-medium leading-relaxed">{option.desc}</p>
               </div>
             ))}
@@ -202,16 +202,16 @@ const BuyingPropertyPanamaUSCitizensContent = () => {
         </section>
 
         {/* WARNINGS */}
-        <section className="py-24 border-t border-white/5 max-w-4xl mx-auto">
+        <section className="py-24 border-t border-brand-100 max-w-4xl mx-auto">
           <div className="mb-10">
             <AlertCircle className="text-amber-400 mb-6" size={36} />
-            <h2 className="text-4xl md:text-5xl font-heading font-black text-white tracking-tighter uppercase italic leading-[0.85] mb-10">{content.warningsTitle}</h2>
+            <h2 className="text-4xl md:text-5xl font-heading font-black text-brand-950 tracking-tighter uppercase italic leading-[0.85] mb-10">{content.warningsTitle}</h2>
           </div>
           <div className="space-y-5">
             {content.warnings.map((warning, i) => (
               <div key={i} className="flex items-start gap-5">
                 <AlertCircle className="text-amber-400 mt-1 flex-shrink-0" size={20} />
-                <p className="text-slate-300 font-medium leading-relaxed">{warning}</p>
+                <p className="text-slate-500 font-medium leading-relaxed">{warning}</p>
               </div>
             ))}
           </div>
@@ -229,7 +229,7 @@ const BuyingPropertyPanamaUSCitizensContent = () => {
               </Link>
             </Magnetic>
             <Magnetic strength={0.4}>
-              <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-gold bg-brand-950 text-white px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs">
+              <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-gold bg-white text-white px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs">
                 {isEn ? 'Book a Discovery Tour' : 'Reserve un Tour'}
               </Link>
             </Magnetic>

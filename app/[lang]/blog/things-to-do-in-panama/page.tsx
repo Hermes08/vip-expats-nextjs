@@ -260,10 +260,10 @@ export default async function ThingsToDoInPanama({
   const { lang } = await params;
 
   return (
-    <div className="bg-brand-950 min-h-screen pt-28 pb-20">
+    <div className="bg-white min-h-screen pt-28 pb-20">
       {/* Hero Section */}
       <section className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 mb-20">
-        <div className="glass-card p-8 sm:p-12 border border-brand-gold/20 rounded-2xl backdrop-blur-md bg-gradient-to-br from-brand-900/40 to-brand-950/40">
+        <div className="card-light p-8 sm:p-12 border border-brand-gold/20 rounded-2xl backdrop-blur-md bg-gradient-to-br from-brand-900/40 to-brand-950/40">
           <div className="flex items-center gap-3 mb-6">
             <MapPin className="w-6 h-6 text-brand-gold" />
             <span className="text-brand-gold text-sm font-semibold uppercase tracking-wider">
@@ -303,7 +303,7 @@ export default async function ThingsToDoInPanama({
             return (
               <div
                 key={idx}
-                className="glass-card p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 hover:border-brand-gold/40 transition-all duration-300 reveal-on-scroll"
+                className="card-light p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 hover:border-brand-gold/40 transition-all duration-300 reveal-on-scroll"
               >
                 <Icon className="w-6 h-6 text-brand-gold mb-3" />
                 <p className="text-xs text-brand-100/60 uppercase tracking-wider mb-2">
@@ -338,7 +338,7 @@ export default async function ThingsToDoInPanama({
             return (
               <div
                 key={idx}
-                className="glass-card p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 hover:border-brand-gold/40 transition-all duration-300 group reveal-on-scroll"
+                className="card-light p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 hover:border-brand-gold/40 transition-all duration-300 group reveal-on-scroll"
               >
                 <div className="flex items-start justify-between mb-4">
                   <Icon className="w-6 h-6 text-brand-gold flex-shrink-0" />
@@ -362,7 +362,7 @@ export default async function ThingsToDoInPanama({
           })}
         </div>
 
-        <div className="mt-8 glass-card p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/20 to-brand-950/30">
+        <div className="mt-8 card-light p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/20 to-brand-950/30">
           <h4 className="text-lg font-bold text-brand-gold mb-4 flex items-center gap-2">
             <Star className="w-5 h-5" /> Pro Tip for Panama City
           </h4>
@@ -390,7 +390,7 @@ export default async function ThingsToDoInPanama({
           {bocasActivities.map((activity, idx) => (
             <div
               key={idx}
-              className="glass-card p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 hover:border-brand-gold/40 transition-all duration-300 reveal-on-scroll"
+              className="card-light p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 hover:border-brand-gold/40 transition-all duration-300 reveal-on-scroll"
             >
               <h3 className="text-xl font-bold text-brand-gold mb-3">
                 {activity.title}
@@ -412,7 +412,7 @@ export default async function ThingsToDoInPanama({
           ))}
         </div>
 
-        <div className="mt-8 glass-card p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/20 to-brand-950/30">
+        <div className="mt-8 card-light p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/20 to-brand-950/30">
           <h4 className="text-lg font-bold text-brand-gold mb-4 flex items-center gap-2">
             <Compass className="w-5 h-5" /> Getting to Bocas del Toro
           </h4>
@@ -440,7 +440,7 @@ export default async function ThingsToDoInPanama({
           {boqueteAttractions.map((attraction, idx) => (
             <div
               key={idx}
-              className="glass-card p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 hover:border-brand-gold/40 transition-all duration-300 reveal-on-scroll"
+              className="card-light p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 hover:border-brand-gold/40 transition-all duration-300 reveal-on-scroll"
             >
               <h3 className="text-xl font-bold text-brand-gold mb-4">
                 {attraction.title}
@@ -472,7 +472,7 @@ export default async function ThingsToDoInPanama({
           ))}
         </div>
 
-        <div className="glass-card p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/20 to-brand-950/30">
+        <div className="card-light p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/20 to-brand-950/30">
           <h4 className="text-lg font-bold text-brand-gold mb-4 flex items-center gap-2">
             <Coffee className="w-5 h-5" /> Why Boquete is Special
           </h4>
@@ -500,7 +500,7 @@ export default async function ThingsToDoInPanama({
           {pacificCoastActivities.map((activity, idx) => (
             <div
               key={idx}
-              className="glass-card p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 hover:border-brand-gold/40 transition-all duration-300 group reveal-on-scroll"
+              className="card-light p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 hover:border-brand-gold/40 transition-all duration-300 group reveal-on-scroll"
             >
               <h3 className="text-xl font-bold text-brand-gold mb-3 group-hover:text-brand-gold/90 transition-colors">
                 {activity.title}
@@ -567,7 +567,7 @@ export default async function ThingsToDoInPanama({
           {azueroAttractions.map((attraction, idx) => (
             <div
               key={idx}
-              className="glass-card p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 hover:border-brand-gold/40 transition-all duration-300 reveal-on-scroll"
+              className="card-light p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 hover:border-brand-gold/40 transition-all duration-300 reveal-on-scroll"
             >
               <h3 className="text-xl font-bold text-brand-gold mb-3">
                 {attraction.title}
@@ -589,7 +589,7 @@ export default async function ThingsToDoInPanama({
           ))}
         </div>
 
-        <div className="mt-8 glass-card p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/20 to-brand-950/30">
+        <div className="mt-8 card-light p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/20 to-brand-950/30">
           <h4 className="text-lg font-bold text-brand-gold mb-4 flex items-center gap-2">
             <Users className="w-5 h-5" /> Experience Authentic Panama
           </h4>
@@ -614,7 +614,7 @@ export default async function ThingsToDoInPanama({
           {practicalInfo.map((section, idx) => (
             <div
               key={idx}
-              className="glass-card p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 reveal-on-scroll"
+              className="card-light p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 reveal-on-scroll"
             >
               <h3 className="text-xl font-bold text-brand-gold mb-4">
                 {section.category}
@@ -667,7 +667,7 @@ export default async function ThingsToDoInPanama({
           ].map((faq, idx) => (
             <div
               key={idx}
-              className="glass-card p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 reveal-on-scroll"
+              className="card-light p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 reveal-on-scroll"
             >
               <h4 className="text-lg font-bold text-brand-gold mb-3">
                 {faq.q}
@@ -680,7 +680,7 @@ export default async function ThingsToDoInPanama({
 
       {/* Conversion Section: Tourist to Resident */}
       <section className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 mb-20 reveal-on-scroll">
-        <div className="glass-card p-8 sm:p-12 border border-brand-gold/20 rounded-2xl backdrop-blur-md bg-gradient-to-br from-brand-900/40 to-brand-950/40">
+        <div className="card-light p-8 sm:p-12 border border-brand-gold/20 rounded-2xl backdrop-blur-md bg-gradient-to-br from-brand-900/40 to-brand-950/40">
           <div className="flex items-center gap-3 mb-6">
             <Star className="w-7 h-7 text-brand-gold" />
             <h2 className="text-3xl sm:text-4xl font-bold text-brand-gold">
@@ -713,7 +713,7 @@ export default async function ThingsToDoInPanama({
               ))}
             </div>
 
-            <div className="glass-card p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/20 to-brand-950/30">
+            <div className="card-light p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/20 to-brand-950/30">
               <h3 className="text-xl font-bold text-brand-gold mb-4">
                 Real Estate Opportunities
               </h3>
@@ -784,7 +784,7 @@ export default async function ThingsToDoInPanama({
             <Link
               key={idx}
               href={article.href}
-              className="glass-card p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 hover:border-brand-gold/40 transition-all duration-300 group reveal-on-scroll"
+              className="card-light p-6 border border-brand-gold/20 rounded-xl backdrop-blur-md bg-gradient-to-br from-brand-900/30 to-brand-950/40 hover:border-brand-gold/40 transition-all duration-300 group reveal-on-scroll"
             >
               <h3 className="text-lg font-bold text-brand-gold mb-3 group-hover:text-brand-gold/90 transition-colors flex items-start justify-between gap-2">
                 {article.title}
@@ -800,7 +800,7 @@ export default async function ThingsToDoInPanama({
 
       {/* Final CTA */}
       <section className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 reveal-on-scroll">
-        <div className="glass-card p-8 sm:p-12 border border-brand-gold/20 rounded-2xl backdrop-blur-md bg-gradient-to-br from-brand-900/40 to-brand-950/40 text-center">
+        <div className="card-light p-8 sm:p-12 border border-brand-gold/20 rounded-2xl backdrop-blur-md bg-gradient-to-br from-brand-900/40 to-brand-950/40 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-brand-gold mb-6">
             Start Your Panama Adventure Today
           </h2>

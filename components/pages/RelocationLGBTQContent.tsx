@@ -33,7 +33,7 @@ const RelocationLGBTQContent = () => {
     ];
 
     return (
-        <div className="bg-brand-950 text-white min-h-screen font-sans">
+        <div className="bg-white text-white min-h-screen font-sans">
             <BreadcrumbSchema
                 items={[
                     { name: 'Relocation', item: `https://panamarealestatesale.com/${lang}/relocation` },
@@ -49,7 +49,7 @@ const RelocationLGBTQContent = () => {
             <LocalBusinessSchema />
 
             {/* Hero Section */}
-            <section className="relative pt-40 pb-32 bg-brand-950 text-white overflow-hidden rounded-b-[5rem]">
+            <section className="relative pt-40 pb-32 bg-white text-white overflow-hidden rounded-b-[5rem]">
                 <div className="absolute inset-0 opacity-10">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-brand-GOLD rounded-full blur-[150px]"></div>
                 </div>
@@ -61,7 +61,7 @@ const RelocationLGBTQContent = () => {
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter">
                         Live <span className="text-brand-GOLD underline italic">Proud.</span> <br /> Move Panama.
                     </h1>
-                    <p className="text-base md:text-lg text-slate-400 font-medium leading-relaxed mb-8 max-w-3xl mx-auto">
+                    <p className="text-base md:text-lg text-slate-500 font-medium leading-relaxed mb-8 max-w-3xl mx-auto">
                         Panama is rapidly evolving. Discover the honest reality of <strong>LGBTQ+ life in Panama</strong>, from the vibrant streets of Casco Viejo to the legal strategies for <strong>panama residency</strong> in 2026.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-8 justify-center">
@@ -78,26 +78,26 @@ const RelocationLGBTQContent = () => {
                     <div className="grid lg:grid-cols-2 gap-24 items-center">
                         <div>
                             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none text-brand-950">Transparency <br /><span className="text-brand-GOLD underline italic">First.</span></h2>
-                            <div className="space-y-8 text-lg text-slate-400 font-medium leading-[1.8]">
+                            <div className="space-y-8 text-lg text-slate-500 font-medium leading-[1.8]">
                                 <p>
                                     We don't sugarcoat the legalities. While Panama is a regional leader in economy and safety, LGBTQ+ legal rights are still progressing. We specialize in navigating the <strong>panama immigration</strong> system for same-sex couples through individual visa paths that ensure your residency is secure and independent.
                                 </p>
                                 <p>
                                     The <strong>LGBTQ+ community in Panama City</strong> is one of the most vibrant in Central America, centered around arts, tech, and international business. We guide you to the neighborhoods that match your vibe.
                                 </p>
-                                <div className="grid grid-cols-2 gap-8 pt-8 border-t border-white/10">
+                                <div className="grid grid-cols-2 gap-8 pt-8 border-t border-brand-100">
                                     <div className="flex gap-4">
                                         <MapPin className="text-brand-GOLD shrink-0" size={24} />
                                         <div>
                                             <h4 className="font-black text-xs uppercase mb-2">Top Hubs</h4>
-                                            <p className="text-xs text-slate-400">Casco Viejo & El Cangrejo</p>
+                                            <p className="text-xs text-slate-500">Casco Viejo & El Cangrejo</p>
                                         </div>
                                     </div>
                                     <div className="flex gap-4">
                                         <Scale className="text-brand-GOLD shrink-0" size={24} />
                                         <div>
                                             <h4 className="font-black text-xs uppercase mb-2">Legal Path</h4>
-                                            <p className="text-xs text-slate-400">Individual 'Friendly Nations' focus</p>
+                                            <p className="text-xs text-slate-500">Individual 'Friendly Nations' focus</p>
                                         </div>
                                     </div>
                                 </div>
@@ -116,11 +116,11 @@ const RelocationLGBTQContent = () => {
             </section>
 
             {/* Why Panama for LGBTQ+ */}
-            <section className="py-14 bg-black text-white rounded-3xl mx-4 relative overflow-hidden">
+            <section className="py-14 bg-brand-50 text-brand-950 rounded-3xl mx-4 relative overflow-hidden">
                 <div className="max-w-7xl mx-auto px-8 relative z-10">
                     <div className="text-center mb-10 px-4">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic leading-none text-center">The <span className="text-brand-GOLD italic">Proud</span> Perspective</h2>
-                        <p className="text-slate-400 font-black uppercase tracking-widest text-[10px] mx-auto text-center italic">Why the community is choosing Panama in 2026.</p>
+                        <p className="text-slate-500 font-black uppercase tracking-widest text-[10px] mx-auto text-center italic">Why the community is choosing Panama in 2026.</p>
                     </div>
 
                     <div className="grid lg:grid-cols-3 gap-8">
@@ -144,7 +144,7 @@ const RelocationLGBTQContent = () => {
                             <div key={idx} className="p-12 bg-white/5 border border-brand-100 rounded-2xl group hover:border-brand-GOLD/30 transition-all">
                                 <div className="mb-8">{pillar.icon}</div>
                                 <h3 className="text-3xl font-black uppercase tracking-tighter italic mb-6 leading-none">{pillar.title}</h3>
-                                <p className="text-slate-400 font-medium text-sm leading-relaxed">{pillar.desc}</p>
+                                <p className="text-slate-500 font-medium text-sm leading-relaxed">{pillar.desc}</p>
                             </div>
                         ))}
                     </div>
@@ -156,7 +156,7 @@ const RelocationLGBTQContent = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-24">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic">City <span className="text-brand-GOLD underline italic">Soul.</span></h2>
-                        <p className="text-slate-400 font-medium italic">The neighborhoods that welcome everyone.</p>
+                        <p className="text-slate-500 font-medium italic">The neighborhoods that welcome everyone.</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-12">
@@ -191,7 +191,7 @@ const RelocationLGBTQContent = () => {
             </section>
 
             {/* LGBTQ+ FAQ */}
-            <section className="py-14 bg-brand-950 border-t border-white/10">
+            <section className="py-14 bg-white border-t border-brand-100">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-black mb-20 text-center uppercase tracking-tighter italic">The <span className="text-brand-GOLD italic">Real</span> Talk</h2>
                     <div className="space-y-6">
@@ -201,7 +201,7 @@ const RelocationLGBTQContent = () => {
                                     <span className="text-lg font-black uppercase tracking-tighter italic pr-8 text-brand-950">{faq.question}</span>
                                     <HelpCircle className="text-brand-GOLD" size={24} />
                                 </summary>
-                                <div className="px-10 pb-10 text-slate-400 font-medium leading-relaxed border-t border-white/10 pt-8" dangerouslySetInnerHTML={{ __html: faq.answer }} />
+                                <div className="px-10 pb-10 text-slate-500 font-medium leading-relaxed border-t border-brand-100 pt-8" dangerouslySetInnerHTML={{ __html: faq.answer }} />
                             </details>
                         ))}
                     </div>
@@ -209,11 +209,11 @@ const RelocationLGBTQContent = () => {
             </section>
 
             {/* Final CTA */}
-            <section className="py-40 bg-brand-950 text-white text-center relative overflow-hidden flex flex-col items-center">
+            <section className="py-40 bg-white text-white text-center relative overflow-hidden flex flex-col items-center">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-GOLD opacity-10 rounded-full blur-[150px]"></div>
                 <div className="max-w-4xl mx-auto px-4 relative z-10 flex flex-col items-center text-center">
                     <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none">Your <span className="text-brand-GOLD underline italic">Panama</span> <br /> Community Hub.</h2>
-                    <p className="text-base md:text-lg font-medium mb-16 text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                    <p className="text-base md:text-lg font-medium mb-16 text-slate-500 max-w-2xl mx-auto leading-relaxed">
                         Moving is easier when you have a tribe. We don't just process your visa; we plug you into the heart of the thriving LGBTQ+ expat experience.
                     </p>
                     <div className="flex justify-center flex-col sm:flex-row gap-8">

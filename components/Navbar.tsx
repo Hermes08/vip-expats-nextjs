@@ -94,7 +94,7 @@ const Navbar: React.FC = () => {
                                         {group.label} <ChevronDown size={12} className={`transition-transform duration-300 ${activeDropdown === key ? 'rotate-180' : ''}`} />
                                     </button>
 
-                                    <div className={`absolute top-full left-0 mt-0 w-56 bg-brand-950 border border-white/10 rounded-xl overflow-hidden shadow-2xl transition-all duration-300 origin-top ${activeDropdown === key ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
+                                    <div className={`absolute top-full left-0 mt-0 w-56 bg-white border border-brand-100 rounded-xl overflow-hidden shadow-2xl transition-all duration-300 origin-top ${activeDropdown === key ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
                                         <div className="py-2 bg-gradient-to-b from-white/5 to-transparent">
                                             {group.items.map((item) => (
                                                 <Link
@@ -141,7 +141,7 @@ const Navbar: React.FC = () => {
             {isMobileMenuOpen && (
                 <div
                     id="mobile-menu"
-                    className="absolute top-full left-0 w-full h-[calc(100vh-80px)] overflow-y-auto bg-brand-950/95 backdrop-blur-3xl shadow-2xl border-t border-white/5 p-8 flex flex-col gap-6 lg:hidden animate-in slide-in-from-top-4 duration-500"
+                    className="absolute top-full left-0 w-full h-[calc(100vh-80px)] overflow-y-auto bg-brand-TEAL/95 backdrop-blur-3xl shadow-2xl border-t border-brand-100 p-8 flex flex-col gap-6 lg:hidden animate-in slide-in-from-top-4 duration-500"
                 >
                     {Object.entries(navItems).map(([key, group]) => (
                         <div key={key} className="flex flex-col gap-4">

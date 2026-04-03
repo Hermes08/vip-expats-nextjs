@@ -75,7 +75,7 @@ export default async function PensionadoVisaPage({ params }: Props) {
                 </div>
                 <div className="max-w-3xl mx-auto px-4 text-center relative z-10">
                     <span className="tag-gold mb-5 inline-block">VISA GUIDE · 2026</span>
-                    <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6 leading-tight mt-4">
+                    <h1 className="font-heading text-4xl md:text-5xl font-bold text-brand-950 mb-6 leading-tight mt-4">
                         Panama Pensionado Visa:<br />The Complete 2026 Guide
                     </h1>
                     <p className="text-lg text-slate-500 leading-relaxed max-w-xl mx-auto">
@@ -106,7 +106,7 @@ export default async function PensionadoVisaPage({ params }: Props) {
                     </p>
                     <div className="grid sm:grid-cols-3 gap-3">
                         {benefits.map((b, i) => (
-                            <div key={i} className="glass-card rounded-xl p-4 border border-brand-100">
+                            <div key={i} className="card-light rounded-xl p-4 border border-brand-100">
                                 <div className="text-brand-GOLD font-black text-xl mb-1">{b.discount}</div>
                                 <div className="text-brand-950 font-bold text-xs mb-1">{b.category}</div>
                                 <div className="text-slate-500 text-[11px] leading-relaxed">{b.detail}</div>
@@ -123,7 +123,7 @@ export default async function PensionadoVisaPage({ params }: Props) {
                     </h2>
                     <div className="space-y-3">
                         {requirements.map((item, i) => (
-                            <div key={i} className="flex items-start gap-4 glass-card rounded-xl p-5 border border-brand-100">
+                            <div key={i} className="flex items-start gap-4 card-light rounded-xl p-5 border border-brand-100">
                                 <CheckCircle size={15} className="text-brand-TEAL mt-0.5 flex-shrink-0" />
                                 <div>
                                     <div className="text-brand-950 font-bold text-sm mb-1">{item.req}</div>
@@ -132,7 +132,7 @@ export default async function PensionadoVisaPage({ params }: Props) {
                             </div>
                         ))}
                     </div>
-                    <div className="mt-4 bg-brand-900 rounded-xl px-5 py-4 border border-brand-GOLD/20">
+                    <div className="mt-4 bg-brand-50 rounded-xl px-5 py-4 border border-brand-GOLD/20">
                         <p className="text-slate-500 text-xs leading-relaxed">
                             <span className="text-brand-GOLD font-bold">Social Security note: </span>
                             A single person&apos;s full Social Security benefit — the average in 2026 is $1,907/mo — qualifies comfortably. Many retirees apply the same week they file for SS.
@@ -147,7 +147,7 @@ export default async function PensionadoVisaPage({ params }: Props) {
                     </h2>
                     <div className="space-y-3">
                         {processSteps.map((s, i) => (
-                            <div key={i} className="flex items-start gap-4 glass-card rounded-xl p-5 border border-brand-100">
+                            <div key={i} className="flex items-start gap-4 card-light rounded-xl p-5 border border-brand-100">
                                 <div className="w-8 h-8 rounded-full bg-brand-GOLD/10 border border-brand-GOLD/30 flex items-center justify-center flex-shrink-0">
                                     <span className="text-brand-GOLD font-black text-xs">{s.n}</span>
                                 </div>
@@ -183,10 +183,10 @@ export default async function PensionadoVisaPage({ params }: Props) {
                                     { f: 'Discount card', p: 'Yes — Jubilado card', fn: 'No', inv: 'No' },
                                     { f: 'Citizenship eligibility', p: 'After 5 years', fn: 'After 5 years', inv: 'After 5 years' },
                                 ].map((row, i) => (
-                                    <tr key={i} className="border-b border-white/5">
+                                    <tr key={i} className="border-b border-brand-100">
                                         <td className="text-slate-500 text-xs py-3 pr-4 font-medium">{row.f}</td>
                                         <td className="text-white text-xs py-3 px-3 font-bold">{row.p}</td>
-                                        <td className="text-slate-300 text-xs py-3 px-3">{row.fn}</td>
+                                        <td className="text-slate-500 text-xs py-3 px-3">{row.fn}</td>
                                         <td className="text-slate-500 text-xs py-3 px-3">{row.inv}</td>
                                     </tr>
                                 ))}
@@ -196,7 +196,7 @@ export default async function PensionadoVisaPage({ params }: Props) {
                 </section>
 
                 {/* CTA */}
-                <section className="reveal-on-scroll bg-brand-900 p-8 rounded-2xl border-t-4 border-brand-GOLD text-center">
+                <section className="reveal-on-scroll bg-brand-50 p-8 rounded-2xl border-t-4 border-brand-GOLD text-center">
                     <h3 className="text-white font-heading text-2xl font-bold mb-3 uppercase italic tracking-tighter">
                         Ready to Start Your Pensionado Application?
                     </h3>
@@ -219,7 +219,7 @@ export default async function PensionadoVisaPage({ params }: Props) {
                         { label: 'How to Move to Panama', href: '/en/guides/how-to-move-to-panama' },
                         { label: 'Cost of Living Panama 2026', href: '/en/guides/cost-of-living-panama-2026' },
                     ].map((link, i) => (
-                        <Link key={i} href={link.href} className="flex items-center justify-between glass-card p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group">
+                        <Link key={i} href={link.href} className="flex items-center justify-between card-light p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group">
                             <span className="text-white text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>

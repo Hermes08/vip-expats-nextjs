@@ -7,7 +7,7 @@ const stats = [
 
 export default function TrustBar() {
   return (
-    <div className="w-full py-5 px-4 bg-brand-900 border-y border-white/5">
+    <div className="w-full py-5 px-4 bg-brand-50 border-y border-brand-100">
       <div className="max-w-5xl mx-auto grid grid-cols-2 md:flex md:flex-row md:items-center md:justify-around gap-0">
         {stats.map((stat, i) => (
           <div
@@ -20,7 +20,7 @@ export default function TrustBar() {
             <span className="text-2xl md:text-3xl font-black tracking-tight text-brand-GOLD">
               {stat.number}
             </span>
-            <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400 mt-1 text-center">
+            <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mt-1 text-center">
               {stat.label}
             </span>
           </div>

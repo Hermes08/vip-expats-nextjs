@@ -91,38 +91,38 @@ export default async function PanamaRealEstatePage({ params }: { params: Promise
   const t = content[lang as keyof typeof content] || content.en;
 
   return (
-    <main className="bg-brand-950 min-h-screen">
+    <main className="bg-white min-h-screen">
       {/* Hero Section */}
       <section className="pt-32 pb-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-brand-GOLD/5 to-transparent" />
         <div className="max-w-5xl mx-auto text-center relative z-10">
-          <h1 className="text-5xl md:text-7xl font-heading font-black text-white mb-6 uppercase tracking-tighter">
+          <h1 className="text-5xl md:text-7xl font-heading font-black text-brand-950 mb-6 uppercase tracking-tighter">
             {t.h1}
           </h1>
           <p className="text-2xl md:text-3xl text-brand-GOLD font-bold mb-8">
             {t.subtitle}
           </p>
-          <p className="text-xl text-slate-300 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             {t.intro}
           </p>
         </div>
       </section>
 
       {/* Why Panama Section */}
-      <section className="py-20 px-4 bg-black/30">
+      <section className="py-20 px-4 bg-brand-50/30">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-heading font-black text-white mb-6 text-center uppercase tracking-tighter">
+          <h2 className="text-4xl md:text-5xl font-heading font-black text-brand-950 mb-6 text-center uppercase tracking-tighter">
             {t.whyPanama}
           </h2>
-          <p className="text-xl text-slate-400 text-center mb-16 max-w-3xl mx-auto">
+          <p className="text-xl text-slate-500 text-center mb-16 max-w-3xl mx-auto">
             {t.whyPanamaContent}
           </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {t.benefits.map((benefit, i) => (
-              <div key={i} className="glass-card p-8 rounded-2xl border border-white/5 hover:border-brand-GOLD/30 transition-all">
+              <div key={i} className="card-light p-8 rounded-2xl border border-brand-100 hover:border-brand-GOLD/30 transition-all">
                 <benefit.icon className="text-brand-GOLD mb-6" size={40} />
                 <h3 className="text-xl font-black text-white mb-4">{benefit.title}</h3>
-                <p className="text-slate-400 text-sm leading-relaxed">{benefit.desc}</p>
+                <p className="text-slate-500 text-sm leading-relaxed">{benefit.desc}</p>
               </div>
             ))}
           </div>
@@ -132,16 +132,16 @@ export default async function PanamaRealEstatePage({ params }: { params: Promise
       {/* Property Types Section */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-heading font-black text-white mb-16 text-center uppercase tracking-tighter">
+          <h2 className="text-4xl md:text-5xl font-heading font-black text-brand-950 mb-16 text-center uppercase tracking-tighter">
             {t.propertyTypes}
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {t.types.map((type, i) => (
-              <div key={i} className="flex gap-6 p-8 glass-card rounded-2xl border border-white/5 hover:border-brand-GOLD/30 transition-all">
+              <div key={i} className="flex gap-6 p-8 card-light rounded-2xl border border-brand-100 hover:border-brand-GOLD/30 transition-all">
                 <type.icon className="text-brand-GOLD flex-shrink-0" size={48} />
                 <div>
                   <h3 className="text-2xl font-black text-white mb-4">{type.title}</h3>
-                  <p className="text-slate-400 leading-relaxed">{type.desc}</p>
+                  <p className="text-slate-500 leading-relaxed">{type.desc}</p>
                 </div>
               </div>
             ))}
@@ -150,9 +150,9 @@ export default async function PanamaRealEstatePage({ params }: { params: Promise
       </section>
 
       {/* Featured Properties */}
-      <section className="py-20 px-4 bg-black/30">
+      <section className="py-20 px-4 bg-brand-50/30">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-heading font-black text-white mb-16 text-center uppercase tracking-tighter">
+          <h2 className="text-4xl md:text-5xl font-heading font-black text-brand-950 mb-16 text-center uppercase tracking-tighter">
             {t.featuredTitle}
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
@@ -160,9 +160,9 @@ export default async function PanamaRealEstatePage({ params }: { params: Promise
               <Link
                 key={project.id}
                 href={`/${lang}/proyectos/${project.slug}`}
-                className="glass-card rounded-2xl overflow-hidden border border-white/5 hover:border-brand-GOLD/50 transition-all group"
+                className="card-light rounded-2xl overflow-hidden border border-brand-100 hover:border-brand-GOLD/50 transition-all group"
               >
-                <div className="aspect-video bg-brand-900 relative overflow-hidden">
+                <div className="aspect-video bg-brand-50 relative overflow-hidden">
                   {project.image && (
                     <img
                       src={project.image}
@@ -179,7 +179,7 @@ export default async function PanamaRealEstatePage({ params }: { params: Promise
                   <p className="text-brand-GOLD text-sm font-bold mb-3">
                     {project.location[lang as 'en' | 'es'] || project.location.en}
                   </p>
-                  <p className="text-slate-400 text-sm line-clamp-2">
+                  <p className="text-slate-500 text-sm line-clamp-2">
                     {project.description[lang as 'en' | 'es'] || project.description.en}
                   </p>
                 </div>
@@ -200,19 +200,19 @@ export default async function PanamaRealEstatePage({ params }: { params: Promise
       {/* Latest Investment & Lifestyle Guides */}
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-heading font-black text-white mb-16 text-center uppercase tracking-tighter">
+          <h2 className="text-4xl md:text-5xl font-heading font-black text-brand-950 mb-16 text-center uppercase tracking-tighter">
             Investment & Lifestyle Guides
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <Link
               href={`/${lang}/blog/panama-investment-opportunities`}
-              className="glass-card p-10 rounded-[2rem] border border-white/5 hover:border-brand-GOLD/50 transition-all group block"
+              className="card-light p-10 rounded-[2rem] border border-brand-100 hover:border-brand-GOLD/50 transition-all group block"
             >
               <TrendingUp className="text-brand-GOLD mb-6 group-hover:scale-110 transition-transform" size={40} />
-              <h3 className="text-2xl font-black text-white mb-4 uppercase italic tracking-tighter">
+              <h3 className="text-2xl font-black text-brand-950 mb-4 uppercase italic tracking-tighter">
                 2026 Investment Opportunities
               </h3>
-              <p className="text-slate-400 leading-relaxed mb-6">
+              <p className="text-slate-500 leading-relaxed mb-6">
                 Why sophisticated investors are choosing Panama's stable, dollarized market for high-yield property assets.
               </p>
               <span className="text-brand-GOLD font-bold flex items-center gap-2">
@@ -222,13 +222,13 @@ export default async function PanamaRealEstatePage({ params }: { params: Promise
 
             <Link
               href={`/${lang}/blog/panama-real-estate-beachfront-retirement`}
-              className="glass-card p-10 rounded-[2rem] border border-white/5 hover:border-brand-GOLD/50 transition-all group block"
+              className="card-light p-10 rounded-[2rem] border border-brand-100 hover:border-brand-GOLD/50 transition-all group block"
             >
               <Home className="text-brand-GOLD mb-6 group-hover:scale-110 transition-transform" size={40} />
-              <h3 className="text-2xl font-black text-white mb-4 uppercase italic tracking-tighter">
+              <h3 className="text-2xl font-black text-brand-950 mb-4 uppercase italic tracking-tighter">
                 Beachfront & Retirement Guide
               </h3>
-              <p className="text-slate-400 leading-relaxed mb-6">
+              <p className="text-slate-500 leading-relaxed mb-6">
                 Discover the ultimate lifestyle benefits of retiring or living beachfront in Panama's most exclusive communities.
               </p>
               <span className="text-brand-GOLD font-bold flex items-center gap-2">
@@ -242,7 +242,7 @@ export default async function PanamaRealEstatePage({ params }: { params: Promise
       {/* CTA Section */}
       <section className="py-24 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-6xl font-heading font-black text-white mb-10 uppercase tracking-tighter">
+          <h2 className="text-4xl md:text-6xl font-heading font-black text-brand-950 mb-10 uppercase tracking-tighter">
             {t.ctaTitle}
           </h2>
           <Link

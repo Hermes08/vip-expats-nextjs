@@ -83,10 +83,10 @@ export default function PropertySearchFilters({ filters, onChange, total, filter
     onChange(DEFAULT_FILTERS);
   }
 
-  const selectCls = "w-full bg-brand-800 border border-brand-600 text-white text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:border-brand-GOLD/50 transition-colors appearance-none cursor-pointer";
+  const selectCls = "w-full bg-brand-100 border border-brand-600 text-white text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:border-brand-GOLD/50 transition-colors appearance-none cursor-pointer";
 
   return (
-    <div className="bg-brand-900/80 backdrop-blur-md border border-brand-800 rounded-2xl p-5 mb-8">
+    <div className="bg-brand-50/80 backdrop-blur-md border border-brand-800 rounded-2xl p-5 mb-8">
       {/* Search text */}
       <div className="relative mb-4">
         <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-brand-GOLD/50" />
@@ -95,7 +95,7 @@ export default function PropertySearchFilters({ filters, onChange, total, filter
           value={filters.query}
           onChange={e => set('query', e.target.value)}
           placeholder={lang === 'es' ? 'Buscar por nombre, zona, ciudad...' : 'Search by name, zone, city...'}
-          className="w-full bg-brand-800 border border-brand-600 text-white text-sm rounded-xl pl-10 pr-4 py-2.5 focus:outline-none focus:border-brand-GOLD/50 transition-colors placeholder:text-neutral-500"
+          className="w-full bg-brand-100 border border-brand-600 text-white text-sm rounded-xl pl-10 pr-4 py-2.5 focus:outline-none focus:border-brand-GOLD/50 transition-colors placeholder:text-neutral-500"
         />
         {filters.query && (
           <button onClick={() => set('query', '')} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-white transition-colors">

@@ -46,7 +46,7 @@ export default function PropertyCard({ listing, lang, priority = false }: Proper
   const location = [listing.neighborhood, listing.city].filter(Boolean).join(', ');
 
   return (
-    <article className="group bg-brand-900 rounded-2xl overflow-hidden border border-brand-800 hover:border-brand-GOLD/30 transition-all duration-300 hover:shadow-2xl hover:shadow-brand-GOLD/5 flex flex-col">
+    <article className="group bg-brand-50 rounded-2xl overflow-hidden border border-brand-800 hover:border-brand-GOLD/30 transition-all duration-300 hover:shadow-2xl hover:shadow-brand-GOLD/5 flex flex-col">
       {/* Image */}
       <Link href={`/${lang}/propiedades/${listing.slug}`} className="block relative h-56 overflow-hidden">
         <Image

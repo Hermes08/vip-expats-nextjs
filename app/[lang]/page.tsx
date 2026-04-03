@@ -58,12 +58,12 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <ClientSections lang={lang} />
 
       {/* 4 — VIP DEVELOPMENTS */}
-      <section className="py-14 bg-black relative">
+      <section className="py-14 bg-brand-50 relative">
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="flex flex-col md:flex-row justify-between items-end mb-10 gap-4 reveal-on-scroll">
             <div>
-              <span className="text-brand-GOLD font-black uppercase tracking-[0.4em] text-[10px] mb-2 block">Curated Portfolio 2026</span>
-              <h2 className="font-heading text-3xl md:text-5xl font-black text-white tracking-tight">VIP <span className="text-brand-GOLD">DEVELOPMENTS</span></h2>
+              <span className="text-brand-TEAL font-black uppercase tracking-[0.4em] text-[10px] mb-2 block">Curated Portfolio 2026</span>
+              <h2 className="font-heading text-3xl md:text-5xl font-black text-brand-950 tracking-tight">VIP <span className="text-brand-TEAL">DEVELOPMENTS</span></h2>
             </div>
             <Link href={`/${lang}/proyectos`} className="btn-3d btn-3d-gold px-8 py-3 rounded-xl font-black uppercase tracking-widest text-[11px] flex items-center gap-2 whitespace-nowrap">
               VIEW ALL <ArrowRight size={14} />
@@ -83,11 +83,11 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       <TestimonialsSection />
 
       {/* 6 — WHY VIP EXPATS */}
-      <section className="py-14 bg-black text-white overflow-hidden relative border-t border-white/5">
+      <section className="py-14 bg-white overflow-hidden relative border-t border-brand-100">
         <div className="max-w-6xl mx-auto px-4 relative">
           <div className="text-center mb-10 reveal-on-scroll">
-            <span className="text-brand-GOLD font-black uppercase tracking-[0.4em] text-[10px] mb-2 block">Why Choose Us</span>
-            <h2 className="text-2xl md:text-4xl font-heading font-black tracking-tight">{t.homepage.expatLifeTitle}</h2>
+            <span className="text-brand-TEAL font-black uppercase tracking-[0.4em] text-[10px] mb-2 block">Why Choose Us</span>
+            <h2 className="text-2xl md:text-4xl font-heading font-black text-brand-950 tracking-tight">{t.homepage.expatLifeTitle}</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 items-start">
@@ -96,10 +96,10 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               { icon: ShieldCheck, title: "Elite Ground Team", desc: "Legal concierges handling your residency visa and offshore banking setup in record time." },
               { icon: Globe, title: "Lifestyle Vetting", desc: "Connect with established expat leaders and HNWIs before you commit your capital." }
             ].map((item, i) => (
-              <div key={i} className={`glass-card p-7 rounded-2xl border-white/5 hover:bg-brand-GOLD hover:text-brand-900 transition-all duration-500 group reveal-on-scroll stagger-${i + 1}`}>
-                <item.icon className="text-brand-GOLD mb-5 group-hover:text-brand-900 transition-all" size={32} />
-                <h4 className="text-xl font-black mb-3 uppercase tracking-tight">{item.title}</h4>
-                <p className="text-slate-400 group-hover:text-brand-900 text-sm font-medium leading-relaxed">{item.desc}</p>
+              <div key={i} className={`card-light p-7 rounded-2xl hover:border-brand-TEAL/40 transition-all duration-500 group reveal-on-scroll stagger-${i + 1}`}>
+                <item.icon className="text-brand-TEAL mb-5" size={32} />
+                <h4 className="text-xl font-black mb-3 uppercase tracking-tight text-brand-950">{item.title}</h4>
+                <p className="text-slate-500 text-sm font-medium leading-relaxed">{item.desc}</p>
               </div>
             ))}
           </div>
@@ -111,9 +111,9 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               "Full USD economy — zero currency risk",
               "Foreigners own property with identical rights to nationals"
             ].map((point, i) => (
-              <div key={i} className="flex items-start gap-3 glass-card p-4 rounded-xl border-white/5">
-                <CheckCircle size={16} className="text-brand-GOLD mt-0.5 flex-shrink-0" />
-                <p className="text-slate-300 text-sm font-medium leading-relaxed">{point}</p>
+              <div key={i} className="flex items-start gap-3 card-light p-4 rounded-xl">
+                <CheckCircle size={16} className="text-brand-TEAL mt-0.5 flex-shrink-0" />
+                <p className="text-slate-600 text-sm font-medium leading-relaxed">{point}</p>
               </div>
             ))}
           </div>
@@ -126,11 +126,11 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
       </div>
 
       {/* 8 — FAQ */}
-      <section className="py-14 bg-brand-950 relative overflow-hidden">
+      <section className="py-14 bg-brand-50 relative overflow-hidden">
         <div className="max-w-3xl mx-auto px-4 relative z-10 reveal-on-scroll">
           <div className="text-center mb-10">
-            <span className="text-brand-GOLD font-black uppercase tracking-[0.4em] text-[10px] mb-2 block">Common Questions</span>
-            <h2 className="text-2xl md:text-4xl font-heading font-black text-white tracking-tight">{t.homepage.faqTitle}</h2>
+            <span className="text-brand-TEAL font-black uppercase tracking-[0.4em] text-[10px] mb-2 block">Common Questions</span>
+            <h2 className="text-2xl md:text-4xl font-heading font-black text-brand-950 tracking-tight">{t.homepage.faqTitle}</h2>
           </div>
 
           <div className="grid gap-4">
@@ -145,20 +145,20 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
               { q: "Are there property taxes in Panama?", a: "Yes, but they are relatively low. Many new developments qualify for property tax exemptions on the construction value for several years. Primary residences also enjoy significant exemptions on the first $120,000." },
               { q: "Is it safe to invest in Panama real estate?", a: "Yes, provided you conduct proper due diligence. Panama uses a centralized Public Registry system where every title is recorded, providing a high level of security for investors." }
             ]).map((faq, i) => (
-              <div key={i} className="glass-card p-6 rounded-2xl border-white/5 hover:border-brand-GOLD/30 transition-all">
-                <h4 className="text-base font-black text-white mb-3 flex items-start gap-3">
-                  <span className="w-6 h-6 rounded-full bg-brand-GOLD text-brand-900 flex items-center justify-center text-xs font-black flex-shrink-0 mt-0.5">?</span>
+              <div key={i} className="card-light p-6 rounded-2xl hover:border-brand-TEAL/30 transition-all">
+                <h4 className="text-base font-black text-brand-950 mb-3 flex items-start gap-3">
+                  <span className="w-6 h-6 rounded-full bg-brand-TEAL text-white flex items-center justify-center text-xs font-black flex-shrink-0 mt-0.5">?</span>
                   {faq.q}
                 </h4>
-                <p className="text-slate-400 text-sm font-medium leading-relaxed pl-9">{faq.a}</p>
+                <p className="text-slate-500 text-sm font-medium leading-relaxed pl-9">{faq.a}</p>
               </div>
             ))}
           </div>
 
           <div className="mt-10 flex flex-wrap justify-center gap-6">
-            <Link href={`/${lang}/guides/pensionado-visa-panama`} className="text-brand-GOLD font-bold uppercase tracking-widest text-[11px] border-b border-brand-GOLD/30 pb-1 hover:border-brand-GOLD transition-all">PENSIONADO GUIDE →</Link>
-            <Link href={`/${lang}/guides/friendly-nations-visa-panama`} className="text-brand-GOLD font-bold uppercase tracking-widest text-[11px] border-b border-brand-GOLD/30 pb-1 hover:border-brand-GOLD transition-all">FRIENDLY NATIONS →</Link>
-            <Link href={`/${lang}/locations/boquete-real-estate`} className="text-brand-GOLD font-bold uppercase tracking-widest text-[11px] border-b border-brand-GOLD/30 pb-1 hover:border-brand-GOLD transition-all">BOQUETE GUIDE →</Link>
+            <Link href={`/${lang}/guides/pensionado-visa-panama`} className="text-brand-TEAL font-bold uppercase tracking-widest text-[11px] border-b border-brand-TEAL/30 pb-1 hover:border-brand-TEAL transition-all">PENSIONADO GUIDE →</Link>
+            <Link href={`/${lang}/guides/friendly-nations-visa-panama`} className="text-brand-TEAL font-bold uppercase tracking-widest text-[11px] border-b border-brand-TEAL/30 pb-1 hover:border-brand-TEAL transition-all">FRIENDLY NATIONS →</Link>
+            <Link href={`/${lang}/locations/boquete-real-estate`} className="text-brand-TEAL font-bold uppercase tracking-widest text-[11px] border-b border-brand-TEAL/30 pb-1 hover:border-brand-TEAL transition-all">BOQUETE GUIDE →</Link>
           </div>
         </div>
       </section>

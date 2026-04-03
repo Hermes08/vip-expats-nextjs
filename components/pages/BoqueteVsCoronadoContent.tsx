@@ -48,7 +48,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             </div>
 
             {/* Hero Section */}
-            <section className="py-48 bg-brand-950 text-white relative overflow-hidden rounded-b-[5rem]">
+            <section className="py-48 bg-white text-white relative overflow-hidden rounded-b-[5rem]">
                 <div className="absolute inset-0 opacity-20">
                     <img
                         src="https://images.unsplash.com/photo-1544644011-87b829283197?w=1600&q=80"
@@ -65,7 +65,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                         Boquete <br />
                         <span className="text-brand-GOLD">VS Coronado</span>
                     </h1>
-                    <p className="text-xl md:text-2xl text-slate-400 max-w-2xl leading-relaxed font-medium italic border-l-4 border-brand-GOLD/20 pl-12">
+                    <p className="text-xl md:text-2xl text-slate-500 max-w-2xl leading-relaxed font-medium italic border-l-4 border-brand-GOLD/20 pl-12">
                         Choosing between the <strong>Boquete Chiriquí</strong> highlands and <strong>Coronado beach</strong> is the ultimate binary choice for any expat.
                     </p>
                 </div>
@@ -267,7 +267,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             </section>
 
             {/* Safety & Security deep-dive */}
-            <section className="py-32 bg-brand-950 text-white rounded-[5rem] mx-4 relative overflow-hidden">
+            <section className="py-32 bg-white text-white rounded-[5rem] mx-4 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-5">
                     <ShieldCheck size={400} className="absolute -bottom-24 -left-24 rotate-12" />
                 </div>
@@ -320,7 +320,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                             <p>
                                 For <strong>pet relocation panama</strong>, you'll need a USDA health certificate (or the equivalent from your home country), but the process is straightforward. In Boquete, your pups will love the cool mountain trails; in Coronado, the beaches are giant playgrounds.
                             </p>
-                            <Link href={`/${lang}/relocation/legal/lawyers`} className="text-[10px] font-black uppercase tracking-[0.3em] bg-brand-950 text-white px-10 py-6 rounded-2xl inline-block mt-8">
+                            <Link href={`/${lang}/relocation/legal/lawyers`} className="text-[10px] font-black uppercase tracking-[0.3em] bg-white text-white px-10 py-6 rounded-2xl inline-block mt-8">
                                 Get Pet Checklist
                             </Link>
                         </div>
@@ -349,7 +349,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                     </div>
                     <div className="p-16 bg-neutral-900 text-white rounded-[4rem] shadow-2xl border border-brand-100">
                         <h4 className="text-2xl font-black uppercase tracking-tighter mb-8 italic text-brand-GOLD">Coronado Schools</h4>
-                        <p className="text-slate-400 leading-relaxed mb-8">
+                        <p className="text-slate-500 leading-relaxed mb-8">
                             Coronado features the prestigious <strong>Coronado International School</strong>. Proximity to the city guarantees superior resources for extracurriculars including competitive surf and golf academies.
                         </p>
                         <div className="flex items-center gap-4 text-[10px] font-black uppercase tracking-widest text-brand-GOLD">
@@ -361,7 +361,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
 
             {/* Healthcare Deep-Dive (Category 4) */}
             <section className="py-32 max-w-7xl mx-auto px-4">
-                <div className="bg-brand-950 text-white rounded-[4rem] p-20 relative overflow-hidden">
+                <div className="bg-white text-white rounded-[4rem] p-20 relative overflow-hidden">
                     <div className="absolute top-0 right-0 p-20 opacity-10">
                         <HeartPulse size={200} />
                     </div>
@@ -406,7 +406,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                 <div className="overflow-x-auto rounded-[3rem] border border-brand-100 shadow-2xl">
                     <table className="w-full text-left bg-white border-collapse">
                         <thead>
-                            <tr className="bg-brand-950 text-white">
+                            <tr className="bg-white text-white">
                                 <th className="p-10 text-[10px] font-black uppercase tracking-widest italic">Metric</th>
                                 <th className="p-10 text-[10px] font-black uppercase tracking-widest italic">Boquete</th>
                                 <th className="p-10 text-[10px] font-black uppercase tracking-widest italic">Coronado</th>
@@ -464,7 +464,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                         <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-navy px-16 py-8 rounded-2xl font-black uppercase tracking-[0.3em] text-xs">
                             COMPARE IN PERSON
                         </Link>
-                        <Link href={`/${lang}/relocation/guides`} className="btn-3d bg-white text-brand-950 px-16 py-8 rounded-2xl font-black uppercase tracking-[0.3em] text-xs shadow-xl border border-brand-950/10 hover:bg-brand-950 hover:text-white transition-all">
+                        <Link href={`/${lang}/relocation/guides`} className="btn-3d bg-white text-brand-950 px-16 py-8 rounded-2xl font-black uppercase tracking-[0.3em] text-xs shadow-xl border border-brand-950/10 hover:bg-brand-TEAL hover:text-white transition-all">
                             BACK TO GUIDES
                         </Link>
                     </div>

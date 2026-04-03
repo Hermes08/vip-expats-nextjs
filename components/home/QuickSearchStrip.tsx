@@ -53,7 +53,7 @@ const categories = [
 
 export default function QuickSearchStrip({ lang }: QuickSearchStripProps) {
   return (
-    <section className="bg-brand-950 border-b border-white/5 relative z-10">
+    <section className="bg-white border-b border-brand-100 relative z-10">
       {/* Top divider line */}
       <div className="w-full h-px bg-gradient-to-r from-transparent via-brand-GOLD/20 to-transparent" />
 
@@ -71,7 +71,7 @@ export default function QuickSearchStrip({ lang }: QuickSearchStripProps) {
                 href={href}
                 className="group flex items-center gap-5 px-8 py-7 hover:bg-white/3 transition-all duration-300"
               >
-                <div className="w-11 h-11 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center flex-shrink-0 group-hover:border-brand-GOLD/30 group-hover:bg-brand-GOLD/10 transition-all">
+                <div className="w-11 h-11 rounded-2xl bg-white/5 border border-brand-100 flex items-center justify-center flex-shrink-0 group-hover:border-brand-GOLD/30 group-hover:bg-brand-GOLD/10 transition-all">
                   <Icon size={20} className="text-brand-GOLD" />
                 </div>
                 <div className="flex-1 min-w-0">

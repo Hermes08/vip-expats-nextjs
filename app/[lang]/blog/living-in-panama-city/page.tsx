@@ -206,7 +206,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
     return (
         <article className="bg-white min-h-screen pt-28 pb-20">
             {/* Hero */}
-            <section className="bg-brand-900 py-28 relative overflow-hidden">
+            <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <img
                         src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1600&q=80"
@@ -218,7 +218,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                     <span className="text-[10px] font-bold text-brand-GOLD uppercase tracking-[0.4em] mb-4 block">
                         EXPAT LIVING GUIDE · 2026 EDITION
                     </span>
-                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
+                    <h1 className="font-heading text-4xl md:text-6xl font-bold text-brand-950 mb-8 leading-tight">
                         Living in Panama City:<br />The Honest Expat Guide
                     </h1>
                     <p className="text-xl text-brand-300 leading-relaxed font-medium max-w-2xl mx-auto">
@@ -234,7 +234,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                     <p className="text-2xl font-semibold text-white border-l-4 border-brand-GOLD pl-6 leading-relaxed">
                         Panama City is not a tropical retirement village. It is a genuine, fast-moving metropolis — the financial capital of Central America — with a skyline that rivals Miami, a healthcare system that rivals Houston, and a cost of living that is roughly half of both.
                     </p>
-                    <p className="text-slate-400 mt-6 text-lg leading-relaxed">
+                    <p className="text-slate-500 mt-6 text-lg leading-relaxed">
                         For the right expat, Panama City is genuinely transformative. For the wrong expat, the traffic, bureaucracy, and humidity will drive them home within a year. This guide is designed to help you figure out which camp you fall into — before you commit.
                     </p>
                 </section>
@@ -244,19 +244,19 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                     <h2 className="text-white text-3xl font-heading font-bold mb-2 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
                         Panama City Neighborhoods for Expats
                     </h2>
-                    <p className="text-slate-400 mb-8 leading-relaxed">
+                    <p className="text-slate-500 mb-8 leading-relaxed">
                         Panama City is not one city — it is a collection of very different neighborhoods, each with its own personality, price point, and expat culture. Choosing the right one matters more than almost any other decision you will make.
                     </p>
                     <div className="space-y-6">
                         {neighborhoods.map((n, i) => (
-                            <div key={i} className="glass-card rounded-2xl p-7 border border-brand-100">
+                            <div key={i} className="card-light rounded-2xl p-7 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-4 mb-4">
                                     <div>
                                         <div className="flex items-center gap-2 mb-1">
                                             <MapPin size={13} className="text-brand-GOLD" />
                                             <span className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest">{n.tag}</span>
                                         </div>
-                                        <h3 className="text-2xl font-heading font-black text-white">{n.name}</h3>
+                                        <h3 className="text-2xl font-heading font-black text-brand-950">{n.name}</h3>
                                         <span className="text-slate-500 text-[10px] font-bold uppercase tracking-widest">{n.vibe}</span>
                                     </div>
                                     <div className="text-right">
@@ -266,7 +266,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                                         <div className="text-slate-600 text-[9px] uppercase font-bold tracking-widest">Buy</div>
                                     </div>
                                 </div>
-                                <p className="text-slate-400 text-sm leading-relaxed">{n.description}</p>
+                                <p className="text-slate-500 text-sm leading-relaxed">{n.description}</p>
                             </div>
                         ))}
                     </div>
@@ -278,19 +278,19 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                         <DollarSign className="inline text-brand-GOLD mr-2" size={28} />
                         What Does It Actually Cost to Live Here?
                     </h2>
-                    <p className="text-slate-400 mb-8 leading-relaxed">
+                    <p className="text-slate-500 mb-8 leading-relaxed">
                         These are real monthly budget ranges based on what our clients actually spend — not tourist blog estimates. The range is wide because Panama City offers an equally wide range of lifestyles.
                     </p>
                     <div className="grid md:grid-cols-3 gap-6">
                         {monthlyBudgets.map((budget, i) => (
-                            <div key={i} className="glass-card rounded-2xl p-6 border border-brand-100">
+                            <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] mb-2">{budget.tier}</div>
                                 <div className="text-white font-black text-xl mb-4">
                                     {budget.total}<span className="text-slate-500 font-normal text-sm">/mo</span>
                                 </div>
                                 <ul className="space-y-2">
                                     {budget.items.map((item, j) => (
-                                        <li key={j} className="text-slate-400 text-xs leading-relaxed flex items-start gap-2">
+                                        <li key={j} className="text-slate-500 text-xs leading-relaxed flex items-start gap-2">
                                             <span className="text-brand-GOLD mt-0.5 flex-shrink-0">·</span>
                                             {item}
                                         </li>
@@ -307,13 +307,13 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                         <Heart className="inline text-brand-GOLD mr-2" size={28} />
                         Healthcare: Panama City&apos;s Hidden Superpower
                     </h2>
-                    <p className="text-slate-400 leading-relaxed mb-6">
+                    <p className="text-slate-500 leading-relaxed mb-6">
                         Healthcare is consistently the biggest positive surprise for North American expats. The quality is high, the access is fast, and the cost is dramatically lower than in the US.
                     </p>
                     <div className="grid sm:grid-cols-2 gap-4">
                         {healthcareCosts.map((item, i) => (
-                            <div key={i} className="flex justify-between items-center bg-brand-900 rounded-xl px-5 py-4 border border-brand-100">
-                                <span className="text-slate-300 text-sm">{item.label}</span>
+                            <div key={i} className="flex justify-between items-center bg-brand-50 rounded-xl px-5 py-4 border border-brand-100">
+                                <span className="text-slate-500 text-sm">{item.label}</span>
                                 <span className="text-brand-GOLD font-black text-sm">{item.cost}</span>
                             </div>
                         ))}
@@ -340,7 +340,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                                         <CheckCircle size={16} className="text-brand-GOLD mt-1 flex-shrink-0" />
                                         <div>
                                             <div className="text-white font-bold text-sm mb-1">{item.title}</div>
-                                            <div className="text-slate-400 text-xs leading-relaxed">{item.body}</div>
+                                            <div className="text-slate-500 text-xs leading-relaxed">{item.body}</div>
                                         </div>
                                     </div>
                                 ))}
@@ -357,7 +357,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                                         <AlertTriangle size={16} className="text-brand-CORAL mt-1 flex-shrink-0" />
                                         <div>
                                             <div className="text-white font-bold text-sm mb-1">{item.title}</div>
-                                            <div className="text-slate-400 text-xs leading-relaxed">{item.body}</div>
+                                            <div className="text-slate-500 text-xs leading-relaxed">{item.body}</div>
                                         </div>
                                     </div>
                                 ))}
@@ -367,16 +367,16 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                 </section>
 
                 {/* Who thrives */}
-                <section className="reveal-on-scroll glass-card rounded-2xl p-8 border border-brand-100">
+                <section className="reveal-on-scroll card-light rounded-2xl p-8 border border-brand-100">
                     <h2 className="text-white text-2xl font-heading font-bold mb-6 uppercase tracking-tighter italic">
                         <Users className="inline text-brand-GOLD mr-2" size={24} />
                         Who Thrives in Panama City?
                     </h2>
                     <div className="grid sm:grid-cols-2 gap-3">
                         {thriveItems.map((item, i) => (
-                            <div key={i} className="flex items-start gap-3 bg-brand-950 rounded-xl p-4">
+                            <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-4">
                                 <CheckCircle size={14} className="text-brand-GOLD mt-0.5 flex-shrink-0" />
-                                <span className="text-slate-300 text-sm leading-relaxed">{item}</span>
+                                <span className="text-slate-500 text-sm leading-relaxed">{item}</span>
                             </div>
                         ))}
                     </div>
@@ -389,15 +389,15 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                     </h2>
                     <div className="space-y-3">
                         {visas.map((item, i) => (
-                            <div key={i} className="glass-card rounded-xl p-5 border border-brand-100">
+                            <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
                                 <div className="flex flex-wrap gap-x-8 gap-y-2">
                                     <div>
                                         <div className="text-brand-GOLD font-black text-sm">{item.visa}</div>
                                         <div className="text-slate-500 text-xs mt-1">
-                                            <span className="text-slate-400 font-bold">Req: </span>{item.req}
+                                            <span className="text-slate-500 font-bold">Req: </span>{item.req}
                                         </div>
                                     </div>
-                                    <div className="text-slate-400 text-xs leading-relaxed mt-1 flex-1 min-w-[200px]">{item.benefit}</div>
+                                    <div className="text-slate-500 text-xs leading-relaxed mt-1 flex-1 min-w-[200px]">{item.benefit}</div>
                                 </div>
                             </div>
                         ))}
@@ -405,7 +405,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                 </section>
 
                 {/* CTA */}
-                <section className="reveal-on-scroll bg-brand-950 p-10 rounded-3xl border-t-4 border-brand-GOLD text-center">
+                <section className="reveal-on-scroll bg-white p-10 rounded-3xl border-t-4 border-brand-GOLD text-center">
                     <h3 className="text-white font-heading text-3xl font-bold mb-4 uppercase italic tracking-tighter">
                         Ready to See Panama City for Yourself?
                     </h3>
@@ -434,7 +434,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                         <Link
                             key={i}
                             href={link.href}
-                            className="flex items-center justify-between glass-card p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
+                            className="flex items-center justify-between card-light p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                         >
                             <span className="text-white text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />

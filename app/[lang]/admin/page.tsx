@@ -60,7 +60,7 @@ const AdminPage = () => {
                         </div>
                         <button
                             type="submit"
-                            className="w-full bg-brand-900 text-white py-2 rounded-lg font-bold hover:bg-brand-800 transition-colors"
+                            className="w-full bg-brand-50 text-white py-2 rounded-lg font-bold hover:bg-brand-100 transition-colors"
                         >
                             Login
                         </button>
@@ -171,7 +171,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
             return (
                 <button
                     onClick={() => setIsOpen(true)}
-                    className="w-full h-32 border-2 border-dashed border-slate-300 rounded-lg hover:border-brand-GOLD hover:bg-brand-50 transition-all flex flex-col items-center justify-center gap-2 text-slate-400 hover:text-brand-900 group"
+                    className="w-full h-32 border-2 border-dashed border-slate-300 rounded-lg hover:border-brand-GOLD hover:bg-brand-50 transition-all flex flex-col items-center justify-center gap-2 text-slate-500 hover:text-brand-900 group"
                 >
                     <div className="p-2 bg-white rounded-full shadow-sm group-hover:scale-110 transition-transform"><Edit2 size={20} /></div>
                     <span className="font-bold text-sm">+ Add Image</span>
@@ -182,7 +182,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
             <div className="p-4 bg-slate-100 rounded-xl border border-slate-200">
                 <div className="flex justify-between items-center mb-4">
                     <h4 className="font-bold text-slate-700">Select Image</h4>
-                    <button onClick={() => setIsOpen(false)}><X size={20} className="text-slate-400 hover:text-slate-600" /></button>
+                    <button onClick={() => setIsOpen(false)}><X size={20} className="text-slate-500 hover:text-slate-600" /></button>
                 </div>
                 <ImageSelector onSelect={(url) => { onSelect(url); setIsOpen(false); }} onCancel={() => setIsOpen(false)} />
             </div>
@@ -322,7 +322,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                                     <X size={14} />
                                 </button>
                                 {idx === 0 && (
-                                    <span className="absolute bottom-2 left-2 bg-black/60 text-white text-[10px] font-bold px-2 py-0.5 rounded backdrop-blur-sm">MAIN COVER</span>
+                                    <span className="absolute bottom-2 left-2 bg-brand-50/80 text-white text-[10px] font-bold px-2 py-0.5 rounded backdrop-blur-sm">MAIN COVER</span>
                                 )}
                             </div>
                         ))}
@@ -490,7 +490,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                             <div key={index} className="bg-slate-50 p-6 rounded-xl relative group border border-slate-200">
                                 <button
                                     onClick={() => handleRemoveFloorPlan(index)}
-                                    className="absolute top-4 right-4 text-slate-400 hover:text-red-500 bg-white rounded-full p-1 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity"
+                                    className="absolute top-4 right-4 text-slate-500 hover:text-red-500 bg-white rounded-full p-1 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity"
                                 >
                                     <X size={20} />
                                 </button>
@@ -503,7 +503,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                                             {plan.image ? (
                                                 <img src={plan.image} alt="Plan" className="w-full h-full object-cover" />
                                             ) : (
-                                                <span className="text-slate-300">No Image</span>
+                                                <span className="text-slate-500">No Image</span>
                                             )}
                                         </div>
                                         <div className="h-10">
@@ -682,7 +682,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                                         className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none text-sm bg-white text-slate-900 shadow-sm transition-all duration-300 focus:h-[40vh] focus:absolute focus:z-50 focus:shadow-2xl focus:top-0 focus:-mt-6 h-32"
                                         placeholder={`Enter ${field} in English...`}
                                     />
-                                    <span className="text-[10px] text-slate-400 absolute bottom-2 right-4 pointer-events-none group-focus-within:hidden">Expand on focus</span>
+                                    <span className="text-[10px] text-slate-500 absolute bottom-2 right-4 pointer-events-none group-focus-within:hidden">Expand on focus</span>
                                 </div>
                                 <div className="relative">
                                     <label className="block text-xs font-bold text-slate-500 mb-1">Spanish (ES)</label>
@@ -693,7 +693,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                                         className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-brand-GOLD outline-none resize-none text-sm bg-white text-slate-900 shadow-sm transition-all duration-300 focus:h-[40vh] focus:absolute focus:z-50 focus:shadow-2xl focus:top-0 focus:-mt-6 h-32"
                                         placeholder={`Ingresar ${field} en Español...`}
                                     />
-                                    <span className="text-[10px] text-slate-400 absolute bottom-2 right-4 pointer-events-none group-focus-within:hidden">Expandir al enfocar</span>
+                                    <span className="text-[10px] text-slate-500 absolute bottom-2 right-4 pointer-events-none group-focus-within:hidden">Expandir al enfocar</span>
                                 </div>
                             </div>
                         </div>
@@ -775,7 +775,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                             <div key={index} className="bg-slate-50 p-4 rounded-xl relative group border border-slate-200">
                                 <button
                                     onClick={() => handleRemoveFaq(index)}
-                                    className="absolute top-2 right-2 text-slate-400 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
+                                    className="absolute top-2 right-2 text-slate-500 hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
                                 >
                                     <X size={16} />
                                 </button>

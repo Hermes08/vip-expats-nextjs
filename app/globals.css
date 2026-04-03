@@ -185,24 +185,24 @@ body {
   background-color: var(--color-brand-50);
 }
 
-/* Dark/CTA section — deep teal-black (only hero overlays, footer) */
-.section-dark {
-  background-color: var(--color-brand-950);
-  color: #FFFFFF;
-}
-
 /* Teal CTA section — bright Caribbean teal background */
 .section-teal {
   background-color: #00C5CB;
   color: #01181A;
 }
 
-/* Soft teal CTA — lighter teal for secondary CTAs */
+/* Soft teal CTA — airy teal tint for secondary sections */
 .section-teal-soft {
-  background-color: var(--color-brand-100);
+  background-color: #F0FBFB;
   color: var(--color-brand-950);
-  border-top: 1px solid rgba(0, 197, 203, 0.25);
-  border-bottom: 1px solid rgba(0, 197, 203, 0.25);
+  border-top: 1px solid rgba(0, 197, 203, 0.18);
+  border-bottom: 1px solid rgba(0, 197, 203, 0.18);
+}
+
+/* Dark section — reserved for footer only */
+.section-dark {
+  background-color: #032728;
+  color: #FFFFFF;
 }
 
 .section-container {
@@ -229,14 +229,14 @@ body {
   .premium-grid-2 { grid-template-columns: 1fr 1.2fr; align-items: center; }
 }
 
-/* ─── Hero mesh gradient — dark sections ─── */
-.bg-mesh-glow {
-  background-color: var(--brand-navy);
+/* ─── Light mesh gradient — tropical hero sections ─── */
+.bg-mesh-hero {
+  background-color: #F0FBFB;
   background-image:
-    radial-gradient(at 0% 0%,   rgba(0, 197, 203, 0.14) 0px, transparent 50%),
-    radial-gradient(at 100% 0%, rgba(212, 168, 67, 0.08) 0px, transparent 50%),
-    radial-gradient(at 100% 100%, rgba(232, 113, 74, 0.06) 0px, transparent 50%),
-    radial-gradient(at 0% 100%,  rgba(1, 24, 26, 1) 0px, transparent 50%);
+    radial-gradient(at 0% 0%,   rgba(0, 197, 203, 0.10) 0px, transparent 50%),
+    radial-gradient(at 100% 0%, rgba(212, 168, 67, 0.05) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(0, 197, 203, 0.06) 0px, transparent 50%),
+    radial-gradient(at 0% 100%,  rgba(240, 251, 251, 1) 0px, transparent 50%);
   background-size: 200% 200%;
   animation: mesh 15s ease infinite;
 }

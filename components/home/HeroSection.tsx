@@ -23,7 +23,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="inline-flex items-center gap-3 px-5 py-2 glass-card rounded-full mb-6 shadow-xl"
+            className="inline-flex items-center gap-3 px-5 py-2 card-light rounded-full mb-6 shadow-xl"
             style={{ transform: 'translateZ(40px)' }}
           >
             <div className="w-2 h-2 bg-brand-GOLD rounded-full animate-pulse shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div>
@@ -47,7 +47,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.5, delay: 0.8 }}
-              className="text-sm md:text-base text-white/70 font-bold mb-5 uppercase tracking-[0.3em]"
+              className="text-sm md:text-base text-slate-600 font-bold mb-5 uppercase tracking-[0.3em]"
             >
               Luxury Beachfront & City Portfolio
             </motion.p>
@@ -57,7 +57,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="text-base md:text-lg text-slate-300 mb-8 leading-relaxed max-w-xl mx-auto font-medium"
+            className="text-base md:text-lg text-slate-500 mb-8 leading-relaxed max-w-xl mx-auto font-medium"
             style={{ transform: 'translateZ(30px)' }}
           >
             Your trusted guide to buying property in Panama. From beachfront condos to mountain retreats, we connect international investors with the best opportunities.
@@ -76,7 +76,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
               </Link>
             </Magnetic>
             <Magnetic strength={0.3}>
-              <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] bg-white/5 backdrop-blur-3xl border border-white/10 flex items-center justify-center gap-3">
+              <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] bg-white/5 backdrop-blur-3xl border border-brand-100 flex items-center justify-center gap-3">
                 {lang === 'es' ? 'CONSULTA GRATIS' : 'FREE CONSULTATION'}
               </Link>
             </Magnetic>
@@ -95,7 +95,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
               { val: '7+', label: lang === 'es' ? 'Años de experiencia' : 'Years Experience' },
               { val: '100%', label: lang === 'es' ? 'USD · Sin riesgo cambiario' : 'USD · No Currency Risk' },
             ].map((stat, i) => (
-              <div key={i} className="flex items-center gap-2 text-white/70">
+              <div key={i} className="flex items-center gap-2 text-slate-600">
                 <span className="text-brand-GOLD font-black text-lg">{stat.val}</span>
                 <span className="text-[10px] font-bold uppercase tracking-widest">{stat.label}</span>
                 {i < 2 && <span className="ml-4 w-px h-4 bg-white/20 hidden sm:block" />}
