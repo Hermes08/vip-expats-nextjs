@@ -48,7 +48,7 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
     const resolvedParams = await params;
     const lang = resolvedParams.lang || 'en';
     return (
-        <div className="pt-24 min-h-screen bg-white text-slate-900">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-900 py-32 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -71,15 +71,15 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
                 </div>
             </section>
 
-            <section className="py-24 max-w-4xl mx-auto px-4">
-                <div className="prose prose-lg text-brand-600 max-w-none space-y-10">
+            <section className="py-12 max-w-4xl mx-auto px-4 reveal-on-scroll">
+                <div className="space-y-10">
 
-                    <p className="lead text-2xl font-semibold text-brand-900 border-l-4 border-brand-GOLD pl-6">
+                    <p className="lead text-2xl font-semibold text-white border-l-4 border-brand-GOLD pl-6">
                         <strong>Panama real estate investment</strong> has quietly become one of the most compelling opportunities in the Western Hemisphere. A dollarized economy, zero tax on foreign income, permanent residency pathways from $300,000, and a location that puts you equidistant between North and South America — the fundamentals have never been stronger.
                     </p>
 
                     {/* Investment Stats */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 not-prose my-16">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-6 not-prose my-16 reveal-on-scroll">
                         {investmentHighlights.map((item, i) => {
                             const Icon = item.icon;
                             return (
@@ -92,7 +92,7 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
                         })}
                     </div>
 
-                    <h2 className="text-brand-900 text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
+                    <h2 className="text-white text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
                         Why Panama? The Structural Advantages
                     </h2>
                     <p>
@@ -107,22 +107,22 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
                         ].map((item, i) => (
                             <li key={i} className="flex items-start gap-4">
                                 <CheckCircle size={20} className="text-brand-GOLD mt-1 flex-shrink-0" />
-                                <span className="text-slate-700">
+                                <span className="text-slate-300">
                                     <strong className="text-slate-900">{item.title}:</strong> {item.body}
                                 </span>
                             </li>
                         ))}
                     </ul>
 
-                    <h2 className="text-brand-900 text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
+                    <h2 className="text-white text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
                         Top Locations for Panama Real Estate Investment
                     </h2>
 
-                    <div className="space-y-6 not-prose">
+                    <div className="space-y-6 not-prose reveal-on-scroll">
                         {topLocations.map((loc, i) => (
-                            <div key={i} className="bg-neutral-50 rounded-2xl p-8 border border-neutral-100">
-                                <h3 className="font-heading font-bold text-brand-900 text-xl mb-3">{loc.name}</h3>
-                                <p className="text-slate-600 mb-4 leading-relaxed">{loc.description}</p>
+                            <div key={i} className="glass-card rounded-2xl p-8 border border-white/5">
+                                <h3 className="font-heading font-bold text-white text-xl mb-3">{loc.name}</h3>
+                                <p className="text-slate-400 mb-4 leading-relaxed">{loc.description}</p>
                                 <div className="flex items-center gap-2">
                                     <span className="text-brand-GOLD font-bold text-xs uppercase tracking-widest">Best For:</span>
                                     <span className="text-slate-500 text-sm">{loc.bestFor}</span>
@@ -131,7 +131,7 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
                         ))}
                     </div>
 
-                    <h2 className="text-brand-900 text-2xl font-heading font-bold mt-12 mb-6 flex items-center gap-3">
+                    <h2 className="text-white text-2xl font-heading font-bold mt-12 mb-6 flex items-center gap-3">
                         <TrendingUp className="text-brand-GOLD" /> The Expat Lifestyle Premium
                     </h2>
                     <p>
@@ -141,7 +141,7 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
                         That differential, compounded over 10–20 years of retirement, represents life-changing wealth preservation. Many expats reinvest the savings directly into additional <strong>Panama beachfront properties</strong>, creating their own micro-portfolio of short-term rental assets.
                     </p>
 
-                    <h2 className="text-brand-900 text-2xl font-heading font-bold mt-12 mb-6 flex items-center gap-3">
+                    <h2 className="text-white text-2xl font-heading font-bold mt-12 mb-6 flex items-center gap-3">
                         <Palmtree className="text-brand-GOLD" /> Retiring in Panama: The Pensionado Advantage
                     </h2>
                     <p>
@@ -156,7 +156,7 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
                             '50% off entertainment (movies, concerts, sports events)',
                             '25% off restaurant meals',
                         ].map((b, i) => (
-                            <li key={i} className="flex items-center gap-3 text-slate-700">
+                            <li key={i} className="flex items-center gap-3 text-slate-300">
                                 <CheckCircle size={16} className="text-brand-GOLD flex-shrink-0" />
                                 {b}
                             </li>
@@ -189,6 +189,6 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
 
                 </div>
             </section>
-        </div>
+        </article>
     );
 }

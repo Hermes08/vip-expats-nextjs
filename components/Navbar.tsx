@@ -55,13 +55,13 @@ const Navbar: React.FC = () => {
         relocate: {
             label: t.nav.relocate,
             items: [
-                { path: '/relocation', label: t.nav.relocationHub },
-                { path: '/relocation/tours', label: t.nav.tours },
-                { path: '/relocation/visas', label: t.nav.visas },
-                { path: '/relocation/legal', label: t.nav.legal ? t.nav.legal : "Legal & Immigration" },
-                { path: '/relocation/cost', label: t.nav.cost ? t.nav.cost : "Cost & Process" },
-                { path: '/relocation/reviews', label: t.nav.reviews ? t.nav.reviews : "Reviews" },
-                { path: '/relocation/guides', label: t.nav.guides },
+                { path: '/blog', label: lang === 'es' ? 'Blog & Guías' : 'Blog & Guides' },
+                { path: '/guides/how-to-move-to-panama', label: lang === 'es' ? 'Cómo Mudarse a Panamá' : 'How to Move to Panama' },
+                { path: '/guides/best-areas-retire-panama', label: lang === 'es' ? 'Mejores Zonas para Vivir' : 'Best Areas to Live' },
+                { path: '/guides/cost-of-living-panama-2026', label: lang === 'es' ? 'Costo de Vida 2026' : 'Cost of Living 2026' },
+                { path: '/guides/pensionado-visa-panama', label: lang === 'es' ? 'Visa Pensionado' : 'Pensionado Visa' },
+                { path: '/guides/friendly-nations-visa-panama', label: lang === 'es' ? 'Visa Naciones Amigas' : 'Friendly Nations Visa' },
+                { path: '/guides/safest-neighborhoods-panama-city', label: lang === 'es' ? 'Vecindarios Seguros' : 'Safe Neighborhoods' },
             ]
         },
         media: {

@@ -37,7 +37,7 @@ export default async function PanamaInvestmentOpportunities({ params }: { params
     const lang = resolvedParams.lang || 'en';
 
     return (
-        <div className="pt-24 min-h-screen bg-white text-slate-900">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             <BlogPostSchema
                 title="Panama Real Estate: Top Investment Opportunities for 2026"
                 description="A comprehensive guide to why Panama real estate is a top choice for global investors and expats in 2026."
@@ -70,14 +70,14 @@ export default async function PanamaInvestmentOpportunities({ params }: { params
             </section>
 
             {/* Main Content */}
-            <section className="py-24 max-w-4xl mx-auto px-4">
-                <div className="prose prose-lg text-brand-600 max-w-none space-y-10">
+            <section className="py-12 max-w-4xl mx-auto px-4">
+                <div className="space-y-10">
 
-                    <p className="lead text-2xl font-semibold text-brand-900 border-l-4 border-brand-GOLD pl-6">
+                    <p className="lead text-2xl font-semibold text-white border-l-4 border-brand-GOLD pl-6">
                         In a global landscape of economic uncertainty, Panama stands out as a beacon of stability. For expats and investors alike, the blend of <strong>luxury lifestyle</strong> and <strong>tangible asset security</strong> is unmatched in the region.
                     </p>
 
-                    <h2 className="text-brand-900 text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
+                    <h2 className="text-white text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
                         Why Invest in Panama Right Now?
                     </h2>
                     <p>
@@ -85,22 +85,22 @@ export default async function PanamaInvestmentOpportunities({ params }: { params
                     </p>
 
                     {/* Highlights Grid */}
-                    <div className="grid md:grid-cols-2 gap-8 not-prose my-16">
+                    <div className="grid md:grid-cols-2 gap-8 not-prose my-16 reveal-on-scroll">
                         {investmentHighlights.map((item, i) => {
                             const Icon = item.icon;
                             return (
-                                <div key={i} className="bg-neutral-50 p-8 rounded-3xl border border-neutral-100 hover:shadow-lg transition-all group">
+                                <div key={i} className="glass-card p-8 rounded-2xl border border-white/5 hover:shadow-lg transition-all group">
                                     <div className="w-12 h-12 rounded-2xl bg-brand-900 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
                                         <Icon size={24} className="text-brand-GOLD" />
                                     </div>
-                                    <h3 className="text-xl font-bold text-brand-900 mb-3 uppercase italic tracking-tight">{item.title}</h3>
-                                    <p className="text-slate-600 leading-relaxed">{item.desc}</p>
+                                    <h3 className="text-xl font-bold text-white mb-3 uppercase italic tracking-tight">{item.title}</h3>
+                                    <p className="text-slate-400 leading-relaxed">{item.desc}</p>
                                 </div>
                             );
                         })}
                     </div>
 
-                    <h2 className="text-brand-900 text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
+                    <h2 className="text-white text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
                         Beachfront Properties vs. City Luxury
                     </h2>
                     <p>
@@ -111,7 +111,7 @@ export default async function PanamaInvestmentOpportunities({ params }: { params
                         <li><strong>Beachfront (Pacific & Caribbean):</strong> Best for lifestyle, retirement, and the "Qualified Investor" visa path. Areas like Playa Bonita and Buenaventura offer world-class amenities.</li>
                     </ul>
 
-                    <h2 className="text-brand-900 text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
+                    <h2 className="text-white text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
                         The Expat Lifestyle & Retirement Advantage
                     </h2>
                     <p>
@@ -136,6 +136,6 @@ export default async function PanamaInvestmentOpportunities({ params }: { params
 
                 </div>
             </section>
-        </div>
+        </article>
     );
 }

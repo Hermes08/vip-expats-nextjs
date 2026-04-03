@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function CostOfLivingArticle() {
     return (
-        <div className="pt-24 min-h-screen bg-white text-slate-900">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Context-Aware Header */}
             <section className="bg-brand-900 py-32 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -25,13 +25,13 @@ export default function CostOfLivingArticle() {
             </section>
 
             {/* Context-Aware Content Wrapper */}
-            <section className="py-24 max-w-4xl mx-auto px-4">
-                <div className="prose prose-lg text-brand-600 max-w-none space-y-10">
-                    <p className="lead text-2xl font-semibold text-brand-900 border-l-4 border-brand-GOLD pl-6">
+            <section className="py-12 max-w-4xl mx-auto px-4">
+                <div className="space-y-10">
+                    <p className="lead text-2xl font-semibold text-white border-l-4 border-brand-GOLD pl-6">
                         For decades, the American Dream required an American ZIP code. Today, the savvy investor knows that true financial freedom and a <strong>luxury lifestyle</strong> are found just a 2.5-hour flight south of Miami, in the Republic of Panama.
                     </p>
 
-                    <h2 className="text-brand-900 text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">The Wealth Arbitrage Effect</h2>
+                    <h2 className="text-white text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">The Wealth Arbitrage Effect</h2>
                     <p>
                         When analyzing the <strong>cost of living in Panama</strong>, the most crucial concept to grasp is "Wealth Arbitrage." You are earning (or have retired with) US Dollars, but you are spending them in an economy where the cost of services, labor, and real estate is fundamentally decoupled from the North American inflation crisis.
                     </p>
@@ -40,13 +40,13 @@ export default function CostOfLivingArticle() {
                     </p>
 
                     {/* Aesthetic Stats Block extracted from Context */}
-                    <div className="bg-neutral-50 p-12 rounded-[3rem] border border-neutral-100 not-prose my-16 shadow-inner">
-                        <h3 className="text-2xl font-bold text-brand-900 mb-8 uppercase italic text-center">Monthly Budget Comparison (Couple)</h3>
+                    <div className="glass-card p-10 rounded-3xl border border-white/5 not-prose my-16 reveal-on-scroll">
+                        <h3 className="text-2xl font-bold text-white mb-8 uppercase italic text-center">Monthly Budget Comparison (Couple)</h3>
                         <div className="grid md:grid-cols-2 gap-8">
-                            <div className="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                            <div className="bg-white/5 p-8 rounded-2xl border border-white/10">
                                 <div className="text-slate-400 font-bold uppercase tracking-widest text-[10px] mb-2">Average US Metro</div>
-                                <div className="text-4xl font-black text-slate-800 mb-6">$6,500<span className="text-sm text-slate-400 font-medium">/mo</span></div>
-                                <ul className="space-y-4 text-sm font-medium text-slate-600">
+                                <div className="text-4xl font-black text-white mb-6">$6,500<span className="text-sm text-slate-400 font-medium">/mo</span></div>
+                                <ul className="space-y-4 text-sm font-medium text-slate-300">
                                     <li className="flex justify-between border-b pb-2"><span>Housing (Rent/Mortgage)</span> <span>$2,800</span></li>
                                     <li className="flex justify-between border-b pb-2"><span>Healthcare (Premiums+Out of Pocket)</span> <span>$1,200</span></li>
                                     <li className="flex justify-between border-b pb-2"><span>Groceries & Dining</span> <span>$1,000</span></li>
@@ -69,7 +69,7 @@ export default function CostOfLivingArticle() {
                         </div>
                     </div>
 
-                    <h2 className="text-brand-900 text-2xl font-heading font-bold mt-12 mb-6 flex items-center gap-3"><Home className="text-brand-GOLD" /> Real Estate: Buy or Rent?</h2>
+                    <h2 className="text-white text-2xl font-heading font-bold mt-12 mb-6 flex items-center gap-3"><Home className="text-brand-GOLD" /> Real Estate: Buy or Rent?</h2>
                     <p>
                         The <strong>Panama real estate market</strong> offers aggressive advantages. If you choose to rent, $1,200 - $1,800 secures a fully furnished, modern apartment in premium Panama City neighborhoods like Costa del Este, Punta Pacifica, or Avenida Balboa, often featuring rooftop pools, gyms, and 24/7 security.
                     </p>
@@ -77,7 +77,7 @@ export default function CostOfLivingArticle() {
                         If you choose to buy, <strong>luxury properties in Panama</strong> are typically priced at $2,500 to $3,500 per square meter—a fraction of the cost of Miami ($10,000+/sqm) or San Diego ($8,000+/sqm). Furthermore, buying property is your direct ticket to residency via the <strong>Qualified Investor Visa</strong> or the Friendly Nations Visa.
                     </p>
 
-                    <h2 className="text-brand-900 text-2xl font-heading font-bold mt-12 mb-6 flex items-center gap-3"><HeartPulse className="text-brand-GOLD" /> Healthcare: World-Class for Less</h2>
+                    <h2 className="text-white text-2xl font-heading font-bold mt-12 mb-6 flex items-center gap-3"><HeartPulse className="text-brand-GOLD" /> Healthcare: World-Class for Less</h2>
                     <p>
                         Perhaps the greatest shock to North Americans is the quality and cost of <strong>healthcare in Panama</strong>. Hospital Punta Pacifica is affiliated with Johns Hopkins Medicine International. Many doctors speak fluent English and trained in the US or Europe.
                     </p>
@@ -85,7 +85,7 @@ export default function CostOfLivingArticle() {
                         A specialist consultation costs between $50 and $80 out-of-pocket without insurance. Comprehensive local health insurance for a couple in their 60s is often less than $300 a month. Compare this to the thousands spent annually on deductibles and premiums in the US system.
                     </p>
 
-                    <h2 className="text-brand-900 text-2xl font-heading font-bold mt-12 mb-6 flex items-center gap-3"><DollarSign className="text-brand-GOLD" /> The Pensionado Multiplier</h2>
+                    <h2 className="text-white text-2xl font-heading font-bold mt-12 mb-6 flex items-center gap-3"><DollarSign className="text-brand-GOLD" /> The Pensionado Multiplier</h2>
                     <p>
                         The math becomes undeniably skewed in favor of Panama when you factor in the <strong>Pensionado Visa benefits</strong>. If you have a lifelong pension of at least $1,000/month (like Social Security), you qualify. This visa grants you:
                     </p>
@@ -109,6 +109,6 @@ export default function CostOfLivingArticle() {
 
                 </div>
             </section>
-        </div>
+        </article>
     );
 }

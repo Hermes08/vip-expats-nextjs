@@ -2207,6 +2207,82 @@ export const BLOG_POSTS: BlogPost[] = [
     date: 'March 5, 2026',
     image: 'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=800&q=80',
     category: 'Relocation'
+  },
+  {
+    id: 'blog-condos-buyers-guide',
+    slug: 'condos-for-sale-panama-buyers-guide',
+    title: {
+      en: 'Condos for Sale in Panama: The Complete 2026 Buyer\'s Guide',
+      es: 'Condominios en Venta en Panamá: Guía Completa del Comprador 2026'
+    },
+    excerpt: {
+      en: 'From Panama City high-rises to beachfront retreats — everything you need to know before buying a condo in Panama in 2026.',
+      es: 'Desde los rascacielos de Ciudad de Panamá hasta retiros frente al mar — todo lo que necesita saber antes de comprar un condominio en Panamá.'
+    },
+    content: {
+      en: 'A comprehensive guide to buying condos in Panama covering top neighborhoods, price ranges, legal process, and investment returns for 2026.',
+      es: 'Una guía completa para comprar condominios en Panamá que cubre los mejores vecindarios, rangos de precios, proceso legal y rendimientos de inversión.'
+    },
+    date: 'March 20, 2026',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80',
+    category: 'Market Guide'
+  },
+  {
+    id: 'blog-apartments-rent-panama-city',
+    slug: 'apartments-for-rent-panama-city',
+    title: {
+      en: 'Apartments for Rent in Panama City: 2026 Neighborhood Guide & Prices',
+      es: 'Apartamentos en Alquiler en Ciudad de Panamá: Guía de Vecindarios 2026 y Precios'
+    },
+    excerpt: {
+      en: 'Find the best apartments for rent in Panama City Panama. Compare El Cangrejo, Costa del Este, Miraflores, and Casco Viejo with real 2026 rental prices.',
+      es: 'Encuentre los mejores apartamentos en alquiler en Ciudad de Panamá. Compare El Cangrejo, Costa del Este, Miraflores y Casco Viejo con precios reales de alquiler 2026.'
+    },
+    content: {
+      en: 'Your complete guide to renting an apartment in Panama City, covering top neighborhoods, average prices, furnished vs unfurnished, and red flags to avoid.',
+      es: 'Su guía completa para alquilar un apartamento en Ciudad de Panamá, que cubre los mejores vecindarios, precios promedio, amueblado vs sin amueblar y señales de alerta a evitar.'
+    },
+    date: 'March 22, 2026',
+    image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-real-estate-market-2026',
+    slug: 'panama-real-estate-market-2026',
+    title: {
+      en: "Panama Real Estate Market 2026: Investor's Complete Analysis",
+      es: 'Mercado Inmobiliario de Panamá 2026: Análisis Completo del Inversor'
+    },
+    excerpt: {
+      en: "Comprehensive analysis of Panama's 2026 real estate market — prices, ROI by neighborhood, foreign investment trends, and 2027 outlook.",
+      es: 'Análisis completo del mercado inmobiliario de Panamá 2026 — precios, ROI por vecindario, tendencias de inversión extranjera y perspectivas 2027.'
+    },
+    content: {
+      en: "Deep-dive into Panama's real estate market performance in 2026 with data-driven insights on the best neighborhoods for investment returns.",
+      es: 'Análisis profundo del desempeño del mercado inmobiliario de Panamá en 2026 con información basada en datos sobre los mejores vecindarios para retornos de inversión.'
+    },
+    date: 'March 25, 2026',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80',
+    category: 'Investment'
+  },
+  {
+    id: 'blog-panama-golden-visa-2026',
+    slug: 'panama-golden-visa-2026',
+    title: {
+      en: "Panama Golden Visa 2026: The $300,000 Qualified Investor Program",
+      es: 'Visa Dorada de Panamá 2026: El Programa de Inversor Calificado de $300,000'
+    },
+    excerpt: {
+      en: "Everything you need to know about Panama's Qualified Investor Visa — requirements, real estate options, processing timeline, and path to residency.",
+      es: 'Todo lo que necesita saber sobre la Visa de Inversor Calificado de Panamá — requisitos, opciones inmobiliarias, tiempo de procesamiento y camino hacia la residencia.'
+    },
+    content: {
+      en: "Panama's Qualified Investor Visa offers a fast-track residency path for investors committing $300,000+ in real estate or other qualifying assets.",
+      es: 'La Visa de Inversor Calificado de Panamá ofrece una vía de residencia acelerada para inversores que comprometan $300,000+ en bienes raíces u otros activos calificados.'
+    },
+    date: 'March 28, 2026',
+    image: 'https://images.unsplash.com/photo-1541814674069-70fb56303271?w=800&q=80',
+    category: 'Legal'
   }
 ];
 

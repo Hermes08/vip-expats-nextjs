@@ -37,7 +37,7 @@ export default async function PanamaBeachfrontLifestyle({ params }: { params: Pr
     const lang = resolvedParams.lang || 'en';
 
     return (
-        <div className="pt-24 min-h-screen bg-white text-slate-900">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             <BlogPostSchema
                 title="Beachfront Properties & Retirement: The Panama Expat Lifestyle"
                 description="A deep dive into why retirees and digital nomads are flocking to Panama's beaches in 2026."
@@ -70,14 +70,14 @@ export default async function PanamaBeachfrontLifestyle({ params }: { params: Pr
             </section>
 
             {/* Main Content */}
-            <section className="py-24 max-w-4xl mx-auto px-4">
-                <div className="prose prose-lg text-brand-600 max-w-none space-y-10">
+            <section className="py-12 max-w-4xl mx-auto px-4">
+                <div className="space-y-10">
 
-                    <p className="lead text-2xl font-semibold text-brand-900 border-l-4 border-brand-GOLD pl-6">
+                    <p className="lead text-2xl font-semibold text-white border-l-4 border-brand-GOLD pl-6">
                         Panama frequently tops the lists of <strong>"World&apos;s Best Places to Retire."</strong> In 2026, this is driven by more than just taxes; it&apos;s about the unparalleled quality of life found in its coastal retreats.
                     </p>
 
-                    <h2 className="text-brand-900 text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
+                    <h2 className="text-white text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
                         The Allure of Panama Beachfront Properties
                     </h2>
                     <p>
@@ -88,22 +88,22 @@ export default async function PanamaBeachfrontLifestyle({ params }: { params: Pr
                     </p>
 
                     {/* Lifestyle Grid */}
-                    <div className="grid md:grid-cols-2 gap-8 not-prose my-16">
+                    <div className="grid md:grid-cols-2 gap-8 not-prose my-16 reveal-on-scroll">
                         {lifestylePillars.map((item, i) => {
                             const Icon = item.icon;
                             return (
-                                <div key={i} className="glass-card p-10 rounded-[3rem] border border-neutral-100 bg-neutral-50 shadow-sm hover:translate-y-[-5px] transition-transform">
+                                <div key={i} className="glass-card p-10 rounded-2xl border border-white/5 shadow-sm hover:translate-y-[-5px] transition-transform">
                                     <div className="w-14 h-14 rounded-full bg-brand-GOLD flex items-center justify-center mb-6">
-                                        <Icon size={28} className="text-brand-900" />
+                                        <Icon size={28} className="text-white" />
                                     </div>
-                                    <h3 className="text-xl font-black text-brand-900 mb-4 uppercase italic tracking-tighter">{item.title}</h3>
-                                    <p className="text-slate-600 leading-relaxed">{item.desc}</p>
+                                    <h3 className="text-xl font-black text-white mb-4 uppercase italic tracking-tighter">{item.title}</h3>
+                                    <p className="text-slate-400 leading-relaxed">{item.desc}</p>
                                 </div>
                             );
                         })}
                     </div>
 
-                    <h2 className="text-brand-900 text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
+                    <h2 className="text-white text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
                         Retiring in Panama: The Pensionado Edge
                     </h2>
                     <p>
@@ -113,7 +113,7 @@ export default async function PanamaBeachfrontLifestyle({ params }: { params: Pr
                         For those looking to combine their residency with a property purchase, the <strong>Qualified Investor Visa</strong> allows for a path to residency through a $300,000 real estate investment, often processed in as little as 30 days.
                     </p>
 
-                    <h2 className="text-brand-900 text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
+                    <h2 className="text-white text-3xl font-heading font-bold mt-16 mb-8 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
                         Top Communities for Beachfront Living
                     </h2>
                     <ul>
@@ -140,6 +140,6 @@ export default async function PanamaBeachfrontLifestyle({ params }: { params: Pr
 
                 </div>
             </section>
-        </div>
+        </article>
     );
 }
