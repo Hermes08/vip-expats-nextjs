@@ -69,7 +69,7 @@ export default async function PensionadoVisaPage({ params }: Props) {
     return (
         <article className="bg-white min-h-screen pt-28 pb-20">
             {/* Hero */}
-            <section className="section-dark py-24 relative overflow-hidden">
+            <section className="section-teal-soft py-24 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <img src="https://images.unsplash.com/photo-1549420958-370146059d4c?w=1600&q=80" alt="Panama Retirement" className="w-full h-full object-cover" />
                 </div>
@@ -78,7 +78,7 @@ export default async function PensionadoVisaPage({ params }: Props) {
                     <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6 leading-tight mt-4">
                         Panama Pensionado Visa:<br />The Complete 2026 Guide
                     </h1>
-                    <p className="text-lg text-brand-300 leading-relaxed max-w-xl mx-auto">
+                    <p className="text-lg text-slate-500 leading-relaxed max-w-xl mx-auto">
                         The world&apos;s most generous retiree residency program — requirements, benefits, discounts, and the exact steps to get it approved.
                     </p>
                 </div>

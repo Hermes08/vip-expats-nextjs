@@ -19,7 +19,7 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
         return (
             <div className="pt-32 text-center bg-white min-h-screen">
                 <h1 className="text-2xl font-bold text-brand-950">Post not found</h1>
-                <Link href={`/${lang}/blog`} className="text-brand-TEAL-dark hover:underline mt-4 block">Back to Blog</Link>
+                <Link href={`/${lang}/blog`} className="text-brand-TEAL hover:underline mt-4 block">Back to Blog</Link>
             </div>
         );
     }
@@ -42,7 +42,7 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
             <div className="max-w-3xl mx-auto px-4 py-12">
                 <Link
                     href={`/${lang}/blog`}
-                    className="inline-flex items-center gap-2 text-slate-400 hover:text-brand-TEAL-dark font-bold uppercase tracking-widest text-[10px] mb-8 transition-colors"
+                    className="inline-flex items-center gap-2 text-slate-400 hover:text-brand-TEAL font-bold uppercase tracking-widest text-[10px] mb-8 transition-colors"
                 >
                     <ArrowLeft size={12} /> {lang === 'es' ? 'Volver al Blog' : 'Back to Blog'}
                 </Link>
@@ -58,15 +58,15 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
                 <div className="flex items-center justify-between border-y border-brand-100 py-4 mb-10">
                     <div className="flex items-center gap-5 text-slate-400 text-[11px] font-bold uppercase tracking-widest">
                         <div className="flex items-center gap-2">
-                            <Calendar size={13} className="text-brand-TEAL-dark" />
+                            <Calendar size={13} className="text-brand-TEAL" />
                             {post.date}
                         </div>
                         <div className="flex items-center gap-2">
-                            <User size={13} className="text-brand-TEAL-dark" />
+                            <User size={13} className="text-brand-TEAL" />
                             Panama Real Estate Advisor
                         </div>
                     </div>
-                    <button className="text-slate-300 hover:text-brand-TEAL-dark transition-colors">
+                    <button className="text-slate-300 hover:text-brand-TEAL transition-colors">
                         <Share2 size={16} />
                     </button>
                 </div>
@@ -111,19 +111,18 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
                     </div>
                 )}
 
-                {/* Lead magnet — dark CTA section */}
-                <div className="mb-14 section-dark p-10 rounded-2xl text-center relative overflow-hidden border border-brand-800">
-                    <div className="absolute top-0 right-0 w-48 h-48 bg-brand-GOLD/5 rounded-full blur-3xl pointer-events-none" />
-                    <BookOpen className="mx-auto mb-5 text-brand-GOLD/50" size={36} />
-                    <h3 className="font-heading text-2xl font-black text-white mb-3 uppercase italic tracking-tighter">
+                {/* Lead magnet — teal-soft CTA */}
+                <div className="mb-14 section-teal-soft p-10 rounded-2xl text-center relative overflow-hidden">
+                    <BookOpen className="mx-auto mb-5 text-brand-TEAL" size={36} />
+                    <h3 className="font-heading text-2xl font-black text-brand-950 mb-3 uppercase italic tracking-tighter">
                         Want the full picture?
                     </h3>
-                    <p className="text-slate-400 text-sm mb-7 max-w-md mx-auto leading-relaxed">
+                    <p className="text-brand-800 text-sm mb-7 max-w-md mx-auto leading-relaxed">
                         Download our Panama Investment Guide — residency, taxes, and hidden market opportunities.
                     </p>
                     <Link
                         href={`/${lang}`}
-                        className="inline-block btn-3d btn-3d-gold px-8 py-3 rounded-xl font-black uppercase tracking-widest text-xs"
+                        className="inline-block btn-3d btn-3d-navy px-8 py-3 rounded-xl font-black uppercase tracking-widest text-xs"
                     >
                         Download Free Guide
                     </Link>

@@ -97,7 +97,7 @@ const AboutPageContent: React.FC = () => {
                     <div className="grid md:grid-cols-2 gap-10">
                         <div className="space-y-8">
                             <div>
-                                <h3 className="text-xl font-bold mb-4 flex items-center gap-3 text-brand-600">
+                                <h3 className="text-xl font-bold mb-4 flex items-center gap-3 text-brand-TEAL">
                                     <Heart size={18} /> The Pros: Living the Dream
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed mb-5 text-sm">
@@ -110,7 +110,7 @@ const AboutPageContent: React.FC = () => {
                                         '0% tax on income earned outside of Panama.',
                                     ].map((item, i) => (
                                         <li key={i} className="flex items-start gap-3 text-slate-600 text-sm">
-                                            <CheckCircle className="text-brand-TEAL-dark shrink-0 mt-0.5" size={14} />
+                                            <CheckCircle className="text-brand-TEAL shrink-0 mt-0.5" size={14} />
                                             {item}
                                         </li>
                                     ))}
@@ -140,7 +140,7 @@ const AboutPageContent: React.FC = () => {
                             </div>
                             <div className="card-light p-8 rounded-2xl">
                                 <h3 className="text-lg font-bold mb-4 flex items-center gap-3 text-brand-950">
-                                    <Users size={18} className="text-brand-TEAL-dark" /> Expat Communities in Panama
+                                    <Users size={18} className="text-brand-TEAL" /> Expat Communities in Panama
                                 </h3>
                                 <p className="text-slate-500 leading-relaxed text-sm">
                                     From Coronado for golf lovers to <strong className="text-brand-950">boquete panama real estate</strong> for mountain hikers, we connect you with the social hubs that make international living in Panama truly feel like home.
@@ -170,7 +170,7 @@ const AboutPageContent: React.FC = () => {
                     ].map((item, i) => (
                         <div key={i} className="card-light p-6 rounded-2xl text-center group">
                             <div className="w-14 h-14 bg-brand-50 border border-brand-100 rounded-full flex items-center justify-center mx-auto mb-5 group-hover:bg-brand-TEAL/10 group-hover:border-brand-TEAL/30 transition-all">
-                                <item.icon size={22} className="text-brand-TEAL-dark" />
+                                <item.icon size={22} className="text-brand-TEAL" />
                             </div>
                             <h3 className="font-black text-brand-950 uppercase text-xs tracking-widest mb-2">{item.title}</h3>
                             <p className="text-slate-500 text-xs font-medium leading-relaxed">{item.desc}</p>
@@ -193,7 +193,7 @@ const AboutPageContent: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 text-[10px] font-bold text-slate-400 uppercase tracking-tighter">
                         {SEO_KEYWORDS_LIST.map((k, i) => (
-                            <span key={i} className="hover:text-brand-TEAL-dark transition-colors cursor-default">{k}</span>
+                            <span key={i} className="hover:text-brand-TEAL transition-colors cursor-default">{k}</span>
                         ))}
                         <span>panama waterfront condos</span>
                         <span>panama foreign investment property</span>
@@ -204,11 +204,11 @@ const AboutPageContent: React.FC = () => {
                 </div>
             </section>
 
-            {/* Final CTA — dark */}
-            <section className="section-dark py-20 text-center">
+            {/* Final CTA — light teal soft */}
+            <section className="section-teal-soft py-20 text-center">
                 <div className="max-w-3xl mx-auto px-4">
-                    <span className="tag-teal mb-5 inline-block">READY TO MOVE?</span>
-                    <h2 className="font-heading text-3xl md:text-5xl font-black text-white mb-8 uppercase italic tracking-tighter mt-4">
+                    <span className="tag-teal-light mb-5 inline-block">READY TO MOVE?</span>
+                    <h2 className="font-heading text-3xl md:text-5xl font-black text-brand-950 mb-8 uppercase italic tracking-tighter mt-4">
                         Start Your Panama Journey
                     </h2>
                     <div className="flex flex-wrap justify-center gap-4">

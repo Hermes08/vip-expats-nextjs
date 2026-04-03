@@ -60,7 +60,7 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
 
     return (
         <article className="bg-white min-h-screen pt-28 pb-20">
-            <section className="section-dark py-24 relative overflow-hidden">
+            <section className="section-teal-soft py-24 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
                     <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80" alt="Panama Friendly Nations Visa" className="w-full h-full object-cover" />
                 </div>
@@ -69,7 +69,7 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
                     <h1 className="font-heading text-4xl md:text-5xl font-bold text-white mb-6 leading-tight mt-4">
                         Friendly Nations Visa:<br />The Fastest Path to Panama Residency
                     </h1>
-                    <p className="text-lg text-brand-300 leading-relaxed max-w-xl mx-auto">
+                    <p className="text-lg text-slate-500 leading-relaxed max-w-xl mx-auto">
                         For citizens of 50 countries including the US, Canada, and all of the EU — residency in as little as 3–4 weeks.
                     </p>
                 </div>

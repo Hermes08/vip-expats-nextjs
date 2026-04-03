@@ -4,13 +4,15 @@
   --font-sans: var(--font-manrope);
   --font-heading: var(--font-montserrat);
 
-  /* ─── Dark scale — hero, CTA, footer sections ─── */
+  /* ─── Dark scale — ONLY for hero photo overlays and footer ─── */
   --color-brand-950: #01181A;
   --color-brand-900: #032728;
   --color-brand-800: #074040;
-  --color-brand-600: #0A5A5C;
-  --color-brand-500: #0E7478;
-  --color-brand-300: #62CBCE;
+
+  /* ─── Mid scale — readable teal text on white ─── */
+  --color-brand-600: #0098A0;   /* clear teal, not dark green */
+  --color-brand-500: #00B0B8;   /* medium-bright teal */
+  --color-brand-300: #6EDDE2;   /* light teal tint */
 
   /* ─── Light scale — page backgrounds, alt sections ─── */
   --color-brand-50:  #F0FBFB;
@@ -22,8 +24,8 @@
   /* ─── Accent palette ─── */
   --color-brand-GOLD:      #D4A843;
   --color-brand-AMBER:     #B8821A;
-  --color-brand-TEAL:      #00C5CB;
-  --color-brand-TEAL-dark: #009BA0;
+  --color-brand-TEAL:      #00C5CB;   /* bright Caribbean teal */
+  --color-brand-TEAL-dark: #00A8AE;   /* readable teal on white — NOT dark green */
   --color-brand-CORAL:     #E8714A;
 
   --color-neutral-50:  #f8fafc;
@@ -139,16 +141,16 @@ body {
 /* Light card — used on white/light sections */
 .card-light {
   background: #FFFFFF;
-  border: 1px solid rgba(0, 197, 203, 0.18);
-  box-shadow: 0 2px 20px rgba(1, 24, 26, 0.06), 0 1px 4px rgba(0, 197, 203, 0.08);
+  border: 1px solid rgba(0, 197, 203, 0.22);
+  box-shadow: 0 2px 16px rgba(0, 197, 203, 0.08), 0 1px 4px rgba(0, 0, 0, 0.04);
   position: relative;
   overflow: hidden;
   transition: all 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .card-light:hover {
-  box-shadow: 0 8px 32px rgba(0, 197, 203, 0.15), 0 2px 8px rgba(1, 24, 26, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 197, 203, 0.18), 0 2px 8px rgba(0, 197, 203, 0.10);
   transform: translateY(-2px);
-  border-color: rgba(0, 197, 203, 0.35);
+  border-color: rgba(0, 197, 203, 0.45);
 }
 
 /* Glass card — used on dark sections */
@@ -183,10 +185,24 @@ body {
   background-color: var(--color-brand-50);
 }
 
-/* Dark/CTA section — deep teal-black */
+/* Dark/CTA section — deep teal-black (only hero overlays, footer) */
 .section-dark {
   background-color: var(--color-brand-950);
   color: #FFFFFF;
+}
+
+/* Teal CTA section — bright Caribbean teal background */
+.section-teal {
+  background-color: #00C5CB;
+  color: #01181A;
+}
+
+/* Soft teal CTA — lighter teal for secondary CTAs */
+.section-teal-soft {
+  background-color: var(--color-brand-100);
+  color: var(--color-brand-950);
+  border-top: 1px solid rgba(0, 197, 203, 0.25);
+  border-bottom: 1px solid rgba(0, 197, 203, 0.25);
 }
 
 .section-container {
@@ -257,11 +273,11 @@ body {
   font-size: 0.6rem; font-weight: 900; letter-spacing: 0.25em;
   text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 9999px;
 }
-/* On light backgrounds */
+/* On light backgrounds — vivid teal, not dark green */
 .tag-teal-light {
-  background: rgba(0, 197, 203, 0.10);
-  color: #009BA0;
-  border: 1px solid rgba(0, 197, 203, 0.30);
+  background: rgba(0, 197, 203, 0.12);
+  color: #00A8AE;
+  border: 1px solid rgba(0, 197, 203, 0.35);
   font-size: 0.6rem; font-weight: 900; letter-spacing: 0.25em;
   text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 9999px;
 }

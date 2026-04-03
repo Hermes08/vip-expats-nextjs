@@ -62,8 +62,8 @@ const BlogPageContent: React.FC<{ lang?: 'en' | 'es' }> = ({ lang: propLang }) =
                             </Link>
 
                             <div className="p-6 flex flex-col flex-grow">
-                                <div className="text-brand-500 text-[11px] font-bold uppercase tracking-widest mb-2">{post.date}</div>
-                                <h2 className="font-heading text-lg font-black text-brand-950 mb-3 group-hover:text-brand-600 transition-colors leading-tight">
+                                <div className="text-brand-TEAL text-[11px] font-bold uppercase tracking-widest mb-2">{post.date}</div>
+                                <h2 className="font-heading text-lg font-black text-brand-950 mb-3 group-hover:text-brand-TEAL transition-colors leading-tight">
                                     <Link href={`/${lang}/blog/${post.slug}`}>
                                         {post.title[lang] || post.title.en}
                                     </Link>
@@ -73,7 +73,7 @@ const BlogPageContent: React.FC<{ lang?: 'en' | 'es' }> = ({ lang: propLang }) =
                                 </p>
                                 <Link
                                     href={`/${lang}/blog/${post.slug}`}
-                                    className="inline-flex items-center gap-2 text-brand-TEAL-dark font-black hover:gap-3 transition-all text-xs uppercase tracking-widest"
+                                    className="inline-flex items-center gap-2 text-brand-TEAL font-black hover:gap-3 transition-all text-xs uppercase tracking-widest"
                                 >
                                     {lang === 'es' ? 'Leer artículo' : 'Read Article'} <ArrowRight size={12} />
                                 </Link>
