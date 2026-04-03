@@ -64,7 +64,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
             <div className="container mx-auto px-4 pt-32 pb-20 relative z-10">
 
                 {/* Back Link */}
-                <Link href={`/${lang}/podcast`} className="inline-flex items-center gap-2 text-neutral-400 hover:text-brand-GOLD mb-8 transition-colors">
+                <Link href={`/${lang}/podcast`} className="inline-flex items-center gap-2 text-slate-500 hover:text-brand-GOLD mb-8 transition-colors">
                     <ArrowLeft size={16} /> {lang === 'es' ? 'Volver al Podcast' : 'Back to Podcast'}
                 </Link>
 
@@ -89,7 +89,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
                             {episode.title[lang as 'en' | 'es']}
                         </h1>
 
-                        <div className="flex flex-wrap items-center gap-6 text-neutral-400 mb-8 pb-8 border-b border-brand-100">
+                        <div className="flex flex-wrap items-center gap-6 text-slate-500 mb-8 pb-8 border-b border-brand-100">
                             <div className="flex items-center gap-2">
                                 <Calendar size={18} className="text-brand-GOLD" />
                                 <span>{episode.publishDate}</span>
@@ -110,7 +110,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
                             <h3 className="text-brand-GOLD font-bold uppercase tracking-wider text-sm mb-4">
                                 {lang === 'es' ? 'Resumen del Episodio' : 'Episode Overview'}
                             </h3>
-                            <p className="text-neutral-300 leading-relaxed text-lg mb-8">
+                            <p className="text-slate-500 leading-relaxed text-lg mb-8">
                                 {episode.description[lang as 'en' | 'es']}
                             </p>
 
@@ -119,7 +119,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
                                     <span className="w-2 h-2 rounded-full bg-brand-GOLD"></span>
                                     {lang === 'es' ? 'Invitados' : 'Guests'}
                                 </h3>
-                                <p className="text-neutral-300">
+                                <p className="text-slate-500">
                                     <strong className="text-white block mb-1">Host:</strong> {episode.host}<br />
                                     {episode.guest && (
                                         <>
@@ -139,7 +139,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
                                 </h3>
                                 <ul className="space-y-4">
                                     {episode.takeaways[lang as 'en' | 'es'].map((item, i) => (
-                                        <li key={i} className="flex items-start gap-4 text-neutral-300">
+                                        <li key={i} className="flex items-start gap-4 text-slate-500">
                                             <div className="w-1.5 h-1.5 rounded-full bg-brand-GOLD mt-2.5 flex-shrink-0" />
                                             <span className="text-lg leading-relaxed">{item}</span>
                                         </li>
@@ -154,7 +154,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
                                 <h3 className="text-brand-GOLD font-bold uppercase tracking-wider text-sm mb-4">
                                     {lang === 'es' ? 'Transcripción y Notas' : 'Transcript & Show Notes'}
                                 </h3>
-                                <div className="text-neutral-400 leading-relaxed text-base bg-brand-50/30 p-8 rounded-2xl border border-brand-100 italic">
+                                <div className="text-slate-500 leading-relaxed text-base bg-brand-50/30 p-8 rounded-2xl border border-brand-100 italic">
                                     {episode.transcript[lang as 'en' | 'es']}
                                 </div>
                             </div>
@@ -170,7 +170,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
                             <h3 className="text-2xl font-black text-brand-950 mb-4 relative z-10">
                                 {lang === 'es' ? '¿Inspirado por este episodio?' : 'Inspired by this episode?'}
                             </h3>
-                            <p className="text-neutral-300 mb-6 relative z-10">
+                            <p className="text-slate-500 mb-6 relative z-10">
                                 {lang === 'es'
                                     ? "Reserve una llamada de descubrimiento gratuita con nuestro equipo para discutir sus planes en Panamá."
                                     : "Book a free discovery call with our team to discuss your Panama plans."}

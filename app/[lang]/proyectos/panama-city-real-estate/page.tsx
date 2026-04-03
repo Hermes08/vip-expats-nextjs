@@ -62,7 +62,7 @@ export default function PanamaCityRealEstatePage() {
 
                             {/* Neighborhood 2 */}
                             <div className="bg-neutral-900 text-white p-8 rounded-[2rem] shadow-xl relative overflow-hidden group">
-                                <h4 className="text-2xl font-black text-white uppercase italic mb-4">Costa del Este & Santa Maria</h4>
+                                <h4 className="text-2xl font-black text-brand-950 uppercase italic mb-4">Costa del Este & Santa Maria</h4>
                                 <p className="text-brand-300 text-sm leading-relaxed mb-4 font-medium">
                                     Master-planned perfection. Designed like a suburban Florida city with underground wiring, international schools, and the headquarters of multinational giants. Santa Maria adds a Nicklaus Design golf course for the ultimate <strong>Panama golf community</strong> lifestyle.
                                 </p>

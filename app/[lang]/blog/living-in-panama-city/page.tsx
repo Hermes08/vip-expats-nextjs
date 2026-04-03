@@ -285,7 +285,7 @@ export default async function LivingInPanamaCityPage({ params }: { params: Promi
                         {monthlyBudgets.map((budget, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] mb-2">{budget.tier}</div>
-                                <div className="text-white font-black text-xl mb-4">
+                                <div className="text-brand-950 font-black text-xl mb-4">
                                     {budget.total}<span className="text-slate-500 font-normal text-sm">/mo</span>
                                 </div>
                                 <ul className="space-y-2">

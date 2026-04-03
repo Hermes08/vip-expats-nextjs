@@ -110,22 +110,22 @@ export default function SafetyInPanama2026() {
           <div className="grid sm:grid-cols-2 gap-6 mb-8">
             <div className="border-l-2 border-brand-GOLD pl-4">
               <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-2">Panama City (Safe Neighborhoods)</p>
-              <p className="text-white text-2xl font-black mb-1">12.4 homicides/100K</p>
+              <p className="text-slate-700 text-2xl font-black mb-1">12.4 homicides/100K</p>
               <p className="text-slate-500 text-sm">Data: INEC 2026, excluding Colón & Darién</p>
             </div>
             <div className="border-l-2 border-brand-GOLD pl-4">
               <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-2">USA Average</p>
-              <p className="text-white text-2xl font-black mb-1">6.2 homicides/100K</p>
+              <p className="text-slate-700 text-2xl font-black mb-1">6.2 homicides/100K</p>
               <p className="text-slate-500 text-sm">Data: FBI Uniform Crime Report 2025</p>
             </div>
             <div className="border-l-2 border-brand-GOLD pl-4">
               <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-2">Punta Pacifica / Costa del Este</p>
-              <p className="text-white text-2xl font-black mb-1">0.8–1.2 homicides/100K</p>
+              <p className="text-slate-700 text-2xl font-black mb-1">0.8–1.2 homicides/100K</p>
               <p className="text-slate-500 text-sm">Data: Gated communities, 2024–2026 police records</p>
             </div>
             <div className="border-l-2 border-brand-GOLD pl-4">
               <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-2">Chicago, USA (High-Crime Area)</p>
-              <p className="text-white text-2xl font-black mb-1">24.1 homicides/100K</p>
+              <p className="text-slate-700 text-2xl font-black mb-1">24.1 homicides/100K</p>
               <p className="text-slate-500 text-sm">Data: CPD Annual Report 2025</p>
             </div>
           </div>
@@ -162,7 +162,7 @@ export default function SafetyInPanama2026() {
                         <p className="text-slate-600 text-[9px] uppercase font-bold tracking-widest">Crime Index</p>
                       </div>
                       <div className="text-center">
-                        <p className="text-white font-black text-sm">{neighborhood.populationExpats}</p>
+                        <p className="text-slate-700 font-black text-sm">{neighborhood.populationExpats}</p>
                         <p className="text-slate-600 text-[9px] uppercase font-bold tracking-widest">Expat %</p>
                       </div>
                     </div>

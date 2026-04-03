@@ -127,7 +127,7 @@ export default function SantaCatalinaPanama() {
           ].map((stat, i) => (
             <div key={i} className="card-light p-5 rounded-xl border-brand-100">
               <p className="text-brand-GOLD text-2xl mb-1">{stat.icon}</p>
-              <p className="text-white font-black text-sm">{stat.value}</p>
+              <p className="text-slate-700 font-black text-sm">{stat.value}</p>
               <p className="text-slate-500 text-[9px] font-bold uppercase tracking-widest mt-1">{stat.label}</p>
             </div>
           ))}

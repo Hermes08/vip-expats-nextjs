@@ -93,7 +93,7 @@ export default function TestimonialsSection() {
               <div className="border-t border-brand-100 pt-5">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-white font-black text-sm tracking-tight">{t.name}</p>
+                    <p className="text-slate-700 font-black text-sm tracking-tight">{t.name}</p>
                     <p className="text-slate-500 text-[10px] font-bold uppercase tracking-widest mt-0.5">
                       {t.from}
                     </p>

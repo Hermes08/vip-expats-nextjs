@@ -179,7 +179,7 @@ export default function PropertyDetailPage() {
                 <div className="card-light p-6 rounded-2xl border-brand-100 flex items-center gap-3">
                   <Bed size={18} className="text-brand-GOLD flex-shrink-0" />
                   <div>
-                    <p className="text-white font-black text-lg">{listing.beds}</p>
+                    <p className="text-slate-700 font-black text-lg">{listing.beds}</p>
                     <p className="text-slate-500 text-[9px] font-black uppercase tracking-widest">{lang === 'es' ? 'Hab.' : 'Beds'}</p>
                   </div>
                 </div>
@@ -188,7 +188,7 @@ export default function PropertyDetailPage() {
                 <div className="card-light p-6 rounded-2xl border-brand-100 flex items-center gap-3">
                   <Bath size={18} className="text-brand-GOLD flex-shrink-0" />
                   <div>
-                    <p className="text-white font-black text-lg">{listing.baths}</p>
+                    <p className="text-slate-700 font-black text-lg">{listing.baths}</p>
                     <p className="text-slate-500 text-[9px] font-black uppercase tracking-widest">{lang === 'es' ? 'Baños' : 'Baths'}</p>
                   </div>
                 </div>
@@ -197,7 +197,7 @@ export default function PropertyDetailPage() {
                 <div className="card-light p-6 rounded-2xl border-brand-100 flex items-center gap-3">
                   <Maximize2 size={18} className="text-brand-GOLD flex-shrink-0" />
                   <div>
-                    <p className="text-white font-black text-lg">{listing.sqft.toLocaleString()}</p>
+                    <p className="text-slate-700 font-black text-lg">{listing.sqft.toLocaleString()}</p>
                     <p className="text-slate-500 text-[9px] font-black uppercase tracking-widest">m²</p>
                   </div>
                 </div>
@@ -206,7 +206,7 @@ export default function PropertyDetailPage() {
                 <div className="card-light p-6 rounded-2xl border-brand-100 flex items-center gap-3">
                   <Calendar size={18} className="text-brand-GOLD flex-shrink-0" />
                   <div>
-                    <p className="text-white font-black text-lg">{listing.yearBuilt}</p>
+                    <p className="text-slate-700 font-black text-lg">{listing.yearBuilt}</p>
                     <p className="text-slate-500 text-[9px] font-black uppercase tracking-widest">{lang === 'es' ? 'Año' : 'Year'}</p>
                   </div>
                 </div>
@@ -234,7 +234,7 @@ export default function PropertyDetailPage() {
 
             {/* Description */}
             <div className="card-light p-6 rounded-2xl border-brand-100">
-              <h2 className="text-lg font-black text-white uppercase italic tracking-tighter mb-6">
+              <h2 className="text-lg font-black text-brand-950 uppercase italic tracking-tighter mb-6">
                 {lang === 'es' ? 'Descripción' : 'Description'}
               </h2>
               <p className="text-slate-500 leading-relaxed font-medium whitespace-pre-line">{description}</p>
@@ -243,7 +243,7 @@ export default function PropertyDetailPage() {
             {/* Amenities */}
             {listing.amenities && listing.amenities.length > 0 && (
               <div className="card-light p-6 rounded-2xl border-brand-100">
-                <h2 className="text-lg font-black text-white uppercase italic tracking-tighter mb-8">
+                <h2 className="text-lg font-black text-brand-950 uppercase italic tracking-tighter mb-8">
                   {lang === 'es' ? 'Amenidades' : 'Amenities'}
                 </h2>
                 <div className="grid grid-cols-2 gap-4">
@@ -266,7 +266,7 @@ export default function PropertyDetailPage() {
               <p className="text-[10px] font-black uppercase tracking-[0.4em] text-brand-GOLD mb-2">
                 {statusLabel}
               </p>
-              <p className="text-3xl font-black text-white tracking-tighter mb-1">
+              <p className="text-3xl font-black text-brand-950 tracking-tighter mb-1">
                 {formatPrice(listing.price, listing.status, lang)}
               </p>
               {listing.sqft && listing.price && (
@@ -282,7 +282,7 @@ export default function PropertyDetailPage() {
                 <p className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-500 mb-1">
                   {lang === 'es' ? 'Agente' : 'Agent'}
                 </p>
-                <p className="text-white font-black text-lg tracking-tighter">
+                <p className="text-slate-700 font-black text-lg tracking-tighter">
                   {listing.agentName ?? 'Panama Sale Team'}
                 </p>
               </div>

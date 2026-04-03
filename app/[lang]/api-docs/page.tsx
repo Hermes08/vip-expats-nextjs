@@ -56,7 +56,7 @@ export default function ApiDocs() {
         <section className="mb-20 reveal-on-scroll">
             <div className="flex items-center gap-4 mb-8">
                 <Layers className="text-brand-GOLD" />
-                <h2 className="text-2xl font-black text-white uppercase italic tracking-tighter">System Architecture</h2>
+                <h2 className="text-2xl font-black text-brand-950 uppercase italic tracking-tighter">System Architecture</h2>
             </div>
             <div className="card-light p-8 rounded-[2.5rem] border-brand-100 bg-white/5 backdrop-blur-sm">
                 <p className="mb-6 leading-relaxed">
@@ -83,7 +83,7 @@ export default function ApiDocs() {
         <section className="mb-20 reveal-on-scroll">
             <div className="flex items-center gap-4 mb-8">
                 <Shield className="text-brand-GOLD" />
-                <h2 className="text-2xl font-black text-white uppercase italic tracking-tighter">Authentication</h2>
+                <h2 className="text-2xl font-black text-brand-950 uppercase italic tracking-tighter">Authentication</h2>
             </div>
             <div className="card-light p-8 rounded-[2.5rem] border-brand-100">
                 <p className="mb-6 leading-relaxed">Integrations must include the following header for all API requests:</p>
@@ -101,14 +101,14 @@ export default function ApiDocs() {
         <section className="mb-20 reveal-on-scroll">
             <div className="flex items-center gap-4 mb-8">
                 <Database className="text-brand-GOLD" />
-                <h2 className="text-2xl font-black text-white uppercase italic tracking-tighter">API Reference</h2>
+                <h2 className="text-2xl font-black text-brand-950 uppercase italic tracking-tighter">API Reference</h2>
             </div>
             
             <div className="space-y-12">
                 <div className="p-8 card-light border-brand-100 rounded-3xl">
                     <div className="flex items-center gap-3 mb-4">
                         <span className="bg-blue-500 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">GET</span>
-                        <code className="text-white font-black text-xl tracking-tighter">/api/projects</code>
+                        <code className="text-brand-950 font-black text-xl tracking-tighter">/api/projects</code>
                     </div>
                     <p className="text-sm mb-4 leading-relaxed">Fetch all active projects and their associated metadata including skills and current status.</p>
                 </div>
@@ -116,7 +116,7 @@ export default function ApiDocs() {
                 <div className="p-8 card-light border-brand-100 rounded-3xl">
                     <div className="flex items-center gap-3 mb-4">
                         <span className="bg-blue-500 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">GET</span>
-                        <code className="text-white font-black text-xl tracking-tighter">/api/projects/:id/tasks</code>
+                        <code className="text-brand-950 font-black text-xl tracking-tighter">/api/projects/:id/tasks</code>
                     </div>
                     <p className="text-sm mb-6 leading-relaxed">Retrieve pending tasks for a specific project based on its unique identifier.</p>
                     <div className="bg-brand-50/80 p-6 rounded-2xl border border-brand-100 font-mono text-xs overflow-x-auto">
@@ -136,7 +136,7 @@ export default function ApiDocs() {
                 <div className="p-8 card-light border-brand-100 rounded-3xl">
                     <div className="flex items-center gap-3 mb-4">
                         <span className="bg-amber-500 text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">PUT</span>
-                        <code className="text-white font-black text-xl tracking-tighter">/api/tasks/:id</code>
+                        <code className="text-brand-950 font-black text-xl tracking-tighter">/api/tasks/:id</code>
                     </div>
                     <p className="text-sm mb-6 leading-relaxed">Update a task status to <span className="text-green-400 font-bold uppercase">completed</span> or <span className="text-red-400 font-bold uppercase">failed</span>.</p>
                     <div className="bg-brand-50/80 p-6 rounded-2xl border border-brand-100 font-mono text-xs overflow-x-auto">
@@ -156,7 +156,7 @@ export default function ApiDocs() {
         <section className="mb-20 reveal-on-scroll">
             <div className="flex items-center gap-4 mb-8">
                 <Terminal className="text-brand-GOLD" />
-                <h2 className="text-2xl font-black text-white uppercase italic tracking-tighter">Agent Execution Flow</h2>
+                <h2 className="text-2xl font-black text-brand-950 uppercase italic tracking-tighter">Agent Execution Flow</h2>
             </div>
             <div className="grid gap-6">
                 {[

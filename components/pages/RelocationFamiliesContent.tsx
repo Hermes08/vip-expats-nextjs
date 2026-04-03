@@ -173,7 +173,7 @@ const RelocationFamiliesContent = () => {
                                 </div>
                                 <div className="absolute bottom-0 left-0 p-10">
                                     <span className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest mb-2 block">{hub.vibe}</span>
-                                    <h3 className="text-2xl font-black text-white uppercase tracking-tighter mb-4 italic leading-none">{hub.name}</h3>
+                                    <h3 className="text-2xl font-black text-brand-950 uppercase tracking-tighter mb-4 italic leading-none">{hub.name}</h3>
                                     <p className="text-gray-300 text-xs font-medium leading-relaxed">{hub.desc}</p>
                                 </div>
                             </div>

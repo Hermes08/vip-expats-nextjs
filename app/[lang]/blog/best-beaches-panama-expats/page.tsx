@@ -117,7 +117,7 @@ export default function BestBeachesPanamaExpats() {
                       <p className="text-slate-600 text-[9px] uppercase font-bold tracking-widest">Avg Yield</p>
                     </div>
                     <div className="text-center">
-                      <p className="text-white font-black text-sm">{beach.priceRange}</p>
+                      <p className="text-slate-700 font-black text-sm">{beach.priceRange}</p>
                       <p className="text-slate-600 text-[9px] uppercase font-bold tracking-widest">Price Range</p>
                     </div>
                   </div>

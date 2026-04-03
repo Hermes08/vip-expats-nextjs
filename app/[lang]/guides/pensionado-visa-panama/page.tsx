@@ -185,7 +185,7 @@ export default async function PensionadoVisaPage({ params }: Props) {
                                 ].map((row, i) => (
                                     <tr key={i} className="border-b border-brand-100">
                                         <td className="text-slate-500 text-xs py-3 pr-4 font-medium">{row.f}</td>
-                                        <td className="text-white text-xs py-3 px-3 font-bold">{row.p}</td>
+                                        <td className="text-slate-700 text-xs py-3 px-3 font-bold">{row.p}</td>
                                         <td className="text-slate-500 text-xs py-3 px-3">{row.fn}</td>
                                         <td className="text-slate-500 text-xs py-3 px-3">{row.inv}</td>
                                     </tr>

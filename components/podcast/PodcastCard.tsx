@@ -34,7 +34,7 @@ export default function PodcastCard({ episode, lang }: PodcastCardProps) {
             </div>
 
             <div className="p-6">
-                <div className="flex items-center gap-4 text-xs text-neutral-500 mb-3 uppercase tracking-wider font-bold">
+                <div className="flex items-center gap-4 text-xs text-slate-600 mb-3 uppercase tracking-wider font-bold">
                     <span className="flex items-center gap-1">
                         <Calendar size={12} /> {episode.publishDate}
                     </span>

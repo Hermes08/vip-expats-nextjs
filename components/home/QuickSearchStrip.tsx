@@ -75,7 +75,7 @@ export default function QuickSearchStrip({ lang }: QuickSearchStripProps) {
                   <Icon size={20} className="text-brand-GOLD" />
                 </div>
                 <div className="flex-1 min-w-0">
-                  <p className="text-white font-black text-[11px] uppercase tracking-[0.15em] group-hover:text-brand-GOLD transition-colors truncate">
+                  <p className="text-slate-700 font-black text-[11px] uppercase tracking-[0.15em] group-hover:text-brand-GOLD transition-colors truncate">
                     {label}
                   </p>
                   <p className="text-slate-500 text-[10px] font-medium mt-0.5 truncate">{desc}</p>

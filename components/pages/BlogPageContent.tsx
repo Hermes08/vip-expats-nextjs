@@ -14,6 +14,13 @@ const BlogPageContent: React.FC<{ lang?: 'en' | 'es' }> = ({ lang: propLang }) =
     const t = CONTENT[lang] || CONTENT['en'];
     const { blogPosts } = useCMS();
 
+    // Sort posts newest → oldest. Posts without a valid date go to the end.
+    const sortedPosts = [...blogPosts].sort((a, b) => {
+        const da = a.date ? new Date(a.date).getTime() : 0;
+        const db = b.date ? new Date(b.date).getTime() : 0;
+        return db - da;
+    });
+
     return (
         <div className="pt-24 min-h-screen bg-white">
             <BreadcrumbSchema
@@ -42,7 +49,7 @@ const BlogPageContent: React.FC<{ lang?: 'en' | 'es' }> = ({ lang: propLang }) =
             {/* Post grid */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {blogPosts.map((post) => (
+                    {sortedPosts.map((post) => (
                         <article
                             key={post.id}
                             className="card-light rounded-2xl overflow-hidden flex flex-col group"

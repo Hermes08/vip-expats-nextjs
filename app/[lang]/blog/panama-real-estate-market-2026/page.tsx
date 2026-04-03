@@ -244,7 +244,7 @@ export default function PanamaRealEstateMarket2026() {
                 <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-1">
                   {stat.label}
                 </p>
-                <p className="text-white text-lg font-black mb-1">{stat.value}</p>
+                <p className="text-slate-700 text-lg font-black mb-1">{stat.value}</p>
                 <p className="text-slate-600 text-[9px]">{stat.sub}</p>
               </div>
             );
@@ -347,7 +347,7 @@ export default function PanamaRealEstateMarket2026() {
                       </p>
                     </div>
                     <div className="text-center">
-                      <p className="text-white font-black text-sm">{segment.yield}</p>
+                      <p className="text-slate-700 font-black text-sm">{segment.yield}</p>
                       <p className="text-slate-600 text-[9px] uppercase font-bold tracking-widest">
                         Rental Yield
                       </p>
@@ -364,13 +364,13 @@ export default function PanamaRealEstateMarket2026() {
                     <p className="text-slate-500 text-[9px] font-black uppercase tracking-widest mb-1">
                       Price Range
                     </p>
-                    <p className="text-white font-black text-sm">{segment.priceRange}</p>
+                    <p className="text-slate-700 font-black text-sm">{segment.priceRange}</p>
                   </div>
                   <div>
                     <p className="text-slate-500 text-[9px] font-black uppercase tracking-widest mb-1">
                       Price Per Sqm
                     </p>
-                    <p className="text-white font-black text-sm">{segment.pricePerSqm}</p>
+                    <p className="text-slate-700 font-black text-sm">{segment.pricePerSqm}</p>
                   </div>
                 </div>
 

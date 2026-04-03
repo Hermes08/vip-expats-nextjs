@@ -154,7 +154,7 @@ export default async function PanamaRealEstateGuide2026({ params }: { params: Pr
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-8">
-                            <p className="text-white font-medium text-lg italic">The Pacific coast offers an unmatched blend of nature and luxury.</p>
+                            <p className="text-slate-700 font-medium text-lg italic">The Pacific coast offers an unmatched blend of nature and luxury.</p>
                         </div>
                     </div>
 

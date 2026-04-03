@@ -97,15 +97,15 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                         <div className="grid grid-cols-3 gap-6 mb-16 py-8 border-y border-brand-100 text-center">
                             <div>
                                 <span className="block text-xl font-bold text-white">{project.beds}</span>
-                                <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">{labels.beds}</span>
+                                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">{labels.beds}</span>
                             </div>
                             <div>
                                 <span className="block text-xl font-bold text-white">{project.baths}</span>
-                                <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">{labels.baths}</span>
+                                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">{labels.baths}</span>
                             </div>
                             <div>
                                 <span className="block text-xl font-bold text-white">{project.sqft}</span>
-                                <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">m²</span>
+                                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">m²</span>
                             </div>
                         </div>
 
@@ -200,7 +200,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-brand-GOLD/10 rounded-full -mr-16 -mt-16 blur-2xl"></div>
                                 <Compass className="text-brand-GOLD mb-6" size={40} />
                                 <h3 className="text-2xl font-bold mb-4 leading-tight">Request a Private Relocation Tour</h3>
-                                <p className="text-neutral-400 text-sm mb-8 leading-relaxed">Experience {project.name[lang]} first-hand with our expert ground team. We handle legal, logistics, and lifestyle vetting.</p>
+                                <p className="text-slate-500 text-sm mb-8 leading-relaxed">Experience {project.name[lang]} first-hand with our expert ground team. We handle legal, logistics, and lifestyle vetting.</p>
                                 <Link href="/contacto" className="block w-full py-4 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-xl hover:bg-white transition-all text-center">Schedule Discovery Visit</Link>
                             </div>
 
@@ -244,7 +244,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                                         Request Details
                                     </button>
                                 </form>
-                                <p className="text-[9px] text-neutral-400 mt-4 text-center">100% Privacy Guaranteed.</p>
+                                <p className="text-[9px] text-slate-500 mt-4 text-center">100% Privacy Guaranteed.</p>
                             </div>
 
                             {/* Amenities List */}
@@ -283,7 +283,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
             {/* Search Grounding Wall (SEO Booster) */}
             <section className="bg-brand-50 py-20 border-t border-brand-100">
                 <div className="max-w-7xl mx-auto px-4">
-                    <h2 className="text-[10px] font-black text-neutral-400 uppercase tracking-[0.3em] mb-10 text-center">Global Reach • Local Expertise • Panama Investment Hub</h2>
+                    <h2 className="text-[10px] font-black text-slate-500 uppercase tracking-[0.3em] mb-10 text-center">Global Reach • Local Expertise • Panama Investment Hub</h2>
                     <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-40 text-[11px] font-bold text-white grayscale">
                         <span>panama condos on the beach</span>
                         <span>panama city condos</span>

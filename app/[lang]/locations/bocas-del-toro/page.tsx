@@ -91,7 +91,7 @@ const BocasLocationPage = () => {
                 <div key={i} className="card-light p-12 rounded-[4rem] text-center border-brand-100 reveal-on-scroll stagger-1 group hover:border-cyan-500/30 transition-all">
                    <div className="text-cyan-400 mb-8 group-hover:scale-125 transition-transform"><stat.icon size={44} /></div>
                    <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-4">{stat.label}</p>
-                   <p className="text-white text-3xl font-black italic tracking-tighter uppercase">{stat.value}</p>
+                   <p className="text-slate-700 text-3xl font-black italic tracking-tighter uppercase">{stat.value}</p>
                 </div>
               ))}
            </div>

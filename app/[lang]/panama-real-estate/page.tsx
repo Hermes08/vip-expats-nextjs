@@ -121,7 +121,7 @@ export default async function PanamaRealEstatePage({ params }: { params: Promise
             {t.benefits.map((benefit, i) => (
               <div key={i} className="card-light p-8 rounded-2xl border border-brand-100 hover:border-brand-GOLD/30 transition-all">
                 <benefit.icon className="text-brand-GOLD mb-6" size={40} />
-                <h3 className="text-xl font-black text-white mb-4">{benefit.title}</h3>
+                <h3 className="text-xl font-black text-brand-950 mb-4">{benefit.title}</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">{benefit.desc}</p>
               </div>
             ))}
@@ -140,7 +140,7 @@ export default async function PanamaRealEstatePage({ params }: { params: Promise
               <div key={i} className="flex gap-6 p-8 card-light rounded-2xl border border-brand-100 hover:border-brand-GOLD/30 transition-all">
                 <type.icon className="text-brand-GOLD flex-shrink-0" size={48} />
                 <div>
-                  <h3 className="text-2xl font-black text-white mb-4">{type.title}</h3>
+                  <h3 className="text-2xl font-black text-brand-950 mb-4">{type.title}</h3>
                   <p className="text-slate-500 leading-relaxed">{type.desc}</p>
                 </div>
               </div>
@@ -173,7 +173,7 @@ export default async function PanamaRealEstatePage({ params }: { params: Promise
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-950 to-transparent" />
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-black text-white mb-2">
+                  <h3 className="text-xl font-black text-brand-950 mb-2">
                     {project.name[lang as 'en' | 'es'] || project.name.en}
                   </h3>
                   <p className="text-brand-GOLD text-sm font-bold mb-3">

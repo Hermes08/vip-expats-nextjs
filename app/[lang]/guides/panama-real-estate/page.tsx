@@ -236,7 +236,7 @@ const PanamaRealEstatePage = () => {
                 <div className="flex justify-between items-start mb-4">
                   <div>
                     <p className="text-[10px] font-black uppercase tracking-[0.4em] text-slate-500 mb-1">{market.type}</p>
-                    <h3 className="text-2xl font-black text-white uppercase italic tracking-tighter">{market.name}</h3>
+                    <h3 className="text-2xl font-black text-brand-950 uppercase italic tracking-tighter">{market.name}</h3>
                   </div>
                   <span className="text-brand-GOLD font-black text-sm whitespace-nowrap ml-4">{market.price}</span>
                 </div>

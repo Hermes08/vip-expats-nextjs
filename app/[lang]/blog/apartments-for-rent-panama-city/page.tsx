@@ -167,7 +167,7 @@ export default function ApartmentsForRentPanamaGuide() {
               <div key={i} className="card-light p-5 rounded-xl border-brand-100 reveal-on-scroll">
                 <Icon size={18} className="text-brand-GOLD mb-3" />
                 <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-1">{stat.label}</p>
-                <p className="text-white text-lg font-black mb-1">{stat.value}</p>
+                <p className="text-slate-700 text-lg font-black mb-1">{stat.value}</p>
                 <p className="text-slate-600 text-[9px]">{stat.sub}</p>
               </div>
             );
@@ -220,7 +220,7 @@ export default function ApartmentsForRentPanamaGuide() {
                       <p className="text-slate-600 text-[9px] uppercase font-bold tracking-widest">Unfurnished</p>
                     </div>
                     <div>
-                      <p className="text-white font-black text-sm">{area.furnished}</p>
+                      <p className="text-slate-700 font-black text-sm">{area.furnished}</p>
                       <p className="text-slate-600 text-[9px] uppercase font-bold tracking-widest">Furnished</p>
                     </div>
                   </div>
@@ -233,7 +233,7 @@ export default function ApartmentsForRentPanamaGuide() {
                 <div className="grid sm:grid-cols-2 gap-4 mb-6 pb-6 border-b border-brand-100">
                   <div>
                     <p className="text-slate-500 text-[9px] font-black uppercase tracking-widest mb-1">Monthly Utilities</p>
-                    <p className="text-white font-black text-sm">{area.utilities}</p>
+                    <p className="text-slate-700 font-black text-sm">{area.utilities}</p>
                   </div>
                   <div>
                     <p className="text-slate-500 text-[9px] font-black uppercase tracking-widest mb-1">Best For</p>
@@ -539,23 +539,23 @@ export default function ApartmentsForRentPanamaGuide() {
           <div className="space-y-3 text-sm">
             <div className="flex justify-between border-b border-brand-100 pb-3">
               <span className="text-slate-500">Rent (unfurnished)</span>
-              <span className="text-white font-bold">$900</span>
+              <span className="text-brand-950 font-bold">$900</span>
             </div>
             <div className="flex justify-between border-b border-brand-100 pb-3">
               <span className="text-slate-500">HOA/Building fee</span>
-              <span className="text-white font-bold">$100</span>
+              <span className="text-brand-950 font-bold">$100</span>
             </div>
             <div className="flex justify-between border-b border-brand-100 pb-3">
               <span className="text-slate-500">Electricity (A/C heavy)</span>
-              <span className="text-white font-bold">$120</span>
+              <span className="text-brand-950 font-bold">$120</span>
             </div>
             <div className="flex justify-between border-b border-brand-100 pb-3">
               <span className="text-slate-500">Water</span>
-              <span className="text-white font-bold">$30</span>
+              <span className="text-brand-950 font-bold">$30</span>
             </div>
             <div className="flex justify-between border-b border-brand-100 pb-3">
               <span className="text-slate-500">Internet / Cable TV</span>
-              <span className="text-white font-bold">$50</span>
+              <span className="text-brand-950 font-bold">$50</span>
             </div>
             <div className="flex justify-between pt-3">
               <span className="text-brand-GOLD font-black">TOTAL</span>

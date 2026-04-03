@@ -60,11 +60,11 @@ export default function CostOfLivingArticle() {
                                 <div className="text-brand-GOLD font-bold uppercase tracking-widest text-[10px] mb-2 relative z-10">Panama (Luxury Standard)</div>
                                 <div className="text-4xl font-black text-brand-950 mb-6 relative z-10">$3,200<span className="text-sm text-brand-400 font-medium">/mo</span></div>
                                 <ul className="space-y-4 text-sm font-medium text-brand-200 relative z-10">
-                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Oceanview Condo Rent</span> <span className="text-white font-bold">$1,500</span></li>
-                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Premium Local Health Insurance</span> <span className="text-white font-bold">$250</span></li>
-                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Groceries & Fine Dining</span> <span className="text-white font-bold">$800</span></li>
-                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Utilities (A/C & Fiber Optic)</span> <span className="text-white font-bold">$150</span></li>
-                                    <li className="flex justify-between pb-2"><span>Transportation & Maid (1x/week)</span> <span className="text-white font-bold">$500</span></li>
+                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Oceanview Condo Rent</span> <span className="text-brand-950 font-bold">$1,500</span></li>
+                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Premium Local Health Insurance</span> <span className="text-brand-950 font-bold">$250</span></li>
+                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Groceries & Fine Dining</span> <span className="text-brand-950 font-bold">$800</span></li>
+                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Utilities (A/C & Fiber Optic)</span> <span className="text-brand-950 font-bold">$150</span></li>
+                                    <li className="flex justify-between pb-2"><span>Transportation & Maid (1x/week)</span> <span className="text-brand-950 font-bold">$500</span></li>
                                 </ul>
                             </div>
                         </div>

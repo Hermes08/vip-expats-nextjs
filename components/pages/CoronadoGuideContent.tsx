@@ -62,7 +62,7 @@ const CoronadoGuideContent: React.FC = () => {
             <section className="py-32 max-w-7xl mx-auto px-4">
                 <div className="text-center mb-20">
                     <h2 className="text-4xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter italic">World-Class <span className="text-brand-GOLD italic">Amenities</span></h2>
-                    <p className="text-neutral-500 text-lg uppercase tracking-widest font-black leading-tight">Everything you need without leaving the beach.</p>
+                    <p className="text-slate-600 text-lg uppercase tracking-widest font-black leading-tight">Everything you need without leaving the beach.</p>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8">
@@ -86,7 +86,7 @@ const CoronadoGuideContent: React.FC = () => {
                         <div key={i} className="bg-brand-50 p-10 rounded-[4rem] border border-brand-100 hover:shadow-2xl transition-all h-full flex flex-col">
                             <n.icon className="text-brand-GOLD mb-8" size={48} />
                             <h4 className="text-2xl font-black uppercase tracking-tighter mb-4 italic text-white">{n.name}</h4>
-                            <p className="text-sm text-neutral-500 font-medium leading-relaxed flex-grow">{n.desc}</p>
+                            <p className="text-sm text-slate-600 font-medium leading-relaxed flex-grow">{n.desc}</p>
                         </div>
                     ))}
                 </div>
@@ -149,7 +149,7 @@ const CoronadoGuideContent: React.FC = () => {
                     </div>
                     <div className="md:w-1/2 order-1 md:order-2">
                         <h2 className="text-4xl font-heading font-black mb-8 uppercase tracking-tighter italic text-white">Pacific <span className="text-brand-GOLD">ROI</span></h2>
-                        <p className="text-neutral-500 font-medium leading-relaxed mb-8">
+                        <p className="text-slate-600 font-medium leading-relaxed mb-8">
                             Coronado is the most liquid real estate market on the Pacific coast. Whether you are looking for <strong>coronado panama real estate</strong> for lifestyle or as a high-yield rental investment, the demand for weekend getaways is constant year-round.
                         </p>
                     </div>

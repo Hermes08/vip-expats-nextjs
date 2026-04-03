@@ -136,7 +136,7 @@ export default function PlayaVenaoPanama() {
             ].map((item, i) => (
               <div key={i}>
                 <p className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest mb-2">{item.label}</p>
-                <p className="text-white font-bold text-sm">{item.value}</p>
+                <p className="text-slate-700 font-bold text-sm">{item.value}</p>
               </div>
             ))}
           </div>

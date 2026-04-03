@@ -46,7 +46,7 @@ export default function PropertyCard({ listing, lang, priority = false }: Proper
   const location = [listing.neighborhood, listing.city].filter(Boolean).join(', ');
 
   return (
-    <article className="group bg-brand-50 rounded-2xl overflow-hidden border border-brand-800 hover:border-brand-GOLD/30 transition-all duration-300 hover:shadow-2xl hover:shadow-brand-GOLD/5 flex flex-col">
+    <article className="group bg-white rounded-2xl overflow-hidden border border-brand-100 hover:border-brand-TEAL/40 transition-all duration-300 hover:shadow-xl hover:shadow-brand-TEAL/8 flex flex-col">
       {/* Image */}
       <Link href={`/${lang}/propiedades/${listing.slug}`} className="block relative h-56 overflow-hidden">
         <Image
@@ -60,8 +60,8 @@ export default function PropertyCard({ listing, lang, priority = false }: Proper
           priority={priority}
           loading={priority ? 'eager' : 'lazy'}
         />
-        {/* Overlay gradient */}
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent" />
+        {/* Gradient overlay — dark at bottom so price text is always readable */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
 
         {/* Status badge */}
         <span className={`absolute top-3 left-3 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest backdrop-blur-sm ${statusColor}`}>
@@ -86,46 +86,46 @@ export default function PropertyCard({ listing, lang, priority = false }: Proper
       {/* Content */}
       <div className="p-5 flex flex-col flex-grow">
         {/* Location */}
-        <div className="flex items-center gap-1.5 text-brand-GOLD/70 text-xs font-bold uppercase tracking-widest mb-2">
+        <div className="flex items-center gap-1.5 text-brand-TEAL text-xs font-bold uppercase tracking-widest mb-2">
           <MapPin size={11} />
           <span>{location}</span>
         </div>
 
         {/* Title */}
-        <h3 className="font-heading text-white font-bold text-base leading-snug mb-3 group-hover:text-brand-GOLD transition-colors line-clamp-2">
+        <h3 className="font-heading text-brand-950 font-bold text-base leading-snug mb-3 group-hover:text-brand-TEAL transition-colors line-clamp-2">
           <Link href={`/${lang}/propiedades/${listing.slug}`}>{title}</Link>
         </h3>
 
         {/* Excerpt */}
         {excerpt && (
-          <p className="text-neutral-400 text-sm leading-relaxed line-clamp-2 mb-4 flex-grow">
+          <p className="text-slate-500 text-sm leading-relaxed line-clamp-2 mb-4 flex-grow">
             {excerpt}
           </p>
         )}
 
         {/* Stats bar */}
-        <div className="flex items-center gap-4 text-neutral-300 text-xs font-semibold border-t border-brand-800 pt-4 mt-auto">
+        <div className="flex items-center gap-4 text-slate-500 text-xs font-semibold border-t border-brand-100 pt-4 mt-auto">
           {listing.beds != null && (
             <span className="flex items-center gap-1.5">
-              <Bed size={13} className="text-brand-GOLD/60" />
+              <Bed size={13} className="text-brand-TEAL/70" />
               {listing.beds} {lang === 'es' ? 'hab' : 'bd'}
             </span>
           )}
           {listing.baths != null && (
             <span className="flex items-center gap-1.5">
-              <Bath size={13} className="text-brand-GOLD/60" />
+              <Bath size={13} className="text-brand-TEAL/70" />
               {listing.baths} {lang === 'es' ? 'baños' : 'ba'}
             </span>
           )}
           {listing.sqft != null && (
             <span className="flex items-center gap-1.5">
-              <Maximize2 size={13} className="text-brand-GOLD/60" />
+              <Maximize2 size={13} className="text-brand-TEAL/70" />
               {listing.sqft.toLocaleString()} {lang === 'es' ? 'm²' : 'sqft'}
             </span>
           )}
           <Link
             href={`/${lang}/propiedades/${listing.slug}`}
-            className="ml-auto flex items-center gap-1 text-brand-GOLD/70 hover:text-brand-GOLD transition-colors"
+            className="ml-auto flex items-center gap-1 text-brand-TEAL/70 hover:text-brand-TEAL transition-colors font-bold"
           >
             {lang === 'es' ? 'Ver' : 'View'} <ArrowRight size={12} />
           </Link>

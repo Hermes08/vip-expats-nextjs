@@ -116,7 +116,7 @@ const QuizPageContent: React.FC = () => {
                                     <img src={p.images[0]} className="w-full h-full object-cover" alt="" />
                                 </div>
                                 <div className="p-8 flex-grow">
-                                    <h3 className="text-xl font-bold text-white mb-3">{p.name.en}</h3>
+                                    <h3 className="text-xl font-bold text-brand-950 mb-3">{p.name.en}</h3>
                                     <p className="text-slate-500 text-sm mb-6 line-clamp-3 leading-relaxed">{p.description.en}</p>
                                     <button
                                         onClick={() => router.push(`/proyectos/${p.slug}`)}
@@ -158,7 +158,7 @@ const QuizPageContent: React.FC = () => {
                 <div className="mb-12">
                     <div className="flex justify-between items-end mb-3">
                         <span className="text-brand-GOLD font-black uppercase text-[9px] tracking-[0.3em]">Discovery Evolution</span>
-                        <span className="text-white font-black text-xl">{progress}%</span>
+                        <span className="text-brand-950 font-black text-xl">{progress}%</span>
                     </div>
                     <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
                         <div className="h-full bg-brand-GOLD transition-all duration-700 ease-out shadow-[0_0_15px_rgba(212,175,55,0.4)]" style={{ width: `${progress}%` }}></div>

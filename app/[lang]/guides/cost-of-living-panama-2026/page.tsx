@@ -117,7 +117,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
                                 <div className="flex flex-wrap justify-between items-center mb-4 gap-2">
                                     <div>
                                         <span className="text-brand-GOLD font-black uppercase tracking-widest text-[10px]">{tier.label} lifestyle</span>
-                                        <div className="text-white font-black text-2xl">{tier.monthly}<span className="text-slate-500 font-normal text-sm">/mo</span></div>
+                                        <div className="text-brand-950 font-black text-2xl">{tier.monthly}<span className="text-slate-500 font-normal text-sm">/mo</span></div>
                                     </div>
                                     <span className="text-slate-500 text-xs">{tier.location}</span>
                                 </div>

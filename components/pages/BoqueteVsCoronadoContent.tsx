@@ -228,7 +228,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-8">
                     <div className="text-center mb-24">
                         <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic">Systems <br /><span className="text-brand-GOLD">& Maintenance</span></h2>
-                        <p className="text-neutral-500 font-black uppercase tracking-widest text-xs">Different climates require different care.</p>
+                        <p className="text-slate-600 font-black uppercase tracking-widest text-xs">Different climates require different care.</p>
                     </div>
 
                     <div className="grid md:grid-cols-2 gap-16">
@@ -239,7 +239,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-2xl font-black uppercase tracking-tighter mb-4 italic">The AC Battle (Coronado)</h3>
-                                    <p className="text-neutral-500 font-medium leading-relaxed">
+                                    <p className="text-slate-600 font-medium leading-relaxed">
                                         Salt air is the enemy of electronics. In Coronado, you need an <strong>A/C technician</strong> every 4 months to prevent corrosion and keep your <strong>panama electric bill</strong> manageable.
                                     </p>
                                 </div>
@@ -250,7 +250,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                                 </div>
                                 <div>
                                     <h3 className="text-2xl font-black uppercase tracking-tighter mb-4 italic">The Mold War (Boquete)</h3>
-                                    <p className="text-neutral-500 font-medium leading-relaxed">
+                                    <p className="text-slate-600 font-medium leading-relaxed">
                                         In the highlands, it's about dehumidifiers. <strong>Boquete maintenance</strong> focuses on airflow and moisture control during the "Green Season" to protect your furniture and health.
                                     </p>
                                 </div>
@@ -332,7 +332,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             <section className="py-32 bg-brand-50 rounded-[5rem] mx-4">
                 <div className="max-w-7xl mx-auto px-8 text-center mb-24">
                     <h2 className="text-4xl md:text-7xl font-heading font-black mb-8 uppercase tracking-tighter italic underline italic leading-none">The <span className="text-brand-GOLD">Education</span> <br /> Blueprint</h2>
-                    <p className="max-w-3xl mx-auto text-lg text-neutral-500 font-medium">
+                    <p className="max-w-3xl mx-auto text-lg text-slate-600 font-medium">
                         If you are <strong>moving to panama with children</strong>, the quality of schools is your #1 binary filter.
                     </p>
                 </div>
@@ -340,7 +340,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-20">
                     <div className="p-16 bg-white rounded-[4rem] shadow-xl border border-brand-100">
                         <h4 className="text-2xl font-black uppercase tracking-tighter mb-8 italic">Boquete Schools</h4>
-                        <p className="text-neutral-500 leading-relaxed mb-8">
+                        <p className="text-slate-600 leading-relaxed mb-8">
                             Boquete offers several bilingual and international options like <strong>The Boquete International School</strong> and <strong>Academia Internacional Boquete</strong>. The focus is often on project-based learning and environmental awareness.
                         </p>
                         <div className="flex items-center gap-4 text-[10px] font-black uppercase tracking-widest text-brand-GOLD font-bold">
@@ -435,18 +435,18 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             {/* Related Resources: The Topic Cluster */}
             <section className="py-24 bg-brand-50 rounded-[5rem] mx-4 mb-32">
                 <div className="max-w-7xl mx-auto px-8">
-                    <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-neutral-400 mb-12 text-center">Complete Your Research</h4>
+                    <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-slate-500 mb-12 text-center">Complete Your Research</h4>
                     <div className="grid md:grid-cols-2 gap-8">
                         <Link href={`/${lang}/relocation/pricing`} className="group p-10 bg-white rounded-[3rem] border border-brand-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Zap className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Cost of Living 2026</h5>
-                            <p className="text-xs text-neutral-500 font-medium mb-6">Compare the exact costs of Boquete vs Coronado vs Panama City.</p>
+                            <p className="text-xs text-slate-600 font-medium mb-6">Compare the exact costs of Boquete vs Coronado vs Panama City.</p>
                             <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">View Guide <ArrowRight size={12} /></span>
                         </Link>
                         <Link href={`/${lang}/relocation/guides`} className="group p-10 bg-white rounded-[3rem] border border-brand-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Sun className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Weather Guide 2026</h5>
-                            <p className="text-xs text-neutral-500 font-medium mb-6">Discover the best time to visit and how microclimates affect your move.</p>
+                            <p className="text-xs text-slate-600 font-medium mb-6">Discover the best time to visit and how microclimates affect your move.</p>
                             <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">View Guide <ArrowRight size={12} /></span>
                         </Link>
                     </div>

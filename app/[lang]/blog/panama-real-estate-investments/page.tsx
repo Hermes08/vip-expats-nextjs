@@ -85,7 +85,7 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
                             return (
                                 <div key={i} className="bg-white rounded-2xl p-6 text-center">
                                     <Icon size={20} className="text-brand-GOLD mx-auto mb-3" />
-                                    <div className="text-2xl font-black text-white mb-1">{item.stat}</div>
+                                    <div className="text-2xl font-black text-brand-950 mb-1">{item.stat}</div>
                                     <div className="text-brand-400 text-xs leading-relaxed">{item.label}</div>
                                 </div>
                             );

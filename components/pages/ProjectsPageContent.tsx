@@ -135,7 +135,7 @@ const ProjectsPageContent: React.FC = () => {
                             {searchTerm && (
                                 <button
                                     onClick={() => setSearchTerm('')}
-                                    className="absolute right-4 top-1/2 -translate-y-1/2 text-neutral-500 hover:text-white"
+                                    className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-600 hover:text-white"
                                 >
                                     <span className="sr-only">Clear</span>
                                     &times;

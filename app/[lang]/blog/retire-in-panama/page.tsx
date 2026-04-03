@@ -203,7 +203,7 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                         {retirementBudgets.map((b, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] mb-2">{b.style}</div>
-                                <div className="text-white font-black text-xl mb-3">{b.monthly}<span className="text-slate-500 font-normal text-sm">/mo</span></div>
+                                <div className="text-brand-950 font-black text-xl mb-3">{b.monthly}<span className="text-slate-500 font-normal text-sm">/mo</span></div>
                                 <p className="text-slate-500 text-xs leading-relaxed mb-3">{b.desc}</p>
                                 <div className="border-t border-brand-100 pt-3">
                                     <span className="text-slate-500 text-[10px] font-bold uppercase tracking-widest">Best for: </span>
@@ -262,7 +262,7 @@ export default async function RetireInPanamaPage({ params }: { params: Promise<{
                                 {comparisonData.map((row, i) => (
                                     <tr key={i} className="border-b border-brand-100">
                                         <td className="text-slate-500 text-xs py-3 pr-4 font-medium">{row.factor}</td>
-                                        <td className="text-white text-xs py-3 px-3 font-bold">{row.panama}</td>
+                                        <td className="text-slate-700 text-xs py-3 px-3 font-bold">{row.panama}</td>
                                         <td className="text-slate-500 text-xs py-3 px-3">{row.mexico}</td>
                                         <td className="text-slate-500 text-xs py-3 px-3">{row.costaRica}</td>
                                     </tr>

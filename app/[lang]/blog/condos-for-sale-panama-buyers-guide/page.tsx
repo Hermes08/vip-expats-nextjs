@@ -165,7 +165,7 @@ export default function CondosForSalePanamaGuide() {
               <div key={i} className="card-light p-5 rounded-xl border-brand-100 reveal-on-scroll">
                 <Icon size={18} className="text-brand-GOLD mb-3" />
                 <p className="text-slate-500 text-[10px] font-black uppercase tracking-widest mb-1">{stat.label}</p>
-                <p className="text-white text-lg font-black mb-1">{stat.value}</p>
+                <p className="text-slate-700 text-lg font-black mb-1">{stat.value}</p>
                 <p className="text-slate-600 text-[9px]">{stat.sub}</p>
               </div>
             );
@@ -219,7 +219,7 @@ export default function CondosForSalePanamaGuide() {
                       <p className="text-slate-600 text-[9px] uppercase font-bold tracking-widest">Avg Yield</p>
                     </div>
                     <div className="text-center">
-                      <p className="text-white font-black text-sm">{area.priceRange}</p>
+                      <p className="text-slate-700 font-black text-sm">{area.priceRange}</p>
                       <p className="text-slate-600 text-[9px] uppercase font-bold tracking-widest">Price Range</p>
                     </div>
                   </div>
@@ -232,11 +232,11 @@ export default function CondosForSalePanamaGuide() {
                 <div className="grid sm:grid-cols-2 gap-4 mb-6 pb-6 border-b border-brand-100">
                   <div>
                     <p className="text-slate-500 text-[9px] font-black uppercase tracking-widest mb-1">Price per Sqm</p>
-                    <p className="text-white font-black text-sm">{area.pricePerSqm}</p>
+                    <p className="text-slate-700 font-black text-sm">{area.pricePerSqm}</p>
                   </div>
                   <div>
                     <p className="text-slate-500 text-[9px] font-black uppercase tracking-widest mb-1">Active Listings</p>
-                    <p className="text-white font-black text-sm">{area.properties}</p>
+                    <p className="text-slate-700 font-black text-sm">{area.properties}</p>
                   </div>
                 </div>
 

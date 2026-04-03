@@ -360,7 +360,7 @@ const RelocationHubContent: React.FC = () => {
 
                             <div className="space-y-16 text-lg text-slate-500 leading-relaxed font-medium">
                                 <div className="space-y-6">
-                                    <h3 className="text-2xl font-black text-white uppercase tracking-tight italic flex items-center gap-4">
+                                    <h3 className="text-2xl font-black text-brand-950 uppercase tracking-tight italic flex items-center gap-4">
                                         <span className="text-brand-GOLD text-4xl">01</span> Buying Property on Day One
                                     </h3>
                                     <p>
@@ -369,7 +369,7 @@ const RelocationHubContent: React.FC = () => {
                                 </div>
 
                                 <div className="space-y-6">
-                                    <h3 className="text-2xl font-black text-white uppercase tracking-tight italic flex items-center gap-4">
+                                    <h3 className="text-2xl font-black text-brand-950 uppercase tracking-tight italic flex items-center gap-4">
                                         <span className="text-brand-GOLD text-4xl">02</span> Ignoring the "Friendly Nations" Nuances
                                     </h3>
                                     <p>
@@ -378,7 +378,7 @@ const RelocationHubContent: React.FC = () => {
                                 </div>
 
                                 <div className="space-y-6">
-                                    <h3 className="text-2xl font-black text-white uppercase tracking-tight italic flex items-center gap-4">
+                                    <h3 className="text-2xl font-black text-brand-950 uppercase tracking-tight italic flex items-center gap-4">
                                         <span className="text-brand-GOLD text-4xl">03</span> Underestimating the "Bajareque" in Boquete
                                     </h3>
                                     <p>
@@ -387,7 +387,7 @@ const RelocationHubContent: React.FC = () => {
                                 </div>
 
                                 <div className="space-y-6">
-                                    <h3 className="text-2xl font-black text-white uppercase tracking-tight italic flex items-center gap-4">
+                                    <h3 className="text-2xl font-black text-brand-950 uppercase tracking-tight italic flex items-center gap-4">
                                         <span className="text-brand-GOLD text-4xl">04</span> Assuming "DIY" is Cheapest
                                     </h3>
                                     <p>

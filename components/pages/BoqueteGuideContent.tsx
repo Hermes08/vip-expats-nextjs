@@ -62,7 +62,7 @@ const BoqueteGuideContent: React.FC = () => {
             <section className="py-32 max-w-7xl mx-auto px-4">
                 <div className="text-center mb-20">
                     <h2 className="text-4xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter italic">Top <span className="text-brand-GOLD italic">Neighborhoods</span></h2>
-                    <p className="text-neutral-500 text-lg uppercase tracking-widest font-black leading-tight">Where to find your dream mountain home.</p>
+                    <p className="text-slate-600 text-lg uppercase tracking-widest font-black leading-tight">Where to find your dream mountain home.</p>
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8">
@@ -86,7 +86,7 @@ const BoqueteGuideContent: React.FC = () => {
                         <div key={i} className="bg-brand-50 p-10 rounded-[4rem] border border-brand-100 hover:shadow-2xl transition-all h-full flex flex-col">
                             <Home className="text-brand-GOLD mb-8" size={48} />
                             <h4 className="text-2xl font-black uppercase tracking-tighter mb-4 italic text-white">{n.name}</h4>
-                            <p className="text-sm text-neutral-500 font-medium leading-relaxed mb-6 flex-grow">{n.desc}</p>
+                            <p className="text-sm text-slate-600 font-medium leading-relaxed mb-6 flex-grow">{n.desc}</p>
                             <div className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD opacity-60">Featured Project</div>
                         </div>
                     ))}
@@ -137,7 +137,7 @@ const BoqueteGuideContent: React.FC = () => {
                 <div className="bg-brand-50 p-16 rounded-[4rem] flex flex-col md:flex-row gap-16 items-center">
                     <div className="md:w-1/2">
                         <h2 className="text-4xl font-heading font-black mb-8 uppercase tracking-tighter italic text-white">Highlands <span className="text-brand-GOLD">ROI</span></h2>
-                        <p className="text-neutral-500 font-medium leading-relaxed mb-8">
+                        <p className="text-slate-600 font-medium leading-relaxed mb-8">
                             Rental demand in Boquete remains extremely tight. With a limited supply of <strong>boquete homes for sale</strong> and a growing influx of digital nomads and retirees, property values have seen consistent 5-8% annual growth.
                         </p>
                         <div className="space-y-4">
@@ -152,11 +152,11 @@ const BoqueteGuideContent: React.FC = () => {
                     <div className="md:w-1/2 grid grid-cols-2 gap-4">
                         <div className="p-8 bg-white rounded-3xl border border-brand-100 shadow-sm text-center">
                             <div className="text-3xl font-black italic text-white mb-2">8%</div>
-                            <div className="text-[9px] font-black uppercase tracking-widest text-neutral-400">Rental Yield</div>
+                            <div className="text-[9px] font-black uppercase tracking-widest text-slate-500">Rental Yield</div>
                         </div>
                         <div className="p-8 bg-white rounded-3xl border border-brand-100 shadow-sm text-center">
                             <div className="text-3xl font-black italic text-white mb-2">12k+</div>
-                            <div className="text-[9px] font-black uppercase tracking-widest text-neutral-400">Expats</div>
+                            <div className="text-[9px] font-black uppercase tracking-widest text-slate-500">Expats</div>
                         </div>
                     </div>
                 </div>

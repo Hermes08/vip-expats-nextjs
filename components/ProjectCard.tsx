@@ -60,7 +60,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, className = '' }) =>
                                 <span className="text-[10px] font-black text-brand-GOLD uppercase tracking-widest block mb-2 text-shadow-sm">
                                     {CONTENT[lang].startingAt || 'Starting At'}
                                 </span>
-                                <div className="text-2xl font-black text-white tracking-tighter italic text-shadow-md">
+                                <div className="text-2xl font-black text-brand-950 tracking-tighter italic text-shadow-md">
                                     {formattedPrice}
                                 </div>
                             </div>
@@ -72,8 +72,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, className = '' }) =>
                 </div>
 
                 {/* Content */}
-                <div className="p-10 relative z-20 bg-brand-50/95 backdrop-blur-sm flex flex-col flex-grow">
-                    <div className="flex items-center gap-2 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.3em] mb-4">
+                <div className="p-10 relative z-20 bg-white flex flex-col flex-grow">
+                    <div className="flex items-center gap-2 text-brand-TEAL text-[10px] font-black uppercase tracking-[0.3em] mb-4">
                         <MapPin size={12} />
                         {project.location[lang] || project.location.en}
                     </div>
@@ -85,17 +85,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, className = '' }) =>
                     <div className="flex items-center justify-between mb-8 pb-8 border-b border-brand-100">
                         <div className="flex flex-col gap-1">
                             <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest">{labels.beds}</span>
-                            <div className="flex items-center gap-2 text-gray-200 font-black italic"><BedDouble size={14} className="text-brand-GOLD" /> {project.beds}</div>
+                            <div className="flex items-center gap-2 text-brand-950 font-black italic"><BedDouble size={14} className="text-brand-TEAL" /> {project.beds}</div>
                         </div>
-                        <div className="w-px h-6 bg-white/10"></div>
+                        <div className="w-px h-6 bg-brand-100"></div>
                         <div className="flex flex-col gap-1">
                             <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest">{labels.baths}</span>
-                            <div className="flex items-center gap-2 text-gray-200 font-black italic"><Bath size={14} className="text-brand-GOLD" /> {project.baths}</div>
+                            <div className="flex items-center gap-2 text-brand-950 font-black italic"><Bath size={14} className="text-brand-TEAL" /> {project.baths}</div>
                         </div>
-                        <div className="w-px h-6 bg-white/10"></div>
+                        <div className="w-px h-6 bg-brand-100"></div>
                         <div className="flex flex-col gap-1">
                             <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest">AREA</span>
-                            <div className="flex items-center gap-2 text-white font-black italic"><Square size={14} className="text-brand-GOLD" /> {project.sqft} m²</div>
+                            <div className="flex items-center gap-2 text-brand-950 font-black italic"><Square size={14} className="text-brand-TEAL" /> {project.sqft} m²</div>
                         </div>
                     </div>
 

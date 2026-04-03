@@ -196,7 +196,7 @@ const RelocationDigitalNomadContent = () => {
                                     <div className="absolute inset-0 bg-gradient-to-t from-brand-950 to-transparent opacity-60" />
                                     <div className="absolute bottom-10 left-10">
                                         <div className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest mb-2">{item.category}</div>
-                                        <h3 className="text-3xl font-black text-white uppercase tracking-tighter italic">{item.title}</h3>
+                                        <h3 className="text-3xl font-black text-brand-950 uppercase tracking-tighter italic">{item.title}</h3>
                                     </div>
                                 </div>
                                 <p className="text-slate-500 font-medium leading-relaxed px-6">{item.desc}</p>

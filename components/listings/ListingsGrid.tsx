@@ -73,7 +73,7 @@ export default function ListingsGrid({ lang, initialListings }: Props) {
           <h1 className="font-heading text-4xl md:text-6xl font-black text-white mb-4">
             {t.heading}
           </h1>
-          <p className="text-neutral-400 max-w-xl mx-auto text-sm leading-relaxed">{t.sub}</p>
+          <p className="text-slate-500 max-w-xl mx-auto text-sm leading-relaxed">{t.sub}</p>
         </div>
 
         {/* Filters */}
@@ -88,8 +88,8 @@ export default function ListingsGrid({ lang, initialListings }: Props) {
         {/* Grid */}
         {filtered.length === 0 ? (
           <div className="text-center py-24">
-            <p className="text-white text-xl font-semibold mb-2">{t.empty}</p>
-            <p className="text-neutral-400 text-sm">{t.emptyHint}</p>
+            <p className="text-slate-700 text-xl font-semibold mb-2">{t.empty}</p>
+            <p className="text-slate-500 text-sm">{t.emptyHint}</p>
           </div>
         ) : (
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

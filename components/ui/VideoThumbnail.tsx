@@ -58,7 +58,7 @@ export default function VideoThumbnail({ videoUrl, title, className = '' }: Vide
             </div>
 
             <div className="absolute bottom-4 left-4 right-4">
-                <p className="text-white font-bold text-sm text-shadow">{title}</p>
+                <p className="text-slate-700 font-bold text-sm text-shadow">{title}</p>
             </div>
         </button>
     );

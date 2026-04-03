@@ -69,7 +69,7 @@ export default async function PodcastHub({ params }: Props) {
                     <h1 className="text-4xl md:text-6xl font-heading font-black text-brand-950 mb-6">
                         Panama Real Estate Sale <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-GOLD to-yellow-500">Podcast</span>
                     </h1>
-                    <p className="text-xl text-neutral-300 leading-relaxed">
+                    <p className="text-xl text-slate-500 leading-relaxed">
                         {isEs
                             ? "Entrevistas sin filtros con expertos de la industria, desarrolladores y expatriados que viven el sueño. Su guía esencial para navegar Panamá."
                             : "Unfiltered interviews with industry experts, developers, and expats actually living the dream. Your essential guide to navigating Panama."}
@@ -91,7 +91,7 @@ export default async function PodcastHub({ params }: Props) {
                         <h3 className="text-2xl font-bold text-white mb-4">
                             {isEs ? '¿Quiere ser un invitado?' : 'Want to be a guest?'}
                         </h3>
-                        <p className="text-neutral-400 mb-6">
+                        <p className="text-slate-500 mb-6">
                             {isEs
                                 ? "Buscamos historias únicas de éxito en Panamá. Contáctenos si tiene experiencia para compartir."
                                 : "We are looking for unique Panama success stories. Contact us if you have expertise to share."}

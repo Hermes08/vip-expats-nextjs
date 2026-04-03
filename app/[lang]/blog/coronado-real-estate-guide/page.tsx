@@ -235,7 +235,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                                 {costComparison.map((row, i) => (
                                     <tr key={i} className="border-b border-brand-100">
                                         <td className="text-slate-500 text-xs py-3 pr-4 font-medium">{row.item}</td>
-                                        <td className="text-white text-xs py-3 px-3 font-bold">{row.coronado}</td>
+                                        <td className="text-slate-700 text-xs py-3 px-3 font-bold">{row.coronado}</td>
                                         <td className="text-slate-500 text-xs py-3 px-3">{row.puntaPacifica}</td>
                                         <td className="text-slate-500 text-xs py-3 px-3">{row.bocas}</td>
                                     </tr>

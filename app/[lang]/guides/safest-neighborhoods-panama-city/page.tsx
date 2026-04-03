@@ -161,7 +161,7 @@ const SafestNeighborhoodsPanamaCityPage = () => {
                 <span className="text-6xl font-black text-brand-GOLD/20">{n.rank}</span>
                 <div>
                   <div className="flex items-center gap-4 mb-3">
-                    <h3 className="text-2xl font-black text-white uppercase italic tracking-tighter">{n.name}</h3>
+                    <h3 className="text-2xl font-black text-brand-950 uppercase italic tracking-tighter">{n.name}</h3>
                     <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD border border-brand-GOLD/30 px-3 py-1 rounded-full">{n.safety}</span>
                   </div>
                   <p className="text-slate-500 font-medium leading-relaxed">{n.desc}</p>

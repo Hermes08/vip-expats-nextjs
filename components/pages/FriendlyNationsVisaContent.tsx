@@ -130,7 +130,7 @@ const FriendlyNationsVisaPage = () => {
                   <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1000&q=80" alt="Luxury Panama Office" className="w-full h-full object-cover transition-transform duration-[8000ms] group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-brand-950 via-transparent to-transparent opacity-80" />
                   <div className="absolute bottom-16 left-16 right-16">
-                    <p className="text-white font-black text-2xl uppercase tracking-tighter italic">GLOBAL HQ STRATEGY</p>
+                    <p className="text-brand-950 font-black text-2xl uppercase tracking-tighter italic">GLOBAL HQ STRATEGY</p>
                     <p className="text-brand-GOLD font-bold uppercase tracking-widest text-xs mt-4 italic">Efficiency Meets Lujo</p>
                   </div>
                </div>
