@@ -148,7 +148,6 @@ const HowToMoveToPanamaPage = () => {
               'Contacte a su banco para confirmar llegada y activar su cuenta',
               'Descanse e hidrate — la llegada a la altitud tropical es cansadora; tome su primera noche con calma',
             ],
-        },
       },
     ],
 
