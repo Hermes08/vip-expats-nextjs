@@ -7,11 +7,6 @@ import Link from 'next/link';
 import { useLanguage } from '@/context/LanguageContext';
 import Magnetic from '@/components/ui/Magnetic';
 
-export const metadata = {
-  title: 'Panama Real Estate — Buy Property in Panama | VIP Expats',
-  description:
-    'Complete guide to Panama real estate. Buy homes, condos, and land in Panama City, Boquete, Coronado, and beyond. Foreign ownership rights, USD pricing, strong appreciation.',
-};
 
 const PanamaRealEstatePage = () => {
   const { lang } = useLanguage();
