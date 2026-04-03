@@ -1,0 +1,30 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  # Use Node.js 22 to match local environment
+  NODE_VERSION = "22"
+  # Increase Node.js memory limit for build (Three.js + Framer Motion are heavy)
+  NODE_OPTIONS = "--max-old-space-size=4096"
+
+# ── Required environment variables ────────────────────────────────────────────
+# Set these in Netlify: Site Settings → Environment Variables
+#
+#   NEXT_PUBLIC_SUPABASE_URL        = https://your-project.supabase.co
+#   NEXT_PUBLIC_SUPABASE_ANON_KEY   = your-anon-key
+#   NEXT_PUBLIC_WORDPRESS_URL       = https://panamarealestatesale.com
+#
+# See .env.example for full list.
+# ──────────────────────────────────────────────────────────────────────────────
+
+# Next.js specific settings
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
+
+# Redirect bare domain to /es (default locale)
+[[redirects]]
+  from = "/"
+  to = "/es"
+  status = 301
+  force = false

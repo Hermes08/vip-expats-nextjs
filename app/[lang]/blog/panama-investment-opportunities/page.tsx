@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const investmentHighlights = [
     {
         title: 'High Rental Yields',
-        desc: 'Panama City and coastal hubs offer consistent 6-9% ROI through short-term and long-term rentals.',
+        desc: 'Panama City and coastal hubs offer consistent 5–8% ROI through short-term and long-term rentals.',
         icon: TrendingUp,
     },
     {

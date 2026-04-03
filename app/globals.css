@@ -12,9 +12,14 @@
   --color-brand-800: #142032;
   --color-brand-600: #1f2a3d;
   --color-brand-500: #2a3548;
-  --color-brand-GOLD: #e9c349;
-  /* Rockstar Gold */
-  --color-brand-AMBER: #af8d11;
+  --color-brand-GOLD: #D4A843;
+  /* Tropical Sandy Gold — Margaritaville-inspired warm gold */
+  --color-brand-AMBER: #B8821A;
+  /* Caribbean Teal — primary tropical accent */
+  --color-brand-TEAL: #00C5CB;
+  --color-brand-TEAL-dark: #009BA0;
+  /* Sunset Coral — warm tropical secondary */
+  --color-brand-CORAL: #E8714A;
 
   --color-neutral-50: #f8fafc;
   --color-neutral-100: #f1f5f9;
@@ -122,17 +127,32 @@ body {
 }
 
 .btn-3d-gold {
-  background-color: #D4AF37;
-  box-shadow: 0 6px 0 #b59410, 0 12px 24px rgba(212, 175, 55, 0.3);
-  color: #0A1628;
+  background-color: #D4A843;
+  box-shadow: 0 6px 0 #B8821A, 0 12px 24px rgba(212, 168, 67, 0.35);
+  color: #071325;
 }
 
 .btn-3d-gold:hover {
-  box-shadow: 0 8px 0 #b59410, 0 15px 30px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 8px 0 #B8821A, 0 15px 30px rgba(212, 168, 67, 0.45);
 }
 
 .btn-3d-gold:active {
-  box-shadow: 0 2px 0 #b59410;
+  box-shadow: 0 2px 0 #B8821A;
+}
+
+/* Tropical Teal CTA — Margaritaville primary */
+.btn-3d-teal {
+  background-color: #00C5CB;
+  box-shadow: 0 6px 0 #009BA0, 0 12px 24px rgba(0, 197, 203, 0.35);
+  color: #071325;
+}
+
+.btn-3d-teal:hover {
+  box-shadow: 0 8px 0 #009BA0, 0 15px 30px rgba(0, 197, 203, 0.45);
+}
+
+.btn-3d-teal:active {
+  box-shadow: 0 2px 0 #009BA0;
 }
 
 .btn-3d-navy {
@@ -166,7 +186,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(233, 195, 73, 0.05) 0%, transparent 50%);
+  background: radial-gradient(circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0, 197, 203, 0.06) 0%, transparent 50%);
   opacity: 0;
   transition: opacity 0.5s ease;
 }

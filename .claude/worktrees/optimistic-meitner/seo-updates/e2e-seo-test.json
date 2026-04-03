@@ -1,0 +1,13 @@
+{
+  "taskId": "e2e-seo-test",
+  "type": "technical-seo",
+  "title": "E2E Test: Fix robots.txt",
+  "priority": 1,
+  "payload": [
+    "Check robots.txt",
+    "Remove noindex directives",
+    "Verify sitemap link"
+  ],
+  "executedAt": "2026-03-08T05:24:00.215Z",
+  "executedBy": "antigravity"
+}

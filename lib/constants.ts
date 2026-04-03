@@ -2283,6 +2283,63 @@ export const BLOG_POSTS: BlogPost[] = [
     date: 'March 28, 2026',
     image: 'https://images.unsplash.com/photo-1541814674069-70fb56303271?w=800&q=80',
     category: 'Legal'
+  },
+  {
+    id: 'blog-things-to-do-panama',
+    slug: 'things-to-do-in-panama',
+    title: {
+      en: 'Things to Do in Panama: The Ultimate 2026 Bucket List',
+      es: 'Qué Hacer en Panamá: La Lista de Deseos Definitiva 2026'
+    },
+    excerpt: {
+      en: 'From Panama City history and Bocas del Toro beaches to Boquete coffee farms and Playa Venao surf — the complete Panama activities guide for 2026.',
+      es: 'Desde la historia de Ciudad de Panamá y las playas de Bocas del Toro hasta las fincas de café de Boquete y el surf de Playa Venao.'
+    },
+    content: {
+      en: 'Your ultimate guide to the best things to do in Panama covering Panama City, Bocas del Toro, Boquete, Coronado, and the Azuero Peninsula with practical travel tips.',
+      es: 'Su guía definitiva de las mejores actividades en Panamá que cubre Ciudad de Panamá, Bocas del Toro, Boquete, Coronado y la Península de Azuero.'
+    },
+    date: 'April 1, 2026',
+    image: 'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=800&q=80',
+    category: 'Travel Guide'
+  },
+  {
+    id: 'blog-panama-weather-guide',
+    slug: 'panama-weather-guide',
+    title: {
+      en: 'Panama Weather Guide 2026: Best Time to Visit by Region',
+      es: 'Guía del Clima de Panamá 2026: La Mejor Época para Visitar por Región'
+    },
+    excerpt: {
+      en: 'Complete Panama weather breakdown — dry vs rainy season, best months by region, Caribbean vs Pacific climate, and why Panama is outside the hurricane belt.',
+      es: 'Análisis completo del clima de Panamá — temporada seca vs lluviosa, mejores meses por región, clima caribeño vs pacífico.'
+    },
+    content: {
+      en: 'Plan your perfect Panama visit with this complete climate guide covering all regions from Panama City to Bocas del Toro, Boquete, and the Azuero Peninsula.',
+      es: 'Planifique su visita perfecta a Panamá con esta guía climática completa que cubre todas las regiones.'
+    },
+    date: 'April 2, 2026',
+    image: 'https://images.unsplash.com/photo-1503803548695-c2a7b4a5b875?w=800&q=80',
+    category: 'Travel Guide'
+  },
+  {
+    id: 'blog-living-in-panama-city',
+    slug: 'living-in-panama-city',
+    title: {
+      en: 'Living in Panama City: The Honest 2026 Expat Guide',
+      es: 'Vivir en Ciudad de Panamá: La Guía Honesta del Expatriado 2026'
+    },
+    excerpt: {
+      en: 'Everything you need to know about living in Panama City — best neighborhoods, real costs, healthcare, schools, pros and cons, and what expats wish they knew before moving.',
+      es: 'Todo lo que necesitas saber sobre vivir en Ciudad de Panamá — mejores vecindarios, costos reales, sanidad, escuelas, pros y contras.'
+    },
+    content: {
+      en: 'The complete honest guide to expat life in Panama City covering neighborhoods, cost of living, healthcare, transport, and real advice from long-term residents.',
+      es: 'La guía honesta completa de la vida expatriada en Ciudad de Panamá que cubre vecindarios, costo de vida, salud, transporte y consejos reales.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80',
+    category: 'Relocation'
   }
 ];
 

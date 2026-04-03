@@ -698,7 +698,7 @@ export default function PanamaRealEstateMarket2026() {
                 3. Visa Qualifier + Personal Use (Lifestyle + Appreciation)
               </h3>
               <p className="text-slate-400 text-sm leading-relaxed mb-3">
-                Buy $120K–$250K condo to qualify for Friendly Nations Visa, live part-time, and rent during absences. Captures visa/residency benefit + passive income + appreciation. Typical scenario: $150K purchase, 8–10% rental yield ($12K–$15K annually), 15% appreciation ($22.5K gain per year). Total return on capital: 22–25% without active work.
+                Buy $120K–$250K condo to qualify for Friendly Nations Visa, live part-time, and rent during absences. Captures visa/residency benefit + passive income + appreciation. Typical scenario: $150K purchase, 6–9% rental yield ($9K–$13.5K annually), 15% appreciation ($22.5K gain per year). Total return on capital: 21–24% without active work.
               </p>
               <p className="text-slate-500 text-xs font-bold">Best for: Expats seeking visa, retirees, digital nomads with lifestyle goals</p>
             </div>

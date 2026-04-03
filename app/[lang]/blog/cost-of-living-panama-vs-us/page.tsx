@@ -101,9 +101,9 @@ export default function CostOfLivingArticle() {
                     {/* Context-Aware CTA block */}
                     <div className="bg-brand-950 p-10 rounded-3xl mt-16 not-prose text-center border-t-4 border-brand-GOLD">
                         <h3 className="text-white font-heading text-3xl font-bold mb-4 uppercase italic tracking-tighter">Ready to Verify the Math?</h3>
-                        <p className="text-brand-300 mb-8 max-w-xl mx-auto">Stop reading and start experiencing. Book a private relocation tour with ExpatRockstars and let us show you the real costs, neighborhoods, and lifestyles available to you.</p>
-                        <Link href="/tours" className="inline-flex items-center gap-3 bg-brand-GOLD text-brand-950 px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-white transition-all shadow-xl">
-                            Explore Discovery Tours <ArrowRight size={16} />
+                        <p className="text-brand-300 mb-8 max-w-xl mx-auto">Stop reading and start experiencing. Work with our Panama advisors to show you the real costs, neighborhoods, and lifestyles available to you.</p>
+                        <Link href="/contacto" className="inline-flex items-center gap-3 bg-brand-GOLD text-brand-950 px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-white transition-all shadow-xl">
+                            Schedule Your Consultation <ArrowRight size={16} />
                         </Link>
                     </div>
 

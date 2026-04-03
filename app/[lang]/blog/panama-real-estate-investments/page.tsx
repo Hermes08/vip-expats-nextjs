@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const investmentHighlights = [
     { stat: '$1,200–$1,800', label: 'Monthly luxury condo rent in Panama City', icon: MapPin },
     { stat: '$300k', label: 'Minimum real estate investment for residency visa', icon: TrendingUp },
-    { stat: '6–10%', label: 'Gross annual rental yield in prime locations', icon: Globe },
+    { stat: '5–8%', label: 'Gross annual rental yield in prime locations', icon: Globe },
     { stat: '2.5 hrs', label: 'Flight time from Miami — closer than Europe', icon: Palmtree },
 ];
 
@@ -102,7 +102,7 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
                         {[
                             { title: 'Territorial Tax System', body: 'Panama taxes only income earned within Panama. US dividends, foreign pensions, rental income from overseas, and capital gains on foreign assets are all 100% tax-free.' },
                             { title: 'Dollarized Economy', body: 'Panama has used the US Dollar as its official currency since 1904. There is no exchange rate risk for American investors, and no risk of a devaluation event eroding your property value.' },
-                            { title: 'Canal-Anchored Stability', body: 'The Panama Canal generates $4–5 billion annually, providing a government revenue base that is entirely independent of commodity cycles, tourism, or manufacturing — making Panama structurally more resilient than most of its neighbors.' },
+                            { title: 'Canal-Anchored Stability', body: 'The Panama Canal generates over $5 billion annually, providing a government revenue base that is entirely independent of commodity cycles, tourism, or manufacturing — making Panama structurally more resilient than most of its neighbors.' },
                             { title: 'Residency by Investment', body: "A $300,000 real estate purchase in a restricted zone unlocks permanent residency. After 5 years, you qualify to apply for citizenship and a Panamanian passport — one of the more accessible \"second passport\" pathways in the world." },
                         ].map((item, i) => (
                             <li key={i} className="flex items-start gap-4">
@@ -169,14 +169,14 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
                             Your Panama Investment Starts Here
                         </h3>
                         <p className="text-brand-300 mb-8 max-w-xl mx-auto">
-                            Book a private relocation tour with ExpatRockstars and see the properties, neighborhoods, and lifestyle firsthand — before you commit a single dollar.
+                            Work with our Panama advisors to see the properties, neighborhoods, and lifestyle firsthand — before you commit a single dollar.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
-                                href="/tours"
+                                href="/contacto"
                                 className="inline-flex items-center gap-3 bg-brand-GOLD text-brand-950 px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-white transition-all shadow-xl"
                             >
-                                Explore Relocation Tours <ArrowRight size={16} />
+                                Schedule a Consultation <ArrowRight size={16} />
                             </Link>
                             <Link
                                 href="/contacto"

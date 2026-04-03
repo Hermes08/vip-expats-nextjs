@@ -38,10 +38,10 @@ const beaches = [
       '2-hour drive to Panama City for medical, banking, and airports',
       'Established expat community with golf clubs, tennis courts, and social scene',
       'Condos from $150K–$400K, houses from $250K–$900K',
-      'Average rental yield: 8–10% on furnished short-term units',
+      'Average rental yield: 6–9% on furnished short-term units',
     ],
     priceRange: '$150K – $900K',
-    yield: '8–10%',
+    yield: '6–9%',
     climate: 'Pacific dry season Dec–Apr',
   },
   {
@@ -57,7 +57,7 @@ const beaches = [
       'Official Bocas International Airport (BOC) with flights to Panama City daily',
     ],
     priceRange: '$80K – $600K',
-    yield: '10–14% (short-term)',
+    yield: '10–13% (short-term)',
     climate: 'Warm tropical year-round',
   },
   {

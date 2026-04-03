@@ -5,7 +5,7 @@ import { ArrowRight, Home, DollarSign, MapPin, Users, CheckCircle2, AlertCircle,
 export const metadata: Metadata = {
   title: 'Apartments for Rent in Panama City 2026 | Expat Rental Guide + Prices',
   description:
-    'Complete guide to apartments for rent in Panama City. Compare neighborhoods (El Cangrejo $700–1,200/mo, Costa del Este $1,500–3,500/mo, Miraflores $600–900/mo), furnished vs unfurnished, lease tips for expats, and utilities.',
+    'Complete guide to apartments for rent in Panama City. Compare neighborhoods (El Cangrejo $800–1,400/mo, Costa del Este $2,000–4,000/mo, Miraflores $700–1,000/mo), furnished vs unfurnished, lease tips for expats, and utilities.',
   keywords: [
     'apartments for rent in panama city panama',
     'panama city apartments for rent',
@@ -33,7 +33,7 @@ const neighborhoods = [
   {
     name: 'El Cangrejo',
     tagline: 'Urban Living & Walkability',
-    priceRange: '$700–$1,200/mo',
+    priceRange: '$800–$1,400/mo',
     furnished: '$900–$1,500/mo',
     description:
       'El Cangrejo is Panama City\'s most vibrant neighborhood — the heart of urban expat life. Walkable to restaurants, banks, supermarkets, and the Metro Panama. Perfect for professionals seeking city convenience without the premium price of Costa del Este.',
@@ -57,7 +57,7 @@ const neighborhoods = [
   {
     name: 'Costa del Este',
     tagline: 'Luxury & Waterfront Living',
-    priceRange: '$1,500–$3,500/mo',
+    priceRange: '$2,000–$4,000/mo',
     furnished: '$2,000–$4,500/mo',
     description:
       'Panama\'s most modern and upscale neighborhood with waterfront parks, high-end restaurants, and new condominiums. Attracts wealthy expats and corporate relocations. Pristine infrastructure and strong security make it the premium choice.',
@@ -81,7 +81,7 @@ const neighborhoods = [
   {
     name: 'Miraflores & Albrook',
     tagline: 'Affordable & Convenient',
-    priceRange: '$600–$900/mo',
+    priceRange: '$700–$1,000/mo',
     furnished: '$800–$1,200/mo',
     description:
       'Located near the Panama Canal and Albrook Airport, these neighborhoods offer excellent value for budget-conscious renters. Residential, quieter than downtown, with emerging restaurants and local vibe. Perfect for remote workers and small families.',
@@ -105,7 +105,7 @@ const neighborhoods = [
   {
     name: 'Casco Viejo',
     tagline: 'Historic & Cultural Hub',
-    priceRange: '$900–$2,000/mo',
+    priceRange: '$1,200–$2,500/mo',
     furnished: '$1,200–$2,800/mo',
     description:
       'Panama\'s historic old town with colonial architecture, UNESCO designation, and vibrant cultural scene. High-ceiling apartments in restored colonial buildings with balconies overlooking the bay. Perfect for expats seeking character and history.',
@@ -130,10 +130,10 @@ const neighborhoods = [
 ];
 
 const pricingTable = [
-  { type: '1-Bedroom, 50 sqm', elCangrejo: '$700–$950', costaDel: '$1,500–$2,200', miraflores: '$550–$750', cascoViejo: '$800–$1,300' },
-  { type: '2-Bedroom, 80 sqm', elCangrejo: '$950–$1,200', costaDel: '$2,200–$3,000', miraflores: '$750–$950', cascoViejo: '$1,100–$1,800' },
-  { type: '3-Bedroom, 120 sqm', elCangrejo: '$1,200–$1,600', costaDel: '$3,000–$3,500', miraflores: '$900–$1,300', cascoViejo: '$1,500–$2,000' },
-  { type: 'Studio / Studio + Den', elCangrejo: '$600–$800', costaDel: '$1,200–$1,800', miraflores: '$450–$650', cascoViejo: '$700–$1,100' },
+  { type: '1-Bedroom, 50 sqm', elCangrejo: '$800–$1,100', costaDel: '$2,000–$2,500', miraflores: '$650–$850', cascoViejo: '$1,000–$1,500' },
+  { type: '2-Bedroom, 80 sqm', elCangrejo: '$1,100–$1,400', costaDel: '$2,500–$3,500', miraflores: '$850–$1,100', cascoViejo: '$1,300–$2,000' },
+  { type: '3-Bedroom, 120 sqm', elCangrejo: '$1,400–$1,800', costaDel: '$3,500–$4,000', miraflores: '$1,000–$1,500', cascoViejo: '$1,800–$2,500' },
+  { type: 'Studio / Studio + Den', elCangrejo: '$700–$950', costaDel: '$1,500–$2,200', miraflores: '$550–$750', cascoViejo: '$900–$1,300' },
 ];
 
 export default function ApartmentsForRentPanamaGuide() {
@@ -183,7 +183,7 @@ export default function ApartmentsForRentPanamaGuide() {
             </p>
             <ul className="space-y-2">
               {[
-                'Affordable rents: $700–$1,200/mo for quality 2-bedrooms in prime areas',
+                'Affordable rents: $800–$1,400/mo for quality 2-bedrooms in prime areas',
                 'Low visa requirements: Temporary Resident Visa (TRV) with just proof of monthly income ($1,000+)',
                 'Furnished options: Many buildings offer furnished apartments ready to move in',
                 'Flexible leases: Month-to-month, 6-month, or annual options available',
