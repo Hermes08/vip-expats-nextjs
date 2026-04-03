@@ -424,7 +424,7 @@ const RelocationHubContent: React.FC = () => {
             </section>
 
             {/* The 2026 Legal Blueprint Section */}
-            <section className="py-14 bg-white text-brand-950">
+            <section className="py-14 bg-brand-900">
                 <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row gap-20 items-center">
                     <div className="lg:w-1/2">
                         <div className="w-16 h-16 bg-brand-GOLD/10 rounded-2xl flex items-center justify-center mb-10">

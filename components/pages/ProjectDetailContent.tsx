@@ -27,7 +27,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
     const baseUrl = 'https://panamarealestatesale.com';
 
     return (
-        <div className="bg-white min-h-screen">
+        <div className="bg-brand-950 min-h-screen">
             <ProductSchema project={project} lang={lang as 'es' | 'en'} />
             <BreadcrumbSchema items={[
                 { name: lang === 'es' ? 'Inicio' : 'Home', item: `${baseUrl}/${lang}` },
@@ -60,7 +60,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                                 <SplitText text={project.name[lang]} delay={0.2} />
                             </h1>
                             <div className="flex flex-wrap gap-4">
-                                <span className="bg-brand-GOLD text-brand-900 px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg shadow-brand-GOLD/20">{project.status}</span>
+                                <span className="bg-brand-GOLD text-white px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg shadow-brand-GOLD/20">{project.status}</span>
                                 <span className="bg-white/10 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase border border-white/20 hover:bg-white/20 transition-colors cursor-default">{project.type}</span>
                             </div>
                         </div>
@@ -94,24 +94,24 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                     <div className="lg:col-span-2">
 
                         {/* Quick Specs */}
-                        <div className="grid grid-cols-3 gap-6 mb-16 py-8 border-y border-neutral-100 text-center">
+                        <div className="grid grid-cols-3 gap-6 mb-16 py-8 border-y border-white/5 text-center">
                             <div>
-                                <span className="block text-xl font-bold text-brand-900">{project.beds}</span>
+                                <span className="block text-xl font-bold text-white">{project.beds}</span>
                                 <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">{labels.beds}</span>
                             </div>
                             <div>
-                                <span className="block text-xl font-bold text-brand-900">{project.baths}</span>
+                                <span className="block text-xl font-bold text-white">{project.baths}</span>
                                 <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">{labels.baths}</span>
                             </div>
                             <div>
-                                <span className="block text-xl font-bold text-brand-900">{project.sqft}</span>
+                                <span className="block text-xl font-bold text-white">{project.sqft}</span>
                                 <span className="text-[10px] font-bold text-neutral-400 uppercase tracking-widest">m²</span>
                             </div>
                         </div>
 
                         {/* SECTION 1: Deep Dive */}
                         <article className="prose prose-lg max-w-none text-brand-600 mb-20 reveal-on-scroll">
-                            <h2 className="text-3xl font-heading font-bold text-brand-900 mb-8 border-b-2 border-brand-GOLD inline-block pb-2 uppercase tracking-tighter">
+                            <h2 className="text-3xl font-heading font-bold text-white mb-8 border-b-2 border-brand-GOLD inline-block pb-2 uppercase tracking-tighter">
                                 {lang === 'es' ? 'Análisis Profundo del Proyecto' : 'Project Deep Dive & Architectural Vision'}
                             </h2>
                             <div
@@ -135,8 +135,8 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                         )}
 
                         {/* SECTION 2: Location & Lifestyle */}
-                        <article className="bg-neutral-50 p-12 rounded-[3rem] border border-neutral-100 mb-20 reveal-on-scroll">
-                            <h2 className="text-3xl font-heading font-bold text-brand-900 mb-8 flex items-center gap-4">
+                        <article className="bg-brand-900/50 p-12 rounded-[3rem] border border-white/5 mb-20 reveal-on-scroll">
+                            <h2 className="text-3xl font-heading font-bold text-white mb-8 flex items-center gap-4">
                                 <Compass className="text-brand-GOLD" size={36} />
                                 {lang === 'es' ? 'Ubicación y Estilo de Vida' : 'Neighborhood Analysis & Coastal Lifestyle'}
                             </h2>
@@ -180,7 +180,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
 
                         {/* SECTION 5: Legal & Residency */}
                         <article className="mb-20 p-12 border-2 border-brand-GOLD/20 rounded-[3rem] reveal-on-scroll">
-                            <h2 className="text-3xl font-heading font-bold text-brand-900 mb-8 flex items-center gap-4">
+                            <h2 className="text-3xl font-heading font-bold text-white mb-8 flex items-center gap-4">
                                 <Gavel className="text-brand-GOLD" size={36} />
                                 {lang === 'es' ? 'Integración Legal y Residencia' : 'Legal Guide & Residency Pathways'}
                             </h2>
@@ -206,8 +206,8 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
 
                             {/* Lead Magnet Book */}
                             {/* Lead Form */}
-                            <div className="bg-white rounded-3xl p-8 border border-neutral-100 shadow-xl">
-                                <h3 className="font-bold text-brand-900 mb-4 uppercase tracking-widest text-[10px] flex items-center gap-2">
+                            <div className="bg-brand-900/80 rounded-3xl p-8 border border-white/5 shadow-xl">
+                                <h3 className="font-bold text-white mb-4 uppercase tracking-widest text-[10px] flex items-center gap-2">
                                     <ShieldCheck size={14} className="text-brand-GOLD" /> Official Inquiry
                                 </h3>
                                 <p className="text-xs text-brand-500 mb-6 font-medium">Recieve the full brochure & pricing list for {project.name[lang]}</p>
@@ -235,12 +235,12 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                                         alert('Error sending message. Please try again.');
                                     }
                                 }} className="space-y-4">
-                                    <input name="name" required placeholder="Name" aria-label="Your Name" className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
-                                    <input name="email" required type="email" placeholder="Email" aria-label="Your Email" className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
-                                    <input name="phone" required placeholder="Phone/WhatsApp" aria-label="Your Phone or WhatsApp" className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
-                                    <textarea name="message" placeholder="I'm interested in..." aria-label="Message" rows={3} className="w-full px-4 py-3 bg-neutral-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all resize-none"></textarea>
+                                    <input name="name" required placeholder="Name" aria-label="Your Name" className="w-full px-4 py-3 bg-brand-900/50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
+                                    <input name="email" required type="email" placeholder="Email" aria-label="Your Email" className="w-full px-4 py-3 bg-brand-900/50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
+                                    <input name="phone" required placeholder="Phone/WhatsApp" aria-label="Your Phone or WhatsApp" className="w-full px-4 py-3 bg-brand-900/50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
+                                    <textarea name="message" placeholder="I'm interested in..." aria-label="Message" rows={3} className="w-full px-4 py-3 bg-brand-900/50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all resize-none"></textarea>
 
-                                    <button type="submit" className="w-full py-4 bg-brand-900 text-white font-black uppercase tracking-widest text-[10px] rounded-xl hover:bg-brand-GOLD hover:text-brand-900 transition-all shadow-lg">
+                                    <button type="submit" className="w-full py-4 bg-brand-900 text-white font-black uppercase tracking-widest text-[10px] rounded-xl hover:bg-brand-GOLD hover:text-white transition-all shadow-lg">
                                         Request Details
                                     </button>
                                 </form>
@@ -248,8 +248,8 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                             </div>
 
                             {/* Amenities List */}
-                            <div className="bg-neutral-50 p-8 rounded-3xl">
-                                <h3 className="font-bold text-brand-900 mb-6 uppercase tracking-widest text-[10px] border-b border-neutral-200 pb-2 flex items-center gap-2">
+                            <div className="bg-brand-900/50 p-8 rounded-3xl">
+                                <h3 className="font-bold text-white mb-6 uppercase tracking-widest text-[10px] border-b border-white/8 pb-2 flex items-center gap-2">
                                     <Home size={14} className="text-brand-GOLD" /> Development Amenities
                                 </h3>
                                 <ul className="space-y-4">
@@ -263,12 +263,12 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
 
                             {/* Related Content */}
                             {relatedPosts.length > 0 && (
-                                <div className="bg-neutral-50 p-8 rounded-3xl">
-                                    <h3 className="font-bold text-brand-900 mb-6 uppercase tracking-widest text-[10px] border-b border-neutral-200 pb-2">Market Context</h3>
+                                <div className="bg-brand-900/50 p-8 rounded-3xl">
+                                    <h3 className="font-bold text-white mb-6 uppercase tracking-widest text-[10px] border-b border-white/8 pb-2">Market Context</h3>
                                     <div className="space-y-6">
                                         {relatedPosts.map(post => (
                                             <Link key={post.id} href={`/blog/${post.slug}`} className="block group">
-                                                <h5 className="text-sm font-bold text-brand-900 group-hover:text-brand-GOLD transition-colors mb-2">{post.title[lang]}</h5>
+                                                <h5 className="text-sm font-bold text-white group-hover:text-brand-GOLD transition-colors mb-2">{post.title[lang]}</h5>
                                                 <span className="text-[10px] text-brand-400 font-bold uppercase">{labels.readReport} →</span>
                                             </Link>
                                         ))}
@@ -281,10 +281,10 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
             </div>
 
             {/* Search Grounding Wall (SEO Booster) */}
-            <section className="bg-neutral-50 py-20 border-t border-neutral-100">
+            <section className="bg-brand-900/50 py-20 border-t border-white/5">
                 <div className="max-w-7xl mx-auto px-4">
                     <h2 className="text-[10px] font-black text-neutral-400 uppercase tracking-[0.3em] mb-10 text-center">Global Reach • Local Expertise • Panama Investment Hub</h2>
-                    <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-40 text-[11px] font-bold text-brand-900 grayscale">
+                    <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-40 text-[11px] font-bold text-white grayscale">
                         <span>panama condos on the beach</span>
                         <span>panama city condos</span>
                         <span>panama real estate</span>

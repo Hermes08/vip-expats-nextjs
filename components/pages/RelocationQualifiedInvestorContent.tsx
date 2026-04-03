@@ -178,7 +178,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
             </section>
 
             {/* ROI Analysis: The 2026 Real Estate Market */}
-            <section className="py-14 bg-white">
+            <section className="py-14 bg-brand-900">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-24 items-center">
                         <div className="lg:w-1/2">

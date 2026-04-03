@@ -153,7 +153,7 @@ const RelocationPricingContent: React.FC = () => {
                             { icon: Globe, title: "VIP Life", desc: "Keys in hand, residency approved. Welcome to the Panama Real Estate Sale members community." }
                         ].map((step, i) => (
                             <div key={i} className="text-center">
-                                <div className="w-20 h-20 bg-white border border-white/10 shadow-xl rounded-full flex items-center justify-center mx-auto mb-8 text-brand-GOLD group hover:bg-brand-950 hover:text-white transition-all duration-500">
+                                <div className="w-20 h-20 bg-brand-900/60 border border-white/10 shadow-xl rounded-full flex items-center justify-center mx-auto mb-8 text-brand-GOLD group hover:bg-brand-950 hover:text-white transition-all duration-500">
                                     <step.icon size={32} />
                                 </div>
                                 <div className="mb-4 text-brand-GOLD font-black text-xs uppercase tracking-widest">Step 0{i + 1}</div>

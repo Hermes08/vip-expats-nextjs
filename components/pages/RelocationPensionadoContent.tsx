@@ -149,7 +149,7 @@ const RelocationPensionadoContent: React.FC = () => {
             </section>
 
             {/* The Retirement Revolution 2026 */}
-            <section className="py-14 bg-white">
+            <section className="py-14 bg-brand-900">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-24 items-center">
                         <div className="lg:w-1/2">
@@ -209,7 +209,7 @@ const RelocationPensionadoContent: React.FC = () => {
             </section>
 
             {/* NEW SECTION: PET RELOCATION */}
-            <section className="py-14 bg-white text-brand-950">
+            <section className="py-14 bg-brand-900">
                 <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row-reverse gap-20 items-center">
                     <div className="lg:w-1/2">
                         <Cat size={64} className="text-brand-GOLD mb-10" />

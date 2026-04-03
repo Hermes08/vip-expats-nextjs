@@ -155,7 +155,7 @@ const RelocationChecklistContent: React.FC = () => {
             </section>
 
             {/* The Art of Timing: 2026 Strategy */}
-            <section className="py-14 bg-white">
+            <section className="py-14 bg-brand-900">
                 <div className="max-w-7xl mx-auto px-4">
                     <div className="flex flex-col lg:flex-row gap-24 items-center">
                         <div className="lg:w-1/2">
@@ -218,7 +218,7 @@ const RelocationChecklistContent: React.FC = () => {
                         { q: "Do I need to bring my kids for the filing?", a: "Yes. Every dependent included in the visa must be physically present in Panama for the initial filing and to receive their temporary residency card." },
                         { q: "Can I use 'Digital' documents for the filing?", a: "Immigration requires **Originals** with wet signatures or the original apostilled federal printouts. Scans are only used for pre-clearance. You must travel with the physical folder." }
                     ].map((faq, i) => (
-                        <div key={i} className="p-10 border-b border-white/10 group hover:bg-neutral-50 transition-all rounded-2xl">
+                        <div key={i} className="p-10 border-b border-white/10 group hover:bg-brand-900/40 transition-all rounded-2xl">
                             <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic group-hover:text-brand-GOLD transition-colors">{faq.q}</h4>
                             <p className="text-sm text-slate-400 font-medium leading-relaxed">{faq.a}</p>
                         </div>

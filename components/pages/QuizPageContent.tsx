@@ -82,13 +82,13 @@ const QuizPageContent: React.FC = () => {
 
     if (isSubmitted) {
         return (
-            <div className="pt-32 pb-20 bg-slate-50 min-h-screen">
+            <div className="pt-32 pb-20 bg-brand-950 min-h-screen">
                 <div className="max-w-5xl mx-auto px-4">
                     <div className="text-center mb-16 animate-in fade-in duration-700">
-                        <div className="w-20 h-20 bg-brand-GOLD text-brand-900 rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
+                        <div className="w-20 h-20 bg-brand-GOLD text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
                             <Sparkles size={40} />
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-heading font-bold text-brand-900 mb-4">Your Panama Match is Ready!</h1>
+                        <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-4">Your Panama Match is Ready!</h1>
                         <p className="text-slate-500 text-lg">Based on your lifestyle and investment goals, we've identified these top Panama locations.</p>
                     </div>
 
@@ -102,7 +102,7 @@ const QuizPageContent: React.FC = () => {
                             <p className="text-brand-200 mb-8 leading-relaxed line-clamp-4">{recommendations[0]?.description.en}</p>
                             <button
                                 onClick={() => router.push(`/proyectos/${recommendations[0]?.slug}`)}
-                                className="inline-flex items-center gap-2 bg-brand-GOLD text-brand-900 px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-white transition-all shadow-xl self-start"
+                                className="inline-flex items-center gap-2 bg-brand-GOLD text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-white transition-all shadow-xl self-start"
                             >
                                 Learn More About {recommendations[0]?.name.en.split(' ')[0]} <ArrowRight size={16} />
                             </button>
@@ -111,16 +111,16 @@ const QuizPageContent: React.FC = () => {
 
                     <div className="grid md:grid-cols-3 gap-8">
                         {recommendations.slice(1, 4).map((p, idx) => (
-                            <div key={idx} className="bg-white rounded-3xl overflow-hidden shadow-xl border border-slate-100 flex flex-col hover:shadow-2xl transition-all">
+                            <div key={idx} className="glass-card rounded-3xl overflow-hidden border border-white/5 flex flex-col hover:shadow-2xl transition-all">
                                 <div className="h-48 overflow-hidden">
                                     <img src={p.images[0]} className="w-full h-full object-cover" alt="" />
                                 </div>
                                 <div className="p-8 flex-grow">
-                                    <h3 className="text-xl font-bold text-brand-900 mb-3">{p.name.en}</h3>
+                                    <h3 className="text-xl font-bold text-white mb-3">{p.name.en}</h3>
                                     <p className="text-slate-500 text-sm mb-6 line-clamp-3 leading-relaxed">{p.description.en}</p>
                                     <button
                                         onClick={() => router.push(`/proyectos/${p.slug}`)}
-                                        className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] flex items-center gap-2 hover:text-brand-900 transition-colors"
+                                        className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] flex items-center gap-2 hover:text-white transition-colors"
                                     >
                                         View Details <ArrowRight size={14} />
                                     </button>
@@ -129,10 +129,10 @@ const QuizPageContent: React.FC = () => {
                         ))}
                     </div>
 
-                    <div className="mt-20 text-center p-12 bg-white rounded-[2.5rem] shadow-sm border border-slate-100">
-                        <h3 className="text-2xl font-bold text-brand-900 mb-4">Want a guided experience?</h3>
+                    <div className="mt-20 text-center p-12 bg-brand-900/60 rounded-[2.5rem] border border-white/5">
+                        <h3 className="text-2xl font-bold text-white mb-4">Want a guided experience?</h3>
                         <p className="text-slate-500 mb-8 max-w-xl mx-auto">Our advisors are ready to walk you through these neighborhoods in person or via video call.</p>
-                        <button onClick={() => router.push('/contacto')} className="bg-brand-900 text-white px-12 py-5 rounded-full font-black uppercase tracking-widest text-xs shadow-2xl hover:bg-brand-GOLD hover:text-brand-900 transition-all">Schedule Discovery Call</button>
+                        <button onClick={() => router.push('/contacto')} className="bg-brand-900 text-white px-12 py-5 rounded-full font-black uppercase tracking-widest text-xs shadow-2xl hover:bg-brand-GOLD hover:text-white transition-all">Schedule Discovery Call</button>
                     </div>
                 </div>
             </div>
@@ -144,7 +144,7 @@ const QuizPageContent: React.FC = () => {
             <div className="mb-4 flex items-center gap-2 text-brand-GOLD font-black uppercase text-[10px] tracking-widest">
                 <Sparkles size={12} /> Step {step} of {totalSteps}
             </div>
-            <h2 className="text-2xl md:text-3xl font-heading font-bold text-brand-900 mb-8 leading-tight">{title}</h2>
+            <h2 className="text-2xl md:text-3xl font-heading font-bold text-white mb-8 leading-tight">{title}</h2>
             <div className="space-y-4">
                 {children}
             </div>
@@ -165,7 +165,7 @@ const QuizPageContent: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="bg-white rounded-[2.5rem] p-10 md:p-16 shadow-2xl relative overflow-hidden">
+                <div className="bg-brand-900/70 rounded-[2.5rem] p-10 md:p-16 relative overflow-hidden">
                     <div className="absolute top-0 right-0 w-48 h-48 bg-brand-GOLD/5 rounded-full -mr-24 -mt-24 blur-3xl"></div>
 
                     <form onSubmit={handleSubmit} className="space-y-12">
@@ -336,10 +336,10 @@ const QuizPageContent: React.FC = () => {
                         )}
 
                         <div className="pt-8 border-t border-slate-100 flex justify-between gap-4">
-                            <button type="button" onClick={handlePrev} disabled={step === 1} className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold uppercase text-[10px] tracking-widest transition-all ${step === 1 ? 'opacity-0 invisible' : 'bg-slate-100 text-slate-500 hover:bg-slate-200'}`}>
+                            <button type="button" onClick={handlePrev} disabled={step === 1} className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold uppercase text-[10px] tracking-widest transition-all ${step === 1 ? 'opacity-0 invisible' : 'bg-brand-900/60 text-slate-400 hover:bg-brand-800'}`}>
                                 <ChevronLeft size={16} /> Previous
                             </button>
-                            <button type="submit" className="flex items-center gap-2 bg-brand-900 text-white px-10 py-4 rounded-xl font-black uppercase text-[10px] tracking-[0.2em] hover:bg-brand-GOLD hover:text-brand-900 transition-all shadow-xl">
+                            <button type="submit" className="flex items-center gap-2 bg-brand-900 text-white px-10 py-4 rounded-xl font-black uppercase text-[10px] tracking-[0.2em] hover:bg-brand-GOLD hover:text-white transition-all shadow-xl">
                                 {step === totalSteps ? 'Reveal Results' : 'Continue'} <ChevronRight size={16} />
                             </button>
                         </div>

@@ -85,7 +85,7 @@ const RelocationWeatherContent: React.FC = () => {
 
                 <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
                     {months.map((m, i) => (
-                        <div key={i} className={`p-8 rounded-3xl border ${m.season === 'Dry' ? 'border-brand-GOLD/30 bg-brand-GOLD/5' : 'border-white/10 bg-neutral-50'} flex flex-col items-center text-center transition-transform hover:-translate-y-2`}>
+                        <div key={i} className={`p-8 rounded-3xl border ${m.season === 'Dry' ? 'border-brand-GOLD/30 bg-brand-GOLD/5' : 'border-white/10 bg-brand-900/40'} flex flex-col items-center text-center transition-transform hover:-translate-y-2`}>
                             <m.icon className={m.season === 'Dry' ? 'text-brand-GOLD' : 'text-blue-400'} size={32} />
                             <h4 className="mt-6 font-black uppercase tracking-tighter text-lg leading-none">{m.name}</h4>
                             <div className="mt-4 flex flex-col gap-2">

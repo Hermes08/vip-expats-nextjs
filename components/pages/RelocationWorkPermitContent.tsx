@@ -133,7 +133,7 @@ const RelocationWorkPermitContent: React.FC = () => {
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic">Choose Your <span className="text-brand-GOLD text-3xl md:text-5xl block">Labor Trajectory</span></h2>
                     </div>
                     <div className="grid lg:grid-cols-2 gap-12">
-                        <div className="bg-white p-8 rounded-2xl shadow-sm border border-white/10 group hover:border-brand-GOLD transition-all">
+                        <div className="bg-brand-900/60 p-8 rounded-2xl border border-white/5 group hover:border-brand-GOLD transition-all">
                             <Globe className="text-brand-GOLD mb-10" size={64} />
                             <h3 className="text-4xl font-black uppercase tracking-tighter mb-8 italic">The Nomad Visa</h3>
                             <p className="text-lg text-slate-400 font-medium leading-relaxed mb-10">
@@ -237,7 +237,7 @@ const RelocationWorkPermitContent: React.FC = () => {
 
             {/* Strategy Callout */}
             <section className="py-14 max-w-7xl mx-auto px-4">
-                <div className="bg-neutral-50 p-8 rounded-2xl flex flex-col md:flex-row items-center gap-16">
+                <div className="bg-brand-900/40 p-8 rounded-2xl flex flex-col md:flex-row items-center gap-16">
                     <div className="md:w-2/3">
                         <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter mb-6 italic leading-none text-brand-900">Get Your <br /> Work Blueprint</h2>
                         <p className="text-lg font-bold text-slate-400 leading-relaxed">

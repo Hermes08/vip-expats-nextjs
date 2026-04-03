@@ -16,7 +16,7 @@ const RelocationToursContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-white selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-brand-950 selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={breadcrumbItems} />
 
             {/* Hero Section */}
@@ -129,7 +129,7 @@ const RelocationToursContent: React.FC = () => {
                             desc: "Return to Panama City. Individual 1-on-1 strategy sessions. Finalize your <strong>panama residency visa</strong> timeline and property shortlist. Helicopter optional: Caribbean frontier tour of Playa Escondida."
                         }
                     ].map((item, idx) => (
-                        <div key={idx} className="bg-neutral-50 p-6 rounded-2xl border border-white/10 group hover:shadow-2xl transition-all">
+                        <div key={idx} className="bg-brand-900/40 p-6 rounded-2xl border border-white/10 group hover:shadow-2xl transition-all">
                             <div className="flex flex-col lg:flex-row gap-12 items-center">
                                 <div className="lg:w-1/4">
                                     <div className="text-8xl font-black text-brand-GOLD/10 group-hover:text-brand-GOLD/40 transition-all duration-700 leading-none mb-4">{item.day}</div>

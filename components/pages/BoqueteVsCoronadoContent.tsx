@@ -34,7 +34,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={[{ name: "Home", item: `https://panamarealestatesale.com/${lang}` }, ...breadcrumbItems]} />
             <FAQSchema questions={faqs.map(f => ({ question: f.q, answer: f.a }))} />
             <ServiceSchema
@@ -224,7 +224,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             </section>
 
             {/* Weather Wars: The Critical Factor */}
-            <section className="py-32 bg-neutral-50 rounded-[5rem] mx-4">
+            <section className="py-32 bg-brand-900/40 rounded-[5rem] mx-4">
                 <div className="max-w-7xl mx-auto px-8">
                     <div className="text-center mb-24">
                         <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic">Systems <br /><span className="text-brand-GOLD">& Maintenance</span></h2>
@@ -329,7 +329,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             </section>
 
             {/* Schooling and Families section */}
-            <section className="py-32 bg-neutral-50 rounded-[5rem] mx-4">
+            <section className="py-32 bg-brand-900/40 rounded-[5rem] mx-4">
                 <div className="max-w-7xl mx-auto px-8 text-center mb-24">
                     <h2 className="text-4xl md:text-7xl font-heading font-black mb-8 uppercase tracking-tighter italic underline italic leading-none">The <span className="text-brand-GOLD">Education</span> <br /> Blueprint</h2>
                     <p className="max-w-3xl mx-auto text-lg text-neutral-500 font-medium">
@@ -338,7 +338,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                 </div>
 
                 <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-20">
-                    <div className="p-16 bg-white rounded-[4rem] shadow-xl border border-neutral-100">
+                    <div className="p-16 bg-white rounded-[4rem] shadow-xl border border-white/5">
                         <h4 className="text-2xl font-black uppercase tracking-tighter mb-8 italic">Boquete Schools</h4>
                         <p className="text-neutral-500 leading-relaxed mb-8">
                             Boquete offers several bilingual and international options like <strong>The Boquete International School</strong> and <strong>Academia Internacional Boquete</strong>. The focus is often on project-based learning and environmental awareness.
@@ -403,7 +403,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             {/* Comparison Table (SEO Powerhouse) */}
             <section className="py-32 max-w-7xl mx-auto px-4">
                 <h2 className="text-4xl font-heading font-black mb-16 uppercase tracking-tighter italic text-center">Side-By-Side <span className="text-brand-GOLD italic">Logic</span></h2>
-                <div className="overflow-x-auto rounded-[3rem] border border-neutral-100 shadow-2xl">
+                <div className="overflow-x-auto rounded-[3rem] border border-white/5 shadow-2xl">
                     <table className="w-full text-left bg-white border-collapse">
                         <thead>
                             <tr className="bg-brand-950 text-white">
@@ -421,7 +421,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                                 { m: "Social Scene", b: "Quiet, Yoga, Arts", c: "Active, Golf, Bars" },
                                 { m: "Connectivity", b: "Great Fiber Optics", c: "Excellent Starlink + Fiber" }
                             ].map((row, i) => (
-                                <tr key={i} className="border-b border-neutral-50 hover:bg-neutral-50 transition-colors">
+                                <tr key={i} className="border-b border-neutral-50 hover:bg-brand-900/40 transition-colors">
                                     <td className="p-10 font-black uppercase tracking-widest text-[10px] text-brand-950">{row.m}</td>
                                     <td className="p-10">{row.b}</td>
                                     <td className="p-10">{row.c}</td>
@@ -433,17 +433,17 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             </section>
 
             {/* Related Resources: The Topic Cluster */}
-            <section className="py-24 bg-neutral-50 rounded-[5rem] mx-4 mb-32">
+            <section className="py-24 bg-brand-900/40 rounded-[5rem] mx-4 mb-32">
                 <div className="max-w-7xl mx-auto px-8">
                     <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-neutral-400 mb-12 text-center">Complete Your Research</h4>
                     <div className="grid md:grid-cols-2 gap-8">
-                        <Link href={`/${lang}/relocation/pricing`} className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
+                        <Link href={`/${lang}/relocation/pricing`} className="group p-10 bg-white rounded-[3rem] border border-white/5 hover:border-brand-GOLD transition-all shadow-sm">
                             <Zap className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Cost of Living 2026</h5>
                             <p className="text-xs text-neutral-500 font-medium mb-6">Compare the exact costs of Boquete vs Coronado vs Panama City.</p>
                             <span className="text-[10px] font-black uppercase tracking-widest text-brand-GOLD flex items-center gap-2">View Guide <ArrowRight size={12} /></span>
                         </Link>
-                        <Link href={`/${lang}/relocation/guides`} className="group p-10 bg-white rounded-[3rem] border border-neutral-100 hover:border-brand-GOLD transition-all shadow-sm">
+                        <Link href={`/${lang}/relocation/guides`} className="group p-10 bg-white rounded-[3rem] border border-white/5 hover:border-brand-GOLD transition-all shadow-sm">
                             <Sun className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Weather Guide 2026</h5>
                             <p className="text-xs text-neutral-500 font-medium mb-6">Discover the best time to visit and how microclimates affect your move.</p>

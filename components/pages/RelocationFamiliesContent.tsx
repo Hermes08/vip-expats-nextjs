@@ -188,7 +188,7 @@ const RelocationFamiliesContent = () => {
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-black mb-20 text-center uppercase tracking-tighter italic">Family <span className="text-brand-GOLD italic">Knowledge</span></h2>
                     <div className="space-y-6">
                         {faqs.map((faq, idx) => (
-                            <details key={idx} className="group bg-white rounded-2xl border border-white/10 overflow-hidden transition-all hover:border-brand-GOLD/50">
+                            <details key={idx} className="group bg-brand-900/60 rounded-2xl border border-white/5 overflow-hidden transition-all hover:border-brand-GOLD/50">
                                 <summary className="flex items-center justify-between p-6 cursor-pointer list-none">
                                     <span className="text-lg font-black uppercase tracking-tighter italic pr-8 text-brand-950">{faq.question}</span>
                                     <HelpCircle className="text-brand-GOLD" size={24} />

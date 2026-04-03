@@ -496,7 +496,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                         { q: "What is an E-Cedula?", a: "It is your official Panamanian ID card. It looks just like a local ID and makes daily life (banking, utilities, travel) significantly easier. You receive this after your residency is approved." },
                         { q: "Can I buy a property with a mortgage?", a: "For the investment path, the first $200,000 must be PAID IN FULL. Any amount above that can be financed via a Panamanian mortgage." }
                     ].map((faq, i) => (
-                        <div key={i} className="p-10 border-b border-white/10 group hover:bg-neutral-50 transition-all rounded-2xl">
+                        <div key={i} className="p-10 border-b border-white/10 group hover:bg-brand-900/40 transition-all rounded-2xl">
                             <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic group-hover:text-brand-GOLD transition-colors">{faq.q}</h4>
                             <p className="text-sm text-slate-400 font-medium leading-relaxed">{faq.a}</p>
                         </div>

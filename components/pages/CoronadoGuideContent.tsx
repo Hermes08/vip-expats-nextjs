@@ -30,7 +30,7 @@ const CoronadoGuideContent: React.FC = () => {
     ];
 
     return (
-        <div className="pt-24 min-h-screen bg-white text-brand-950 font-sans selection:bg-brand-GOLD selection:text-brand-950">
+        <div className="pt-24 min-h-screen bg-brand-950 text-white font-sans selection:bg-brand-GOLD selection:text-brand-950">
             <BreadcrumbSchema items={breadcrumbItems} />
             <FAQSchema questions={faqs} />
 
@@ -83,9 +83,9 @@ const CoronadoGuideContent: React.FC = () => {
                             desc: "Miles of black and white speckled volcanic sand beaches perfect for long walks, surfing, and year-round swimming."
                         }
                     ].map((n, i) => (
-                        <div key={i} className="bg-neutral-50 p-10 rounded-[4rem] border border-neutral-100 hover:shadow-2xl transition-all h-full flex flex-col">
+                        <div key={i} className="bg-brand-900/40 p-10 rounded-[4rem] border border-white/5 hover:shadow-2xl transition-all h-full flex flex-col">
                             <n.icon className="text-brand-GOLD mb-8" size={48} />
-                            <h4 className="text-2xl font-black uppercase tracking-tighter mb-4 italic text-brand-900">{n.name}</h4>
+                            <h4 className="text-2xl font-black uppercase tracking-tighter mb-4 italic text-white">{n.name}</h4>
                             <p className="text-sm text-neutral-500 font-medium leading-relaxed flex-grow">{n.desc}</p>
                         </div>
                     ))}
@@ -133,22 +133,22 @@ const CoronadoGuideContent: React.FC = () => {
 
             {/* Real Estate & ROI */}
             <section className="py-32 max-w-7xl mx-auto px-4">
-                <div className="bg-neutral-50 p-16 rounded-[4rem] flex flex-col md:flex-row gap-16 items-center">
+                <div className="bg-brand-900/40 p-16 rounded-[4rem] flex flex-col md:flex-row gap-16 items-center">
                     <div className="md:w-1/2 text-right order-2 md:order-1">
                         <div className="space-y-4 inline-block text-left">
-                            <div className="flex items-center gap-3 text-brand-900 font-black text-xs uppercase tracking-widest">
+                            <div className="flex items-center gap-3 text-white font-black text-xs uppercase tracking-widest">
                                 <CheckCircle2 className="text-brand-GOLD" size={20} /> Incredible Weekend Rental Pool
                             </div>
-                            <div className="flex items-center gap-3 text-brand-900 font-black text-xs uppercase tracking-widest">
+                            <div className="flex items-center gap-3 text-white font-black text-xs uppercase tracking-widest">
                                 <CheckCircle2 className="text-brand-GOLD" size={20} /> High Appreciation Potential
                             </div>
-                            <div className="flex items-center gap-3 text-brand-900 font-black text-xs uppercase tracking-widest">
+                            <div className="flex items-center gap-3 text-white font-black text-xs uppercase tracking-widest">
                                 <CheckCircle2 className="text-brand-GOLD" size={20} /> Modern Infrastructure & Fibernet
                             </div>
                         </div>
                     </div>
                     <div className="md:w-1/2 order-1 md:order-2">
-                        <h2 className="text-4xl font-heading font-black mb-8 uppercase tracking-tighter italic text-brand-900">Pacific <span className="text-brand-GOLD">ROI</span></h2>
+                        <h2 className="text-4xl font-heading font-black mb-8 uppercase tracking-tighter italic text-white">Pacific <span className="text-brand-GOLD">ROI</span></h2>
                         <p className="text-neutral-500 font-medium leading-relaxed mb-8">
                             Coronado is the most liquid real estate market on the Pacific coast. Whether you are looking for <strong>coronado panama real estate</strong> for lifestyle or as a high-yield rental investment, the demand for weekend getaways is constant year-round.
                         </p>

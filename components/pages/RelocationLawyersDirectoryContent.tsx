@@ -293,7 +293,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                         { q: "What are 'Protected Professions' in 2026?", a: "Panama protects dozens of professions (Nursing, Engineering, Law, etc.) for citizens only. A good lawyer will review your degree and help you structure your role as 'Consultant' to ensure compliance." },
                         { q: "Do I need a Power of Attorney?", a: "Yes. You will sign a limited Power of Attorney (Especial) so the lawyer can represent you before the National Immigration Service." }
                     ].map((faq, i) => (
-                        <div key={i} className="p-10 border-b border-white/10 group hover:bg-neutral-50 transition-all rounded-2xl">
+                        <div key={i} className="p-10 border-b border-white/10 group hover:bg-brand-900/40 transition-all rounded-2xl">
                             <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic group-hover:text-brand-GOLD transition-colors">{faq.q}</h4>
                             <p className="text-sm text-slate-400 font-medium leading-relaxed">{faq.a}</p>
                         </div>
