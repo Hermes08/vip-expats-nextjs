@@ -12,18 +12,19 @@ const HeroCarousel: React.FC = () => {
   }, []);
 
   return (
-    <div className="absolute inset-0 z-0 bg-white overflow-hidden bg-brand-50">
+    <div className="absolute inset-0 z-0 overflow-hidden bg-brand-950">
       {IMAGES.heroSlides.map((slide, index) => (
-        <div 
-          key={index} 
-          className={`absolute inset-0 transition-all duration-[3000ms] ease-in-out ${index === currentSlide ? 'opacity-40 scale-100' : 'opacity-0 scale-105'}`}
+        <div
+          key={index}
+          className={`absolute inset-0 transition-all duration-[3000ms] ease-in-out ${index === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-105'}`}
         >
-          <img 
-            src={slide} 
-            alt={`Luxury Panama Real Estate Experience - Slide ${index + 1}`} 
-            className="w-full h-full object-cover" 
+          <img
+            src={slide}
+            alt={`Luxury Panama Real Estate Experience - Slide ${index + 1}`}
+            className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-brand-950/95 via-brand-950/20 to-brand-950" />
+          {/* Gradient overlay: darker at top (navbar area) and bottom, clear in the middle — keeps photo beautiful while text is always readable */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/25 to-black/65" />
         </div>
       ))}
     </div>
