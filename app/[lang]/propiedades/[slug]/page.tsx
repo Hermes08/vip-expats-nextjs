@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useParams } from 'next/navigation';
 import { useCMS } from '@/context/CMSContext';
 import { useLanguage } from '@/context/LanguageContext';
@@ -9,6 +10,8 @@ import {
   Bed, Bath, Maximize2, MapPin, Phone, Mail, ArrowLeft,
   Star, CheckCircle, Home, Building2, Tag, Calendar
 } from 'lucide-react';
+
+const BLUR_PLACEHOLDER = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==";
 
 function formatPrice(price: number, status: string, lang: string): string {
   const formatted = new Intl.NumberFormat('en-US', {
@@ -108,10 +111,15 @@ export default function PropertyDetailPage() {
 
             {/* Hero image */}
             <div className="relative rounded-[3rem] overflow-hidden aspect-[16/9] border border-white/5 shadow-2xl group">
-              <img
+              <Image
                 src={images[0]}
                 alt={title}
-                className="w-full h-full object-cover transition-transform duration-[6000ms] group-hover:scale-105"
+                fill
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 66vw, 800px"
+                className="object-cover transition-transform duration-[6000ms] group-hover:scale-105"
+                priority
+                placeholder="blur"
+                blurDataURL={BLUR_PLACEHOLDER}
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-950/60 to-transparent" />
               {/* Status badge */}
@@ -130,8 +138,17 @@ export default function PropertyDetailPage() {
             {images.length > 1 && (
               <div className="flex gap-3 overflow-x-auto pb-2">
                 {images.slice(1, 5).map((img, i) => (
-                  <div key={i} className="w-28 h-20 flex-shrink-0 rounded-2xl overflow-hidden border border-white/10">
-                    <img src={img} alt={`${title} ${i + 2}`} className="w-full h-full object-cover" />
+                  <div key={i} className="w-28 h-20 flex-shrink-0 rounded-2xl overflow-hidden border border-white/10 relative">
+                    <Image
+                      src={img}
+                      alt={`${title} ${i + 2}`}
+                      fill
+                      sizes="112px"
+                      className="object-cover"
+                      loading="lazy"
+                      placeholder="blur"
+                      blurDataURL={BLUR_PLACEHOLDER}
+                    />
                   </div>
                 ))}
               </div>

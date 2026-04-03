@@ -18,7 +18,7 @@ const ContactPageContent: React.FC = () => {
                 <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
                   <a
                     href={`tel:${CONTACT_INFO.phone}`}
-                    className="flex items-center gap-2 text-white font-bold text-sm hover:text-brand-GOLD transition-colors"
+                    className="flex items-center gap-2 min-h-[44px] text-white font-bold text-sm hover:text-brand-GOLD transition-colors"
                   >
                     <Phone size={14} className="text-brand-GOLD" />
                     {CONTACT_INFO.phone}
@@ -27,14 +27,14 @@ const ContactPageContent: React.FC = () => {
                     href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=Hi%20VIP%20Expats%2C%20I%27d%20like%20to%20speak%20with%20an%20expert`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 text-white font-bold text-sm hover:text-green-400 transition-colors"
+                    className="flex items-center gap-2 min-h-[44px] text-white font-bold text-sm hover:text-green-400 transition-colors"
                   >
                     <MessageCircle size={14} className="text-green-400" />
                     WhatsApp
                   </a>
                   <a
                     href={`mailto:${CONTACT_INFO.email}`}
-                    className="flex items-center gap-2 text-white font-bold text-sm hover:text-brand-GOLD transition-colors"
+                    className="flex items-center gap-2 min-h-[44px] text-white font-bold text-sm hover:text-brand-GOLD transition-colors"
                   >
                     <Mail size={14} className="text-brand-GOLD" />
                     {CONTACT_INFO.email}

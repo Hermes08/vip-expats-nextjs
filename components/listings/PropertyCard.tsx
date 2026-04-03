@@ -2,12 +2,16 @@
 
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Listing } from '@/lib/types';
 import { Bed, Bath, Maximize2, MapPin, ArrowRight, Star } from 'lucide-react';
+
+const BLUR_PLACEHOLDER = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==";
 
 interface PropertyCardProps {
   listing: Listing;
   lang: 'en' | 'es';
+  priority?: boolean;
 }
 
 const STATUS_LABELS: Record<string, Record<string, string>> = {
@@ -32,7 +36,7 @@ function formatPrice(price: number, status: string, lang: string): string {
   return formatted;
 }
 
-export default function PropertyCard({ listing, lang }: PropertyCardProps) {
+export default function PropertyCard({ listing, lang, priority = false }: PropertyCardProps) {
   const title = listing.title[lang] ?? listing.title.en ?? '';
   const excerpt = listing.excerpt?.[lang] ?? listing.excerpt?.en ?? '';
   const image = listing.images?.[0] ?? 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80';
@@ -45,11 +49,16 @@ export default function PropertyCard({ listing, lang }: PropertyCardProps) {
     <article className="group bg-brand-900 rounded-2xl overflow-hidden border border-brand-800 hover:border-brand-GOLD/30 transition-all duration-300 hover:shadow-2xl hover:shadow-brand-GOLD/5 flex flex-col">
       {/* Image */}
       <Link href={`/${lang}/propiedades/${listing.slug}`} className="block relative h-56 overflow-hidden">
-        <img
+        <Image
           src={image}
           alt={title}
-          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-          loading="lazy"
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-cover group-hover:scale-105 transition-transform duration-700"
+          placeholder="blur"
+          blurDataURL={BLUR_PLACEHOLDER}
+          priority={priority}
+          loading={priority ? 'eager' : 'lazy'}
         />
         {/* Overlay gradient */}
         <div className="absolute inset-0 bg-gradient-to-t from-brand-950/60 via-transparent to-transparent" />
