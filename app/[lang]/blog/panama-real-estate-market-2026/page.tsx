@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Panama Real Estate Market 2026 | Prices, Trends & Investment Outlook',
     description:
-      'Comprehensive analysis of Panama's 2026 real estate market: market growth, investor incentives, neighborhood prices, rental yields, and investment forecast.',
+      "Comprehensive analysis of Panama's 2026 real estate market: market growth, investor incentives, neighborhood prices, rental yields, and investment forecast.",
     type: 'article',
     url: 'https://panamarealestatesale.com/en/blog/panama-real-estate-market-2026',
   },
