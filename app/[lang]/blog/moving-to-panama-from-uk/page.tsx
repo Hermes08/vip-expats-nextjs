@@ -806,7 +806,7 @@ export default function MoveTopanamaPanamaPanamFromUKPage({ params: { lang } }: 
       {/* FAQ */}
       <section id="faq" className="py-16 bg-white border-b border-brand-100">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="font-heading text-3xl font-bold text-brand-950 mb-12">Frequently Asked Questions</h3>
+          <h2 className="font-heading text-3xl font-bold text-brand-950 mb-12">Frequently Asked Questions</h2>
 
           <div className="space-y-6">
             {[
