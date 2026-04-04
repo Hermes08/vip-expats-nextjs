@@ -61,7 +61,7 @@ export default async function PanamaBeachfrontLifestyle({ params }: { params: Pr
     const lang = resolvedParams.lang || 'en';
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             <BlogPostSchema
                 title="Beachfront Properties & Retirement: The Panama Expat Lifestyle"
                 description="A deep dive into why retirees and digital nomads are flocking to Panama's beaches in 2026."

@@ -237,7 +237,7 @@ const faqItems = [
 ];
 
 export default async function PanamaCostOfLiving2026Page({ params }: { params: Promise<{ lang: string }> }) {
-    await params;
+    const { lang } = await params;
 
     return (
     <>
@@ -257,7 +257,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
           }),
         }}
       />
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -336,15 +336,15 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
                                 <p className="text-slate-500 text-sm mb-5 leading-relaxed">{location.desc}</p>
                                 <div className="grid sm:grid-cols-3 gap-4 mb-4">
                                     <div>
-                                        <p className="text-white font-black text-xs uppercase tracking-widest mb-1">Single, Frugal</p>
+                                        <p className="text-brand-950 font-black text-xs uppercase tracking-widest mb-1">Single, Frugal</p>
                                         <p className="text-brand-GOLD text-lg font-black">{location.single_frugal}</p>
                                     </div>
                                     <div>
-                                        <p className="text-white font-black text-xs uppercase tracking-widest mb-1">Couple, Comfortable</p>
+                                        <p className="text-brand-950 font-black text-xs uppercase tracking-widest mb-1">Couple, Comfortable</p>
                                         <p className="text-brand-GOLD text-lg font-black">{location.couple_comfortable}</p>
                                     </div>
                                     <div>
-                                        <p className="text-white font-black text-xs uppercase tracking-widest mb-1">Luxury Living</p>
+                                        <p className="text-brand-950 font-black text-xs uppercase tracking-widest mb-1">Luxury Living</p>
                                         <p className="text-brand-GOLD text-lg font-black">{location.luxury}</p>
                                     </div>
                                 </div>
@@ -374,7 +374,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
                         {housingCosts.map((housing, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-3 mb-2">
-                                    <h3 className="text-white font-bold text-sm flex-1">{housing.location}</h3>
+                                    <h3 className="text-brand-950 font-bold text-sm flex-1">{housing.location}</h3>
                                     <span className="text-brand-GOLD font-black text-lg">{housing.rent || housing.price}</span>
                                 </div>
                                 <p className="text-slate-500 text-xs leading-relaxed">{housing.detail}</p>
@@ -406,7 +406,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
                         {foodCosts.map((food, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-3 mb-2">
-                                    <h3 className="text-white font-bold text-sm flex-1">{food.category}</h3>
+                                    <h3 className="text-brand-950 font-bold text-sm flex-1">{food.category}</h3>
                                     <span className="text-brand-GOLD font-black">{food.cost}</span>
                                 </div>
                                 <p className="text-slate-500 text-xs leading-relaxed">{food.detail}</p>
@@ -446,7 +446,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
                         {healthcareCosts.map((health, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-3 mb-2">
-                                    <h3 className="text-white font-bold text-sm flex-1">{health.service}</h3>
+                                    <h3 className="text-brand-950 font-bold text-sm flex-1">{health.service}</h3>
                                     <span className="text-brand-GOLD font-black">{health.cost}</span>
                                 </div>
                                 <p className="text-slate-500 text-xs leading-relaxed">{health.detail}</p>
@@ -489,7 +489,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
                         {transportCosts.map((transport, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-3 mb-2">
-                                    <h3 className="text-white font-bold text-sm flex-1">{transport.item}</h3>
+                                    <h3 className="text-brand-950 font-bold text-sm flex-1">{transport.item}</h3>
                                     <span className="text-brand-GOLD font-black">{transport.cost}</span>
                                 </div>
                                 <p className="text-slate-500 text-xs leading-relaxed">{transport.detail}</p>
@@ -526,7 +526,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
                         {utilitiesCosts.map((util, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-3 mb-2">
-                                    <h3 className="text-white font-bold text-sm flex-1">{util.utility}</h3>
+                                    <h3 className="text-brand-950 font-bold text-sm flex-1">{util.utility}</h3>
                                     <span className="text-brand-GOLD font-black">{util.cost}</span>
                                 </div>
                                 <p className="text-slate-500 text-xs leading-relaxed">{util.detail}</p>
@@ -554,7 +554,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
                         {entertainmentCosts.map((ent, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-3 mb-2">
-                                    <h3 className="text-white font-bold text-sm flex-1">{ent.activity}</h3>
+                                    <h3 className="text-brand-950 font-bold text-sm flex-1">{ent.activity}</h3>
                                     <span className="text-brand-GOLD font-black">{ent.cost}</span>
                                 </div>
                                 <p className="text-slate-500 text-xs leading-relaxed">{ent.detail}</p>
@@ -576,7 +576,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100 flex items-start gap-4">
                                 <div className="text-brand-GOLD font-black text-2xl flex-shrink-0">−</div>
                                 <div className="flex-1">
-                                    <h3 className="text-white font-bold text-sm mb-1">{comp.city}</h3>
+                                    <h3 className="text-brand-950 font-bold text-sm mb-1">{comp.city}</h3>
                                     <p className="text-slate-500 text-xs leading-relaxed mb-2">{comp.detail}</p>
                                     <p className="text-brand-GOLD font-bold text-sm">{comp.savings}</p>
                                 </div>
@@ -633,7 +633,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
                     <div className="space-y-3">
                         {hiddenCosts.map((hidden, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-2 uppercase tracking-wide">{hidden.cost}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-2 uppercase tracking-wide">{hidden.cost}</h3>
                                 <p className="text-slate-500 text-xs leading-relaxed">{hidden.detail}</p>
                             </div>
                         ))}
@@ -650,7 +650,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
                         {faqItems.map((item, i) => (
                             <details key={i} className="card-light rounded-xl border border-brand-100 group">
                                 <summary className="flex items-center justify-between cursor-pointer p-6">
-                                    <h3 className="text-white font-bold text-sm leading-relaxed pr-4">{item.q}</h3>
+                                    <h3 className="text-brand-950 font-bold text-sm leading-relaxed pr-4">{item.q}</h3>
                                     <span className="text-brand-GOLD font-black text-xl flex-shrink-0">+</span>
                                 </summary>
                                 <div className="px-6 pb-6 border-t border-brand-100/30">
@@ -688,7 +688,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
                             Book Free Lifestyle Consultation <ArrowRight size={16} />
                         </Link>
                         <Link
-                            href="/en/quiz"
+                            href={`/${lang}/quiz`}
                             className="inline-flex items-center gap-3 border border-brand-GOLD/40 text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:border-brand-GOLD hover:text-brand-GOLD transition-all"
                         >
                             Take Our Relocation Quiz
@@ -708,7 +708,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
                             href={link.href}
                             className="flex items-center justify-between card-light p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                         >
-                            <span className="text-white text-xs font-bold">{link.label}</span>
+                            <span className="text-brand-950 text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>
                     ))}

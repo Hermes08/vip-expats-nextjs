@@ -529,7 +529,15 @@ export default function MoveTopanamaPanamaPanamFromCanadaPage({ params: { lang }
 
           {/* Cost Bar Chart */}
           <div className="my-12 w-full h-96 rounded-lg border border-brand-100 overflow-hidden bg-white p-4">
-            <CostBarChart />
+            <CostBarChart
+            data={[
+              { label: 'Toronto', value: 5800, color: '#ef4444' },
+              { label: 'Vancouver', value: 5500, color: '#ef4444' },
+              { label: 'Panama City', value: 2000, color: '#22c55e' },
+              { label: 'Boquete', value: 1300, color: '#00C5CB' },
+            ]}
+            title="Monthly Cost of Living ($/mo)"
+          />
           </div>
         </div>
       </section>

@@ -165,7 +165,7 @@ export default async function PanamaDriversLicensePage({ params }: { params: Pro
     const { lang } = await params;
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -209,7 +209,7 @@ export default async function PanamaDriversLicensePage({ params }: { params: Pro
                         {timeline.map((item, i) => (
                             <div key={i} className="flex items-start gap-4 bg-white rounded-lg p-4">
                                 <div className="flex-1">
-                                    <div className="text-white font-bold text-sm">{item.step}</div>
+                                    <div className="text-brand-950 font-bold text-sm">{item.step}</div>
                                 </div>
                                 <div className="text-right flex-shrink-0">
                                     <div className="text-brand-GOLD font-black text-xs">{item.time}</div>
@@ -265,7 +265,7 @@ export default async function PanamaDriversLicensePage({ params }: { params: Pro
                                     <span className="text-brand-GOLD font-black text-sm">{item.step}</span>
                                 </div>
                                 <div className="flex-1">
-                                    <div className="text-white font-bold text-sm mb-1">{item.title}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{item.title}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{item.detail}</div>
                                 </div>
                             </div>
@@ -291,7 +291,7 @@ export default async function PanamaDriversLicensePage({ params }: { params: Pro
                             <div key={i} className="card-light rounded-xl p-4 border border-brand-100">
                                 <div className="flex items-start justify-between">
                                     <div className="flex-1">
-                                        <div className="text-white font-bold text-sm">{item.doc}</div>
+                                        <div className="text-brand-950 font-bold text-sm">{item.doc}</div>
                                         <div className="text-slate-500 text-xs mt-1">{item.notes}</div>
                                     </div>
                                     <div className={`flex-shrink-0 px-2 py-1 rounded text-[10px] font-black uppercase tracking-widest ${
@@ -326,7 +326,7 @@ export default async function PanamaDriversLicensePage({ params }: { params: Pro
                         {licenseTypes.map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
                                 <div className="flex items-start justify-between mb-3">
-                                    <h3 className="text-white font-bold text-sm">Type {item.type}</h3>
+                                    <h3 className="text-brand-950 font-bold text-sm">Type {item.type}</h3>
                                     {item.type === 'B' && (
                                         <span className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest px-2 py-1 bg-brand-GOLD/20 rounded">
                                             Most Common
@@ -360,7 +360,7 @@ export default async function PanamaDriversLicensePage({ params }: { params: Pro
                             <div key={i} className="flex items-start gap-4 bg-white rounded-lg p-4">
                                 <span className="text-brand-GOLD font-black text-sm flex-shrink-0 mt-0.5">•</span>
                                 <div className="flex-1">
-                                    <div className="text-white font-bold text-sm">{item.law}</div>
+                                    <div className="text-brand-950 font-bold text-sm">{item.law}</div>
                                     <div className="text-slate-500 text-xs">{item.detail}</div>
                                 </div>
                             </div>
@@ -379,7 +379,7 @@ export default async function PanamaDriversLicensePage({ params }: { params: Pro
                     <div className="space-y-4 mb-6">
                         {insurance.map((ins, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-4">{ins.type}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-4">{ins.type}</h3>
                                 <div className="grid sm:grid-cols-2 gap-4">
                                     <div>
                                         <div className="text-brand-GOLD text-[9px] font-black uppercase tracking-widest mb-1">Cost</div>
@@ -439,7 +439,7 @@ export default async function PanamaDriversLicensePage({ params }: { params: Pro
                             },
                         ].map((tip, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-2">{tip.title}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-2">{tip.title}</h3>
                                 <p className="text-slate-500 text-xs leading-relaxed">{tip.detail}</p>
                             </div>
                         ))}
@@ -454,7 +454,7 @@ export default async function PanamaDriversLicensePage({ params }: { params: Pro
                     <div className="space-y-4">
                         {faqs.map((faq, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-3">{faq.q}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-3">{faq.q}</h3>
                                 <p className="text-slate-500 text-xs leading-relaxed">{faq.a}</p>
                             </div>
                         ))}

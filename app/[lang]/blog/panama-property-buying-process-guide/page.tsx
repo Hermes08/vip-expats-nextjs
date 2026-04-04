@@ -287,7 +287,7 @@ export default async function PanamaPropertyBuyingPage({ params }: { params: Pro
     const { lang } = await params;
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -356,11 +356,11 @@ export default async function PanamaPropertyBuyingPage({ params }: { params: Pro
                                 <div className="grid grid-cols-2 gap-4 mb-5">
                                     <div>
                                         <div className="text-slate-400 text-[10px] uppercase font-bold mb-1">Security Level</div>
-                                        <div className="text-white font-bold text-sm">{t.security}</div>
+                                        <div className="text-brand-950 font-bold text-sm">{t.security}</div>
                                     </div>
                                     <div>
                                         <div className="text-slate-400 text-[10px] uppercase font-bold mb-1">Liquidity</div>
-                                        <div className="text-white font-bold text-sm">{t.liquidity}</div>
+                                        <div className="text-brand-950 font-bold text-sm">{t.liquidity}</div>
                                     </div>
                                     <div>
                                         <div className="text-slate-400 text-[10px] uppercase font-bold mb-1">Typical Cost</div>
@@ -454,7 +454,7 @@ export default async function PanamaPropertyBuyingPage({ params }: { params: Pro
                             { price: '$500,000 luxury home', breakdown: 'Registration: $8,750 | Lawyer: $5,000-10,000 | Notary: $500 | Total: $14,250-19,250' },
                         ].map((c, i) => (
                             <div key={i} className="card-light rounded-xl p-4 border border-brand-100">
-                                <div className="text-white font-bold text-sm mb-3">{c.price}</div>
+                                <div className="text-brand-950 font-bold text-sm mb-3">{c.price}</div>
                                 <p className="text-slate-500 text-xs leading-relaxed font-mono">{c.breakdown}</p>
                             </div>
                         ))}
@@ -545,7 +545,7 @@ export default async function PanamaPropertyBuyingPage({ params }: { params: Pro
                                     </div>
                                 </div>
                                 <div className="flex-grow">
-                                    <div className="text-white font-bold text-sm mb-1">{item.flag}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{item.flag}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{item.action}</div>
                                 </div>
                             </div>

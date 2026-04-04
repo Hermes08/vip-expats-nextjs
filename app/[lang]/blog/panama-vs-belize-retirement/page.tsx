@@ -220,7 +220,7 @@ export default async function PanamaBelizeRetirementPage({ params }: { params: P
     const { lang } = await params;
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -343,13 +343,13 @@ export default async function PanamaBelizeRetirementPage({ params }: { params: P
                         <div className="text-brand-GOLD font-black uppercase tracking-widest text-xs mb-4">Real-World Scenario: You Need a Hip Replacement</div>
                         <div className="space-y-4">
                             <div>
-                                <div className="text-white font-bold text-sm mb-2">In Panama:</div>
+                                <div className="text-brand-950 font-bold text-sm mb-2">In Panama:</div>
                                 <p className="text-slate-500 text-sm leading-relaxed">
                                     You walk into Hospital Punta Pacifica in Panama City. They have orthopedic surgeons, imaging, and OR facilities. The surgery costs $15,000-$22,000. You are home in 2 weeks.
                                 </p>
                             </div>
                             <div>
-                                <div className="text-white font-bold text-sm mb-2">In Belize:</div>
+                                <div className="text-brand-950 font-bold text-sm mb-2">In Belize:</div>
                                 <p className="text-slate-500 text-sm leading-relaxed">
                                     Belize has no orthopedic surgeon. You are referred to Guatemala City or Mexico City for surgery. You travel, stay in a hotel for recovery, and costs are higher ($18,000-$25,000). Logistics are complex. Return flights + hotel = additional $2,000+.
                                 </p>
@@ -370,7 +370,7 @@ export default async function PanamaBelizeRetirementPage({ params }: { params: P
                     <div className="grid md:grid-cols-2 gap-4 mb-8">
                         {crimeComparison.map((c, i) => (
                             <div key={i} className="card-light rounded-xl p-4 border border-brand-100">
-                                <div className="text-white font-bold text-sm mb-2">{c.area}</div>
+                                <div className="text-brand-950 font-bold text-sm mb-2">{c.area}</div>
                                 <div className="space-y-1">
                                     <div className="flex justify-between items-center">
                                         <span className="text-slate-500 text-xs">Homicide rate (per 100k):</span>
@@ -525,7 +525,7 @@ export default async function PanamaBelizeRetirementPage({ params }: { params: P
                             },
                         ].map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <h4 className="text-white font-bold text-sm mb-2">{item.title}</h4>
+                                <h4 className="text-brand-950 font-bold text-sm mb-2">{item.title}</h4>
                                 <p className="text-slate-500 text-xs leading-relaxed">{item.desc}</p>
                             </div>
                         ))}

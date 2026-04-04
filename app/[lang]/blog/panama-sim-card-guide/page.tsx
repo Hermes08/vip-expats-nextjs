@@ -190,7 +190,7 @@ export default async function PanamaSIMCardPage({ params }: { params: Promise<{ 
     const { lang } = await params;
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -322,7 +322,7 @@ export default async function PanamaSIMCardPage({ params }: { params: Promise<{ 
                     <div className="space-y-4">
                         {wheretobuy.map((venue, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-4 flex items-center gap-2">
+                                <h3 className="text-brand-950 font-bold text-sm mb-4 flex items-center gap-2">
                                     <MapPin size={16} className="text-brand-GOLD" />
                                     {venue.location}
                                 </h3>
@@ -369,7 +369,7 @@ export default async function PanamaSIMCardPage({ params }: { params: Promise<{ 
                     <div className="grid md:grid-cols-2 gap-5">
                         {esimOptions.map((option, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-3">{option.provider}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-3">{option.provider}</h3>
                                 <div className="space-y-2">
                                     <div>
                                         <div className="text-brand-GOLD text-[9px] font-black uppercase tracking-widest">Plans</div>
@@ -424,7 +424,7 @@ export default async function PanamaSIMCardPage({ params }: { params: Promise<{ 
                                     <span className="text-brand-GOLD font-black text-sm">{s.step}</span>
                                 </div>
                                 <div>
-                                    <div className="text-white font-bold text-sm mb-1">{s.title}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{s.title}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{s.desc}</div>
                                 </div>
                             </div>
@@ -451,7 +451,7 @@ export default async function PanamaSIMCardPage({ params }: { params: Promise<{ 
                         ].map((item, i) => (
                             <div key={i} className="flex items-start gap-4 bg-white rounded-lg p-4">
                                 <div className="flex-1">
-                                    <div className="text-white font-bold text-sm">{item.method}</div>
+                                    <div className="text-brand-950 font-bold text-sm">{item.method}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{item.notes}</div>
                                 </div>
                                 <div className="text-right flex-shrink-0">
@@ -475,7 +475,7 @@ export default async function PanamaSIMCardPage({ params }: { params: Promise<{ 
                             { location: 'Bocas del Toro', speeds: '2–10 Mbps', notes: 'Slowest option (island signal). Starlink recommended for reliability.' },
                         ].map((loc, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-2">{loc.location}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-2">{loc.location}</h3>
                                 <div className="text-brand-GOLD font-black text-lg mb-2">{loc.speeds}</div>
                                 <p className="text-slate-500 text-xs leading-relaxed">{loc.notes}</p>
                             </div>
@@ -504,7 +504,7 @@ export default async function PanamaSIMCardPage({ params }: { params: Promise<{ 
                         ].map((item, i) => (
                             <div key={i} className="flex items-start gap-4 bg-white rounded-lg p-4">
                                 <div className="flex-1">
-                                    <div className="text-white font-bold text-sm">{item.carrier}</div>
+                                    <div className="text-brand-950 font-bold text-sm">{item.carrier}</div>
                                     <div className="text-slate-500 text-xs">{item.coverage}</div>
                                 </div>
                                 <div className="text-right flex-shrink-0">
@@ -547,7 +547,7 @@ export default async function PanamaSIMCardPage({ params }: { params: Promise<{ 
                     <div className="space-y-4">
                         {faqs.map((faq, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-3">{faq.q}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-3">{faq.q}</h3>
                                 <p className="text-slate-500 text-xs leading-relaxed">{faq.a}</p>
                             </div>
                         ))}

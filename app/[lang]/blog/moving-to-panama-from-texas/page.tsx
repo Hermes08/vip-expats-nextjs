@@ -134,10 +134,10 @@ const faqItems = [
 ];
 
 export default async function MovingToPanamaFromTexasPage({ params }: { params: Promise<{ lang: string }> }) {
-    await params;
+    const { lang } = await params;
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -202,7 +202,7 @@ export default async function MovingToPanamaFromTexasPage({ params }: { params: 
                                         <p className="text-slate-500 text-xs">{flight.airline}</p>
                                     </div>
                                     <div className="text-right">
-                                        <div className="text-white font-black text-sm">{flight.duration}</div>
+                                        <div className="text-brand-950 font-black text-sm">{flight.duration}</div>
                                         <div className="text-brand-GOLD font-bold text-xs">{flight.price}</div>
                                     </div>
                                 </div>
@@ -367,7 +367,7 @@ export default async function MovingToPanamaFromTexasPage({ params }: { params: 
                                     <span className="text-brand-GOLD font-black text-xs">{s.step}</span>
                                 </div>
                                 <div>
-                                    <div className="text-white font-bold text-sm mb-1">{s.title}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{s.title}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{s.desc}</div>
                                 </div>
                             </div>
@@ -440,7 +440,7 @@ export default async function MovingToPanamaFromTexasPage({ params }: { params: 
                     <div className="space-y-4">
                         {faqItems.map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-3">{item.q}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-3">{item.q}</h3>
                                 <p className="text-slate-500 text-xs leading-relaxed">{item.a}</p>
                             </div>
                         ))}
@@ -509,7 +509,7 @@ export default async function MovingToPanamaFromTexasPage({ params }: { params: 
                             Schedule Free Relocation Consultation <ArrowRight size={16} />
                         </Link>
                         <Link
-                            href="/en/relocation"
+                            href={`/${lang}/relocation`}
                             className="inline-flex items-center gap-3 border border-brand-GOLD/40 text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:border-brand-GOLD hover:text-brand-GOLD transition-all"
                         >
                             Relocation Resources
@@ -529,7 +529,7 @@ export default async function MovingToPanamaFromTexasPage({ params }: { params: 
                             href={link.href}
                             className="flex items-center justify-between card-light p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                         >
-                            <span className="text-white text-xs font-bold">{link.label}</span>
+                            <span className="text-brand-950 text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>
                     ))}

@@ -228,7 +228,8 @@ const regions = [
   },
 ];
 
-export default function PanamaWeatherGuide() {
+export default async function PanamaWeatherGuide({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
   return (
     <article className="bg-white min-h-screen pt-28 pb-20">
       <div className="max-w-4xl mx-auto px-4">
@@ -257,7 +258,7 @@ export default function PanamaWeatherGuide() {
                 <div className="flex items-start gap-3 mb-3">
                   <Icon size={24} className="text-brand-GOLD flex-shrink-0 mt-0.5" />
                   <div>
-                    <h3 className="text-white font-black text-sm leading-tight">{card.title}</h3>
+                    <h3 className="text-brand-950 font-black text-sm leading-tight">{card.title}</h3>
                     <p className="text-brand-GOLD text-[10px] font-bold uppercase tracking-widest mt-1">
                       {card.subtitle}
                     </p>
@@ -371,7 +372,7 @@ export default function PanamaWeatherGuide() {
                     <span className="text-slate-500 text-[10px] font-black uppercase tracking-widest">
                       Best Time:{' '}
                     </span>
-                    <span className="text-white font-bold text-sm">{region.bestTime}</span>
+                    <span className="text-brand-950 font-bold text-sm">{region.bestTime}</span>
                   </div>
                 </div>
               );
@@ -387,14 +388,14 @@ export default function PanamaWeatherGuide() {
 
           <div className="grid sm:grid-cols-2 gap-5">
             <Link
-              href="/en/propiedades"
+              href={`/${lang}/propiedades`}
               className="card-light p-6 rounded-2xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <Sun size={24} className="text-brand-GOLD" />
                 <ArrowRight size={16} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
               </div>
-              <h3 className="text-white font-black text-sm mb-2">Love the Dry Pacific?</h3>
+              <h3 className="text-brand-950 font-black text-sm mb-2">Love the Dry Pacific?</h3>
               <p className="text-slate-500 text-xs leading-relaxed mb-3">
                 Explore Coronado & Panama City properties with guaranteed sunshine December–April.
               </p>
@@ -404,14 +405,14 @@ export default function PanamaWeatherGuide() {
             </Link>
 
             <Link
-              href="/en/propiedades"
+              href={`/${lang}/propiedades`}
               className="card-light p-6 rounded-2xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <Droplets size={24} className="text-brand-GOLD" />
                 <ArrowRight size={16} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
               </div>
-              <h3 className="text-white font-black text-sm mb-2">Want Caribbean Vibes?</h3>
+              <h3 className="text-brand-950 font-black text-sm mb-2">Want Caribbean Vibes?</h3>
               <p className="text-slate-500 text-xs leading-relaxed mb-3">
                 Discover Bocas del Toro properties with tropical warmth and unique dry windows (Feb–Mar, Sep–Oct).
               </p>
@@ -421,14 +422,14 @@ export default function PanamaWeatherGuide() {
             </Link>
 
             <Link
-              href="/en/propiedades"
+              href={`/${lang}/propiedades`}
               className="card-light p-6 rounded-2xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <Cloud size={24} className="text-brand-GOLD" />
                 <ArrowRight size={16} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
               </div>
-              <h3 className="text-white font-black text-sm mb-2">Prefer Eternal Spring?</h3>
+              <h3 className="text-brand-950 font-black text-sm mb-2">Prefer Eternal Spring?</h3>
               <p className="text-slate-500 text-xs leading-relaxed mb-3">
                 See Boquete mountain properties with perfect 60–75°F weather year-round, no extreme heat.
               </p>
@@ -438,14 +439,14 @@ export default function PanamaWeatherGuide() {
             </Link>
 
             <Link
-              href="/en/guides/best-areas-retire-panama"
+              href={`/${lang}/guides/best-areas-retire-panama`}
               className="card-light p-6 rounded-2xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
               <div className="flex items-start justify-between mb-4">
                 <MapPin size={24} className="text-brand-GOLD" />
                 <ArrowRight size={16} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
               </div>
-              <h3 className="text-white font-black text-sm mb-2">Unsure? Compare All Regions</h3>
+              <h3 className="text-brand-950 font-black text-sm mb-2">Unsure? Compare All Regions</h3>
               <p className="text-slate-500 text-xs leading-relaxed mb-3">
                 Read our complete guide to the best areas in Panama, including costs, lifestyle, and climate.
               </p>
@@ -464,7 +465,7 @@ export default function PanamaWeatherGuide() {
 
           <div className="space-y-6">
             <div>
-              <h3 className="text-white font-black text-sm mb-3 uppercase tracking-widest">
+              <h3 className="text-brand-950 font-black text-sm mb-3 uppercase tracking-widest">
                 What to Pack by Season
               </h3>
               <ul className="space-y-2">
@@ -493,7 +494,7 @@ export default function PanamaWeatherGuide() {
             </div>
 
             <div className="border-t border-brand-100 pt-6">
-              <h3 className="text-white font-black text-sm mb-3 uppercase tracking-widest">
+              <h3 className="text-brand-950 font-black text-sm mb-3 uppercase tracking-widest">
                 Hurricane Season & Safety
               </h3>
               <p className="text-slate-500 text-sm leading-relaxed mb-3">
@@ -504,7 +505,7 @@ export default function PanamaWeatherGuide() {
             </div>
 
             <div className="border-t border-brand-100 pt-6">
-              <h3 className="text-white font-black text-sm mb-3 uppercase tracking-widest">
+              <h3 className="text-brand-950 font-black text-sm mb-3 uppercase tracking-widest">
                 UV Protection Year-Round
               </h3>
               <p className="text-slate-500 text-sm leading-relaxed">
@@ -521,7 +522,7 @@ export default function PanamaWeatherGuide() {
           <div className="flex items-start gap-4">
             <Sun size={24} className="text-brand-GOLD flex-shrink-0 mt-1" />
             <div>
-              <h3 className="text-white font-black text-sm mb-2 uppercase tracking-widest">
+              <h3 className="text-brand-950 font-black text-sm mb-2 uppercase tracking-widest">
                 Weather: Panama's Secret Weapon
               </h3>
               <p className="text-slate-500 text-sm leading-relaxed">
@@ -536,7 +537,7 @@ export default function PanamaWeatherGuide() {
 
         {/* Internal links */}
         <div className="space-y-3 reveal-on-scroll">
-          <h3 className="text-white font-black text-sm uppercase tracking-widest mb-4">Explore Related Guides</h3>
+          <h3 className="text-brand-950 font-black text-sm uppercase tracking-widest mb-4">Explore Related Guides</h3>
           <div className="grid sm:grid-cols-2 gap-4">
             {[
               { label: 'Best Areas to Retire in Panama', href: '/en/guides/best-areas-retire-panama' },
@@ -549,7 +550,7 @@ export default function PanamaWeatherGuide() {
                 href={link.href}
                 className="flex items-center justify-between card-light p-4 rounded-xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
               >
-                <span className="text-white text-xs font-bold">{link.label}</span>
+                <span className="text-brand-950 text-xs font-bold">{link.label}</span>
                 <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
               </Link>
             ))}

@@ -105,10 +105,10 @@ const safetyBreakdown = [
 ];
 
 export default async function ProConsRetiringPanamaPage({ params }: { params: Promise<{ lang: string }> }) {
-    await params;
+    const { lang } = await params;
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -387,7 +387,7 @@ export default async function ProConsRetiringPanamaPage({ params }: { params: Pr
                             Book Retirement Consultation <ArrowRight size={16} />
                         </Link>
                         <Link
-                            href="/en/blog/panama-vs-costa-rica-retirement"
+                            href={`/${lang}/blog/panama-vs-costa-rica-retirement`}
                             className="inline-flex items-center gap-3 border border-brand-GOLD/40 text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:border-brand-GOLD hover:text-brand-GOLD transition-all"
                         >
                             Compare: Panama vs Costa Rica
@@ -407,7 +407,7 @@ export default async function ProConsRetiringPanamaPage({ params }: { params: Pr
                             href={link.href}
                             className="flex items-center justify-between card-light p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                         >
-                            <span className="text-white text-xs font-bold">{link.label}</span>
+                            <span className="text-brand-950 text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>
                     ))}

@@ -647,7 +647,14 @@ export default function PanamaFoodGuidePage({ params }: PageProps) {
               Cost Visualization: Monthly Food Budgets
             </h3>
             <div className="h-80 rounded-lg overflow-hidden shadow-lg border-2 border-brand-100">
-              <CostBarChart />
+              <CostBarChart
+              data={[
+                { label: 'Budget', value: 300, color: '#22c55e' },
+                { label: 'Mid-Range', value: 550, color: '#00C5CB' },
+                { label: 'Comfort', value: 900, color: '#D4A843' },
+              ]}
+              title="Monthly Food Budget ($/mo)"
+            />
             </div>
           </div>
 

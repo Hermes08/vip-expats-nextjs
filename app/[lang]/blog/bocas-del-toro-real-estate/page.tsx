@@ -140,10 +140,10 @@ const faqItems = [
 ];
 
 export default async function BocasDelToroRealEstateGuidePage({ params }: { params: Promise<{ lang: string }> }) {
-    await params;
+    const { lang } = await params;
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -237,7 +237,7 @@ export default async function BocasDelToroRealEstateGuidePage({ params }: { para
                                     <h3 className="text-xl font-heading font-black text-brand-950">{p.type}</h3>
                                     <div className="flex gap-4 text-right">
                                         <div>
-                                            <div className="text-white font-black text-sm">{p.priceRange}</div>
+                                            <div className="text-brand-950 font-black text-sm">{p.priceRange}</div>
                                             <div className="text-slate-600 text-[9px] uppercase font-bold tracking-widest">Price</div>
                                         </div>
                                         <div>
@@ -387,7 +387,7 @@ export default async function BocasDelToroRealEstateGuidePage({ params }: { para
                                     <span className="text-brand-GOLD font-black text-xs">{s.n}</span>
                                 </div>
                                 <div>
-                                    <div className="text-white font-bold text-sm mb-1">{s.t}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{s.t}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{s.b}</div>
                                 </div>
                             </div>
@@ -436,7 +436,7 @@ export default async function BocasDelToroRealEstateGuidePage({ params }: { para
                             <div key={i} className="flex items-start gap-3 card-light rounded-xl p-5 border border-brand-100">
                                 <CheckCircle size={16} className="text-brand-GOLD mt-1 flex-shrink-0" />
                                 <div>
-                                    <div className="text-white font-bold text-sm mb-1">{item.title}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{item.title}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{item.body}</div>
                                 </div>
                             </div>
@@ -520,7 +520,7 @@ export default async function BocasDelToroRealEstateGuidePage({ params }: { para
                             Book Bocas Consultation <ArrowRight size={16} />
                         </Link>
                         <Link
-                            href="/en/propiedades"
+                            href={`/${lang}/propiedades`}
                             className="inline-flex items-center gap-3 border border-brand-GOLD/40 text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:border-brand-GOLD hover:text-brand-GOLD transition-all"
                         >
                             View All Properties
@@ -540,7 +540,7 @@ export default async function BocasDelToroRealEstateGuidePage({ params }: { para
                             href={link.href}
                             className="flex items-center justify-between card-light p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                         >
-                            <span className="text-white text-xs font-bold">{link.label}</span>
+                            <span className="text-brand-950 text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>
                     ))}

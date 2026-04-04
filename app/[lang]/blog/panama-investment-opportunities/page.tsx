@@ -61,7 +61,7 @@ export default async function PanamaInvestmentOpportunities({ params }: { params
     const lang = resolvedParams.lang || 'en';
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             <BlogPostSchema
                 title="Panama Real Estate: Top Investment Opportunities for 2026"
                 description="A comprehensive guide to why Panama real estate is a top choice for global investors and expats in 2026."

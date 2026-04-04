@@ -139,7 +139,7 @@ export default async function PanamaTaxBenefitsForeignersPage({ params }: { para
     await params;
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -233,7 +233,7 @@ export default async function PanamaTaxBenefitsForeignersPage({ params }: { para
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100 flex items-start gap-4">
                                 <div className="text-brand-GOLD font-black text-2xl flex-shrink-0 w-8">{income.icon}</div>
                                 <div className="flex-1">
-                                    <h3 className="text-white font-bold text-sm mb-1">{income.item}</h3>
+                                    <h3 className="text-brand-950 font-bold text-sm mb-1">{income.item}</h3>
                                     <p className="text-slate-500 text-xs leading-relaxed">{income.detail}</p>
                                 </div>
                             </div>
@@ -259,7 +259,7 @@ export default async function PanamaTaxBenefitsForeignersPage({ params }: { para
                     <div className="grid sm:grid-cols-2 gap-4">
                         {pensionadoBenefits.map((perk, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-2 uppercase tracking-wide">{perk.benefit}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-2 uppercase tracking-wide">{perk.benefit}</h3>
                                 <p className="text-slate-500 text-xs leading-relaxed">{perk.detail}</p>
                             </div>
                         ))}
@@ -574,7 +574,7 @@ export default async function PanamaTaxBenefitsForeignersPage({ params }: { para
                         {faqItems.map((item, i) => (
                             <details key={i} className="card-light rounded-xl border border-brand-100 group">
                                 <summary className="flex items-center justify-between cursor-pointer p-6">
-                                    <h3 className="text-white font-bold text-sm leading-relaxed pr-4">{item.q}</h3>
+                                    <h3 className="text-brand-950 font-bold text-sm leading-relaxed pr-4">{item.q}</h3>
                                     <span className="text-brand-GOLD font-black text-xl flex-shrink-0">+</span>
                                 </summary>
                                 <div className="px-6 pb-6 border-t border-brand-100/30">
@@ -621,7 +621,7 @@ export default async function PanamaTaxBenefitsForeignersPage({ params }: { para
                             href={link.href}
                             className="flex items-center justify-between card-light p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                         >
-                            <span className="text-white text-xs font-bold">{link.label}</span>
+                            <span className="text-brand-950 text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>
                     ))}

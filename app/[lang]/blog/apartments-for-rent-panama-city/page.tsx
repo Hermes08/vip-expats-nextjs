@@ -139,7 +139,8 @@ const pricingTable = [
   { type: 'Studio / Studio + Den', elCangrejo: '$700–$950', costaDel: '$1,500–$2,200', miraflores: '$550–$750', cascoViejo: '$900–$1,300' },
 ];
 
-export default function ApartmentsForRentPanamaGuide() {
+export default async function ApartmentsForRentPanamaGuide({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
   return (
     <article className="bg-white min-h-screen pt-28 pb-20">
       <div className="max-w-4xl mx-auto px-4">
@@ -652,7 +653,7 @@ export default function ApartmentsForRentPanamaGuide() {
             Our team specializes in helping expats find ideal rental apartments across Panama City neighborhoods. Get personalized recommendations, lease negotiation support, and expert guidance. Contact us for a free 30-minute rental consultation.
           </p>
           <Link
-            href="/en/contacto"
+            href={`/${lang}/contacto`}
             className="inline-flex items-center gap-2 btn-3d btn-3d-gold px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px]"
           >
             Start Your Rental Search <ArrowRight size={14} />
@@ -671,7 +672,7 @@ export default function ApartmentsForRentPanamaGuide() {
               href={link.href}
               className="flex items-center justify-between card-light p-4 rounded-xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
-              <span className="text-white text-xs font-bold">{link.label}</span>
+              <span className="text-brand-950 text-xs font-bold">{link.label}</span>
               <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
             </Link>
           ))}

@@ -190,7 +190,7 @@ export default async function PanamaForFamiliesPage({ params }: { params: Promis
     const { lang } = await params;
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -243,7 +243,7 @@ export default async function PanamaForFamiliesPage({ params }: { params: Promis
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100 flex items-start gap-3">
                                 <CheckCircle size={16} className="text-brand-GOLD mt-1 flex-shrink-0" />
                                 <div>
-                                    <div className="text-white font-bold text-sm mb-1">{item.title}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{item.title}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{item.body}</div>
                                 </div>
                             </div>
@@ -282,7 +282,7 @@ export default async function PanamaForFamiliesPage({ params }: { params: Promis
                         <div className="flex gap-3 items-start">
                             <AlertCircle size={18} className="text-brand-GOLD mt-1 flex-shrink-0" />
                             <div>
-                                <p className="text-white font-bold text-sm mb-2">Public Schools Option</p>
+                                <p className="text-brand-950 font-bold text-sm mb-2">Public Schools Option</p>
                                 <p className="text-slate-500 text-xs leading-relaxed">Panama's public schools are free and teach in Spanish. Quality varies significantly by neighborhood. Most expat families choose international schools, but some integrate into public schools to deepen Spanish immersion.</p>
                             </div>
                         </div>
@@ -378,7 +378,15 @@ export default async function PanamaForFamiliesPage({ params }: { params: Promis
                         ))}
                     </div>
                     <div className="h-96 rounded-2xl overflow-hidden border border-brand-100 shadow-lg">
-                        <CostBarChart />
+                        <CostBarChart
+                        data={[
+                          { label: 'Panama Budget', value: 2800, color: '#22c55e' },
+                          { label: 'Panama Comfort', value: 4500, color: '#00C5CB' },
+                          { label: 'US Suburban', value: 8500, color: '#ef4444' },
+                          { label: 'US Urban', value: 11000, color: '#ef4444' },
+                        ]}
+                        title="Family Monthly Budget: Panama vs USA ($)"
+                      />
                     </div>
                     <p className="text-slate-500 text-xs text-center mt-4">Family spending comparison: Panama vs USA suburban living</p>
                 </section>
@@ -451,7 +459,7 @@ export default async function PanamaForFamiliesPage({ params }: { params: Promis
                                     <span className="text-brand-GOLD font-black text-sm">{s.step}</span>
                                 </div>
                                 <div>
-                                    <div className="text-white font-bold text-sm mb-1">{s.title}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{s.title}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{s.body}</div>
                                 </div>
                             </div>
@@ -515,7 +523,7 @@ export default async function PanamaForFamiliesPage({ params }: { params: Promis
                             href={link.href}
                             className="flex items-center justify-between card-light p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                         >
-                            <span className="text-white text-xs font-bold">{link.label}</span>
+                            <span className="text-brand-950 text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>
                     ))}

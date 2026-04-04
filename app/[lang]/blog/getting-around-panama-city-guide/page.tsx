@@ -150,7 +150,7 @@ export default async function PanamaCityTransportPage({ params }: { params: Prom
     const { lang } = await params;
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -195,7 +195,7 @@ export default async function PanamaCityTransportPage({ params }: { params: Prom
                         {metro.map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
                                 <div className="flex justify-between items-start mb-2">
-                                    <h3 className="text-white font-bold text-sm">{item.line}</h3>
+                                    <h3 className="text-brand-950 font-bold text-sm">{item.line}</h3>
                                     <span className={`text-[10px] font-black uppercase tracking-widest px-2 py-1 rounded ${
                                         item.status === 'Operating'
                                             ? 'bg-brand-TEAL/20 text-brand-TEAL'
@@ -277,7 +277,7 @@ export default async function PanamaCityTransportPage({ params }: { params: Prom
                         {rideshare.map((app, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
                                 <div className="flex justify-between items-start mb-3">
-                                    <h3 className="text-white font-bold text-sm">{app.app}</h3>
+                                    <h3 className="text-brand-950 font-bold text-sm">{app.app}</h3>
                                     <div className="text-brand-GOLD font-black text-sm">{app.typical}</div>
                                 </div>
                                 <p className="text-slate-500 text-xs mb-2">{app.notes}</p>
@@ -348,7 +348,7 @@ export default async function PanamaCityTransportPage({ params }: { params: Prom
                     <div className="space-y-4 mb-6">
                         {drivingTips.map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-2">{item.tip}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-2">{item.tip}</h3>
                                 <p className="text-slate-500 text-xs">{item.detail}</p>
                             </div>
                         ))}
@@ -371,7 +371,7 @@ export default async function PanamaCityTransportPage({ params }: { params: Prom
                     <div className="grid md:grid-cols-2 gap-4">
                         {neighborhoods.map((nb, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-3">{nb.area}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-3">{nb.area}</h3>
                                 <div className="space-y-2">
                                     <div>
                                         <div className="text-brand-GOLD text-[9px] font-black uppercase tracking-widest">Best Transit</div>
@@ -399,7 +399,7 @@ export default async function PanamaCityTransportPage({ params }: { params: Prom
                     <div className="space-y-4">
                         {intercityTransport.map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-3">{item.destination}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-3">{item.destination}</h3>
                                 <div className="space-y-2">
                                     <div className="grid sm:grid-cols-2 gap-3">
                                         <div>
@@ -442,7 +442,7 @@ export default async function PanamaCityTransportPage({ params }: { params: Prom
                         {airports.map((opt, i) => (
                             <div key={i} className="flex items-start gap-4 bg-white rounded-lg p-4">
                                 <div className="flex-1">
-                                    <div className="text-white font-bold text-sm">{opt.route}</div>
+                                    <div className="text-brand-950 font-bold text-sm">{opt.route}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{opt.notes}</div>
                                 </div>
                                 <div className="text-right flex-shrink-0">
@@ -468,7 +468,7 @@ export default async function PanamaCityTransportPage({ params }: { params: Prom
                     <div className="space-y-4">
                         {faqs.map((faq, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-3">{faq.q}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-3">{faq.q}</h3>
                                 <p className="text-slate-500 text-xs leading-relaxed">{faq.a}</p>
                             </div>
                         ))}

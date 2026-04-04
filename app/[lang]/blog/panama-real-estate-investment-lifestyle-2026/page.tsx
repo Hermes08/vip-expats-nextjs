@@ -59,7 +59,7 @@ export default async function PanamaRealEstateGuide2026({ params }: { params: Pr
     const lang = resolvedParams.lang || 'en';
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             <BlogPostSchema
                 title="Panama Real Estate: Investment Opportunities, Expat Lifestyle, and Retirement in 2026"
                 description="The comprehensive 2026 guide for global investors and expats looking to capitalize on Panama's stable property market and luxury lifestyle."

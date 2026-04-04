@@ -52,6 +52,12 @@ const budgetData = [
   { scenario: 'Couple/Share', cost: 3000, details: 'Premium apartment, dining out' },
 ];
 
+const nomadChartData = [
+  { label: 'Budget Solo', value: 1300, color: '#22c55e' },
+  { label: 'Comfortable', value: 2100, color: '#00C5CB' },
+  { label: 'Couple/Share', value: 3000, color: '#D4A843' },
+];
+
 const neighborhoods = [
   {
     name: 'Casco Viejo',
@@ -474,7 +480,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
 
         {/* Three.js Budget Chart */}
         <div className="bg-brand-50 border-2 border-brand-100 rounded-xl p-8 h-96 mb-8">
-          <CostBarChart data={budgetData} />
+          <CostBarChart data={nomadChartData} />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

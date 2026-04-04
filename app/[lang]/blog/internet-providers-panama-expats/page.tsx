@@ -205,7 +205,7 @@ export default async function InternetProvidersPage({ params }: { params: Promis
     const { lang } = await params;
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -351,7 +351,7 @@ export default async function InternetProvidersPage({ params }: { params: Promis
                                     <span className="text-brand-GOLD font-black text-sm">{i + 1}</span>
                                 </div>
                                 <div className="flex-1">
-                                    <div className="text-white font-bold text-sm">{item.step}</div>
+                                    <div className="text-brand-950 font-bold text-sm">{item.step}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed mt-1">{item.detail}</div>
                                 </div>
                             </div>
@@ -379,7 +379,7 @@ export default async function InternetProvidersPage({ params }: { params: Promis
                     <div className="grid md:grid-cols-2 gap-4">
                         {coworking.map((space, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-3">{space.name}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-3">{space.name}</h3>
                                 <div className="space-y-2">
                                     <div>
                                         <div className="text-brand-GOLD text-[9px] font-black uppercase tracking-widest">Internet Speed</div>
@@ -404,7 +404,7 @@ export default async function InternetProvidersPage({ params }: { params: Promis
                     <div className="space-y-4">
                         {tips.map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-2">{item.tip}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-2">{item.tip}</h3>
                                 <p className="text-slate-500 text-xs leading-relaxed">{item.why}</p>
                             </div>
                         ))}
@@ -419,7 +419,7 @@ export default async function InternetProvidersPage({ params }: { params: Promis
                     <div className="space-y-4">
                         {faqs.map((faq, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-3">{faq.q}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-3">{faq.q}</h3>
                                 <p className="text-slate-500 text-xs leading-relaxed">{faq.a}</p>
                             </div>
                         ))}

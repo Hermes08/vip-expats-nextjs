@@ -238,7 +238,7 @@ export default async function SupermarketsPage({ params }: { params: Promise<{ l
     const { lang } = await params;
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -376,7 +376,7 @@ export default async function SupermarketsPage({ params }: { params: Promise<{ l
                         {importedExpensive.map((item, i) => (
                             <div key={i} className="flex items-start gap-4 bg-white rounded-lg p-4">
                                 <div className="flex-1">
-                                    <div className="text-white font-bold text-sm">{item.item}</div>
+                                    <div className="text-brand-950 font-bold text-sm">{item.item}</div>
                                     <div className="text-slate-500 text-xs">{item.reason}</div>
                                 </div>
                                 <div className="text-right flex-shrink-0">
@@ -399,7 +399,7 @@ export default async function SupermarketsPage({ params }: { params: Promise<{ l
                     <div className="space-y-4">
                         {localMarkets.map((market, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-3">{market.market}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-3">{market.market}</h3>
                                 <div className="space-y-2 text-xs">
                                     <div>
                                         <span className="text-brand-GOLD font-black uppercase tracking-widest">Location: </span>
@@ -435,7 +435,7 @@ export default async function SupermarketsPage({ params }: { params: Promise<{ l
                         {onlineOrdering.map((service, i) => (
                             <div key={i} className="flex items-start gap-4 bg-white rounded-lg p-4">
                                 <div className="flex-1">
-                                    <div className="text-white font-bold text-sm">{service.service}</div>
+                                    <div className="text-brand-950 font-bold text-sm">{service.service}</div>
                                     <div className="text-slate-500 text-xs">{service.what}</div>
                                 </div>
                                 <div className="text-right flex-shrink-0">
@@ -462,7 +462,7 @@ export default async function SupermarketsPage({ params }: { params: Promise<{ l
                     <div className="grid md:grid-cols-2 gap-4 mb-6">
                         {alcohol.map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-3">{item.item}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-3">{item.item}</h3>
                                 <div className="space-y-2">
                                     <div>
                                         <div className="text-brand-GOLD text-[9px] font-black uppercase tracking-widest">Price</div>
@@ -497,7 +497,7 @@ export default async function SupermarketsPage({ params }: { params: Promise<{ l
                     <div className="grid md:grid-cols-2 gap-4">
                         {payment.map((method, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-3">{method.method}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-3">{method.method}</h3>
                                 <div>
                                     <div className="text-brand-GOLD text-[9px] font-black uppercase tracking-widest mb-1">Acceptance</div>
                                     <div className="text-slate-500 text-xs mb-2">{method.widely}</div>
@@ -516,7 +516,7 @@ export default async function SupermarketsPage({ params }: { params: Promise<{ l
                     <div className="space-y-4">
                         {faqs.map((faq, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-3">{faq.q}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-3">{faq.q}</h3>
                                 <p className="text-slate-500 text-xs leading-relaxed">{faq.a}</p>
                             </div>
                         ))}

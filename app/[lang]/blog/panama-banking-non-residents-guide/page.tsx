@@ -200,7 +200,7 @@ export default async function PanamaBankingNonResidentsPage({ params }: { params
     const { lang } = await params;
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -246,7 +246,7 @@ export default async function PanamaBankingNonResidentsPage({ params }: { params
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100 flex items-start gap-3">
                                 <CheckCircle size={16} className="text-brand-GOLD mt-1 flex-shrink-0" />
                                 <div>
-                                    <div className="text-white font-bold text-sm mb-1">{item.title}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{item.title}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{item.desc}</div>
                                 </div>
                             </div>
@@ -309,7 +309,7 @@ export default async function PanamaBankingNonResidentsPage({ params }: { params
                                         <span className="text-brand-GOLD font-black text-xs">{i + 1}</span>
                                     </div>
                                     <div>
-                                        <h3 className="text-white font-bold text-sm mb-1">{doc.doc}</h3>
+                                        <h3 className="text-brand-950 font-bold text-sm mb-1">{doc.doc}</h3>
                                         <p className="text-slate-500 text-xs leading-relaxed">{doc.details}</p>
                                     </div>
                                 </div>
@@ -320,7 +320,7 @@ export default async function PanamaBankingNonResidentsPage({ params }: { params
                         <div className="flex gap-3 items-start">
                             <AlertCircle size={18} className="text-brand-GOLD mt-1 flex-shrink-0" />
                             <div>
-                                <p className="text-white font-bold text-sm mb-2">Pro Tip: Notarization</p>
+                                <p className="text-brand-950 font-bold text-sm mb-2">Pro Tip: Notarization</p>
                                 <p className="text-slate-500 text-xs leading-relaxed">Get documents notarized by a US notary public before traveling to Panama. Banks trust notarized copies over plain originals. If traveling with originals, consider getting a Panama lawyer to certify them upon arrival ($200–300).</p>
                             </div>
                         </div>
@@ -387,7 +387,16 @@ export default async function PanamaBankingNonResidentsPage({ params }: { params
                         </table>
                     </div>
                     <div className="h-96 rounded-2xl overflow-hidden border border-brand-100 shadow-lg">
-                        <CostBarChart />
+                        <CostBarChart
+                        data={[
+                          { label: 'Banistmo', value: 500, color: '#00C5CB' },
+                          { label: 'Multibank', value: 1000, color: '#00C5CB' },
+                          { label: 'Bco General', value: 2000, color: '#D4A843' },
+                          { label: 'US Bank avg', value: 1500, color: '#ef4444' },
+                          { label: 'CR Bank avg', value: 800, color: '#8b5cf6' },
+                        ]}
+                        title="Minimum Balance Requirements ($)"
+                      />
                     </div>
                     <p className="text-slate-500 text-xs text-center mt-4">Bank fees & minimum balances: Panama vs USA vs Central America</p>
                 </section>
@@ -404,7 +413,7 @@ export default async function PanamaBankingNonResidentsPage({ params }: { params
                                     <span className="text-brand-GOLD font-black text-sm">{i + 1}</span>
                                 </div>
                                 <div>
-                                    <div className="text-white font-bold text-sm mb-1">{item.tip}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{item.tip}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{item.why}</div>
                                 </div>
                             </div>
@@ -475,7 +484,7 @@ export default async function PanamaBankingNonResidentsPage({ params }: { params
                             { title: 'Beneficial Ownership Verification', desc: 'If account is for a business entity, bank identifies who controls the funds. Directors, shareholders, or ultimate beneficial owners must be disclosed.' },
                         ].map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-2">{item.title}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-2">{item.title}</h3>
                                 <p className="text-slate-500 text-xs leading-relaxed">{item.desc}</p>
                             </div>
                         ))}
@@ -522,7 +531,7 @@ export default async function PanamaBankingNonResidentsPage({ params }: { params
                                     <span className="text-brand-GOLD font-black text-xs text-center">{s.step}</span>
                                 </div>
                                 <div className="flex-1">
-                                    <div className="text-white font-bold text-sm mb-1">{s.title}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{s.title}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{s.body}</div>
                                 </div>
                             </div>
@@ -566,7 +575,7 @@ export default async function PanamaBankingNonResidentsPage({ params }: { params
                             href={link.href}
                             className="flex items-center justify-between card-light p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                         >
-                            <span className="text-white text-xs font-bold">{link.label}</span>
+                            <span className="text-brand-950 text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>
                     ))}

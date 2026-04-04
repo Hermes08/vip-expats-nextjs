@@ -162,7 +162,7 @@ export default async function HowToMovePanamaPage({ params }: { params: Promise<
           }),
         }}
       />
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -331,7 +331,7 @@ export default async function HowToMovePanamaPage({ params }: { params: Promise<
                     <div className="grid md:grid-cols-2 gap-4 mb-8">
                         {costPhases.map((c, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <div className="text-white font-bold text-sm mb-2">{c.phase}</div>
+                                <div className="text-brand-950 font-bold text-sm mb-2">{c.phase}</div>
                                 <div className="text-brand-GOLD font-black text-xl mb-2">{c.costs}</div>
                                 <p className="text-slate-500 text-xs leading-relaxed">{c.items}</p>
                             </div>

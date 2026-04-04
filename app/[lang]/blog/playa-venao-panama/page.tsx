@@ -238,13 +238,13 @@ export default function PlayaVenaoPanama() {
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
-              href="/en/propiedades"
+              href={`/${lang}/propiedades`}
               className="inline-flex items-center justify-center gap-2 btn-3d btn-3d-gold px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px]"
             >
               See Available Properties <ArrowRight size={14} />
             </Link>
             <Link
-              href="/en/contacto"
+              href={`/${lang}/contacto`}
               className="inline-flex items-center justify-center gap-2 card-light px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] text-brand-GOLD border-brand-GOLD/30 hover:border-brand-GOLD/60 transition-all"
             >
               Talk to Our Advisors <ArrowRight size={14} />
@@ -264,7 +264,7 @@ export default function PlayaVenaoPanama() {
               href={link.href}
               className="flex items-center justify-between card-light p-4 rounded-xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
-              <span className="text-white text-xs font-bold">{link.label}</span>
+              <span className="text-brand-950 text-xs font-bold">{link.label}</span>
               <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
             </Link>
           ))}

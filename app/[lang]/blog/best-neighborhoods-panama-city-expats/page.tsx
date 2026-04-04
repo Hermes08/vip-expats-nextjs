@@ -365,7 +365,7 @@ export default async function BestNeighborhoodsPanamaCityPage({ params }: { para
     const { lang } = await params;
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -540,7 +540,16 @@ export default async function BestNeighborhoodsPanamaCityPage({ params }: { para
                         Rent Prices by Neighborhood
                     </h2>
                     <div className="h-96 rounded-2xl overflow-hidden border border-brand-100 shadow-lg mb-6">
-                        <CostBarChart />
+                        <CostBarChart
+                        data={[
+                          { label: 'El Cangrejo', value: 650, color: '#00C5CB' },
+                          { label: 'Marbella', value: 850, color: '#00C5CB' },
+                          { label: 'San Francisco', value: 1100, color: '#D4A843' },
+                          { label: 'Costa del Este', value: 1500, color: '#D4A843' },
+                          { label: 'Punta Pacifica', value: 2200, color: '#8b5cf6' },
+                        ]}
+                        title="1BR Rent by Neighborhood ($/mo)"
+                      />
                     </div>
                     <p className="text-slate-500 text-xs text-center mb-6">Typical 1-bedroom rent across Panama City neighborhoods</p>
                     <div className="bg-brand-50 rounded-xl p-6 border border-brand-100">
@@ -563,7 +572,7 @@ export default async function BestNeighborhoodsPanamaCityPage({ params }: { para
                                     <span className="text-brand-GOLD font-black text-sm">{s.step}</span>
                                 </div>
                                 <div>
-                                    <div className="text-white font-bold text-sm mb-1">{s.title}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{s.title}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{s.body}</div>
                                 </div>
                             </div>
@@ -586,7 +595,7 @@ export default async function BestNeighborhoodsPanamaCityPage({ params }: { para
                             { title: 'Future Flexibility', body: 'Choose neighborhoods where you can easily downsize/upgrade later. Avoid hyper-niche areas where you\'d get stuck.' },
                         ].map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-2">{item.title}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-2">{item.title}</h3>
                                 <p className="text-slate-500 text-xs leading-relaxed">{item.body}</p>
                             </div>
                         ))}
@@ -630,7 +639,7 @@ export default async function BestNeighborhoodsPanamaCityPage({ params }: { para
                             { area: 'Far West Panama City', reason: 'Limited infrastructure, less English spoken, further from amenities' },
                         ].map((item, i) => (
                             <div key={i} className="bg-brand-CORAL/10 border border-brand-CORAL/30 rounded-lg p-4">
-                                <p className="text-white font-bold text-sm mb-1">{item.area}</p>
+                                <p className="text-brand-950 font-bold text-sm mb-1">{item.area}</p>
                                 <p className="text-slate-500 text-xs">{item.reason}</p>
                             </div>
                         ))}
@@ -697,7 +706,7 @@ export default async function BestNeighborhoodsPanamaCityPage({ params }: { para
                             href={link.href}
                             className="flex items-center justify-between card-light p-4 rounded-xl border border-brand-100 hover:border-brand-GOLD/30 transition-all group"
                         >
-                            <span className="text-white text-xs font-bold">{link.label}</span>
+                            <span className="text-brand-950 text-xs font-bold">{link.label}</span>
                             <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
                         </Link>
                     ))}

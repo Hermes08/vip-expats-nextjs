@@ -269,7 +269,7 @@ export default async function PetsRelocationPage({ params }: { params: Promise<{
     const { lang } = await params;
 
     return (
-        <article className="bg-white min-h-screen pt-28 pb-20">
+        <article className="bg-brand-950 min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
@@ -336,7 +336,7 @@ export default async function PetsRelocationPage({ params }: { params: Promise<{
                         {requirements.map((req, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
                                 <div className="flex items-start justify-between mb-4">
-                                    <h3 className="text-white font-bold text-sm">{req.req}</h3>
+                                    <h3 className="text-brand-950 font-bold text-sm">{req.req}</h3>
                                     <span className={`text-[10px] font-black uppercase tracking-widest px-2 py-1 rounded ${
                                         req.importance === 'CRITICAL'
                                             ? 'bg-brand-GOLD/20 text-brand-GOLD'
@@ -381,7 +381,7 @@ export default async function PetsRelocationPage({ params }: { params: Promise<{
                                     <span className="text-brand-GOLD font-black text-sm">{item.step}</span>
                                 </div>
                                 <div className="flex-1">
-                                    <div className="text-white font-bold text-sm mb-1">{item.title}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1">{item.title}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{item.detail}</div>
                                 </div>
                             </div>
@@ -401,7 +401,7 @@ export default async function PetsRelocationPage({ params }: { params: Promise<{
                     <div className="space-y-4 mb-6">
                         {airlines.map((airline, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-4">{airline.airline}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-4">{airline.airline}</h3>
                                 <div className="grid sm:grid-cols-2 gap-3">
                                     <div>
                                         <div className="text-brand-GOLD text-[9px] font-black uppercase tracking-widest mb-1">In-Cabin</div>
@@ -443,7 +443,7 @@ export default async function PetsRelocationPage({ params }: { params: Promise<{
                         {petsInPanama.map((item, i) => (
                             <div key={i} className="flex items-start gap-4 bg-white rounded-lg p-4">
                                 <div className="flex-1">
-                                    <div className="text-white font-bold text-sm">{item.service}</div>
+                                    <div className="text-brand-950 font-bold text-sm">{item.service}</div>
                                     <div className="text-slate-500 text-xs mt-1">{item.detail}</div>
                                     {item.notes && <div className="text-slate-600 text-[9px] mt-2 italic">{item.notes}</div>}
                                 </div>
@@ -456,14 +456,14 @@ export default async function PetsRelocationPage({ params }: { params: Promise<{
 
                     {/* Vets */}
                     <div className="mb-6">
-                        <h3 className="text-white font-bold text-sm mb-3 flex items-center gap-2">
+                        <h3 className="text-brand-950 font-bold text-sm mb-3 flex items-center gap-2">
                             <MapPin size={16} className="text-brand-GOLD" />
                             Recommended Veterinarians in Panama City
                         </h3>
                         <div className="space-y-3">
                             {vets.map((vet, i) => (
                                 <div key={i} className="card-light rounded-lg p-4 border border-brand-100">
-                                    <h4 className="text-white font-bold text-xs mb-2">{vet.name}</h4>
+                                    <h4 className="text-brand-950 font-bold text-xs mb-2">{vet.name}</h4>
                                     <div className="text-slate-500 text-[9px] space-y-1">
                                         <div><span className="text-brand-GOLD font-bold">Location:</span> {vet.location}</div>
                                         <div><span className="text-brand-GOLD font-bold">Services:</span> {vet.services}</div>
@@ -487,7 +487,7 @@ export default async function PetsRelocationPage({ params }: { params: Promise<{
                     <div className="space-y-4">
                         {restrictions.map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-3">{item.restriction}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-3">{item.restriction}</h3>
                                 <div className="space-y-2">
                                     <div>
                                         <span className="text-brand-GOLD text-[9px] font-black uppercase tracking-widest">Effect: </span>
@@ -534,7 +534,7 @@ export default async function PetsRelocationPage({ params }: { params: Promise<{
                             ].map((line, i) => (
                                 <div key={i} className="flex justify-between">
                                     <span className="text-slate-500 text-sm">{line.item}</span>
-                                    <span className="text-white font-bold text-sm">{line.cost}</span>
+                                    <span className="text-brand-950 font-bold text-sm">{line.cost}</span>
                                 </div>
                             ))}
                         </div>
@@ -556,7 +556,7 @@ export default async function PetsRelocationPage({ params }: { params: Promise<{
                     <div className="space-y-4">
                         {faqs.map((faq, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
-                                <h3 className="text-white font-bold text-sm mb-3">{faq.q}</h3>
+                                <h3 className="text-brand-950 font-bold text-sm mb-3">{faq.q}</h3>
                                 <p className="text-slate-500 text-xs leading-relaxed">{faq.a}</p>
                             </div>
                         ))}

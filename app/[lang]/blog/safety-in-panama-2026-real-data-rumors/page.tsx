@@ -86,7 +86,8 @@ const safeNeighborhoods = [
   },
 ];
 
-export default function SafetyInPanama2026() {
+export default async function SafetyInPanama2026({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
   return (
     <article className="bg-white min-h-screen pt-28 pb-20">
       <div className="max-w-4xl mx-auto px-4">
@@ -230,7 +231,7 @@ export default function SafetyInPanama2026() {
               href={link.href}
               className="flex items-center justify-between card-light p-4 rounded-xl border-brand-100 hover:border-brand-GOLD/30 transition-all group"
             >
-              <span className="text-white text-xs font-bold">{link.label}</span>
+              <span className="text-brand-950 text-xs font-bold">{link.label}</span>
               <ArrowRight size={12} className="text-brand-GOLD opacity-0 group-hover:opacity-100 transition-all" />
             </Link>
           ))}
@@ -243,7 +244,7 @@ export default function SafetyInPanama2026() {
             Our Panama advisors have personally lived and invested in the safest neighborhoods. Book a free 30-minute call to discuss safety, neighborhoods that match your lifestyle, and available properties in Punta Pacifica, Costa del Este, or El Cangrejo.
           </p>
           <Link
-            href="/en/contacto"
+            href={`/${lang}/contacto`}
             className="inline-flex items-center gap-2 btn-3d btn-3d-gold px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px]"
           >
             Book Free Consultation <ArrowRight size={14} />
