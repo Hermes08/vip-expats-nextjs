@@ -13,31 +13,33 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Panama Real Estate Market 2026 | Prices, Trends & Investment Outlook',
-  description:
-    'Panama real estate market 2026 analysis: market overview, prices up 18% YoY, why Panama attracts investors (dollar economy, territorial tax system, no foreign restrictions), neighborhood breakdown, rental yields 8–14%, regional comparison, and 2026–2027 forecast.',
-  keywords: [
-    'panama real estate market 2026',
-    'panama property market',
-    'panama real estate investment 2026',
-    'is panama real estate a good investment',
-    'panama housing market',
-    'panama real estate prices',
-    'panama property investment',
-    'panama condo market',
-    'panama real estate forecast',
-    'panama market trends',
-  ].join(', '),
-  alternates: {
-    canonical: 'https://panamarealestatesale.com/en/blog/panama-real-estate-market-2026',
-  },
-  openGraph: {
-    title: 'Panama Real Estate Market 2026 | Prices, Trends & Investment Outlook',
-    description:
-      "Comprehensive analysis of Panama's 2026 real estate market: market growth, investor incentives, neighborhood prices, rental yields, and investment forecast.",
-    type: 'article',
-    url: 'https://panamarealestatesale.com/en/blog/panama-real-estate-market-2026',
-  },
+    title: 'Panama Real Estate Market 2026: Trends, Prices, Investment',
+    description: 'Panama real estate market 2026. Price trends, investment opportunities, market analysis, forecasts.',
+    keywords: 'Panama real estate market, real estate prices Panama, property market Panama, market trends',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/panama-real-estate-market-2026',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-real-estate-market-2026',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-real-estate-market-2026',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-real-estate-market-2026',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-real-estate-market-2026',
+        },
+    },
+    openGraph: {
+        title: 'Panama Real Estate Market 2026: Trends, Prices, Investment',
+        description: 'Panama real estate market 2026. Price trends, investment opportunities, market analysis, forecasts.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/panama-real-estate-market-2026',
+        images: [{ url: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80', width: 1200, height: 630, alt: 'Real estate market' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama Real Estate Market 2026: Trends, Prices, Investment',
+        description: 'Panama real estate market 2026. Price trends, investment opportunities, market analysis, forecasts.',
+        images: ['https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80'],
+    },
 };
 
 const marketSegments = [

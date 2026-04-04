@@ -3,20 +3,32 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Bus, Taxi, Zap, MapPin, AlertCircle, Navigation } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Getting Around Panama City 2026: Metro, Bus, Uber, Taxi & Carpool Guide',
-    description:
-        'Complete transportation guide to Panama City. Metro, Metrobus, Uber, inDriver, taxis, driving yourself, and how to navigate like a local.',
-    keywords:
-        'Panama City transportation, Panama City metro, Uber Panama, taxi Panama, getting around Panama City, public transport Panama',
+    title: 'Getting Around Panama City 2026: Metro, Uber, Bus & Taxi Guide',
+    description: 'Transportation guide for Panama City. Metro, Metrobus, Uber, inDriver, taxis. How to navigate like a local.',
+    keywords: 'Panama City transportation, metro Panama City, Uber Panama, taxi Panama, get around Panama',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/getting-around-panama-city-guide',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/getting-around-panama-city-guide',
+            'es': 'https://panamarealestatesale.com/es/blog/getting-around-panama-city-guide',
+            'pt': 'https://panamarealestatesale.com/pt/blog/getting-around-panama-city-guide',
+            'de': 'https://panamarealestatesale.com/de/blog/getting-around-panama-city-guide',
+        },
     },
     openGraph: {
-        title: 'Getting Around Panama City 2026: Metro, Bus, Uber, Taxi & Carpool Guide',
-        description:
-            'Everything you need to know about transportation in Panama City — metro, buses, ride-sharing apps, taxis, and driving.',
+        title: 'Getting Around Panama City 2026: Metro, Uber, Bus & Taxi Guide',
+        description: 'Transportation guide for Panama City. Metro, Metrobus, Uber, inDriver, taxis. How to navigate like a local.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/getting-around-panama-city-guide',
+        images: [{ url: 'https://images.unsplash.com/photo-1464207687429-7505649dae38?w=1200&q=80', width: 1200, height: 630, alt: 'Panama City transportation' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Getting Around Panama City 2026: Metro, Uber, Bus & Taxi Guide',
+        description: 'Transportation guide for Panama City. Metro, Metrobus, Uber, inDriver, taxis. How to navigate like a local.',
+        images: ['https://images.unsplash.com/photo-1464207687429-7505649dae38?w=1200&q=80'],
     },
 };
 

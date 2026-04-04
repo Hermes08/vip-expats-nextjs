@@ -10,9 +10,33 @@ interface PageProps {
 }
 
 export const metadata = {
-  title: 'Moving to Panama from the UK 2026: Brexit, Visa, Tax & Why Brits Are Choosing Panama',
-  description: 'Complete guide for British expats moving to Panama after Brexit. Learn about Friendly Nations visa, UK tax implications, healthcare, costs, and the British community.',
-  keywords: 'moving to panama from UK, retire panama british expats, UK to Panama relocation',
+  title: 'Move from UK to Panama 2026: Visa, Costs, Relocation Guide',
+  description: 'British expats moving to Panama. Visa options, residency, costs, healthcare, taxes, relocation guide.',
+  keywords: 'UK to Panama, Brits in Panama, moving to Panama from UK, UK expats Panama',
+  alternates: {
+    canonical: 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-uk',
+    languages: {
+      'en': 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-uk',
+      'es': 'https://panamarealestatesale.com/es/blog/moving-to-panama-from-uk',
+      'pt': 'https://panamarealestatesale.com/pt/blog/moving-to-panama-from-uk',
+      'de': 'https://panamarealestatesale.com/de/blog/moving-to-panama-from-uk',
+    },
+  },
+  openGraph: {
+    title: 'Move from UK to Panama 2026: Visa, Costs, Relocation Guide',
+    description: 'British expats moving to Panama. Visa options, residency, costs, healthcare, taxes, relocation guide.',
+    type: 'article',
+    url: 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-uk',
+    images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Move from UK to Panama 2026: Visa, Costs, Relocation Guide' }],
+    locale: 'en_US',
+    siteName: 'VIP Expats Panama',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Move from UK to Panama 2026: Visa, Costs, Relocation Guide',
+    description: 'British expats moving to Panama. Visa options, residency, costs, healthcare, taxes, relocation guide.',
+    images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
+  },
 };
 
 export default function MoveTopanamaPanamaPanamFromUKPage({ params: { lang } }: PageProps) {

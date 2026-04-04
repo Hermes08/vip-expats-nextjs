@@ -60,7 +60,7 @@ const AdminPage = () => {
                         </div>
                         <button
                             type="submit"
-                            className="w-full bg-brand-50 text-white py-2 rounded-lg font-bold hover:bg-brand-100 transition-colors"
+                            className="w-full bg-brand-TEAL text-white py-2 rounded-lg font-bold hover:bg-brand-950 transition-colors"
                         >
                             Login
                         </button>
@@ -322,7 +322,7 @@ const ProjectEditor = ({ project, onSave, onCancel }: { project: Project, onSave
                                     <X size={14} />
                                 </button>
                                 {idx === 0 && (
-                                    <span className="absolute bottom-2 left-2 bg-brand-50/80 text-white text-[10px] font-bold px-2 py-0.5 rounded backdrop-blur-sm">MAIN COVER</span>
+                                    <span className="absolute bottom-2 left-2 bg-brand-950/80 text-white text-[10px] font-bold px-2 py-0.5 rounded backdrop-blur-sm">MAIN COVER</span>
                                 )}
                             </div>
                         ))}

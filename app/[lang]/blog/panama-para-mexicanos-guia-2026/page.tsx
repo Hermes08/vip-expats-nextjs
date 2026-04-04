@@ -4,14 +4,32 @@ import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponent
 
 
 export const metadata = {
-  title: 'Panamá para Mexicanos 2026: Visa Friendly Nations, Costo de Vida y Bienes Raíces',
-  description: 'Guía completa para mexicanos que desean vivir en Panamá. Visa Friendly Nations, comparación de costos CDMX vs Panamá, inversión inmobiliaria en USD, y cómo mudarse desde México.',
-  keywords: 'panama para mexicanos, vivir en panama mexico, invertir en panama mexicanos, visa friendly nations mexico, mudarse a panama desde mexico',
+  title: 'Guía Panamá para Mexicanos 2026: Visa, Costos, Residencia',
+  description: 'Mexicanos emigrando a Panamá. Opciones de visa, costos, residencia, estilo de vida.',
+  keywords: 'panama, para',
+  alternates: {
+    canonical: 'https://panamarealestatesale.com/en/blog/panama-para-mexicanos-guia-2026',
+    languages: {
+      'en': 'https://panamarealestatesale.com/en/blog/panama-para-mexicanos-guia-2026',
+      'es': 'https://panamarealestatesale.com/es/blog/panama-para-mexicanos-guia-2026',
+      'pt': 'https://panamarealestatesale.com/pt/blog/panama-para-mexicanos-guia-2026',
+      'de': 'https://panamarealestatesale.com/de/blog/panama-para-mexicanos-guia-2026',
+    },
+  },
   openGraph: {
-    title: 'Panamá para Mexicanos 2026: Visa Friendly Nations, Costo de Vida y Bienes Raíces',
-    description: 'México es Friendly Nation. Acceso rápido a residencia permanente en Panamá. Protege tu patrimonio en USD. Guía completa para mexicanos.',
-    url: '/es/blog/panama-para-mexicanos-guia-2026',
+    title: 'Guía Panamá para Mexicanos 2026: Visa, Costos, Residencia',
+    description: 'Mexicanos emigrando a Panamá. Opciones de visa, costos, residencia, estilo de vida.',
     type: 'article',
+    url: 'https://panamarealestatesale.com/en/blog/panama-para-mexicanos-guia-2026',
+    images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Guía Panamá para Mexicanos 2026: Visa, Costos, Residencia' }],
+    locale: 'en_US',
+    siteName: 'VIP Expats Panama',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Guía Panamá para Mexicanos 2026: Visa, Costos, Residencia',
+    description: 'Mexicanos emigrando a Panamá. Opciones de visa, costos, residencia, estilo de vida.',
+    images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
   },
 };
 

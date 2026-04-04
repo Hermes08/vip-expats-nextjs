@@ -5,16 +5,32 @@ import { CostBarChart } from '@/components/three/ThreeComponents';
 
 
 export const metadata: Metadata = {
-    title: 'Panama vs Spain for Retirement 2026: Tax, Cost & Lifestyle Analysis',
-    description: 'Compare Panama and Spain for retirement in 2026. Analyze taxes (Spain 24% capital gains vs Panama 0%), costs (Madrid €2,500-4,000 vs Panama $1,500-2,200), visas, and real estate. Discover why Panama is 70% cheaper.',
-    keywords: 'panama vs spain retirement, jubilarse en panama vs españa, retire in panama, retire in spain, spanish tax system, panama territorial tax',
-    alternates: { canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-spain-retirement' },
+    title: 'Panama vs Spain Retirement 2026: Comparison, Costs, Lifestyle',
+    description: 'Compare Panama vs Spain for retirement. Golden Visa, costs, lifestyle, healthcare, communities.',
+    keywords: 'Panama vs Spain, retire Panama vs Spain, cost of living Panama Spain, Spain retirement visa',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-spain-retirement',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-vs-spain-retirement',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-vs-spain-retirement',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-vs-spain-retirement',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-vs-spain-retirement',
+        },
+    },
     openGraph: {
-        title: 'Panama vs Spain for Retirement 2026: Tax, Cost & Lifestyle Analysis',
-        description: 'Panama vs Spain: Complete retirement comparison with tax analysis, cost breakdown, visa requirements, and real estate comparison.',
+        title: 'Panama vs Spain Retirement 2026: Comparison, Costs, Lifestyle',
+        description: 'Compare Panama vs Spain for retirement. Golden Visa, costs, lifestyle, healthcare, communities.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/panama-vs-spain-retirement',
-        images: [{ url: 'https://images.unsplash.com/photo-1499856871957-5b8620a14eb0?w=1200&h=630', width: 1200, height: 630 }],
+        images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Comparison' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama vs Spain Retirement 2026: Comparison, Costs, Lifestyle',
+        description: 'Compare Panama vs Spain for retirement. Golden Visa, costs, lifestyle, healthcare, communities.',
+        images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
 

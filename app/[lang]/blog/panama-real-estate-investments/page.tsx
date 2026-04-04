@@ -3,12 +3,34 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, TrendingUp, MapPin, Palmtree, Globe } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Investing in Panama: Expat Lifestyle, Beachfront Properties & Retirement Guide 2026',
-    description:
-        'Discover why thousands of expats are choosing Panama for real estate investment, beachfront properties, and retirement. Full 2026 guide covering lifestyle, ROI, and visa pathways.',
-    keywords:
-        'panama real estate, panama investment, expat lifestyle panama, panama beachfront properties, retiring in panama, panama property investment 2026',
-};
+    title: 'Panama Real Estate Investment 2026: Opportunities & Returns',
+    description: 'Real estate investment in Panama. Development projects, emerging areas, ROI potential.',
+    keywords: 'real estate investment Panama, invest Panama real estate, property investment opportunities',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/panama-real-estate-investments',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-real-estate-investments',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-real-estate-investments',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-real-estate-investments',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-real-estate-investments',
+        },
+    },
+    openGraph: {
+        title: 'Panama Real Estate Investment 2026: Opportunities & Returns',
+        description: 'Real estate investment in Panama. Development projects, emerging areas, ROI potential.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/panama-real-estate-investments',
+        images: [{ url: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80', width: 1200, height: 630, alt: 'Real estate investment' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama Real Estate Investment 2026: Opportunities & Returns',
+        description: 'Real estate investment in Panama. Development projects, emerging areas, ROI potential.',
+        images: ['https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80'],
+    },
+};;
 
 const investmentHighlights = [
     { stat: '$1,200–$1,800', label: 'Monthly luxury condo rent in Panama City', icon: MapPin },

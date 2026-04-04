@@ -4,14 +4,32 @@ import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponent
 
 
 export const metadata = {
-  title: 'Panamá para Ecuatorianos 2026: Visa, Residencia y Inversión Inmobiliaria',
-  description: 'Guía completa para ecuatorianos. Ambos países usan USD. Visa Friendly Nations, seguridad, costo de vida, e inversión en bienes raíces. La alternativa a la inestabilidad política en Ecuador.',
-  keywords: 'panama para ecuatorianos, vivir en panama ecuador, emigrar a panama ecuador, invertir en panama ecuador, visa friendly nations ecuador',
+  title: 'Guía Panamá para Ecuatorianos 2026: Visa, Costos, Residencia',
+  description: 'Ecuatorianos emigrando a Panamá. Opciones de visa, costos, residencia.',
+  keywords: 'panama, para',
+  alternates: {
+    canonical: 'https://panamarealestatesale.com/en/blog/panama-para-ecuatorianos-guia-2026',
+    languages: {
+      'en': 'https://panamarealestatesale.com/en/blog/panama-para-ecuatorianos-guia-2026',
+      'es': 'https://panamarealestatesale.com/es/blog/panama-para-ecuatorianos-guia-2026',
+      'pt': 'https://panamarealestatesale.com/pt/blog/panama-para-ecuatorianos-guia-2026',
+      'de': 'https://panamarealestatesale.com/de/blog/panama-para-ecuatorianos-guia-2026',
+    },
+  },
   openGraph: {
-    title: 'Panamá para Ecuatorianos 2026: Visa, Residencia y Inversión Inmobiliaria',
-    description: 'Ecuador es Friendly Nation. Ambos usan USD. Panamá ofrece estabilidad política, seguridad, y oportunidades que Ecuador no tiene actualmente.',
-    url: '/es/blog/panama-para-ecuatorianos-guia-2026',
+    title: 'Guía Panamá para Ecuatorianos 2026: Visa, Costos, Residencia',
+    description: 'Ecuatorianos emigrando a Panamá. Opciones de visa, costos, residencia.',
     type: 'article',
+    url: 'https://panamarealestatesale.com/en/blog/panama-para-ecuatorianos-guia-2026',
+    images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Guía Panamá para Ecuatorianos 2026: Visa, Costos, Residencia' }],
+    locale: 'en_US',
+    siteName: 'VIP Expats Panama',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Guía Panamá para Ecuatorianos 2026: Visa, Costos, Residencia',
+    description: 'Ecuatorianos emigrando a Panamá. Opciones de visa, costos, residencia.',
+    images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
   },
 };
 

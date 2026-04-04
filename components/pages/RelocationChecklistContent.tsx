@@ -233,7 +233,7 @@ const RelocationChecklistContent: React.FC = () => {
                     <p className="text-xl text-slate-500 mb-16 font-medium leading-relaxed">
                         Don't risk your move on a missing paper. Get the full verified 2026 checklist and a 1-on-1 legal review.
                     </p>
-                    <Link href={`/${lang}/contacto`} className="px-8 py-4 bg-white text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
+                    <Link href={`/${lang}/contacto`} className="px-8 py-4 bg-white text-brand-950 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
                         Talk to a Document Expert
                     </Link>
                 </div>

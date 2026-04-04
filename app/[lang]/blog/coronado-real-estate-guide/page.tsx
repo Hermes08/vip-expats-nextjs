@@ -3,20 +3,32 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, MapPin, DollarSign, TrendingUp, Home } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Coronado Real Estate Guide 2026 | Panama Beach Property & Investment',
-    description:
-        'The definitive guide to Coronado real estate in Panama. Property prices, rental yields, neighborhoods, and why Coronado is Panama\'s premier expat beach community for investors and retirees.',
-    keywords:
-        'coronado real estate panama, coronado beach property, buy property coronado panama, coronado panama investment, coronado expat community, panama beach real estate 2026',
+    title: 'Coronado Real Estate 2026: Prices, Beach Living, Investment Guide',
+    description: 'Coronado real estate. Beach properties, prices, lifestyle, buying guide, investment opportunities.',
+    keywords: 'Coronado real estate, Coronado Panama, Coronado properties, beach homes Panama, Coronado investment',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/coronado-real-estate-guide',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/coronado-real-estate-guide',
+            'es': 'https://panamarealestatesale.com/es/blog/coronado-real-estate-guide',
+            'pt': 'https://panamarealestatesale.com/pt/blog/coronado-real-estate-guide',
+            'de': 'https://panamarealestatesale.com/de/blog/coronado-real-estate-guide',
+        },
     },
     openGraph: {
-        title: 'Coronado Real Estate Guide 2026 | Panama Beach Property & Investment',
-        description:
-            'Everything you need to know about buying or investing in Coronado, Panama — prices, yields, neighborhoods, and the expat lifestyle.',
+        title: 'Coronado Real Estate 2026: Prices, Beach Living, Investment Guide',
+        description: 'Coronado real estate. Beach properties, prices, lifestyle, buying guide, investment opportunities.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/coronado-real-estate-guide',
+        images: [{ url: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80', width: 1200, height: 630, alt: 'Coronado beach Panama' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Coronado Real Estate 2026: Prices, Beach Living, Investment Guide',
+        description: 'Coronado real estate. Beach properties, prices, lifestyle, buying guide, investment opportunities.',
+        images: ['https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80'],
     },
 };
 

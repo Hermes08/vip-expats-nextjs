@@ -3,20 +3,32 @@ import Link from 'next/link';
 import { DollarSign, Send, TrendingDown, AlertCircle, CheckCircle, HelpCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Sending Money To and From Panama 2026: Wire Transfers, Apps & Best Rates',
-    description:
-        'Best ways to send money to Panama: Wise, bank wires, Western Union, PayPal. SWIFT codes, fees, timing. Receiving international transfers in Panama. Panama payment apps.',
-    keywords:
-        'wire transfer panama, send money panama, international transfer panama, panama banking, remit money panama, best rates panama transfers, SWIFT panama',
+    title: 'Send Money to Panama 2026: Wire Transfer, Apps, Lowest Fees',
+    description: 'Send money to Panama. Wire transfers, international apps, exchange rates, lowest fees, remittance options.',
+    keywords: 'send money to Panama, wire transfer Panama, remit to Panama, money transfer apps',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/sending-money-panama-wire-transfer',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/sending-money-panama-wire-transfer',
+            'es': 'https://panamarealestatesale.com/es/blog/sending-money-panama-wire-transfer',
+            'pt': 'https://panamarealestatesale.com/pt/blog/sending-money-panama-wire-transfer',
+            'de': 'https://panamarealestatesale.com/de/blog/sending-money-panama-wire-transfer',
+        },
     },
     openGraph: {
-        title: 'Sending Money To and From Panama 2026: Wire Transfers, Apps & Best Rates',
-        description:
-            'Complete guide to international money transfers to/from Panama, fees, best platforms, and banking details.',
+        title: 'Send Money to Panama 2026: Wire Transfer, Apps, Lowest Fees',
+        description: 'Send money to Panama. Wire transfers, international apps, exchange rates, lowest fees, remittance options.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/sending-money-panama-wire-transfer',
+        images: [{ url: 'https://images.unsplash.com/photo-1606603715578-f1ca91e98b90?w=1200&q=80', width: 1200, height: 630, alt: 'Money transfer' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Send Money to Panama 2026: Wire Transfer, Apps, Lowest Fees',
+        description: 'Send money to Panama. Wire transfers, international apps, exchange rates, lowest fees, remittance options.',
+        images: ['https://images.unsplash.com/photo-1606603715578-f1ca91e98b90?w=1200&q=80'],
     },
 };
 

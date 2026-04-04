@@ -14,20 +14,32 @@ const communityCostData = [
 ];
 
 export const metadata: Metadata = {
-    title: 'Best Panama Retirement Communities for Expats 2026 | Gated & Active Living',
-    description:
-        'Discover the top retirement communities in Panama for 2026. From Boquete mountain retreats to Coronado beach communities — gated, secure, English-speaking expat havens.',
-    keywords:
-        'panama retirement community, best retirement communities panama, gated communities panama, expat retirement panama, boquete retirement, coronado retirement community, panama pensionado',
+    title: 'Retirement Communities Panama 2026: Best Places, Costs, Guide',
+    description: 'Retirement communities in Panama. Best developments, amenities, costs, retirement lifestyle.',
+    keywords: 'retirement communities Panama, retirement homes Panama, retirement living Panama, pensionado visa',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/panama-retirement-communities',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-retirement-communities',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-retirement-communities',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-retirement-communities',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-retirement-communities',
+        },
     },
     openGraph: {
-        title: 'Best Panama Retirement Communities for Expats 2026 | Gated & Active Living',
-        description:
-            'Complete guide to Panama\'s top retirement communities. Boquete, Coronado, El Valle, Panama City — compare lifestyle, cost, and amenities.',
+        title: 'Retirement Communities Panama 2026: Best Places, Costs, Guide',
+        description: 'Retirement communities in Panama. Best developments, amenities, costs, retirement lifestyle.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/panama-retirement-communities',
+        images: [{ url: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1200&q=80', width: 1200, height: 630, alt: 'Retirement community' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Retirement Communities Panama 2026: Best Places, Costs, Guide',
+        description: 'Retirement communities in Panama. Best developments, amenities, costs, retirement lifestyle.',
+        images: ['https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1200&q=80'],
     },
 };
 

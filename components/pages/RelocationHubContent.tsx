@@ -414,7 +414,7 @@ const RelocationHubContent: React.FC = () => {
                                         <Star size={14} /> VIP Integration
                                     </li>
                                 </ul>
-                                <Link href={`/${lang}/relocation/legal/checklist`} className="w-full block py-4 bg-white text-white text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all">
+                                <Link href={`/${lang}/relocation/legal/checklist`} className="w-full block py-4 bg-white text-brand-950 text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all">
                                     Download Checklist
                                 </Link>
                             </div>

@@ -17,19 +17,33 @@ import {
 
 
 export const metadata: Metadata = {
-  title: 'Panama for Digital Nomads 2026: Visa, Tax, Internet & Where to Base',
-  description: 'The complete guide to being a digital nomad in Panama. Visa options, tax implications, internet quality, co-working spaces, neighborhoods, and monthly budgets.',
-  keywords: 'panama digital nomads, working remotely panama, panama expats, panama coworking, panama visa remote workers',
-  alternates: {
-    canonical: 'https://panamarealestatesale.com/blog/panama-for-digital-nomads-2026',
-  },
-  openGraph: {
-    title: 'Panama for Digital Nomads 2026: Complete Guide',
-    description: 'Why Panama is the ideal base for digital nomads: 0% foreign income tax, USD economy, 180-day visa, excellent internet, and low cost of living.',
-    type: 'article',
-    url: 'https://panamarealestatesale.com/blog/panama-for-digital-nomads-2026',
-    siteName: 'VIP Expats Panama Real Estate',
-  },
+    title: 'Panama for Digital Nomads 2026: Visas, Internet, Cost of Living',
+    description: 'Digital nomads in Panama. Visa options, internet quality, co-working spaces, costs, lifestyle.',
+    keywords: 'digital nomads Panama, nomad visa Panama, digital nomad cost of living, working in Panama remote',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/panama-for-digital-nomads-2026',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-for-digital-nomads-2026',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-for-digital-nomads-2026',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-for-digital-nomads-2026',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-for-digital-nomads-2026',
+        },
+    },
+    openGraph: {
+        title: 'Panama for Digital Nomads 2026: Visas, Internet, Cost of Living',
+        description: 'Digital nomads in Panama. Visa options, internet quality, co-working spaces, costs, lifestyle.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/panama-for-digital-nomads-2026',
+        images: [{ url: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80', width: 1200, height: 630, alt: 'Digital nomad in Panama' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama for Digital Nomads 2026: Visas, Internet, Cost of Living',
+        description: 'Digital nomads in Panama. Visa options, internet quality, co-working spaces, costs, lifestyle.',
+        images: ['https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80'],
+    },
 };
 
 const budgetData = [

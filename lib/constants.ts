@@ -1906,15 +1906,21 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'panama-real-estate-investment-lifestyle-2026',
     title: {
       en: 'Panama Real Estate 2026: Investment, Lifestyle & Retirement Guide',
-      es: 'Bienes Raíces en Panamá 2026: Guía de Inversión, Estilo de Vida y Jubilación'
+      es: 'Bienes Raíces en Panamá 2026: Guía de Inversión, Estilo de Vida y Jubilación',
+      pt: 'Imóveis no Panamá 2026: Guia de Investimento, Estilo de Vida e Aposentadoria',
+      de: 'Panama Immobilien 2026: Anlage-, Lebensstil- und Rentenleitfaden'
     },
     excerpt: {
       en: 'The definitive 2026 guide to Panama real estate. Explore high-yield investment opportunities and the luxury expat lifestyle.',
-      es: 'La guía definitiva 2026 de bienes raíces en Panamá. Explore oportunidades de inversión de alto rendimiento y el estilo de vida de lujo.'
+      es: 'La guía definitiva 2026 de bienes raíces en Panamá. Explore oportunidades de inversión de alto rendimiento y el estilo de vida de lujo.',
+      pt: 'O guia definitivo de 2026 para imóveis no Panamá. Explore oportunidades de investimento de alto rendimento e estilo de vida luxuoso.',
+      de: 'Der definitive Leitfaden 2026 für Panama-Immobilien. Erkunden Sie hochrentable Anlagemöglichkeiten und den luxuriösen Expat-Lebensstil.'
     },
     content: {
       en: 'In an era of global volatility, Panama stands as a fortress of stability. Discover why 2026 is the year to secure your future in the tropics.',
-      es: 'En una era de volatilidad global, Panamá se erige como una fortaleza de estabilidad. Descubra por qué 2026 es el año para asegurar su futuro.'
+      es: 'En una era de volatilidad global, Panamá se erige como una fortaleza de estabilidad. Descubra por qué 2026 es el año para asegurar su futuro.',
+      pt: 'Em uma era de volatilidade global, o Panamá é uma fortaleza de estabilidade. Descubra por que 2026 é o ano para garantir seu futuro nos trópicos.',
+      de: 'In einer Zeit globaler Volatilität steht Panama als Festung der Stabilität. Entdecken Sie, warum 2026 das Jahr ist, um Ihre Zukunft in den Tropen zu sichern.'
     },
     date: 'March 15, 2026',
     image: 'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=800&q=80',
@@ -1925,15 +1931,21 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'panama-investment-opportunities',
     title: {
       en: 'Panama Real Estate Investment Opportunities 2026',
-      es: 'Oportunidades de Inversión Inmobiliaria en Panamá 2026'
+      es: 'Oportunidades de Inversión Inmobiliaria en Panamá 2026',
+      pt: 'Oportunidades de Investimento Imobiliário no Panamá 2026',
+      de: 'Panama Immobilieninvestitionsmöglichkeiten 2026'
     },
     excerpt: {
       en: 'Discover why sophisticated investors are moving capital into Panama\'s stable, dollarized property market this year.',
-      es: 'Descubra por qué los inversores sofisticados están moviendo capital al estable mercado inmobiliario dolarizado de Panamá este año.'
+      es: 'Descubra por qué los inversores sofisticados están moviendo capital al estable mercado inmobiliario dolarizado de Panamá este año.',
+      pt: 'Descubra por que os investidores sofisticados estão movendo capital para o mercado imobiliário estável e dolarizado do Panamá este ano.',
+      de: 'Entdecken Sie, warum anspruchsvolle Investoren dieses Jahr Kapital auf Panamas stabilen, dollarisierten Immobilienmarkt verlagern.'
     },
     content: {
       en: 'Explore the best Panama real estate investment opportunities for 2026. From beachfront properties to Panama City luxury, learn why expats choose Panama for retirement and lifestyle.',
-      es: 'Explore las mejores oportunidades de inversión en bienes raíces en Panamá para 2026. Desde propiedades frente al mar hasta el lujo de la Ciudad de Panamá.'
+      es: 'Explore las mejores oportunidades de inversión en bienes raíces en Panamá para 2026. Desde propiedades frente al mar hasta el lujo de la Ciudad de Panamá.',
+      pt: 'Explore as melhores oportunidades de investimento imobiliário no Panamá para 2026. De propriedades à beira-mar ao luxo da Cidade do Panamá.',
+      de: 'Erkunden Sie die besten Immobilieninvestitionsmöglichkeiten in Panama für 2026. Von Strandgrundstücken bis zum Luxus von Panama City.'
     },
     date: 'March 9, 2026',
     image: 'https://images.unsplash.com/photo-1594818379496-da1e345b0ded?w=800&q=80',
@@ -1944,15 +1956,21 @@ export const BLOG_POSTS: BlogPost[] = [
     slug: 'panama-real-estate-beachfront-retirement',
     title: {
       en: 'Beachfront Living & Retirement: The Panama Lifestyle Guide',
-      es: 'Vida Frente al Mar y Jubilación: Guía del Estilo de Vida en Panamá'
+      es: 'Vida Frente al Mar y Jubilación: Guía del Estilo de Vida en Panamá',
+      pt: 'Vida à Beira-Mar e Aposentadoria: Guia de Estilo de Vida no Panamá',
+      de: 'Strandleben & Rente: Der Panama-Lebensstil-Leitfaden'
     },
     excerpt: {
       en: 'Beyond the investment: Why thousands of expats choose the turquoise waters of Panama for their next chapter.',
-      es: 'Más allá de la inversión: por qué miles de expatriados eligen las aguas turquesas de Panamá para su próximo capítulo.'
+      es: 'Más allá de la inversión: por qué miles de expatriados eligen las aguas turquesas de Panamá para su próximo capítulo.',
+      pt: 'Além do investimento: por que milhares de expatriados escolhem as águas turquesas do Panamá para seu próximo capítulo.',
+      de: 'Jenseits der Investition: Warum Tausende von Expats die türkisblauen Gewässer Panamas für ihr nächstes Kapitel wählen.'
     },
     content: {
       en: 'The ultimate guide to beachfront living and retirement in Panama. Discover top coastal communities, expat lifestyle benefits, and investment-grade real estate.',
-      es: 'La guía definitiva para la vida frente al mar y la jubilación en Panamá. Descubra las mejores comunidades costeras y beneficios para expatriados.'
+      es: 'La guía definitiva para la vida frente al mar y la jubilación en Panamá. Descubra las mejores comunidades costeras y beneficios para expatriados.',
+      pt: 'O guia definitivo para vida à beira-mar e aposentadoria no Panamá. Descubra as melhores comunidades costeiras e benefícios para expatriados.',
+      de: 'Der ultimative Leitfaden für Strandleben und Rente in Panama. Entdecken Sie die besten Küstengemeinden und Expat-Lebensstil-Vorteile.'
     },
     date: 'March 9, 2026',
     image: 'https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?w=800&q=80',
@@ -1964,16 +1982,22 @@ export const BLOG_POSTS: BlogPost[] = [
     title: {
       en: 'Cost of Living: Panama vs. The United States (2026)',
       es: 'Costo de Vida: Panamá vs. Estados Unidos (2026)',
+      pt: 'Custo de Vida: Panamá vs. Estados Unidos (2026)',
+      de: 'Lebenshaltungskosten: Panama vs. Vereinigte Staaten (2026)',
       zh: '巴拿马与美国的生活成本比较 (2026)'
     },
     excerpt: {
       en: 'A detailed breakdown of why the American middle class is upgrading to the Panamanian elite class. Compare real costs of housing, healthcare, and lifestyle.',
       es: 'Un desglose detallado de por qué la clase media estadounidense se está actualizando a la clase élite panameña. Compare los costos reales de vivienda, atención médica y estilo de vida.',
+      pt: 'Um detalhamento de por que a classe média americana está se atualizando para a classe elite panamenha. Compare os custos reais de moradia, saúde e estilo de vida.',
+      de: 'Eine detaillierte Aufschlüsselung, warum die amerikanische Mittelklasse auf die panamaische Elite aufsteigt. Vergleichen Sie die realen Kosten für Wohnung, Gesundheitswesen und Lebensstil.',
       zh: '详细分析为什么美国中产阶级正在升级为巴拿马精英阶层。比较住房、医疗保健和生活方式的实际成本。'
     },
     content: {
       en: 'For decades, the American Dream required an American ZIP code. Today, the savvy investor knows that true financial freedom and a luxury lifestyle are found just a 2.5-hour flight south of Miami, in the Republic of Panama. See the full article for a detailed breakdown.',
       es: 'Durante décadas, el sueño americano requirió un código postal estadounidense. Hoy en día, el inversor inteligente sabe que la verdadera libertad financiera y un estilo de vida de lujo se encuentran a solo 2.5 horas de vuelo al sur de Miami, en Panamá. Lea el artículo completo para un desglose detallado.',
+      pt: 'Por décadas, o Sonho Americano exigiu um código postal americano. Hoje, o investidor astuto sabe que a verdadeira liberdade financeira e um estilo de vida luxuoso são encontrados a apenas 2,5 horas de voo ao sul de Miami, na República do Panamá. Veja o artigo completo para um detalhamento.',
+      de: 'Jahrzehntelang erforderte der Amerikanische Traum eine amerikanische Postleitzahl. Heute weiß der kluge Investor, dass finanzielle Freiheit und luxuriöser Lebensstil nur 2,5 Flugstunden südlich von Miami in der Republik Panama zu finden sind. Siehe den vollständigen Artikel für eine Aufschlüsselung.',
       zh: '几十年来，美国梦需要美国的邮政编码。今天，精明的投资者知道，真正的财务自由和奢华的生活方式只需从迈阿密向南飞行2.5小时，即可在巴拿马共和国实现。请参阅全文了解详细分析。'
     },
     date: 'March 8, 2026',
@@ -1987,16 +2011,22 @@ export const BLOG_POSTS: BlogPost[] = [
     title: {
       en: 'Boquete Real Estate Investment Guide 2026: Why Valle Escondido is the #1 Pick',
       es: 'Guía de Inversión Boquete 2026: Por qué Valle Escondido es la opción #1',
+      pt: 'Guia de Investimento Imobiliário Boquete 2026: Por que Valle Escondido é a melhor opção',
+      de: 'Boquete Immobilien-Investitionsleitfaden 2026: Warum Valle Escondido die beste Wahl ist',
       zh: '2026年博克特房地产投资指南'
     },
     excerpt: {
       en: 'An in-depth analysis of why Boquete Panama real estate continues to be the preferred choice for expats.',
       es: 'Un análisis profundo de por qué los bienes raíces en Boquete siguen siendo la opción preferida.',
+      pt: 'Uma análise aprofundada de por que os imóveis de Boquete continuam sendo a escolha preferida dos expatriados.',
+      de: 'Eine tiefgreifende Analyse, warum Boquete-Immobilien weiterhin die bevorzugte Wahl für Expats sind.',
       zh: '深入分析为什么博克特房地产继续成为外籍人士的首选。'
     },
     content: {
       en: `Boquete is no longer just a retirement haven; it has evolved into a high-yield investment destination...`,
       es: 'Boquete ya no es solo un refugio para el retiro; se ha convertido en un destino de inversión...',
+      pt: 'Boquete não é apenas um refúgio para aposentados; evoluiu para um destino de investimento de alto rendimento...',
+      de: 'Boquete ist nicht länger nur ein Altersruhesitz; es hat sich zu einem hochrentablen Anlageziel entwickelt...',
       zh: '博克特不再仅仅是退休避风港...'
     },
     date: 'March 15, 2025',
@@ -2009,11 +2039,15 @@ export const BLOG_POSTS: BlogPost[] = [
     title: {
       en: 'Expat Depression in Panama: The Unfiltered Truth (2026)',
       es: 'Depresión del Expatriado en Panamá: La Verdad Sin Filtros (2026)',
+      pt: 'Depressão de Expatriados no Panamá: A Verdade Sem Filtros (2026)',
+      de: 'Expat-Depression in Panama: Die ungefilterte Wahrheit (2026)',
       zh: '巴拿马的外籍人士抑郁症：过滤真相'
     },
     excerpt: {
       en: "The cultural transition to Panama isn't always palm trees and piña coladas. We dive into the psychological challenges and how to overcome the 'Expat Blues'.",
       es: "La transición cultural a Panamá no siempre es fácil. Analizamos los desafíos psicológicos y cómo superar la depresión del expatriado.",
+      pt: "A transição cultural para o Panamá nem sempre é de palmeiras e piña coladas. Mergulhamos nos desafios psicológicos e como superar a 'melancolia dos expatriados'.",
+      de: "Der kulturelle Übergang nach Panama ist nicht immer Palmen und Piña Coladas. Wir befassen uns mit den psychologischen Herausforderungen und wie man die \"Expat-Depression\" überwindet.",
       zh: '巴拿马的文化转型并非总是一帆风顺。'
     },
     content: {
@@ -2042,12 +2076,16 @@ export const BLOG_POSTS: BlogPost[] = [
     title: {
       en: 'Why Most Expats Leave Panama After 2 Years: The Critical Mistakes',
       es: 'Por qué la mayoría de los expatriados se van de Panamá después de 2 años',
+      pt: 'Por que a maioria dos expatriados deixa o Panamá após 2 anos: Os erros críticos',
+      de: 'Warum die meisten Expats Panama nach 2 Jahren verlassen: Die kritischen Fehler',
       zh: '为什么大多数外籍人士在2年后离开巴拿马'
     },
     excerpt: {
-      en: "Data shows a high 'churn' rate at the 24-month mark. Learn the top reasons why expat dreams fail and how to ensure you are the exception.",
-      es: "Los datos muestran una alta tasa de abandono a los 24 meses. Conozca las razones de este fracaso y cómo evitarlo.",
-      zh: '数据显24个月的高“流失”率。'
+      en: “Data shows a high 'churn' rate at the 24-month mark. Learn the top reasons why expat dreams fail and how to ensure you are the exception.”,
+      es: “Los datos muestran una alta tasa de abandono a los 24 meses. Conozca las razones de este fracaso y cómo evitarlo.”,
+      pt: “Os dados mostram uma alta taxa de 'rotatividade' aos 24 meses. Conheça os principais motivos pelos quais os sonhos de expatriados fracassam.”,
+      de: “Daten zeigen eine hohe Abwanderungsquote in der 24-Monats-Marke. Erfahren Sie die Hauptgründe, warum Expat-Träume fehlschlagen.”,
+      zh: '数据显24个月的高”流失”率。'
     },
     content: {
       en: `The "Two-Year Itch" is a well-documented phenomenon in the Panama expat community. Many move here with grand visions, only to find themselves packings bags 24 months later. Why? 
@@ -2075,11 +2113,15 @@ export const BLOG_POSTS: BlogPost[] = [
     title: {
       en: 'What to Do If Your Panama Visa Gets Rejected (2026 Emergency Guide)',
       es: 'Qué hacer si su visa de Panamá es rechazada (Guía de Emergencia 2026)',
+      pt: 'O que fazer se seu visto do Panamá for rejeitado (Guia de Emergência 2026)',
+      de: 'Was Sie tun können, wenn Ihr Panama-Visum abgelehnt wird (2026 Notfallleitfaden)',
       zh: '如果您的巴拿马签证被拒绝该怎么办'
     },
     excerpt: {
       en: "A visa denial isn't the end of the road. Learn the top reasons for rejection and the exact legal steps to appeal or re-apply.",
       es: "Una denegación de visa no es el fin. Conozca las razones del rechazo y los pasos legales para apelar o volver a solicitar.",
+      pt: "Uma negação de visto não é o fim da estrada. Conheça as principais razões para rejeição e os passos legais exatos para apelar ou reapresentar candidatura.",
+      de: "Eine Visumsverweigerung ist nicht das Ende der Straße. Erfahren Sie die Hauptgründe für die Ablehnung und die genauen rechtlichen Schritte zur Berufung oder Neuantrag.",
       zh: '签证被拒并不意味着路走到了尽头。'
     },
     content: {
@@ -2109,11 +2151,15 @@ export const BLOG_POSTS: BlogPost[] = [
     title: {
       en: 'Safety in Panama 2026: Real Data vs Expat Rumors',
       es: 'Seguridad en Panamá 2026: Datos Reales vs Rumores de Expatriados',
+      pt: 'Segurança no Panamá 2026: Dados Reais vs Rumores de Expatriados',
+      de: 'Sicherheit in Panama 2026: Echte Daten vs. Expat-Gerüchte',
       zh: '2026年巴拿马的安全：真实数据与外籍人士传闻'
     },
     excerpt: {
       en: "Is Panama safe for families and solo travelers? We analyze the 2026 crime statistics and compare reality to the 'Facebook Group' rumors.",
       es: "¿Es Panamá seguro? Analizamos las estadísticas de criminalidad de 2026 y comparamos la realidad con los rumores.",
+      pt: "O Panamá é seguro para famílias e viajantes solitários? Analisamos as estatísticas de criminalidade de 2026 e comparamos a realidade com os rumores.",
+      de: "Ist Panama sicher für Familien und Einzelreisende? Wir analysieren die Kriminalstatistiken von 2026 und vergleichen die Realität mit den \"Facebook-Gruppen\"-Gerüchten.",
       zh: '巴拿马对家庭和独行旅客安全吗？'
     },
     content: {
@@ -2144,11 +2190,15 @@ export const BLOG_POSTS: BlogPost[] = [
     title: {
       en: 'How to Buy Property in Panama: Complete 2026 Guide for Foreigners',
       es: 'Cómo Comprar Propiedad en Panamá: Guía Completa 2026 para Extranjeros',
+      pt: 'Como Comprar Propriedade no Panamá: Guia Completo 2026 para Estrangeiros',
+      de: 'Wie man in Panama Immobilien kauft: Vollständiger Leitfaden 2026 für Ausländer',
       zh: '巴拿马房产购买：2026年外国投资者完整指南'
     },
     excerpt: {
       en: 'Everything you need to know about the legal process, closing costs, and title due diligence when buying real estate in Panama.',
       es: 'Todo lo que necesita saber sobre el proceso legal, costos de cierre y debida diligencia al comprar en Panamá.',
+      pt: 'Tudo o que você precisa saber sobre o processo legal, custos de fechamento e devida diligência ao comprar imóveis no Panamá.',
+      de: 'Alles, was Sie über das rechtliche Verfahren, Schließungskosten und die Prüfung des Eigentums beim Kauf von Immobilien in Panama wissen müssen.',
       zh: '关于巴拿马房地产购买法律程序、交易成本和产权尽职调查的所有信息。'
     },
     content: {
@@ -2177,11 +2227,15 @@ export const BLOG_POSTS: BlogPost[] = [
     title: {
       en: '10 Best Places to Live in Panama for Expats (2026 Rankings)',
       es: 'Los 10 Mejores Lugares para Vivir en Panamá para Expatriados (Ranking 2026)',
+      pt: '10 Melhores Lugares para Viver no Panamá para Expatriados (Ranking 2026)',
+      de: '10 beste Orte zum Leben in Panama für Expats (Ranking 2026)',
       zh: '2026年巴拿马10大最适合外籍人士居住的地方'
     },
     excerpt: {
       en: 'From the skyscrapers of Panama City to the mountains of Boquete, we rank the best expat communities based on cost of living, safety, and amenities.',
       es: 'Desde los rascacielos de la ciudad hasta las montañas de Boquete, clasificamos las mejores comunidades de expatriados.',
+      pt: 'Dos arranha-céus da Cidade do Panamá às montanhas de Boquete, classificamos as melhores comunidades de expatriados.',
+      de: 'Von den Wolkenkratzern von Panama City bis zu den Bergen von Boquete - wir ordnen die besten Expat-Gemeinden.',
       zh: '从巴拿马城的摩天大楼到博克特的山脉，我们根据生活成本、安全性和设施对最佳外籍人士社区进行了排名。'
     },
     content: {

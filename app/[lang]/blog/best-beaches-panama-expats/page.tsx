@@ -3,28 +3,33 @@ import Link from 'next/link';
 import { ArrowRight, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Best Beaches in Panama for Expats 2026 | Beachfront Property Guide',
-  description:
-    'Discover the top beaches in Panama for expats — Coronado, Bocas del Toro, and Pedasi. Compare costs, lifestyle, real estate prices, and which beach town is right for your retirement or investment.',
-  keywords: [
-    'best beaches panama expats',
-    'panama beachfront property',
-    'coronado beach panama',
-    'bocas del toro real estate',
-    'pedasi panama expats',
-    'retire near beach panama',
-    'panama beach towns',
-  ].join(', '),
-  alternates: {
-    canonical: 'https://panamarealestatesale.com/en/blog/best-beaches-panama-expats',
-  },
-  openGraph: {
-    title: 'Best Beaches in Panama for Expats 2026',
-    description:
-      'Coronado vs Bocas del Toro vs Pedasi — compare Panama beach towns for expat living, real estate prices, and investment yield.',
-    type: 'article',
-    url: 'https://panamarealestatesale.com/en/blog/best-beaches-panama-expats',
-  },
+    title: 'Best Beaches in Panama 2026: Where Expats Relax, Weekend Guide',
+    description: 'Best beaches in Panama. Bocas del Toro, Coronado, San Blas. Beach towns for expats, water activities.',
+    keywords: 'beaches Panama, best beaches Panama, Panama beaches expats, Bocas del Toro, Coronado beach',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/best-beaches-panama-expats',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/best-beaches-panama-expats',
+            'es': 'https://panamarealestatesale.com/es/blog/best-beaches-panama-expats',
+            'pt': 'https://panamarealestatesale.com/pt/blog/best-beaches-panama-expats',
+            'de': 'https://panamarealestatesale.com/de/blog/best-beaches-panama-expats',
+        },
+    },
+    openGraph: {
+        title: 'Best Beaches in Panama 2026: Where Expats Relax, Weekend Guide',
+        description: 'Best beaches in Panama. Bocas del Toro, Coronado, San Blas. Beach towns for expats, water activities.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/best-beaches-panama-expats',
+        images: [{ url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80', width: 1200, height: 630, alt: 'Beach in Panama' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Best Beaches in Panama 2026: Where Expats Relax, Weekend Guide',
+        description: 'Best beaches in Panama. Bocas del Toro, Coronado, San Blas. Beach towns for expats, water activities.',
+        images: ['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80'],
+    },
 };
 
 const beaches = [

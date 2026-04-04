@@ -12,20 +12,32 @@ const bocasPriceData = [
 ];
 
 export const metadata: Metadata = {
-    title: 'Bocas del Toro Real Estate 2026 | Beachfront Prices, Islands & Buyer\'s Guide',
-    description:
-        'The definitive guide to buying real estate in Bocas del Toro, Panama. Overwater bungalows, island land, beachfront homes — prices from $80K. Updated for 2026.',
-    keywords:
-        'bocas del toro real estate, bocas del toro property, buy property bocas panama, bocas islands real estate, bocas investment 2026, caribbean real estate panama',
+    title: 'Bocas del Toro Real Estate 2026: Property Prices, Guide, Investment',
+    description: 'Bocas del Toro real estate. Island properties, prices, investment opportunities, lifestyle, buying guide.',
+    keywords: 'Bocas del Toro real estate, property Bocas del Toro, investment Bocas, houses for sale Bocas',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/bocas-del-toro-real-estate',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/bocas-del-toro-real-estate',
+            'es': 'https://panamarealestatesale.com/es/blog/bocas-del-toro-real-estate',
+            'pt': 'https://panamarealestatesale.com/pt/blog/bocas-del-toro-real-estate',
+            'de': 'https://panamarealestatesale.com/de/blog/bocas-del-toro-real-estate',
+        },
     },
     openGraph: {
-        title: 'Bocas del Toro Real Estate 2026 | Beachfront Prices, Islands & Buyer\'s Guide',
-        description:
-            'The Caribbean archipelago like nowhere else in Panama. Island property, overwater homes, Rights of Possession land — complete buyer\'s guide.',
+        title: 'Bocas del Toro Real Estate 2026: Property Prices, Guide, Investment',
+        description: 'Bocas del Toro real estate. Island properties, prices, investment opportunities, lifestyle, buying guide.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/bocas-del-toro-real-estate',
+        images: [{ url: 'https://images.unsplash.com/photo-1473093295203-cad00010cb78?w=1200&q=80', width: 1200, height: 630, alt: 'Bocas del Toro' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Bocas del Toro Real Estate 2026: Property Prices, Guide, Investment',
+        description: 'Bocas del Toro real estate. Island properties, prices, investment opportunities, lifestyle, buying guide.',
+        images: ['https://images.unsplash.com/photo-1473093295203-cad00010cb78?w=1200&q=80'],
     },
 };
 

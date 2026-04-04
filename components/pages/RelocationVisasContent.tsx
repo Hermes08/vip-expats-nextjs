@@ -160,7 +160,7 @@ const RelocationVisasContent: React.FC = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <Link href={visa.path} className="w-full py-5 bg-white text-white text-center font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-GOLD hover:text-brand-950 transition-all relative z-10">
+                            <Link href={visa.path} className="w-full py-5 bg-white text-brand-950 text-center font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-GOLD hover:text-brand-950 transition-all relative z-10">
                                 View Requirements
                             </Link>
                         </div>

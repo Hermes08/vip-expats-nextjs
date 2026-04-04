@@ -3,21 +3,33 @@ import Link from 'next/link';
 import { ArrowRight, MapPin, Cloud, Sun, Droplets } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Panama Weather Guide 2026: Best Time to Visit by Region',
-  description:
-    'Complete Panama weather guide — dry vs rainy season, best months to visit, climate by region (Panama City, Boquete, Bocas del Toro, Coronado). Plan your perfect Panama trip.',
-  keywords:
-    'panama weather, best time to visit panama, panama climate, panama rainy season, panama dry season',
-  alternates: {
-    canonical: 'https://panamarealestatesale.com/en/blog/panama-weather-guide',
-  },
-  openGraph: {
-    title: 'Panama Weather Guide 2026: Best Time to Visit by Region',
-    description:
-      'Dry season vs rainy season, climate by region, monthly breakdown. Everything you need to know about Panama weather.',
-    type: 'article',
-    url: 'https://panamarealestatesale.com/en/blog/panama-weather-guide',
-  },
+    title: 'Panama Weather Guide 2026: Climate, Seasons, Temperature Info',
+    description: 'Panama weather guide. Rainy season, dry season, temperature, humidity, best time to visit.',
+    keywords: 'Panama weather, Panama climate, Panama rainy season, Panama temperature, weather in Panama',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/panama-weather-guide',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-weather-guide',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-weather-guide',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-weather-guide',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-weather-guide',
+        },
+    },
+    openGraph: {
+        title: 'Panama Weather Guide 2026: Climate, Seasons, Temperature Info',
+        description: 'Panama weather guide. Rainy season, dry season, temperature, humidity, best time to visit.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/panama-weather-guide',
+        images: [{ url: 'https://images.unsplash.com/photo-1456496169494-63e8e1c5aaa3?w=1200&q=80', width: 1200, height: 630, alt: 'Panama weather' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama Weather Guide 2026: Climate, Seasons, Temperature Info',
+        description: 'Panama weather guide. Rainy season, dry season, temperature, humidity, best time to visit.',
+        images: ['https://images.unsplash.com/photo-1456496169494-63e8e1c5aaa3?w=1200&q=80'],
+    },
 };
 
 const climateCards = [

@@ -8,9 +8,33 @@ interface PageProps {
 }
 
 export const metadata = {
-  title: 'How to Start a Business in Panama as a Foreigner 2026: SA, Foundation & Legal Guide',
-  description: 'Complete guide to starting a business in Panama as a foreigner. Learn about Sociedad Anónima, company formation, costs, and hiring employees.',
-  keywords: 'start business Panama foreigners, Panama company formation, Sociedad Anónima Panama',
+  title: 'Start Business in Panama 2026: Registration, Taxes, Visas',
+  description: 'Start a business in Panama. Company registration, taxes, entrepreneur visa, business types, costs.',
+  keywords: 'start business Panama, business registration Panama, business visa Panama, corporation Panama',
+  alternates: {
+    canonical: 'https://panamarealestatesale.com/en/blog/start-business-panama-foreigners',
+    languages: {
+      'en': 'https://panamarealestatesale.com/en/blog/start-business-panama-foreigners',
+      'es': 'https://panamarealestatesale.com/es/blog/start-business-panama-foreigners',
+      'pt': 'https://panamarealestatesale.com/pt/blog/start-business-panama-foreigners',
+      'de': 'https://panamarealestatesale.com/de/blog/start-business-panama-foreigners',
+    },
+  },
+  openGraph: {
+    title: 'Start Business in Panama 2026: Registration, Taxes, Visas',
+    description: 'Start a business in Panama. Company registration, taxes, entrepreneur visa, business types, costs.',
+    type: 'article',
+    url: 'https://panamarealestatesale.com/en/blog/start-business-panama-foreigners',
+    images: [{ url: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80', width: 1200, height: 630, alt: 'Start Business in Panama 2026: Registration, Taxes, Visas' }],
+    locale: 'en_US',
+    siteName: 'VIP Expats Panama',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Start Business in Panama 2026: Registration, Taxes, Visas',
+    description: 'Start a business in Panama. Company registration, taxes, entrepreneur visa, business types, costs.',
+    images: ['https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80'],
+  },
 };
 
 export default function StartBusinessPanamaPage({ params: { lang } }: PageProps) {

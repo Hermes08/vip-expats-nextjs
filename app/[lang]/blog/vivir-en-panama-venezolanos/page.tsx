@@ -4,14 +4,32 @@ import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponent
 
 
 export const metadata = {
-  title: 'Vivir en Panamá siendo Venezolano 2026: Visa, Trabajo y Bienes Raíces',
-  description: 'Guía completa para venezolanos que desean mudarse a Panamá en 2026. Opciones de visa, oportunidades de trabajo, comunidad venezolana y bienes raíces. Más de 100,000 venezolanos viven en Panamá.',
-  keywords: 'vivir en panama venezolanos, mudarse a panama desde venezuela, venezuela panama 2026, visa para venezolanos, trabajo en panama venezolanos',
+  title: 'Vivir en Panamá: Guía para Venezolanos 2026',
+  description: 'Venezolanos emigrando a Panamá. Opciones de visa, costos, comunidad venezolana.',
+  keywords: 'vivir',
+  alternates: {
+    canonical: 'https://panamarealestatesale.com/en/blog/vivir-en-panama-venezolanos',
+    languages: {
+      'en': 'https://panamarealestatesale.com/en/blog/vivir-en-panama-venezolanos',
+      'es': 'https://panamarealestatesale.com/es/blog/vivir-en-panama-venezolanos',
+      'pt': 'https://panamarealestatesale.com/pt/blog/vivir-en-panama-venezolanos',
+      'de': 'https://panamarealestatesale.com/de/blog/vivir-en-panama-venezolanos',
+    },
+  },
   openGraph: {
-    title: 'Vivir en Panamá siendo Venezolano 2026: Visa, Trabajo y Bienes Raíces',
-    description: 'Descubre cómo mudarte a Panamá desde Venezuela. Opciones de visa, empleo y inversión en bienes raíces para la comunidad venezolana.',
-    url: '/es/blog/vivir-en-panama-venezolanos',
+    title: 'Vivir en Panamá: Guía para Venezolanos 2026',
+    description: 'Venezolanos emigrando a Panamá. Opciones de visa, costos, comunidad venezolana.',
     type: 'article',
+    url: 'https://panamarealestatesale.com/en/blog/vivir-en-panama-venezolanos',
+    images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Vivir en Panamá: Guía para Venezolanos 2026' }],
+    locale: 'en_US',
+    siteName: 'VIP Expats Panama',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Vivir en Panamá: Guía para Venezolanos 2026',
+    description: 'Venezolanos emigrando a Panamá. Opciones de visa, costos, comunidad venezolana.',
+    images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
   },
 };
 

@@ -4,10 +4,34 @@ import { ArrowRight, Waves, Palmtree, Umbrella, Coffee, Heart } from 'lucide-rea
 import BlogPostSchema from '@/components/seo/BlogPostSchema';
 
 export const metadata: Metadata = {
-    title: 'Panama Beachfront Properties & Retirement Lifestyle Guide 2026',
-    description: 'The ultimate guide to beachfront living and retirement in Panama. Discover top coastal communities, expat lifestyle benefits, and investment-grade real estate.',
-    keywords: 'panama beachfront properties, retire in panama, panama expat lifestyle, panama real estate, beachfront retirement, luxury lifestyle panama',
-};
+    title: 'Beachfront Real Estate Panama 2026: Retirement Living Guide',
+    description: 'Beachfront properties Panama. Coronado, Bocas, San Blas. Retirement living, investment.',
+    keywords: 'beachfront Panama, beachfront real estate, beach properties, Panama coastal living',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/panama-real-estate-beachfront-retirement',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-real-estate-beachfront-retirement',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-real-estate-beachfront-retirement',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-real-estate-beachfront-retirement',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-real-estate-beachfront-retirement',
+        },
+    },
+    openGraph: {
+        title: 'Beachfront Real Estate Panama 2026: Retirement Living Guide',
+        description: 'Beachfront properties Panama. Coronado, Bocas, San Blas. Retirement living, investment.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/panama-real-estate-beachfront-retirement',
+        images: [{ url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80', width: 1200, height: 630, alt: 'Beachfront property' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Beachfront Real Estate Panama 2026: Retirement Living Guide',
+        description: 'Beachfront properties Panama. Coronado, Bocas, San Blas. Retirement living, investment.',
+        images: ['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80'],
+    },
+};;
 
 const lifestylePillars = [
     {

@@ -12,20 +12,32 @@ const boquetePriceData = [
 ];
 
 export const metadata: Metadata = {
-    title: 'Boquete Panama Real Estate 2026 | Prices, Neighborhoods & Buyer\'s Guide',
-    description:
-        'Complete guide to buying real estate in Boquete, Panama in 2026. Explore property prices ($120K–$800K), best neighborhoods, rental yields, and why Boquete is the #1 expat mountain town.',
-    keywords:
-        'boquete panama real estate, boquete property prices, buy property boquete, boquete expat community, boquete panama homes for sale, boquete real estate investment 2026',
+    title: 'Boquete Real Estate 2026: Prices, Properties, Investment Guide',
+    description: 'Boquete real estate. Cool mountain properties, prices, investment, lifestyle, buying process.',
+    keywords: 'Boquete real estate, property Boquete, Boquete houses for sale, Boquete investment, Boquete property',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/boquete-panama-real-estate',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/boquete-panama-real-estate',
+            'es': 'https://panamarealestatesale.com/es/blog/boquete-panama-real-estate',
+            'pt': 'https://panamarealestatesale.com/pt/blog/boquete-panama-real-estate',
+            'de': 'https://panamarealestatesale.com/de/blog/boquete-panama-real-estate',
+        },
     },
     openGraph: {
-        title: 'Boquete Panama Real Estate 2026 | Prices, Neighborhoods & Buyer\'s Guide',
-        description:
-            'The definitive guide to Boquete real estate. Property prices, best neighborhoods, rental yields, and expat lifestyle in Panama\'s premier mountain community.',
+        title: 'Boquete Real Estate 2026: Prices, Properties, Investment Guide',
+        description: 'Boquete real estate. Cool mountain properties, prices, investment, lifestyle, buying process.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/boquete-panama-real-estate',
+        images: [{ url: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1200&q=80', width: 1200, height: 630, alt: 'Boquete Panama' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Boquete Real Estate 2026: Prices, Properties, Investment Guide',
+        description: 'Boquete real estate. Cool mountain properties, prices, investment, lifestyle, buying process.',
+        images: ['https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1200&q=80'],
     },
 };
 

@@ -5,20 +5,32 @@ import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponent
 
 
 export const metadata: Metadata = {
-    title: 'How to Open a Bank Account in Panama as a Non-Resident 2026: Complete Guide',
-    description:
-        'Step-by-step guide to opening a Panama bank account as a foreigner. Which banks accept non-residents, required documents, USD accounts, wire transfers, fees, and insider tips for approval.',
-    keywords:
-        'panama bank account non-resident, open bank account panama foreigner, panama banking for expats, usd bank account panama, panama wire transfers',
+    title: 'Panama Banking for Non-Residents 2026: Open Account, Services Guide',
+    description: 'Banking in Panama as non-resident. Open bank account, services, digital banking, minimum deposits.',
+    keywords: 'Panama banking, bank account Panama, banking services Panama, non-resident banking Panama',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/panama-banking-non-residents-guide',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-banking-non-residents-guide',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-banking-non-residents-guide',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-banking-non-residents-guide',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-banking-non-residents-guide',
+        },
     },
     openGraph: {
-        title: 'How to Open a Bank Account in Panama as Non-Resident 2026',
-        description:
-            'Complete guide to opening a Panama bank account for foreigners — which banks accept non-residents, required documents, fees, and tips for getting approved.',
+        title: 'Panama Banking for Non-Residents 2026: Open Account, Services Guide',
+        description: 'Banking in Panama as non-resident. Open bank account, services, digital banking, minimum deposits.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/panama-banking-non-residents-guide',
+        images: [{ url: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=1200&q=80', width: 1200, height: 630, alt: 'Banking in Panama' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama Banking for Non-Residents 2026: Open Account, Services Guide',
+        description: 'Banking in Panama as non-resident. Open bank account, services, digital banking, minimum deposits.',
+        images: ['https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=1200&q=80'],
     },
 };
 

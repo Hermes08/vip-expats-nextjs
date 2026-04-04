@@ -3,20 +3,32 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, DollarSign, Heart, Sun, Globe, TrendingUp } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Retire in Panama 2026: The Complete Guide for Americans & Expats',
-    description:
-        'Thinking about retiring in Panama? Costs, visa options, healthcare, best locations, and why thousands of Americans choose Panama over Mexico or Costa Rica every year.',
-    keywords:
-        'retire in panama, retiring in panama, panama retirement, pensionado visa panama, best place to retire panama, retire abroad panama 2026',
+    title: 'Retire in Panama 2026: Complete Guide, Visas, Costs, Lifestyle',
+    description: 'Complete retirement guide to Panama. Pensionado visa, costs, healthcare, lifestyle, real estate.',
+    keywords: 'retire in Panama, Panama retirement guide, pensionado visa Panama, retirement in Panama',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/retire-in-panama',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/retire-in-panama',
+            'es': 'https://panamarealestatesale.com/es/blog/retire-in-panama',
+            'pt': 'https://panamarealestatesale.com/pt/blog/retire-in-panama',
+            'de': 'https://panamarealestatesale.com/de/blog/retire-in-panama',
+        },
     },
     openGraph: {
-        title: 'Retire in Panama 2026: The Complete Guide for Americans & Expats',
-        description:
-            'Everything you need to know about retiring in Panama — costs, visas, healthcare, and the best locations for American retirees.',
+        title: 'Retire in Panama 2026: Complete Guide, Visas, Costs, Lifestyle',
+        description: 'Complete retirement guide to Panama. Pensionado visa, costs, healthcare, lifestyle, real estate.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/retire-in-panama',
+        images: [{ url: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&q=80', width: 1200, height: 630, alt: 'Retirement in Panama' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Retire in Panama 2026: Complete Guide, Visas, Costs, Lifestyle',
+        description: 'Complete retirement guide to Panama. Pensionado visa, costs, healthcare, lifestyle, real estate.',
+        images: ['https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&q=80'],
     },
 };
 

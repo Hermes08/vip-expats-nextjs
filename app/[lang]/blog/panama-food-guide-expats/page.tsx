@@ -8,19 +8,34 @@ interface PageProps {
   params: { lang: string };
 }
 
-export const metadata: Metadata = {
-  title: 'Panama Food Guide for Expats | VIP Expats',
-  description:
-    'Discover the best Panamanian cuisine, restaurants, and food experiences for expats. Complete guide to local dishes, neighborhoods, and food budget.',
-  keywords: [
-    'Panama food guide',
-    'Panamanian cuisine',
-    'best restaurants Panama',
-    'food for expats',
-    'where to eat Panama',
-    'Panama dishes',
-    'local food Panama',
-  ],
+export const metadata = {
+  title: 'Panama Food Guide 2026: Local Cuisine, Restaurants, Expat Eating',
+  description: 'Panama food guide. Local dishes, best restaurants, grocery costs, street food, cuisine tips for expats.',
+  keywords: 'Panama food, Panama cuisine, Panama restaurants, Panamanian dishes, food in Panama',
+  alternates: {
+    canonical: 'https://panamarealestatesale.com/en/blog/panama-food-guide-expats',
+    languages: {
+      'en': 'https://panamarealestatesale.com/en/blog/panama-food-guide-expats',
+      'es': 'https://panamarealestatesale.com/es/blog/panama-food-guide-expats',
+      'pt': 'https://panamarealestatesale.com/pt/blog/panama-food-guide-expats',
+      'de': 'https://panamarealestatesale.com/de/blog/panama-food-guide-expats',
+    },
+  },
+  openGraph: {
+    title: 'Panama Food Guide 2026: Local Cuisine, Restaurants, Expat Eating',
+    description: 'Panama food guide. Local dishes, best restaurants, grocery costs, street food, cuisine tips for expats.',
+    type: 'article',
+    url: 'https://panamarealestatesale.com/en/blog/panama-food-guide-expats',
+    images: [{ url: 'https://images.unsplash.com/photo-1504674900941-0026f8d9138d?w=1200&q=80', width: 1200, height: 630, alt: 'Panama Food Guide 2026: Local Cuisine, Restaurants, Expat Eating' }],
+    locale: 'en_US',
+    siteName: 'VIP Expats Panama',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Panama Food Guide 2026: Local Cuisine, Restaurants, Expat Eating',
+    description: 'Panama food guide. Local dishes, best restaurants, grocery costs, street food, cuisine tips for expats.',
+    images: ['https://images.unsplash.com/photo-1504674900941-0026f8d9138d?w=1200&q=80'],
+  },
 };
 
 export default function PanamaFoodGuidePage({ params }: PageProps) {

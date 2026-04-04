@@ -245,7 +245,7 @@ const RelocationWorkPermitContent: React.FC = () => {
                         </p>
                     </div>
                     <div>
-                        <Link href={`/${lang}/contacto`} className="px-12 py-6 bg-white text-white font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-50 transition-all shadow-2xl inline-flex items-center gap-4">
+                        <Link href={`/${lang}/contacto`} className="px-12 py-6 bg-white text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-50 transition-all shadow-2xl inline-flex items-center gap-4">
                             Consult Work Expert <Zap size={16} className="text-brand-GOLD" />
                         </Link>
                     </div>

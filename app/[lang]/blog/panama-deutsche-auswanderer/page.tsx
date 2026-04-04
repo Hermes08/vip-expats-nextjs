@@ -15,20 +15,32 @@ const deutschlandVsPanamaData = [
 ];
 
 export const metadata: Metadata = {
-    title: 'Auswandern nach Panama 2026: Der komplette Leitfaden für Deutsche',
-    description:
-        'Alles was Deutsche über das Auswandern nach Panama wissen müssen: Immobilien, Visa, Steuern, Gesundheitsversorgung und Lebenshaltungskosten 2026. Mit Pensionado-Visa schon ab $1.000/Monat Rente.',
-    keywords:
-        'auswandern panama, auswandern nach panama, immobilien panama, leben in panama, panama steuern, panama pensionado visum, panama für deutsche, immobilien kaufen panama',
+    title: 'Panama für Deutsche Auswanderer: Visa, Kosten, Lebensqualität',
+    description: 'Deutsche Auswanderer in Panama. Visa-Optionen, Kosten, Lebensstil, Pensionierungsvisa, Gemeinschaft.',
+    keywords: 'Deutsche in Panama, Auswandern nach Panama, Panama Visa Deutsch, Pensionistenvisa Panama',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/panama-deutsche-auswanderer',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-deutsche-auswanderer',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-deutsche-auswanderer',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-deutsche-auswanderer',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-deutsche-auswanderer',
+        },
     },
     openGraph: {
-        title: 'Auswandern nach Panama 2026: Der komplette Leitfaden für Deutsche',
-        description:
-            'Alles was Deutsche über das Auswandern nach Panama wissen müssen: Immobilien, Visa, Steuern, Gesundheitsversorgung und Lebenshaltungskosten 2026.',
+        title: 'Panama für Deutsche Auswanderer: Visa, Kosten, Lebensqualität',
+        description: 'Deutsche Auswanderer in Panama. Visa-Optionen, Kosten, Lebensstil, Pensionierungsvisa, Gemeinschaft.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/panama-deutsche-auswanderer',
+        images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Deutsche in Panama' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama für Deutsche Auswanderer: Visa, Kosten, Lebensqualität',
+        description: 'Deutsche Auswanderer in Panama. Visa-Optionen, Kosten, Lebensstil, Pensionierungsvisa, Gemeinschaft.',
+        images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
 

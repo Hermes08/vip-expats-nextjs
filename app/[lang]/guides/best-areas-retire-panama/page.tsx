@@ -510,7 +510,7 @@ const BestAreasRetirePanamaPage = () => {
             <Magnetic strength={0.4}>
               <Link
                 href={`/${lang}/propiedades`}
-                className="btn-3d btn-3d-gold bg-white text-white px-14 py-7 rounded-full font-black uppercase tracking-[0.3em] text-xs"
+                className="btn-3d btn-3d-gold bg-white text-brand-950 px-14 py-7 rounded-full font-black uppercase tracking-[0.3em] text-xs"
               >
                 {content.ctaProperties} <ArrowRight className="inline ml-2" size={14} />
               </Link>

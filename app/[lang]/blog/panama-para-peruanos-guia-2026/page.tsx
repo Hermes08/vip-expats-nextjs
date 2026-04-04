@@ -4,14 +4,32 @@ import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponent
 
 
 export const metadata = {
-  title: 'Panamá para Peruanos 2026: Residencia, Inversión y Cómo Emigrar',
-  description: 'Guía completa para peruanos que desean vivir, trabajar e invertir en Panamá. Visa Friendly Nations, comparación de costos Lima vs Panamá, seguridad, e inmigración paso a paso.',
-  keywords: 'panama para peruanos, emigrar a panama peru, vivir en panama peruanos, invertir en panama peru, visa friendly nations peru',
+  title: 'Guía Panamá para Peruanos 2026: Visa, Costos, Residencia',
+  description: 'Peruanos emigrando a Panamá. Opciones de visa, costos, residencia.',
+  keywords: 'panama, para',
+  alternates: {
+    canonical: 'https://panamarealestatesale.com/en/blog/panama-para-peruanos-guia-2026',
+    languages: {
+      'en': 'https://panamarealestatesale.com/en/blog/panama-para-peruanos-guia-2026',
+      'es': 'https://panamarealestatesale.com/es/blog/panama-para-peruanos-guia-2026',
+      'pt': 'https://panamarealestatesale.com/pt/blog/panama-para-peruanos-guia-2026',
+      'de': 'https://panamarealestatesale.com/de/blog/panama-para-peruanos-guia-2026',
+    },
+  },
   openGraph: {
-    title: 'Panamá para Peruanos 2026: Residencia, Inversión y Cómo Emigrar',
-    description: 'Perú es Friendly Nation. Acceso rápido a residencia permanente. Panamá ofrece estabilidad, dólares USD, y oportunidades que Perú no tiene.',
-    url: '/es/blog/panama-para-peruanos-guia-2026',
+    title: 'Guía Panamá para Peruanos 2026: Visa, Costos, Residencia',
+    description: 'Peruanos emigrando a Panamá. Opciones de visa, costos, residencia.',
     type: 'article',
+    url: 'https://panamarealestatesale.com/en/blog/panama-para-peruanos-guia-2026',
+    images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Guía Panamá para Peruanos 2026: Visa, Costos, Residencia' }],
+    locale: 'en_US',
+    siteName: 'VIP Expats Panama',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Guía Panamá para Peruanos 2026: Visa, Costos, Residencia',
+    description: 'Peruanos emigrando a Panamá. Opciones de visa, costos, residencia.',
+    images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
   },
 };
 

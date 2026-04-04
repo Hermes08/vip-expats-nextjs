@@ -1,4 +1,4 @@
-export type Language = 'en' | 'es' | 'de' | 'zh';
+export type Language = 'en' | 'es' | 'pt' | 'de' | 'zh';
 
 // ── Shared enums used by both Projects and Listings ───────────────────────────
 export type Zone = 'Beach' | 'Mountain' | 'Caribbean' | 'City' | 'Interior';

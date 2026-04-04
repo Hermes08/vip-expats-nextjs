@@ -54,7 +54,7 @@ const MediaGallery: React.FC = () => {
                     >
                         <RefreshCw size={18} className={loading ? 'animate-spin' : ''} />
                     </button>
-                    <label className={`cursor-pointer bg-brand-50 text-white px-4 py-2 rounded-lg font-bold text-sm tracking-wide hover:bg-brand-100 transition-all flex items-center gap-2 ${uploading ? 'opacity-50 pointer-events-none' : ''}`}>
+                    <label className={`cursor-pointer bg-brand-TEAL text-white px-4 py-2 rounded-lg font-bold text-sm tracking-wide hover:bg-brand-950 transition-all flex items-center gap-2 ${uploading ? 'opacity-50 pointer-events-none' : ''}`}>
                         {uploading ? <Loader2 size={16} className="animate-spin" /> : 'Upload New'}
                         <input type="file" accept="image/*" className="hidden" onChange={handleFileUpload} />
                     </label>

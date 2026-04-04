@@ -13,20 +13,32 @@ const monthlyCostData = [
 ];
 
 export const metadata: Metadata = {
-    title: 'Panama vs Costa Rica Retirement 2026: Honest Side-by-Side Comparison',
-    description:
-        'Panama vs Costa Rica for retirement — a frank comparison of cost of living, visas, healthcare, safety, and lifestyle. Updated 2026 data from expats who have lived in both.',
-    keywords:
-        'panama vs costa rica retirement, panama or costa rica for expats, retire panama vs costa rica, costa rica vs panama cost of living, panama pensionado vs costa rica pensionado, best country retire central america 2026',
+    title: 'Panama vs Costa Rica Retirement 2026: Which is Better? Comparison',
+    description: 'Compare Panama vs Costa Rica for retirement. Costs, lifestyle, visas, real estate, climate.',
+    keywords: 'Panama vs Costa Rica, retirement Panama Costa Rica, Panama vs Costa Rica cost of living',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-costa-rica-retirement',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-vs-costa-rica-retirement',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-vs-costa-rica-retirement',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-vs-costa-rica-retirement',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-vs-costa-rica-retirement',
+        },
     },
     openGraph: {
-        title: 'Panama vs Costa Rica Retirement 2026: Honest Side-by-Side Comparison',
-        description:
-            'A frank comparison of cost of living, visas, healthcare, safety, and lifestyle between Panama and Costa Rica for retirees.',
+        title: 'Panama vs Costa Rica Retirement 2026: Which is Better? Comparison',
+        description: 'Compare Panama vs Costa Rica for retirement. Costs, lifestyle, visas, real estate, climate.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/panama-vs-costa-rica-retirement',
+        images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Comparison' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama vs Costa Rica Retirement 2026: Which is Better? Comparison',
+        description: 'Compare Panama vs Costa Rica for retirement. Costs, lifestyle, visas, real estate, climate.',
+        images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
 
@@ -96,6 +108,23 @@ export default async function PanamaVsCostaRicaRetirementPage({ params }: { para
     await params;
 
     return (
+    <>
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Panama vs Costa Rica Retirement 2026: Which is Better? Comparison',
+            description: 'Compare Panama vs Costa Rica for retirement. Costs, lifestyle, visas, real estate, climate.',
+            image: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80',
+            datePublished: '2026-02-01',
+            dateModified: '2026-04-04',
+            author: { '@type': 'Organization', name: 'VIP Expats Panama', url: 'https://panamarealestatesale.com' },
+            publisher: { '@type': 'Organization', name: 'VIP Expats Panama', logo: { '@type': 'ImageObject', url: 'https://panamarealestatesale.com/og-image.jpg' } },
+          }),
+        }}
+      />
         <article className="bg-white min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">

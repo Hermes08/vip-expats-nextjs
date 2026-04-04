@@ -4,14 +4,32 @@ import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponent
 
 
 export const metadata = {
-  title: 'Panamá para Argentinos 2026: Escape del Peso, Visa Friendly Nations y Bienes Raíces',
-  description: 'Guía completa para argentinos que buscan escapar de la inflación. Panamá en USD, Visa Friendly Nations, inversión inmobiliaria, y cómo obtener residencia permanente desde Argentina.',
-  keywords: 'panama para argentinos, vivir en panama argentina, mudarse a panama argentina, escape inflacion argentina, invertir en panama argentinos',
+  title: 'Guía Panamá para Argentinos 2026: Visa, Costos, Vida',
+  description: 'Argentinos emigrando a Panamá. Opciones de visa, costos, estilo de vida.',
+  keywords: 'panama, para',
+  alternates: {
+    canonical: 'https://panamarealestatesale.com/en/blog/panama-para-argentinos-guia-2026',
+    languages: {
+      'en': 'https://panamarealestatesale.com/en/blog/panama-para-argentinos-guia-2026',
+      'es': 'https://panamarealestatesale.com/es/blog/panama-para-argentinos-guia-2026',
+      'pt': 'https://panamarealestatesale.com/pt/blog/panama-para-argentinos-guia-2026',
+      'de': 'https://panamarealestatesale.com/de/blog/panama-para-argentinos-guia-2026',
+    },
+  },
   openGraph: {
-    title: 'Panamá para Argentinos 2026: Escape del Peso, Visa Friendly Nations y Bienes Raíces',
-    description: 'Inflación argentina insostenible. Panamá opera en USD. Guía completa para argentinos: residencia, bienes raíces, trabajo, fiscalidad.',
-    url: '/es/blog/panama-para-argentinos-guia-2026',
+    title: 'Guía Panamá para Argentinos 2026: Visa, Costos, Vida',
+    description: 'Argentinos emigrando a Panamá. Opciones de visa, costos, estilo de vida.',
     type: 'article',
+    url: 'https://panamarealestatesale.com/en/blog/panama-para-argentinos-guia-2026',
+    images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Guía Panamá para Argentinos 2026: Visa, Costos, Vida' }],
+    locale: 'en_US',
+    siteName: 'VIP Expats Panama',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Guía Panamá para Argentinos 2026: Visa, Costos, Vida',
+    description: 'Argentinos emigrando a Panamá. Opciones de visa, costos, estilo de vida.',
+    images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
   },
 };
 

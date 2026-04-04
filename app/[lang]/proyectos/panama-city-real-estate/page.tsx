@@ -108,7 +108,7 @@ export default function PanamaCityRealEstatePage() {
                                     </div>
                                 </li>
                             </ul>
-                            <Link href="/contacto" className="w-full block py-5 bg-white text-white text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all shadow-xl">
+                            <Link href="/contacto" className="w-full block py-5 bg-white text-brand-950 text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 hover:text-brand-900 transition-all shadow-xl">
                                 Request Private Portfolio
                             </Link>
                         </div>

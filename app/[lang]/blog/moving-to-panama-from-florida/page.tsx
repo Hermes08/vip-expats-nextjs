@@ -15,20 +15,32 @@ const floridaVsPanamaData = [
 ];
 
 export const metadata: Metadata = {
-    title: 'Moving to Panama from Florida 2026: Complete Relocation Guide',
-    description:
-        'Everything Florida residents need to know before moving to Panama. Direct flights from Miami & Fort Lauderdale, cost comparison, visas, healthcare, and where Floridians love to live.',
-    keywords:
-        'moving to panama from florida, relocate to panama from florida, panama retirement florida, florida to panama expat, panama vs florida cost of living, direct flights florida to panama',
+    title: 'Move from Florida to Panama 2026: Visa, Costs, Relocation Guide',
+    description: 'Floridians moving to Panama. Visa options, residency, costs, healthcare, taxes, relocation tips.',
+    keywords: 'Florida to Panama, moving from Florida to Panama, Panama pensionado visa, expats from Florida',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-florida',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-florida',
+            'es': 'https://panamarealestatesale.com/es/blog/moving-to-panama-from-florida',
+            'pt': 'https://panamarealestatesale.com/pt/blog/moving-to-panama-from-florida',
+            'de': 'https://panamarealestatesale.com/de/blog/moving-to-panama-from-florida',
+        },
     },
     openGraph: {
-        title: 'Moving to Panama from Florida 2026: Complete Relocation Guide',
-        description:
-            'Everything Florida residents need to know before moving to Panama. Direct flights, cost comparison, visas, healthcare, and where Floridians love to live.',
+        title: 'Move from Florida to Panama 2026: Visa, Costs, Relocation Guide',
+        description: 'Floridians moving to Panama. Visa options, residency, costs, healthcare, taxes, relocation tips.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-florida',
+        images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Moving from Florida' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Move from Florida to Panama 2026: Visa, Costs, Relocation Guide',
+        description: 'Floridians moving to Panama. Visa options, residency, costs, healthcare, taxes, relocation tips.',
+        images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
 

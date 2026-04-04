@@ -3,20 +3,32 @@ import Link from 'next/link';
 import { Cloud, Sun, Droplets, MapPin, AlertCircle, HelpCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Panama Weather 2026: Month-by-Month Guide to Dry Season, Rain & What to Expect',
-    description:
-        'Complete guide to Panama\'s climate: dry season (verano), rainy season (invierno), regional differences, humidity, what to pack. Best months to visit or move.',
-    keywords:
-        'panama weather, panama rainy season, panama climate, panama dry season, panama weather expats, invierno panama, verano panama, panama humidity',
+    title: 'Panama Weather & Rainy Season 2026: When to Go, What to Pack',
+    description: 'Panama weather guide. Rainy season timing, temperature, humidity, packing tips. When is the best time to visit.',
+    keywords: 'Panama weather, rainy season Panama, Panama climate, when to visit Panama',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/panama-weather-rainy-season-guide',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-weather-rainy-season-guide',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-weather-rainy-season-guide',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-weather-rainy-season-guide',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-weather-rainy-season-guide',
+        },
     },
     openGraph: {
-        title: 'Panama Weather 2026: Month-by-Month Guide to Dry Season, Rain & What to Expect',
-        description:
-            'Learn about Panama\'s climate patterns, seasonal changes, and what weather to expect in different regions and months.',
+        title: 'Panama Weather & Rainy Season 2026: When to Go, What to Pack',
+        description: 'Panama weather guide. Rainy season timing, temperature, humidity, packing tips. When is the best time to visit.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/panama-weather-rainy-season-guide',
+        images: [{ url: 'https://images.unsplash.com/photo-1456496169494-63e8e1c5aaa3?w=1200&q=80', width: 1200, height: 630, alt: 'Panama rain and weather' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama Weather & Rainy Season 2026: When to Go, What to Pack',
+        description: 'Panama weather guide. Rainy season timing, temperature, humidity, packing tips. When is the best time to visit.',
+        images: ['https://images.unsplash.com/photo-1456496169494-63e8e1c5aaa3?w=1200&q=80'],
     },
 };
 

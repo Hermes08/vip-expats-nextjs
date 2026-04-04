@@ -24,20 +24,32 @@ const vsPanamaChartData = [
 ];
 
 export const metadata: Metadata = {
-    title: 'Panama Cost of Living 2026: Real Monthly Budget Breakdown by City',
-    description:
-        'Real Panama cost of living data for 2026. Monthly budgets for Panama City, Boquete, and Coronado — rent, food, healthcare, transport. A couple can live comfortably for $1,800-$2,500/month.',
-    keywords:
-        'panama cost of living 2026, panama monthly expenses, how much to live in panama, panama city cost of living, boquete cost of living, coronado cost of living panama',
+    title: 'Panama Cost of Living 2026: Housing, Food, Utilities, Full Breakdown',
+    description: 'Complete Panama cost of living breakdown 2026. Housing, food, utilities, healthcare, transportation.',
+    keywords: 'Panama cost of living, Panama expenses, living costs Panama, Panama budget, Panama affordability',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/panama-cost-of-living-2026',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-cost-of-living-2026',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-cost-of-living-2026',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-cost-of-living-2026',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-cost-of-living-2026',
+        },
     },
     openGraph: {
-        title: 'Panama Cost of Living 2026: Complete Monthly Budget by City',
-        description:
-            'Definitive cost of living guide for Panama. Real numbers for Panama City, Boquete, Coronado. Single vs couple, frugal to luxury budgets.',
+        title: 'Panama Cost of Living 2026: Housing, Food, Utilities, Full Breakdown',
+        description: 'Complete Panama cost of living breakdown 2026. Housing, food, utilities, healthcare, transportation.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/panama-cost-of-living-2026',
+        images: [{ url: 'https://images.unsplash.com/photo-1579621970563-cbf4b0aab9c5?w=1200&q=80', width: 1200, height: 630, alt: 'Cost of living breakdown' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama Cost of Living 2026: Housing, Food, Utilities, Full Breakdown',
+        description: 'Complete Panama cost of living breakdown 2026. Housing, food, utilities, healthcare, transportation.',
+        images: ['https://images.unsplash.com/photo-1579621970563-cbf4b0aab9c5?w=1200&q=80'],
     },
 };
 
@@ -228,6 +240,23 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
     await params;
 
     return (
+    <>
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Panama Cost of Living 2026: Housing, Food, Utilities, Full Breakdown',
+            description: 'Complete Panama cost of living breakdown 2026. Housing, food, utilities, healthcare, transportation.',
+            image: 'https://images.unsplash.com/photo-1579621970563-cbf4b0aab9c5?w=1200&q=80',
+            datePublished: '2026-01-01',
+            dateModified: '2026-04-04',
+            author: { '@type': 'Organization', name: 'VIP Expats Panama', url: 'https://panamarealestatesale.com' },
+            publisher: { '@type': 'Organization', name: 'VIP Expats Panama', logo: { '@type': 'ImageObject', url: 'https://panamarealestatesale.com/og-image.jpg' } },
+          }),
+        }}
+      />
         <article className="bg-white min-h-screen pt-28 pb-20">
             {/* Hero */}
             <section className="bg-brand-50 py-28 relative overflow-hidden">

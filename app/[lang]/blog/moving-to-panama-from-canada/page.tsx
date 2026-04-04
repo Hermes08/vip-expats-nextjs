@@ -10,9 +10,33 @@ interface PageProps {
 }
 
 export const metadata = {
-  title: 'Moving to Panama from Canada 2026: Visa, Taxes, Healthcare & Why Canadians Are Choosing Panama',
-  description: 'Complete guide for Canadian expats moving to Panama. Learn about Pensionado and Friendly Nations visas, tax implications, healthcare, costs, and the Canadian community.',
-  keywords: 'moving to panama from canada, retire panama canada, panama canada expats',
+  title: 'Move from Canada to Panama 2026: Visa, Residency, Costs Guide',
+  description: 'Canadians moving to Panama. Visas, residency options, shipping, costs, healthcare, retirement programs.',
+  keywords: 'Canada to Panama, Canadians in Panama, Panama pensionado visa, move to Panama',
+  alternates: {
+    canonical: 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-canada',
+    languages: {
+      'en': 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-canada',
+      'es': 'https://panamarealestatesale.com/es/blog/moving-to-panama-from-canada',
+      'pt': 'https://panamarealestatesale.com/pt/blog/moving-to-panama-from-canada',
+      'de': 'https://panamarealestatesale.com/de/blog/moving-to-panama-from-canada',
+    },
+  },
+  openGraph: {
+    title: 'Move from Canada to Panama 2026: Visa, Residency, Costs Guide',
+    description: 'Canadians moving to Panama. Visas, residency options, shipping, costs, healthcare, retirement programs.',
+    type: 'article',
+    url: 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-canada',
+    images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Move from Canada to Panama 2026: Visa, Residency, Costs Guide' }],
+    locale: 'en_US',
+    siteName: 'VIP Expats Panama',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Move from Canada to Panama 2026: Visa, Residency, Costs Guide',
+    description: 'Canadians moving to Panama. Visas, residency options, shipping, costs, healthcare, retirement programs.',
+    images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
+  },
 };
 
 export default function MoveTopanamaPanamaPanamFromCanadaPage({ params: { lang } }: PageProps) {

@@ -20,14 +20,33 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Things to Do in Panama: The Ultimate 2026 Bucket List | Panama Real Estate Sale',
-  description: 'Discover the best things to do in Panama — from Panama City skyline tours and Bocas del Toro beaches to Boquete coffee farms and Azuero Peninsula surf. Complete 2026 guide.',
-  keywords: 'things to do in panama, panama activities, panama travel guide, panama bucket list, panama tourism 2026, panama destinations',
-  openGraph: {
-    title: 'Things to Do in Panama: The Ultimate 2026 Bucket List',
-    description: 'Explore Panama top attractions and experiences for every traveler type.',
-    type: 'article',
-  },
+    title: 'Things to Do in Panama 2026: Activities, Tourist Attractions',
+    description: 'Things to do in Panama. Panama City attractions, Bocas, Boquete, adventure activities, tourism.',
+    keywords: 'things to do in Panama, Panama attractions, Panama City tourism, Panama activities, visit Panama',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/things-to-do-in-panama',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/things-to-do-in-panama',
+            'es': 'https://panamarealestatesale.com/es/blog/things-to-do-in-panama',
+            'pt': 'https://panamarealestatesale.com/pt/blog/things-to-do-in-panama',
+            'de': 'https://panamarealestatesale.com/de/blog/things-to-do-in-panama',
+        },
+    },
+    openGraph: {
+        title: 'Things to Do in Panama 2026: Activities, Tourist Attractions',
+        description: 'Things to do in Panama. Panama City attractions, Bocas, Boquete, adventure activities, tourism.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/things-to-do-in-panama',
+        images: [{ url: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80', width: 1200, height: 630, alt: 'Panama attractions' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Things to Do in Panama 2026: Activities, Tourist Attractions',
+        description: 'Things to do in Panama. Panama City attractions, Bocas, Boquete, adventure activities, tourism.',
+        images: ['https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80'],
+    },
 };
 
 // Quick stats data

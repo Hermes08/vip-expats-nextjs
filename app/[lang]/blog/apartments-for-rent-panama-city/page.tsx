@@ -3,30 +3,33 @@ import Link from 'next/link';
 import { ArrowRight, Home, DollarSign, MapPin, Users, CheckCircle2, AlertCircle, Wifi, Zap, Droplet, Search } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Apartments for Rent in Panama City 2026 | Expat Rental Guide + Prices',
-  description:
-    'Complete guide to apartments for rent in Panama City. Compare neighborhoods (El Cangrejo $800–1,400/mo, Costa del Este $2,000–4,000/mo, Miraflores $700–1,000/mo), furnished vs unfurnished, lease tips for expats, and utilities.',
-  keywords: [
-    'apartments for rent in panama city panama',
-    'panama city apartments for rent',
-    'rent apartment panama',
-    'expat apartments panama city',
-    'rental apartments panama city',
-    'panama city apartments',
-    'furnished apartments panama',
-    'short term rental panama',
-    'apartment rental panama',
-  ].join(', '),
-  alternates: {
-    canonical: 'https://panamarealestatesale.com/en/blog/apartments-for-rent-panama-city',
-  },
-  openGraph: {
-    title: 'Apartments for Rent in Panama City 2026 | Expat Rental Guide + Prices',
-    description:
-      'Find apartments for rent in Panama City. Pricing by neighborhood, furnished options, lease contracts, and utilities guide for expats.',
-    type: 'article',
-    url: 'https://panamarealestatesale.com/en/blog/apartments-for-rent-panama-city',
-  },
+    title: 'Rent Apartments Panama City 2026: Best Neighborhoods, Costs, Guide',
+    description: 'Find apartments for rent in Panama City. Best neighborhoods, prices, how to search, lease terms for expats.',
+    keywords: 'apartments for rent Panama, apartment Panama City, rental apartments Panama, rent in Panama',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/apartments-for-rent-panama-city',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/apartments-for-rent-panama-city',
+            'es': 'https://panamarealestatesale.com/es/blog/apartments-for-rent-panama-city',
+            'pt': 'https://panamarealestatesale.com/pt/blog/apartments-for-rent-panama-city',
+            'de': 'https://panamarealestatesale.com/de/blog/apartments-for-rent-panama-city',
+        },
+    },
+    openGraph: {
+        title: 'Rent Apartments Panama City 2026: Best Neighborhoods, Costs, Guide',
+        description: 'Find apartments for rent in Panama City. Best neighborhoods, prices, how to search, lease terms for expats.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/apartments-for-rent-panama-city',
+        images: [{ url: 'https://images.unsplash.com/photo-1430077592969-5dbbbfddb1cd?w=1200&q=80', width: 1200, height: 630, alt: 'Apartment in Panama City' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Rent Apartments Panama City 2026: Best Neighborhoods, Costs, Guide',
+        description: 'Find apartments for rent in Panama City. Best neighborhoods, prices, how to search, lease terms for expats.',
+        images: ['https://images.unsplash.com/photo-1430077592969-5dbbbfddb1cd?w=1200&q=80'],
+    },
 };
 
 const neighborhoods = [

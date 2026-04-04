@@ -5,16 +5,32 @@ import { CostBarChart } from '@/components/three/ThreeComponents';
 
 
 export const metadata: Metadata = {
-    title: 'Panama vs Mexico for Retirement 2026: The Honest Data-Driven Comparison',
-    description: 'Compare Panama and Mexico for retirement. Analyze taxes, visas, healthcare, costs, and safety with real data. Discover why Panama\'s territorial tax system and Pensionado visa outshine Mexico.',
-    keywords: 'panama vs mexico retirement, retire in panama, retire in mexico, expat retirement comparison, panama pensionado visa, mexico residency',
-    alternates: { canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-mexico-retirement' },
+    title: 'Panama vs Mexico Retirement 2026: Which is Better? Full Comparison',
+    description: 'Compare Panama vs Mexico for retirement. Costs, lifestyle, visas, real estate, communities.',
+    keywords: 'Panama vs Mexico retirement, Mexico vs Panama cost of living, retire in Panama or Mexico',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-mexico-retirement',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-vs-mexico-retirement',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-vs-mexico-retirement',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-vs-mexico-retirement',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-vs-mexico-retirement',
+        },
+    },
     openGraph: {
-        title: 'Panama vs Mexico for Retirement 2026: The Honest Data-Driven Comparison',
-        description: 'Compare Panama and Mexico for retirement with real cost data, visa requirements, healthcare quality, and safety metrics.',
+        title: 'Panama vs Mexico Retirement 2026: Which is Better? Full Comparison',
+        description: 'Compare Panama vs Mexico for retirement. Costs, lifestyle, visas, real estate, communities.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/panama-vs-mexico-retirement',
-        images: [{ url: 'https://images.unsplash.com/photo-1502933691298-84fc14542831?w=1200&h=630', width: 1200, height: 630 }],
+        images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Comparison' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama vs Mexico Retirement 2026: Which is Better? Full Comparison',
+        description: 'Compare Panama vs Mexico for retirement. Costs, lifestyle, visas, real estate, communities.',
+        images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
 

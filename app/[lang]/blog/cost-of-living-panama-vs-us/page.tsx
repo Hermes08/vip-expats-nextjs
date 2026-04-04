@@ -5,10 +5,34 @@ import { ArrowRight, CheckCircle, TrendingDown, DollarSign, Home, HeartPulse } f
 import OrganizationSchema from '@/components/seo/OrganizationSchema';
 
 export const metadata: Metadata = {
-    title: 'Cost of Living in Panama vs US | 2026 Expat Guide',
-    description: 'Detailed breakdown of the cost of living in Panama compared to the US. Discover how to live a luxury lifestyle on a pensionado budget.',
-    keywords: 'cost of living panama, panama vs us cost of living, retire in panama budget, panama real estate prices, panama healthcare costs',
-};
+    title: 'Cost of Living Panama vs USA 2026: Comparison, Expenses',
+    description: 'Panama vs USA cost of living. Housing, food, healthcare costs. Why Panama is cheaper for expats.',
+    keywords: 'cost of living Panama vs USA, Panama cheaper than USA, living costs Panama, Panama expenses',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/cost-of-living-panama-vs-us',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/cost-of-living-panama-vs-us',
+            'es': 'https://panamarealestatesale.com/es/blog/cost-of-living-panama-vs-us',
+            'pt': 'https://panamarealestatesale.com/pt/blog/cost-of-living-panama-vs-us',
+            'de': 'https://panamarealestatesale.com/de/blog/cost-of-living-panama-vs-us',
+        },
+    },
+    openGraph: {
+        title: 'Cost of Living Panama vs USA 2026: Comparison, Expenses',
+        description: 'Panama vs USA cost of living. Housing, food, healthcare costs. Why Panama is cheaper for expats.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/cost-of-living-panama-vs-us',
+        images: [{ url: 'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1200&q=80', width: 1200, height: 630, alt: 'Cost comparison' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Cost of Living Panama vs USA 2026: Comparison, Expenses',
+        description: 'Panama vs USA cost of living. Housing, food, healthcare costs. Why Panama is cheaper for expats.',
+        images: ['https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1200&q=80'],
+    },
+};;
 
 export default function CostOfLivingArticle() {
     return (
@@ -55,16 +79,16 @@ export default function CostOfLivingArticle() {
                                     <li className="flex justify-between pb-2"><span>Transportation & Insurance</span> <span>$1,100</span></li>
                                 </ul>
                             </div>
-                            <div className="bg-brand-50 text-white p-8 rounded-2xl shadow-xl relative overflow-hidden">
+                            <div className="bg-brand-950 text-white p-8 rounded-2xl shadow-xl relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-brand-GOLD/20 rounded-full -mr-16 -mt-16 blur-xl"></div>
                                 <div className="text-brand-GOLD font-bold uppercase tracking-widest text-[10px] mb-2 relative z-10">Panama (Luxury Standard)</div>
-                                <div className="text-4xl font-black text-brand-950 mb-6 relative z-10">$3,200<span className="text-sm text-brand-400 font-medium">/mo</span></div>
-                                <ul className="space-y-4 text-sm font-medium text-brand-200 relative z-10">
-                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Oceanview Condo Rent</span> <span className="text-brand-950 font-bold">$1,500</span></li>
-                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Premium Local Health Insurance</span> <span className="text-brand-950 font-bold">$250</span></li>
-                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Groceries & Fine Dining</span> <span className="text-brand-950 font-bold">$800</span></li>
-                                    <li className="flex justify-between border-b border-brand-100 pb-2"><span>Utilities (A/C & Fiber Optic)</span> <span className="text-brand-950 font-bold">$150</span></li>
-                                    <li className="flex justify-between pb-2"><span>Transportation & Maid (1x/week)</span> <span className="text-brand-950 font-bold">$500</span></li>
+                                <div className="text-4xl font-black text-brand-50 mb-6 relative z-10">$3,200<span className="text-sm text-brand-100 font-medium">/mo</span></div>
+                                <ul className="space-y-4 text-sm font-medium text-brand-50 relative z-10">
+                                    <li className="flex justify-between border-b border-brand-700 pb-2"><span>Oceanview Condo Rent</span> <span className="text-brand-GOLD font-bold">$1,500</span></li>
+                                    <li className="flex justify-between border-b border-brand-700 pb-2"><span>Premium Local Health Insurance</span> <span className="text-brand-GOLD font-bold">$250</span></li>
+                                    <li className="flex justify-between border-b border-brand-700 pb-2"><span>Groceries & Fine Dining</span> <span className="text-brand-GOLD font-bold">$800</span></li>
+                                    <li className="flex justify-between border-b border-brand-700 pb-2"><span>Utilities (A/C & Fiber Optic)</span> <span className="text-brand-GOLD font-bold">$150</span></li>
+                                    <li className="flex justify-between pb-2"><span>Transportation & Maid (1x/week)</span> <span className="text-brand-GOLD font-bold">$500</span></li>
                                 </ul>
                             </div>
                         </div>

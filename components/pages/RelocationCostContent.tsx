@@ -165,7 +165,7 @@ const RelocationCostContent: React.FC = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <Link href={`/${lang}/contacto`} className="w-full block py-6 bg-white text-white text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all">
+                                <Link href={`/${lang}/contacto`} className="w-full block py-6 bg-white text-brand-950 text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 hover:text-brand-900 transition-all">
                                     Analyze My Budget
                                 </Link>
                             </div>
@@ -323,7 +323,7 @@ const RelocationCostContent: React.FC = () => {
                     <p className="text-xl text-slate-500 mb-16 font-medium leading-relaxed italic">
                         The <strong>cheapest way to get panama residency</strong> starts with a verified budget. Let's crunch the numbers together.
                     </p>
-                    <Link href={`/${lang}/relocation/tours`} className="px-8 py-4 bg-white text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
+                    <Link href={`/${lang}/relocation/tours`} className="px-8 py-4 bg-white text-brand-950 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-GOLD hover:text-brand-950 transition-all shadow-2xl inline-block">
                         Customize My Budget Tour
                     </Link>
                 </div>

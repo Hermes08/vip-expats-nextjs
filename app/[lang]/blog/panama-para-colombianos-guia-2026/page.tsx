@@ -4,14 +4,32 @@ import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponent
 
 
 export const metadata = {
-  title: 'Panamá para Colombianos 2026: Visa Friendly Nations, Inversión y Cómo Mudarse',
-  description: 'Guía completa para colombianos que desean mudarse a Panamá. Visa Friendly Nations, oportunidades de inversión, trabajo, y cómo obtener residencia permanente desde Colombia.',
-  keywords: 'panama para colombianos, vivir en panama colombia, invertir en panama colombianos, visa friendly nations colombia, mudarse a panama desde colombia',
+  title: 'Guía Panamá para Colombianos 2026: Visa, Costos, Residencia',
+  description: 'Colombianos emigrando a Panamá. Opciones de visa, costos, residencia, estilo de vida.',
+  keywords: 'panama, para',
+  alternates: {
+    canonical: 'https://panamarealestatesale.com/en/blog/panama-para-colombianos-guia-2026',
+    languages: {
+      'en': 'https://panamarealestatesale.com/en/blog/panama-para-colombianos-guia-2026',
+      'es': 'https://panamarealestatesale.com/es/blog/panama-para-colombianos-guia-2026',
+      'pt': 'https://panamarealestatesale.com/pt/blog/panama-para-colombianos-guia-2026',
+      'de': 'https://panamarealestatesale.com/de/blog/panama-para-colombianos-guia-2026',
+    },
+  },
   openGraph: {
-    title: 'Panamá para Colombianos 2026: Visa Friendly Nations, Inversión y Cómo Mudarse',
-    description: 'Colombia es Friendly Nation. Acceso fácil a residencia permanente en Panamá. Guía completa para colombianos.',
-    url: '/es/blog/panama-para-colombianos-guia-2026',
+    title: 'Guía Panamá para Colombianos 2026: Visa, Costos, Residencia',
+    description: 'Colombianos emigrando a Panamá. Opciones de visa, costos, residencia, estilo de vida.',
     type: 'article',
+    url: 'https://panamarealestatesale.com/en/blog/panama-para-colombianos-guia-2026',
+    images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Guía Panamá para Colombianos 2026: Visa, Costos, Residencia' }],
+    locale: 'en_US',
+    siteName: 'VIP Expats Panama',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Guía Panamá para Colombianos 2026: Visa, Costos, Residencia',
+    description: 'Colombianos emigrando a Panamá. Opciones de visa, costos, residencia, estilo de vida.',
+    images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
   },
 };
 

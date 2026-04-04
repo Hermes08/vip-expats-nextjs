@@ -13,20 +13,32 @@ const panamaVsAlternativesData = [
 ];
 
 export const metadata: Metadata = {
-    title: 'Pros and Cons of Retiring in Panama 2026: The Unfiltered Truth',
-    description:
-        'The honest pros and cons of retiring in Panama from expats who actually live here. Cost savings, healthcare, safety, bureaucracy, culture shock — everything before you decide.',
-    keywords:
-        'pros and cons of retiring in panama, disadvantages of retiring in panama, retiring in panama dangers, is panama good for retirement, panama retirement honest review, retiring in panama 2026',
+    title: 'Pros and Cons of Retiring in Panama 2026: Complete Analysis',
+    description: 'Pros and cons of retiring in Panama. Benefits, drawbacks, costs, visas, lifestyle considerations.',
+    keywords: 'retire to Panama, retiring in Panama, Panama retirement, Panama pensionado visa, expat retirement',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/pros-cons-retiring-panama',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/pros-cons-retiring-panama',
+            'es': 'https://panamarealestatesale.com/es/blog/pros-cons-retiring-panama',
+            'pt': 'https://panamarealestatesale.com/pt/blog/pros-cons-retiring-panama',
+            'de': 'https://panamarealestatesale.com/de/blog/pros-cons-retiring-panama',
+        },
     },
     openGraph: {
-        title: 'Pros and Cons of Retiring in Panama 2026: The Unfiltered Truth',
-        description:
-            'Honest pros and cons of retiring in Panama from expats who actually live here. Everything you need to know before deciding.',
+        title: 'Pros and Cons of Retiring in Panama 2026: Complete Analysis',
+        description: 'Pros and cons of retiring in Panama. Benefits, drawbacks, costs, visas, lifestyle considerations.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/pros-cons-retiring-panama',
+        images: [{ url: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&q=80', width: 1200, height: 630, alt: 'Retirement considerations' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Pros and Cons of Retiring in Panama 2026: Complete Analysis',
+        description: 'Pros and cons of retiring in Panama. Benefits, drawbacks, costs, visas, lifestyle considerations.',
+        images: ['https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&q=80'],
     },
 };
 

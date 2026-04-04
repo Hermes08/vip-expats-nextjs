@@ -3,20 +3,32 @@ import Link from 'next/link';
 import { Home, MapPin, DollarSign, CheckCircle, AlertTriangle, Search, HelpCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'How to Find and Rent an Apartment in Panama 2026: Expat\'s Complete Guide',
-    description:
-        'Complete guide to renting apartments in Panama. Where to search (CompraVenta, Encuentra24, Facebook), prices, landlord requirements, rental process, red flags, and insider tips for expats.',
-    keywords:
-        'rent apartment panama, rentals panama city expats, find housing panama, apartment panama city, how to rent panama, furnished apartment panama',
+    title: 'Rent Apartment in Panama 2026: Complete Process, Costs, Neighborhoods',
+    description: 'How to rent an apartment in Panama. Finding rentals, neighborhoods, costs, lease terms, landlord tips.',
+    keywords: 'rent apartment Panama, apartment rental Panama, apartments Panama City, lease Panama',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/how-to-rent-apartment-panama',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/how-to-rent-apartment-panama',
+            'es': 'https://panamarealestatesale.com/es/blog/how-to-rent-apartment-panama',
+            'pt': 'https://panamarealestatesale.com/pt/blog/how-to-rent-apartment-panama',
+            'de': 'https://panamarealestatesale.com/de/blog/how-to-rent-apartment-panama',
+        },
     },
     openGraph: {
-        title: 'How to Find and Rent an Apartment in Panama 2026: Expat\'s Complete Guide',
-        description:
-            'Step-by-step guide to finding, negotiating, and renting apartments in Panama — prices, platforms, landlord requirements, and what to avoid.',
+        title: 'Rent Apartment in Panama 2026: Complete Process, Costs, Neighborhoods',
+        description: 'How to rent an apartment in Panama. Finding rentals, neighborhoods, costs, lease terms, landlord tips.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/how-to-rent-apartment-panama',
+        images: [{ url: 'https://images.unsplash.com/photo-1430077592969-5dbbbfddb1cd?w=1200&q=80', width: 1200, height: 630, alt: 'Apartment in Panama' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Rent Apartment in Panama 2026: Complete Process, Costs, Neighborhoods',
+        description: 'How to rent an apartment in Panama. Finding rentals, neighborhoods, costs, lease terms, landlord tips.',
+        images: ['https://images.unsplash.com/photo-1430077592969-5dbbbfddb1cd?w=1200&q=80'],
     },
 };
 

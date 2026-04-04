@@ -119,7 +119,7 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ onSelect, onCancel }) => 
                             </div>
                         ) : (
                             <label className="cursor-pointer text-center w-full h-full flex flex-col items-center justify-center">
-                                <div className="p-4 bg-brand-50 text-white rounded-full mb-4 shadow-lg">
+                                <div className="p-4 bg-brand-TEAL text-white rounded-full mb-4 shadow-lg">
                                     <Upload size={24} />
                                 </div>
                                 <h3 className="text-lg font-bold text-slate-800 mb-1">Click to Upload</h3>
@@ -150,7 +150,7 @@ const ImageSelector: React.FC<ImageSelectorProps> = ({ onSelect, onCancel }) => 
                         </div>
                         <button
                             type="submit"
-                            className="w-full py-3 bg-brand-50 text-white font-bold rounded-lg hover:bg-brand-100 transition-colors"
+                            className="w-full py-3 bg-brand-TEAL text-white font-bold rounded-lg hover:bg-brand-950 transition-colors"
                         >
                             Use This Media
                         </button>

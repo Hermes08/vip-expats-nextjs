@@ -5,19 +5,32 @@ import { CostBarChart } from '@/components/three/ThreeComponents';
 
 
 export const metadata: Metadata = {
-    title: 'Panama vs Belize for Retirement 2026: Why Panama Wins on Every Key Factor',
-    description:
-        'Comparing Panama vs Belize for retirement: healthcare, visa requirements, cost of living, crime rates, real estate market, and why Panama dominates. Complete 2026 guide.',
-    keywords:
-        'panama vs belize retirement, retire panama or belize, panama vs belize expats, belize pensionado visa, panama retirement advantages, belize retirement costs',
+    title: 'Panama vs Belize Retirement 2026: Which is Better? Comparison',
+    description: 'Compare Panama vs Belize for retirement. Costs, lifestyle, visas, real estate, expat community.',
+    keywords: 'Panama vs Belize retirement, Panama vs Belize cost of living, retire Panama or Belize',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-belize-retirement',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-vs-belize-retirement',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-vs-belize-retirement',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-vs-belize-retirement',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-vs-belize-retirement',
+        },
     },
     openGraph: {
-        title: 'Panama vs Belize for Retirement 2026: Why Panama Wins',
-        description: 'Complete comparison of Panama and Belize for retirement — visa costs, healthcare, crime, real estate, and actual monthly expenses.',
+        title: 'Panama vs Belize Retirement 2026: Which is Better? Comparison',
+        description: 'Compare Panama vs Belize for retirement. Costs, lifestyle, visas, real estate, expat community.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/panama-vs-belize-retirement',
+        images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Comparison' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama vs Belize Retirement 2026: Which is Better? Comparison',
+        description: 'Compare Panama vs Belize for retirement. Costs, lifestyle, visas, real estate, expat community.',
+        images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
 

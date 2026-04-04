@@ -14,20 +14,32 @@ const taxBurdenData = [
 ];
 
 export const metadata: Metadata = {
-    title: 'Panama Tax Benefits for Foreigners 2026: Zero Tax on Foreign Income Explained',
-    description:
-        'Panama taxes ONLY income earned inside Panama. Foreign income (pensions, dividends, rental income, Social Security) is 100% tax-free. Full guide for American expats in 2026.',
-    keywords:
-        'panama tax benefits foreigners, panama tax for expats, panama income tax foreigners, panama territorial tax, panama no foreign income tax, panama vs usa taxes, offshore panama 2026',
+    title: 'Panama Tax Benefits for Foreigners 2026: Residency Tax Breaks',
+    description: 'Tax benefits for foreigners in Panama. Territorial taxation, resident status, tax advantages.',
+    keywords: 'Panama taxes foreigners, tax benefits Panama residents, territorial tax Panama, resident tax breaks',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/panama-tax-benefits-foreigners-2026',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-tax-benefits-foreigners-2026',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-tax-benefits-foreigners-2026',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-tax-benefits-foreigners-2026',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-tax-benefits-foreigners-2026',
+        },
     },
     openGraph: {
-        title: 'Panama Tax Benefits for Foreigners 2026: Zero Tax on Foreign Income',
-        description:
-            'Discover how Panama\'s territorial tax system provides 100% tax-free foreign income for expats. Pensions, dividends, Social Security — all tax-free.',
+        title: 'Panama Tax Benefits for Foreigners 2026: Residency Tax Breaks',
+        description: 'Tax benefits for foreigners in Panama. Territorial taxation, resident status, tax advantages.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/panama-tax-benefits-foreigners-2026',
+        images: [{ url: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80', width: 1200, height: 630, alt: 'Tax information' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama Tax Benefits for Foreigners 2026: Residency Tax Breaks',
+        description: 'Tax benefits for foreigners in Panama. Territorial taxation, resident status, tax advantages.',
+        images: ['https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80'],
     },
 };
 

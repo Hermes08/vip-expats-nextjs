@@ -5,20 +5,32 @@ import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponent
 
 
 export const metadata: Metadata = {
-    title: 'Best Neighborhoods in Panama City for Expats 2026: The Definitive Guide',
-    description:
-        'Complete guide to Panama City neighborhoods for expats. Casco Viejo, Costa del Este, Clayton, Punta Pacifica, and more. Safety, rent, walkability, lifestyle, and which neighborhood fits your needs.',
-    keywords:
-        'best neighborhoods panama city expats, where to live panama city, panama city expat neighborhoods, safe neighborhoods panama city, panama city rent',
+    title: 'Best Neighborhoods Panama City 2026: Expats Living Guide',
+    description: 'Best neighborhoods in Panama City for expats. Casco Viejo, Clayton, Coronado. Safety, prices, lifestyle.',
+    keywords: 'Panama City neighborhoods, expat neighborhoods Panama, best areas Panama City, Casco Viejo, Clayton',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/best-neighborhoods-panama-city-expats',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/best-neighborhoods-panama-city-expats',
+            'es': 'https://panamarealestatesale.com/es/blog/best-neighborhoods-panama-city-expats',
+            'pt': 'https://panamarealestatesale.com/pt/blog/best-neighborhoods-panama-city-expats',
+            'de': 'https://panamarealestatesale.com/de/blog/best-neighborhoods-panama-city-expats',
+        },
     },
     openGraph: {
-        title: 'Best Neighborhoods in Panama City for Expats 2026',
-        description:
-            'Detailed guide to Panama City neighborhoods — safety, cost, walkability, lifestyle. Find the perfect neighborhood for your expat life.',
+        title: 'Best Neighborhoods Panama City 2026: Expats Living Guide',
+        description: 'Best neighborhoods in Panama City for expats. Casco Viejo, Clayton, Coronado. Safety, prices, lifestyle.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/best-neighborhoods-panama-city-expats',
+        images: [{ url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80', width: 1200, height: 630, alt: 'Panama City neighborhood' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Best Neighborhoods Panama City 2026: Expats Living Guide',
+        description: 'Best neighborhoods in Panama City for expats. Casco Viejo, Clayton, Coronado. Safety, prices, lifestyle.',
+        images: ['https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80'],
     },
 };
 

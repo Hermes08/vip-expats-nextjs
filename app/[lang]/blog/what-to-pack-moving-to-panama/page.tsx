@@ -3,20 +3,32 @@ import Link from 'next/link';
 import { Luggage, Heart, AlertTriangle, Package, ShoppingCart, HelpCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'What to Pack When Moving to Panama 2026: The Complete Expat Packing List',
-    description:
-        'Complete packing list for moving to Panama. What to bring, what to leave behind, clothing, medications, electronics, documents, financial prep. Smart packing for tropical climate.',
-    keywords:
-        'moving to panama what to bring, packing list panama expat, what to pack panama, relocation panama checklist, panama moving guide',
+    title: 'What to Pack Moving to Panama 2026: Essential Items Checklist',
+    description: 'Complete packing list for moving to Panama. Clothing, documents, medications, electronics, what not to bring.',
+    keywords: 'what to pack Panama, packing list Panama, moving to Panama checklist, items to bring Panama',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/what-to-pack-moving-to-panama',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/what-to-pack-moving-to-panama',
+            'es': 'https://panamarealestatesale.com/es/blog/what-to-pack-moving-to-panama',
+            'pt': 'https://panamarealestatesale.com/pt/blog/what-to-pack-moving-to-panama',
+            'de': 'https://panamarealestatesale.com/de/blog/what-to-pack-moving-to-panama',
+        },
     },
     openGraph: {
-        title: 'What to Pack When Moving to Panama 2026: The Complete Expat Packing List',
-        description:
-            'Everything you need to know about what to pack when moving to Panama — clothing, documents, electronics, medications, and what you don\'t need to bring.',
+        title: 'What to Pack Moving to Panama 2026: Essential Items Checklist',
+        description: 'Complete packing list for moving to Panama. Clothing, documents, medications, electronics, what not to bring.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/what-to-pack-moving-to-panama',
+        images: [{ url: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80', width: 1200, height: 630, alt: 'Packing for Panama' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'What to Pack Moving to Panama 2026: Essential Items Checklist',
+        description: 'Complete packing list for moving to Panama. Clothing, documents, medications, electronics, what not to bring.',
+        images: ['https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80'],
     },
 };
 

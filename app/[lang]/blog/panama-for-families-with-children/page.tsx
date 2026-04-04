@@ -5,20 +5,32 @@ import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponent
 
 
 export const metadata: Metadata = {
-    title: 'Moving to Panama with Children 2026: Schools, Safety, Activities & Family Budget',
-    description:
-        'Complete guide to raising a family in Panama. International schools, best neighborhoods (Clayton, Costa del Este), safety, activities, healthcare, and realistic family budgets compared to the USA.',
-    keywords:
-        'moving to panama with family, panama for families, schools in panama expats, family life panama, raising kids in panama, international schools panama',
+    title: 'Panama for Families 2026: Schools, Expat Kids, Safety, Lifestyle',
+    description: 'Families moving to Panama. Schools, safety, kids activities, healthcare, lifestyle for expat families.',
+    keywords: 'families in Panama, expat families Panama, schools in Panama, kids in Panama, family living Panama',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/panama-for-families-with-children',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-for-families-with-children',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-for-families-with-children',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-for-families-with-children',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-for-families-with-children',
+        },
     },
     openGraph: {
-        title: 'Moving to Panama with Children 2026: Schools, Safety & Family Life',
-        description:
-            'Everything families need to know about moving to Panama — schools, neighborhoods, safety, activities, and costs compared to suburban USA.',
+        title: 'Panama for Families 2026: Schools, Expat Kids, Safety, Lifestyle',
+        description: 'Families moving to Panama. Schools, safety, kids activities, healthcare, lifestyle for expat families.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/panama-for-families-with-children',
+        images: [{ url: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1200&q=80', width: 1200, height: 630, alt: 'Family in Panama' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama for Families 2026: Schools, Expat Kids, Safety, Lifestyle',
+        description: 'Families moving to Panama. Schools, safety, kids activities, healthcare, lifestyle for expat families.',
+        images: ['https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1200&q=80'],
     },
 };
 

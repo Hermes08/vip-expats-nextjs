@@ -4,18 +4,34 @@ import { ArrowRight, CheckCircle, MapPin, DollarSign, TrendingUp, Home, Shield, 
 import { CostBarChart } from '@/components/three/ThreeComponents';
 
 
-export const metadata: Metadata = {
-    title: 'Panama vs Colombia for Expats 2026: Which Is Really Better?',
-    description: 'Compare Panama and Colombia for expat retirement. Analyze safety, visas, cost of living, currency stability, and healthcare. Discover why Panama\'s USD economy and superior infrastructure make it the safer choice.',
-    keywords: 'panama vs colombia retirement, panama vs medellin expat, retire in panama, retire in colombia, expat retirement comparison',
-    alternates: { canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-colombia-retirement' },
-    openGraph: {
-        title: 'Panama vs Colombia for Expats 2026: Which Is Really Better?',
-        description: 'Panama vs Colombia retirement comparison: safety, visas, costs, currency, and healthcare analysis.',
-        type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-vs-colombia-retirement',
-        images: [{ url: 'https://images.unsplash.com/photo-1583407566-cd81dea2bba4?w=1200&h=630', width: 1200, height: 630 }],
+export const metadata = {
+  title: 'Panama vs Colombia Retirement 2026: Comparison, Costs',
+  description: 'Compare Panama vs Colombia for retirement. Costs, lifestyle, visas, real estate.',
+  keywords: 'panama',
+  alternates: {
+    canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-colombia-retirement',
+    languages: {
+      'en': 'https://panamarealestatesale.com/en/blog/panama-vs-colombia-retirement',
+      'es': 'https://panamarealestatesale.com/es/blog/panama-vs-colombia-retirement',
+      'pt': 'https://panamarealestatesale.com/pt/blog/panama-vs-colombia-retirement',
+      'de': 'https://panamarealestatesale.com/de/blog/panama-vs-colombia-retirement',
     },
+  },
+  openGraph: {
+    title: 'Panama vs Colombia Retirement 2026: Comparison, Costs',
+    description: 'Compare Panama vs Colombia for retirement. Costs, lifestyle, visas, real estate.',
+    type: 'article',
+    url: 'https://panamarealestatesale.com/en/blog/panama-vs-colombia-retirement',
+    images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Panama vs Colombia Retirement 2026: Comparison, Costs' }],
+    locale: 'en_US',
+    siteName: 'VIP Expats Panama',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Panama vs Colombia Retirement 2026: Comparison, Costs',
+    description: 'Compare Panama vs Colombia for retirement. Costs, lifestyle, visas, real estate.',
+    images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
+  },
 };
 
 const costComparisonData = [

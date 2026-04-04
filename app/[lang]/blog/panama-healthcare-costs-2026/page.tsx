@@ -15,19 +15,33 @@ import {
 
 
 export const metadata: Metadata = {
-  title: 'Panama Healthcare Costs 2026: Complete Price Guide for Expats (Private & Public)',
-  description: 'Detailed breakdown of healthcare costs in Panama for expats. Doctor visits, procedures, surgery, dental, insurance plans, and comparison vs USA healthcare.',
-  keywords: 'panama healthcare costs, panama hospital costs, panama doctor visit cost, expat health insurance panama',
-  alternates: {
-    canonical: 'https://panamarealestatesale.com/blog/panama-healthcare-costs-2026',
-  },
-  openGraph: {
-    title: 'Panama Healthcare Costs 2026: Complete Price Guide',
-    description: 'Real prices for healthcare in Panama: doctor visits ($40-70), procedures, surgery, and how much you actually pay vs USA costs.',
-    type: 'article',
-    url: 'https://panamarealestatesale.com/blog/panama-healthcare-costs-2026',
-    siteName: 'VIP Expats Panama Real Estate',
-  },
+    title: 'Healthcare in Panama 2026: Costs, Doctors, Insurance, Quality',
+    description: 'Healthcare in Panama. Doctor costs, health insurance, quality of care, hospitals, medical tourism.',
+    keywords: 'healthcare Panama, health insurance Panama, doctor costs Panama, hospitals Panama, medical care',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/panama-healthcare-costs-2026',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-healthcare-costs-2026',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-healthcare-costs-2026',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-healthcare-costs-2026',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-healthcare-costs-2026',
+        },
+    },
+    openGraph: {
+        title: 'Healthcare in Panama 2026: Costs, Doctors, Insurance, Quality',
+        description: 'Healthcare in Panama. Doctor costs, health insurance, quality of care, hospitals, medical tourism.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/panama-healthcare-costs-2026',
+        images: [{ url: 'https://images.unsplash.com/photo-1576091160550-112173f9f866?w=1200&q=80', width: 1200, height: 630, alt: 'Healthcare in Panama' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Healthcare in Panama 2026: Costs, Doctors, Insurance, Quality',
+        description: 'Healthcare in Panama. Doctor costs, health insurance, quality of care, hospitals, medical tourism.',
+        images: ['https://images.unsplash.com/photo-1576091160550-112173f9f866?w=1200&q=80'],
+    },
 };
 
 const comparisonData = [

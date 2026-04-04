@@ -16,7 +16,9 @@ const LanguageSwitcher: React.FC<Props> = ({ currentLang, isMobile }) => {
 
     const languages: { code: Language; label: string }[] = [
         { code: 'en', label: 'EN' },
-        { code: 'es', label: 'ES' }
+        { code: 'es', label: 'ES' },
+        { code: 'pt', label: 'PT' },
+        { code: 'de', label: 'DE' }
     ];
 
     const handleLanguageChange = (newLang: string) => {

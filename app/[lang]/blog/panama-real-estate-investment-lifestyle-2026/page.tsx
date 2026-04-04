@@ -10,13 +10,24 @@ export async function generateMetadata(
     const isEs = lang === 'es';
 
     return {
-        title: isEs 
-            ? 'Bienes Raíces en Panamá 2026: Guía de Inversión, Estilo de Vida y Jubilación' 
+        title: isEs
+            ? 'Bienes Raíces en Panamá 2026: Guía de Inversión, Estilo de Vida y Jubilación'
             : 'Panama Real Estate 2026: Investment, Lifestyle & Retirement Guide',
         description: isEs
             ? 'La guía definitiva 2026 de bienes raíces en Panamá. Explore oportunidades de inversión de alto rendimiento y el estilo de vida de lujo.'
             : 'The definitive 2026 guide to Panama real estate. Explore high-yield investment opportunities, the luxury expat lifestyle, and world-class retirement benefits.',
         keywords: 'Panama real estate, investment opportunities, expat lifestyle, beachfront properties, retirement in Panama, invest in panama, panama retirement, panama expat',
+        openGraph: {
+            title: isEs
+                ? 'Bienes Raíces en Panamá 2026: Guía de Inversión, Estilo de Vida y Jubilación'
+                : 'Panama Real Estate 2026: Investment, Lifestyle & Retirement Guide',
+            description: isEs
+                ? 'La guía definitiva 2026 de bienes raíces en Panamá. Explore oportunidades de inversión de alto rendimiento y el estilo de vida de lujo.'
+                : 'The definitive 2026 guide to Panama real estate. Explore high-yield investment opportunities, the luxury expat lifestyle, and world-class retirement benefits.',
+            type: 'article',
+            url: 'https://panamarealestatesale.com/en/blog/panama-real-estate-investment-lifestyle-2026',
+            images: [{ url: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=1200&h=630', width: 1200, height: 630 }],
+        },
     };
 }
 

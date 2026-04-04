@@ -3,28 +3,33 @@ import Link from 'next/link';
 import { ArrowRight, Waves, MapPin, TrendingUp, Fish } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Santa Catalina Panama: Surf, Real Estate & Investment Guide 2026',
-  description:
-    'Santa Catalina Panama is a world-class surf destination with rapidly appreciating real estate. Complete guide to surfing, accommodation, property investment, and getting there.',
-  keywords: [
-    'santa catalina panama',
-    'santa catalina surf panama',
-    'panama real estate santa catalina',
-    'coiba national park panama',
-    'best surf spots panama',
-    'panama property investment',
-    'santa catalina accommodation',
-  ].join(', '),
-  alternates: {
-    canonical: 'https://panamarealestatesale.com/en/blog/santa-catalina-panama',
-  },
-  openGraph: {
-    title: 'Santa Catalina Panama: Surf, Real Estate & Investment Guide 2026',
-    description:
-      'World-class point break, UNESCO national park gateway, and early-stage property investment opportunity in Panama.',
-    type: 'article',
-    url: 'https://panamarealestatesale.com/en/blog/santa-catalina-panama',
-  },
+    title: 'Santa Catalina Panama 2026: Surf Beach, Real Estate, Lifestyle',
+    description: 'Santa Catalina Panama. Surf town, real estate, costs, lifestyle, community, beach life.',
+    keywords: 'Santa Catalina, Santa Catalina Panama, Santa Catalina real estate, surf Panama, Veraguas',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/santa-catalina-panama',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/santa-catalina-panama',
+            'es': 'https://panamarealestatesale.com/es/blog/santa-catalina-panama',
+            'pt': 'https://panamarealestatesale.com/pt/blog/santa-catalina-panama',
+            'de': 'https://panamarealestatesale.com/de/blog/santa-catalina-panama',
+        },
+    },
+    openGraph: {
+        title: 'Santa Catalina Panama 2026: Surf Beach, Real Estate, Lifestyle',
+        description: 'Santa Catalina Panama. Surf town, real estate, costs, lifestyle, community, beach life.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/santa-catalina-panama',
+        images: [{ url: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80', width: 1200, height: 630, alt: 'Santa Catalina beach' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Santa Catalina Panama 2026: Surf Beach, Real Estate, Lifestyle',
+        description: 'Santa Catalina Panama. Surf town, real estate, costs, lifestyle, community, beach life.',
+        images: ['https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80'],
+    },
 };
 
 const sections = [

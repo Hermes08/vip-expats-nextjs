@@ -3,28 +3,33 @@ import Link from 'next/link';
 import { ArrowRight, Waves, MapPin, TrendingUp } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Playa Venao Panama: Latin America\'s Best Surf Investment 2026',
-  description:
-    'Playa Venao is Panama\'s premier surf destination — consistent left-hander, growing real estate market, and a digital nomad community discovering paradise on the Azuero Peninsula.',
-  keywords: [
-    'playa venao panama',
-    'playa venao surf',
-    'panama azuero peninsula real estate',
-    'pedasi panama',
-    'panama surf investment',
-    'panama beachfront property',
-    'playa venao property',
-  ].join(', '),
-  alternates: {
-    canonical: 'https://panamarealestatesale.com/en/blog/playa-venao-panama',
-  },
-  openGraph: {
-    title: 'Playa Venao Panama: Latin America\'s Best Surf Investment 2026',
-    description:
-      'Consistent left-hand break, emerging digital nomad hub, and real estate opportunity 40–60% cheaper than Costa Rica\'s Nosara.',
-    type: 'article',
-    url: 'https://panamarealestatesale.com/en/blog/playa-venao-panama',
-  },
+    title: 'Playa Venao Panama 2026: Beach Town, Real Estate, Lifestyle',
+    description: 'Playa Venao Panama. Surf beach, real estate, costs, lifestyle, community, getting there.',
+    keywords: 'Playa Venao, Venao beach, Playa Venao real estate, Venao Panama, Azuero Peninsula',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/playa-venao-panama',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/playa-venao-panama',
+            'es': 'https://panamarealestatesale.com/es/blog/playa-venao-panama',
+            'pt': 'https://panamarealestatesale.com/pt/blog/playa-venao-panama',
+            'de': 'https://panamarealestatesale.com/de/blog/playa-venao-panama',
+        },
+    },
+    openGraph: {
+        title: 'Playa Venao Panama 2026: Beach Town, Real Estate, Lifestyle',
+        description: 'Playa Venao Panama. Surf beach, real estate, costs, lifestyle, community, getting there.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/playa-venao-panama',
+        images: [{ url: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80', width: 1200, height: 630, alt: 'Playa Venao' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Playa Venao Panama 2026: Beach Town, Real Estate, Lifestyle',
+        description: 'Playa Venao Panama. Surf beach, real estate, costs, lifestyle, community, getting there.',
+        images: ['https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80'],
+    },
 };
 
 const highlights = [

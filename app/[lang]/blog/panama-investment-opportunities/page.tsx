@@ -4,10 +4,34 @@ import { ArrowRight, CheckCircle, TrendingUp, Globe, Building2, Landmark, Shield
 import BlogPostSchema from '@/components/seo/BlogPostSchema';
 
 export const metadata: Metadata = {
-    title: 'Panama Real Estate Investment Opportunities 2026 | Top Expat Choice',
-    description: 'Explore the best Panama real estate investment opportunities for 2026. From beachfront properties to Panama City luxury, learn why expats choose Panama for retirement and lifestyle.',
-    keywords: 'Panama real estate, investment opportunities, expat lifestyle, beachfront properties, retirement in Panama, invest in panama',
-};
+    title: 'Panama Investment Opportunities 2026: Real Estate, Projects, Returns',
+    description: 'Investment opportunities in Panama. Real estate, development projects, ROI potential.',
+    keywords: 'Panama investment opportunities, invest in Panama, Panama real estate investment',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/panama-investment-opportunities',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-investment-opportunities',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-investment-opportunities',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-investment-opportunities',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-investment-opportunities',
+        },
+    },
+    openGraph: {
+        title: 'Panama Investment Opportunities 2026: Real Estate, Projects, Returns',
+        description: 'Investment opportunities in Panama. Real estate, development projects, ROI potential.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/panama-investment-opportunities',
+        images: [{ url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80', width: 1200, height: 630, alt: 'Investment opportunities' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama Investment Opportunities 2026: Real Estate, Projects, Returns',
+        description: 'Investment opportunities in Panama. Real estate, development projects, ROI potential.',
+        images: ['https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80'],
+    },
+};;
 
 const investmentHighlights = [
     {

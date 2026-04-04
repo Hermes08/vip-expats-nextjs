@@ -445,7 +445,7 @@ const RelocationPensionadoContent: React.FC = () => {
                     <p className="text-base md:text-lg font-bold mb-16 opacity-80 max-w-2xl mx-auto leading-relaxed">
                         Don't leave your <strong>panama retirement</strong> to chance. Relocate with the Panama Real Estate Sale team and secure your <strong>panama pensionado visa</strong> with zero stress.
                     </p>
-                    <Link href={`/${lang}/relocation/tours`} className="px-8 py-4 bg-white text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-50 transition-all shadow-2xl inline-block">
+                    <Link href={`/${lang}/relocation/tours`} className="px-8 py-4 bg-white text-brand-950 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-50 transition-all shadow-2xl inline-block">
                         Request Retirement Itinerary
                     </Link>
                 </div>

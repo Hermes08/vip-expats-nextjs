@@ -185,7 +185,7 @@ const RelocationLegalContent: React.FC = () => {
                         <p className="font-bold opacity-80 leading-relaxed mb-8 text-lg">
                             We believe in the "Hybrid" model: Use the lawyers for the visa and the heavy corporate lifting, but use our **Logistics Specialists** for the ground-level move. This saves our clients an average of **$1,500 - $3,000** in unnecessary legal fees.
                         </p>
-                        <Link href={`/${lang}/contacto`} className="px-6 py-3 bg-white text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all inline-block shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="px-6 py-3 bg-white text-brand-950 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all inline-block shadow-2xl">
                             Get My Logistic Proposal
                         </Link>
                     </div>
@@ -202,7 +202,7 @@ const RelocationLegalContent: React.FC = () => {
                             <p className="text-xl text-slate-500 font-medium leading-[1.8] mb-12">
                                 Navigating <strong>panama visa requirements</strong> alone is a liability. Our platform exists to connect you with verified <strong>panama visa attorneys</strong> who have a proven track record. No "cousin-of-a-friend" deals. Just vetted, professional legal counsel.
                             </p>
-                            <Link href={`/${lang}/relocation/legal/lawyers-directory`} className="px-12 py-6 bg-white text-white font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-GOLD hover:text-brand-950 transition-all inline-block shadow-2xl">
+                            <Link href={`/${lang}/relocation/legal/lawyers-directory`} className="px-12 py-6 bg-white text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-GOLD hover:text-brand-950 transition-all inline-block shadow-2xl">
                                 Browse Verified Lawyers
                             </Link>
                         </div>
@@ -263,7 +263,7 @@ const RelocationLegalContent: React.FC = () => {
                         Don't let <strong>panama entry requirements</strong> or complex forms slow you down. Get the legal clarity you need today.
                     </p>
                     <div className="flex flex-col md:flex-row gap-6 justify-center">
-                        <Link href={`/${lang}/contacto`} className="px-12 py-6 bg-white text-white font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-50 transition-all">
+                        <Link href={`/${lang}/contacto`} className="px-12 py-6 bg-white text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-50 transition-all">
                             Book Legal Consultation
                         </Link>
                         <Link href={`/${lang}/relocation/visas`} className="px-12 py-6 bg-white border-2 border-brand-950 text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-2xl hover:bg-brand-TEAL hover:text-white transition-all">

@@ -5,16 +5,32 @@ import { CostBarChart } from '@/components/three/ThreeComponents';
 
 
 export const metadata: Metadata = {
-    title: 'Panama vs Portugal for Retirement 2026: Tax, Cost & Lifestyle Showdown',
-    description: 'Compare Panama and Portugal for retirement. Analyze territorial tax systems, costs, visas, healthcare, and real estate. Discover why Panama\'s tax advantage and lower costs beat Portugal.',
-    keywords: 'panama vs portugal retirement, panama vs portugal tax, retire in panama, retire in portugal, expat retirement comparison',
-    alternates: { canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-portugal-retirement' },
+    title: 'Panama vs Portugal Retirement 2026: Comparison, Costs, Visas',
+    description: 'Compare Panama vs Portugal for retirement. D7 visa, costs, lifestyle, healthcare, real estate.',
+    keywords: 'Panama vs Portugal, retire Panama vs Portugal, cost of living Panama Portugal, D7 visa',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-portugal-retirement',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-vs-portugal-retirement',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-vs-portugal-retirement',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-vs-portugal-retirement',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-vs-portugal-retirement',
+        },
+    },
     openGraph: {
-        title: 'Panama vs Portugal for Retirement 2026: Tax, Cost & Lifestyle Showdown',
-        description: 'Panama vs Portugal: comprehensive retirement comparison covering taxes, costs, visas, healthcare, and lifestyle.',
+        title: 'Panama vs Portugal Retirement 2026: Comparison, Costs, Visas',
+        description: 'Compare Panama vs Portugal for retirement. D7 visa, costs, lifestyle, healthcare, real estate.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/panama-vs-portugal-retirement',
-        images: [{ url: 'https://images.unsplash.com/photo-1555993539-1732b0258235?w=1200&h=630', width: 1200, height: 630 }],
+        images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Comparison' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama vs Portugal Retirement 2026: Comparison, Costs, Visas',
+        description: 'Compare Panama vs Portugal for retirement. D7 visa, costs, lifestyle, healthcare, real estate.',
+        images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
 

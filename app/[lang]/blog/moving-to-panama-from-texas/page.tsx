@@ -15,20 +15,32 @@ const texasVsPanamaData = [
 ];
 
 export const metadata: Metadata = {
-    title: 'Moving to Panama from Texas 2026: Relocation Guide for Texans',
-    description:
-        'Texas retirees and expats: discover why Panama is a top choice. Direct flights from Houston, cost savings, visas, healthcare, and where Texas expats love to live in Panama.',
-    keywords:
-        'moving to panama from texas, relocate panama from texas, texas to panama expat, panama vs texas cost of living, retire panama from texas, houston to panama flights',
+    title: 'Move from Texas to Panama 2026: Visa, Costs, Guide',
+    description: 'Texans moving to Panama. Visa options, residency programs, costs, healthcare, relocation guide.',
+    keywords: 'Texas to Panama, moving from Texas to Panama, Panama relocation, Texas expats Panama',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-texas',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-texas',
+            'es': 'https://panamarealestatesale.com/es/blog/moving-to-panama-from-texas',
+            'pt': 'https://panamarealestatesale.com/pt/blog/moving-to-panama-from-texas',
+            'de': 'https://panamarealestatesale.com/de/blog/moving-to-panama-from-texas',
+        },
     },
     openGraph: {
-        title: 'Moving to Panama from Texas 2026: Relocation Guide for Texans',
-        description:
-            'Texas retirees and expats: discover why Panama is a top choice. Direct flights, cost savings, visas, healthcare, and where Texas expats love to live.',
+        title: 'Move from Texas to Panama 2026: Visa, Costs, Guide',
+        description: 'Texans moving to Panama. Visa options, residency programs, costs, healthcare, relocation guide.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-texas',
+        images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Moving to Panama from Texas' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Move from Texas to Panama 2026: Visa, Costs, Guide',
+        description: 'Texans moving to Panama. Visa options, residency programs, costs, healthcare, relocation guide.',
+        images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
 

@@ -35,7 +35,7 @@ function parseDurationToSeconds(durationStr: string): number {
 
 export async function GET() {
     const baseUrl = 'https://panamarealestatesale.com';
-    const languages = ['en', 'es'];
+    const languages = ['en', 'es', 'pt', 'de'];
 
     // Static pages
     const staticPages = [

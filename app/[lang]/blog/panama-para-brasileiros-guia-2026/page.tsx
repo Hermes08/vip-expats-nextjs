@@ -4,14 +4,32 @@ import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponent
 
 
 export const metadata = {
-  title: 'Panamá para Brasileiros 2026: Visto, Custo de Vida e Investimento Imobiliário',
-  description: 'Guia completa para brasileiros que desejam morar no Panamá. Visto Friendly Nations, comparação São Paulo vs Panamá, segurança, e oportunidades de investimento em USD.',
-  keywords: 'panama para brasileiros, morar no panama brasil, emigrar para panama, investir no panama brasil, visto friendly nations brasil',
+  title: 'Guia Panamá para Brasileiros 2026: Visto, Custos, Vida',
+  description: 'Brasileiros emigrando para Panamá. Opções de visto, custos, estilo de vida.',
+  keywords: 'panama, para',
+  alternates: {
+    canonical: 'https://panamarealestatesale.com/en/blog/panama-para-brasileiros-guia-2026',
+    languages: {
+      'en': 'https://panamarealestatesale.com/en/blog/panama-para-brasileiros-guia-2026',
+      'es': 'https://panamarealestatesale.com/es/blog/panama-para-brasileiros-guia-2026',
+      'pt': 'https://panamarealestatesale.com/pt/blog/panama-para-brasileiros-guia-2026',
+      'de': 'https://panamarealestatesale.com/de/blog/panama-para-brasileiros-guia-2026',
+    },
+  },
   openGraph: {
-    title: 'Panamá para Brasileiros 2026: Visto, Custo de Vida e Investimento Imobiliário',
-    description: 'Brasil é Friendly Nation. Acesso rápido à residência permanente. Panamá oferece estabilidade em USD e oportunidades que o Brasil não oferece.',
-    url: '/es/blog/panama-para-brasileiros-guia-2026',
+    title: 'Guia Panamá para Brasileiros 2026: Visto, Custos, Vida',
+    description: 'Brasileiros emigrando para Panamá. Opções de visto, custos, estilo de vida.',
     type: 'article',
+    url: 'https://panamarealestatesale.com/en/blog/panama-para-brasileiros-guia-2026',
+    images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Guia Panamá para Brasileiros 2026: Visto, Custos, Vida' }],
+    locale: 'en_US',
+    siteName: 'VIP Expats Panama',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Guia Panamá para Brasileiros 2026: Visto, Custos, Vida',
+    description: 'Brasileiros emigrando para Panamá. Opções de visto, custos, estilo de vida.',
+    images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
   },
 };
 

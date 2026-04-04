@@ -16,19 +16,33 @@ import {
 
 
 export const metadata: Metadata = {
-  title: 'Real Cost of Moving to Panama 2026: Every Fee, Every Dollar, No Surprises',
-  description: 'Complete breakdown of moving costs to Panama. International shipping, customs, visas, housing, and setup fees with real dollar figures. Budget vs comfortable vs full relocation.',
-  keywords: 'cost of moving to Panama, moving to Panama expenses, Panama relocation costs, shipping to Panama, Panama customs fees',
-  alternates: {
-    canonical: 'https://panamarealestatesale.com/blog/real-cost-of-moving-to-panama',
-  },
-  openGraph: {
-    title: 'Real Cost of Moving to Panama 2026: Every Fee, Every Dollar',
-    description: 'The transparency article nobody has written. Actual costs of moving to Panama with real dollar figures.',
-    type: 'article',
-    url: 'https://panamarealestatesale.com/blog/real-cost-of-moving-to-panama',
-    siteName: 'VIP Expats Panama Real Estate',
-  },
+    title: 'Real Cost of Moving to Panama 2026: Budget Breakdown Guide',
+    description: 'Real cost of moving to Panama. Shipping, visa, housing, setup, monthly expenses breakdown.',
+    keywords: 'cost of moving to Panama, moving expenses Panama, budget moving to Panama, cost of living Panama',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/real-cost-of-moving-to-panama',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/real-cost-of-moving-to-panama',
+            'es': 'https://panamarealestatesale.com/es/blog/real-cost-of-moving-to-panama',
+            'pt': 'https://panamarealestatesale.com/pt/blog/real-cost-of-moving-to-panama',
+            'de': 'https://panamarealestatesale.com/de/blog/real-cost-of-moving-to-panama',
+        },
+    },
+    openGraph: {
+        title: 'Real Cost of Moving to Panama 2026: Budget Breakdown Guide',
+        description: 'Real cost of moving to Panama. Shipping, visa, housing, setup, monthly expenses breakdown.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/real-cost-of-moving-to-panama',
+        images: [{ url: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80', width: 1200, height: 630, alt: 'Moving costs' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Real Cost of Moving to Panama 2026: Budget Breakdown Guide',
+        description: 'Real cost of moving to Panama. Shipping, visa, housing, setup, monthly expenses breakdown.',
+        images: ['https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80'],
+    },
 };
 
 const costBreakdownData = [
@@ -101,6 +115,23 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
   const { lang } = await params;
 
   return (
+    <>
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Real Cost of Moving to Panama 2026: Budget Breakdown Guide',
+            description: 'Real cost of moving to Panama. Shipping, visa, housing, setup, monthly expenses breakdown.',
+            image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80',
+            datePublished: '2026-01-20',
+            dateModified: '2026-04-04',
+            author: { '@type': 'Organization', name: 'VIP Expats Panama', url: 'https://panamarealestatesale.com' },
+            publisher: { '@type': 'Organization', name: 'VIP Expats Panama', logo: { '@type': 'ImageObject', url: 'https://panamarealestatesale.com/og-image.jpg' } },
+          }),
+        }}
+      />
     <article className="bg-white min-h-screen pt-28 pb-20">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-50 to-white border-b-2 border-brand-100 mb-16">

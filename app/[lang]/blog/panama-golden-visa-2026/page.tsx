@@ -3,10 +3,34 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Shield, TrendingUp, Globe, Building2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Panama Golden Visa 2026: Complete Investment Residency Guide | Panama Real Estate Sale',
-  description: 'The definitive 2026 guide to the Panama Golden Visa (Qualified Investor Visa). Learn the $300k–$500k investment requirements, benefits, and how to secure Panama residency by investment.',
-  keywords: 'panama golden visa 2026, panama investment visa, residency by investment panama, qualified investor visa panama, panama residency requirements 2026',
-};
+    title: 'Panama Golden Visa 2026: Investment Residency, Cost, Requirements',
+    description: 'Panama Golden Visa. Investment options, costs, residency benefits, application process.',
+    keywords: 'Panama golden visa, investment residency Panama, Panama investor visa, permanent residency',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/panama-golden-visa-2026',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-golden-visa-2026',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-golden-visa-2026',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-golden-visa-2026',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-golden-visa-2026',
+        },
+    },
+    openGraph: {
+        title: 'Panama Golden Visa 2026: Investment Residency, Cost, Requirements',
+        description: 'Panama Golden Visa. Investment options, costs, residency benefits, application process.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/panama-golden-visa-2026',
+        images: [{ url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80', width: 1200, height: 630, alt: 'Panama residency visa' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Panama Golden Visa 2026: Investment Residency, Cost, Requirements',
+        description: 'Panama Golden Visa. Investment options, costs, residency benefits, application process.',
+        images: ['https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80'],
+    },
+};;
 
 const benefits = [
   'Permanent residency with a path to citizenship after 5 years',
@@ -49,6 +73,23 @@ export default async function PanamaGoldenVisa2026({ params }: { params: Promise
   const resolvedParams = await params;
   const lang = resolvedParams.lang || 'en';
   return (
+    <>
+            <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Article',
+            headline: 'Panama Golden Visa 2026: Investment Residency, Cost, Requirements',
+            description: 'Panama Golden Visa. Investment options, costs, residency benefits, application process.',
+            image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80',
+            datePublished: '2026-02-15',
+            dateModified: '2026-04-04',
+            author: { '@type': 'Organization', name: 'VIP Expats Panama', url: 'https://panamarealestatesale.com' },
+            publisher: { '@type': 'Organization', name: 'VIP Expats Panama', logo: { '@type': 'ImageObject', url: 'https://panamarealestatesale.com/og-image.jpg' } },
+          }),
+        }}
+      />
     <div className="pt-24 min-h-screen bg-white text-slate-900">
       {/* Hero */}
       <section className="bg-brand-50 py-32 relative overflow-hidden">

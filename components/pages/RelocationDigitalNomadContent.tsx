@@ -237,7 +237,7 @@ const RelocationDigitalNomadContent = () => {
                             <p className="text-lg font-black opacity-70 mb-10 max-w-xl mx-auto">
                                 Skip the digital nomad bureaucracy. We handle your entire visa filing and 6-month fiber-guaranteed housing contract in one package.
                             </p>
-                            <Link href={`/${lang}/contacto`} className="inline-flex items-center gap-4 px-12 py-6 bg-white text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all">
+                            <Link href={`/${lang}/contacto`} className="inline-flex items-center gap-4 px-12 py-6 bg-white text-brand-950 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all">
                                 Get The Nomad Bundle <ArrowRight size={14} />
                             </Link>
                         </div>

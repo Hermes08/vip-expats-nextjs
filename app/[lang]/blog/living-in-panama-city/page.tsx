@@ -3,20 +3,32 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, MapPin, DollarSign, Heart, Zap, Users, AlertTriangle } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Living in Panama City: The Honest 2026 Expat Guide',
-    description:
-        'What is it actually like to live in Panama City? Real costs, neighborhoods, healthcare, safety, and what nobody tells you before you move. The complete 2026 expat guide.',
-    keywords:
-        'living in panama city, expat panama city, panama city neighborhoods, cost of living panama city, moving to panama city, panama city expat guide 2026',
+    title: 'Living in Panama City 2026: Lifestyle, Costs, Neighborhoods, Guide',
+    description: 'Living in Panama City. Neighborhoods, costs, transportation, lifestyle, schools, expat community.',
+    keywords: 'living in Panama City, Panama City expat guide, Panama City lifestyle, neighborhoods Panama City',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/living-in-panama-city',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/living-in-panama-city',
+            'es': 'https://panamarealestatesale.com/es/blog/living-in-panama-city',
+            'pt': 'https://panamarealestatesale.com/pt/blog/living-in-panama-city',
+            'de': 'https://panamarealestatesale.com/de/blog/living-in-panama-city',
+        },
     },
     openGraph: {
-        title: 'Living in Panama City: The Honest 2026 Expat Guide',
-        description:
-            'Real costs, neighborhoods, healthcare, safety, and what nobody tells you before you move to Panama City.',
+        title: 'Living in Panama City 2026: Lifestyle, Costs, Neighborhoods, Guide',
+        description: 'Living in Panama City. Neighborhoods, costs, transportation, lifestyle, schools, expat community.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/living-in-panama-city',
+        images: [{ url: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80', width: 1200, height: 630, alt: 'Panama City living' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Living in Panama City 2026: Lifestyle, Costs, Neighborhoods, Guide',
+        description: 'Living in Panama City. Neighborhoods, costs, transportation, lifestyle, schools, expat community.',
+        images: ['https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80'],
     },
 };
 

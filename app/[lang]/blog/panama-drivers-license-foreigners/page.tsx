@@ -3,20 +3,32 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, FileText, AlertCircle, MapPin, Zap } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'How to Get a Panama Driver\'s License as a Foreigner 2026: Step-by-Step Guide',
-    description:
-        'Complete guide to getting a Panama driver\'s license as a foreigner. License exchange process, reciprocity countries, documents needed, vehicle insurance (SOAT), and driving laws.',
-    keywords:
-        'Panama driver\'s license, foreigner driver\'s license Panama, license exchange Panama, ATTT, driving in Panama, vehicle insurance Panama',
+    title: 'Get Driver License in Panama 2026: Foreigners Guide, Cost & Process',
+    description: 'How to get a Panama driver license. Requirements, cost, DMV process, written test. Drive legally in Panama.',
+    keywords: 'Panama driver license, driver license Panama foreigners, DMV Panama, driving permit Panama',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/panama-drivers-license-foreigners',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/panama-drivers-license-foreigners',
+            'es': 'https://panamarealestatesale.com/es/blog/panama-drivers-license-foreigners',
+            'pt': 'https://panamarealestatesale.com/pt/blog/panama-drivers-license-foreigners',
+            'de': 'https://panamarealestatesale.com/de/blog/panama-drivers-license-foreigners',
+        },
     },
     openGraph: {
-        title: 'How to Get a Panama Driver\'s License as a Foreigner 2026',
-        description:
-            'Step-by-step guide to getting a Panama driver\'s license — exchange process, documents, timeline, and driving laws every foreigner should know.',
+        title: 'Get Driver License in Panama 2026: Foreigners Guide, Cost & Process',
+        description: 'How to get a Panama driver license. Requirements, cost, DMV process, written test. Drive legally in Panama.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/panama-drivers-license-foreigners',
+        images: [{ url: 'https://images.unsplash.com/photo-1555949519-bb6e7a9c8e4f?w=1200&q=80', width: 1200, height: 630, alt: 'Panama driver license' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Get Driver License in Panama 2026: Foreigners Guide, Cost & Process',
+        description: 'How to get a Panama driver license. Requirements, cost, DMV process, written test. Drive legally in Panama.',
+        images: ['https://images.unsplash.com/photo-1555949519-bb6e7a9c8e4f?w=1200&q=80'],
     },
 };
 

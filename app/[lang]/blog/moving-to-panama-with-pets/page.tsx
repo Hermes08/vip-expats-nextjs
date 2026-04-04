@@ -3,20 +3,32 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, Heart, AlertCircle, MapPin, Zap, FileText } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Moving to Panama with Pets 2026: Dogs, Cats & Complete Relocation Guide',
-    description:
-        'Complete guide to moving dogs and cats to Panama. NO quarantine for USA/Canada/EU pets. USDA health certificate, microchip, rabies vaccine, airline options, veterinary care, and costs.',
-    keywords:
-        'moving pets to Panama, dog relocation Panama, cat relocation Panama, pet quarantine Panama, USDA health certificate Panama, pets Panama',
+    title: 'Moving to Panama with Pets 2026: Import Requirements, Vet, Quarantine',
+    description: 'Import pets to Panama. Vaccination requirements, veterinary documentation, quarantine, airlines, pet services.',
+    keywords: 'moving to Panama with pets, pet import Panama, quarantine Panama pets, dog cat Panama',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/moving-to-panama-with-pets',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/moving-to-panama-with-pets',
+            'es': 'https://panamarealestatesale.com/es/blog/moving-to-panama-with-pets',
+            'pt': 'https://panamarealestatesale.com/pt/blog/moving-to-panama-with-pets',
+            'de': 'https://panamarealestatesale.com/de/blog/moving-to-panama-with-pets',
+        },
     },
     openGraph: {
-        title: 'Moving to Panama with Pets 2026: Dogs, Cats & Complete Guide',
-        description:
-            'Everything you need to know about relocating your dog or cat to Panama — requirements, costs, airlines, and veterinary care.',
+        title: 'Moving to Panama with Pets 2026: Import Requirements, Vet, Quarantine',
+        description: 'Import pets to Panama. Vaccination requirements, veterinary documentation, quarantine, airlines, pet services.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/moving-to-panama-with-pets',
+        images: [{ url: 'https://images.unsplash.com/photo-1552053831-71594a27c62d?w=1200&q=80', width: 1200, height: 630, alt: 'Pets in Panama' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Moving to Panama with Pets 2026: Import Requirements, Vet, Quarantine',
+        description: 'Import pets to Panama. Vaccination requirements, veterinary documentation, quarantine, airlines, pet services.',
+        images: ['https://images.unsplash.com/photo-1552053831-71594a27c62d?w=1200&q=80'],
     },
 };
 

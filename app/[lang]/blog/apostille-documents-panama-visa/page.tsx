@@ -9,9 +9,33 @@ interface PageProps {
 }
 
 export const metadata = {
-  title: 'How to Apostille Documents for Panama Visa 2026: State by State USA Guide',
-  description: 'Complete guide to apostille documents for Panama visa applications. Learn how to get apostilles by state, costs, timelines, and required documents.',
-  keywords: 'apostille Panama visa, apostille documents Panama, how to apostille birth certificate',
+  title: 'Apostille Documents Panama Visa 2026: State by State Guide',
+  description: 'Get apostille for Panama visa. Which documents need apostille, where to get them, cost, processing time.',
+  keywords: 'apostille Panama, apostille documents, Panama visa documents, notarization',
+  alternates: {
+    canonical: 'https://panamarealestatesale.com/en/blog/apostille-documents-panama-visa',
+    languages: {
+      'en': 'https://panamarealestatesale.com/en/blog/apostille-documents-panama-visa',
+      'es': 'https://panamarealestatesale.com/es/blog/apostille-documents-panama-visa',
+      'pt': 'https://panamarealestatesale.com/pt/blog/apostille-documents-panama-visa',
+      'de': 'https://panamarealestatesale.com/de/blog/apostille-documents-panama-visa',
+    },
+  },
+  openGraph: {
+    title: 'Apostille Documents Panama Visa 2026: State by State Guide',
+    description: 'Get apostille for Panama visa. Which documents need apostille, where to get them, cost, processing time.',
+    type: 'article',
+    url: 'https://panamarealestatesale.com/en/blog/apostille-documents-panama-visa',
+    images: [{ url: 'https://images.unsplash.com/photo-1450101499163-c8917c7b16c3?w=1200&q=80', width: 1200, height: 630, alt: 'Apostille Documents Panama Visa 2026: State by State Guide' }],
+    locale: 'en_US',
+    siteName: 'VIP Expats Panama',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Apostille Documents Panama Visa 2026: State by State Guide',
+    description: 'Get apostille for Panama visa. Which documents need apostille, where to get them, cost, processing time.',
+    images: ['https://images.unsplash.com/photo-1450101499163-c8917c7b16c3?w=1200&q=80'],
+  },
 };
 
 export default function ApostilleGuidePage({ params: { lang } }: PageProps) {

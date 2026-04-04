@@ -3,29 +3,33 @@ import Link from 'next/link';
 import { ArrowRight, TrendingUp, Shield, MapPin } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Is Panama City Safe in 2026? Real Crime Data + Expat Reality Check',
-  description:
-    'Discover the truth about safety in Panama with real 2026 crime statistics, neighborhood rankings, and practical safety tips for expats moving to Panama City, Punta Pacifica, and Costa del Este.',
-  keywords: [
-    'is panama safe 2026',
-    'panama city safety',
-    'crime in panama',
-    'safe neighborhoods panama',
-    'is it safe to live in panama',
-    'panama expat safety',
-    'safest areas panama city',
-    'panama real estate safety guide',
-  ].join(', '),
-  alternates: {
-    canonical: 'https://panamarealestatesale.com/en/blog/safety-in-panama-2026-real-data-rumors',
-  },
-  openGraph: {
-    title: 'Is Panama City Safe in 2026? Real Crime Data + Expat Reality Check',
-    description:
-      'Real 2026 crime statistics show which Panama City neighborhoods are safest for expats. Compare Panama vs USA crime rates and get neighborhood-by-neighborhood safety breakdown.',
-    type: 'article',
-    url: 'https://panamarealestatesale.com/en/blog/safety-in-panama-2026-real-data-rumors',
-  },
+    title: 'Safety in Panama 2026: Crime Data, Safe Areas, Real Facts',
+    description: 'Safety in Panama 2026. Crime statistics, safe neighborhoods, security tips, expat safety guide.',
+    keywords: 'safety Panama, crime Panama, safe neighborhoods Panama, expat safety, safety in Panama City',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/safety-in-panama-2026-real-data-rumors',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/safety-in-panama-2026-real-data-rumors',
+            'es': 'https://panamarealestatesale.com/es/blog/safety-in-panama-2026-real-data-rumors',
+            'pt': 'https://panamarealestatesale.com/pt/blog/safety-in-panama-2026-real-data-rumors',
+            'de': 'https://panamarealestatesale.com/de/blog/safety-in-panama-2026-real-data-rumors',
+        },
+    },
+    openGraph: {
+        title: 'Safety in Panama 2026: Crime Data, Safe Areas, Real Facts',
+        description: 'Safety in Panama 2026. Crime statistics, safe neighborhoods, security tips, expat safety guide.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/safety-in-panama-2026-real-data-rumors',
+        images: [{ url: 'https://images.unsplash.com/photo-1521737852567-6949f3f9f7e3?w=1200&q=80', width: 1200, height: 630, alt: 'Safety information' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Safety in Panama 2026: Crime Data, Safe Areas, Real Facts',
+        description: 'Safety in Panama 2026. Crime statistics, safe neighborhoods, security tips, expat safety guide.',
+        images: ['https://images.unsplash.com/photo-1521737852567-6949f3f9f7e3?w=1200&q=80'],
+    },
 };
 
 const safeNeighborhoods = [

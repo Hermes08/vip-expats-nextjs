@@ -169,7 +169,7 @@ const BoqueteGuideContent: React.FC = () => {
                     <p className="text-xl md:text-2xl font-bold mb-16 opacity-80">
                         See the neighborhoods, meeting the community, and find your <strong>boquete dream home</strong> on our specialized Highlands tour.
                     </p>
-                    <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-white text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-50 transition-all shadow-2xl">
+                    <Link href={`/${lang}/relocation/tours`} className="px-16 py-8 bg-white text-brand-950 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-50 transition-all shadow-2xl">
                         Request Boquete Itinerary
                     </Link>
                 </div>

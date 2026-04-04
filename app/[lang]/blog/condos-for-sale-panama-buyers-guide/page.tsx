@@ -3,30 +3,33 @@ import Link from 'next/link';
 import { ArrowRight, Home, DollarSign, TrendingUp, Users, CheckCircle2, AlertCircle } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Condos for Sale in Panama 2026 | Complete Buyer\'s Guide | Real Estate Prices',
-  description:
-    'Discover available condos for sale in Panama. Compare neighborhoods (El Cangrejo, Costa del Este, Coronado), prices ($80K–$2M+), rental yields (8–14%), and investment strategies for expats and investors.',
-  keywords: [
-    'condos for sale in panama',
-    'condos in panama',
-    'panama city condos',
-    'panama real estate for sale',
-    'el cangrejo condos',
-    'costa del este panama',
-    'panama condo prices',
-    'buy property panama',
-    'panama real estate investment',
-  ].join(', '),
-  alternates: {
-    canonical: 'https://panamarealestatesale.com/en/blog/condos-for-sale-panama-buyers-guide',
-  },
-  openGraph: {
-    title: 'Condos for Sale in Panama 2026 — Complete Buyer\'s Guide',
-    description:
-      'Compare Panama condos by price, location, and rental potential. El Cangrejo, Costa del Este, Coronado, and more. Expert guide for expat investors.',
-    type: 'article',
-    url: 'https://panamarealestatesale.com/en/blog/condos-for-sale-panama-buyers-guide',
-  },
+    title: 'Condos for Sale Panama 2026: Buyers Guide, Prices, Investment',
+    description: 'Buy condo in Panama. Price ranges, best developments, buying process, HOA costs, investment tips.',
+    keywords: 'condos for sale Panama, condos Panama City, condo prices Panama, buy condo Panama, Panama real estate',
+    alternates: {
+        canonical: 'https://panamarealestatesale.com/en/blog/condos-for-sale-panama-buyers-guide',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/condos-for-sale-panama-buyers-guide',
+            'es': 'https://panamarealestatesale.com/es/blog/condos-for-sale-panama-buyers-guide',
+            'pt': 'https://panamarealestatesale.com/pt/blog/condos-for-sale-panama-buyers-guide',
+            'de': 'https://panamarealestatesale.com/de/blog/condos-for-sale-panama-buyers-guide',
+        },
+    },
+    openGraph: {
+        title: 'Condos for Sale Panama 2026: Buyers Guide, Prices, Investment',
+        description: 'Buy condo in Panama. Price ranges, best developments, buying process, HOA costs, investment tips.',
+        type: 'article',
+        url: 'https://panamarealestatesale.com/en/blog/condos-for-sale-panama-buyers-guide',
+        images: [{ url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80', width: 1200, height: 630, alt: 'Condo in Panama' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Condos for Sale Panama 2026: Buyers Guide, Prices, Investment',
+        description: 'Buy condo in Panama. Price ranges, best developments, buying process, HOA costs, investment tips.',
+        images: ['https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80'],
+    },
 };
 
 const neighborhoods = [

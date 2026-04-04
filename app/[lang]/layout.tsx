@@ -39,12 +39,16 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
 
   const titles = {
     es: "Bienes Raíces en Panamá 2026 | Propiedades de Lujo e Inversión VIP",
-    en: "Panama Real Estate for Sale 2026 | Luxury Beachfront & City Investment"
+    en: "Panama Real Estate for Sale 2026 | Luxury Beachfront & City Investment",
+    pt: "Imóveis no Panamá 2026 | Propriedades de Luxo e Investimento de Alto Rendimento",
+    de: "Panama Immobilien 2026 | Luxus Meerblick & Stadt Investitionen"
   };
 
   const descriptions = {
     es: "Descubra las mejores propiedades en Panamá para 2026. Lujo frente al mar, inversiones de alto rendimiento y asesoría experta para su próximo activo inmobiliario.",
-    en: "Explore the best Panama real estate for sale in 2026. From luxury beachfront condos to high-yield city investments, secure your dream home or ROI asset with us."
+    en: "Explore the best Panama real estate for sale in 2026. From luxury beachfront condos to high-yield city investments, secure your dream home or ROI asset with us.",
+    pt: "Explore os melhores imóveis no Panamá para 2026. De condomínios frente ao mar de luxo a investimentos imobiliários de alto rendimento.",
+    de: "Entdecken Sie die besten Panama-Immobilien 2026. Von luxuriösen Strandwohnungen bis zu hochrentablen Stadtinvestitionen."
   };
 
   const domain = "https://panamarealestatesale.com"; // User should update this if different
@@ -57,12 +61,14 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       languages: {
         'en-US': `${domain}/en`,
         'es-PA': `${domain}/es`,
+        'pt-BR': `${domain}/pt`,
+        'de-DE': `${domain}/de`,
         'x-default': `${domain}/es`,
       },
     },
     openGraph: {
       type: 'website',
-      locale: lang === 'es' ? 'es_PA' : 'en_US',
+      locale: lang === 'es' ? 'es_PA' : lang === 'pt' ? 'pt_BR' : lang === 'de' ? 'de_DE' : 'en_US',
       url: `${domain}/${lang}`,
       siteName: titles[lang as keyof typeof titles] || titles.es,
       title: titles[lang as keyof typeof titles] || titles.es,
@@ -139,8 +145,8 @@ export default async function RootLayout({
         <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 z-[100] px-6 py-3 bg-brand-GOLD text-brand-950 font-bold rounded-lg shadow-xl ring-2 ring-white">
           Skip to content
         </a>
-        <OrganizationSchema lang={lang as 'es' | 'en'} />
-        <LanguageProvider initialLang={lang as 'es' | 'en'}>
+        <OrganizationSchema lang={lang as 'es' | 'en' | 'pt' | 'de'} />
+        <LanguageProvider initialLang={lang as 'es' | 'en' | 'pt' | 'de'}>
           <SmoothScroll>
             <ScrollAnimationObserver />
             <ZeroGravityWrapper />

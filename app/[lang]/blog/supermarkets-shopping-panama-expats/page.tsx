@@ -3,20 +3,32 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, ShoppingCart, DollarSign, MapPin, AlertCircle, TrendingDown } from 'lucide-react';
 
 export const metadata: Metadata = {
-    title: 'Supermarkets in Panama 2026: Expat Shopping Guide (Prices, Stores & What to Buy Local)',
-    description:
-        'Complete supermarket guide to shopping in Panama. Compare El Rey, Riba Smith, PriceSmart, Machetazo. What\'s cheap local vs. expensive imported. Grocery costs, local markets, and online delivery.',
-    keywords:
-        'supermarkets Panama, grocery shopping Panama, expat shopping Panama, Panama grocery prices, El Rey Riba Smith, shopping in Panama',
+    title: 'Supermarkets & Shopping in Panama 2026: Where Expats Buy Groceries',
+    description: 'Guide to supermarkets in Panama. El Rey, Riba Smith, Súper 99, organic stores. Prices, locations, shopping tips.',
+    keywords: 'supermarkets Panama, grocery stores Panama, El Rey Panama, Riba Smith, shopping Panama',
     alternates: {
         canonical: 'https://panamarealestatesale.com/en/blog/supermarkets-shopping-panama-expats',
+        languages: {
+            'en': 'https://panamarealestatesale.com/en/blog/supermarkets-shopping-panama-expats',
+            'es': 'https://panamarealestatesale.com/es/blog/supermarkets-shopping-panama-expats',
+            'pt': 'https://panamarealestatesale.com/pt/blog/supermarkets-shopping-panama-expats',
+            'de': 'https://panamarealestatesale.com/de/blog/supermarkets-shopping-panama-expats',
+        },
     },
     openGraph: {
-        title: 'Supermarkets in Panama 2026: Expat Shopping Guide',
-        description:
-            'Everything you need to know about shopping in Panama — where to buy, what to import, prices, and where local costs actually matter.',
+        title: 'Supermarkets & Shopping in Panama 2026: Where Expats Buy Groceries',
+        description: 'Guide to supermarkets in Panama. El Rey, Riba Smith, Súper 99, organic stores. Prices, locations, shopping tips.',
         type: 'article',
         url: 'https://panamarealestatesale.com/en/blog/supermarkets-shopping-panama-expats',
+        images: [{ url: 'https://images.unsplash.com/photo-1537427564867-f4ef3ce7c827?w=1200&q=80', width: 1200, height: 630, alt: 'Supermarket in Panama' }],
+        locale: 'en_US',
+        siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+        card: 'summary_large_image',
+        title: 'Supermarkets & Shopping in Panama 2026: Where Expats Buy Groceries',
+        description: 'Guide to supermarkets in Panama. El Rey, Riba Smith, Súper 99, organic stores. Prices, locations, shopping tips.',
+        images: ['https://images.unsplash.com/photo-1537427564867-f4ef3ce7c827?w=1200&q=80'],
     },
 };
 
