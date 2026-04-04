@@ -2454,6 +2454,558 @@ export const BLOG_POSTS: BlogPost[] = [
     date: 'April 3, 2026',
     image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80',
     category: 'Investment'
+  },
+  {
+    id: 'blog-boquete-panama-real-estate',
+    slug: 'boquete-panama-real-estate',
+    title: {
+      en: 'Boquete Panama Real Estate 2026 | Prices, Neighborhoods & Buyer\'s Guide',
+      es: 'Bienes Raíces en Boquete Panamá 2026 | Precios, Barrios y Guía del Comprador'
+    },
+    excerpt: {
+      en: 'The complete guide to buying property in Boquete, Panama. Prices from $90K, mountain views, eternal spring climate — and why expats are flocking here.',
+      es: 'La guía completa para comprar propiedades en Boquete, Panamá. Precios desde $90K, vistas a las montañas y clima primaveral eterno.'
+    },
+    content: {
+      en: 'Boquete sits at 1,200m elevation with eternal spring temperatures and some of the lowest real estate prices in Latin America. A full guide to neighborhoods, prices, and the buying process.',
+      es: 'Boquete está ubicado a 1.200m de altitud con temperaturas de primavera eterna y algunos de los precios inmobiliarios más bajos de América Latina.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80',
+    category: 'Market Guide'
+  },
+  {
+    id: 'blog-bocas-del-toro-real-estate',
+    slug: 'bocas-del-toro-real-estate',
+    title: {
+      en: 'Bocas del Toro Real Estate 2026 | Beachfront Prices, Islands & Buyer\'s Guide',
+      es: 'Bienes Raíces en Bocas del Toro 2026 | Precios, Islas y Guía del Comprador'
+    },
+    excerpt: {
+      en: 'The definitive guide to buying real estate in Bocas del Toro, Panama. Overwater bungalows, island land, beachfront homes — prices from $80K. Updated for 2026.',
+      es: 'La guía definitiva para comprar bienes raíces en Bocas del Toro. Bungalows sobre el agua, terrenos en islas, casas frente al mar — desde $80K.'
+    },
+    content: {
+      en: 'The Caribbean archipelago like nowhere else in Panama. Island property, overwater homes, Rights of Possession land — complete buyer\'s guide for 2026.',
+      es: 'El archipiélago caribeño como ningún otro lugar en Panamá. Propiedades en islas, casas sobre el agua y terrenos ROP — guía completa del comprador.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=800&q=80',
+    category: 'Market Guide'
+  },
+  {
+    id: 'blog-panama-retirement-communities',
+    slug: 'panama-retirement-communities',
+    title: {
+      en: 'Best Panama Retirement Communities for Expats 2026 | Gated & Active Living',
+      es: 'Mejores Comunidades de Retiro en Panamá 2026 | Vida Activa y Residencias Privadas'
+    },
+    excerpt: {
+      en: 'From gated golf communities in Coronado to mountain villages in Boquete — the definitive guide to Panama\'s top retirement communities for expats in 2026.',
+      es: 'Desde comunidades cerradas de golf en Coronado hasta pueblos de montaña en Boquete — la guía definitiva para comunidades de retiro en Panamá.'
+    },
+    content: {
+      en: 'Panama has dozens of purpose-built and expat-rich communities perfect for retirement. This guide covers the top picks by lifestyle, budget, and location.',
+      es: 'Panamá tiene docenas de comunidades construidas para el retiro y ricas en expatriados. Esta guía cubre las mejores opciones por estilo de vida, presupuesto y ubicación.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=800&q=80',
+    category: 'Retirement'
+  },
+  {
+    id: 'blog-panama-vs-costa-rica-retirement',
+    slug: 'panama-vs-costa-rica-retirement',
+    title: {
+      en: 'Panama vs Costa Rica Retirement 2026: Honest Side-by-Side Comparison',
+      es: 'Panamá vs Costa Rica para Jubilarse 2026: Comparación Honesta'
+    },
+    excerpt: {
+      en: 'Taxes, cost of living, visas, healthcare, safety — every category compared. Most expats who do this research choose Panama. Here\'s exactly why.',
+      es: 'Impuestos, costo de vida, visas, salud, seguridad — cada categoría comparada. La mayoría de los expatriados que investigan esto eligen Panamá. Aquí está la razón exacta.'
+    },
+    content: {
+      en: 'A detailed comparison of Panama vs Costa Rica for retirement: visa programs, taxes, property prices, healthcare, safety, and overall quality of life.',
+      es: 'Una comparación detallada de Panamá vs Costa Rica para el retiro: programas de visa, impuestos, precios de propiedades, salud, seguridad y calidad de vida general.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1519046904884-53103b34b206?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-pros-cons-retiring-panama',
+    slug: 'pros-cons-retiring-panama',
+    title: {
+      en: 'Pros and Cons of Retiring in Panama 2026: The Unfiltered Truth',
+      es: 'Pros y Contras de Jubilarse en Panamá 2026: La Verdad Sin Filtros'
+    },
+    excerpt: {
+      en: 'We asked 200+ expats what they love and hate about retiring in Panama. Here are the 10 pros and 7 cons you need to know before making the move.',
+      es: 'Preguntamos a más de 200 expatriados qué aman y odian de jubilarse en Panamá. Aquí están los pros y contras que necesitas saber antes de mudarte.'
+    },
+    content: {
+      en: 'An honest, balanced look at retiring in Panama — including the real challenges alongside the genuine advantages over other retirement destinations.',
+      es: 'Una mirada honesta y equilibrada a jubilarse en Panamá, incluidos los desafíos reales junto con las ventajas genuinas sobre otros destinos de jubilación.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1534430480872-3498386e7856?w=800&q=80',
+    category: 'Retirement'
+  },
+  {
+    id: 'blog-moving-to-panama-from-florida',
+    slug: 'moving-to-panama-from-florida',
+    title: {
+      en: 'Moving to Panama from Florida 2026: Complete Relocation Guide',
+      es: 'Mudarse de Florida a Panamá 2026: Guía Completa de Reubicación'
+    },
+    excerpt: {
+      en: 'Florida residents are discovering Panama — 2.5 hours away — offers the same sunshine and beaches at 60% less cost, with better tax advantages. Here\'s how to make the move.',
+      es: 'Los residentes de Florida están descubriendo que Panamá — a 2.5 horas — ofrece el mismo sol y playas a un 60% menos de costo, con mejores ventajas fiscales.'
+    },
+    content: {
+      en: 'A relocation guide specifically for Floridians moving to Panama: flight routes, cost comparisons, visa options, neighborhoods that feel like Florida, and a step-by-step action plan.',
+      es: 'Una guía de reubicación específica para los floridanos que se mudan a Panamá: rutas de vuelo, comparaciones de costos, opciones de visa y plan de acción paso a paso.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1533104816931-20fa691ff6ca?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-moving-to-panama-from-texas',
+    slug: 'moving-to-panama-from-texas',
+    title: {
+      en: 'Moving to Panama from Texas 2026: Relocation Guide for Texans',
+      es: 'Mudarse de Texas a Panamá 2026: Guía de Reubicación para Texanos'
+    },
+    excerpt: {
+      en: 'Texans retiring abroad are choosing Panama over Mexico and Costa Rica. Lower taxes, better healthcare, $1,000/month lifestyles — here\'s the complete Texas-to-Panama guide.',
+      es: 'Los texanos que se jubilan en el extranjero están eligiendo Panamá sobre México y Costa Rica. Menores impuestos, mejor atención médica — aquí está la guía completa.'
+    },
+    content: {
+      en: 'Everything a Texan needs to know before moving to Panama: from Houston/Dallas direct flights to visa programs, cost of living comparisons, and the best neighborhoods for American expats.',
+      es: 'Todo lo que un texano necesita saber antes de mudarse a Panamá: desde vuelos directos hasta programas de visa, comparaciones de costo de vida y mejores vecindarios para expatriados americanos.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1559827291-72ee739d0d9a?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-deutsche-auswanderer',
+    slug: 'panama-deutsche-auswanderer',
+    title: {
+      en: 'Auswandern nach Panama 2026: Der komplette Leitfaden für Deutsche',
+      es: 'Emigrar a Panamá 2026: La guía completa para alemanes'
+    },
+    excerpt: {
+      en: 'Der vollständige Leitfaden für Deutsche, die nach Panama auswandern möchten: Visa, Immobilienpreise, Kosten und warum Panama Mexiko und Costa Rica schlägt.',
+      es: 'La guía completa para alemanes que quieren emigrar a Panamá: visas, precios de inmuebles, costos y por qué Panamá supera a México y Costa Rica.'
+    },
+    content: {
+      en: 'German expat guide to Panama: Pensionado Visa requirements, Friendly Nations Visa, real estate prices, cost of living in euros, German-speaking communities, and tax advantages.',
+      es: 'Guía para expatriados alemanes en Panamá: requisitos de visa Pensionado, Visa Friendly Nations, precios inmobiliarios, costo de vida en euros y comunidades germanoparlantes.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-tax-benefits-foreigners-2026',
+    slug: 'panama-tax-benefits-foreigners-2026',
+    title: {
+      en: 'Panama Tax Benefits for Foreigners 2026: Zero Tax on Foreign Income Explained',
+      es: 'Beneficios Fiscales de Panamá para Extranjeros 2026: Cero Impuesto sobre Ingresos Extranjeros'
+    },
+    excerpt: {
+      en: 'Panama\'s territorial tax system means foreigners pay ZERO tax on foreign-source income. No capital gains, no inheritance tax, no wealth tax. Here\'s the complete legal breakdown.',
+      es: 'El sistema fiscal territorial de Panamá significa que los extranjeros pagan CERO impuestos sobre ingresos de fuente extranjera. Sin ganancias de capital, sin impuesto a la herencia.'
+    },
+    content: {
+      en: 'A complete explanation of Panama\'s territorial tax system for foreign residents: what income is taxed, what is exempt, how to set up structures, and how it compares to other expat tax havens.',
+      es: 'Una explicación completa del sistema fiscal territorial de Panamá para residentes extranjeros: qué ingresos se gravan, qué está exento y cómo se compara con otros paraísos fiscales.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80',
+    category: 'Legal'
+  },
+  {
+    id: 'blog-panama-cost-of-living-2026',
+    slug: 'panama-cost-of-living-2026',
+    title: {
+      en: 'Panama Cost of Living 2026: Real Monthly Budget Breakdown by City',
+      es: 'Costo de Vida en Panamá 2026: Desglose Real del Presupuesto Mensual por Ciudad'
+    },
+    excerpt: {
+      en: 'What does it actually cost to live in Panama City vs Boquete vs Coronado in 2026? Real numbers from expats: rent, food, healthcare, transportation — no fluff.',
+      es: '¿Qué cuesta realmente vivir en Ciudad de Panamá vs Boquete vs Coronado en 2026? Cifras reales de expatriados: alquiler, comida, salud, transporte — sin adornos.'
+    },
+    content: {
+      en: 'Monthly budget breakdowns for three lifestyles (budget, comfortable, luxury) across Panama\'s top expat cities. Real numbers, no estimates — plus a comparison vs the US and Costa Rica.',
+      es: 'Desglose del presupuesto mensual para tres estilos de vida (básico, cómodo, lujoso) en las principales ciudades de Panamá para expatriados. Cifras reales, sin estimaciones.'
+    },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-vs-mexico-retirement',
+    slug: 'panama-vs-mexico-retirement',
+    title: { en: 'Panama vs Mexico for Retirement 2026: The Honest Data-Driven Comparison', es: 'Panamá vs México para Jubilarse 2026: Comparación Honesta' },
+    excerpt: { en: 'Territorial tax, Pensionado visa, dollar economy, world-class hospitals — Panama edges out Mexico on almost every key retirement metric. Here is the data.', es: 'Impuesto territorial, visa Pensionado, economía en dólares — Panamá supera a México en casi todos los indicadores clave de jubilación.' },
+    content: { en: 'A comprehensive comparison of Panama vs Mexico for retirement: cost of living, taxes, visas, healthcare, safety, and real estate.', es: 'Una comparación integral de Panamá vs México para la jubilación: costo de vida, impuestos, visas, salud, seguridad e inmuebles.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1502933691298-84fc14542831?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-vs-colombia-retirement',
+    slug: 'panama-vs-colombia-retirement',
+    title: { en: 'Panama vs Colombia for Expats 2026: Which Is Really Better?', es: 'Panamá vs Colombia para Expatriados 2026: ¿Cuál es Realmente Mejor?' },
+    excerpt: { en: 'USD stability, faster residency, and superior healthcare infrastructure — Panama vs Colombia broken down category by category.', es: 'Estabilidad del dólar, residencia más rápida y mejor infraestructura sanitaria — Panamá vs Colombia categoría por categoría.' },
+    content: { en: 'Panama vs Colombia compared: currency stability, safety, visas, real estate, and cost of living for expats.', es: 'Panamá vs Colombia comparados: estabilidad monetaria, seguridad, visas, inmuebles y costo de vida para expatriados.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1583407566-cd81dea2bba4?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-vs-portugal-retirement',
+    slug: 'panama-vs-portugal-retirement',
+    title: { en: 'Panama vs Portugal for Retirement 2026: Tax, Cost & Lifestyle Showdown', es: 'Panamá vs Portugal para Jubilarse 2026: Impuestos, Costo y Estilo de Vida' },
+    excerpt: { en: "Portugal's NHR tax regime changed. Panama's territorial tax hasn't. 60% lower costs, faster residency, and 2.5 hours from Miami — here's the full comparison.", es: 'El régimen fiscal NHR de Portugal cambió. El impuesto territorial de Panamá no. Costos 60% más bajos, residencia más rápida y a 2.5 horas de Miami.' },
+    content: { en: 'Panama vs Portugal: tax comparison, cost of living, visa timeline, healthcare, and real estate for international retirees.', es: 'Panamá vs Portugal: comparación fiscal, costo de vida, plazos de visa, salud e inmuebles para jubilados internacionales.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1555993539-1732b0258235?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-vs-spain-retirement',
+    slug: 'panama-vs-spain-retirement',
+    title: { en: 'Panama vs Spain for Retirement 2026: Taxes, Cost & Residency', es: 'Panamá vs España para Jubilarse 2026: Impuestos, Costo y Residencia' },
+    excerpt: { en: "Spain taxes capital gains at 24%. Panama taxes foreign income at 0%. Madrid costs 70% more than Boquete. The numbers don't lie.", es: 'España grava las ganancias de capital al 24%. Panamá grava los ingresos extranjeros al 0%. Madrid cuesta un 70% más que Boquete.' },
+    content: { en: 'Panama vs Spain retirement guide: tax burden, cost of living, visa residency paths, healthcare systems, and real estate investment.', es: 'Guía de jubilación Panamá vs España: carga fiscal, costo de vida, vías de residencia, sistemas de salud e inversión inmobiliaria.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-real-cost-of-moving-to-panama',
+    slug: 'real-cost-of-moving-to-panama',
+    title: { en: 'Real Cost of Moving to Panama 2026: Every Fee, Every Dollar, No Surprises', es: 'Costo Real de Mudarse a Panamá 2026: Todos los Gastos, Sin Sorpresas' },
+    excerpt: { en: 'International shipping ($3,500–9,000), visa fees, lawyer costs, deposit, setup — the complete first-year relocation budget breakdown nobody else publishes.', es: 'Envío internacional ($3,500–9,000), tarifas de visa, costos legales, depósito y configuración — el desglose completo que nadie más publica.' },
+    content: { en: 'The definitive guide to what it actually costs to move to Panama — shipping, legal fees, customs, housing setup, and total first-year expenses.', es: 'La guía definitiva sobre lo que realmente cuesta mudarse a Panamá: envío, honorarios legales, aduana, configuración de vivienda y gastos del primer año.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-healthcare-costs-2026',
+    slug: 'panama-healthcare-costs-2026',
+    title: { en: 'Panama Healthcare Costs 2026: Complete Price Guide for Expats', es: 'Costos de Salud en Panamá 2026: Guía Completa de Precios para Expatriados' },
+    excerpt: { en: "Doctor visits from $40. Hip replacement $12,000 (vs $40,000 in the USA). JCI-accredited hospitals. Pensionado gets 50% off. Here's every price.", es: 'Visitas médicas desde $40. Reemplazo de cadera $12,000 (vs $40,000 en EE.UU.). Hospitales acreditados por JCI. El Pensionado obtiene 50% de descuento.' },
+    content: { en: 'Complete Panama healthcare cost guide: doctor visit prices, specialist fees, major surgery costs, dental, insurance plans, and top hospitals.', es: 'Guía completa de costos de salud en Panamá: precios de visitas médicas, honorarios de especialistas, cirugías mayores, dental y planes de seguro.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?w=800&q=80',
+    category: 'Lifestyle'
+  },
+  {
+    id: 'blog-panama-for-digital-nomads-2026',
+    slug: 'panama-for-digital-nomads-2026',
+    title: { en: 'Panama for Digital Nomads 2026: Visa, Tax, Internet & Where to Base', es: 'Panamá para Nómadas Digitales 2026: Visa, Impuestos, Internet y Dónde Instalarse' },
+    excerpt: { en: '0% tax on foreign income. USD economy. 180-day tourist stay. Same timezone as US East Coast. Fiber internet. Panama is the undiscovered nomad paradise.', es: '0% de impuesto sobre ingresos extranjeros. Economía en USD. Estancia turística de 180 días. Internet de fibra óptica. Panamá es el paraíso nómada por descubrir.' },
+    content: { en: 'The complete Panama digital nomad guide: tax advantages, visa options, co-working spaces, neighborhoods, monthly budget, and community.', es: 'La guía completa para nómadas digitales en Panamá: ventajas fiscales, opciones de visa, espacios de co-trabajo, vecindarios y presupuesto mensual.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1593642632559-0c6d3fc62b89?w=800&q=80',
+    category: 'Lifestyle'
+  },
+  {
+    id: 'blog-panama-for-families-with-children',
+    slug: 'panama-for-families-with-children',
+    title: { en: 'Moving to Panama with Children 2026: Schools, Safety, Activities & Family Budget', es: 'Mudarse a Panamá con Hijos 2026: Escuelas, Seguridad, Actividades y Presupuesto Familiar' },
+    excerpt: { en: 'International schools from $6,000/year, ultra-safe neighborhoods like Clayton and Costa del Este, family budget $4,000–7,500/month — the complete guide for families.', es: 'Escuelas internacionales desde $6,000/año, vecindarios ultraseguros como Clayton y Costa del Este — la guía completa para familias.' },
+    content: { en: 'Everything families need to know before moving to Panama: international schools, safest neighborhoods, activities for kids, healthcare, and real family budgets.', es: 'Todo lo que las familias necesitan saber antes de mudarse a Panamá: escuelas internacionales, vecindarios más seguros, actividades para niños y presupuestos reales.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1511895426328-dc8714191011?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-banking-non-residents-guide',
+    slug: 'panama-banking-non-residents-guide',
+    title: { en: 'How to Open a Bank Account in Panama as a Non-Resident 2026', es: 'Cómo Abrir una Cuenta Bancaria en Panamá como No Residente 2026' },
+    excerpt: { en: "Which banks accept foreigners, what documents you'll need, what fees to expect, and the insider tips that get accounts approved — the guide nobody has written.", es: 'Qué bancos aceptan extranjeros, qué documentos necesitas, qué tarifas esperar y los consejos que logran la aprobación — la guía que nadie ha escrito.' },
+    content: { en: 'Complete guide to opening a Panama bank account as a foreigner: which banks accept non-residents, required documents, fees, and approval tips.', es: 'Guía completa para abrir una cuenta bancaria en Panamá como extranjero: qué bancos aceptan no residentes, documentos requeridos, tarifas y consejos de aprobación.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1541354329998-f4d9a9f9297f?w=800&q=80',
+    category: 'Legal'
+  },
+  {
+    id: 'blog-best-neighborhoods-panama-city-expats',
+    slug: 'best-neighborhoods-panama-city-expats',
+    title: { en: 'Best Neighborhoods in Panama City for Expats 2026: The Definitive Guide', es: 'Mejores Barrios de Ciudad de Panamá para Expatriados 2026: La Guía Definitiva' },
+    excerpt: { en: '8 neighborhoods profiled with rent ranges, safety ratings, walkability, and who each area is best for — from the party vibes of Casco Viejo to the suburban calm of Costa del Este.', es: '8 vecindarios analizados con rangos de alquiler, calificaciones de seguridad y para quién es mejor cada área — desde Casco Viejo hasta Costa del Este.' },
+    content: { en: 'Comprehensive neighborhood guide for Panama City expats: Casco Viejo, Punta Pacifica, Costa del Este, Clayton, San Francisco, El Cangrejo, Albrook, and more.', es: 'Guía completa de vecindarios de Ciudad de Panamá para expatriados: Casco Viejo, Punta Pacifica, Costa del Este, Clayton, San Francisco, El Cangrejo y más.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1514565131-fce0801e6785?w=800&q=80',
+    category: 'Lifestyle'
+  },
+  {
+    id: 'blog-panama-vs-belize-retirement',
+    slug: 'panama-vs-belize-retirement',
+    title: { en: 'Panama vs Belize for Retirement 2026: Why Panama Wins on Every Key Factor', es: 'Panamá vs Belice para Jubilarse 2026: Por Qué Panamá Gana en Cada Factor' },
+    excerpt: { en: "Belize QRP requires $24,000/year income. Panama Pensionado requires $12,000/year. Belize has zero JCI hospitals. Panama has three. This isn't close.", es: 'QRP de Belice requiere $24,000/año de ingresos. Pensionado de Panamá requiere $12,000/año. Belice no tiene hospitales JCI. Panamá tiene tres. No hay comparación.' },
+    content: { en: 'Panama vs Belize retirement comparison: visa income requirements, healthcare, safety, real estate, internet, and overall quality of life.', es: 'Comparación de jubilación Panamá vs Belice: requisitos de ingresos para visa, salud, seguridad, inmuebles, internet y calidad de vida en general.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-how-to-move-to-panama-step-by-step-2026',
+    slug: 'how-to-move-to-panama-step-by-step-2026',
+    title: { en: 'How to Move to Panama in 2026: Complete 12-Month Step-by-Step Checklist', es: 'Cómo Mudarse a Panamá en 2026: Lista de Verificación Completa de 12 Meses' },
+    excerpt: { en: 'From the scouting trip to getting your Pensionado card — the complete 4-phase, 12-month roadmap for moving to Panama with every checklist and cost estimate.', es: 'Desde el viaje de exploración hasta obtener tu tarjeta de Pensionado — el plan de ruta completo de 4 fases y 12 meses para mudarse a Panamá.' },
+    content: { en: 'The complete step-by-step guide to moving to Panama: planning, documents, visa, shipping, arrival, and settling. Month-by-month checklist.', es: 'La guía completa paso a paso para mudarse a Panamá: planificación, documentos, visa, envío, llegada y establecimiento. Lista de verificación mes a mes.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-property-buying-process-guide',
+    slug: 'panama-property-buying-process-guide',
+    title: { en: 'How to Buy Property in Panama as a Foreigner 2026: Step-by-Step Legal Guide', es: 'Cómo Comprar Propiedades en Panamá como Extranjero 2026: Guía Legal Paso a Paso' },
+    excerpt: { en: 'Foreigners have the same ownership rights as Panamanians. No restrictions on titled property. 2-4% closing costs. Zero property tax on homes under $120K. The complete buyer guide.', es: 'Los extranjeros tienen los mismos derechos de propiedad que los panameños. Sin restricciones en propiedades con título. Costos de cierre del 2-4%. Cero impuesto predial en casas bajo $120K.' },
+    content: { en: 'Step-by-step guide to buying property in Panama as a foreigner: title types, due diligence, contracts, mortgages, costs, and red flags to avoid.', es: 'Guía paso a paso para comprar propiedades en Panamá como extranjero: tipos de título, diligencia debida, contratos, hipotecas, costos y señales de alerta.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80',
+    category: 'Investment'
+  },
+  {
+    id: 'blog-vivir-en-panama-venezolanos',
+    slug: 'vivir-en-panama-venezolanos',
+    title: { en: 'Living in Panama as a Venezuelan 2026: Visa, Work & Real Estate', es: 'Vivir en Panamá siendo Venezolano 2026: Visa, Trabajo y Bienes Raíces' },
+    excerpt: { en: 'Panama has 100,000+ Venezuelans. USD economy, political stability, work opportunities in finance and logistics — the complete guide for Venezuelans.', es: 'Panamá tiene más de 100,000 venezolanos. Economía en USD, estabilidad política, oportunidades laborales en finanzas y logística — la guía completa para venezolanos.' },
+    content: { en: 'Complete guide for Venezuelans moving to Panama: visa options, work opportunities, Venezuelan community, cost of living, and real estate.', es: 'Guía completa para venezolanos que se mudan a Panamá: opciones de visa, oportunidades laborales, comunidad venezolana, costo de vida y bienes raíces.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-para-colombianos-guia-2026',
+    slug: 'panama-para-colombianos-guia-2026',
+    title: { en: 'Panama for Colombians 2026: Friendly Nations Visa, Investment & How to Move', es: 'Panamá para Colombianos 2026: Visa Friendly Nations, Inversión y Cómo Mudarse' },
+    excerpt: { en: 'Colombia is on the Friendly Nations list — permanent residency in 3-6 months. 1-hour flight from Bogotá. USD accounts. 6-9% rental yields. The complete Colombian guide.', es: 'Colombia está en la lista Friendly Nations — residencia permanente en 3-6 meses. Vuelo de 1 hora desde Bogotá. Cuentas en USD. Rendimientos de alquiler del 6-9%.' },
+    content: { en: 'Complete guide for Colombians moving to Panama: Friendly Nations visa process, real estate investment, Colombian community, cost of living comparison.', es: 'Guía completa para colombianos que se mudan a Panamá: proceso de visa Friendly Nations, inversión inmobiliaria, comunidad colombiana y comparación de costo de vida.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1513031300226-c8fb12de9ade?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-para-argentinos-guia-2026',
+    slug: 'panama-para-argentinos-guia-2026',
+    title: { en: 'Panama for Argentinians 2026: Escape Inflation, Friendly Nations Visa & Real Estate', es: 'Panamá para Argentinos 2026: Escape del Peso, Visa Friendly Nations y Bienes Raíces' },
+    excerpt: { en: '200%+ inflation in Argentina. Panama = USD accounts, 0% tax on foreign income, and Argentina IS on the Friendly Nations list. This is the financial escape route.', es: 'Inflación del 200%+ en Argentina. Panamá = cuentas en USD, 0% de impuesto sobre ingresos extranjeros. Argentina SÍ está en la lista Friendly Nations. Esta es la salida financiera.' },
+    content: { en: 'Complete guide for Argentinians moving to Panama: Friendly Nations visa, tax planning, real estate as USD asset, banking, and the Argentine community in Panama.', es: 'Guía completa para argentinos que se mudan a Panamá: visa Friendly Nations, planificación fiscal, bienes raíces como activo en USD, banca y la comunidad argentina en Panamá.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1612294037637-ec400b3f99c0?w=800&q=80',
+    category: 'Relocation'
+  },
+  // ── Batch 3: Daily Life & Practical Expat Guides ──────────────────────────
+  {
+    id: 'blog-panama-sim-card-guide',
+    slug: 'panama-sim-card-guide',
+    title: { en: 'Best SIM Cards in Panama 2026: Claro vs Movistar vs Cable Onda (Expat Guide)', es: 'Mejores SIM en Panamá 2026: Claro vs Movistar vs Cable Onda (Guía Expat)' },
+    excerpt: { en: 'Landing in Panama City? Get connected in 15 minutes. Full comparison of Claro, Movistar, Cable Onda, and eSIM options for expats and digital nomads.', es: '¿Llegando a Ciudad de Panamá? Conéctate en 15 minutos. Comparación completa de Claro, Movistar, Cable Onda y opciones eSIM para expats.' },
+    content: { en: 'Complete guide to buying SIM cards in Panama: Claro ($20-45/mo), Movistar, Cable Onda, eSIM options, where to buy at Tocumen Airport, and the best plans for expats.', es: 'Guía completa para comprar SIM en Panamá: Claro ($20-45/mes), Movistar, Cable Onda, eSIM, dónde comprar en el Aeropuerto de Tocumen y los mejores planes para expats.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-internet-providers-panama-expats',
+    slug: 'internet-providers-panama-expats',
+    title: { en: 'Internet in Panama 2026: Best Providers for Expats & Remote Workers', es: 'Internet en Panamá 2026: Mejores Proveedores para Expats y Trabajadores Remotos' },
+    excerpt: { en: 'Cable Onda fiber at 100Mbps for $35/mo or Starlink at $120/mo for mountain areas. Everything remote workers need to know about internet reliability in Panama.', es: 'Fibra de Cable Onda a 100Mbps por $35/mes o Starlink a $120/mes para zonas montañosas. Todo lo que necesitan saber los trabajadores remotos sobre internet en Panamá.' },
+    content: { en: 'Internet providers in Panama compared: Cable Onda fiber (best in city), Claro, Movistar, and Starlink for Boquete/rural areas. Speeds, prices, reliability ratings for remote workers.', es: 'Comparativa de proveedores de internet en Panamá: fibra Cable Onda (mejor en ciudad), Claro, Movistar y Starlink para zonas rurales. Velocidades, precios y fiabilidad.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1544197150-b99a580bb7a8?w=800&q=80',
+    category: 'Lifestyle'
+  },
+  {
+    id: 'blog-getting-around-panama-city-guide',
+    slug: 'getting-around-panama-city-guide',
+    title: { en: 'Getting Around Panama City: Metro, Uber, Taxis & Buses (2026 Expat Guide)', es: 'Moverse en Ciudad de Panamá: Metro, Uber, Taxis y Buses (Guía Expat 2026)' },
+    excerpt: { en: 'Metro costs $0.35 per ride. Uber averages $3-8 across the city. No taxi meters — know the zones. Complete transportation guide for new expats in Panama City.', es: 'El metro cuesta $0.35 por viaje. Uber promedia $3-8 en toda la ciudad. Taxis sin taxímetro — conoce las zonas. Guía completa de transporte para expats en Ciudad de Panamá.' },
+    content: { en: 'How to get around Panama City: Metro Line 1 & 2, Uber (safe, reliable), taxis (negotiate price), buses ($0.25 flat), and driving tips. Day-to-day transport costs for expats.', es: 'Cómo moverse en Ciudad de Panamá: Metro Líneas 1 y 2, Uber (seguro y confiable), taxis (negociar precio), buses ($0.25), y consejos para conducir. Costos de transporte diario para expats.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-supermarkets-shopping-panama-expats',
+    slug: 'supermarkets-shopping-panama-expats',
+    title: { en: 'Supermarkets & Grocery Shopping in Panama: Expat Guide 2026', es: 'Supermercados y Compras en Panamá: Guía Expat 2026' },
+    excerpt: { en: 'El Rey, Riba Smith, PriceSmart (Costco equivalent), Rey, and 99. Where to find imported foods, organic produce, and the best prices in Panama City.', es: 'El Rey, Riba Smith, PriceSmart (equivalente a Costco), Rey y 99. Dónde encontrar alimentos importados, productos orgánicos y los mejores precios en Ciudad de Panamá.' },
+    content: { en: 'Complete supermarket guide for expats in Panama: El Rey (nationwide), Riba Smith (gourmet), PriceSmart (bulk/Costco), Super 99, and Xtra. Price comparisons and what to buy local vs import.', es: 'Guía completa de supermercados para expats en Panamá: El Rey (nacional), Riba Smith (gourmet), PriceSmart (a granel/Costco), Super 99 y Xtra. Comparativa de precios.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=800&q=80',
+    category: 'Lifestyle'
+  },
+  {
+    id: 'blog-panama-drivers-license-foreigners',
+    slug: 'panama-drivers-license-foreigners',
+    title: { en: "Driver's License in Panama for Foreigners: Exchange Your License Without a Test", es: 'Licencia de Conducir en Panamá para Extranjeros: Canjea tu Licencia Sin Examen' },
+    excerpt: { en: 'US, Canadian, and EU license holders can exchange for a Panama license without taking a driving test. Here is the exact step-by-step process.', es: 'Titulares de licencias de EE.UU., Canadá y la UE pueden canjear su licencia panameña sin examen de conducción. Aquí está el proceso paso a paso.' },
+    content: { en: "How to get a Panama driver's license as a foreigner: license exchange process (no test for US/Canada/EU), SERTRACEN offices, documents required, costs ($10-25), and timeline (1-3 days).", es: 'Cómo obtener licencia de conducir en Panamá como extranjero: proceso de canje (sin examen para EE.UU./Canadá/UE), oficinas SERTRACEN, documentos requeridos, costos ($10-25) y plazos.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1580893246395-52aead8960dc?w=800&q=80',
+    category: 'Legal'
+  },
+  {
+    id: 'blog-moving-to-panama-with-pets',
+    slug: 'moving-to-panama-with-pets',
+    title: { en: 'Moving to Panama with Pets 2026: Dogs, Cats & the No-Quarantine Policy', es: 'Mudarse a Panamá con Mascotas 2026: Perros, Gatos y Sin Cuarentena' },
+    excerpt: { en: 'Panama has NO quarantine for dogs and cats from most countries. USDA health certificate + rabies vaccine is the core requirement. Full guide for pet relocation.', es: 'Panamá NO tiene cuarentena para perros y gatos de la mayoría de países. Certificado de salud USDA + vacuna antirrábica es el requisito principal. Guía completa de relocalización.' },
+    content: { en: 'Moving to Panama with dogs or cats: no quarantine required, USDA/MIDA health certificate, rabies vaccine, microchipping, airline pet policies, vet clinics in Panama City.', es: 'Mudarse a Panamá con perros o gatos: sin cuarentena, certificado USDA/MIDA, vacuna antirrábica, microchip, políticas de aerolíneas y clínicas veterinarias en Ciudad de Panamá.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-weather-rainy-season-guide',
+    slug: 'panama-weather-rainy-season-guide',
+    title: { en: "Panama Weather & Rainy Season 2026: What Expats Actually Experience", es: 'Clima y Temporada de Lluvias en Panamá 2026: Lo que los Expats Realmente Experimentan' },
+    excerpt: { en: 'Dry season Dec-April, rainy May-Nov — but it rains 1-2 hours a day, not all day. Bocas del Toro has the OPPOSITE pattern. Month-by-month weather breakdown.', es: 'Temporada seca dic-abr, lluviosa may-nov — pero llueve 1-2 horas al día, no todo el día. Bocas del Toro tiene el patrón OPUESTO. Desglose clima mes a mes.' },
+    content: { en: 'Panama weather guide by region and month: Panama City (dry Dec-Apr, rainy May-Nov), Boquete (cool 65-75°F year-round), Bocas del Toro (opposite rainy season), Pacific beaches vs Caribbean.', es: 'Guía del clima de Panamá por región y mes: Ciudad de Panamá, Boquete (fresco 18-24°C todo el año), Bocas del Toro (temporada lluviosa opuesta), playas Pacífico vs Caribe.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?w=800&q=80',
+    category: 'Lifestyle'
+  },
+  {
+    id: 'blog-how-to-rent-apartment-panama',
+    slug: 'how-to-rent-apartment-panama',
+    title: { en: 'How to Rent an Apartment in Panama City: Expat Guide to Finding Housing 2026', es: 'Cómo Alquilar un Apartamento en Ciudad de Panamá: Guía Expat para Encontrar Vivienda 2026' },
+    excerpt: { en: 'CompraVenta.com, Encuentra24, and Facebook groups are where Panama rentals live. Studios from $700, 1BR from $900 in Miraflores. No credit history needed — just 1-2 months deposit.', es: 'CompraVenta.com, Encuentra24 y grupos de Facebook son donde se encuentran los alquileres en Panamá. Estudios desde $700, 1BR desde $900 en Miraflores. Sin historial crediticio — solo 1-2 meses de depósito.' },
+    content: { en: 'Complete guide to renting in Panama City: where to search (CompraVenta, Encuentra24, Facebook), neighborhoods by budget, typical rental costs, lease terms, and tenant rights in Panama.', es: 'Guía completa para alquilar en Ciudad de Panamá: dónde buscar, barrios por presupuesto, costos típicos de alquiler, términos de arrendamiento y derechos del inquilino en Panamá.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-sending-money-panama-wire-transfer',
+    slug: 'sending-money-panama-wire-transfer',
+    title: { en: 'Sending Money to Panama: Wise vs Wire Transfer vs Zelle (Expat Banking Guide)', es: 'Enviar Dinero a Panamá: Wise vs Transferencia Bancaria vs Zelle (Guía Bancaria Expat)' },
+    excerpt: { en: 'Wise saves expats an average of $200/year vs traditional wire transfers. Panama is fully dollarized — no currency conversion risk. Best methods to move money internationally.', es: 'Wise ahorra a los expats un promedio de $200/año vs transferencias bancarias tradicionales. Panamá está totalmente dolarizado — sin riesgo de cambio de divisas. Mejores métodos para mover dinero.' },
+    content: { en: 'How to send money to Panama: Wise (best rates), bank wire transfers (SWIFT codes for Banistmo/BAC), Zelle limitations, Western Union/MoneyGram, and setting up local USD accounts.', es: 'Cómo enviar dinero a Panamá: Wise (mejores tasas), transferencias bancarias (códigos SWIFT de Banistmo/BAC), limitaciones de Zelle, Western Union/MoneyGram y cuentas USD locales.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1601597111158-2fceff292cdc?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-atm-cash-panama-guide',
+    slug: 'atm-cash-panama-guide',
+    title: { en: 'ATMs & Cash in Panama: Zero-Fee Strategies for Expats (2026)', es: 'Cajeros y Efectivo en Panamá: Estrategias Sin Comisiones para Expats (2026)' },
+    excerpt: { en: 'Charles Schwab reimburses ALL ATM fees worldwide — the #1 expat banking card for Panama. Here are the best ATMs, which to avoid, and how to always get cash at zero cost.', es: 'Charles Schwab reembolsa TODAS las comisiones de cajeros a nivel mundial — la tarjeta bancaria #1 para expats en Panamá. Los mejores cajeros, cuáles evitar y cómo obtener efectivo siempre sin costo.' },
+    content: { en: 'ATM guide for Panama expats: Charles Schwab (free withdrawals worldwide), best ATM banks (Global Bank, Banistmo, BAC), fees to expect ($3-5 per transaction), and carrying cash safely.', es: 'Guía de cajeros automáticos para expats en Panamá: Charles Schwab (retiros gratuitos mundiales), mejores bancos de cajeros, comisiones esperadas ($3-5) y llevar efectivo de forma segura.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-what-to-pack-moving-to-panama',
+    slug: 'what-to-pack-moving-to-panama',
+    title: { en: 'What to Pack When Moving to Panama: The Definitive Expat Packing List 2026', es: 'Qué Empacar al Mudarte a Panamá: La Lista Definitiva del Expat 2026' },
+    excerpt: { en: 'Panama uses 110V US outlets — no adapter needed. Bring your prescription meds (1-year supply), good rain gear, and a Charles Schwab debit card. What to ship, what to buy there.', es: 'Panamá usa enchufes americanos de 110V — no necesitas adaptador. Lleva tus medicamentos (provisión de 1 año), ropa para lluvia y una tarjeta débito Charles Schwab. Qué enviar, qué comprar allá.' },
+    content: { en: 'The ultimate packing list for moving to Panama: electronics (110V, same as US), clothing (lightweight, rain gear), medications, documents checklist, what to ship vs buy in Panama, and weight limits.', es: 'La lista definitiva para mudarse a Panamá: electrónica (110V, igual que EE.UU.), ropa (ligera y para lluvia), medicamentos, documentos, qué enviar vs comprar en Panamá y límites de peso.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-apostille-documents-panama-visa',
+    slug: 'apostille-documents-panama-visa',
+    title: { en: 'Apostille Documents for Panama Visa: Step-by-Step Guide (FBI, Birth Certificate & More)', es: 'Apostillar Documentos para Visa de Panamá: Guía Paso a Paso (FBI, Acta de Nacimiento y Más)' },
+    excerpt: { en: 'FBI background check takes 6-12 weeks — start it FIRST. Apostilles cost $5-20 per document from your Secretary of State. Complete Panama visa document checklist.', es: 'El chequeo del FBI tarda 6-12 semanas — empiézalo PRIMERO. Las apostillas cuestan $5-20 por documento en tu Secretaría de Estado. Lista completa de documentos para visa de Panamá.' },
+    content: { en: 'Complete apostille guide for Panama visa applications: FBI background check (6-12 weeks), birth certificate apostille, marriage certificate, Secretary of State process by state, authentication timeline.', es: 'Guía completa de apostilla para visas panameñas: verificación FBI (6-12 semanas), apostilla de acta de nacimiento, certificado de matrimonio, proceso por estado de EE.UU., plazos de autenticación.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=800&q=80',
+    category: 'Legal'
+  },
+  {
+    id: 'blog-start-business-panama-foreigners',
+    slug: 'start-business-panama-foreigners',
+    title: { en: 'How to Start a Business in Panama as a Foreigner: S.A., LLC & the Friendly Nations Visa Path', es: 'Cómo Iniciar un Negocio en Panamá como Extranjero: S.A., LLC y la Ruta de la Visa Friendly Nations' },
+    excerpt: { en: 'Panama S.A. (corporation) costs $800-1,500 to form + $300-500/year to maintain — and it qualifies for the Friendly Nations permanent residency visa. The complete business formation guide.', es: 'Una S.A. panameña cuesta $800-1,500 para formar + $300-500/año para mantener — y califica para la residencia permanente Friendly Nations. La guía completa de formación empresarial.' },
+    content: { en: 'Starting a business in Panama as a foreigner: S.A. vs LLC vs foundation, costs, timeline (2-4 weeks), Friendly Nations visa qualification, tax benefits (territorial tax system), and local partners.', es: 'Iniciar un negocio en Panamá como extranjero: S.A. vs LLC vs fundación, costos, plazos (2-4 semanas), calificación visa Friendly Nations, beneficios fiscales (sistema territorial) y socios locales.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80',
+    category: 'Investment'
+  },
+  {
+    id: 'blog-moving-to-panama-from-canada',
+    slug: 'moving-to-panama-from-canada',
+    title: { en: 'Moving to Panama from Canada: CPP, OAS, Taxes & the Friendly Nations Visa', es: 'Mudarse a Panamá desde Canadá: CPP, OAS, Impuestos y la Visa Friendly Nations' },
+    excerpt: { en: 'Canada IS on the Friendly Nations list. CPP and OAS are paid globally. Breaking Canadian tax residency saves thousands. The complete guide for Canadian expats.', es: 'Canadá SÍ está en la lista Friendly Nations. El CPP y OAS se pagan globalmente. Romper la residencia fiscal canadiense ahorra miles. Guía completa para expats canadienses.' },
+    content: { en: 'Canadian expat guide to Panama: Friendly Nations visa process, CPP/OAS pension abroad, Canadian tax residency severance, NHT reporting, Charles Schwab banking, and Canadian community in Panama.', es: 'Guía del expat canadiense en Panamá: proceso visa Friendly Nations, pensión CPP/OAS en el extranjero, corte de residencia fiscal canadiense, reporte NHT, banca y comunidad canadiense en Panamá.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-moving-to-panama-from-uk',
+    slug: 'moving-to-panama-from-uk',
+    title: { en: 'Moving to Panama from the UK: Post-Brexit Guide for British Expats 2026', es: 'Mudarse a Panamá desde el Reino Unido: Guía Post-Brexit para Expats Británicos 2026' },
+    excerpt: { en: 'Post-Brexit, Panama offers British expats something the EU cannot: zero tax on UK pension income, dollarized stability, and the Friendly Nations visa. The British expat complete guide.', es: 'Post-Brexit, Panamá ofrece a los expats británicos algo que la UE no puede: cero impuesto sobre pensión UK, estabilidad dolarizada y la visa Friendly Nations. Guía completa del expat británico.' },
+    content: { en: 'British expats in Panama: Friendly Nations visa (UK is on list), State Pension abroad, HMRC non-resident status, QROPS pension transfer considerations, healthcare, and British community in Panama City.', es: 'Expats británicos en Panamá: visa Friendly Nations (UK en lista), State Pension en el extranjero, estatus no residente HMRC, consideraciones de transferencia de pensión, salud y comunidad británica.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-food-guide-expats',
+    slug: 'panama-food-guide-expats',
+    title: { en: 'Panama Food Guide for Expats 2026: Sancocho, Ceviche, Geisha Coffee & the Best Restaurants', es: 'Guía Gastronómica de Panamá para Expats 2026: Sancocho, Ceviche, Café Geisha y los Mejores Restaurantes' },
+    excerpt: { en: 'Sancocho is the national dish. Ceviche de corvina is the street staple. Geisha coffee from Boquete sells for $800/lb. Panama City has a world-class restaurant scene — here is the complete food guide.', es: 'El sancocho es el plato nacional. El ceviche de corvina es el alimento callejero estrella. El café Geisha de Boquete se vende a $800/libra. Ciudad de Panamá tiene una escena gastronómica de clase mundial.' },
+    content: { en: 'Panama food guide: traditional dishes (sancocho, ropa vieja, ceviche de corvina), best restaurants in Panama City (Maito, Soseki, Donde José), supermarkets, farmers markets, and eating on a budget.', es: 'Guía gastronómica de Panamá: platos típicos (sancocho, ropa vieja, ceviche de corvina), mejores restaurantes en Ciudad de Panamá (Maito, Soseki, Donde José), mercados y comer con presupuesto.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=800&q=80',
+    category: 'Lifestyle'
+  },
+  // ── Batch 3: Spanish & Portuguese LatAm Guides ───────────────────────────
+  {
+    id: 'blog-panama-para-mexicanos-guia-2026',
+    slug: 'panama-para-mexicanos-guia-2026',
+    title: { en: 'Panama for Mexicans 2026: Friendly Nations Visa, Investment & Cost of Living', es: 'Panamá para Mexicanos 2026: Visa Friendly Nations, Inversión y Costo de Vida' },
+    excerpt: { en: 'Mexico IS on the Friendly Nations list — permanent residency in 3-6 months. Direct Copa flights from CDMX in 3.5 hours. Dollarized stability vs peso volatility. Full guide for Mexican expats.', es: 'México SÍ está en la lista Friendly Nations — residencia permanente en 3-6 meses. Vuelos directos Copa desde CDMX en 3.5 horas. Estabilidad dolarizada vs volatilidad del peso. Guía completa.' },
+    content: { en: 'Complete guide for Mexicans moving to Panama: Friendly Nations visa, cost of living vs Mexico City, Mexican community, real estate investment, and how to move legally step by step.', es: 'Guía completa para mexicanos que se mudan a Panamá: visa Friendly Nations, costo de vida vs Ciudad de México, comunidad mexicana, inversión inmobiliaria y cómo mudarse legalmente paso a paso.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1518638150340-f706e86654de?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-para-peruanos-guia-2026',
+    slug: 'panama-para-peruanos-guia-2026',
+    title: { en: 'Panama for Peruvians 2026: Friendly Nations Visa, Banking & Relocation Guide', es: 'Panamá para Peruanos 2026: Visa Friendly Nations, Banca y Guía de Reubicación' },
+    excerpt: { en: 'Peru IS on the Friendly Nations list. Lima to Panama City is a direct 5.5-hour Copa flight. USD accounts, 0% on foreign income, and a growing Peruvian expat community. Complete guide.', es: 'Perú SÍ está en la lista Friendly Nations. Lima a Ciudad de Panamá es un vuelo Copa directo de 5.5 horas. Cuentas en USD, 0% sobre ingresos extranjeros y una creciente comunidad peruana expat.' },
+    content: { en: 'Complete guide for Peruvians moving to Panama: Friendly Nations visa requirements, banking as Peruvian national, Lima-Panama flights, Peruvian community, cost of living comparison.', es: 'Guía completa para peruanos que se mudan a Panamá: requisitos visa Friendly Nations, banca como nacional peruano, vuelos Lima-Panamá, comunidad peruana y comparación de costo de vida.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1526392060635-9d6019884377?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-para-ecuatorianos-guia-2026',
+    slug: 'panama-para-ecuatorianos-guia-2026',
+    title: { en: 'Panama for Ecuadorians 2026: Two Dollarized Economies, One Big Advantage', es: 'Panamá para Ecuatorianos 2026: Dos Economías Dolarizadas, Una Gran Ventaja' },
+    excerpt: { en: 'Ecuador and Panama are both dollarized — zero currency risk for Ecuadorian expats. Ecuador IS on the Friendly Nations list. Guayaquil to Panama is 3 hours. The complete relocation guide.', es: 'Ecuador y Panamá están ambos dolarizados — cero riesgo cambiario para expats ecuatorianos. Ecuador SÍ está en lista Friendly Nations. Guayaquil a Panamá son 3 horas. Guía completa de reubicación.' },
+    content: { en: 'Guide for Ecuadorians moving to Panama: Friendly Nations visa, dollarized economy advantage, Guayaquil-Panama flights, Ecuadorian expat community, real estate investment, and cost of living.', es: 'Guía para ecuatorianos que se mudan a Panamá: visa Friendly Nations, ventaja de economía dolarizada, vuelos Guayaquil-Panamá, comunidad ecuatoriana, inversión inmobiliaria y costo de vida.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1596422846543-75c6fc197f07?w=800&q=80',
+    category: 'Relocation'
+  },
+  {
+    id: 'blog-panama-para-brasileiros-guia-2026',
+    slug: 'panama-para-brasileiros-guia-2026',
+    title: { en: 'Panama for Brazilians 2026: Friendly Nations Visa, USD Protection & Real Estate', es: 'Panamá para Brasileños 2026: Visa Friendly Nations, Protección USD y Bienes Raíces' },
+    excerpt: { en: 'Brazil IS on the Friendly Nations list. Real devaluation has cost Brazilian investors millions — Panama USD accounts are the hedge. São Paulo to Panama is 8 hours direct. Full guide.', es: 'Brasil SÍ está en la lista Friendly Nations. La devaluación del real ha costado millones a inversores brasileños — las cuentas USD en Panamá son la cobertura. São Paulo a Panamá son 8 horas directas.' },
+    content: { en: 'Complete guide for Brazilians moving to Panama: Friendly Nations visa (Brazil eligible), USD protection from Real devaluation, São Paulo-Panama flights, Brazilian community, and real estate investment.', es: 'Guía completa para brasileños que se mudan a Panamá: visa Friendly Nations (Brasil elegible), protección USD de la devaluación del real, vuelos São Paulo-Panamá, comunidad brasileña e inversión inmobiliaria.' },
+    date: 'April 3, 2026',
+    image: 'https://images.unsplash.com/photo-1483729558449-99ef09a8c325?w=800&q=80',
+    category: 'Relocation'
   }
 ];
 
