@@ -25,10 +25,10 @@ export default function PodcastCard({ episode, lang }: PodcastCardProps) {
                     alt={title}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-brand-50/30 group-hover:bg-brand-50/60 transition-colors flex items-center justify-center">
+                <div className="absolute inset-0 bg-black/25 group-hover:bg-black/15 transition-colors flex items-center justify-center">
                     <PlayCircle className="w-16 h-16 text-white opacity-80 group-hover:opacity-100 group-hover:scale-110 transition-all duration-300 drop-shadow-lg" />
                 </div>
-                <div className="absolute bottom-3 right-3 bg-white/80 backdrop-blur-sm text-white text-xs font-bold px-2 py-1 rounded">
+                <div className="absolute bottom-3 right-3 bg-brand-950/80 backdrop-blur-sm text-white text-xs font-bold px-2 py-1 rounded">
                     {episode.duration}
                 </div>
             </div>

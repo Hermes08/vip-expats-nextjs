@@ -83,19 +83,19 @@ export default function PropertySearchFilters({ filters, onChange, total, filter
     onChange(DEFAULT_FILTERS);
   }
 
-  const selectCls = "w-full bg-brand-100 border border-brand-600 text-white text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:border-brand-GOLD/50 transition-colors appearance-none cursor-pointer";
+  const selectCls = "w-full bg-white border border-brand-TEAL/30 text-brand-950 text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:border-brand-TEAL transition-colors appearance-none cursor-pointer";
 
   return (
-    <div className="bg-brand-50/80 backdrop-blur-md border border-brand-800 rounded-2xl p-5 mb-8">
+    <div className="bg-white border border-brand-TEAL/20 rounded-2xl p-5 mb-8 shadow-sm">
       {/* Search text */}
       <div className="relative mb-4">
-        <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-brand-GOLD/50" />
+        <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-brand-TEAL/50" />
         <input
           type="text"
           value={filters.query}
           onChange={e => set('query', e.target.value)}
           placeholder={lang === 'es' ? 'Buscar por nombre, zona, ciudad...' : 'Search by name, zone, city...'}
-          className="w-full bg-brand-100 border border-brand-600 text-white text-sm rounded-xl pl-10 pr-4 py-2.5 focus:outline-none focus:border-brand-GOLD/50 transition-colors placeholder:text-slate-600"
+          className="w-full bg-white border border-brand-TEAL/30 text-brand-950 text-sm rounded-xl pl-10 pr-4 py-2.5 focus:outline-none focus:border-brand-TEAL transition-colors placeholder:text-slate-400"
         />
         {filters.query && (
           <button onClick={() => set('query', '')} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white transition-colors">
@@ -162,7 +162,7 @@ export default function PropertySearchFilters({ filters, onChange, total, filter
       </div>
 
       {/* Results summary + reset */}
-      <div className="flex items-center justify-between mt-4 pt-4 border-t border-brand-800">
+      <div className="flex items-center justify-between mt-4 pt-4 border-t border-brand-100">
         <span className="text-slate-500 text-xs font-semibold">
           {lang === 'es'
             ? `Mostrando ${filtered} de ${total} propiedades`
