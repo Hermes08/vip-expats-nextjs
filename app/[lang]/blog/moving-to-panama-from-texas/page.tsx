@@ -101,7 +101,7 @@ const timelineMonths = [
 const faqItems = [
     {
         q: 'Why is Boquete so popular with Texans?',
-        a: "Boquete offers cool mountain air (no Texas summer heat of 110°F+). It's reminiscent of Hill Country but cheaper. Property prices range from $200K–$600K for a nice house. Many Texans feel at home in the small-town vibe and tight expat community. Plus, it"s only a 45-minute flight from Panama City.',
+        a: "Boquete offers cool mountain air (no Texas summer heat of 110°F+). It's reminiscent of Hill Country but cheaper. Property prices range from $200K–$600K for a nice house. Many Texans feel at home in the small-town vibe and tight expat community. Plus, it's only a 45-minute flight from Panama City.",
     },
     {
         q: 'Do I pay property tax in both Texas and Panama if I own property in both?',
@@ -109,7 +109,7 @@ const faqItems = [
     },
     {
         q: 'Can I keep my Texas business and operate it from Panama?',
-        a: "Absolutely. Many Texans run businesses remotely from Panama. If you're a US citizen, you still owe US federal taxes on business income. But Panama offers no tax on foreign-sourced income, so if your business operates in the US and you"re just running it from Panama (living expenses paid from retirement), this is a clean tax situation. Hire a CPA to structure it correctly.',
+        a: "Absolutely. Many Texans run businesses remotely from Panama. If you're a US citizen, you still owe US federal taxes on business income. But Panama offers no tax on foreign-sourced income, so if your business operates in the US and you're just running it from Panama (living expenses paid from retirement), this is a clean tax situation. Hire a CPA to structure it correctly.",
     },
     {
         q: 'What is Copa Airlines and why is it important for Texans?',
