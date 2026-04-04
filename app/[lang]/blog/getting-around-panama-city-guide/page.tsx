@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, CheckCircle, Bus, Taxi, Zap, MapPin, AlertCircle, Navigation } from 'lucide-react';
+import { ArrowRight, CheckCircle, Bus, Car, Zap, MapPin, AlertCircle, Navigation } from 'lucide-react';
 
 export const metadata: Metadata = {
     title: 'Getting Around Panama City 2026: Metro, Uber, Bus & Taxi Guide',
@@ -267,7 +267,7 @@ export default async function PanamaCityTransportPage({ params }: { params: Prom
                 {/* Ride-Share Apps */}
                 <section className="reveal-on-scroll">
                     <h2 className="text-white text-3xl font-heading font-bold mb-6 uppercase tracking-tighter italic border-b border-brand-GOLD/30 pb-4">
-                        <Taxi className="inline text-brand-GOLD mr-2" size={28} />
+                        <Car className="inline text-brand-GOLD mr-2" size={28} />
                         Uber, inDriver & Bolt
                     </h2>
                     <p className="text-slate-500 mb-6 leading-relaxed">
