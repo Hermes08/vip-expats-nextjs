@@ -224,8 +224,8 @@ export async function GET() {
             const url = `${baseUrl}/${lang}/podcast/${episode.slug}`;
             const lastMod = episode.publishDate ? new Date(episode.publishDate).toISOString() : new Date().toISOString();
 
-            const title = escapeXml(episode.title[lang as 'en' | 'es']);
-            const desc = escapeXml(episode.description[lang as 'en' | 'es']);
+            const title = escapeXml(episode.title[lang as 'en' | 'es'] || episode.title['en']);
+            const desc = escapeXml(episode.description[lang as 'en' | 'es'] || episode.description['en']);
             const thumbLoc = `https://i.ytimg.com/vi/${episode.videoId}/maxresdefault.jpg`;
             const playerLoc = `https://www.youtube.com/embed/${episode.videoId}`;
             const durationSeconds = parseDurationToSeconds(episode.duration);
