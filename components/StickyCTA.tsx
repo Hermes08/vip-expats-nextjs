@@ -15,7 +15,8 @@ const StickyCTA: React.FC = () => {
             />
             <a
                 href={`tel:${CONTACT_INFO.phone}`}
-                className="relative flex items-center gap-3 bg-brand-GOLD text-brand-950 px-6 py-4 rounded-full shadow-[0_0_30px_rgba(212,175,55,0.55)] border border-brand-GOLD/30 font-bold uppercase tracking-widest text-xs hover:bg-amber-400 hover:shadow-[0_0_40px_rgba(212,175,55,0.8)] transition-all group"
+                className="relative flex items-center gap-3 bg-brand-GOLD text-brand-950 px-6 py-4 rounded-full border border-brand-GOLD/30 font-bold uppercase tracking-widest text-xs hover:bg-amber-400 transition-all group neon-gold animate-neon-gold"
+                style={{ animation: 'neon-gold-pulse 2.5s ease-in-out infinite' }}
             >
                 <div className="bg-brand-950/15 p-2 rounded-full text-brand-950 group-hover:bg-brand-950/20 transition-colors">
                     <Phone size={16} fill="currentColor" />

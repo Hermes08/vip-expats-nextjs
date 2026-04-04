@@ -437,7 +437,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-slate-500 mb-12 text-center">Complete Your Research</h4>
                     <div className="grid md:grid-cols-2 gap-8">
-                        <Link href={`/${lang}/relocation/pricing`} className="group p-10 bg-white rounded-[3rem] border border-brand-100 hover:border-brand-GOLD transition-all shadow-sm">
+                        <Link href={`/${lang}/relocation/cost`} className="group p-10 bg-white rounded-[3rem] border border-brand-100 hover:border-brand-GOLD transition-all shadow-sm">
                             <Zap className="text-brand-GOLD mb-6" size={24} />
                             <h5 className="text-xl font-black italic uppercase tracking-tighter mb-4">Cost of Living 2026</h5>
                             <p className="text-xs text-slate-600 font-medium mb-6">Compare the exact costs of Boquete vs Coronado vs Panama City.</p>

@@ -110,22 +110,129 @@ body {
 .btn-3d:hover  { transform: translateY(-4px); }
 .btn-3d:active { transform: translateY(2px); }
 
+/* ─── Neon Glow Keyframes ─── */
+@keyframes neon-gold-pulse {
+  0%, 100% {
+    box-shadow:
+      0 6px 0 #B8821A,
+      0 12px 24px rgba(212, 168, 67, 0.45),
+      0 0 20px rgba(212, 168, 67, 0.3),
+      0 0 50px rgba(212, 168, 67, 0.15);
+  }
+  50% {
+    box-shadow:
+      0 6px 0 #B8821A,
+      0 16px 36px rgba(212, 168, 67, 0.65),
+      0 0 40px rgba(212, 168, 67, 0.5),
+      0 0 90px rgba(212, 168, 67, 0.25),
+      0 0 140px rgba(212, 168, 67, 0.1);
+  }
+}
+
+@keyframes neon-teal-pulse {
+  0%, 100% {
+    box-shadow:
+      0 6px 0 #009BA0,
+      0 12px 24px rgba(0, 197, 203, 0.4),
+      0 0 20px rgba(0, 197, 203, 0.25);
+  }
+  50% {
+    box-shadow:
+      0 6px 0 #009BA0,
+      0 16px 36px rgba(0, 197, 203, 0.6),
+      0 0 40px rgba(0, 197, 203, 0.45),
+      0 0 90px rgba(0, 197, 203, 0.2);
+  }
+}
+
+@keyframes neon-ring-pulse {
+  0%, 100% {
+    box-shadow:
+      0 0 15px 3px rgba(212, 168, 67, 0.45),
+      0 0 40px 10px rgba(212, 168, 67, 0.2),
+      inset 0 0 20px rgba(212, 168, 67, 0.1);
+    opacity: 0.75;
+  }
+  50% {
+    box-shadow:
+      0 0 25px 6px rgba(212, 168, 67, 0.75),
+      0 0 70px 20px rgba(212, 168, 67, 0.35),
+      0 0 120px 30px rgba(212, 168, 67, 0.12),
+      inset 0 0 30px rgba(212, 168, 67, 0.2);
+    opacity: 1;
+  }
+}
+
+/* Utility: neon ring for decorative circles */
+.neon-ring-gold {
+  box-shadow:
+    0 0 15px 3px rgba(212, 168, 67, 0.45),
+    0 0 40px 10px rgba(212, 168, 67, 0.2),
+    inset 0 0 20px rgba(212, 168, 67, 0.1);
+}
+
+.animate-neon-pulse {
+  animation: neon-ring-pulse 3s ease-in-out infinite;
+}
+
+/* Utility: neon glow on standalone gold buttons */
+.neon-gold {
+  box-shadow:
+    0 0 10px rgba(212, 168, 67, 0.6),
+    0 0 25px rgba(212, 168, 67, 0.35),
+    0 0 60px rgba(212, 168, 67, 0.15);
+}
+
+/* Utility: neon glow on standalone teal buttons */
+.neon-teal {
+  box-shadow:
+    0 0 10px rgba(0, 197, 203, 0.6),
+    0 0 25px rgba(0, 197, 203, 0.35),
+    0 0 60px rgba(0, 197, 203, 0.15);
+}
+
+/* ─── CTA Button System (3D + Neon) ─── */
 .btn-3d-gold {
   background-color: #D4A843;
-  box-shadow: 0 6px 0 #B8821A, 0 12px 24px rgba(212, 168, 67, 0.35);
+  box-shadow:
+    0 6px 0 #B8821A,
+    0 12px 24px rgba(212, 168, 67, 0.45),
+    0 0 20px rgba(212, 168, 67, 0.3),
+    0 0 50px rgba(212, 168, 67, 0.12);
   color: #01181A;
+  animation: neon-gold-pulse 3s ease-in-out infinite;
 }
-.btn-3d-gold:hover  { box-shadow: 0 8px 0 #B8821A, 0 15px 30px rgba(212, 168, 67, 0.45); }
-.btn-3d-gold:active { box-shadow: 0 2px 0 #B8821A; }
+.btn-3d-gold:hover {
+  box-shadow:
+    0 8px 0 #B8821A,
+    0 20px 40px rgba(212, 168, 67, 0.65),
+    0 0 40px rgba(212, 168, 67, 0.55),
+    0 0 90px rgba(212, 168, 67, 0.25),
+    0 0 160px rgba(212, 168, 67, 0.1);
+  animation: none;
+}
+.btn-3d-gold:active { box-shadow: 0 2px 0 #B8821A, 0 4px 8px rgba(212, 168, 67, 0.3); animation: none; }
 
-/* Tropical Teal — primary CTA */
+/* Tropical Teal — primary CTA with neon glow */
 .btn-3d-teal {
   background-color: #00C5CB;
-  box-shadow: 0 6px 0 #009BA0, 0 12px 24px rgba(0, 197, 203, 0.35);
+  box-shadow:
+    0 6px 0 #009BA0,
+    0 12px 24px rgba(0, 197, 203, 0.4),
+    0 0 20px rgba(0, 197, 203, 0.25),
+    0 0 50px rgba(0, 197, 203, 0.1);
   color: #01181A;
+  animation: neon-teal-pulse 3s ease-in-out infinite;
 }
-.btn-3d-teal:hover  { box-shadow: 0 8px 0 #009BA0, 0 15px 30px rgba(0, 197, 203, 0.45); }
-.btn-3d-teal:active { box-shadow: 0 2px 0 #009BA0; }
+.btn-3d-teal:hover {
+  box-shadow:
+    0 8px 0 #009BA0,
+    0 20px 40px rgba(0, 197, 203, 0.6),
+    0 0 40px rgba(0, 197, 203, 0.5),
+    0 0 90px rgba(0, 197, 203, 0.2);
+  animation: none;
+}
+.btn-3d-teal:active { box-shadow: 0 2px 0 #009BA0, 0 4px 8px rgba(0, 197, 203, 0.3); animation: none; }
 
 /* Dark — for use on light backgrounds */
 .btn-3d-navy {

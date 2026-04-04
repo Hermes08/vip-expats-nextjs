@@ -346,7 +346,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                         <p className="font-bold opacity-80 leading-relaxed mb-8">
                             While living costs are lower, Panamanian salaries for local roles are often lower than US/EU equivalents. Most Elite Friendly Nations move as **multinational transfers** or **entrepreneurs** to keep their global earning power while enjoying Panama's tax benefits.
                         </p>
-                        <Link href={`/${lang}/relocation/nichos/entrepreneurs`} className="text-[10px] font-black uppercase tracking-[0.3em] bg-brand-GOLD text-brand-950 px-8 py-4 rounded-xl inline-block">
+                        <Link href={`/${lang}/relocation/visas/friendly-nations`} className="text-[10px] font-black uppercase tracking-[0.3em] bg-brand-GOLD text-brand-950 px-8 py-4 rounded-xl inline-block">
                             Entrepreneur Guide
                         </Link>
                     </div>

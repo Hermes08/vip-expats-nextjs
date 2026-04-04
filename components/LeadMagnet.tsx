@@ -46,8 +46,13 @@ const LeadMagnet: React.FC<LeadMagnetProps> = ({ variant = 'full' }) => {
                 <div className="card-light rounded-[4rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.7)] flex flex-col lg:flex-row border-brand-100">
                     {/* Visual Column */}
                     <div className="lg:w-1/2 bg-brand-50 p-16 flex flex-col justify-center relative overflow-hidden">
-                        <div className="absolute inset-0 opacity-10 animate-pulse">
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] border-[20px] border-white rounded-full"></div>
+                        {/* Gold glowing ring — pulsing neon halo */}
+                        <div className="absolute inset-0 pointer-events-none">
+                            <div
+                                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border-[18px] border-brand-GOLD neon-ring-gold animate-neon-pulse"
+                            ></div>
+                            {/* Inner soft fill glow */}
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-brand-GOLD/8 blur-[60px]"></div>
                         </div>
 
                         <div className="relative z-10">

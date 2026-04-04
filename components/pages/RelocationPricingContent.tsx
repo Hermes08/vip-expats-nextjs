@@ -12,7 +12,7 @@ const RelocationPricingContent: React.FC = () => {
     const breadcrumbItems = [
         { name: "Home", item: `https://panamarealestatesale.com/${lang}` },
         { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
-        { name: "Investment & Pricing", item: `https://panamarealestatesale.com/${lang}/relocation/pricing` }
+        { name: "Investment & Pricing", item: `https://panamarealestatesale.com/${lang}/relocation/cost` }
     ];
 
     return (
