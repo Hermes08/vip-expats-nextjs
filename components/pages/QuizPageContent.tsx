@@ -103,7 +103,7 @@ const QuizPageContent: React.FC = () => {
 
                     <div className="bg-brand-50 rounded-[3rem] overflow-hidden shadow-2xl flex flex-col md:flex-row mb-12 border-4 border-brand-GOLD">
                         <div className="md:w-1/2 h-80 md:h-auto overflow-hidden">
-                            <img src={recommendations[0]?.images[0]} className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" alt="" />
+                            <img src={recommendations[0]?.images[0]} className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" alt={recommendations[0]?.name.en || 'Featured Panama property recommendation'} />
                         </div>
                         <div className="md:w-1/2 p-12 flex flex-col justify-center bg-white">
                             <span className="text-brand-GOLD font-bold uppercase tracking-widest text-[10px] mb-4">Featured Recommendation</span>
@@ -122,7 +122,7 @@ const QuizPageContent: React.FC = () => {
                         {recommendations.slice(1, 4).map((p, idx) => (
                             <div key={idx} className="card-light rounded-3xl overflow-hidden border border-brand-100 flex flex-col hover:shadow-2xl transition-all">
                                 <div className="h-48 overflow-hidden">
-                                    <img src={p.images[0]} className="w-full h-full object-cover" alt="" />
+                                    <img src={p.images[0]} className="w-full h-full object-cover" alt={p.name.en || 'Panama property'} />
                                 </div>
                                 <div className="p-8 flex-grow">
                                     <h3 className="text-xl font-bold text-brand-950 mb-3">{p.name.en}</h3>

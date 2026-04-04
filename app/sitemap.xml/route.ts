@@ -77,7 +77,15 @@ export async function GET() {
         '/relocation/digital-nomad',
         '/relocation/families',
         '/relocation/lgbtq-expats',
+        '/relocation/weather',
+        '/relocation/legal/checklist',
+        '/relocation/legal/work-permit',
+        '/relocation/legal/lawyers',
+        '/relocation/legal/lawyers-directory',
+        '/relocation/guides/boquete-vs-coronado',
         '/proyectos/panama-city-real-estate',
+        '/guides/panama-real-estate',
+        '/guides/how-to-move-to-panama',
     ];
 
     let xml = `<?xml version="1.0" encoding="UTF-8"?>

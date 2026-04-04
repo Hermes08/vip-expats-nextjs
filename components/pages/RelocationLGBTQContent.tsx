@@ -65,7 +65,7 @@ const RelocationLGBTQContent = () => {
                         Panama is rapidly evolving. Discover the honest reality of <strong>LGBTQ+ life in Panama</strong>, from the vibrant streets of Casco Viejo to the legal strategies for <strong>panama residency</strong> in 2026.
                     </p>
                     <div className="flex flex-col sm:flex-row gap-8 justify-center">
-                        <Link href={`/${lang}/contact`} className="px-8 py-4 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="px-8 py-4 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
                             Request My Proud Relocation Plan
                         </Link>
                     </div>
@@ -217,7 +217,7 @@ const RelocationLGBTQContent = () => {
                         Moving is easier when you have a tribe. We don't just process your visa; we plug you into the heart of the thriving LGBTQ+ expat experience.
                     </p>
                     <div className="flex justify-center flex-col sm:flex-row gap-8">
-                        <Link href={`/${lang}/contact`} className="inline-flex items-center justify-center gap-4 px-8 py-4 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="inline-flex items-center justify-center gap-4 px-8 py-4 bg-brand-GOLD text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-white transition-all shadow-2xl">
                             Plan My Transition <ArrowRight size={14} />
                         </Link>
                     </div>

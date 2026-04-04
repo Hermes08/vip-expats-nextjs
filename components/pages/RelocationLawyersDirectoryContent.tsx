@@ -323,7 +323,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                             Ready to speak with the best immigration specialist for your specific needs? <span className="text-brand-950">Let us make the introduction and guarantee your success.</span>
                         </p>
                         <Magnetic strength={0.4}>
-                            <Link href={`/${lang}/contact`} className="btn-3d btn-3d-navy px-20 py-10 rounded-3xl font-black uppercase tracking-[0.4em] text-sm inline-flex items-center justify-center min-w-[320px] shadow-2xl">
+                            <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-20 py-10 rounded-3xl font-black uppercase tracking-[0.4em] text-sm inline-flex items-center justify-center min-w-[320px] shadow-2xl">
                                 INTRODUCE ME TO AN ATTORNEY
                             </Link>
                         </Magnetic>

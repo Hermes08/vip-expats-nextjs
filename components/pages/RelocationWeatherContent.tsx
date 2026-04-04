@@ -181,7 +181,7 @@ const RelocationWeatherContent: React.FC = () => {
                 <div className="grid md:grid-cols-3 gap-12">
                     <div className="group">
                         <div className="relative aspect-[4/5] rounded-2xl overflow-hidden mb-8">
-                            <Image src="https://images.unsplash.com/photo-1558449028-s549c1d27996?w=600&q=80" alt="Panama City Humidity" fill className="object-cover transition-transform group-hover:scale-110" />
+                            <Image src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=600&q=80" alt="Panama City Humidity" fill className="object-cover transition-transform group-hover:scale-110" />
                             <div className="absolute inset-0 bg-gradient-to-t from-brand-950 to-transparent"></div>
                             <div className="absolute bottom-10 left-10 text-white">
                                 <h4 className="text-2xl font-black italic uppercase tracking-tighter">The Capital</h4>

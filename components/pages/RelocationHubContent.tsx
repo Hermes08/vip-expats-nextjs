@@ -77,7 +77,7 @@ const RelocationHubContent: React.FC = () => {
                 <div className="grid lg:grid-cols-2 gap-24 items-center">
                     <div className="relative aspect-video rounded-2xl overflow-hidden group">
                         <Image
-                            src="https://images.unsplash.com/photo-1558449028-s549c1d27996?w=1000&q=80"
+                            src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1000&q=80"
                             alt="The modern skyline of Panama City, a hub for expat panama living"
                             fill
                             className="object-cover transition-transform duration-700 group-hover:scale-110"

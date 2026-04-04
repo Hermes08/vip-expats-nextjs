@@ -97,7 +97,7 @@ export default async function PodcastHub({ params }: Props) {
                                 : "We are looking for unique Panama success stories. Contact us if you have expertise to share."}
                         </p>
                         <a
-                            href={`/${lang}/contact`}
+                            href={`/${lang}/contacto`}
                             className="inline-block bg-brand-GOLD text-brand-950 font-black uppercase tracking-wider py-3 px-8 rounded-full hover:bg-white hover:text-brand-950 transition-all duration-300"
                         >
                             {isEs ? 'Contáctenos' : 'Contact Us'}

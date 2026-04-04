@@ -91,7 +91,7 @@ const BlogPostContent: React.FC<{ slug: string }> = ({ slug }) => {
                 {project && (
                     <div className="mb-14 card-light p-8 rounded-2xl flex flex-col md:flex-row items-center gap-8">
                         <div className="w-full md:w-52 h-36 rounded-xl overflow-hidden flex-shrink-0 border border-brand-100">
-                            <img src={project.images[0]} alt="" className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
+                            <img src={project.images[0]} alt={project.name[lang] || project.name['en']} className="w-full h-full object-cover hover:scale-110 transition-transform duration-700" />
                         </div>
                         <div className="flex-grow">
                             <span className="tag-teal-light mb-3 inline-block">Featured Opportunity</span>
