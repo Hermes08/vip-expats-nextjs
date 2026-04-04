@@ -49,7 +49,7 @@ const RelocationCostContent: React.FC = () => {
             {/* Hero Section */}
             <section className="py-24 bg-brand-GOLD text-brand-950 relative overflow-hidden rounded-b-[4rem]">
                 <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
-                    <span className="inline-block px-5 py-2 bg-white text-white text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
+                    <span className="inline-block px-5 py-2 bg-brand-GOLD text-brand-950 text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
                         The 2026 Budget Bible
                     </span>
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-8 uppercase tracking-tighter leading-[0.85]">

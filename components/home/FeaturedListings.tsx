@@ -31,7 +31,7 @@ export default function FeaturedListings({ lang }: FeaturedListingsProps) {
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-4 block italic">
               {lang === 'es' ? 'Propiedades Destacadas' : 'Featured Listings'}
             </span>
-            <h2 className="font-heading text-4xl md:text-7xl font-black text-white uppercase tracking-tighter leading-tight md:leading-[0.85]">
+            <h2 className="font-heading text-4xl md:text-7xl font-black text-brand-950 uppercase tracking-tighter leading-tight md:leading-[0.85]">
               {lang === 'es' ? (
                 <>EN VENTA &<br /><span className="text-brand-GOLD">ALQUILER</span></>
               ) : (

@@ -58,7 +58,7 @@ const RelocationPensionadoContent: React.FC = () => {
             </div>
 
             {/* Header / Hero */}
-            <section className="py-14 bg-white text-white relative overflow-hidden rounded-b-[4rem]">
+            <section className="py-14 bg-white text-brand-950 relative overflow-hidden rounded-b-[4rem]">
                 <div className="absolute inset-0 opacity-10 pointer-events-none">
                     <div className="absolute bottom-0 right-0 w-[800px] h-[800px] bg-brand-GOLD rounded-full blur-[150px]"></div>
                 </div>

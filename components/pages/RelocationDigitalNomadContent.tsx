@@ -35,7 +35,7 @@ const RelocationDigitalNomadContent = () => {
     ];
 
     return (
-        <div className="bg-white text-white min-h-screen">
+        <div className="bg-white text-brand-950 min-h-screen">
             <BreadcrumbSchema
                 items={[
                     { name: 'Relocation', item: `https://panamarealestatesale.com/${lang}/relocation` },

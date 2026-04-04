@@ -48,7 +48,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             </div>
 
             {/* Hero Section */}
-            <section className="py-48 bg-white text-white relative overflow-hidden rounded-b-[5rem]">
+            <section className="py-48 bg-white text-brand-950 relative overflow-hidden rounded-b-[5rem]">
                 <div className="absolute inset-0 opacity-20">
                     <img
                         src="https://images.unsplash.com/photo-1544644011-87b829283197?w=1600&q=80"
@@ -267,7 +267,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             </section>
 
             {/* Safety & Security deep-dive */}
-            <section className="py-32 bg-white text-white rounded-[5rem] mx-4 relative overflow-hidden">
+            <section className="py-32 bg-white text-brand-950 rounded-[5rem] mx-4 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-5">
                     <ShieldCheck size={400} className="absolute -bottom-24 -left-24 rotate-12" />
                 </div>
@@ -320,7 +320,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                             <p>
                                 For <strong>pet relocation panama</strong>, you'll need a USDA health certificate (or the equivalent from your home country), but the process is straightforward. In Boquete, your pups will love the cool mountain trails; in Coronado, the beaches are giant playgrounds.
                             </p>
-                            <Link href={`/${lang}/relocation/legal/lawyers`} className="text-[10px] font-black uppercase tracking-[0.3em] bg-white text-white px-10 py-6 rounded-2xl inline-block mt-8">
+                            <Link href={`/${lang}/relocation/legal/lawyers`} className="text-[10px] font-black uppercase tracking-[0.3em] bg-brand-GOLD text-brand-950 px-10 py-6 rounded-2xl inline-block mt-8">
                                 Get Pet Checklist
                             </Link>
                         </div>
@@ -361,7 +361,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
 
             {/* Healthcare Deep-Dive (Category 4) */}
             <section className="py-32 max-w-7xl mx-auto px-4">
-                <div className="bg-white text-white rounded-[4rem] p-20 relative overflow-hidden">
+                <div className="bg-white text-brand-950 rounded-[4rem] p-20 relative overflow-hidden">
                     <div className="absolute top-0 right-0 p-20 opacity-10">
                         <HeartPulse size={200} />
                     </div>

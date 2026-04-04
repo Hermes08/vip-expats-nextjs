@@ -59,7 +59,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
             </div>
 
             {/* Hero Section */}
-            <section className="py-14 bg-white text-white relative overflow-hidden rounded-b-[4rem]">
+            <section className="py-14 bg-white text-brand-950 relative overflow-hidden rounded-b-[4rem]">
                 <div className="absolute inset-0 opacity-10 pointer-events-none">
                     <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-brand-GOLD rounded-full blur-[150px]"></div>
                 </div>
@@ -236,13 +236,13 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
                             ))}
                         </div>
                     </div>
-                    <div className="bg-white p-8 rounded-2xl text-white shadow-2xl skew-y-1">
+                    <div className="bg-white p-8 rounded-2xl text-brand-950 shadow-2xl border border-brand-100 skew-y-1">
                         <AlertCircle className="text-brand-GOLD mb-8" size={64} />
                         <h4 className="text-3xl font-black uppercase tracking-tighter mb-8 italic text-brand-GOLD">Crucial Warning</h4>
                         <p className="text-slate-500 font-medium leading-relaxed mb-10">
                             The $300,000 investment *must* be registered in the **Public Registry** and the funds must come from a foreign bank account directly to the escrow or developer in Panama. DIY investors who pay with local cashier's checks without an audit trail are often rejected.
                         </p>
-                        <Link href={`/${lang}/relocation/legal`} className="text-[10px] font-black uppercase tracking-[0.3em] text-white border-b-2 border-brand-GOLD pb-2">
+                        <Link href={`/${lang}/relocation/legal`} className="text-[10px] font-black uppercase tracking-[0.3em] text-brand-TEAL border-b-2 border-brand-GOLD pb-2">
                             Learn About Escrow Security
                         </Link>
                     </div>
@@ -318,7 +318,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
                     <p className="text-base md:text-lg font-bold mb-16 opacity-80 max-w-2xl mx-auto leading-relaxed">
                         The <strong>panama qualified investor visa</strong> is only for those who are ready for the ultimate upgrade. Let the Panama Real Estate Sale legal and real estate teams handle every detail.
                     </p>
-                    <Link href={`/${lang}/relocation/tours`} className="px-8 py-4 bg-white text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-50 transition-all shadow-2xl inline-block">
+                    <Link href={`/${lang}/relocation/tours`} className="px-8 py-4 bg-brand-GOLD text-brand-950 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-amber-400 transition-all shadow-2xl inline-block">
                         Request Golden Visa Itinerary
                     </Link>
                 </div>

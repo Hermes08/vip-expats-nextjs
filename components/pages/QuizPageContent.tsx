@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { ChevronLeft, ChevronRight, CheckCircle2, MapPin, ArrowRight, ShieldCheck, Sparkles } from 'lucide-react';
+import { ChevronLeft, ChevronRight, CheckCircle2, MapPin, ArrowRight, ShieldCheck, Sparkles, X } from 'lucide-react';
 import { PROJECTS } from '@/lib/constants';
 import { useCMS } from '@/context/CMSContext';
 
@@ -59,10 +59,19 @@ const QuizPageContent: React.FC = () => {
         e.preventDefault();
         if (step < totalSteps) return handleNext();
 
-        calculateResults();
+        // Compute matches inline to avoid stale-state closure
+        let matched = PROJECTS.filter(p => {
+            if (formData.environment === 'Mountains') return p.zone.includes('Mountain');
+            if (formData.environment === 'Beach') return p.zone.includes('Beach') || p.zone.includes('Caribbean');
+            if (formData.environment === 'City') return p.zone.includes('City') || p.slug.includes('westin');
+            return true;
+        });
+        if (matched.length === 0) matched = PROJECTS.slice(0, 3);
+        const matched4 = matched.slice(0, 4);
+        setRecommendations(matched4);
 
-        const matchedNames = recommendations.length > 0
-            ? recommendations.map(r => r.name.en)
+        const matchedNames = matched4.length > 0
+            ? matched4.map((r: any) => r.name.en)
             : ["General Panama Discovery"];
 
         const submission = {
@@ -88,7 +97,7 @@ const QuizPageContent: React.FC = () => {
                         <div className="w-20 h-20 bg-brand-GOLD text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl">
                             <Sparkles size={40} />
                         </div>
-                        <h1 className="text-4xl md:text-6xl font-heading font-bold text-white mb-4">Your Panama Match is Ready!</h1>
+                        <h1 className="text-4xl md:text-6xl font-heading font-bold text-brand-950 mb-4">Your Panama Match is Ready!</h1>
                         <p className="text-slate-500 text-lg">Based on your lifestyle and investment goals, we've identified these top Panama locations.</p>
                     </div>
 
@@ -96,10 +105,10 @@ const QuizPageContent: React.FC = () => {
                         <div className="md:w-1/2 h-80 md:h-auto overflow-hidden">
                             <img src={recommendations[0]?.images[0]} className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000" alt="" />
                         </div>
-                        <div className="md:w-1/2 p-12 text-white flex flex-col justify-center">
+                        <div className="md:w-1/2 p-12 flex flex-col justify-center bg-white">
                             <span className="text-brand-GOLD font-bold uppercase tracking-widest text-[10px] mb-4">Featured Recommendation</span>
-                            <h2 className="text-4xl font-heading font-bold mb-6">{recommendations[0]?.name.en}</h2>
-                            <p className="text-brand-200 mb-8 leading-relaxed line-clamp-4">{recommendations[0]?.description.en}</p>
+                            <h2 className="text-4xl font-heading font-bold text-brand-950 mb-6">{recommendations[0]?.name.en}</h2>
+                            <p className="text-slate-500 mb-8 leading-relaxed line-clamp-4">{recommendations[0]?.description.en}</p>
                             <button
                                 onClick={() => router.push(`/proyectos/${recommendations[0]?.slug}`)}
                                 className="inline-flex items-center gap-2 bg-brand-GOLD text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-white transition-all shadow-xl self-start"
@@ -130,9 +139,9 @@ const QuizPageContent: React.FC = () => {
                     </div>
 
                     <div className="mt-20 text-center p-12 bg-brand-50 rounded-[2.5rem] border border-brand-100">
-                        <h3 className="text-2xl font-bold text-white mb-4">Want a guided experience?</h3>
+                        <h3 className="text-2xl font-bold text-brand-950 mb-4">Want a guided experience?</h3>
                         <p className="text-slate-500 mb-8 max-w-xl mx-auto">Our advisors are ready to walk you through these neighborhoods in person or via video call.</p>
-                        <button onClick={() => router.push('/contacto')} className="bg-brand-50 text-white px-12 py-5 rounded-full font-black uppercase tracking-widest text-xs shadow-2xl hover:bg-brand-GOLD hover:text-white transition-all">Schedule Discovery Call</button>
+                        <button onClick={() => router.push('/contacto')} className="bg-brand-GOLD text-brand-950 px-12 py-5 rounded-full font-black uppercase tracking-widest text-xs shadow-2xl hover:bg-amber-400 transition-all">Schedule Discovery Call</button>
                     </div>
                 </div>
             </div>
@@ -154,13 +163,23 @@ const QuizPageContent: React.FC = () => {
     return (
         <div className="pt-32 pb-20 bg-white min-h-screen">
             <div className="max-w-2xl mx-auto px-4">
+                {/* Exit button */}
+                <div className="flex justify-end mb-4">
+                    <button
+                        type="button"
+                        onClick={() => router.back()}
+                        className="flex items-center gap-1.5 text-slate-400 hover:text-slate-600 text-xs font-bold uppercase tracking-widest transition-colors"
+                    >
+                        <X size={14} /> Exit Quiz
+                    </button>
+                </div>
                 {/* Progress Bar */}
                 <div className="mb-12">
                     <div className="flex justify-between items-end mb-3">
                         <span className="text-brand-GOLD font-black uppercase text-[9px] tracking-[0.3em]">Discovery Evolution</span>
                         <span className="text-brand-950 font-black text-xl">{progress}%</span>
                     </div>
-                    <div className="w-full h-1.5 bg-white/10 rounded-full overflow-hidden">
+                    <div className="w-full h-1.5 bg-brand-100 rounded-full overflow-hidden">
                         <div className="h-full bg-brand-GOLD transition-all duration-700 ease-out shadow-[0_0_15px_rgba(212,175,55,0.4)]" style={{ width: `${progress}%` }}></div>
                     </div>
                 </div>
@@ -336,17 +355,17 @@ const QuizPageContent: React.FC = () => {
                         )}
 
                         <div className="pt-8 border-t border-slate-100 flex justify-between gap-4">
-                            <button type="button" onClick={handlePrev} disabled={step === 1} className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold uppercase text-[10px] tracking-widest transition-all ${step === 1 ? 'opacity-0 invisible' : 'bg-brand-50 text-slate-500 hover:bg-brand-100'}`}>
+                            <button type="button" onClick={handlePrev} disabled={step === 1} className={`flex items-center gap-2 px-6 py-3 rounded-xl font-bold uppercase text-[10px] tracking-widest transition-all ${step === 1 ? 'opacity-0 invisible' : 'bg-brand-100 text-brand-950 hover:bg-brand-200'}`}>
                                 <ChevronLeft size={16} /> Previous
                             </button>
-                            <button type="submit" className="flex items-center gap-2 bg-brand-50 text-white px-10 py-4 rounded-xl font-black uppercase text-[10px] tracking-[0.2em] hover:bg-brand-GOLD hover:text-white transition-all shadow-xl">
+                            <button type="submit" className="flex items-center gap-2 bg-brand-GOLD text-brand-950 px-10 py-4 rounded-xl font-black uppercase text-[10px] tracking-[0.2em] hover:bg-amber-400 transition-all shadow-xl shadow-brand-GOLD/30">
                                 {step === totalSteps ? 'Reveal Results' : 'Continue'} <ChevronRight size={16} />
                             </button>
                         </div>
                     </form>
                 </div>
 
-                <div className="mt-12 flex items-center justify-center gap-10 text-white/40">
+                <div className="mt-12 flex items-center justify-center gap-10 text-slate-400">
                     <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest"><ShieldCheck size={14} /> 100% Privacy Secure</div>
                     <div className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest"><MapPin size={14} /> Advisor Verified</div>
                 </div>

@@ -32,7 +32,7 @@ const RelocationFamiliesContent = () => {
     ];
 
     return (
-        <div className="bg-white text-white min-h-screen font-sans">
+        <div className="bg-white text-brand-950 min-h-screen font-sans">
             <BreadcrumbSchema
                 items={[
                     { name: 'Relocation', item: `https://panamarealestatesale.com/${lang}/relocation` },
@@ -201,7 +201,7 @@ const RelocationFamiliesContent = () => {
             </section>
 
             {/* Final CTA */}
-            <section className="py-40 bg-white text-white text-center relative overflow-hidden flex flex-col items-center">
+            <section className="py-40 bg-white text-brand-950 text-center relative overflow-hidden flex flex-col items-center">
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-brand-GOLD opacity-10 rounded-full blur-[150px]"></div>
                 <div className="max-w-4xl mx-auto px-4 relative z-10 flex flex-col items-center text-center">
                     <h2 className="text-4xl sm:text-5xl md:text-6xl font-heading font-black mb-12 uppercase tracking-tighter italic leading-none text-center">The Next <br /> <span className="text-brand-GOLD underline italic">Generation</span> <br /> Awaits.</h2>

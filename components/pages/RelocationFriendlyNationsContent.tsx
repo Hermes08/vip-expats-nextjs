@@ -346,7 +346,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                         <p className="font-bold opacity-80 leading-relaxed mb-8">
                             While living costs are lower, Panamanian salaries for local roles are often lower than US/EU equivalents. Most Elite Friendly Nations move as **multinational transfers** or **entrepreneurs** to keep their global earning power while enjoying Panama's tax benefits.
                         </p>
-                        <Link href={`/${lang}/relocation/nichos/entrepreneurs`} className="text-[10px] font-black uppercase tracking-[0.3em] bg-white text-white px-8 py-4 rounded-xl inline-block">
+                        <Link href={`/${lang}/relocation/nichos/entrepreneurs`} className="text-[10px] font-black uppercase tracking-[0.3em] bg-brand-GOLD text-brand-950 px-8 py-4 rounded-xl inline-block">
                             Entrepreneur Guide
                         </Link>
                     </div>
@@ -410,7 +410,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
                             </ul>
                         </div>
                     </div>
-                    <div className="bg-white p-8 rounded-2xl text-white shadow-2xl skew-x-1">
+                    <div className="bg-white p-8 rounded-2xl text-brand-950 shadow-2xl border border-brand-100 skew-x-1">
                         <h4 className="text-3xl font-black uppercase tracking-tighter mb-8 italic text-brand-GOLD">The 0% Reality</h4>
                         <p className="font-medium text-slate-500 leading-relaxed mb-8">
                             Panama does not tax you on dividends from foreign companies, remote work for foreign clients, or rental income from outside Panama. Combined with the <strong>friendly nations visa</strong>, this creates a 'Panama Real Estate Sale' financial fortress for high-earning professionals.

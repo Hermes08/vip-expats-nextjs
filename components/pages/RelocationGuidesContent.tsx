@@ -192,7 +192,7 @@ const RelocationGuidesContent: React.FC = () => {
                         Join 10,000+ prospective expats who receive our weekly insights on <strong>expat life in panama</strong>.
                     </p>
                     <div className="flex flex-col md:flex-row gap-4 justify-center">
-                        <input type="email" placeholder="Your Email" className="px-8 py-5 bg-white/5 border border-brand-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-GOLD font-medium w-full md:w-80 text-white" />
+                        <input type="email" placeholder="Your Email" className="px-8 py-5 bg-white border border-brand-100 rounded-2xl focus:outline-none focus:ring-2 focus:ring-brand-TEAL font-medium w-full md:w-80 text-brand-950" />
                         <button className="btn-3d btn-3d-gold px-12 py-5 rounded-2xl font-black uppercase tracking-widest text-[10px]">
                             Download Guide
                         </button>

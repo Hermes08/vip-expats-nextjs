@@ -165,7 +165,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                         ].map((c, i) => (
                             <div key={i} className="bg-white/5 border border-brand-100 p-6 rounded-[3.5rem] hover:border-brand-GOLD/30 transition-all group">
                                 <span className="text-brand-GOLD text-3xl font-black italic mb-4 block">{c.price}</span>
-                                <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic text-white">{c.title}</h4>
+                                <h4 className="text-xl font-black uppercase tracking-tighter mb-4 italic text-brand-950">{c.title}</h4>
                                 <p className="text-slate-500 font-medium text-sm leading-relaxed">{c.desc}</p>
                             </div>
                         ))}
@@ -206,7 +206,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
                         >
                             <div className="relative h-64 w-full rounded-2xl overflow-hidden mb-8">
                                 <Image src={lawyer.image} alt={lawyer.name} fill className="object-cover grayscale group-hover:grayscale-0 transition-all duration-700" />
-                                <div className="absolute top-6 right-6 px-4 py-2 bg-white text-white rounded-full text-[10px] font-black uppercase tracking-widest shadow-2xl">
+                                <div className="absolute top-6 right-6 px-4 py-2 bg-brand-GOLD text-brand-950 rounded-full text-[10px] font-black uppercase tracking-widest shadow-2xl">
                                     {lawyer.experience}
                                 </div>
                             </div>

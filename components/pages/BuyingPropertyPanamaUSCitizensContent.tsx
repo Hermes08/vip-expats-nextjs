@@ -229,7 +229,7 @@ const BuyingPropertyPanamaUSCitizensContent = () => {
               </Link>
             </Magnetic>
             <Magnetic strength={0.4}>
-              <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-gold bg-white text-white px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs">
+              <Link href={`/${lang}/relocation/tours`} className="btn-3d btn-3d-gold px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs">
                 {isEn ? 'Book a Discovery Tour' : 'Reserve un Tour'}
               </Link>
             </Magnetic>

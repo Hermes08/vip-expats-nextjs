@@ -196,7 +196,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                     <div className="lg:col-span-1">
                         <div className="sticky top-32 space-y-8">
                             {/* Tour CTA */}
-                            <div className="bg-white text-white p-8 rounded-3xl shadow-2xl relative overflow-hidden">
+                            <div className="bg-white text-brand-950 p-8 rounded-3xl shadow-2xl relative overflow-hidden border border-brand-100">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-brand-GOLD/10 rounded-full -mr-16 -mt-16 blur-2xl"></div>
                                 <Compass className="text-brand-GOLD mb-6" size={40} />
                                 <h3 className="text-2xl font-bold mb-4 leading-tight">Request a Private Relocation Tour</h3>

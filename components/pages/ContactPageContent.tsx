@@ -18,7 +18,7 @@ const ContactPageContent: React.FC = () => {
                 <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
                   <a
                     href={`tel:${CONTACT_INFO.phone}`}
-                    className="flex items-center gap-2 min-h-[44px] text-white font-bold text-sm hover:text-brand-GOLD transition-colors"
+                    className="flex items-center gap-2 min-h-[44px] text-brand-950 font-bold text-sm hover:text-brand-GOLD transition-colors"
                   >
                     <Phone size={14} className="text-brand-GOLD" />
                     {CONTACT_INFO.phone}
@@ -27,14 +27,14 @@ const ContactPageContent: React.FC = () => {
                     href={`https://wa.me/${CONTACT_INFO.whatsapp}?text=Hi%20VIP%20Expats%2C%20I%27d%20like%20to%20speak%20with%20an%20expert`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-2 min-h-[44px] text-white font-bold text-sm hover:text-green-400 transition-colors"
+                    className="flex items-center gap-2 min-h-[44px] text-brand-950 font-bold text-sm hover:text-green-600 transition-colors"
                   >
                     <MessageCircle size={14} className="text-green-400" />
                     WhatsApp
                   </a>
                   <a
                     href={`mailto:${CONTACT_INFO.email}`}
-                    className="flex items-center gap-2 min-h-[44px] text-white font-bold text-sm hover:text-brand-GOLD transition-colors"
+                    className="flex items-center gap-2 min-h-[44px] text-brand-950 font-bold text-sm hover:text-brand-GOLD transition-colors"
                   >
                     <Mail size={14} className="text-brand-GOLD" />
                     {CONTACT_INFO.email}
@@ -53,7 +53,7 @@ const ContactPageContent: React.FC = () => {
                     <span className="inline-block px-6 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full backdrop-blur-md mb-6">
                         Secure Infrastructure
                     </span>
-                    <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl font-black mb-6 leading-tight tracking-tight uppercase text-white">
+                    <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl font-black mb-6 leading-tight tracking-tight uppercase text-brand-950">
                         DIRECT <span className="text-brand-GOLD">CONCIERGE</span> ACCESS.
                     </h1>
                     <p className="text-base md:text-lg text-slate-500 max-w-xl leading-relaxed font-medium italic border-l-2 border-brand-GOLD/20 pl-5">
@@ -90,19 +90,19 @@ const ContactPageContent: React.FC = () => {
                         }} className="grid md:grid-cols-2 gap-5">
                             <div className="space-y-2">
                                 <label className="text-xs font-bold text-slate-500 uppercase tracking-widest">Full Name</label>
-                                <input name="name" required type="text" className="w-full px-4 py-3 bg-white/5 border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none text-white placeholder:text-slate-600" placeholder="John Doe" />
+                                <input name="name" required type="text" className="w-full px-4 py-3 bg-white border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-TEAL outline-none text-brand-950 placeholder:text-slate-400" placeholder="John Doe" />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-xs font-bold text-slate-500 uppercase tracking-widest">Email</label>
-                                <input name="email" required type="email" className="w-full px-4 py-3 bg-white/5 border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none text-white placeholder:text-slate-600" placeholder="john@example.com" />
+                                <input name="email" required type="email" className="w-full px-4 py-3 bg-white border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-TEAL outline-none text-brand-950 placeholder:text-slate-400" placeholder="john@example.com" />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-xs font-bold text-slate-500 uppercase tracking-widest">WhatsApp / Phone</label>
-                                <input name="phone" required type="tel" className="w-full px-4 py-3 bg-white/5 border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none text-white placeholder:text-slate-600" placeholder="+1 234 567 890" />
+                                <input name="phone" required type="tel" className="w-full px-4 py-3 bg-white border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-TEAL outline-none text-brand-950 placeholder:text-slate-400" placeholder="+1 234 567 890" />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-xs font-bold text-slate-500 uppercase tracking-widest">Property of Interest</label>
-                                <select name="project_interest" className="w-full px-4 py-3 bg-white/5 border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none text-sm font-bold text-white">
+                                <select name="project_interest" className="w-full px-4 py-3 bg-white border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-TEAL outline-none text-sm font-bold text-brand-950">
                                     <option value="" className="text-brand-950">Select a property...</option>
                                     <option value="Pino Alto (Boquete)" className="text-brand-950">Pino Alto (Boquete)</option>
                                     <option value="Westin Residences (Playa Bonita)" className="text-brand-950">Westin Residences (Playa Bonita)</option>
@@ -113,7 +113,7 @@ const ContactPageContent: React.FC = () => {
                             </div>
                             <div className="md:col-span-2 space-y-2">
                                 <label className="text-xs font-bold text-slate-500 uppercase tracking-widest">Message</label>
-                                <textarea name="message" className="w-full h-32 px-4 py-3 bg-white/5 border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-GOLD outline-none text-white placeholder:text-slate-600" placeholder="I am interested in..." />
+                                <textarea name="message" className="w-full h-32 px-4 py-3 bg-white border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-TEAL outline-none text-brand-950 placeholder:text-slate-400" placeholder="I am interested in..." />
                             </div>
                             <button type="submit" className="md:col-span-2 btn-3d btn-3d-gold py-5 rounded-xl font-black uppercase tracking-widest text-[11px] flex items-center justify-center gap-4 group">
                                 <Send size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" /> SEND INQUIRY
@@ -127,24 +127,24 @@ const ContactPageContent: React.FC = () => {
                             <h3 className="text-xs font-black text-brand-GOLD mb-6 uppercase tracking-[0.3em]">Direct Contact</h3>
                             <div className="space-y-5">
                                 <a href={`tel:${CONTACT_INFO.phone}`} className="flex items-center gap-4 group">
-                                    <div className="p-3 bg-white/5 rounded-full group-hover:bg-brand-GOLD group-hover:text-brand-900 transition-all text-slate-500"><Phone size={18} /></div>
+                                    <div className="p-3 bg-brand-50 rounded-full group-hover:bg-brand-GOLD group-hover:text-brand-900 transition-all text-brand-TEAL"><Phone size={18} /></div>
                                     <div>
                                         <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Call Us</p>
-                                        <p className="font-bold text-white text-sm">{CONTACT_INFO.phone}</p>
+                                        <p className="font-bold text-brand-950 text-sm">{CONTACT_INFO.phone}</p>
                                     </div>
                                 </a>
                                 <a href={`https://wa.me/${CONTACT_INFO.whatsapp}`} className="flex items-center gap-4 group">
-                                    <div className="p-3 bg-white/5 rounded-full group-hover:bg-green-600 group-hover:text-white transition-all text-slate-500"><MessageCircle size={18} /></div>
+                                    <div className="p-3 bg-brand-50 rounded-full group-hover:bg-green-600 group-hover:text-white transition-all text-brand-TEAL"><MessageCircle size={18} /></div>
                                     <div>
                                         <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">WhatsApp</p>
-                                        <p className="font-bold text-white text-sm">Send Message</p>
+                                        <p className="font-bold text-brand-950 text-sm">Send Message</p>
                                     </div>
                                 </a>
                                 <div className="flex items-center gap-4">
                                     <div className="p-3 bg-white/5 rounded-full text-slate-500"><Mail size={18} /></div>
                                     <div>
                                         <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Email</p>
-                                        <p className="font-bold text-white text-sm">{CONTACT_INFO.email}</p>
+                                        <p className="font-bold text-brand-950 text-sm">{CONTACT_INFO.email}</p>
                                     </div>
                                 </div>
                             </div>

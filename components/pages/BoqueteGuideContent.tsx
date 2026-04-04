@@ -35,7 +35,7 @@ const BoqueteGuideContent: React.FC = () => {
             <FAQSchema questions={faqs} />
 
             {/* Hero Section */}
-            <section className="bg-white py-32 text-white relative overflow-hidden rounded-b-[4rem]">
+            <section className="bg-white py-32 text-brand-950 relative overflow-hidden rounded-b-[4rem]">
                 <div className="absolute inset-0 opacity-30">
                     <Image
                         src="https://images.unsplash.com/photo-1544644011-87b829283197?w=1600&q=80"

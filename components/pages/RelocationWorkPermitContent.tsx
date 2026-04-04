@@ -72,7 +72,7 @@ const RelocationWorkPermitContent: React.FC = () => {
             <FAQSchema questions={faqs} />
 
             {/* Hero Section */}
-            <section className="bg-white py-14 text-white relative overflow-hidden rounded-b-[4rem]">
+            <section className="bg-white text-brand-950 py-14 relative overflow-hidden rounded-b-[4rem]">
                 <div className="absolute inset-0 z-0 opacity-20">
                     <Image
                         src="https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1600&q=80"
@@ -213,7 +213,7 @@ const RelocationWorkPermitContent: React.FC = () => {
             </section>
 
             {/* Requirement Checklist */}
-            <section className="py-14 bg-white text-white rounded-3xl mx-4">
+            <section className="py-14 bg-white text-brand-950 rounded-3xl mx-4">
                 <div className="max-w-5xl mx-auto px-8">
                     <h2 className="text-4xl md:text-6xl font-heading font-black mb-16 text-center uppercase tracking-tighter">The <span className="text-brand-GOLD italic">Permit</span> Checklist</h2>
                     <div className="space-y-8">

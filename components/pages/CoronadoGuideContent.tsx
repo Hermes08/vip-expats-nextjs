@@ -35,7 +35,7 @@ const CoronadoGuideContent: React.FC = () => {
             <FAQSchema questions={faqs} />
 
             {/* Hero Section */}
-            <section className="bg-white py-32 text-white relative overflow-hidden rounded-b-[4rem]">
+            <section className="bg-white py-32 text-brand-950 relative overflow-hidden rounded-b-[4rem]">
                 <div className="absolute inset-0 opacity-30">
                     <Image
                         src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=1600&q=80"
@@ -93,7 +93,7 @@ const CoronadoGuideContent: React.FC = () => {
             </section>
 
             {/* Coronado Lifestyle Sections */}
-            <section className="py-32 bg-white text-white rounded-[5rem] mx-4 overflow-hidden relative">
+            <section className="py-32 bg-white text-brand-950 rounded-[5rem] mx-4 overflow-hidden relative">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-brand-GOLD/5 rounded-full -mr-48 -mt-48 blur-3xl"></div>
                 <div className="max-w-7xl mx-auto px-8">
                     <div className="grid lg:grid-cols-2 gap-20 items-center">

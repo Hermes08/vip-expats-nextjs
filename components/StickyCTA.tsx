@@ -7,11 +7,17 @@ import { CONTACT_INFO } from '@/lib/constants';
 const StickyCTA: React.FC = () => {
     return (
         <div className="fixed bottom-6 right-6 z-[100] transition-all duration-500 transform hover:scale-105">
+            {/* Gold pulse ring */}
+            <span
+                aria-hidden="true"
+                className="absolute inset-0 rounded-full animate-ping opacity-40"
+                style={{ backgroundColor: '#D4AF37' }}
+            />
             <a
                 href={`tel:${CONTACT_INFO.phone}`}
-                className="flex items-center gap-3 bg-brand-50 text-white px-6 py-4 rounded-full shadow-[0_20px_50px_rgba(10,22,40,0.3)] border border-brand-800 font-bold uppercase tracking-widest text-xs hover:bg-brand-GOLD hover:text-brand-900 transition-all group"
+                className="relative flex items-center gap-3 bg-brand-GOLD text-brand-950 px-6 py-4 rounded-full shadow-[0_0_30px_rgba(212,175,55,0.55)] border border-brand-GOLD/30 font-bold uppercase tracking-widest text-xs hover:bg-amber-400 hover:shadow-[0_0_40px_rgba(212,175,55,0.8)] transition-all group"
             >
-                <div className="bg-brand-GOLD p-2 rounded-full text-brand-900 group-hover:bg-brand-50 group-hover:text-brand-GOLD transition-colors">
+                <div className="bg-brand-950/15 p-2 rounded-full text-brand-950 group-hover:bg-brand-950/20 transition-colors">
                     <Phone size={16} fill="currentColor" />
                 </div>
                 <span>Call Us Now</span>

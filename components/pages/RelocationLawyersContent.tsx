@@ -60,7 +60,7 @@ const RelocationLawyersContent: React.FC = () => {
             </div>
 
             {/* Hero Section */}
-            <section className="py-24 bg-white text-white relative overflow-hidden rounded-b-[4rem]">
+            <section className="py-24 bg-white text-brand-950 relative overflow-hidden rounded-b-[4rem]">
                 <div className="absolute inset-0 opacity-10">
                     <Image
                         src="https://images.unsplash.com/photo-1505664194762-85b1758d51fa?w=1600&q=80"
@@ -143,7 +143,7 @@ const RelocationLawyersContent: React.FC = () => {
 
             {/* Verification Checklist */}
             <section className="py-14 max-w-7xl mx-auto px-4">
-                <div className="bg-white text-white p-20 rounded-2xl relative overflow-hidden">
+                <div className="bg-white text-brand-950 p-20 rounded-2xl relative overflow-hidden">
                     <div className="relative z-10 flex flex-col lg:flex-row gap-20 items-center">
                         <div className="lg:w-1/2">
                             <h2 className="text-4xl md:text-6xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">How We VET Our <br /><span className="text-brand-GOLD">Lawyers</span></h2>
@@ -210,7 +210,7 @@ const RelocationLawyersContent: React.FC = () => {
                         Ready to speak with a top <strong>panama immigration lawyer</strong>? Book a consultation today and get a clear legal roadmap for your move.
                     </p>
                     <div className="flex flex-col md:flex-row gap-6 justify-center">
-                        <Link href={`/${lang}/contacto`} className="px-8 py-4 bg-white text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-50 transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="px-8 py-4 bg-brand-GOLD text-brand-950 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-amber-400 transition-all shadow-2xl">
                             Meet My Attorney
                         </Link>
                         <Link href={`/${lang}/relocation/legal`} className="px-8 py-4 bg-white border-2 border-brand-950 text-brand-950 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-TEAL hover:text-white transition-all">

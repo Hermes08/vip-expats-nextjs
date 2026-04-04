@@ -62,7 +62,7 @@ const RelocationWeatherContent: React.FC = () => {
             </div>
 
             {/* Hero Section */}
-            <section className="bg-white py-14 text-white relative overflow-hidden rounded-b-[4rem]">
+            <section className="bg-white py-14 text-brand-950 relative overflow-hidden rounded-b-[4rem]">
                 <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
                     <span className="inline-block px-5 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
                         The 2026 Climate Blueprint
@@ -251,15 +251,15 @@ const RelocationWeatherContent: React.FC = () => {
                             <h4 className="text-3xl font-black uppercase tracking-tighter mb-8 italic italic">Seasonal Logic</h4>
                             <ul className="space-y-6">
                                 <li className="flex gap-4">
-                                    <div className="w-10 h-10 bg-white text-white rounded-xl flex items-center justify-center shrink-0 font-black italic">!</div>
+                                    <div className="w-10 h-10 bg-brand-TEAL text-white rounded-xl flex items-center justify-center shrink-0 font-black italic">!</div>
                                     <p className="text-sm font-medium leading-relaxed"><strong>Jan - March:</strong> Strong winds mean the Pacific is choppy. Great for kitesurfing, tough for fishing.</p>
                                 </li>
                                 <li className="flex gap-4">
-                                    <div className="w-10 h-10 bg-white text-white rounded-xl flex items-center justify-center shrink-0 font-black italic">!</div>
+                                    <div className="w-10 h-10 bg-brand-TEAL text-white rounded-xl flex items-center justify-center shrink-0 font-black italic">!</div>
                                     <p className="text-sm font-medium leading-relaxed"><strong>Oct - Nov:</strong> Peak rain. The best time to see the <strong>Mist over Boquete</strong> but avoid the Darien gap tours.</p>
                                 </li>
                             </ul>
-                            <Link href={`/${lang}/relocation/tours`} className="mt-12 w-full block py-6 bg-white text-white text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all">
+                            <Link href={`/${lang}/relocation/tours`} className="mt-12 w-full block py-6 bg-brand-GOLD text-brand-950 text-center rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-amber-400 transition-all">
                                 Custom Packing Guide
                             </Link>
                         </div>
@@ -294,7 +294,7 @@ const RelocationWeatherContent: React.FC = () => {
                 <p className="text-base md:text-lg font-bold mb-16 opacity-80 max-w-2xl mx-auto">
                     Ready to book your <strong>panama relocation discovery tour</strong>? Let's find the best dates for your scouting journey.
                 </p>
-                <Link href={`/${lang}/relocation/tours`} className="px-8 py-4 bg-white text-white font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-brand-50 transition-all shadow-2xl">
+                <Link href={`/${lang}/relocation/tours`} className="px-8 py-4 bg-brand-GOLD text-brand-950 font-black uppercase tracking-[0.3em] text-xs rounded-full hover:bg-amber-400 transition-all shadow-2xl">
                     Check Tour Availability
                 </Link>
             </section>

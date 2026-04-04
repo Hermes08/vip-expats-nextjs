@@ -110,7 +110,7 @@ const LeadMagnet: React.FC<LeadMagnetProps> = ({ variant = 'full' }) => {
                                             id="lead-name"
                                             required
                                             type="text"
-                                            className="w-full px-6 py-4 bg-white/5 border border-brand-100 rounded-2xl focus:ring-2 focus:ring-brand-GOLD outline-none transition-all text-white font-bold"
+                                            className="w-full px-6 py-4 bg-white border border-brand-100 rounded-2xl focus:ring-2 focus:ring-brand-TEAL outline-none transition-all text-brand-950 font-bold"
                                             value={formData.name}
                                             onChange={e => setFormData({ ...formData, name: e.target.value })}
                                         />
@@ -121,7 +121,7 @@ const LeadMagnet: React.FC<LeadMagnetProps> = ({ variant = 'full' }) => {
                                             id="lead-email"
                                             required
                                             type="email"
-                                            className="w-full px-6 py-4 bg-white/5 border border-brand-100 rounded-2xl focus:ring-2 focus:ring-brand-GOLD outline-none transition-all text-white font-bold"
+                                            className="w-full px-6 py-4 bg-white border border-brand-100 rounded-2xl focus:ring-2 focus:ring-brand-TEAL outline-none transition-all text-brand-950 font-bold"
                                             value={formData.email}
                                             onChange={e => setFormData({ ...formData, email: e.target.value })}
                                         />

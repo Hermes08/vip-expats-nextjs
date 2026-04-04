@@ -22,7 +22,7 @@ const RelocationPricingContent: React.FC = () => {
                 <Breadcrumbs items={breadcrumbItems} />
             </div>
             {/* Header / Hero */}
-            <section className="py-24 bg-white text-white relative overflow-hidden rounded-b-[4rem]">
+            <section className="py-24 bg-white text-brand-950 relative overflow-hidden rounded-b-[4rem]">
                 <div className="max-w-7xl mx-auto px-4 text-center relative z-10">
                     <span className="inline-block px-5 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full mb-8">
                         Transparent Logistics

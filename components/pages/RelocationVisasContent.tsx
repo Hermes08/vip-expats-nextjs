@@ -79,7 +79,7 @@ const RelocationVisasContent: React.FC = () => {
             </div>
 
             {/* Hero Section */}
-            <section className="bg-white py-14 text-white relative overflow-hidden rounded-b-[5rem]">
+            <section className="bg-white py-14 text-brand-950 relative overflow-hidden rounded-b-[5rem]">
                 <div className="absolute inset-0 opacity-10 pointer-events-none">
                     <div className="absolute bottom-0 right-0 w-[800px] h-[800px] bg-brand-GOLD rounded-full blur-[150px]"></div>
                 </div>
@@ -277,7 +277,7 @@ const RelocationVisasContent: React.FC = () => {
             </section>
 
             {/* Quick Summary Table */}
-            <section className="py-14 bg-white text-white rounded-3xl mx-4 mb-20 overflow-hidden relative">
+            <section className="py-14 bg-white text-brand-950 rounded-3xl mx-4 mb-20 overflow-hidden relative">
                 <div className="absolute inset-0 opacity-5 pointer-events-none">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white rounded-full blur-[150px]"></div>
                 </div>

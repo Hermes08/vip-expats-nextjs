@@ -266,7 +266,7 @@ const PanamaRealEstateForExpatsContent = () => {
               </Link>
             </Magnetic>
             <Magnetic strength={0.4}>
-              <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-gold bg-white text-white px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs">
+              <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-gold px-16 py-8 rounded-full font-black uppercase tracking-[0.3em] text-xs">
                 {isEn ? 'Contact an Advisor' : 'Contactar un Asesor'}
               </Link>
             </Magnetic>

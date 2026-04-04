@@ -32,7 +32,7 @@ const RelocationEarlyRetirementContent = () => {
     ];
 
     return (
-        <div className="bg-white text-white min-h-screen">
+        <div className="bg-white text-brand-950 min-h-screen">
             <BreadcrumbSchema
                 items={[
                     { name: 'Relocation', item: `https://panamarealestatesale.com/${lang}/relocation` },
@@ -208,7 +208,7 @@ const RelocationEarlyRetirementContent = () => {
                         The best time to retire was yesterday. The second best time is today. We guide the under-50 crowd to legal and lifestyle freedom in Panama.
                     </p>
                     <div className="flex justify-center flex-col sm:flex-row gap-8">
-                        <Link href={`/${lang}/contacto`} className="inline-flex items-center justify-center gap-4 px-8 py-4 bg-white text-white rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all shadow-2xl">
+                        <Link href={`/${lang}/contacto`} className="inline-flex items-center justify-center gap-4 px-8 py-4 bg-white text-brand-950 rounded-3xl text-[11px] font-black uppercase tracking-widest hover:bg-brand-50 transition-all shadow-2xl">
                             Schedule My FIRE Audit <ArrowRight size={14} />
                         </Link>
                     </div>
