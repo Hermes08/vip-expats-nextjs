@@ -120,7 +120,7 @@ const RelocationLawyersContent: React.FC = () => {
 
             {/* Specialty Grid */}
             <section className="py-14 bg-white rounded-3xl mx-4">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <div className="text-center mb-24">
                         <h2 className="text-4xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter italic">Legal <span className="text-brand-GOLD">Specialties</span></h2>
                         <p className="text-slate-500 font-black uppercase tracking-widest text-xs">Focused expertise for every stage of your move.</p>

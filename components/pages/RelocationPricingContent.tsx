@@ -70,7 +70,7 @@ const RelocationPricingContent: React.FC = () => {
                     </div>
 
                     {/* Tier 2: The Elite Professional (Popular) */}
-                    <div className="border-4 border-brand-GOLD p-6 rounded-2xl flex flex-col h-full shadow-2xl relative bg-white text-white transform lg:-translate-y-8">
+                    <div className="border-4 border-brand-GOLD p-6 rounded-2xl flex flex-col h-full shadow-2xl relative bg-white text-brand-950 transform lg:-translate-y-8">
                         <div className="absolute top-0 right-10 -translate-y-1/2 bg-brand-GOLD text-brand-950 px-6 py-2 rounded-full font-black text-[10px] uppercase tracking-widest shadow-xl">
                             Most Popular
                         </div>

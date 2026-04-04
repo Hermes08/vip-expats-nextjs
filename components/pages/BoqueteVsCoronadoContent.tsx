@@ -107,7 +107,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
             {/* Boquete Deep Dive */}
             <section className="py-32 bg-neutral-900 text-white rounded-[5rem] mx-4 overflow-hidden relative">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-green-500/10 blur-[150px] -mr-48 -mt-48"></div>
-                <div className="max-w-7xl mx-auto px-8 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
                     <div className="flex flex-col lg:flex-row gap-20 items-center">
                         <div className="lg:w-1/2">
                             <Coffee className="text-brand-GOLD mb-10" size={64} />
@@ -225,7 +225,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
 
             {/* Weather Wars: The Critical Factor */}
             <section className="py-32 bg-brand-50 rounded-[5rem] mx-4">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <div className="text-center mb-24">
                         <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic">Systems <br /><span className="text-brand-GOLD">& Maintenance</span></h2>
                         <p className="text-slate-600 font-black uppercase tracking-widest text-xs">Different climates require different care.</p>
@@ -271,7 +271,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                 <div className="absolute inset-0 opacity-5">
                     <ShieldCheck size={400} className="absolute -bottom-24 -left-24 rotate-12" />
                 </div>
-                <div className="max-w-7xl mx-auto px-8 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
                     <div className="text-center mb-24">
                         <h2 className="text-4xl md:text-7xl font-heading font-black mb-6 uppercase tracking-tighter italic italic">Is Panama <span className="text-brand-GOLD italic">Safe</span> for Expats?</h2>
                         <p className="text-gray-400 font-black uppercase tracking-widest text-xs">The #1 concern for every family moving to Panama.</p>
@@ -330,14 +330,14 @@ const BoqueteVsCoronadoContent: React.FC = () => {
 
             {/* Schooling and Families section */}
             <section className="py-32 bg-brand-50 rounded-[5rem] mx-4">
-                <div className="max-w-7xl mx-auto px-8 text-center mb-24">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 text-center mb-24">
                     <h2 className="text-4xl md:text-7xl font-heading font-black mb-8 uppercase tracking-tighter italic underline italic leading-none">The <span className="text-brand-GOLD">Education</span> <br /> Blueprint</h2>
                     <p className="max-w-3xl mx-auto text-lg text-slate-600 font-medium">
                         If you are <strong>moving to panama with children</strong>, the quality of schools is your #1 binary filter.
                     </p>
                 </div>
 
-                <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-20">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 grid lg:grid-cols-2 gap-20">
                     <div className="p-16 bg-white rounded-[4rem] shadow-xl border border-brand-100">
                         <h4 className="text-2xl font-black uppercase tracking-tighter mb-8 italic">Boquete Schools</h4>
                         <p className="text-slate-600 leading-relaxed mb-8">
@@ -406,7 +406,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
                 <div className="overflow-x-auto rounded-[3rem] border border-brand-100 shadow-2xl">
                     <table className="w-full text-left bg-white border-collapse">
                         <thead>
-                            <tr className="bg-white text-white">
+                            <tr className="bg-brand-50 text-brand-950">
                                 <th className="p-10 text-[10px] font-black uppercase tracking-widest italic">Metric</th>
                                 <th className="p-10 text-[10px] font-black uppercase tracking-widest italic">Boquete</th>
                                 <th className="p-10 text-[10px] font-black uppercase tracking-widest italic">Coronado</th>
@@ -434,7 +434,7 @@ const BoqueteVsCoronadoContent: React.FC = () => {
 
             {/* Related Resources: The Topic Cluster */}
             <section className="py-24 bg-brand-50 rounded-[5rem] mx-4 mb-32">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-slate-500 mb-12 text-center">Complete Your Research</h4>
                     <div className="grid md:grid-cols-2 gap-8">
                         <Link href={`/${lang}/relocation/pricing`} className="group p-10 bg-white rounded-[3rem] border border-brand-100 hover:border-brand-GOLD transition-all shadow-sm">

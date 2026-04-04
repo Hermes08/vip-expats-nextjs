@@ -200,7 +200,7 @@ const RelocationHubContent: React.FC = () => {
                 <div className="absolute top-0 left-0 p-20 opacity-5">
                     <Hammer size={200} />
                 </div>
-                <div className="max-w-7xl mx-auto px-8 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
                     <div className="grid lg:grid-cols-2 gap-24 items-center">
                         <div>
                             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The Lifestyle <br /><span className="text-brand-GOLD italic">Ecosystem</span></h2>
@@ -249,7 +249,7 @@ const RelocationHubContent: React.FC = () => {
 
             {/* The Demographic Shift: Who is the Expat Panama? */}
             <section className="py-14 bg-brand-50 rounded-3xl mx-4">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <div className="text-center mb-24">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic">The 2026 <span className="text-brand-GOLD">Expat</span> Profile</h2>
                         <p className="text-slate-500 font-black uppercase tracking-widest text-xs">Who is actually moving to Panama today?</p>
@@ -325,7 +325,7 @@ const RelocationHubContent: React.FC = () => {
 
             {/* Quick Stats Grid */}
             <section className="py-24 bg-brand-GOLD rounded-3xl mx-4 text-brand-950">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <div className="grid md:grid-cols-4 gap-12 text-center">
                         <div>
                             <div className="text-5xl font-black mb-2 italic">2,500+</div>
@@ -465,7 +465,7 @@ const RelocationHubContent: React.FC = () => {
 
             {/* Choosing Your Path Comparison */}
             <section className="py-14 bg-white rounded-3xl mx-4 overflow-hidden relative">
-                <div className="max-w-7xl mx-auto px-8 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
                     <div className="text-center mb-24">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic">Choose Your <span className="text-brand-GOLD">Trajectory</span></h2>
                         <p className="text-slate-500 text-lg uppercase tracking-widest font-black">Two Iconic Paths. One Goal.</p>

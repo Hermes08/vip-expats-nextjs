@@ -64,7 +64,7 @@ const RelocationDigitalNomadContent = () => {
                             Stop commuting. Start living. The <strong>panama digital nomad visa</strong> is your legal shortcut to a tropical lifestyle with first-world connectivity and a territorial tax system that keeps your money in your pocket.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6">
-                            <Link href={`/${lang}/contacto`} className="px-6 py-3 bg-brand-GOLD text-brand-950 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-white hover:scale-105 transition-all text-center">
+                            <Link href={`/${lang}/contacto`} className="px-6 py-3 bg-brand-GOLD text-brand-950 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-amber-400 hover:scale-105 transition-all text-center">
                                 Claim My Nomad Visa
                             </Link>
                             <Link href="#connectivity" className="px-6 py-3 bg-white/5 border border-brand-100 text-white rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-white/10 transition-all text-center">
@@ -163,7 +163,7 @@ const RelocationDigitalNomadContent = () => {
 
             {/* Nomad Neighborhoods */}
             <section className="py-14 bg-brand-50 rounded-3xl mx-4">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <div className="text-center mb-20">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic text-brand-950 leading-none">Where the <span className="text-brand-GOLD">Panama Real Estate Sales</span> Hang</h2>
                         <p className="text-xl text-slate-500 font-medium max-w-2xl mx-auto italic">From colonial vibes to high-tech jungles, pick your vibe.</p>

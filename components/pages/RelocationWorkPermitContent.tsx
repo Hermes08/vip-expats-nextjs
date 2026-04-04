@@ -128,7 +128,7 @@ const RelocationWorkPermitContent: React.FC = () => {
 
             {/* Core Pathways */}
             <section className="py-14 bg-white rounded-3xl mx-4">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <div className="text-center mb-24">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic">Choose Your <span className="text-brand-GOLD text-3xl md:text-5xl block">Labor Trajectory</span></h2>
                     </div>
@@ -185,7 +185,7 @@ const RelocationWorkPermitContent: React.FC = () => {
 
             {/* Warning: Protected Professions */}
             <section className="py-14 bg-red-950 text-white rounded-3xl mx-4 relative overflow-hidden">
-                <div className="max-w-7xl mx-auto px-8 relative z-10 flex flex-col md:flex-row items-center gap-20">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10 flex flex-col md:flex-row items-center gap-20">
                     <div className="md:w-1/3">
                         <ShieldCheck size={120} className="text-red-500 opacity-50 mb-10" />
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black uppercase tracking-tighter italic leading-none">Access <br /><span className="text-red-500">Denied?</span></h2>

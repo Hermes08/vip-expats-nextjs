@@ -100,7 +100,7 @@ const Navbar: React.FC = () => {
                                                 <Link
                                                     key={item.path}
                                                     href={`/${lang}${item.path}`}
-                                                    className={`flex items-center gap-3 px-6 py-4 text-[10px] font-black uppercase tracking-widest hover:bg-white/5 transition-colors ${isActive(item.path) ? 'text-brand-GOLD' : 'text-gray-300'}`}
+                                                    className={`flex items-center gap-3 px-6 py-4 text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 hover:text-brand-TEAL transition-colors ${isActive(item.path) ? 'text-brand-GOLD' : 'text-brand-800'}`}
                                                 >
                                                     {item.icon}
                                                     {item.label}
@@ -127,7 +127,7 @@ const Navbar: React.FC = () => {
                         <LanguageSwitcher currentLang={lang} />
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                            className="p-2 text-white focus:outline-none focus:ring-2 focus:ring-brand-GOLD rounded-lg"
+                            className={`p-2 focus:outline-none focus:ring-2 focus:ring-brand-GOLD rounded-lg transition-colors ${isScrolled ? 'text-brand-950' : 'text-white'}`}
                             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
                             aria-expanded={isMobileMenuOpen}
                             aria-controls="mobile-menu"
@@ -157,7 +157,7 @@ const Navbar: React.FC = () => {
                                         <Link
                                             key={item.path}
                                             href={`/${lang}${item.path}`}
-                                            className={`text-lg font-bold uppercase tracking-tight flex items-center gap-3 ${isActive(item.path) ? 'text-brand-GOLD' : 'text-gray-400'}`}
+                                            className={`text-lg font-bold uppercase tracking-tight flex items-center gap-3 ${isActive(item.path) ? 'text-brand-GOLD' : 'text-white/80'}`}
                                         >
                                             {item.icon}
                                             {item.label}

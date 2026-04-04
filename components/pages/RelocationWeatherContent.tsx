@@ -101,7 +101,7 @@ const RelocationWeatherContent: React.FC = () => {
 
             {/* Dry vs Green Season Deep Dive */}
             <section className="py-14 bg-white/5 rounded-3xl mx-4">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <div className="flex flex-col lg:flex-row gap-20">
                         <div className="lg:w-1/2">
                             <h3 className="text-3xl md:text-5xl font-black uppercase tracking-tighter mb-8 italic text-brand-900 leading-tight">Dry Season <br /> (Jan - April)</h3>
@@ -140,7 +140,7 @@ const RelocationWeatherContent: React.FC = () => {
                 <div className="absolute top-0 left-0 p-20 opacity-5">
                     <Compass size={200} />
                 </div>
-                <div className="max-w-7xl mx-auto px-8 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
                     <div className="grid lg:grid-cols-2 gap-24 items-center">
                         <div>
                             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD italic">Microclimate</span> <br /> Paradox</h2>
@@ -223,7 +223,7 @@ const RelocationWeatherContent: React.FC = () => {
 
             {/* Preparation and What to Pack */}
             <section className="py-14 bg-brand-50 text-brand-950 rounded-3xl mx-4">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <div className="flex flex-col lg:flex-row gap-24 items-center">
                         <div className="lg:w-1/2">
                             <Star className="text-brand-GOLD mb-10" size={64} />
@@ -269,7 +269,7 @@ const RelocationWeatherContent: React.FC = () => {
 
             {/* Related Resources: The Topic Cluster */}
             <section className="py-24 bg-white rounded-3xl mx-4 mb-32">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-slate-500 mb-12 text-center">Complete Your Research</h4>
                     <div className="grid md:grid-cols-2 gap-8">
                         <Link href={`/${lang}/relocation/cost-of-living`} className="group p-6 bg-white rounded-2xl border border-brand-100 hover:border-brand-GOLD transition-all shadow-sm">

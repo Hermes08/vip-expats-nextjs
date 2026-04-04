@@ -116,7 +116,7 @@ const RelocationReviewsContent: React.FC = () => {
 
             {/* Achievement Badges */}
             <section className="py-24 bg-brand-GOLD text-brand-950 rounded-3xl mx-4">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <div className="grid md:grid-cols-3 gap-12 text-center">
                         <div className="flex flex-col items-center">
                             <CheckCircle2 size={48} className="mb-6" />

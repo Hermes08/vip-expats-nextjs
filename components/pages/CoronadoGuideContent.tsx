@@ -95,7 +95,7 @@ const CoronadoGuideContent: React.FC = () => {
             {/* Coronado Lifestyle Sections */}
             <section className="py-32 bg-white text-brand-950 rounded-[5rem] mx-4 overflow-hidden relative">
                 <div className="absolute top-0 right-0 w-96 h-96 bg-brand-GOLD/5 rounded-full -mr-48 -mt-48 blur-3xl"></div>
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <div className="grid lg:grid-cols-2 gap-20 items-center">
                         <div className="relative aspect-video overflow-hidden rounded-[4rem] shadow-2xl border border-brand-100">
                             <Image

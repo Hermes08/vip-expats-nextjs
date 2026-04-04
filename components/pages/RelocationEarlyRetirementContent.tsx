@@ -48,7 +48,7 @@ const RelocationEarlyRetirementContent = () => {
             <LocalBusinessSchema />
 
             {/* Hero Section */}
-            <section className="relative pt-40 pb-32 bg-white text-white overflow-hidden rounded-b-[5rem]">
+            <section className="relative pt-40 pb-32 bg-white text-brand-950 overflow-hidden rounded-b-[5rem]">
                 <div className="max-w-7xl mx-auto px-4 relative z-10 text-center">
                     <div className="inline-flex items-center gap-2 px-4 py-2 bg-brand-GOLD/10 border border-brand-GOLD/20 rounded-full mb-10">
                         <TrendingUp size={14} className="text-brand-GOLD" />
@@ -112,7 +112,7 @@ const RelocationEarlyRetirementContent = () => {
 
             {/* Path for Under 50s */}
             <section className="py-14 bg-brand-50 text-brand-950 rounded-3xl mx-4 relative overflow-hidden">
-                <div className="max-w-7xl mx-auto px-8 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
                     <div className="text-center mb-10 px-4">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic leading-none text-center">The <span className="text-brand-GOLD">Under 50</span> Playbook</h2>
                         <p className="text-slate-500 font-black uppercase tracking-widest text-[10px] mx-auto text-center italic">Strategic Visa Selection for the FIRE Community.</p>
@@ -181,7 +181,7 @@ const RelocationEarlyRetirementContent = () => {
             </section>
 
             {/* FAQ */}
-            <section className="py-14 bg-white text-white border-t border-brand-100">
+            <section className="py-14 bg-white text-brand-950 border-t border-brand-100">
                 <div className="max-w-3xl mx-auto px-4">
                     <h2 className="text-2xl sm:text-3xl md:text-4xl font-heading font-black mb-20 text-center uppercase tracking-tighter italic italic">Early Relocation <span className="text-brand-GOLD">Intel</span></h2>
                     <div className="space-y-6">

@@ -66,7 +66,7 @@ const RelocationCostContent: React.FC = () => {
                 <div className="absolute top-0 right-0 p-20 opacity-10">
                     <Hammer size={200} className="text-brand-GOLD" />
                 </div>
-                <div className="max-w-7xl mx-auto px-8 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
                     <div className="flex flex-col lg:flex-row gap-20 items-center">
                         <div className="lg:w-1/2">
                             <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Utility <br /> <span className="text-brand-GOLD italic">Maintenance</span></h2>
@@ -146,7 +146,7 @@ const RelocationCostContent: React.FC = () => {
 
             {/* Budget Tiers */}
             <section className="py-14 bg-white/5 rounded-3xl mx-4">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <div className="text-center mb-24">
                         <h2 className="text-4xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter italic">Choose Your <span className="text-brand-GOLD">Budget Tier</span></h2>
                         <p className="text-slate-500 font-black uppercase tracking-widest text-xs">Matching your lifestyle to your wallet.</p>
@@ -229,7 +229,7 @@ const RelocationCostContent: React.FC = () => {
 
             {/* Video Insights Gallery */}
             <section className="py-14 bg-white rounded-3xl mx-4">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <div className="text-center mb-24">
                         <h2 className="text-4xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter italic">Relocation <span className="text-brand-GOLD">Masterclass</span></h2>
                         <p className="text-slate-500 font-black uppercase tracking-widest text-xs">Watch and Learn from the experts on the ground.</p>
@@ -297,7 +297,7 @@ const RelocationCostContent: React.FC = () => {
 
             {/* Related Resources: The Topic Cluster */}
             <section className="py-24 bg-white rounded-3xl mx-4 mb-32">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <h4 className="text-[10px] font-black uppercase tracking-[0.5em] text-slate-500 mb-12 text-center">Complete Your Research</h4>
                     <div className="grid md:grid-cols-2 gap-8">
                         <Link href={`/${lang}/relocation/weather`} className="group p-6 bg-white rounded-2xl border border-brand-100 hover:border-brand-GOLD transition-all shadow-sm">

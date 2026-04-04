@@ -241,7 +241,7 @@ const RelocationLawyersDirectoryContent: React.FC = () => {
 
             {/* Vetting Process: The Elite Standard */}
             <section className="py-14 bg-white rounded-3xl mx-4 relative overflow-hidden">
-                <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-24 items-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 grid lg:grid-cols-2 gap-24 items-center">
                     <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
                         <Image
                             src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1000&q=80"

@@ -98,7 +98,7 @@ export default function PropertySearchFilters({ filters, onChange, total, filter
           className="w-full bg-white border border-brand-TEAL/30 text-brand-950 text-sm rounded-xl pl-10 pr-4 py-2.5 focus:outline-none focus:border-brand-TEAL transition-colors placeholder:text-slate-400"
         />
         {filters.query && (
-          <button onClick={() => set('query', '')} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-500 hover:text-white transition-colors">
+          <button onClick={() => set('query', '')} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-500 hover:text-brand-TEAL transition-colors">
             <X size={14} />
           </button>
         )}

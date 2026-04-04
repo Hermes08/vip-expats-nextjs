@@ -166,7 +166,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                         </article>
 
                         {/* SECTION 4: Buyer Profile */}
-                        <article className="bg-brand-50 text-white p-12 rounded-[3rem] mb-20 shadow-2xl relative overflow-hidden reveal-on-scroll">
+                        <article className="bg-brand-50 text-brand-950 p-12 rounded-[3rem] mb-20 shadow-2xl relative overflow-hidden reveal-on-scroll">
                             <div className="absolute top-0 right-0 w-64 h-64 bg-brand-GOLD/5 rounded-full blur-3xl"></div>
                             <h2 className="text-3xl font-heading font-bold mb-8 flex items-center gap-4">
                                 <UserCheck className="text-brand-GOLD" size={36} />
@@ -201,7 +201,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                                 <Compass className="text-brand-GOLD mb-6" size={40} />
                                 <h3 className="text-2xl font-bold mb-4 leading-tight">Request a Private Relocation Tour</h3>
                                 <p className="text-slate-500 text-sm mb-8 leading-relaxed">Experience {project.name[lang]} first-hand with our expert ground team. We handle legal, logistics, and lifestyle vetting.</p>
-                                <Link href="/contacto" className="block w-full py-4 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-xl hover:bg-white transition-all text-center">Schedule Discovery Visit</Link>
+                                <Link href="/contacto" className="block w-full py-4 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-xl hover:bg-amber-400 transition-all text-center">Schedule Discovery Visit</Link>
                             </div>
 
                             {/* Lead Magnet Book */}
@@ -240,7 +240,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                                     <input name="phone" required placeholder="Phone/WhatsApp" aria-label="Your Phone or WhatsApp" className="w-full px-4 py-3 bg-brand-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all" />
                                     <textarea name="message" placeholder="I'm interested in..." aria-label="Message" rows={3} className="w-full px-4 py-3 bg-brand-50 rounded-lg text-sm border-transparent focus:border-brand-GOLD focus:ring-0 outline-none transition-all resize-none"></textarea>
 
-                                    <button type="submit" className="w-full py-4 bg-brand-50 text-white font-black uppercase tracking-widest text-[10px] rounded-xl hover:bg-brand-GOLD hover:text-white transition-all shadow-lg">
+                                    <button type="submit" className="w-full py-4 bg-brand-GOLD text-brand-950 font-black uppercase tracking-widest text-[10px] rounded-xl hover:bg-amber-400 transition-all shadow-lg">
                                         Request Details
                                     </button>
                                 </form>

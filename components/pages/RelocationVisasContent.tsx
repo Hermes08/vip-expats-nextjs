@@ -281,7 +281,7 @@ const RelocationVisasContent: React.FC = () => {
                 <div className="absolute inset-0 opacity-5 pointer-events-none">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-white rounded-full blur-[150px]"></div>
                 </div>
-                <div className="max-w-7xl mx-auto px-8 overflow-x-auto relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 overflow-x-auto relative z-10">
                     <div className="text-center mb-16 underline italic">
                         <h2 className="text-4xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter italic underline decoration-brand-GOLD leading-none">Strategic <span className="text-brand-GOLD">Matrix</span></h2>
                         <p className="text-gray-500 font-black uppercase tracking-widest text-[10px]">Compare the Paths in 30 Seconds.</p>
@@ -334,7 +334,7 @@ const RelocationVisasContent: React.FC = () => {
                         Don't guess with your future. Relocating to Panama is a high-stakes move that requires <strong>panama relocation expert</strong> precision.
                     </p>
                     <div className="flex justify-center flex-col sm:flex-row gap-8">
-                        <Link href={`/${lang}/relocation/tours`} className="px-8 py-4 bg-white text-white font-black uppercase tracking-[0.3em] text-[11px] rounded-full hover:bg-brand-50 transition-all shadow-2xl inline-block">
+                        <Link href={`/${lang}/relocation/tours`} className="px-8 py-4 bg-brand-GOLD text-brand-950 font-black uppercase tracking-[0.3em] text-[11px] rounded-full hover:bg-amber-400 transition-all shadow-2xl inline-block">
                             Start My Discovery Journey
                         </Link>
                     </div>

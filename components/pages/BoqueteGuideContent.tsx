@@ -96,7 +96,7 @@ const BoqueteGuideContent: React.FC = () => {
             {/* Boquete Lifestyle Sections */}
             <section className="py-32 bg-neutral-900 text-white rounded-[5rem] mx-4 overflow-hidden relative">
                 <div className="absolute bottom-0 right-0 w-96 h-96 bg-brand-GOLD/5 rounded-full -mr-48 -mb-48 blur-3xl"></div>
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <div className="grid lg:grid-cols-2 gap-20 items-center">
                         <div className="order-2 lg:order-1">
                             <h2 className="text-4xl md:text-7xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The <span className="text-brand-GOLD">Microclimate</span> Secrets</h2>

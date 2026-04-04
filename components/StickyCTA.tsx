@@ -6,7 +6,7 @@ import { CONTACT_INFO } from '@/lib/constants';
 
 const StickyCTA: React.FC = () => {
     return (
-        <div className="fixed bottom-6 right-6 z-[100] transition-all duration-500 transform hover:scale-105">
+        <div className="hidden sm:block fixed bottom-6 right-6 z-[100] transition-all duration-500 transform hover:scale-105">
             {/* Gold pulse ring */}
             <span
                 aria-hidden="true"

@@ -104,7 +104,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
 
             {/* Eligible Countries Breakdown */}
             <section className="py-14 bg-white rounded-3xl mx-4">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <div className="text-center mb-24">
                         <h2 className="text-4xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter italic">Who is <span className="text-brand-GOLD">Friendly?</span></h2>
                         <p className="text-slate-500 font-black uppercase tracking-widest text-xs">The Official 50+ Country List for 2026.</p>
@@ -216,7 +216,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
 
             {/* Step-by-Step 2026 Checklist (The Lead Magnet Section) */}
             <section className="py-14 bg-brand-GOLD text-brand-950 rounded-3xl mx-4 overflow-hidden relative">
-                <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-24 items-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 grid lg:grid-cols-2 gap-24 items-center">
                     <div>
                         <Zap size={64} className="mb-10 opacity-30" />
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The 2026 <br /> Checklist</h2>
@@ -295,7 +295,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
 
             {/* Neighborhood & Lifestyle Analysis for Professionals */}
             <section className="py-14 bg-brand-50 text-brand-950 rounded-3xl mx-4 overflow-hidden relative">
-                <div className="max-w-7xl mx-auto px-8 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
                     <div className="text-center mb-24">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic">Professional <span className="text-brand-GOLD">Hubs</span></h2>
                         <p className="text-gray-500 text-lg uppercase tracking-widest font-black">Where the Friendly Nations live and work.</p>
@@ -392,7 +392,7 @@ const RelocationFriendlyNationsContent: React.FC = () => {
 
             {/* NEW SECTION: TAX RESIDENCY & THE 183-DAY RULE */}
             <section className="py-14 bg-white/5 rounded-3xl mx-4 overflow-hidden relative">
-                <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-24 items-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 grid lg:grid-cols-2 gap-24 items-center">
                     <div>
                         <Globe size={64} className="text-brand-GOLD mb-10" />
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Tax <span className="text-brand-GOLD underline">Residency</span> <br /> Demystified</h2>

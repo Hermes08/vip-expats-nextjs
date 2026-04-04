@@ -173,7 +173,7 @@ const RelocationPensionadoContent: React.FC = () => {
                                 fill
                                 className="object-cover rounded-2xl"
                             />
-                            <div className="absolute -bottom-10 -right-10 bg-white text-white p-6 rounded-[3.5rem] shadow-2xl">
+                            <div className="absolute -bottom-10 -right-10 bg-white text-brand-950 p-6 rounded-[3.5rem] shadow-2xl">
                                 <span className="text-brand-GOLD font-black text-4xl italic">$1,000</span>
                                 <p className="text-[10px] font-black uppercase tracking-widest text-slate-500">Monthly Pension Required</p>
                             </div>
@@ -184,7 +184,7 @@ const RelocationPensionadoContent: React.FC = () => {
 
             {/* NEW SECTION: HEALTHCARE DEEP DIVE */}
             <section className="py-14 bg-white text-brand-950 rounded-3xl mx-4">
-                <div className="max-w-7xl mx-auto px-8">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-16 uppercase tracking-tighter italic leading-none border-b-8 border-brand-GOLD pb-10">The <span className="text-brand-GOLD">Healthcare</span> Shield</h2>
                     <div className="grid lg:grid-cols-2 gap-20">
                         <div className="space-y-8 text-lg text-slate-500 font-medium leading-relaxed">
@@ -232,7 +232,7 @@ const RelocationPensionadoContent: React.FC = () => {
 
             {/* NEW SECTION: SHIPPING & LOGISTICS */}
             <section className="py-14 bg-brand-50 text-brand-950 rounded-3xl mx-4 overflow-hidden relative">
-                <div className="max-w-7xl mx-auto px-8 relative z-10 grid lg:grid-cols-2 gap-24 items-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10 grid lg:grid-cols-2 gap-24 items-center">
                     <div className="order-2 lg:order-1">
                         <div className="grid grid-cols-2 gap-8">
                             <div className="p-8 bg-white/5 rounded-3xl border border-brand-100">
@@ -268,7 +268,7 @@ const RelocationPensionadoContent: React.FC = () => {
                 <div className="absolute top-0 right-0 p-20 opacity-5">
                     <ShieldCheck size={200} />
                 </div>
-                <div className="max-w-7xl mx-auto px-8 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
                     <div className="text-center mb-24">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic">Panama Visa <span className="text-brand-GOLD italic">Rejected?</span></h2>
                         <p className="text-slate-500 font-black uppercase tracking-widest text-xs">The 5 Fatal Mistakes Every DIY Expat Makes.</p>

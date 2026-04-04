@@ -147,7 +147,7 @@ const RelocationToursContent: React.FC = () => {
             </section>
 
             {/* Legal Proof of Concept */}
-            <section className="py-14 bg-white text-white rounded-[5xl] mx-4 relative overflow-hidden flex flex-col items-center">
+            <section className="py-14 bg-white text-brand-950 rounded-[5xl] mx-4 relative overflow-hidden flex flex-col items-center">
                 <div className="absolute inset-0 opacity-10 pointer-events-none">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[1000px] h-[1000px] bg-brand-GOLD rounded-full blur-[200px]"></div>
                 </div>

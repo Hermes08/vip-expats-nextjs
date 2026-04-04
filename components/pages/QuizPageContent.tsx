@@ -111,7 +111,7 @@ const QuizPageContent: React.FC = () => {
                             <p className="text-slate-500 mb-8 leading-relaxed line-clamp-4">{recommendations[0]?.description.en}</p>
                             <button
                                 onClick={() => router.push(`/proyectos/${recommendations[0]?.slug}`)}
-                                className="inline-flex items-center gap-2 bg-brand-GOLD text-white px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-white transition-all shadow-xl self-start"
+                                className="inline-flex items-center gap-2 bg-brand-GOLD text-brand-950 px-8 py-4 rounded-xl font-black uppercase tracking-widest text-xs hover:bg-amber-400 transition-all shadow-xl self-start"
                             >
                                 Learn More About {recommendations[0]?.name.en.split(' ')[0]} <ArrowRight size={16} />
                             </button>
@@ -129,7 +129,7 @@ const QuizPageContent: React.FC = () => {
                                     <p className="text-slate-500 text-sm mb-6 line-clamp-3 leading-relaxed">{p.description.en}</p>
                                     <button
                                         onClick={() => router.push(`/proyectos/${p.slug}`)}
-                                        className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] flex items-center gap-2 hover:text-white transition-colors"
+                                        className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] flex items-center gap-2 hover:text-brand-TEAL transition-colors"
                                     >
                                         View Details <ArrowRight size={14} />
                                     </button>

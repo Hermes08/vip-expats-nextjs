@@ -118,7 +118,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
 
             {/* NEW SECTION: COMPARISON WITH GLOBAL GOLDEN VISAS */}
             <section className="py-14 bg-brand-50 text-brand-950 rounded-3xl mx-4 overflow-hidden relative">
-                <div className="max-w-7xl mx-auto px-8 relative z-10">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
                     <div className="text-center mb-24">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-6 uppercase tracking-tighter italic">Global <span className="text-brand-GOLD italic">Benchmark</span></h2>
                         <p className="text-gray-500 text-lg uppercase tracking-widest font-black">Why Panama Beats Portugal, Greece, and Dubai.</p>
@@ -215,7 +215,7 @@ const RelocationQualifiedInvestorContent: React.FC = () => {
 
             {/* Document Checklist & Timeline */}
             <section className="py-14 bg-brand-GOLD text-brand-950 rounded-3xl mx-4 overflow-hidden relative">
-                <div className="max-w-7xl mx-auto px-8 grid lg:grid-cols-2 gap-24 items-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-8 grid lg:grid-cols-2 gap-24 items-center">
                     <div>
                         <Zap size={64} className="mb-10 opacity-30" />
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">The VIP <br /> Timeline</h2>
