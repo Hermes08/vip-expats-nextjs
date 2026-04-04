@@ -59,9 +59,9 @@ export const PROJECTS: Project[] = [
 
       Each residence features high-end finishes, floor-to-ceiling soundproof glass, and expansive terraces. As one of the premier **panama luxury apartments**, owning here means you are part of a Marriott-managed ecosystem. This ensures that your property is maintained to five-star standards, preserving its value better than generic **panama beachfront condos**.
 
-      The architecture seamlessly blends tropical modernism with international luxury standards. The kitchens are equipped with premium European appliances, and the master suites are sanctuaries of wellness. This project stands out in the **panama oceanfront real estate** market because it offers the privacy of a home with the infrastructure of a world-class resort. Owners have access to a private heliport, a dedicated concierge, and full integration with the Westin resort’s sensory spa and three specialty restaurants.
+      The architecture seamlessly blends tropical modernism with international luxury standards. The kitchens are equipped with premium European appliances, and the master suites are sanctuaries of wellness. This project stands out in the **panama oceanfront real estate** market because it offers the privacy of a home with the infrastructure of a world-class resort. Owners have access to a private heliport, a dedicated concierge, and full integration with the Westin resort's sensory spa and three specialty restaurants.
 
-      In the context of **panama real estate waterfront** inventory, Playa Bonita is unique. It is the only titled beachfront project this close to the capital’s financial district. The **panama coastal real estate** competition often lacks the institutional management provided by Marriott, making the Westin Residences a safer, more prestigious choice for international buyers seeking **beachfront condos panama** or **luxury beachfront condos panama**.
+      In the context of **panama real estate waterfront** inventory, Playa Bonita is unique. It is the only titled beachfront project this close to the capital's financial district. The **panama coastal real estate** competition often lacks the institutional management provided by Marriott, making the Westin Residences a safer, more prestigious choice for international buyers seeking **beachfront condos panama** or **luxury beachfront condos panama**.
 
       The structural integrity and commitment to sustainability are also key features. The project utilizes high-efficiency climate control and water recycling systems. For the discerning buyer, every square inch of these **panama sea view apartments** has been engineered for comfort and long-term durability in a tropical environment.`,
       es: `The Westin Residences en Playa Bonita son la máxima expresión de **bienes raíces de lujo en panamá**. Como un hito en el sector de **inmuebles frente al mar en panamá**, estas residencias ofrecen un nivel de sofisticación arquitectónica e integración de servicios raramente visto en la región. Diseñadas para quienes no aceptan compromisos, las unidades maximizan la luz natural y ofrecen vistas panorámicas de la entrada del Pacífico al Canal de Panamá.
@@ -2047,7 +2047,7 @@ export const BLOG_POSTS: BlogPost[] = [
       en: "The cultural transition to Panama isn't always palm trees and piña coladas. We dive into the psychological challenges and how to overcome the 'Expat Blues'.",
       es: "La transición cultural a Panamá no siempre es fácil. Analizamos los desafíos psicológicos y cómo superar la depresión del expatriado.",
       pt: "A transição cultural para o Panamá nem sempre é de palmeiras e piña coladas. Mergulhamos nos desafios psicológicos e como superar a 'melancolia dos expatriados'.",
-      de: "Der kulturelle Übergang nach Panama ist nicht immer Palmen und Piña Coladas. Wir befassen uns mit den psychologischen Herausforderungen und wie man die \"Expat-Depression\" überwindet.",
+      de: `Der kulturelle Übergang nach Panama ist nicht immer Palmen und Piña Coladas. Wir befassen uns mit den psychologischen Herausforderungen und wie man die "Expat-Depression" überwindet.`,
       zh: '巴拿马的文化转型并非总是一帆风顺。'
     },
     content: {
@@ -2081,11 +2081,11 @@ export const BLOG_POSTS: BlogPost[] = [
       zh: '为什么大多数外籍人士在2年后离开巴拿马'
     },
     excerpt: {
-      en: “Data shows a high 'churn' rate at the 24-month mark. Learn the top reasons why expat dreams fail and how to ensure you are the exception.”,
-      es: “Los datos muestran una alta tasa de abandono a los 24 meses. Conozca las razones de este fracaso y cómo evitarlo.”,
-      pt: “Os dados mostram uma alta taxa de 'rotatividade' aos 24 meses. Conheça os principais motivos pelos quais os sonhos de expatriados fracassam.”,
-      de: “Daten zeigen eine hohe Abwanderungsquote in der 24-Monats-Marke. Erfahren Sie die Hauptgründe, warum Expat-Träume fehlschlagen.”,
-      zh: '数据显24个月的高”流失”率。'
+      en: "Data shows a high 'churn' rate at the 24-month mark. Learn the top reasons why expat dreams fail and how to ensure you are the exception.",
+      es: "Los datos muestran una alta tasa de abandono a los 24 meses. Conozca las razones de este fracaso y cómo evitarlo.",
+      pt: "Os dados mostram uma alta taxa de 'rotatividade' aos 24 meses. Conheça os principais motivos pelos quais os sonhos de expatriados fracassam.",
+      de: "Daten zeigen eine hohe Abwanderungsquote in der 24-Monats-Marke. Erfahren Sie die Hauptgründe, warum Expat-Träume fehlschlagen.",
+      zh: '数据显24个月的高"流失"率。'
     },
     content: {
       en: `The "Two-Year Itch" is a well-documented phenomenon in the Panama expat community. Many move here with grand visions, only to find themselves packings bags 24 months later. Why? 
@@ -2101,7 +2101,7 @@ export const BLOG_POSTS: BlogPost[] = [
 
       **Elite Solution:** We don't just sell real estate; we sell **Integration Strategies**. Our <strong>panama relocation tours</strong> focus on the hard truths so you enter with your eyes wide open.`,
       es: 'El "comezón de los dos años" es un fenómeno bien documentado...',
-      zh: '“两年的瘙痒”是巴拿马外籍人士社区中一个有据可查的现象...'
+      zh: '"两年的瘙痒"是巴拿马外籍人士社区中一个有据可查的现象...'
     },
     date: 'January 10, 2026',
     image: 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=800&q=80',
@@ -2159,7 +2159,7 @@ export const BLOG_POSTS: BlogPost[] = [
       en: "Is Panama safe for families and solo travelers? We analyze the 2026 crime statistics and compare reality to the 'Facebook Group' rumors.",
       es: "¿Es Panamá seguro? Analizamos las estadísticas de criminalidad de 2026 y comparamos la realidad con los rumores.",
       pt: "O Panamá é seguro para famílias e viajantes solitários? Analisamos as estatísticas de criminalidade de 2026 e comparamos a realidade com os rumores.",
-      de: "Ist Panama sicher für Familien und Einzelreisende? Wir analysieren die Kriminalstatistiken von 2026 und vergleichen die Realität mit den \"Facebook-Gruppen\"-Gerüchten.",
+      de: `Ist Panama sicher für Familien und Einzelreisende? Wir analysieren die Kriminalstatistiken von 2026 und vergleichen die Realität mit den "Facebook-Gruppen"-Gerüchten.`,
       zh: '巴拿马对家庭和独行旅客安全吗？'
     },
     content: {
@@ -3150,7 +3150,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
       es: "Episodio 4: Innovación y el Futuro de la Ciudad de Panamá"
     },
     description: {
-      en: "We’re honored to welcome Mayer Mizrachi, Mayor of Panamá District! Join us as we dive into innovation, community growth, and the future of Panama City.",
+      en: "We're honored to welcome Mayer Mizrachi, Mayor of Panamá District! Join us as we dive into innovation, community growth, and the future of Panama City.",
       es: "¡Nos honra dar la bienvenida a Mayer Mizrachi, Alcalde del Distrito de Panamá! Únase a nosotros mientras profundizamos en la innovación, el crecimiento comunitario y el futuro de la Ciudad de Panamá."
     },
     videoId: "P1YTsoWVYZE",
@@ -3168,7 +3168,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
       es: "Episodio 3: Salud y Desarrollo"
     },
     description: {
-      en: "Featuring Mike Kelly (International Client Relations Manager at Pacifica Salud Hospital) & Melissa Aristizabal (The Velopers Group). Two inspiring professionals making a difference and helping shape Panama’s future!",
+      en: "Featuring Mike Kelly (International Client Relations Manager at Pacifica Salud Hospital) & Melissa Aristizabal (The Velopers Group). Two inspiring professionals making a difference and helping shape Panama's future!",
       es: "Con Mike Kelly (Gerente de Relaciones con Clientes Internacionales en el Hospital Pacifica Salud) y Melissa Aristizabal (The Velopers Group). ¡Dos profesionales inspiradores que marcan la diferencia!"
     },
     videoId: "MZ4cHG6Wdc8",
@@ -3186,7 +3186,7 @@ export const PODCAST_EPISODES: PodcastEpisode[] = [
       es: "Episodio 2: Salud, Estilo de Vida y Vida en el Extranjero"
     },
     description: {
-      en: "Today’s guests: Dr. Daniel Baccarani & Geoff Blumer — two inspiring professionals making an impact in Panama. Join us for conversations about health, lifestyle, and life abroad.",
+      en: "Today's guests: Dr. Daniel Baccarani & Geoff Blumer — two inspiring professionals making an impact in Panama. Join us for conversations about health, lifestyle, and life abroad.",
       es: "Invitados de hoy: Dr. Daniel Baccarani y Geoff Blumer — dos profesionales inspiradores que tienen un impacto en Panamá. Únase a nosotros para conversar sobre salud, estilo de vida y vida en el extranjero."
     },
     videoId: "Q2CyjkXhADE",

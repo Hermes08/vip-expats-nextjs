@@ -716,5 +716,6 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
 
             </div>
         </article>
+    </>
     );
 }

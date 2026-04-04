@@ -209,5 +209,6 @@ export default async function PanamaGoldenVisa2026({ params }: { params: Promise
         </div>
       </section>
     </div>
+  </>
   );
 }

@@ -373,7 +373,7 @@ export default function MoveTopanamaPanamaPanamFromCanadaPage({ params: { lang }
                 <div>
                   <h4 className="font-heading font-bold text-brand-950 mb-2">Step 5: Establish Panama Tax Residency</h4>
                   <p className="text-brand-950 text-sm">
-                    Spend >6 months in Panama, establish a residence, get a Panama tax ID (RUC). This proves to CRA you're resident elsewhere.
+                    Spend more than 6 months in Panama, establish a residence, get a Panama tax ID (RUC). This proves to CRA you're resident elsewhere.
                   </p>
                 </div>
 

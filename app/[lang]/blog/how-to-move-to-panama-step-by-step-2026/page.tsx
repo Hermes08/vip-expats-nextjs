@@ -543,5 +543,6 @@ export default async function HowToMovePanamaPage({ params }: { params: Promise<
 
             </div>
         </article>
+    </>
     );
 }

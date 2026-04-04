@@ -780,5 +780,6 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
         </div>
       </section>
     </article>
+  </>
   );
 }

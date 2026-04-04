@@ -604,5 +604,6 @@ export default async function PanamaVsCostaRicaRetirementPage({ params }: { para
 
             </div>
         </article>
+    </>
     );
 }
