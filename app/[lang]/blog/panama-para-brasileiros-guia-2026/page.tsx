@@ -33,6 +33,12 @@ export const metadata = {
   },
 };
 
+const brasilChartData = [
+  { label: 'São Paulo', value: 1600, color: '#6b7280' },
+  { label: 'Rio de Janeiro', value: 1500, color: '#9ca3af' },
+  { label: 'Panamá City', value: 1800, color: '#00C5CB' },
+];
+
 export default function PanamaParaBrasileirosGuia({ params }) {
   const { lang } = params;
 
@@ -154,7 +160,7 @@ export default function PanamaParaBrasileirosGuia({ params }) {
           </p>
 
           <div className="my-8 rounded-lg overflow-hidden border border-brand-100 bg-brand-50 h-[450px]">
-            <CostBarChart />
+            <CostBarChart data={brasilChartData} title="Monthly Cost Comparison (USD)" />
           </div>
 
           <div className="bg-brand-50 border border-brand-100 rounded-lg p-6 mt-8">

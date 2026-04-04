@@ -419,7 +419,7 @@ export default async function BestNeighborhoodsPanamaCityPage({ params }: { para
                         <div key={i} className="card-light rounded-2xl p-8 border border-brand-100">
                             {/* Header */}
                             <div className="mb-6">
-                                <h3 className="text-3xl font-heading font-bold text-white mb-2">{i + 1}. {n.name}</h3>
+                                <h3 className="text-3xl font-heading font-bold text-brand-950 mb-2">{i + 1}. {n.name}</h3>
                                 <p className="text-brand-GOLD text-xs font-black uppercase tracking-widest">{n.tagline}</p>
                             </div>
 
@@ -449,7 +449,7 @@ export default async function BestNeighborhoodsPanamaCityPage({ params }: { para
                             {/* Pros & Cons */}
                             <div className="grid sm:grid-cols-2 gap-6 mb-6">
                                 <div>
-                                    <h4 className="text-white font-bold mb-3 text-sm flex items-center gap-2">
+                                    <h4 className="text-brand-950 font-bold mb-3 text-sm flex items-center gap-2">
                                         <span className="text-brand-GOLD">✓</span> Pros
                                     </h4>
                                     <ul className="space-y-2">
@@ -462,7 +462,7 @@ export default async function BestNeighborhoodsPanamaCityPage({ params }: { para
                                     </ul>
                                 </div>
                                 <div>
-                                    <h4 className="text-white font-bold mb-3 text-sm flex items-center gap-2">
+                                    <h4 className="text-brand-950 font-bold mb-3 text-sm flex items-center gap-2">
                                         <span className="text-brand-CORAL">✕</span> Cons
                                     </h4>
                                     <ul className="space-y-2">

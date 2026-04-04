@@ -143,7 +143,7 @@ export default async function PanamaRealEstateInvestments({ params }: { params: 
                     <div className="space-y-6 not-prose reveal-on-scroll">
                         {topLocations.map((loc, i) => (
                             <div key={i} className="card-light rounded-2xl p-8 border border-brand-100">
-                                <h3 className="font-heading font-bold text-white text-xl mb-3">{loc.name}</h3>
+                                <h3 className="font-heading font-bold text-brand-950 text-xl mb-3">{loc.name}</h3>
                                 <p className="text-slate-500 mb-4 leading-relaxed">{loc.description}</p>
                                 <div className="flex items-center gap-2">
                                     <span className="text-brand-GOLD font-bold text-xs uppercase tracking-widest">Best For:</span>

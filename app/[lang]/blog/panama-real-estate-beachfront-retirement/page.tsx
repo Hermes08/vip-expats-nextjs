@@ -118,7 +118,7 @@ export default async function PanamaBeachfrontLifestyle({ params }: { params: Pr
                             return (
                                 <div key={i} className="card-light p-10 rounded-2xl border border-brand-100 shadow-sm hover:translate-y-[-5px] transition-transform">
                                     <div className="w-14 h-14 rounded-full bg-brand-GOLD flex items-center justify-center mb-6">
-                                        <Icon size={28} className="text-white" />
+                                        <Icon size={28} className="text-brand-950" />
                                     </div>
                                     <h3 className="text-xl font-black text-brand-950 mb-4 uppercase italic tracking-tighter">{item.title}</h3>
                                     <p className="text-slate-500 leading-relaxed">{item.desc}</p>

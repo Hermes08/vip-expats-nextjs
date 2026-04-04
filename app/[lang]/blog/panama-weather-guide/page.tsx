@@ -310,7 +310,7 @@ export default async function PanamaWeatherGuide({ params }: { params: Promise<{
                       row.recommendation.includes('⭐⭐') ? 'bg-brand-GOLD/5' : ''
                     }`}
                   >
-                    <td className="py-3 px-3 text-white font-bold text-sm">{row.month}</td>
+                    <td className="py-3 px-3 text-brand-950 font-bold text-sm">{row.month}</td>
                     <td className="py-3 px-3 text-slate-500 text-sm">{row.pacific}</td>
                     <td className="py-3 px-3 text-slate-500 text-sm">{row.caribbean}</td>
                     <td className="py-3 px-3 text-slate-500 text-sm">{row.boquete}</td>

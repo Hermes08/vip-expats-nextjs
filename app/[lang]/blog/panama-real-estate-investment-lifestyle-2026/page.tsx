@@ -182,9 +182,9 @@ export default async function PanamaRealEstateGuide2026({ params }: { params: Pr
                     {/* CTA Box */}
                     <div className="card-light p-12 rounded-3xl mt-16 not-prose text-center border-t-4 border-brand-GOLD relative overflow-hidden reveal-on-scroll">
                         <div className="absolute top-0 right-0 p-4 opacity-10">
-                            <Building2 size={120} className="text-white" />
+                            <Building2 size={120} className="text-brand-950" />
                         </div>
-                        <h3 className="text-white font-heading text-4xl font-bold mb-6 uppercase italic tracking-tighter relative z-10">
+                        <h3 className="text-brand-950 font-heading text-4xl font-bold mb-6 uppercase italic tracking-tighter relative z-10">
                             Your Panama Journey Starts Here
                         </h3>
                         <p className="text-brand-300 mb-10 max-w-2xl mx-auto text-lg leading-relaxed relative z-10">

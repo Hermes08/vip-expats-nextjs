@@ -553,7 +553,7 @@ export default async function PanamaVsCostaRicaRetirementPage({ params }: { para
                             { q: 'Do I need to speak Spanish?', a: 'Helpful everywhere. More essential in Costa Rica (English limited outside tourist areas). Panama has larger English-speaking expat infrastructure. Both are learnable within a year of immersion.' },
                         ].map((item, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
-                                <h3 className="text-white font-heading font-bold mb-3">{item.q}</h3>
+                                <h3 className="text-brand-950 font-heading font-bold mb-3">{item.q}</h3>
                                 <p className="text-slate-500 text-sm leading-relaxed">{item.a}</p>
                             </div>
                         ))}

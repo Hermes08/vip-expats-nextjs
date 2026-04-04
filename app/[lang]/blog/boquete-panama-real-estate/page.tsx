@@ -223,7 +223,7 @@ export default async function BoqueteRealEstateGuidePage({ params }: { params: P
                                 { title: 'Climate Refuge', desc: 'As global temps rise, temperate-climate towns are becoming premium destinations. Boquete\'s 65–75°F feels like southern California — increasingly rare in 2026.' },
                             ].map((item, i) => (
                                 <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                    <div className="text-white font-bold mb-2">{item.title}</div>
+                                    <div className="text-brand-950 font-bold mb-2">{item.title}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{item.desc}</div>
                                 </div>
                             ))}
@@ -273,7 +273,7 @@ export default async function BoqueteRealEstateGuidePage({ params }: { params: P
                         {neighborhoods.map((n, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="flex justify-between items-start mb-3">
-                                    <h3 className="text-white font-heading font-bold text-lg">{n.name}</h3>
+                                    <h3 className="text-brand-950 font-heading font-bold text-lg">{n.name}</h3>
                                     <span className="text-brand-GOLD font-black text-sm">{n.priceIndex}</span>
                                 </div>
                                 <p className="text-slate-500 text-sm leading-relaxed">{n.desc}</p>
@@ -293,7 +293,7 @@ export default async function BoqueteRealEstateGuidePage({ params }: { params: P
                             <div className="text-brand-GOLD font-black uppercase tracking-widest text-xs mb-4">Long-Term Rental (12+ months)</div>
                             <div className="space-y-3">
                                 <div>
-                                    <div className="text-white font-bold text-lg mb-1">5–7% Annual Yield</div>
+                                    <div className="text-brand-950 font-bold text-lg mb-1">5–7% Annual Yield</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">Renting to expat residents, remote workers, or families seeking 6–12 month leases. Reliable tenants, minimal turnover. Mountain homes and condos in central Boquete command $1,500–$2,000/month.</div>
                                 </div>
                                 <div className="flex items-center gap-2 pt-3 border-t border-brand-100">
@@ -306,7 +306,7 @@ export default async function BoqueteRealEstateGuidePage({ params }: { params: P
                             <div className="text-brand-GOLD font-black uppercase tracking-widest text-xs mb-4">Short-Term Rental (Airbnb)</div>
                             <div className="space-y-3">
                                 <div>
-                                    <div className="text-white font-bold text-lg mb-1">8–12% Annual Yield</div>
+                                    <div className="text-brand-950 font-bold text-lg mb-1">8–12% Annual Yield</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">Peak season (Nov–Apr): $100–$200/night. Off-season: $60–$100/night. Occupancy averages 60–75% year-round, spiking 85%+ in winter. Coffee tourists and eco-travelers drive bookings.</div>
                                 </div>
                                 <div className="flex items-center gap-2 pt-3 border-t border-brand-100">
@@ -317,7 +317,7 @@ export default async function BoqueteRealEstateGuidePage({ params }: { params: P
                         </div>
                     </div>
                     <div className="mt-6 card-light rounded-2xl p-6 border border-brand-100">
-                        <div className="text-white font-bold mb-3">Investment Example:</div>
+                        <div className="text-brand-950 font-bold mb-3">Investment Example:</div>
                         <p className="text-slate-500 text-sm leading-relaxed">
                             A $250K mountain home rented at $1,500/month = $18,000/year = 7.2% yield. Airbnb-managed at $120/night with 65% occupancy = $28,470/year = 11.4% yield. After 25% property management, taxes, HOA, repairs: net 8–9%. Boquete consistently outperforms Panama City on yield while offering better quality of life.
                         </p>
@@ -451,7 +451,7 @@ export default async function BoqueteRealEstateGuidePage({ params }: { params: P
                         {faqItems.map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
                                 <details className="group cursor-pointer">
-                                    <summary className="flex items-start justify-between font-bold text-white hover:text-brand-GOLD transition-colors">
+                                    <summary className="flex items-start justify-between font-bold text-brand-950 hover:text-brand-GOLD transition-colors">
                                         <span className="text-sm">{item.q}</span>
                                         <span className="text-brand-GOLD group-open:rotate-180 transition-transform">+</span>
                                     </summary>

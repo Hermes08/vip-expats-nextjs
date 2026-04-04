@@ -264,7 +264,7 @@ export default async function InternetProvidersPage({ params }: { params: Promis
                                 {/* Pros */}
                                 <div className="grid md:grid-cols-2 gap-6 mb-6 pb-6 border-b border-brand-100">
                                     <div>
-                                        <div className="text-white font-bold text-sm mb-3 flex items-center gap-2">
+                                        <div className="text-brand-950 font-bold text-sm mb-3 flex items-center gap-2">
                                             <CheckCircle size={16} className="text-brand-GOLD" />
                                             Pros
                                         </div>
@@ -278,7 +278,7 @@ export default async function InternetProvidersPage({ params }: { params: Promis
                                         </ul>
                                     </div>
                                     <div>
-                                        <div className="text-white font-bold text-sm mb-3 flex items-center gap-2">
+                                        <div className="text-brand-950 font-bold text-sm mb-3 flex items-center gap-2">
                                             <AlertCircle size={16} className="text-brand-GOLD" />
                                             Considerations
                                         </div>

@@ -33,6 +33,12 @@ export const metadata = {
   },
 };
 
+const venezolanoChartData = [
+  { label: 'Caracas', value: 400, color: '#6b7280' },
+  { label: 'Bogotá', value: 1200, color: '#9ca3af' },
+  { label: 'Panamá City', value: 1800, color: '#00C5CB' },
+];
+
 export default function VivEnPanamVenezolanos({ params }) {
   const { lang } = params;
 
@@ -353,7 +359,7 @@ export default function VivEnPanamVenezolanos({ params }) {
             Comparativa: Salarios Promedio y Costo de Vida
           </h3>
           <div className="rounded-lg overflow-hidden border border-brand-100 bg-brand-50 h-[400px]">
-            <CostBarChart />
+            <CostBarChart data={venezolanoChartData} title="Monthly Cost Comparison (USD)" />
           </div>
           <p className="text-sm text-brand-600 mt-4 text-center">
             Salarios promedio mensuales en USD para profesionales de entrada/mid-level. Costo de vida estimado para familia de 2 personas.

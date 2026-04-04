@@ -51,6 +51,12 @@ const costBreakdownData = [
   { category: 'Full Relocation', cost: 38000, details: 'Complete household, vehicle alternative' },
 ];
 
+const costChartData = [
+  { label: 'Budget Move', value: 12000, color: '#00C5CB' },
+  { label: 'Comfortable', value: 22000, color: '#D4A843' },
+  { label: 'Full Relocation', value: 38000, color: '#8b5cf6' },
+];
+
 const shippingCosts = [
   { type: '20ft Container (USA)', range: '$3,500–6,000', avgDoor: '$4,200' },
   { type: '40ft Container (USA)', range: '$5,500–9,000', avgDoor: '$6,800' },
@@ -132,7 +138,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
           }),
         }}
       />
-    <article className="bg-white min-h-screen pt-28 pb-20">
+    <article className="bg-brand-950 min-h-screen pt-28 pb-20">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-br from-brand-50 to-white border-b-2 border-brand-100 mb-16">
         <div className="max-w-6xl mx-auto px-4 py-20">
@@ -211,7 +217,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string 
         <h2 className="text-3xl font-heading font-bold text-brand-950 mb-2">First Year Relocation Costs by Scenario</h2>
         <p className="text-brand-700 mb-8">Interactive visualization of three relocation paths to Panama:</p>
         <div className="bg-brand-50 border-2 border-brand-100 rounded-xl p-8 h-96">
-          <CostBarChart data={costBreakdownData} />
+          <CostBarChart data={costChartData} />
         </div>
       </section>
 

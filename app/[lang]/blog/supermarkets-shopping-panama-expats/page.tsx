@@ -301,7 +301,7 @@ export default async function SupermarketsPage({ params }: { params: Promise<{ l
                                 </div>
 
                                 <div className="mb-4">
-                                    <div className="text-white font-bold text-sm mb-3 flex items-center gap-2">
+                                    <div className="text-brand-950 font-bold text-sm mb-3 flex items-center gap-2">
                                         <CheckCircle size={16} className="text-brand-GOLD" />
                                         What Makes It Good
                                     </div>

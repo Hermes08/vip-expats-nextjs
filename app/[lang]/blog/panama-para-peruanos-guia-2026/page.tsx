@@ -33,6 +33,12 @@ export const metadata = {
   },
 };
 
+const peruChartData = [
+  { label: 'Lima', value: 1100, color: '#6b7280' },
+  { label: 'Cusco', value: 800, color: '#9ca3af' },
+  { label: 'Panamá City', value: 1800, color: '#00C5CB' },
+];
+
 export default function PanamaParaPeruanosGuia({ params }) {
   const { lang } = params;
 
@@ -154,7 +160,7 @@ export default function PanamaParaPeruanosGuia({ params }) {
           </p>
 
           <div className="my-8 rounded-lg overflow-hidden border border-brand-100 bg-brand-50 h-[450px]">
-            <CostBarChart />
+            <CostBarChart data={peruChartData} title="Monthly Cost Comparison (USD)" />
           </div>
 
           <div className="bg-brand-50 border border-brand-100 rounded-lg p-6 mt-8">

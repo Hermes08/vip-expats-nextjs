@@ -318,10 +318,10 @@ export default async function ApartmentsForRentPanamaGuide({ params }: { params:
                 <Home size={16} /> Furnished Apartments
               </h3>
               <div className="space-y-2 text-slate-500 text-sm">
-                <p><span className="font-bold text-white">Price Premium:</span> 25–40% more than unfurnished</p>
-                <p><span className="font-bold text-white">What's Included:</span> Furniture, kitchen appliances, linens, some electronics</p>
-                <p><span className="font-bold text-white">Best For:</span> Short-term renters (1–12 months), relocating professionals, those avoiding furniture shopping</p>
-                <p><span className="font-bold text-white">Lease Terms:</span> Flexible — often month-to-month or 3-month minimums</p>
+                <p><span className="font-bold text-brand-950">Price Premium:</span> 25–40% more than unfurnished</p>
+                <p><span className="font-bold text-brand-950">What's Included:</span> Furniture, kitchen appliances, linens, some electronics</p>
+                <p><span className="font-bold text-brand-950">Best For:</span> Short-term renters (1–12 months), relocating professionals, those avoiding furniture shopping</p>
+                <p><span className="font-bold text-brand-950">Lease Terms:</span> Flexible — often month-to-month or 3-month minimums</p>
                 <p className="text-xs text-slate-500 italic mt-3">Most furnished units in El Cangrejo and Casco Viejo target short-term Airbnb rentals. Verify building policy allows residential use.</p>
               </div>
             </div>
@@ -331,10 +331,10 @@ export default async function ApartmentsForRentPanamaGuide({ params }: { params:
                 <Home size={16} /> Unfurnished Apartments
               </h3>
               <div className="space-y-2 text-slate-500 text-sm">
-                <p><span className="font-bold text-white">Price Range:</span> Standard rental market rates (30–40% cheaper)</p>
-                <p><span className="font-bold text-white">What's Included:</span> Walls, flooring, kitchen with basic appliances, A/C, hot water</p>
-                <p><span className="font-bold text-white">Best For:</span> Long-term residents (1+ years), families, those seeking affordability</p>
-                <p><span className="font-bold text-white">Lease Terms:</span> Usually 1-year minimum, with annual renewal option</p>
+                <p><span className="font-bold text-brand-950">Price Range:</span> Standard rental market rates (30–40% cheaper)</p>
+                <p><span className="font-bold text-brand-950">What's Included:</span> Walls, flooring, kitchen with basic appliances, A/C, hot water</p>
+                <p><span className="font-bold text-brand-950">Best For:</span> Long-term residents (1+ years), families, those seeking affordability</p>
+                <p><span className="font-bold text-brand-950">Lease Terms:</span> Usually 1-year minimum, with annual renewal option</p>
                 <p className="text-xs text-slate-500 italic mt-3">Furniture sourcing: IKEA, local retailers (Battan, Sony), Facebook Marketplace expat groups, and used imports.</p>
               </div>
             </div>
@@ -351,19 +351,19 @@ export default async function ApartmentsForRentPanamaGuide({ params }: { params:
               <ul className="space-y-2 text-slate-500 text-sm">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 size={14} className="text-brand-GOLD flex-shrink-0 mt-1" />
-                  <span><span className="font-bold text-white">Premium:</span> Expect 15–25% higher monthly rent</span>
+                  <span><span className="font-bold text-brand-950">Premium:</span> Expect 15–25% higher monthly rent</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 size={14} className="text-brand-GOLD flex-shrink-0 mt-1" />
-                  <span><span className="font-bold text-white">Furnished:</span> Most short-term units are fully furnished</span>
+                  <span><span className="font-bold text-brand-950">Furnished:</span> Most short-term units are fully furnished</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 size={14} className="text-brand-GOLD flex-shrink-0 mt-1" />
-                  <span><span className="font-bold text-white">Flexibility:</span> Month-to-month available in many buildings</span>
+                  <span><span className="font-bold text-brand-950">Flexibility:</span> Month-to-month available in many buildings</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 size={14} className="text-brand-GOLD flex-shrink-0 mt-1" />
-                  <span><span className="font-bold text-white">Platforms:</span> Airbnb, Booking.com, Furnished Finder, local Facebook groups</span>
+                  <span><span className="font-bold text-brand-950">Platforms:</span> Airbnb, Booking.com, Furnished Finder, local Facebook groups</span>
                 </li>
               </ul>
             </div>
@@ -373,19 +373,19 @@ export default async function ApartmentsForRentPanamaGuide({ params }: { params:
               <ul className="space-y-2 text-slate-500 text-sm">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 size={14} className="text-brand-GOLD flex-shrink-0 mt-1" />
-                  <span><span className="font-bold text-white">Best Value:</span> Standard market rates, best price-to-value ratio</span>
+                  <span><span className="font-bold text-brand-950">Best Value:</span> Standard market rates, best price-to-value ratio</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 size={14} className="text-brand-GOLD flex-shrink-0 mt-1" />
-                  <span><span className="font-bold text-white">Unfurnished:</span> Most long-term units are unfurnished (you provide furniture)</span>
+                  <span><span className="font-bold text-brand-950">Unfurnished:</span> Most long-term units are unfurnished (you provide furniture)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 size={14} className="text-brand-GOLD flex-shrink-0 mt-1" />
-                  <span><span className="font-bold text-white">Commitment:</span> 1-year lease standard, with security deposit (1 month's rent)</span>
+                  <span><span className="font-bold text-brand-950">Commitment:</span> 1-year lease standard, with security deposit (1 month's rent)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 size={14} className="text-brand-GOLD flex-shrink-0 mt-1" />
-                  <span><span className="font-bold text-white">Platforms:</span> Real estate agents, MLS Panama, Facebook groups, local word-of-mouth</span>
+                  <span><span className="font-bold text-brand-950">Platforms:</span> Real estate agents, MLS Panama, Facebook groups, local word-of-mouth</span>
                 </li>
               </ul>
             </div>
@@ -444,7 +444,7 @@ export default async function ApartmentsForRentPanamaGuide({ params }: { params:
               </h3>
               <div className="grid sm:grid-cols-2 gap-4 text-slate-500 text-sm">
                 <div>
-                  <p className="font-bold text-white mb-2">Usually Separate:</p>
+                  <p className="font-bold text-brand-950 mb-2">Usually Separate:</p>
                   <ul className="space-y-1">
                     <li>• Electricity: $50–$200+ (A/C heavy in summer)</li>
                     <li>• Water: $20–$40</li>
@@ -453,7 +453,7 @@ export default async function ApartmentsForRentPanamaGuide({ params }: { params:
                   </ul>
                 </div>
                 <div>
-                  <p className="font-bold text-white mb-2">Sometimes Included:</p>
+                  <p className="font-bold text-brand-950 mb-2">Sometimes Included:</p>
                   <ul className="space-y-1">
                     <li>• HOA/Maintenance: $100–$300/mo</li>
                     <li>• Water (some buildings)</li>
@@ -474,15 +474,15 @@ export default async function ApartmentsForRentPanamaGuide({ params }: { params:
               <ul className="space-y-2 text-slate-500 text-sm">
                 <li className="flex items-start gap-3">
                   <CheckCircle2 size={14} className="text-brand-GOLD flex-shrink-0 mt-1" />
-                  <span><span className="font-bold text-white">Budget Buildings:</span> $50–$150/mo (basic security, cleaning)</span>
+                  <span><span className="font-bold text-brand-950">Budget Buildings:</span> $50–$150/mo (basic security, cleaning)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 size={14} className="text-brand-GOLD flex-shrink-0 mt-1" />
-                  <span><span className="font-bold text-white">Mid-Range:</span> $150–$250/mo (gym, pool, 24/7 security)</span>
+                  <span><span className="font-bold text-brand-950">Mid-Range:</span> $150–$250/mo (gym, pool, 24/7 security)</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <CheckCircle2 size={14} className="text-brand-GOLD flex-shrink-0 mt-1" />
-                  <span><span className="font-bold text-white">Luxury:</span> $250–$500+/mo (concierge, valet, amenities)</span>
+                  <span><span className="font-bold text-brand-950">Luxury:</span> $250–$500+/mo (concierge, valet, amenities)</span>
                 </li>
               </ul>
             </div>
@@ -629,16 +629,16 @@ export default async function ApartmentsForRentPanamaGuide({ params }: { params:
 
           <div className="space-y-4 text-slate-500 text-sm">
             <p>
-              <span className="font-bold text-white">Temporary Resident Visa (TRV):</span> Most expat renters use this visa. Requires proof of monthly income ($1,000+ USD) from pension, salary, or passive income. Processing: 1–2 months. Cost: ~$500.
+              <span className="font-bold text-brand-950">Temporary Resident Visa (TRV):</span> Most expat renters use this visa. Requires proof of monthly income ($1,000+ USD) from pension, salary, or passive income. Processing: 1–2 months. Cost: ~$500.
             </p>
             <p>
-              <span className="font-bold text-white">Friendly Nations Visa:</span> Requires $120K property purchase or $500K bank deposit. Not required for rentals, but popular for expat residents. Allows permanent residency.
+              <span className="font-bold text-brand-950">Friendly Nations Visa:</span> Requires $120K property purchase or $500K bank deposit. Not required for rentals, but popular for expat residents. Allows permanent residency.
             </p>
             <p>
-              <span className="font-bold text-white">Pensioner Visa:</span> Requires $1,000+ monthly passive income from pension. No employment allowed. Cost: ~$250.
+              <span className="font-bold text-brand-950">Pensioner Visa:</span> Requires $1,000+ monthly passive income from pension. No employment allowed. Cost: ~$250.
             </p>
             <p>
-              <span className="font-bold text-white">Tourist Permit:</span> 180 days visa-free for many nationalities (US, EU, Canada). Can be renewed. Some expats skip formal visas and renew this instead — less common now.
+              <span className="font-bold text-brand-950">Tourist Permit:</span> 180 days visa-free for many nationalities (US, EU, Canada). Can be renewed. Some expats skip formal visas and renew this instead — less common now.
             </p>
             <p className="text-xs text-slate-500 italic border-t border-brand-100 pt-4">
               Rental agreements can help support visa applications by showing proof of residence. Request a certified copy from your landlord.

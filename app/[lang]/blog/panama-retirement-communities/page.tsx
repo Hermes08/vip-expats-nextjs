@@ -255,7 +255,7 @@ export default async function PanamaRetirementCommunitiesPage({ params }: { para
                             },
                         ].map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <div className="text-white font-bold mb-2">{item.title}</div>
+                                <div className="text-brand-950 font-bold mb-2">{item.title}</div>
                                 <div className="text-slate-500 text-xs leading-relaxed">{item.desc}</div>
                             </div>
                         ))}
@@ -284,7 +284,7 @@ export default async function PanamaRetirementCommunitiesPage({ params }: { para
                             <div key={i} className="card-light rounded-2xl p-8 border border-brand-100">
                                 <div className="flex flex-wrap justify-between items-start gap-4 mb-6 pb-6 border-b border-brand-100">
                                     <div>
-                                        <h3 className="text-white font-heading font-bold text-2xl mb-2">{com.location}</h3>
+                                        <h3 className="text-brand-950 font-heading font-bold text-2xl mb-2">{com.location}</h3>
                                         <p className="text-brand-GOLD text-sm font-semibold italic">{com.vibe}</p>
                                     </div>
                                     <div className="text-right space-y-1">
@@ -298,15 +298,15 @@ export default async function PanamaRetirementCommunitiesPage({ params }: { para
                                 <div className="grid sm:grid-cols-3 gap-4 mb-6 pb-6 border-b border-brand-100">
                                     <div>
                                         <div className="text-slate-500 text-[10px] uppercase font-bold tracking-widest mb-1">Monthly Cost (Couple)</div>
-                                        <div className="text-white font-black">{com.costOfLiving}</div>
+                                        <div className="text-brand-950 font-black">{com.costOfLiving}</div>
                                     </div>
                                     <div>
                                         <div className="text-slate-500 text-[10px] uppercase font-bold tracking-widest mb-1">Expat Population</div>
-                                        <div className="text-white font-black">{com.expats}</div>
+                                        <div className="text-brand-950 font-black">{com.expats}</div>
                                     </div>
                                     <div>
                                         <div className="text-slate-500 text-[10px] uppercase font-bold tracking-widest mb-1">Best For</div>
-                                        <div className="text-white text-xs font-semibold">{com.bestFor}</div>
+                                        <div className="text-brand-950 text-xs font-semibold">{com.bestFor}</div>
                                     </div>
                                 </div>
 
@@ -358,7 +358,7 @@ export default async function PanamaRetirementCommunitiesPage({ params }: { para
                         ))}
                     </div>
                     <div className="mt-6 card-light rounded-2xl p-6 border border-brand-100">
-                        <div className="text-white font-bold mb-3">Annual Savings Example:</div>
+                        <div className="text-brand-950 font-bold mb-3">Annual Savings Example:</div>
                         <p className="text-slate-500 text-sm leading-relaxed">
                             Utilities: $25/month × 12 = $300/year. Hospital visits: ~$500/year savings. Restaurants (dining out 3x/week): ~$800/year. Flights (visiting family): ~$200/year. Cinema: ~$100/year. Total: ~$2,000/year in tangible discounts, plus property tax exemption on first home.
                         </p>
@@ -413,7 +413,7 @@ export default async function PanamaRetirementCommunitiesPage({ params }: { para
                             { criterion: 'Accessibility (flights, city)', why: 'International airport within 1–3 hours. Day trips possible. Family visits practical. All top communities score well here.' },
                         ].map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <div className="text-white font-bold mb-2 text-sm">{item.criterion}</div>
+                                <div className="text-brand-950 font-bold mb-2 text-sm">{item.criterion}</div>
                                 <div className="text-slate-500 text-xs leading-relaxed">{item.why}</div>
                             </div>
                         ))}
@@ -464,7 +464,7 @@ export default async function PanamaRetirementCommunitiesPage({ params }: { para
                             },
                         ].map((quiz, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
-                                <div className="text-white font-bold text-lg mb-4">{quiz.q}</div>
+                                <div className="text-brand-950 font-bold text-lg mb-4">{quiz.q}</div>
                                 <div className="space-y-2">
                                     {quiz.answers.map((ans, j) => (
                                         <div key={j} className="flex items-start gap-3 pb-2 border-b border-brand-100 last:border-b-0">
@@ -490,7 +490,7 @@ export default async function PanamaRetirementCommunitiesPage({ params }: { para
                         {faqItems.map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
                                 <details className="group cursor-pointer">
-                                    <summary className="flex items-start justify-between font-bold text-white hover:text-brand-GOLD transition-colors">
+                                    <summary className="flex items-start justify-between font-bold text-brand-950 hover:text-brand-GOLD transition-colors">
                                         <span className="text-sm">{item.q}</span>
                                         <span className="text-brand-GOLD group-open:rotate-180 transition-transform">+</span>
                                     </summary>

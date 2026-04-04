@@ -268,7 +268,7 @@ export default async function PanamaBankingNonResidentsPage({ params }: { params
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
                                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-3">
                                     <div>
-                                        <h3 className="text-lg font-heading font-bold text-white mb-1">{bank.name}</h3>
+                                        <h3 className="text-lg font-heading font-bold text-brand-950 mb-1">{bank.name}</h3>
                                         <div className="text-brand-GOLD text-xs font-black uppercase tracking-widest mb-2">{bank.opens}</div>
                                         <p className="text-slate-500 text-xs">{bank.ease}</p>
                                     </div>
@@ -432,7 +432,7 @@ export default async function PanamaBankingNonResidentsPage({ params }: { params
                     <div className="grid sm:grid-cols-2 gap-4">
                         {digitalBanking.map((service, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
-                                <h3 className="text-white font-bold mb-1">{service.app}</h3>
+                                <h3 className="text-brand-950 font-bold mb-1">{service.app}</h3>
                                 <p className="text-brand-GOLD text-xs font-black uppercase tracking-widest mb-2">{service.type}</p>
                                 <p className="text-slate-500 text-xs leading-relaxed">{service.what}</p>
                             </div>

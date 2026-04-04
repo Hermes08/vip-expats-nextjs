@@ -199,7 +199,7 @@ export default async function CoronadoRealEstateGuidePage({ params }: { params: 
                         {neighborhoods.map((n, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="flex justify-between items-start mb-3">
-                                    <h3 className="text-white font-heading font-bold text-lg">{n.name}</h3>
+                                    <h3 className="text-brand-950 font-heading font-bold text-lg">{n.name}</h3>
                                     <span className="text-brand-GOLD font-black text-sm">{n.priceIndex}</span>
                                 </div>
                                 <p className="text-slate-500 text-xs leading-relaxed">{n.desc}</p>

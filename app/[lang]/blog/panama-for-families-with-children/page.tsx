@@ -266,7 +266,7 @@ export default async function PanamaForFamiliesPage({ params }: { params: Promis
                                 <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-3 mb-3">
                                     <div>
                                         <div className="text-brand-GOLD text-[10px] font-black uppercase tracking-widest mb-1">{school.curriculum} CURRICULUM</div>
-                                        <h3 className="text-lg font-heading font-bold text-white">{school.name}</h3>
+                                        <h3 className="text-lg font-heading font-bold text-brand-950">{school.name}</h3>
                                         <p className="text-slate-500 text-xs mt-1">{school.location}</p>
                                     </div>
                                     <div className="text-right">
@@ -302,7 +302,7 @@ export default async function PanamaForFamiliesPage({ params }: { params: Promis
                         {familyNeighborhoods.map((n, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
                                 <div className="mb-3">
-                                    <h3 className="text-xl font-heading font-bold text-white mb-1">{n.name}</h3>
+                                    <h3 className="text-xl font-heading font-bold text-brand-950 mb-1">{n.name}</h3>
                                     <p className="text-brand-GOLD text-xs font-black uppercase tracking-widest">{n.vibe}</p>
                                 </div>
                                 <p className="text-slate-500 text-sm leading-relaxed mb-4">{n.why}</p>
@@ -344,7 +344,7 @@ export default async function PanamaForFamiliesPage({ params }: { params: Promis
                     <div className="grid sm:grid-cols-2 gap-6">
                         {familyActivities.map((cat, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
-                                <h3 className="text-white font-bold mb-4 uppercase tracking-widest text-sm flex items-center gap-2">
+                                <h3 className="text-brand-950 font-bold mb-4 uppercase tracking-widest text-sm flex items-center gap-2">
                                     <span className="h-2 w-2 rounded-full bg-brand-GOLD"></span>
                                     {cat.category}
                                 </h3>
@@ -373,7 +373,7 @@ export default async function PanamaForFamiliesPage({ params }: { params: Promis
                                 <div className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] mb-2">{b.scenario}</div>
                                 <div className="text-brand-950 font-black text-2xl mb-3">{b.monthly}<span className="text-slate-500 font-normal text-xs">/mo</span></div>
                                 <p className="text-slate-500 text-xs leading-relaxed">{b.details}</p>
-                                <p className="text-white text-xs font-bold mt-4 pt-4 border-t border-brand-100">{b.best}</p>
+                                <p className="text-brand-950 text-xs font-bold mt-4 pt-4 border-t border-brand-100">{b.best}</p>
                             </div>
                         ))}
                     </div>

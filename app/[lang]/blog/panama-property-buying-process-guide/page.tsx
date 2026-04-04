@@ -349,7 +349,7 @@ export default async function PanamaPropertyBuyingPage({ params }: { params: Pro
                                 <div className="flex flex-col md:flex-row gap-4 mb-5">
                                     <div className="flex-grow">
                                         <div className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] mb-1">Title Type</div>
-                                        <h3 className="text-white font-bold text-xl">{t.name}</h3>
+                                        <h3 className="text-brand-950 font-bold text-xl">{t.name}</h3>
                                     </div>
                                 </div>
                                 <p className="text-slate-500 text-sm leading-relaxed mb-5">{t.definition}</p>
@@ -396,7 +396,7 @@ export default async function PanamaPropertyBuyingPage({ params }: { params: Pro
                                         <span className="text-brand-GOLD font-black text-lg">{step.number}</span>
                                     </div>
                                     <div className="flex-grow">
-                                        <h3 className="text-white font-bold text-lg">{step.title}</h3>
+                                        <h3 className="text-brand-950 font-bold text-lg">{step.title}</h3>
                                     </div>
                                 </div>
                                 <div className="ml-14 mb-4 space-y-2">
@@ -480,7 +480,7 @@ export default async function PanamaPropertyBuyingPage({ params }: { params: Pro
                     <div className="grid md:grid-cols-3 gap-6 mb-8">
                         {mortgageInfo.map((m, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
-                                <h3 className="text-white font-bold text-lg mb-4">{m.bank}</h3>
+                                <h3 className="text-brand-950 font-bold text-lg mb-4">{m.bank}</h3>
                                 <div className="space-y-3 text-sm">
                                     <div>
                                         <div className="text-slate-400 text-[10px] uppercase font-bold mb-1">Down Payment</div>
@@ -536,7 +536,7 @@ export default async function PanamaPropertyBuyingPage({ params }: { params: Pro
                         {redFlags.map((item, i) => (
                             <div key={i} className="flex items-start gap-4 card-light rounded-xl p-5 border border-brand-100">
                                 <div className="flex-shrink-0">
-                                    <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-white text-sm ${
+                                    <div className={`w-10 h-10 rounded-full flex items-center justify-center font-bold text-brand-950 text-sm ${
                                         item.danger === 'VERY HIGH' ? 'bg-brand-CORAL' :
                                         item.danger === 'HIGH' ? 'bg-brand-CORAL/70' :
                                         'bg-brand-AMBER'
@@ -558,7 +558,7 @@ export default async function PanamaPropertyBuyingPage({ params }: { params: Pro
                     <h3 className="text-white font-heading font-bold text-2xl mb-4 uppercase tracking-tight">Closing Costs by Property Price</h3>
                     <p className="text-slate-500 text-sm mb-6">See how total buyer costs scale with property value.</p>
                     <div className="rounded-xl overflow-hidden bg-white border border-brand-100" style={{ height: '400px' }}>
-                        <CostBarChart />
+                        <CostBarChart data={propertyChartData} title="Monthly Cost Comparison (USD)" />
                     </div>
                 </section>
 
@@ -579,7 +579,7 @@ export default async function PanamaPropertyBuyingPage({ params }: { params: Pro
                         {faqData.map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
                                 <details className="cursor-pointer group">
-                                    <summary className="flex items-center justify-between font-bold text-white text-sm hover:text-brand-GOLD transition-colors">
+                                    <summary className="flex items-center justify-between font-bold text-brand-950 text-sm hover:text-brand-GOLD transition-colors">
                                         <span>{item.q}</span>
                                         <span className="text-brand-GOLD group-open:rotate-180 transition-transform">+</span>
                                     </summary>

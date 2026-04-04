@@ -33,6 +33,12 @@ export const metadata = {
   },
 };
 
+const colombiaChartData = [
+  { label: 'Bogotá', value: 1200, color: '#6b7280' },
+  { label: 'Medellín', value: 1100, color: '#9ca3af' },
+  { label: 'Panamá City', value: 1800, color: '#00C5CB' },
+];
+
 export default function PanamaParaColombianosGuia({ params }) {
   const { lang } = params;
 
@@ -405,7 +411,7 @@ export default function PanamaParaColombianosGuia({ params }) {
             Comparativa: Costo de Vida Bogotá vs Medellín vs Panama City
           </h3>
           <div className="rounded-lg overflow-hidden border border-brand-100 bg-brand-50 h-[400px]">
-            <CostBarChart />
+            <CostBarChart data={colombiaChartData} title="Monthly Cost Comparison (USD)" />
           </div>
           <p className="text-sm text-brand-600 mt-4 text-center">
             Gastos mensuales estimados en USD para persona sola. Panamá es más caro, pero salarios compensan.

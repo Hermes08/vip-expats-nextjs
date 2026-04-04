@@ -246,7 +246,7 @@ export default async function PanamaSIMCardPage({ params }: { params: Promise<{ 
 
                                 {/* Pros */}
                                 <div className="mb-5">
-                                    <div className="text-white font-bold text-sm mb-2 flex items-center gap-2">
+                                    <div className="text-brand-950 font-bold text-sm mb-2 flex items-center gap-2">
                                         <CheckCircle size={16} className="text-brand-GOLD" />
                                         Key Advantages
                                     </div>
@@ -280,7 +280,7 @@ export default async function PanamaSIMCardPage({ params }: { params: Promise<{ 
                                 <div className="grid sm:grid-cols-2 gap-4 pt-4 border-t border-brand-100">
                                     <div>
                                         <div className="text-brand-GOLD font-black uppercase tracking-widest text-[10px] mb-2">Prepaid SIM</div>
-                                        <div className="text-white font-black text-lg">{carrier.prepaid}</div>
+                                        <div className="text-brand-950 font-black text-lg">{carrier.prepaid}</div>
                                         <div className="text-slate-500 text-[10px] uppercase tracking-widest">One-time purchase</div>
                                     </div>
                                     <div>
@@ -289,7 +289,7 @@ export default async function PanamaSIMCardPage({ params }: { params: Promise<{ 
                                             {carrier.monthlyPlans.map((plan, j) => (
                                                 <div key={j} className="flex justify-between text-xs">
                                                     <span className="text-slate-500">{plan.data}</span>
-                                                    <span className="text-white font-bold">{plan.price}</span>
+                                                    <span className="text-brand-950 font-bold">{plan.price}</span>
                                                 </div>
                                             ))}
                                         </div>

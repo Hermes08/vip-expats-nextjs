@@ -157,7 +157,7 @@ export default async function ProConsRetiringPanamaPage({ params }: { params: Pr
                                         <span className="text-brand-GOLD font-black text-sm">✓</span>
                                     </div>
                                     <div>
-                                        <h3 className="text-white font-heading font-bold text-lg mb-2">{pro.title}</h3>
+                                        <h3 className="text-brand-950 font-heading font-bold text-lg mb-2">{pro.title}</h3>
                                         <p className="text-slate-500 text-sm leading-relaxed">{pro.desc}</p>
                                     </div>
                                 </div>
@@ -183,7 +183,7 @@ export default async function ProConsRetiringPanamaPage({ params }: { params: Pr
                                         <span className="text-slate-500 font-black text-sm">!</span>
                                     </div>
                                     <div>
-                                        <h3 className="text-white font-heading font-bold text-lg mb-2">{con.title}</h3>
+                                        <h3 className="text-brand-950 font-heading font-bold text-lg mb-2">{con.title}</h3>
                                         <p className="text-slate-500 text-sm leading-relaxed">{con.desc}</p>
                                     </div>
                                 </div>
@@ -239,7 +239,7 @@ export default async function ProConsRetiringPanamaPage({ params }: { params: Pr
                         {budgetLevels.map((item, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="flex items-start justify-between gap-4 mb-3">
-                                    <h3 className="text-white font-heading font-bold text-lg">{item.level}</h3>
+                                    <h3 className="text-brand-950 font-heading font-bold text-lg">{item.level}</h3>
                                     <div className="text-brand-GOLD font-black text-sm">{item.monthly}</div>
                                 </div>
                                 <p className="text-slate-500 text-sm leading-relaxed">{item.breakdown}</p>
@@ -316,7 +316,7 @@ export default async function ProConsRetiringPanamaPage({ params }: { params: Pr
                             { q: 'Should I buy or rent when I first arrive?', a: 'Rent for 6–12 months before buying. Understand neighborhoods, lifestyle, weather, community. Then purchase if you are confident. Buying immediately is a mistake — you do not know where you want to live yet.' },
                         ].map((item, i) => (
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
-                                <h3 className="text-white font-heading font-bold mb-3">{item.q}</h3>
+                                <h3 className="text-brand-950 font-heading font-bold mb-3">{item.q}</h3>
                                 <p className="text-slate-500 text-sm leading-relaxed">{item.a}</p>
                             </div>
                         ))}

@@ -456,7 +456,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
 
                     <div className="grid sm:grid-cols-2 gap-6">
                         <div className="card-light rounded-2xl p-8 border border-brand-100">
-                            <p className="text-white font-bold text-sm uppercase tracking-widest mb-4">Medical Tourism Impact:</p>
+                            <p className="text-brand-950 font-bold text-sm uppercase tracking-widest mb-4">Medical Tourism Impact:</p>
                             <p className="text-slate-500 text-xs leading-relaxed mb-4">
                                 Thousands of North Americans fly to Panama annually for dental work, cosmetic surgery, and specialist care. Even accounting for airfare, the savings are massive.
                             </p>
@@ -465,7 +465,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
                             </p>
                         </div>
                         <div className="card-light rounded-2xl p-8 border border-brand-100">
-                            <p className="text-white font-bold text-sm uppercase tracking-widest mb-4">Insurance vs Self-Pay:</p>
+                            <p className="text-brand-950 font-bold text-sm uppercase tracking-widest mb-4">Insurance vs Self-Pay:</p>
                             <p className="text-slate-500 text-xs leading-relaxed mb-4">
                                 A couple age 60+ might pay $250–$500/month for private health insurance, or self-insure and pay-per-service. At typical usage (doctor visit: $70, lab: $80), self-pay is often cheaper year-to-year.
                             </p>
@@ -603,7 +603,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
                     <div className="space-y-6">
                         {budgetExamples.map((example, i) => (
                             <div key={i} className="card-light rounded-2xl p-8 border border-brand-100">
-                                <h3 className="text-white font-heading font-black text-lg mb-6 uppercase tracking-wider">{example.scenario}</h3>
+                                <h3 className="text-brand-950 font-heading font-black text-lg mb-6 uppercase tracking-wider">{example.scenario}</h3>
                                 <div className="space-y-2 mb-6 border-b border-brand-100/30 pb-6">
                                     {example.details.map((detail, j) => (
                                         <div key={j} className="flex justify-between items-center text-sm">
@@ -613,7 +613,7 @@ export default async function PanamaCostOfLiving2026Page({ params }: { params: P
                                     ))}
                                 </div>
                                 <div className="flex justify-between items-center mb-4">
-                                    <p className="text-white font-bold uppercase tracking-widest text-xs">Total Monthly</p>
+                                    <p className="text-brand-950 font-bold uppercase tracking-widest text-xs">Total Monthly</p>
                                     <p className="text-brand-GOLD font-black text-2xl">{example.total}</p>
                                 </div>
                                 <p className="text-slate-500 text-xs leading-relaxed italic">{example.note}</p>

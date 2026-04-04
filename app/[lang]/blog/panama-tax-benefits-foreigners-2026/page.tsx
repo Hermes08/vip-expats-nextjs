@@ -308,7 +308,7 @@ export default async function PanamaTaxBenefitsForeignersPage({ params }: { para
                     </h2>
                     <div className="space-y-6">
                         <div className="card-light rounded-2xl p-8 border border-brand-100">
-                            <h3 className="text-white font-bold text-lg mb-4">Annual Property Tax Rates:</h3>
+                            <h3 className="text-brand-950 font-bold text-lg mb-4">Annual Property Tax Rates:</h3>
                             <div className="space-y-4">
                                 <div className="flex justify-between items-start border-b border-brand-100/30 pb-3">
                                     <div>
@@ -369,7 +369,7 @@ export default async function PanamaTaxBenefitsForeignersPage({ params }: { para
 
                     <div className="space-y-5">
                         <div className="card-light rounded-2xl p-7 border border-brand-100">
-                            <h3 className="text-white font-bold text-lg mb-3 uppercase tracking-wide">Foreign Earned Income Exclusion (FEIE)</h3>
+                            <h3 className="text-brand-950 font-bold text-lg mb-3 uppercase tracking-wide">Foreign Earned Income Exclusion (FEIE)</h3>
                             <p className="text-slate-500 text-sm leading-relaxed mb-4">
                                 If you earn money by working (not passive income like dividends), you can exclude up to ~$126,500 (2026) from US taxable income. This applies to freelancers, consultants, and remote workers.
                             </p>
@@ -379,14 +379,14 @@ export default async function PanamaTaxBenefitsForeignersPage({ params }: { para
                         </div>
 
                         <div className="card-light rounded-2xl p-7 border border-brand-100">
-                            <h3 className="text-white font-bold text-lg mb-3 uppercase tracking-wide">Foreign Tax Credit (FTC)</h3>
+                            <h3 className="text-brand-950 font-bold text-lg mb-3 uppercase tracking-wide">Foreign Tax Credit (FTC)</h3>
                             <p className="text-slate-500 text-sm leading-relaxed mb-4">
                                 If you pay taxes to another country, you can credit them against US tax owed. Since Panama uses territorial taxation, you typically pay $0 Panama tax on foreign-source income, so FTC is often not needed — but it still applies.
                             </p>
                         </div>
 
                         <div className="card-light rounded-2xl p-7 border border-brand-100">
-                            <h3 className="text-white font-bold text-lg mb-3 uppercase tracking-wide">Panama-US Tax Treaty (None)</h3>
+                            <h3 className="text-brand-950 font-bold text-lg mb-3 uppercase tracking-wide">Panama-US Tax Treaty (None)</h3>
                             <p className="text-slate-500 text-sm leading-relaxed mb-4">
                                 Interestingly, Panama and the USA have no income tax treaty. This means both countries can tax the same income — but because Panama is territorial, it usually doesn't. You are not double-taxed.
                             </p>
@@ -437,7 +437,7 @@ export default async function PanamaTaxBenefitsForeignersPage({ params }: { para
                     <div className="space-y-5">
                         {realExamples.map((example, i) => (
                             <div key={i} className="card-light rounded-2xl p-7 border border-brand-100">
-                                <h3 className="text-white font-bold text-lg mb-4 uppercase tracking-wide">{example.title}</h3>
+                                <h3 className="text-brand-950 font-bold text-lg mb-4 uppercase tracking-wide">{example.title}</h3>
                                 <div className="space-y-3">
                                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start border-b border-brand-100/30 pb-3">
                                         <span className="text-brand-GOLD font-bold text-xs uppercase tracking-widest">Annual Income:</span>
@@ -487,7 +487,7 @@ export default async function PanamaTaxBenefitsForeignersPage({ params }: { para
                     </div>
 
                     <div className="card-light rounded-2xl p-8 border border-brand-100">
-                        <h3 className="text-white font-bold text-lg mb-4 uppercase tracking-wide">Panama Income Tax Rates (If Applicable)</h3>
+                        <h3 className="text-brand-950 font-bold text-lg mb-4 uppercase tracking-wide">Panama Income Tax Rates (If Applicable)</h3>
                         <div className="overflow-x-auto">
                             <table className="w-full text-sm border-collapse">
                                 <thead>
@@ -522,21 +522,21 @@ export default async function PanamaTaxBenefitsForeignersPage({ params }: { para
                     </h2>
                     <div className="space-y-5">
                         <div className="card-light rounded-2xl p-7 border border-brand-100">
-                            <h3 className="text-white font-bold text-lg mb-3 uppercase tracking-wide">Panama Signed FATCA</h3>
+                            <h3 className="text-brand-950 font-bold text-lg mb-3 uppercase tracking-wide">Panama Signed FATCA</h3>
                             <p className="text-slate-500 text-sm leading-relaxed">
                                 Panama has an agreement with the US Foreign Account Tax Compliance Act (FATCA). This means US citizens cannot hide money in Panama banks — accounts are reported to the IRS. The days of Panama as a secretive banking haven are long over.
                             </p>
                         </div>
 
                         <div className="card-light rounded-2xl p-7 border border-brand-100">
-                            <h3 className="text-white font-bold text-lg mb-3 uppercase tracking-wide">OECD Compliance</h3>
+                            <h3 className="text-brand-950 font-bold text-lg mb-3 uppercase tracking-wide">OECD Compliance</h3>
                             <p className="text-slate-500 text-sm leading-relaxed">
                                 Panama is compliant with OECD standards and has not been on any international financial blacklist. It is a legitimate jurisdiction for banking, wealth management, and tax residency.
                             </p>
                         </div>
 
                         <div className="card-light rounded-2xl p-7 border border-brand-100">
-                            <h3 className="text-white font-bold text-lg mb-3 uppercase tracking-wide">US Citizens Can Bank Normally</h3>
+                            <h3 className="text-brand-950 font-bold text-lg mb-3 uppercase tracking-wide">US Citizens Can Bank Normally</h3>
                             <p className="text-slate-500 text-sm leading-relaxed">
                                 Despite FATCA, US citizens can open bank accounts in Panama without issue. Major banks like Banistmo, BAC, and others serve the expat community. You will need to report accounts on FBAR and FATCA forms, but that is separate from Panama taxation.
                             </p>
@@ -556,7 +556,7 @@ export default async function PanamaTaxBenefitsForeignersPage({ params }: { para
                                     <span className="text-brand-GOLD font-black text-xs">{step.step}</span>
                                 </div>
                                 <div>
-                                    <div className="text-white font-bold text-sm mb-1 uppercase tracking-wide">{step.action}</div>
+                                    <div className="text-brand-950 font-bold text-sm mb-1 uppercase tracking-wide">{step.action}</div>
                                     <div className="text-slate-500 text-xs leading-relaxed">{step.detail}</div>
                                 </div>
                             </div>

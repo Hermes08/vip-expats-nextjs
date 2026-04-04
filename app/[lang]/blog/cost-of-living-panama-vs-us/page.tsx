@@ -79,7 +79,7 @@ export default function CostOfLivingArticle() {
                                     <li className="flex justify-between pb-2"><span>Transportation & Insurance</span> <span>$1,100</span></li>
                                 </ul>
                             </div>
-                            <div className="bg-brand-950 text-white p-8 rounded-2xl shadow-xl relative overflow-hidden">
+                            <div className="bg-brand-950 text-brand-950 p-8 rounded-2xl shadow-xl relative overflow-hidden">
                                 <div className="absolute top-0 right-0 w-32 h-32 bg-brand-GOLD/20 rounded-full -mr-16 -mt-16 blur-xl"></div>
                                 <div className="text-brand-GOLD font-bold uppercase tracking-widest text-[10px] mb-2 relative z-10">Panama (Luxury Standard)</div>
                                 <div className="text-4xl font-black text-brand-50 mb-6 relative z-10">$3,200<span className="text-sm text-brand-100 font-medium">/mo</span></div>

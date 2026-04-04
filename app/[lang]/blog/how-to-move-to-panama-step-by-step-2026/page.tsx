@@ -207,7 +207,7 @@ export default async function HowToMovePanamaPage({ params }: { params: Promise<
                         {phases.map((p, i) => (
                             <div key={i} className="card-light rounded-xl p-4 border border-brand-100">
                                 <div className={`text-[10px] font-black uppercase tracking-widest mb-2 text-brand-${p.color}`}>{p.phase}</div>
-                                <h3 className="text-white font-bold text-lg mb-1">{p.title}</h3>
+                                <h3 className="text-brand-950 font-bold text-lg mb-1">{p.title}</h3>
                                 <p className="text-slate-400 text-xs font-semibold">{p.duration}</p>
                             </div>
                         ))}
@@ -427,7 +427,7 @@ export default async function HowToMovePanamaPage({ params }: { params: Promise<
                         {faqData.map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
                                 <details className="cursor-pointer group">
-                                    <summary className="flex items-center justify-between font-bold text-white text-sm hover:text-brand-GOLD transition-colors">
+                                    <summary className="flex items-center justify-between font-bold text-brand-950 text-sm hover:text-brand-GOLD transition-colors">
                                         <span>{item.q}</span>
                                         <span className="text-brand-GOLD group-open:rotate-180 transition-transform">+</span>
                                     </summary>

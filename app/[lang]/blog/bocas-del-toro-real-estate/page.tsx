@@ -217,7 +217,7 @@ export default async function BocasDelToroRealEstateGuidePage({ params }: { para
                             { title: 'Eco-Tourism Boom', body: 'Diving, snorkeling, bird-watching, surfing. Bocas is the diving capital of Central America. Constant tourist demand drives 10–13% Airbnb yields.' },
                         ].map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
-                                <div className="text-white font-bold mb-2">{item.title}</div>
+                                <div className="text-brand-950 font-bold mb-2">{item.title}</div>
                                 <div className="text-slate-500 text-xs leading-relaxed">{item.desc || item.body}</div>
                             </div>
                         ))}
@@ -267,7 +267,7 @@ export default async function BocasDelToroRealEstateGuidePage({ params }: { para
                             <div key={i} className="card-light rounded-2xl p-6 border border-brand-100">
                                 <div className="flex justify-between items-start mb-3">
                                     <div>
-                                        <h3 className="text-white font-heading font-bold text-lg">{island.name}</h3>
+                                        <h3 className="text-brand-950 font-heading font-bold text-lg">{island.name}</h3>
                                         <p className="text-brand-GOLD text-xs font-semibold mt-1 italic">{island.vibe}</p>
                                     </div>
                                     <span className="text-brand-GOLD font-black text-sm">{island.priceIndex}</span>
@@ -324,7 +324,7 @@ export default async function BocasDelToroRealEstateGuidePage({ params }: { para
                         </div>
                     </div>
                     <div className="mt-6 card-light rounded-2xl p-6 border border-brand-100">
-                        <div className="text-white font-bold mb-3">Best Practice:</div>
+                        <div className="text-brand-950 font-bold mb-3">Best Practice:</div>
                         <p className="text-slate-500 text-sm leading-relaxed">
                             If buying ROP land, hire a local attorney to verify your rights are properly registered with the government and not in dispute. Investment-grade buyers focus on titled property or formalized ROP with clean documentation. Casual buyers (looking for a cheap cabin) can accept ROP risk. Choose based on your experience level and risk tolerance.
                         </p>
@@ -339,7 +339,7 @@ export default async function BocasDelToroRealEstateGuidePage({ params }: { para
                     </h2>
                     <div className="space-y-6">
                         <div className="card-light rounded-2xl p-6 border border-brand-100">
-                            <h3 className="text-white font-bold text-lg mb-4">Rental Yield Comparison</h3>
+                            <h3 className="text-brand-950 font-bold text-lg mb-4">Rental Yield Comparison</h3>
                             <div className="space-y-3">
                                 <div className="flex justify-between items-center pb-3 border-b border-brand-100">
                                     <span className="text-slate-500 text-sm">Bocas (Airbnb)</span>
@@ -347,15 +347,15 @@ export default async function BocasDelToroRealEstateGuidePage({ params }: { para
                                 </div>
                                 <div className="flex justify-between items-center pb-3 border-b border-brand-100">
                                     <span className="text-slate-500 text-sm">Coronado (Airbnb)</span>
-                                    <span className="text-white font-black">7–9%</span>
+                                    <span className="text-brand-950 font-black">7–9%</span>
                                 </div>
                                 <div className="flex justify-between items-center pb-3 border-b border-brand-100">
                                     <span className="text-slate-500 text-sm">Boquete (Airbnb)</span>
-                                    <span className="text-white font-black">8–12%</span>
+                                    <span className="text-brand-950 font-black">8–12%</span>
                                 </div>
                                 <div className="flex justify-between items-center">
                                     <span className="text-slate-500 text-sm">Costa Rica Caribbean</span>
-                                    <span className="text-white font-black">6–8%</span>
+                                    <span className="text-brand-950 font-black">6–8%</span>
                                 </div>
                             </div>
                         </div>
@@ -493,7 +493,7 @@ export default async function BocasDelToroRealEstateGuidePage({ params }: { para
                         {faqItems.map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-6 border border-brand-100">
                                 <details className="group cursor-pointer">
-                                    <summary className="flex items-start justify-between font-bold text-white hover:text-brand-GOLD transition-colors">
+                                    <summary className="flex items-start justify-between font-bold text-brand-950 hover:text-brand-GOLD transition-colors">
                                         <span className="text-sm">{item.q}</span>
                                         <span className="text-brand-GOLD group-open:rotate-180 transition-transform">+</span>
                                     </summary>

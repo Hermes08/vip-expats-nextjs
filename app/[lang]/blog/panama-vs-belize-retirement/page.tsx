@@ -280,7 +280,7 @@ export default async function PanamaBelizeRetirementPage({ params }: { params: P
                                 <div className="space-y-3">
                                     <div>
                                         <div className="text-slate-400 text-[10px] uppercase font-bold tracking-widest mb-1">Program</div>
-                                        <div className="text-white font-bold text-lg">{v.program}</div>
+                                        <div className="text-brand-950 font-bold text-lg">{v.program}</div>
                                     </div>
                                     <div>
                                         <div className="text-slate-400 text-[10px] uppercase font-bold tracking-widest mb-1">Minimum Income</div>
@@ -403,7 +403,7 @@ export default async function PanamaBelizeRetirementPage({ params }: { params: P
                                 <div className="space-y-4">
                                     <div>
                                         <div className="text-slate-400 text-[10px] uppercase font-bold mb-1">Panama</div>
-                                        <div className="text-white font-black text-lg">{c.panama}</div>
+                                        <div className="text-brand-950 font-black text-lg">{c.panama}</div>
                                     </div>
                                     <div className="border-t border-brand-100 pt-3">
                                         <div className="text-slate-400 text-[10px] uppercase font-bold mb-1">Belize</div>
@@ -435,7 +435,7 @@ export default async function PanamaBelizeRetirementPage({ params }: { params: P
                             <div key={i} className="flex items-start gap-4 card-light rounded-xl p-5 border border-brand-100">
                                 <div className="flex-shrink-0 w-24">
                                     <div className="text-brand-GOLD font-black text-[10px] uppercase tracking-widest mb-1">Aspect</div>
-                                    <div className="font-bold text-white text-sm">{r.aspect}</div>
+                                    <div className="font-bold text-brand-950 text-sm">{r.aspect}</div>
                                 </div>
                                 <div className="flex-grow space-y-2">
                                     <div>
@@ -537,7 +537,7 @@ export default async function PanamaBelizeRetirementPage({ params }: { params: P
                     <h3 className="text-white font-heading font-bold text-2xl mb-4 uppercase tracking-tight">Monthly Cost Comparison Visualization</h3>
                     <p className="text-slate-500 text-sm mb-6">See how retirement budgets stack up between Panama and Belize at different lifestyle levels.</p>
                     <div className="rounded-xl overflow-hidden bg-white border border-brand-100" style={{ height: '400px' }}>
-                        <CostBarChart />
+                        <CostBarChart data={belizeChartData} title="Monthly Cost Comparison (USD)" />
                     </div>
                 </section>
 
@@ -550,7 +550,7 @@ export default async function PanamaBelizeRetirementPage({ params }: { params: P
                         {faqData.map((item, i) => (
                             <div key={i} className="card-light rounded-xl p-5 border border-brand-100">
                                 <details className="cursor-pointer group">
-                                    <summary className="flex items-center justify-between font-bold text-white text-sm hover:text-brand-GOLD transition-colors">
+                                    <summary className="flex items-center justify-between font-bold text-brand-950 text-sm hover:text-brand-GOLD transition-colors">
                                         <span>{item.q}</span>
                                         <span className="text-brand-GOLD group-open:rotate-180 transition-transform">+</span>
                                     </summary>
