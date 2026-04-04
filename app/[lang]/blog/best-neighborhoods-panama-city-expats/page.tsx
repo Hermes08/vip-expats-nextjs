@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, DollarSign, MapPin, Wifi, AlertCircle, TrendingUp, Home } from 'lucide-react';
-import dynamic from 'next/dynamic';
+import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 
-const PanamaCityScene = dynamic(() => import('@/components/three/PanamaCityScene').then(m => m.PanamaCityScene), { ssr: false });
-const CostBarChart = dynamic(() => import('@/components/three/CostBarChart').then(m => m.CostBarChart), { ssr: false });
 
 export const metadata: Metadata = {
     title: 'Best Neighborhoods in Panama City for Expats 2026: The Definitive Guide',
@@ -83,7 +81,7 @@ const neighborhoods = [
     {
         name: 'Costa del Este',
         tagline: 'Modern Master Development, Safest Area',
-        vibe: 'Planned master community like Miami's Brickell. Modern architecture, upscale malls, safe streets, suburban feel.',
+        vibe: "Planned master community like Miami's Brickell. Modern architecture, upscale malls, safe streets, suburban feel.",
         safety: '⭐⭐⭐⭐⭐ Safest in Panama City',
         walkability: '⭐⭐⭐⭐ Good (malls, restaurants walkable)',
         rent: '$1,000 – $1,600/mo (1BR); $1,400 – $2,200/mo (2BR)',

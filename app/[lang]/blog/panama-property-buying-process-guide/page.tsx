@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 import { ArrowRight, CheckCircle, Scale, DollarSign, AlertCircle, Briefcase, Home, TrendingUp, FileText } from 'lucide-react';
+import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 
-const CostBarChart = dynamic(() => import('@/components/three/CostBarChart').then(m => m.CostBarChart), { ssr: false });
-const PanamaCityScene = dynamic(() => import('@/components/three/PanamaCityScene').then(m => m.PanamaCityScene), { ssr: false });
 
 export const metadata: Metadata = {
     title: 'How to Buy Property in Panama as a Foreigner 2026: Step-by-Step Legal Guide',

@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 import { ArrowRight, CheckCircle, TrendingUp, DollarSign, AlertCircle, MapPin, Shield, Globe, Heart } from 'lucide-react';
+import { CostBarChart } from '@/components/three/ThreeComponents';
 
-const CostBarChart = dynamic(() => import('@/components/three/CostBarChart').then(m => m.CostBarChart), { ssr: false });
-const PanamaCityScene = dynamic(() => import('@/components/three/PanamaCityScene').then(m => m.PanamaCityScene), { ssr: false });
 
 export const metadata: Metadata = {
     title: 'Panama vs Belize for Retirement 2026: Why Panama Wins on Every Key Factor',

@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, DollarSign, Lock, FileText, AlertCircle, TrendingUp, CreditCard } from 'lucide-react';
-import dynamic from 'next/dynamic';
+import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 
-const PanamaCityScene = dynamic(() => import('@/components/three/PanamaCityScene').then(m => m.PanamaCityScene), { ssr: false });
-const CostBarChart = dynamic(() => import('@/components/three/CostBarChart').then(m => m.CostBarChart), { ssr: false });
 
 export const metadata: Metadata = {
     title: 'How to Open a Bank Account in Panama as a Non-Resident 2026: Complete Guide',

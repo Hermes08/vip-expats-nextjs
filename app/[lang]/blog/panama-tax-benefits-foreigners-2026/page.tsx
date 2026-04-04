@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 import { ArrowRight, CheckCircle, DollarSign, TrendingUp, Shield, FileText, HelpCircle } from 'lucide-react';
+import { CostBarChart } from '@/components/three/ThreeComponents';
 
-const CostBarChart = dynamic(() => import('@/components/three/CostBarChart').then(m => m.CostBarChart), { ssr: false });
 
 const taxBurdenData = [
     { label: 'USA (fed+state avg)', value: 38, color: '#e05555' },

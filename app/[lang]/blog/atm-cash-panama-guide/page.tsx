@@ -143,7 +143,7 @@ const feeMinimizerCards = [
         atmFee: '$3–5 per withdrawal (charged by Panama ATM)',
         otherFees: '$0–5 depending on bank',
         pros: 'Works everywhere. Familiar.',
-        bestFor: 'Only if you can't get Schwab or Wise. Expect to pay fees.',
+        bestFor: "Only if you can't get Schwab or Wise. Expect to pay fees.",
         setup: 'Use whatever you have. But strongly recommend getting Schwab.',
     },
 ];

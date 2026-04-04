@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
+import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 import {
   DollarSign,
   Plane,
@@ -13,15 +13,7 @@ import {
   CheckCircle2
 } from 'lucide-react';
 
-const CostBarChart = dynamic(
-  () => import('@/components/three/CostBarChart').then(m => m.CostBarChart),
-  { ssr: false }
-);
 
-const PanamaCityScene = dynamic(
-  () => import('@/components/three/PanamaCityScene').then(m => m.PanamaCityScene),
-  { ssr: false }
-);
 
 export const metadata: Metadata = {
   title: 'Real Cost of Moving to Panama 2026: Every Fee, Every Dollar, No Surprises',

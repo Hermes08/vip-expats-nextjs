@@ -1,10 +1,5 @@
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
 
-const CostBarChart = dynamic(
-  () => import('@/components/three/CostBarChart').then(m => m.CostBarChart),
-  { ssr: false }
-);
 
 interface PageProps {
   params: {

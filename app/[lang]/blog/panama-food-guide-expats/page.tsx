@@ -1,16 +1,8 @@
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 
-const CostBarChart = dynamic(
-  () => import('@/components/blog/CostBarChart'),
-  { ssr: false }
-);
 
-const PanamaCityScene = dynamic(
-  () => import('@/components/blog/PanamaCityScene'),
-  { ssr: false }
-);
 
 interface PageProps {
   params: { lang: string };

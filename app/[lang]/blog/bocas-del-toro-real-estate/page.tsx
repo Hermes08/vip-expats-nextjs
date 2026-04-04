@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 import { ArrowRight, CheckCircle, MapPin, DollarSign, TrendingUp, Home, Waves, AlertCircle } from 'lucide-react';
+import { CostBarChart, BocasScene } from '@/components/three/ThreeComponents';
 
-const BocasScene = dynamic(() => import('@/components/three/BocasScene').then(m => m.BocasScene), { ssr: false });
-const CostBarChart = dynamic(() => import('@/components/three/CostBarChart').then(m => m.CostBarChart), { ssr: false });
 
 const bocasPriceData = [
     { label: 'Island Land (ROP)', value: 85000, color: '#00C5CB' },

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
+import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 import {
   Laptop,
   Globe,
@@ -14,15 +14,7 @@ import {
   Clock,
 } from 'lucide-react';
 
-const CostBarChart = dynamic(
-  () => import('@/components/three/CostBarChart').then(m => m.CostBarChart),
-  { ssr: false }
-);
 
-const PanamaCityScene = dynamic(
-  () => import('@/components/three/PanamaCityScene').then(m => m.PanamaCityScene),
-  { ssr: false }
-);
 
 export const metadata: Metadata = {
   title: 'Panama for Digital Nomads 2026: Visa, Tax, Internet & Where to Base',

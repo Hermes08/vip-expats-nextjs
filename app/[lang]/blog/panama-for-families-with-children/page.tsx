@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, DollarSign, Heart, Globe, AlertCircle, MapPin, BookOpen } from 'lucide-react';
-import dynamic from 'next/dynamic';
+import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 
-const PanamaCityScene = dynamic(() => import('@/components/three/PanamaCityScene').then(m => m.PanamaCityScene), { ssr: false });
-const CostBarChart = dynamic(() => import('@/components/three/CostBarChart').then(m => m.CostBarChart), { ssr: false });
 
 export const metadata: Metadata = {
     title: 'Moving to Panama with Children 2026: Schools, Safety, Activities & Family Budget',

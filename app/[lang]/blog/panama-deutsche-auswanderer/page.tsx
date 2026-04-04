@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 import { ArrowRight, CheckCircle, MapPin, DollarSign, TrendingUp, Plane, Home } from 'lucide-react';
+import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 
-const CostBarChart = dynamic(() => import('@/components/three/CostBarChart').then(m => m.CostBarChart), { ssr: false });
-const PanamaCityScene = dynamic(() => import('@/components/three/PanamaCityScene').then(m => m.PanamaCityScene), { ssr: false });
 
 // Kosten-Vergleich (Deutschland vs Panama)
 const deutschlandVsPanamaData = [

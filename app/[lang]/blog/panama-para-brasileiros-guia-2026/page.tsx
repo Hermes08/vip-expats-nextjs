@@ -1,15 +1,7 @@
-import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 
-const CostBarChart = dynamic(
-  () => import('@/components/three/CostBarChart').then(m => m.CostBarChart),
-  { ssr: false }
-);
 
-const PanamaCityScene = dynamic(
-  () => import('@/components/three/PanamaCityScene').then(m => m.PanamaCityScene),
-  { ssr: false }
-);
 
 export const metadata = {
   title: 'Panamá para Brasileiros 2026: Visto, Custo de Vida e Investimento Imobiliário',

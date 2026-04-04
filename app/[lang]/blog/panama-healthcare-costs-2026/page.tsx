@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
+import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 import {
   Heart,
   Hospital,
@@ -12,15 +12,7 @@ import {
   AlertCircle,
 } from 'lucide-react';
 
-const CostBarChart = dynamic(
-  () => import('@/components/three/CostBarChart').then(m => m.CostBarChart),
-  { ssr: false }
-);
 
-const PanamaCityScene = dynamic(
-  () => import('@/components/three/PanamaCityScene').then(m => m.PanamaCityScene),
-  { ssr: false }
-);
 
 export const metadata: Metadata = {
   title: 'Panama Healthcare Costs 2026: Complete Price Guide for Expats (Private & Public)',

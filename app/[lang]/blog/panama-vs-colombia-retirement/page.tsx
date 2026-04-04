@@ -1,9 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 import { ArrowRight, CheckCircle, MapPin, DollarSign, TrendingUp, Home, Shield, Zap } from 'lucide-react';
+import { CostBarChart } from '@/components/three/ThreeComponents';
 
-const CostBarChart = dynamic(() => import('@/components/three/CostBarChart').then(m => m.CostBarChart), { ssr: false });
 
 export const metadata: Metadata = {
     title: 'Panama vs Colombia for Expats 2026: Which Is Really Better?',

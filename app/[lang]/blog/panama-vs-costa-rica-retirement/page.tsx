@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 import { ArrowRight, CheckCircle, MapPin, DollarSign, TrendingUp, Home, AlertCircle, Heart } from 'lucide-react';
+import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 
-const CostBarChart = dynamic(() => import('@/components/three/CostBarChart').then(m => m.CostBarChart), { ssr: false });
-const PanamaCityScene = dynamic(() => import('@/components/three/PanamaCityScene').then(m => m.PanamaCityScene), { ssr: false });
 
 const monthlyCostData = [
     { label: 'San José (CR)', value: 3200, color: '#e05555' },
@@ -74,7 +72,7 @@ const pros = [
     { title: 'Zero Tax on Foreign Income', desc: 'Pensions, 401k withdrawals, Social Security, rental income — all tax-free if earned abroad. Costa Rica taxes foreign income over $100K.' },
     { title: 'Modern Infrastructure & Connectivity', desc: 'Panama City ranks top 5 in Latin America for infrastructure. Internet quality excellent. Roads reliable, especially on Pacific Riviera and toward Boquete.' },
     { title: 'Boquete: Perfect Mountain Retreat (65°F Year-Round)', desc: 'Cool, spring-like climate in highlands. Costa Rica mountains are beautiful but wetter. Boquete is genuinely unique.' },
-    { title: 'USD Economy = No Currency Risk', desc: 'Uses US dollars. Zero exchange rate worry. Costa Rica's colón fluctuates; adds financial complexity for retirees.' },
+    { title: 'USD Economy = No Currency Risk', desc: "Uses US dollars. Zero exchange rate worry. Costa Rica's colón fluctuates; adds financial complexity for retirees." },
     { title: 'World-Class Private Healthcare', desc: 'JCI-accredited hospitals with US-trained doctors at 50–60% of US costs. Excellence concentrated in Panama City (not just metro areas).' },
     { title: 'Direct Flights to Major US Cities', desc: 'Miami 3 hrs, Houston 3.5 hrs, NYC 5 hrs, LA 6 hrs. Easy visits to family without 9+ hour odysseys.' },
     { title: 'Property Rights = Same as Citizens', desc: 'Foreigners own freehold property. No restrictions, no time limits, no local ownership requirements. Simpler than many countries.' },

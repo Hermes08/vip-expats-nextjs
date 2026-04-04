@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 import { ArrowRight, CheckCircle, MapPin, Briefcase, Home, Users, Calendar, DollarSign, BookOpen } from 'lucide-react';
+import { PanamaCityScene } from '@/components/three/ThreeComponents';
 
-const CostBarChart = dynamic(() => import('@/components/three/CostBarChart').then(m => m.CostBarChart), { ssr: false });
-const PanamaCityScene = dynamic(() => import('@/components/three/PanamaCityScene').then(m => m.PanamaCityScene), { ssr: false });
 
 export const metadata: Metadata = {
     title: 'How to Move to Panama in 2026: Complete 12-Month Step-by-Step Checklist',

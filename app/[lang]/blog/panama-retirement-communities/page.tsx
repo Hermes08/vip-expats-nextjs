@@ -1,10 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import dynamic from 'next/dynamic';
 import { ArrowRight, CheckCircle, MapPin, DollarSign, TrendingUp, Home, Users, Award } from 'lucide-react';
+import { CostBarChart, BoqueteScene } from '@/components/three/ThreeComponents';
 
-const CostBarChart = dynamic(() => import('@/components/three/CostBarChart').then(m => m.CostBarChart), { ssr: false });
-const BoqueteScene = dynamic(() => import('@/components/three/BoqueteScene').then(m => m.BoqueteScene), { ssr: false });
 
 const communityCostData = [
     { label: 'Valle Escondido (Boquete)', value: 1800, color: '#00C5CB' },
