@@ -10,15 +10,15 @@ const BLUR_PLACEHOLDER = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAB
 
 interface PropertyCardProps {
   listing: Listing;
-  lang: 'en' | 'es';
+  lang: string;
   priority?: boolean;
 }
 
 const STATUS_LABELS: Record<string, Record<string, string>> = {
-  'For Sale': { en: 'For Sale', es: 'En Venta' },
-  'For Rent': { en: 'For Rent', es: 'En Alquiler' },
-  'Sold':     { en: 'Sold',     es: 'Vendido' },
-  'Rented':   { en: 'Rented',   es: 'Alquilado' },
+  'For Sale': { en: 'For Sale', es: 'En Venta',    pt: 'À Venda',    de: 'Zu Verkaufen' },
+  'For Rent': { en: 'For Rent', es: 'En Alquiler', pt: 'Para Alugar', de: 'Zu Vermieten' },
+  'Sold':     { en: 'Sold',     es: 'Vendido',     pt: 'Vendido',     de: 'Verkauft' },
+  'Rented':   { en: 'Rented',   es: 'Alquilado',   pt: 'Alugado',     de: 'Vermietet' },
 };
 
 const STATUS_COLORS: Record<string, string> = {
@@ -32,7 +32,7 @@ function formatPrice(price: number, status: string, lang: string): string {
   const formatted = new Intl.NumberFormat('en-US', {
     style: 'currency', currency: 'USD', maximumFractionDigits: 0,
   }).format(price);
-  if (status === 'For Rent') return `${formatted}${lang === 'es' ? '/mes' : '/mo'}`;
+  if (status === 'For Rent') return `${formatted}${lang === 'es' || lang === 'pt' ? '/mês' : lang === 'de' ? '/Mo.' : '/mo'}`;
   return formatted;
 }
 

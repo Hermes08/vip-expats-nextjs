@@ -5,49 +5,77 @@ import Link from 'next/link';
 import { Home, Key, Building2, Map, ArrowRight } from 'lucide-react';
 
 interface QuickSearchStripProps {
-  lang: 'en' | 'es';
+  lang: string;
 }
 
 const categories = [
   {
     icon: Home,
-    labelEs: 'Comprar',
-    labelEn: 'Buy Property',
-    descEs: 'Casas, condos y terrenos',
-    descEn: 'Homes, condos & land',
+    labels: {
+      en: 'Buy Property',
+      es: 'Comprar',
+      pt: 'Comprar',
+      de: 'Kaufen',
+    },
+    descs: {
+      en: 'Homes, condos & land',
+      es: 'Casas, condos y terrenos',
+      pt: 'Casas, apartamentos e terrenos',
+      de: 'Häuser, Apartments & Grundstücke',
+    },
     href: '/propiedades',
     params: '?status=For+Sale',
-    accent: 'brand-GOLD',
   },
   {
     icon: Key,
-    labelEs: 'Alquilar',
-    labelEn: 'For Rent',
-    descEs: 'Apartamentos y casas',
-    descEn: 'Apartments & homes',
+    labels: {
+      en: 'For Rent',
+      es: 'Alquilar',
+      pt: 'Para Alugar',
+      de: 'Zur Miete',
+    },
+    descs: {
+      en: 'Apartments & homes',
+      es: 'Apartamentos y casas',
+      pt: 'Apartamentos e casas',
+      de: 'Apartments & Häuser',
+    },
     href: '/propiedades',
     params: '?status=For+Rent',
-    accent: 'emerald-400',
   },
   {
     icon: Building2,
-    labelEs: 'Proyectos Nuevos',
-    labelEn: 'New Developments',
-    descEs: 'Preventa y en construcción',
-    descEn: 'Presale & under construction',
+    labels: {
+      en: 'New Developments',
+      es: 'Proyectos Nuevos',
+      pt: 'Novos Empreendimentos',
+      de: 'Neue Projekte',
+    },
+    descs: {
+      en: 'Presale & under construction',
+      es: 'Preventa y en construcción',
+      pt: 'Pré-venda e em construção',
+      de: 'Vorverkauf & im Bau',
+    },
     href: '/proyectos',
     params: '',
-    accent: 'sky-400',
   },
   {
     icon: Map,
-    labelEs: 'Tour de Relocación',
-    labelEn: 'Relocation Tour',
-    descEs: 'Conoce Panamá en persona',
-    descEn: 'Discover Panama in person',
+    labels: {
+      en: 'Relocation Tour',
+      es: 'Tour de Relocación',
+      pt: 'Tour de Relocação',
+      de: 'Relocation Tour',
+    },
+    descs: {
+      en: 'Discover Panama in person',
+      es: 'Conoce Panamá en persona',
+      pt: 'Conheça o Panamá pessoalmente',
+      de: 'Panama persönlich entdecken',
+    },
     href: '/relocation/tours',
     params: '',
-    accent: 'violet-400',
   },
 ];
 
@@ -61,8 +89,8 @@ export default function QuickSearchStrip({ lang }: QuickSearchStripProps) {
         <div className="grid grid-cols-2 lg:grid-cols-4 divide-x divide-y lg:divide-y-0 divide-white/5">
           {categories.map((cat, i) => {
             const Icon = cat.icon;
-            const label = lang === 'es' ? cat.labelEs : cat.labelEn;
-            const desc = lang === 'es' ? cat.descEs : cat.descEn;
+            const label = (cat.labels as Record<string, string>)[lang] || cat.labels.en;
+            const desc = (cat.descs as Record<string, string>)[lang] || cat.descs.en;
             const href = `/${lang}${cat.href}${cat.params}`;
 
             return (

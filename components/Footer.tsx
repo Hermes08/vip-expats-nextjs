@@ -8,9 +8,17 @@ import { useLanguage } from '@/context/LanguageContext';
 import { motion } from 'framer-motion';
 import Magnetic from './ui/Magnetic';
 
+const FOOTER_HEADINGS: Record<string, { navigation: string; globalAccess: string }> = {
+    en: { navigation: 'Navigation', globalAccess: 'Global Access' },
+    es: { navigation: 'Navegación', globalAccess: 'Acceso Global' },
+    pt: { navigation: 'Navegação', globalAccess: 'Acesso Global' },
+    de: { navigation: 'Navigation', globalAccess: 'Globaler Zugang' },
+};
+
 const Footer: React.FC = () => {
     const { lang } = useLanguage();
     const t = CONTENT[lang] || CONTENT['en'];
+    const fh = FOOTER_HEADINGS[lang] || FOOTER_HEADINGS['en'];
 
     return (
         <footer className="bg-[#032F30] text-white pt-12 pb-8 z-10 relative overflow-hidden">
@@ -34,16 +42,16 @@ const Footer: React.FC = () => {
                         </div>
                     </div>
                     <div>
-                        <h4 className="text-brand-TEAL text-xs font-black uppercase tracking-[0.3em] mb-4">Navigation</h4>
+                        <h4 className="text-brand-TEAL text-xs font-black uppercase tracking-[0.3em] mb-4">{fh.navigation}</h4>
                         <ul className="space-y-3 text-teal-200/70 text-xs font-black uppercase tracking-widest">
-                            <li><Magnetic strength={0.15}><Link href={`/${lang}/proyectos`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Developments</Link></Magnetic></li>
-                            <li><Magnetic strength={0.15}><Link href={`/${lang}/quiz`} className="hover:text-white transition-colors flex items-center gap-2 group text-brand-TEAL"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Neighborhood Quiz</Link></Magnetic></li>
-                            <li><Magnetic strength={0.15}><Link href={`/${lang}/relocation/tours`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Relocation Tours</Link></Magnetic></li>
-                            <li><Magnetic strength={0.15}><Link href={`/${lang}/blog`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> Market Intelligence</Link></Magnetic></li>
+                            <li><Magnetic strength={0.15}><Link href={`/${lang}/proyectos`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> {t.nav.projects}</Link></Magnetic></li>
+                            <li><Magnetic strength={0.15}><Link href={`/${lang}/quiz`} className="hover:text-white transition-colors flex items-center gap-2 group text-brand-TEAL"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> {t.nav.quiz}</Link></Magnetic></li>
+                            <li><Magnetic strength={0.15}><Link href={`/${lang}/relocation/tours`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> {t.nav.tours}</Link></Magnetic></li>
+                            <li><Magnetic strength={0.15}><Link href={`/${lang}/blog`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> {t.nav.blog}</Link></Magnetic></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 className="text-brand-TEAL text-xs font-black uppercase tracking-[0.3em] mb-4">Global Access</h4>
+                        <h4 className="text-brand-TEAL text-xs font-black uppercase tracking-[0.3em] mb-4">{fh.globalAccess}</h4>
                         <ul className="space-y-3 text-teal-200/70 text-sm font-medium">
                             <li className="flex items-start gap-4"><Phone size={18} className="text-brand-TEAL shrink-0" /> {CONTACT_INFO.displayPhone}</li>
                             <li className="flex items-start gap-4"><Mail size={18} className="text-brand-TEAL shrink-0" /> {CONTACT_INFO.email}</li>

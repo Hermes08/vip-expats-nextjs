@@ -13,7 +13,7 @@ const FeaturedListings = dynamic(() => import('@/components/home/FeaturedListing
 });
 
 interface ClientSectionsProps {
-  lang: 'en' | 'es';
+  lang: 'en' | 'es' | 'pt' | 'de';
 }
 
 export default function ClientSections({ lang }: ClientSectionsProps) {

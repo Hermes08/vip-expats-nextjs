@@ -7,8 +7,76 @@ import Image from 'next/image';
 import BreadcrumbSchema from '@/components/seo/BreadcrumbSchema';
 import { useLanguage } from '@/context/LanguageContext';
 
+const TOURS_TEXT: Record<string, {
+    badge: string;
+    heroTitle: string[];
+    heroTitleGold: string;
+    heroSubtitle: string;
+    reserveCta: string;
+    whyTitle: string;
+    whyTitleGold: string;
+    legalVetting: string;
+    legalVettingDesc: string;
+    socialAccess: string;
+    socialAccessDesc: string;
+}> = {
+    en: {
+        badge: 'The 2026 Discovery Experience',
+        heroTitle: ['THE BOOTS', 'PROTOCOL.'],
+        heroTitleGold: 'GROUND',
+        heroSubtitle: "Don't buy a life you haven't lived. Explore the best places for expats to live in Panama with the Panama Real Estate Sale team.",
+        reserveCta: 'RESERVE MY DISCOVERY SLOT',
+        whyTitle: 'Why a',
+        whyTitleGold: 'Tour',
+        legalVetting: 'Legal Vetting',
+        legalVettingDesc: 'Every project we visit is pre-checked for title and zoning compliance.',
+        socialAccess: 'Social Access',
+        socialAccessDesc: 'Private meet-and-greets with current residents in Boquete and Coronado.',
+    },
+    es: {
+        badge: 'La Experiencia de Descubrimiento 2026',
+        heroTitle: ['EL PROTOCOLO', 'TERRENO.'],
+        heroTitleGold: 'EN',
+        heroSubtitle: 'No compres una vida que no has vivido. Explora los mejores lugares para vivir en Panamá como expatriado con el equipo de Panama Real Estate Sale.',
+        reserveCta: 'RESERVAR MI PLAZA DE DESCUBRIMIENTO',
+        whyTitle: 'Por qué un',
+        whyTitleGold: 'Tour',
+        legalVetting: 'Verificación Legal',
+        legalVettingDesc: 'Cada proyecto que visitamos ha sido verificado previamente para la conformidad de título y zonificación.',
+        socialAccess: 'Acceso Social',
+        socialAccessDesc: 'Reuniones privadas con residentes actuales en Boquete y Coronado.',
+    },
+    pt: {
+        badge: 'A Experiência de Descoberta 2026',
+        heroTitle: ['O PROTOCOLO', 'TERRENO.'],
+        heroTitleGold: 'EM',
+        heroSubtitle: 'Não compre uma vida que você não viveu. Explore os melhores lugares para expatriados viverem no Panamá com a equipe da Panama Real Estate Sale.',
+        reserveCta: 'RESERVAR MINHA VAGA DE DESCOBERTA',
+        whyTitle: 'Por que um',
+        whyTitleGold: 'Tour',
+        legalVetting: 'Verificação Jurídica',
+        legalVettingDesc: 'Cada projeto que visitamos é verificado previamente quanto à conformidade de título e zoneamento.',
+        socialAccess: 'Acesso Social',
+        socialAccessDesc: 'Encontros privados com moradores atuais em Boquete e Coronado.',
+    },
+    de: {
+        badge: 'Das Entdeckungserlebnis 2026',
+        heroTitle: ['DAS BOOTS-', 'PROTOKOLL.'],
+        heroTitleGold: 'GROUND',
+        heroSubtitle: 'Kaufen Sie kein Leben, das Sie nicht gelebt haben. Erkunden Sie die besten Orte für Expats in Panama mit dem Panama Real Estate Sale Team.',
+        reserveCta: 'MEINEN ENTDECKUNGSPLATZ RESERVIEREN',
+        whyTitle: 'Warum eine',
+        whyTitleGold: 'Tour',
+        legalVetting: 'Rechtliche Prüfung',
+        legalVettingDesc: 'Jedes Projekt, das wir besuchen, wird vorab auf Titel- und Zonenkonformität geprüft.',
+        socialAccess: 'Sozialer Zugang',
+        socialAccessDesc: 'Private Treffen mit aktuellen Bewohnern in Boquete und Coronado.',
+    },
+};
+
 const RelocationToursContent: React.FC = () => {
     const { lang } = useLanguage();
+    const tt = TOURS_TEXT[lang] || TOURS_TEXT['en'];
     const breadcrumbItems = [
         { name: "Home", item: `https://panamarealestatesale.com/${lang}` },
         { name: "Relocation", item: `https://panamarealestatesale.com/${lang}/relocation` },
@@ -33,17 +101,17 @@ const RelocationToursContent: React.FC = () => {
                 <div className="relative z-10 max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-20 items-center">
                     <div>
                         <span className="inline-block px-6 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full backdrop-blur-md mb-12">
-                            The 2026 Discovery Experience
+                            {tt.badge}
                         </span>
                         <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl font-black mb-12 leading-[0.8] tracking-tighter uppercase italic text-white">
-                            THE BOOTS <br /> <span className="text-brand-GOLD italic">GROUND</span> <br /> PROTOCOL.
+                            {tt.heroTitle[0]} <br /> <span className="text-brand-GOLD italic">{tt.heroTitleGold}</span> <br /> {tt.heroTitle[1]}
                         </h1>
                         <p className="text-base md:text-lg text-slate-500 max-w-xl leading-relaxed font-medium mb-16 italic border-l-4 border-brand-GOLD/20 pl-12 opacity-80">
-                            Don't buy a life you haven't lived. Explore the <strong>best places for expats to live in panama</strong> with the Panama Real Estate Sale team.
+                            {tt.heroSubtitle}
                         </p>
                         <div className="flex flex-wrap gap-8">
                             <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-gold px-12 py-6 rounded-xl font-black uppercase tracking-[0.2em] text-[11px]">
-                                RESERVE MY DISCOVERY SLOT
+                                {tt.reserveCta}
                             </Link>
                         </div>
                     </div>
@@ -54,7 +122,7 @@ const RelocationToursContent: React.FC = () => {
             <section className="py-14 max-w-7xl mx-auto px-4">
                 <div className="grid lg:grid-cols-2 gap-24 items-center mb-32">
                     <div>
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">Why a <br /> <span className="text-brand-GOLD underline italic">Tour</span> Matters.</h2>
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-heading font-black mb-10 uppercase tracking-tighter italic leading-none">{tt.whyTitle} <br /> <span className="text-brand-GOLD underline italic">{tt.whyTitleGold}</span> Matters.</h2>
                         <div className="space-y-8 text-lg text-slate-500 font-medium leading-[1.8]">
                             <p>
                                 In 2026, Panama's real estate market is moving faster than ever. From <strong>luxury condos in Panama City</strong> to high-yield <strong>short-term rentals in Coronado</strong>, knowing which building has the best management and which neighborhood has the best infrastructure isn't something you can find on a listing site.
@@ -66,15 +134,15 @@ const RelocationToursContent: React.FC = () => {
                                 <div className="flex gap-4">
                                     <ShieldCheck className="text-brand-GOLD shrink-0" size={32} />
                                     <div>
-                                        <h4 className="text-xs uppercase font-black mb-2 italic">Legal Vetting</h4>
-                                        <p className="text-[10px] text-slate-500 font-medium">Every project we visit is pre-checked for title and zoning compliance.</p>
+                                        <h4 className="text-xs uppercase font-black mb-2 italic">{tt.legalVetting}</h4>
+                                        <p className="text-[10px] text-slate-500 font-medium">{tt.legalVettingDesc}</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-4">
                                     <Heart className="text-brand-GOLD shrink-0" size={32} />
                                     <div>
-                                        <h4 className="text-xs uppercase font-black mb-2 italic">Social Access</h4>
-                                        <p className="text-[10px] text-slate-500 font-medium">Private meet-and-greets with current residents in Boquete and Coronado.</p>
+                                        <h4 className="text-xs uppercase font-black mb-2 italic">{tt.socialAccess}</h4>
+                                        <p className="text-[10px] text-slate-500 font-medium">{tt.socialAccessDesc}</p>
                                     </div>
                                 </div>
                             </div>

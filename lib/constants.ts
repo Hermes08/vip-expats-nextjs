@@ -1897,6 +1897,176 @@ export const CONTENT: ContentDictionary = {
       contact: "Contacto",
       rights: "Todos los derechos reservados. Panama Real Estate Sale Panamá."
     }
+  },
+  pt: {
+    nav: {
+      invest: "Investir",
+      projects: "Projetos",
+      quiz: "Quiz de Bairros",
+      relocate: "Relocar",
+      relocationHub: "Hub de Relocação",
+      tours: "Tours de Descoberta",
+      visas: "Vistos & Legal",
+      legal: "Hub Jurídico",
+      guides: "Guias Regionais",
+      cost: "Custo e Processo",
+      reviews: "Avaliações",
+      media: "Mídia",
+      blog: "Blog",
+      podcast: "Podcast",
+      contact: "Contato",
+      search: "Buscar"
+    },
+    labels: {
+      beds: "Quartos",
+      baths: "Banheiros",
+      startingAt: "A partir de",
+      viewDetails: "Ver Detalhes",
+      relatedArticles: "Relatórios do Mercado",
+      similarProjects: "Projetos Similares",
+      readReport: "Ler Relatório Completo"
+    },
+    hero: {
+      badge: "Imóveis Panamá 2026",
+      title: "Onde os Expatriados se Tornam Estrelas no Panamá",
+      subtitle: "Acesso aos melhores imóveis no Panamá e tours de relocação. Seja para o visto Pensionado ou investimento imobiliário no Panamá.",
+      cta: "Ver Projetos"
+    },
+    homepage: {
+      introTitle: "O Guia Definitivo do Mercado Imobiliário no Panamá 2026",
+      introBody: "Navegar pelo cenário imobiliário do Panamá em 2026 requer mais do que apenas olhar anúncios de apartamentos à beira-mar. Requer uma imersão profunda no custo de vida no Panamá e a compreensão das diferentes dinâmicas de bairro, desde apartamentos na Cidade do Panamá em Punta Pacífica até imóveis em Boquete nas montanhas. O Panamá continua sendo um dos melhores lugares para se aposentar para norte-americanos e europeus.",
+      marketTitle: "Visão Geral do Mercado Imobiliário do Panamá 2026",
+      marketBody: "O mercado imobiliário do Panamá em 2026 continua demonstrando notável resiliência e crescimento. Como uma economia dolarizada com localização estratégica, o Panamá permanece a escolha preferida para investidores internacionais que buscam investimentos imobiliários seguros na América Latina.",
+      neighborhoodsTitle: "Os Melhores Bairros do Panamá para Expatriados e Investidores",
+      neighborhoodBody: "Escolher onde morar ou investir é crucial. Em 2026, quatro áreas principais dominam o cenário imobiliário do Panamá: Punta Pacífica e Paitilla para luxo urbano, Boquete para vida nas montanhas, Coronado para estilo de vida na praia, e Costa del Este para profissionais e famílias.",
+      buyingProcessTitle: "Guia Passo a Passo para Comprar Imóveis no Panamá",
+      buyingProcessBody: "O processo de compra de imóveis no Panamá é direto, mas requer orientação profissional. Os passos principais incluem: busca e seleção do imóvel, contrato de promessa de compra, due diligence jurídica, fechamento final e transferência de título.",
+      investmentTitle: "Investimento Imobiliário no Panamá: Estratégia para ROI e Benefícios Fiscais",
+      investmentBody: "Por que investir em imóveis no Panamá agora? O país oferece alguns dos benefícios fiscais mais competitivos do mundo, incluindo o visto de Nações Amigas e residência por meio de investimento imobiliário. O mercado de aluguel está rendendo entre 6% e 9% nas zonas prime.",
+      expatLifeTitle: "Vida Internacional no Panamá: O Que Você Precisa Saber",
+      expatLifeBody: "Mude-se para o Panamá e experimente um estilo de vida onde a praia encontra o luxo costeiro. O custo de vida no Panamá é uma grande atração, mas a experiência de vida internacional é o que faz as pessoas ficarem.",
+      faqTitle: "Perguntas Frequentes sobre Imóveis no Panamá 2026",
+      faqBody: "Respostas às perguntas mais comuns sobre compra de imóveis, vistos e vida no Panamá para expatriados e investidores internacionais."
+    },
+    projectsPage: {
+      neighborhoodTitle: "Onde Investir? Analisando os Melhores Bairros do Panamá",
+      neighborhoodBody: "Escolher o bairro certo é o primeiro passo para comprar imóveis no Panamá. Para quem busca luxo urbano, apartamentos na Cidade do Panamá são as melhores opções. O mercado imobiliário de Boquete é o padrão ouro para vida nas montanhas."
+    },
+    leadMagnet: {
+      freeBadge: "E-BOOK GRÁTIS",
+      title: "Guia Definitivo de Imóveis no Panamá 2026",
+      subtitle: "Junte-se a mais de 2.500 expatriados que dominam o mercado imobiliário no Panamá.",
+      socialProof: "Avaliado 4,9/5 por investidores internacionais",
+      bullets: [
+        "Como se qualificar para o Visto Pensionado Panamá",
+        "Guia passo a passo para comprar imóveis no Panamá",
+        "Zonas de maior ROI para 2026 (Praia vs Montanha)",
+        "Análise do custo de vida no Panamá para 2026"
+      ],
+      formLabels: {
+        name: "Nome Completo",
+        email: "Endereço de E-mail",
+        country: "País",
+        intent: "Objetivo de Investimento",
+        intentOptions: ["Residência / Visto", "ROI / Investimento", "Aposentadoria", "Casa de Férias"],
+        consent: "Quero receber atualizações semanais do mercado e dicas de viagem para o Panamá."
+      },
+      button: "BAIXAR GUIA GRÁTIS",
+      buttonSub: "Entrega imediata no seu e-mail",
+      trust: { privacy: "100% Privacidade", delivery: "Entrega Imediata", insights: "Dados Especializados" },
+      success: "Verifique sua caixa de entrada! Seu guia de imóveis no Panamá está a caminho."
+    },
+    footer: {
+      about: "ExpatRockstars: A principal agência imobiliária no Panamá para investidores e aposentados internacionais. Especializados em imóveis de luxo e relocação.",
+      explore: "Explorar",
+      contact: "Contato",
+      rights: "Todos os direitos reservados. Panama Real Estate Sale Panamá."
+    }
+  },
+  de: {
+    nav: {
+      invest: "Investieren",
+      projects: "Projekte",
+      quiz: "Viertel-Quiz",
+      relocate: "Umziehen",
+      relocationHub: "Relocation-Hub",
+      tours: "Entdeckungstouren",
+      visas: "Visa & Recht",
+      legal: "Rechts-Hub",
+      guides: "Regionale Leitfäden",
+      cost: "Kosten & Prozess",
+      reviews: "Bewertungen",
+      media: "Medien",
+      blog: "Blog",
+      podcast: "Podcast",
+      contact: "Kontakt",
+      search: "Suchen"
+    },
+    labels: {
+      beds: "Schlafzimmer",
+      baths: "Badezimmer",
+      startingAt: "Ab",
+      viewDetails: "Details Ansehen",
+      relatedArticles: "Marktberichte",
+      similarProjects: "Ähnliche Projekte",
+      readReport: "Vollständigen Bericht Lesen"
+    },
+    hero: {
+      badge: "Panama Immobilien 2026",
+      title: "Wo Expats in Panama zu Stars werden",
+      subtitle: "Zugang zu den besten Immobilien in Panama und Relocation-Touren. Ob für das Pensionado-Visum oder Immobilieninvestitionen in Panama.",
+      cta: "Projekte Ansehen"
+    },
+    homepage: {
+      introTitle: "Der Definitive Leitfaden für den Panama-Immobilienmarkt 2026",
+      introBody: "Die Navigation im panamaischen Immobilienmarkt 2026 erfordert mehr als nur das Betrachten von Strandwohnungsangeboten. Es erfordert einen tiefen Einblick in die Lebenshaltungskosten in Panama und das Verständnis der verschiedenen Stadtviertel-Dynamiken, von Panama City Apartments in Punta Pacifica bis zu Immobilien in Boquete in den Bergen.",
+      marketTitle: "Überblick über den Panama-Immobilienmarkt 2026",
+      marketBody: "Der Panama-Immobilienmarkt 2026 zeigt weiterhin bemerkenswerte Belastbarkeit und Wachstum. Als dollarisierte Wirtschaft mit strategischer Lage bleibt Panama die bevorzugte Wahl für internationale Investoren, die sichere Immobilieninvestitionen in Lateinamerika suchen.",
+      neighborhoodsTitle: "Top Panama-Viertel für Expats und Investoren",
+      neighborhoodBody: "Die Wahl des Wohnorts oder Investitionsstandorts ist entscheidend. Im Jahr 2026 dominieren vier Schlüsselbereiche die panamaische Immobilienszene: Punta Pacifica und Paitilla für urbanen Luxus, Boquete für Bergleben, Coronado für Strandlebensstil und Costa del Este für Familien und Berufstätige.",
+      buyingProcessTitle: "Schritt-für-Schritt-Leitfaden zum Immobilienkauf in Panama",
+      buyingProcessBody: "Der Prozess des Immobilienkaufs in Panama ist unkompliziert, erfordert aber professionelle Beratung. Die wichtigsten Schritte sind: Immobiliensuche und -auswahl, Kaufvorvertrag, Due Diligence, abschließender Kauf und Eigentumsübertragung.",
+      investmentTitle: "Immobilieninvestitionen in Panama: Strategie für ROI und Steuervorteile",
+      investmentBody: "Warum jetzt in panamaische Immobilien investieren? Das Land bietet einige der wettbewerbsfähigsten Steuervorteile der Welt, einschließlich des Friendly Nations Visa und Aufenthaltsgenehmigung durch Immobilieninvestitionen. Der Mietmarkt rentiert derzeit zwischen 6% und 9% in Top-Lagen.",
+      expatLifeTitle: "Internationales Leben in Panama: Was Sie Wissen Müssen",
+      expatLifeBody: "Ziehen Sie nach Panama und erleben Sie einen Lebensstil, in dem Strandleben auf luxuriöses Küstenleben trifft. Die Lebenshaltungskosten in Panama sind ein großer Anziehungspunkt, aber die internationale Lebenserfahrung ist es, was die Menschen zum Bleiben bringt.",
+      faqTitle: "Panama Immobilien FAQ 2026",
+      faqBody: "Antworten auf die häufigsten Fragen zum Immobilienkauf, zu Visa und zum Leben in Panama für Expats und internationale Investoren."
+    },
+    projectsPage: {
+      neighborhoodTitle: "Wo Investieren? Analyse der Top-Viertel Panamas",
+      neighborhoodBody: "Die Wahl des richtigen Viertels ist der erste Schritt beim Immobilienkauf in Panama. Für diejenigen, die urbanen Luxus suchen, sind Apartments in Panama City die erste Wahl. Der Boquete-Immobilienmarkt ist der Goldstandard für Bergleben."
+    },
+    leadMagnet: {
+      freeBadge: "KOSTENLOSES E-BOOK",
+      title: "Der Ultimative Leitfaden für Panama-Immobilien 2026",
+      subtitle: "Schließen Sie sich über 2.500 Expats an, die den panamaischen Immobilienmarkt gemeistert haben.",
+      socialProof: "Von internationalen Investoren mit 4,9/5 bewertet",
+      bullets: [
+        "Wie man sich für das Panama Pensionado-Visum qualifiziert",
+        "Schritt-für-Schritt-Leitfaden zum Immobilienkauf in Panama",
+        "Top-ROI-Hotspots für 2026 (Strand vs. Berg)",
+        "Analyse der Lebenshaltungskosten in Panama für 2026"
+      ],
+      formLabels: {
+        name: "Vollständiger Name",
+        email: "E-Mail-Adresse",
+        country: "Land",
+        intent: "Investitionsziel",
+        intentOptions: ["Aufenthalt / Visum", "ROI / Investition", "Rente", "Ferienhaus"],
+        consent: "Ich möchte wöchentliche Marktaktualisierungen und Panama-Reisetipps erhalten."
+      },
+      button: "KOSTENLOSEN LEITFADEN HERUNTERLADEN",
+      buttonSub: "Sofortige PDF-Lieferung an Ihre E-Mail",
+      trust: { privacy: "100% Datenschutz", delivery: "Sofortige Lieferung", insights: "Expertendaten" },
+      success: "Überprüfen Sie Ihren Posteingang! Ihr Panama-Immobilienleitfaden ist unterwegs."
+    },
+    footer: {
+      about: "ExpatRockstars: Die führende Immobilienagentur in Panama für internationale Investoren und Rentner. Spezialisiert auf Luxusimmobilien und Relocation.",
+      explore: "Erkunden",
+      contact: "Kontakt",
+      rights: "Alle Rechte vorbehalten. Panama Real Estate Sale Panamá."
+    }
   }
 };
 

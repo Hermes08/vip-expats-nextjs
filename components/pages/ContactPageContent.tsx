@@ -3,17 +3,122 @@
 import React from 'react';
 import { Phone, Mail, MapPin, MessageCircle, Send } from 'lucide-react';
 import { CONTACT_INFO } from '@/lib/constants';
-import SplitText from '@/components/ui/SplitText';
 import Link from 'next/link';
+import { useLanguage } from '@/context/LanguageContext';
+
+const CONTACT_TEXT: Record<string, {
+  topBar: string;
+  badge: string;
+  heading: string;
+  headingGold: string;
+  subheading: string;
+  fullName: string;
+  email: string;
+  phone: string;
+  propertyOfInterest: string;
+  selectProperty: string;
+  message: string;
+  messagePlaceholder: string;
+  sendBtn: string;
+  directContact: string;
+  callUs: string;
+  sendMessage: string;
+  successMsg: string;
+  errorMsg: string;
+}> = {
+  en: {
+    topBar: 'Talk to an Expert Today',
+    badge: 'Secure Infrastructure',
+    heading: 'DIRECT',
+    headingGold: 'CONCIERGE',
+    subheading: 'Our team of bilingual experts is ready to assist in every phase of your Panama move. No generic support—direct elite intelligence.',
+    fullName: 'Full Name',
+    email: 'Email',
+    phone: 'WhatsApp / Phone',
+    propertyOfInterest: 'Property of Interest',
+    selectProperty: 'Select a property...',
+    message: 'Message',
+    messagePlaceholder: 'I am interested in...',
+    sendBtn: 'SEND INQUIRY',
+    directContact: 'Direct Contact',
+    callUs: 'Call Us',
+    sendMessage: 'Send Message',
+    successMsg: 'Message sent successfully! We will contact you shortly.',
+    errorMsg: 'Error sending message. Please try again.',
+  },
+  es: {
+    topBar: 'Hable con un Experto Hoy',
+    badge: 'Infraestructura Segura',
+    heading: 'ACCESO',
+    headingGold: 'CONCIERGE',
+    subheading: 'Nuestro equipo de expertos bilingües está listo para asistirle en cada fase de su mudanza a Panamá. Sin soporte genérico — inteligencia elite directa.',
+    fullName: 'Nombre Completo',
+    email: 'Correo Electrónico',
+    phone: 'WhatsApp / Teléfono',
+    propertyOfInterest: 'Propiedad de Interés',
+    selectProperty: 'Seleccione una propiedad...',
+    message: 'Mensaje',
+    messagePlaceholder: 'Estoy interesado en...',
+    sendBtn: 'ENVIAR CONSULTA',
+    directContact: 'Contacto Directo',
+    callUs: 'Llámenos',
+    sendMessage: 'Enviar Mensaje',
+    successMsg: '¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.',
+    errorMsg: 'Error al enviar el mensaje. Por favor, inténtelo de nuevo.',
+  },
+  pt: {
+    topBar: 'Fale com um Especialista Hoje',
+    badge: 'Infraestrutura Segura',
+    heading: 'ACESSO',
+    headingGold: 'CONCIERGE',
+    subheading: 'Nossa equipe de especialistas bilíngues está pronta para ajudá-lo em cada fase da sua mudança para o Panamá. Sem suporte genérico — inteligência elite direta.',
+    fullName: 'Nome Completo',
+    email: 'E-mail',
+    phone: 'WhatsApp / Telefone',
+    propertyOfInterest: 'Imóvel de Interesse',
+    selectProperty: 'Selecione um imóvel...',
+    message: 'Mensagem',
+    messagePlaceholder: 'Tenho interesse em...',
+    sendBtn: 'ENVIAR CONSULTA',
+    directContact: 'Contato Direto',
+    callUs: 'Ligar',
+    sendMessage: 'Enviar Mensagem',
+    successMsg: 'Mensagem enviada com sucesso! Entraremos em contato em breve.',
+    errorMsg: 'Erro ao enviar a mensagem. Por favor, tente novamente.',
+  },
+  de: {
+    topBar: 'Sprechen Sie noch heute mit einem Experten',
+    badge: 'Sichere Infrastruktur',
+    heading: 'DIREKTER',
+    headingGold: 'CONCIERGE',
+    subheading: 'Unser Team aus zweisprachigen Experten ist bereit, Ihnen in jeder Phase Ihres Umzugs nach Panama zu helfen. Kein generischer Support — direkte Elite-Intelligenz.',
+    fullName: 'Vollständiger Name',
+    email: 'E-Mail',
+    phone: 'WhatsApp / Telefon',
+    propertyOfInterest: 'Immobilie von Interesse',
+    selectProperty: 'Immobilie auswählen...',
+    message: 'Nachricht',
+    messagePlaceholder: 'Ich interessiere mich für...',
+    sendBtn: 'ANFRAGE SENDEN',
+    directContact: 'Direktkontakt',
+    callUs: 'Anrufen',
+    sendMessage: 'Nachricht Senden',
+    successMsg: 'Nachricht erfolgreich gesendet! Wir werden uns bald bei Ihnen melden.',
+    errorMsg: 'Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.',
+  },
+};
 
 const ContactPageContent: React.FC = () => {
+    const { lang } = useLanguage();
+    const ct = CONTACT_TEXT[lang] || CONTACT_TEXT['en'];
+
     return (
         <div className="pt-24 min-h-screen bg-white">
             {/* Talk to an Expert — top bar */}
             <div className="bg-brand-GOLD/10 border-b border-brand-GOLD/20 py-4 px-4">
               <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-center">
                 <span className="text-brand-GOLD font-black text-xs uppercase tracking-[0.3em]">
-                  Talk to an Expert Today
+                  {ct.topBar}
                 </span>
                 <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-6">
                   <a
@@ -51,13 +156,13 @@ const ContactPageContent: React.FC = () => {
 
                 <div className="relative z-10 max-w-7xl mx-auto px-4">
                     <span className="inline-block px-6 py-2 bg-brand-GOLD/10 border border-brand-GOLD/30 text-brand-GOLD text-[10px] font-black uppercase tracking-[0.5em] rounded-full backdrop-blur-md mb-6">
-                        Secure Infrastructure
+                        {ct.badge}
                     </span>
                     <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl font-black mb-6 leading-tight tracking-tight uppercase text-brand-950">
-                        DIRECT <span className="text-brand-GOLD">CONCIERGE</span> ACCESS.
+                        {ct.heading} <span className="text-brand-GOLD">{ct.headingGold}</span> ACCESS.
                     </h1>
                     <p className="text-base md:text-lg text-slate-500 max-w-xl leading-relaxed font-medium italic border-l-2 border-brand-GOLD/20 pl-5">
-                        Our team of bilingual experts is ready to assist in every phase of your Panama move. No generic support—direct elite intelligence.
+                        {ct.subheading}
                     </p>
                 </div>
             </section>
@@ -81,29 +186,29 @@ const ContactPageContent: React.FC = () => {
                                 const { supabase } = await import('@/lib/supabase');
                                 const { error } = await supabase.from('leads').insert([data]);
                                 if (error) throw error;
-                                alert('Message sent successfully! We will contact you shortly.');
+                                alert(ct.successMsg);
                                 form.reset();
                             } catch (err) {
                                 console.error(err);
-                                alert('Error sending message. Please try again.');
+                                alert(ct.errorMsg);
                             }
                         }} className="grid md:grid-cols-2 gap-5">
                             <div className="space-y-2">
-                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest">Full Name</label>
+                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest">{ct.fullName}</label>
                                 <input name="name" required type="text" className="w-full px-4 py-3 bg-white border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-TEAL outline-none text-brand-950 placeholder:text-slate-400" placeholder="John Doe" />
                             </div>
                             <div className="space-y-2">
-                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest">Email</label>
+                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest">{ct.email}</label>
                                 <input name="email" required type="email" className="w-full px-4 py-3 bg-white border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-TEAL outline-none text-brand-950 placeholder:text-slate-400" placeholder="john@example.com" />
                             </div>
                             <div className="space-y-2">
-                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest">WhatsApp / Phone</label>
+                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest">{ct.phone}</label>
                                 <input name="phone" required type="tel" className="w-full px-4 py-3 bg-white border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-TEAL outline-none text-brand-950 placeholder:text-slate-400" placeholder="+1 234 567 890" />
                             </div>
                             <div className="space-y-2">
-                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest">Property of Interest</label>
+                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest">{ct.propertyOfInterest}</label>
                                 <select name="project_interest" className="w-full px-4 py-3 bg-white border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-TEAL outline-none text-sm font-bold text-brand-950">
-                                    <option value="" className="text-brand-950">Select a property...</option>
+                                    <option value="" className="text-brand-950">{ct.selectProperty}</option>
                                     <option value="Pino Alto (Boquete)" className="text-brand-950">Pino Alto (Boquete)</option>
                                     <option value="Westin Residences (Playa Bonita)" className="text-brand-950">Westin Residences (Playa Bonita)</option>
                                     <option value="Playa Escondida (Colón)" className="text-brand-950">Playa Escondida (Colón)</option>
@@ -112,11 +217,11 @@ const ContactPageContent: React.FC = () => {
                                 </select>
                             </div>
                             <div className="md:col-span-2 space-y-2">
-                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest">Message</label>
-                                <textarea name="message" className="w-full h-32 px-4 py-3 bg-white border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-TEAL outline-none text-brand-950 placeholder:text-slate-400" placeholder="I am interested in..." />
+                                <label className="text-xs font-bold text-slate-500 uppercase tracking-widest">{ct.message}</label>
+                                <textarea name="message" className="w-full h-32 px-4 py-3 bg-white border border-brand-100 rounded-xl focus:ring-2 focus:ring-brand-TEAL outline-none text-brand-950 placeholder:text-slate-400" placeholder={ct.messagePlaceholder} />
                             </div>
                             <button type="submit" className="md:col-span-2 btn-3d btn-3d-gold py-5 rounded-xl font-black uppercase tracking-widest text-[11px] flex items-center justify-center gap-4 group">
-                                <Send size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" /> SEND INQUIRY
+                                <Send size={16} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" /> {ct.sendBtn}
                             </button>
                         </form>
                     </div>
@@ -124,12 +229,12 @@ const ContactPageContent: React.FC = () => {
                     {/* Contact Details */}
                     <div className="space-y-5">
                         <div className="card-light rounded-3xl p-7 border-brand-100 bg-brand-50/40">
-                            <h3 className="text-xs font-black text-brand-GOLD mb-6 uppercase tracking-[0.3em]">Direct Contact</h3>
+                            <h3 className="text-xs font-black text-brand-GOLD mb-6 uppercase tracking-[0.3em]">{ct.directContact}</h3>
                             <div className="space-y-5">
                                 <a href={`tel:${CONTACT_INFO.phone}`} className="flex items-center gap-4 group">
                                     <div className="p-3 bg-brand-50 rounded-full group-hover:bg-brand-GOLD group-hover:text-brand-900 transition-all text-brand-TEAL"><Phone size={18} /></div>
                                     <div>
-                                        <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Call Us</p>
+                                        <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">{ct.callUs}</p>
                                         <p className="font-bold text-brand-950 text-sm">{CONTACT_INFO.phone}</p>
                                     </div>
                                 </a>
@@ -137,7 +242,7 @@ const ContactPageContent: React.FC = () => {
                                     <div className="p-3 bg-brand-50 rounded-full group-hover:bg-green-600 group-hover:text-white transition-all text-brand-TEAL"><MessageCircle size={18} /></div>
                                     <div>
                                         <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">WhatsApp</p>
-                                        <p className="font-bold text-brand-950 text-sm">Send Message</p>
+                                        <p className="font-bold text-brand-950 text-sm">{ct.sendMessage}</p>
                                     </div>
                                 </a>
                                 <div className="flex items-center gap-4">

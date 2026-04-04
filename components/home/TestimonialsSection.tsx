@@ -1,5 +1,15 @@
+'use client';
+
 import React from 'react';
 import { Star, Quote } from 'lucide-react';
+import { useLanguage } from '@/context/LanguageContext';
+
+const TESTIMONIALS_HEADING: Record<string, { badge: string; title: string; titleGold: string; trust: string }> = {
+  en: { badge: 'Client Stories', title: 'Real People.', titleGold: 'Real Moves.', trust: 'Verified client results · All relocation services managed end-to-end by VIP Expats Panama' },
+  es: { badge: 'Historias de Clientes', title: 'Personas Reales.', titleGold: 'Movidas Reales.', trust: 'Resultados verificados · Todos los servicios de reubicación gestionados de principio a fin por VIP Expats Panama' },
+  pt: { badge: 'Histórias de Clientes', title: 'Pessoas Reais.', titleGold: 'Mudanças Reais.', trust: 'Resultados verificados · Todos os serviços de relocação gerenciados de ponta a ponta pela VIP Expats Panama' },
+  de: { badge: 'Kundengeschichten', title: 'Echte Menschen.', titleGold: 'Echte Züge.', trust: 'Verifizierte Kundenergebnisse · Alle Relocation-Dienste von VIP Expats Panama von Anfang bis Ende verwaltet' },
+};
 
 const testimonials = [
   {
@@ -55,6 +65,9 @@ const testimonials = [
 ];
 
 export default function TestimonialsSection() {
+  const { lang } = useLanguage();
+  const h = TESTIMONIALS_HEADING[lang] || TESTIMONIALS_HEADING['en'];
+
   return (
     <section className="py-14 bg-brand-50 border-t border-brand-100 relative overflow-hidden">
       {/* Subtle gold glow */}
@@ -62,9 +75,9 @@ export default function TestimonialsSection() {
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-10 reveal-on-scroll">
-          <span className="text-brand-TEAL font-black uppercase tracking-[0.4em] text-[10px] mb-2 block">Client Stories</span>
+          <span className="text-brand-TEAL font-black uppercase tracking-[0.4em] text-[10px] mb-2 block">{h.badge}</span>
           <h2 className="text-2xl md:text-4xl font-heading font-black text-brand-950 tracking-tight">
-            Real People. <span className="text-brand-GOLD">Real Moves.</span>
+            {h.title} <span className="text-brand-GOLD">{h.titleGold}</span>
           </h2>
         </div>
 
@@ -116,7 +129,7 @@ export default function TestimonialsSection() {
         {/* Bottom trust line */}
         <div className="mt-10 text-center reveal-on-scroll">
           <p className="text-slate-500 text-xs font-bold uppercase tracking-widest">
-            Verified client results · All relocation services managed end-to-end by VIP Expats Panama
+            {h.trust}
           </p>
         </div>
       </div>

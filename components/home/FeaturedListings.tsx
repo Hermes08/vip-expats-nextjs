@@ -7,11 +7,49 @@ import { useCMS } from '@/context/CMSContext';
 import PropertyCard from '@/components/listings/PropertyCard';
 
 interface FeaturedListingsProps {
-  lang: 'en' | 'es';
+  lang: string;
 }
+
+const FEATURED_TEXT: Record<string, {
+  badge: string;
+  titleLine1: string;
+  titleLine2Gold: string;
+  viewAll: string;
+  exploreAll: string;
+}> = {
+  en: {
+    badge: 'Featured Listings',
+    titleLine1: 'FOR SALE &',
+    titleLine2Gold: 'FOR RENT',
+    viewAll: 'View All Properties',
+    exploreAll: 'EXPLORE ALL PROPERTIES',
+  },
+  es: {
+    badge: 'Propiedades Destacadas',
+    titleLine1: 'EN VENTA &',
+    titleLine2Gold: 'ALQUILER',
+    viewAll: 'Ver Todo el Inventario',
+    exploreAll: 'EXPLORAR TODAS LAS PROPIEDADES',
+  },
+  pt: {
+    badge: 'Imóveis em Destaque',
+    titleLine1: 'À VENDA &',
+    titleLine2Gold: 'PARA ALUGAR',
+    viewAll: 'Ver Todos os Imóveis',
+    exploreAll: 'EXPLORAR TODOS OS IMÓVEIS',
+  },
+  de: {
+    badge: 'Ausgewählte Objekte',
+    titleLine1: 'ZU VERKAUFEN &',
+    titleLine2Gold: 'ZU VERMIETEN',
+    viewAll: 'Alle Objekte Ansehen',
+    exploreAll: 'ALLE IMMOBILIEN ERKUNDEN',
+  },
+};
 
 export default function FeaturedListings({ lang }: FeaturedListingsProps) {
   const { listings } = useCMS();
+  const ft = FEATURED_TEXT[lang] || FEATURED_TEXT['en'];
 
   // Show featured first, then any, max 3
   const featured = listings
@@ -29,21 +67,17 @@ export default function FeaturedListings({ lang }: FeaturedListingsProps) {
         <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 reveal-on-scroll">
           <div>
             <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-4 block italic">
-              {lang === 'es' ? 'Propiedades Destacadas' : 'Featured Listings'}
+              {ft.badge}
             </span>
             <h2 className="font-heading text-4xl md:text-7xl font-black text-brand-950 uppercase tracking-tighter leading-tight md:leading-[0.85]">
-              {lang === 'es' ? (
-                <>EN VENTA &<br /><span className="text-brand-GOLD">ALQUILER</span></>
-              ) : (
-                <>FOR SALE &<br /><span className="text-brand-GOLD">FOR RENT</span></>
-              )}
+              {ft.titleLine1}<br /><span className="text-brand-GOLD">{ft.titleLine2Gold}</span>
             </h2>
           </div>
           <Link
             href={`/${lang}/propiedades`}
             className="flex items-center gap-3 text-brand-GOLD font-black text-[11px] uppercase tracking-widest border-b border-brand-GOLD/40 pb-2 hover:border-brand-GOLD transition-all group whitespace-nowrap"
           >
-            {lang === 'es' ? 'Ver Todo el Inventario' : 'View All Properties'}
+            {ft.viewAll}
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </Link>
         </div>
@@ -63,7 +97,7 @@ export default function FeaturedListings({ lang }: FeaturedListingsProps) {
             href={`/${lang}/propiedades`}
             className="btn-3d btn-3d-gold inline-flex items-center gap-3 px-12 py-5 rounded-xl font-black text-[11px] uppercase tracking-widest"
           >
-            {lang === 'es' ? 'EXPLORAR TODAS LAS PROPIEDADES' : 'EXPLORE ALL PROPERTIES'}
+            {ft.exploreAll}
             <ArrowRight size={14} />
           </Link>
         </div>

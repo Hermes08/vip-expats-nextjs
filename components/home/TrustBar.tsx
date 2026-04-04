@@ -1,11 +1,24 @@
+const STAT_LABELS: Record<string, string[]> = {
+  en: ['Properties Listed', 'Years in Panama', 'Families Relocated', 'USD Economy'],
+  es: ['Propiedades Listadas', 'Años en Panamá', 'Familias Reubicadas', 'Economía USD'],
+  pt: ['Propriedades Listadas', 'Anos no Panamá', 'Famílias Relocadas', 'Economia USD'],
+  de: ['Immobilien Gelistet', 'Jahre in Panama', 'Familien Umgezogen', 'USD-Wirtschaft'],
+};
+
 const stats = [
-  { number: '200+', label: 'Properties Listed' },
-  { number: '7+', label: 'Years in Panama' },
-  { number: '500+', label: 'Families Relocated' },
-  { number: '100%', label: 'USD Economy' },
+  { number: '200+' },
+  { number: '7+' },
+  { number: '500+' },
+  { number: '100%' },
 ];
 
-export default function TrustBar() {
+interface TrustBarProps {
+  lang?: string;
+}
+
+export default function TrustBar({ lang = 'en' }: TrustBarProps) {
+  const labels = STAT_LABELS[lang] || STAT_LABELS['en'];
+
   return (
     <div className="w-full py-5 px-4 bg-brand-50 border-y border-brand-100">
       <div className="max-w-5xl mx-auto grid grid-cols-2 md:flex md:flex-row md:items-center md:justify-around gap-0">
@@ -21,7 +34,7 @@ export default function TrustBar() {
               {stat.number}
             </span>
             <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mt-1 text-center">
-              {stat.label}
+              {labels[i]}
             </span>
           </div>
         ))}

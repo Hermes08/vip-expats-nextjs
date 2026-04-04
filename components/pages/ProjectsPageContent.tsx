@@ -13,9 +13,107 @@ import SplitText from '@/components/ui/SplitText';
 import Magnetic from '@/components/ui/Magnetic';
 import HeroTilt from '@/components/ui/HeroTilt';
 
+const PROJECTS_TEXT: Record<string, {
+    badge: string;
+    title: string;
+    titleGold: string;
+    subtitle: string;
+    allNeighborhoods: string;
+    beachAreas: string;
+    highlands: string;
+    caribbean: string;
+    propertyType: string;
+    condominiums: string;
+    singleFamily: string;
+    luxuryVillas: string;
+    searchPlaceholder: string;
+    showingAssets: (n: number) => string;
+    noAssetsTitle: string;
+    noAssetsSubtitle: string;
+    resetFilters: string;
+}> = {
+    en: {
+        badge: 'Asset Catalog 2026',
+        title: 'THE INVESTMENT',
+        titleGold: 'INVENTORY.',
+        subtitle: 'Curating high-liquidity Panama real estate assets and exclusive luxury developments for the global elite.',
+        allNeighborhoods: 'All Neighborhoods',
+        beachAreas: 'Beach Areas',
+        highlands: 'Highlands',
+        caribbean: 'Caribbean',
+        propertyType: 'Property Type',
+        condominiums: 'Condominiums',
+        singleFamily: 'Single Family',
+        luxuryVillas: 'Luxury Villas',
+        searchPlaceholder: 'Search Project Portfolio...',
+        showingAssets: (n) => `Showing ${n} Verified Rockstar Assets`,
+        noAssetsTitle: 'No assets found matching your criteria.',
+        noAssetsSubtitle: 'Try broadening your search for maximum ROI opportunities.',
+        resetFilters: 'RESET GLOBAL FILTERS',
+    },
+    es: {
+        badge: 'Catálogo de Activos 2026',
+        title: 'EL INVENTARIO DE',
+        titleGold: 'INVERSIONES.',
+        subtitle: 'Curando activos inmobiliarios de alta liquidez en Panamá y desarrollos de lujo exclusivos para la élite global.',
+        allNeighborhoods: 'Todos los Vecindarios',
+        beachAreas: 'Zonas de Playa',
+        highlands: 'Tierras Altas',
+        caribbean: 'Caribe',
+        propertyType: 'Tipo de Propiedad',
+        condominiums: 'Condominios',
+        singleFamily: 'Vivienda Unifamiliar',
+        luxuryVillas: 'Villas de Lujo',
+        searchPlaceholder: 'Buscar en el Portafolio...',
+        showingAssets: (n) => `Mostrando ${n} Activos Verificados`,
+        noAssetsTitle: 'No se encontraron activos que coincidan con sus criterios.',
+        noAssetsSubtitle: 'Intente ampliar su búsqueda para maximizar las oportunidades de ROI.',
+        resetFilters: 'RESTABLECER FILTROS',
+    },
+    pt: {
+        badge: 'Catálogo de Ativos 2026',
+        title: 'O INVENTÁRIO DE',
+        titleGold: 'INVESTIMENTOS.',
+        subtitle: 'Curadoria de ativos imobiliários de alta liquidez no Panamá e empreendimentos de luxo exclusivos para a elite global.',
+        allNeighborhoods: 'Todos os Bairros',
+        beachAreas: 'Áreas de Praia',
+        highlands: 'Terras Altas',
+        caribbean: 'Caribe',
+        propertyType: 'Tipo de Imóvel',
+        condominiums: 'Apartamentos',
+        singleFamily: 'Residência Unifamiliar',
+        luxuryVillas: 'Vilas de Luxo',
+        searchPlaceholder: 'Pesquisar no Portfólio...',
+        showingAssets: (n) => `Mostrando ${n} Ativos Verificados`,
+        noAssetsTitle: 'Nenhum ativo encontrado que corresponda aos seus critérios.',
+        noAssetsSubtitle: 'Tente ampliar sua pesquisa para maximizar as oportunidades de ROI.',
+        resetFilters: 'REDEFINIR FILTROS',
+    },
+    de: {
+        badge: 'Asset-Katalog 2026',
+        title: 'DAS INVESTITIONS-',
+        titleGold: 'INVENTAR.',
+        subtitle: 'Kuratierung hochliquider Panama-Immobilienanlagen und exklusiver Luxusprojekte für die globale Elite.',
+        allNeighborhoods: 'Alle Viertel',
+        beachAreas: 'Strandgebiete',
+        highlands: 'Hochland',
+        caribbean: 'Karibik',
+        propertyType: 'Immobilientyp',
+        condominiums: 'Eigentumswohnungen',
+        singleFamily: 'Einfamilienhaus',
+        luxuryVillas: 'Luxusvillen',
+        searchPlaceholder: 'Portfolio durchsuchen...',
+        showingAssets: (n) => `${n} Verifizierte Immobilien werden angezeigt`,
+        noAssetsTitle: 'Keine Objekte gefunden, die Ihren Kriterien entsprechen.',
+        noAssetsSubtitle: 'Versuchen Sie, Ihre Suche für maximale ROI-Möglichkeiten zu erweitern.',
+        resetFilters: 'FILTER ZURÜCKSETZEN',
+    },
+};
+
 const ProjectsPageContent: React.FC = () => {
     const { lang } = useLanguage();
     const { projects } = useCMS();
+    const pt = PROJECTS_TEXT[lang] || PROJECTS_TEXT['en'];
     const [activeZone, setActiveZone] = useState<string>('All');
     const [activeType, setActiveType] = useState<string>('Any');
     const [searchTerm, setSearchTerm] = useState('');
@@ -65,13 +163,13 @@ const ProjectsPageContent: React.FC = () => {
                             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                         >
                             <span className="inline-block border border-brand-GOLD/30 bg-brand-TEAL/50 backdrop-blur-md text-brand-GOLD px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.5em] mb-6 shadow-[0_0_20px_rgba(233,195,73,0.1)]">
-                                Asset Catalog <span className="text-white">2026</span>
+                                {pt.badge}
                             </span>
                             <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl font-black text-white mb-5 tracking-tight leading-tight uppercase">
-                                THE INVESTMENT <span className="text-brand-GOLD">INVENTORY.</span>
+                                {pt.title} <span className="text-brand-GOLD">{pt.titleGold}</span>
                             </h1>
                             <p className="text-base md:text-lg text-slate-500 max-w-2xl leading-relaxed font-medium italic border-l-2 border-brand-GOLD/20 pl-5 opacity-90">
-                                Curating high-liquidity <strong>Panama real estate assets</strong> and exclusive <strong>luxury developments</strong> for the global elite.
+                                {pt.subtitle}
                             </p>
                         </motion.div>
                     </HeroTilt>
@@ -92,10 +190,10 @@ const ProjectsPageContent: React.FC = () => {
                                         onChange={(e) => setActiveZone(e.target.value)}
                                         aria-label="Neighborhood Filter"
                                     >
-                                        <option value="All" className="text-brand-950">{lang === 'zh' ? '全部地区' : 'All Neighborhoods'}</option>
-                                        <option value="Beach" className="text-brand-950">{lang === 'zh' ? '海滩' : 'Beach Areas'}</option>
-                                        <option value="Mountain" className="text-brand-950">{lang === 'zh' ? '山区' : 'Highlands'}</option>
-                                        <option value="Caribbean" className="text-brand-950">{lang === 'zh' ? '加勒比海' : 'Caribbean'}</option>
+                                        <option value="All" className="text-brand-950">{lang === 'zh' ? '全部地区' : pt.allNeighborhoods}</option>
+                                        <option value="Beach" className="text-brand-950">{lang === 'zh' ? '海滩' : pt.beachAreas}</option>
+                                        <option value="Mountain" className="text-brand-950">{lang === 'zh' ? '山区' : pt.highlands}</option>
+                                        <option value="Caribbean" className="text-brand-950">{lang === 'zh' ? '加勒比海' : pt.caribbean}</option>
                                     </select>
                                     <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 text-brand-GOLD/50 pointer-events-none group-hover:text-brand-GOLD transition-colors" size={14} />
                                 </div>
@@ -110,10 +208,10 @@ const ProjectsPageContent: React.FC = () => {
                                         onChange={(e) => setActiveType(e.target.value)}
                                         aria-label="Property Type Filter"
                                     >
-                                        <option value="Any" className="text-brand-950">{lang === 'zh' ? '房产类型' : 'Property Type'}</option>
-                                        <option value="Condo" className="text-brand-950">{lang === 'zh' ? '公寓' : 'Condominiums'}</option>
-                                        <option value="House" className="text-brand-950">{lang === 'zh' ? '住宅' : 'Single Family'}</option>
-                                        <option value="Villa" className="text-brand-950">{lang === 'zh' ? '别墅' : 'Luxury Villas'}</option>
+                                        <option value="Any" className="text-brand-950">{lang === 'zh' ? '房产类型' : pt.propertyType}</option>
+                                        <option value="Condo" className="text-brand-950">{lang === 'zh' ? '公寓' : pt.condominiums}</option>
+                                        <option value="House" className="text-brand-950">{lang === 'zh' ? '住宅' : pt.singleFamily}</option>
+                                        <option value="Villa" className="text-brand-950">{lang === 'zh' ? '别墅' : pt.luxuryVillas}</option>
                                     </select>
                                     <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 text-brand-GOLD/50 pointer-events-none group-hover:text-brand-GOLD transition-colors" size={14} />
                                 </div>
@@ -126,7 +224,7 @@ const ProjectsPageContent: React.FC = () => {
                                     type="text"
                                     value={searchTerm}
                                     onChange={(e) => setSearchTerm(e.target.value)}
-                                    placeholder={lang === 'zh' ? "搜索项目..." : "Search Project Portfolio..."}
+                                    placeholder={lang === 'zh' ? "搜索项目..." : pt.searchPlaceholder}
                                     aria-label="Search projects by keyword"
                                     className="w-full pl-14 pr-10 py-5 bg-white/5 rounded-2xl text-[11px] font-black uppercase tracking-widest border border-brand-100 text-white focus:ring-1 focus:ring-brand-GOLD/50 outline-none transition-all placeholder:text-slate-600 shadow-inner"
                                 />
@@ -150,7 +248,7 @@ const ProjectsPageContent: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-14">
                 <div className="flex justify-between items-center mb-16">
                     <p className="text-sm font-black text-brand-GOLD uppercase tracking-[0.2em] mb-4">
-                        Showing {filteredProjects.length} Verified Rockstar Assets
+                        {pt.showingAssets(filteredProjects.length)}
                     </p>
                 </div>
 
@@ -174,8 +272,8 @@ const ProjectsPageContent: React.FC = () => {
 
                     {filteredProjects.length === 0 && (
                         <div className="text-center py-32 card-light rounded-[4rem] border-brand-100 shadow-2xl">
-                            <p className="text-2xl text-gray-400 mb-4 font-black uppercase tracking-tighter">No assets found matching your criteria.</p>
-                            <p className="text-sm text-gray-500 mb-12 font-medium">Try broadening your search for maximum ROI opportunities.</p>
+                            <p className="text-2xl text-gray-400 mb-4 font-black uppercase tracking-tighter">{pt.noAssetsTitle}</p>
+                            <p className="text-sm text-gray-500 mb-12 font-medium">{pt.noAssetsSubtitle}</p>
                             <button
                                 onClick={() => {
                                     setActiveType('Any');
@@ -184,7 +282,7 @@ const ProjectsPageContent: React.FC = () => {
                                 }}
                                 className="btn-3d btn-3d-gold px-12 py-6 rounded-xl font-black text-xs uppercase tracking-widest"
                             >
-                                RESET GLOBAL FILTERS
+                                {pt.resetFilters}
                             </button>
                         </div>
                     )}
