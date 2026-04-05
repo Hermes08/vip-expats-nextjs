@@ -1,30 +1,50 @@
 import React from 'react';
 import type { Metadata } from 'next';
 import RelocationToursContent from '@/components/pages/RelocationToursContent';
-import { SEO_KEYWORDS_LIST } from '@/lib/constants';
 
-export async function generateMetadata({ params }: { params: { lang: string } }): Promise<Metadata> {
-    const { lang } = params;
+type Props = { params: Promise<{ lang: string }> };
 
-    const translations: any = {
-        en: {
-            title: 'Panama Relocation & Discovery Tours | ExpatRockstars',
-            description: 'Experience Panama first-hand before you move. Our expert-led discovery tours cover Boquete real estate, beach communities, and essential relocation logistics.',
-            keywords: SEO_KEYWORDS_LIST
-        },
-        es: {
-            title: 'Tours de Relocación y Descubrimiento en Panamá | ExpatRockstars',
-            description: 'Experimente Panamá de primera mano antes de mudarse. Nuestros tours guiados cubren bienes raíces en Boquete, playas y logística de reubicación.',
-            keywords: SEO_KEYWORDS_LIST
-        }
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+    const { lang } = await params;
+    const l = (lang === 'es' || lang === 'en') ? lang : 'en';
+    const domain = 'https://panamarealestatesale.com';
+
+    const titles = {
+        en: 'Panama Relocation Tour 2026: Guided Discovery Trips for Expats',
+        es: 'Tour de Reubicación a Panamá 2026: Viajes Guiados para Expats',
+    };
+    const descriptions = {
+        en: 'Explore Panama before you move. Expert-led relocation tours covering Panama City, Boquete, Coronado, beach communities, real estate viewings, visa guidance & expat life.',
+        es: 'Explore Panamá antes de mudarse. Tours de reubicación guiados que cubren Ciudad de Panamá, Boquete, Coronado, comunidades de playa, visitas inmobiliarias y vida expat.',
     };
 
-    const t = translations[lang] || translations.en;
-
     return {
-        title: t.title,
-        description: t.description,
-        keywords: t.keywords.join(', ')
+        title: titles[l],
+        description: descriptions[l],
+        keywords: [
+            'panama relocation tour',
+            'panama discovery tour',
+            'panama relocation tour 2026',
+            'panama expat tour',
+            'move to panama tour',
+            'panama real estate tour',
+            'boquete relocation tour',
+            'retire in panama tour',
+        ].join(', '),
+        alternates: {
+            canonical: `${domain}/${l}/relocation/tours`,
+            languages: {
+                en: `${domain}/en/relocation/tours`,
+                es: `${domain}/es/relocation/tours`,
+            },
+        },
+        openGraph: {
+            title: titles[l],
+            description: descriptions[l],
+            url: `${domain}/${l}/relocation/tours`,
+            siteName: 'Panama Real Estate Sale',
+            type: 'website',
+        },
     };
 }
 
