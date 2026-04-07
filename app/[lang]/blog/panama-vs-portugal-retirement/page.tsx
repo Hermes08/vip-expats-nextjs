@@ -4,12 +4,18 @@ import { ArrowRight, CheckCircle, MapPin, DollarSign, TrendingUp, Home, Shield, 
 import { CostBarChart } from '@/components/three/ThreeComponents';
 
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-vs-portugal-retirement';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama vs Portugal Retirement 2026: Comparison, Costs, Visas',
     description: 'Compare Panama vs Portugal for retirement. D7 visa, costs, lifestyle, healthcare, real estate.',
     keywords: 'Panama vs Portugal, retire Panama vs Portugal, cost of living Panama Portugal, D7 visa',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-portugal-retirement',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-vs-portugal-retirement',
             'es': 'https://panamarealestatesale.com/es/blog/panama-vs-portugal-retirement',
@@ -21,7 +27,7 @@ export const metadata: Metadata = {
         title: 'Panama vs Portugal Retirement 2026: Comparison, Costs, Visas',
         description: 'Compare Panama vs Portugal for retirement. D7 visa, costs, lifestyle, healthcare, real estate.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-vs-portugal-retirement',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Comparison' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -33,6 +39,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
+}
 
 const costComparisonData = [
     ['Expense Category', 'Lisbon, Portugal', 'Porto, Portugal', 'Boquete, Panama', 'Panama City, Panama'],

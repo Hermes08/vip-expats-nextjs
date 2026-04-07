@@ -8,12 +8,18 @@ interface PageProps {
   params: { lang: string };
 }
 
-export const metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-food-guide-expats';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
   title: 'Panama Food Guide 2026: Local Cuisine, Restaurants, Expat Eating',
   description: 'Panama food guide. Local dishes, best restaurants, grocery costs, street food, cuisine tips for expats.',
   keywords: 'Panama food, Panama cuisine, Panama restaurants, Panamanian dishes, food in Panama',
   alternates: {
-    canonical: 'https://panamarealestatesale.com/en/blog/panama-food-guide-expats',
+    canonical,
     languages: {
       'en': 'https://panamarealestatesale.com/en/blog/panama-food-guide-expats',
       'es': 'https://panamarealestatesale.com/es/blog/panama-food-guide-expats',
@@ -25,7 +31,7 @@ export const metadata = {
     title: 'Panama Food Guide 2026: Local Cuisine, Restaurants, Expat Eating',
     description: 'Panama food guide. Local dishes, best restaurants, grocery costs, street food, cuisine tips for expats.',
     type: 'article',
-    url: 'https://panamarealestatesale.com/en/blog/panama-food-guide-expats',
+    url: canonical,
     images: [{ url: 'https://images.unsplash.com/photo-1504674900941-0026f8d9138d?w=1200&q=80', width: 1200, height: 630, alt: 'Panama Food Guide 2026: Local Cuisine, Restaurants, Expat Eating' }],
     locale: 'en_US',
     siteName: 'VIP Expats Panama',
@@ -37,6 +43,7 @@ export const metadata = {
     images: ['https://images.unsplash.com/photo-1504674900941-0026f8d9138d?w=1200&q=80'],
   },
 };
+}
 
 export default function PanamaFoodGuidePage({ params }: PageProps) {
   const { lang } = params;

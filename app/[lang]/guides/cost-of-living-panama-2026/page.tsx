@@ -2,19 +2,24 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, DollarSign } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const canonical = `https://panamarealestatesale.com/${lang}/guides/cost-of-living-panama-2026`;
+
+  return {
     title: 'Cost of Living in Panama 2026: Real Monthly Budgets for Expats',
     description:
         'What does it actually cost to live in Panama in 2026? Real monthly budgets for rent, groceries, healthcare, transport, and utilities — compared to the US.',
     keywords:
         'cost of living panama 2026, panama monthly expenses expat, how much to live in panama, panama budget retirement, panama vs usa cost of living',
-    alternates: { canonical: 'https://panamarealestatesale.com/en/guides/cost-of-living-panama-2026' },
+    alternates: { canonical },
     openGraph: {
         title: 'Cost of Living in Panama 2026: Real Monthly Budgets for Expats',
         description: 'Real monthly expense breakdowns for expats in Panama City, Boquete, and Coronado in 2026.',
         type: 'article',
     },
 };
+}
 
 const budgetTiers = [
     {

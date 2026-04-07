@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 
 
@@ -7,12 +8,18 @@ interface PageProps {
   };
 }
 
-export const metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'start-business-panama-foreigners';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
   title: 'Start Business in Panama 2026: Registration, Taxes, Visas',
   description: 'Start a business in Panama. Company registration, taxes, entrepreneur visa, business types, costs.',
   keywords: 'start business Panama, business registration Panama, business visa Panama, corporation Panama',
   alternates: {
-    canonical: 'https://panamarealestatesale.com/en/blog/start-business-panama-foreigners',
+    canonical,
     languages: {
       'en': 'https://panamarealestatesale.com/en/blog/start-business-panama-foreigners',
       'es': 'https://panamarealestatesale.com/es/blog/start-business-panama-foreigners',
@@ -24,7 +31,7 @@ export const metadata = {
     title: 'Start Business in Panama 2026: Registration, Taxes, Visas',
     description: 'Start a business in Panama. Company registration, taxes, entrepreneur visa, business types, costs.',
     type: 'article',
-    url: 'https://panamarealestatesale.com/en/blog/start-business-panama-foreigners',
+    url: canonical,
     images: [{ url: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80', width: 1200, height: 630, alt: 'Start Business in Panama 2026: Registration, Taxes, Visas' }],
     locale: 'en_US',
     siteName: 'VIP Expats Panama',
@@ -36,6 +43,7 @@ export const metadata = {
     images: ['https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&q=80'],
   },
 };
+}
 
 export default function StartBusinessPanamaPage({ params: { lang } }: PageProps) {
   return (

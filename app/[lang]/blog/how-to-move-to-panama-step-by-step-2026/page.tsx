@@ -4,12 +4,18 @@ import { ArrowRight, CheckCircle, MapPin, Briefcase, Home, Users, Calendar, Doll
 import { PanamaCityScene } from '@/components/three/ThreeComponents';
 
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'how-to-move-to-panama-step-by-step-2026';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'How to Move to Panama 2026: Step-by-Step Complete Guide',
     description: 'Step-by-step guide to move to Panama. Visa, shipping, housing, banking, residency, costs.',
     keywords: 'how to move to Panama, moving to Panama, Panama relocation guide, Panama visa requirements',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/how-to-move-to-panama-step-by-step-2026',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/how-to-move-to-panama-step-by-step-2026',
             'es': 'https://panamarealestatesale.com/es/blog/how-to-move-to-panama-step-by-step-2026',
@@ -21,7 +27,7 @@ export const metadata: Metadata = {
         title: 'How to Move to Panama 2026: Step-by-Step Complete Guide',
         description: 'Step-by-step guide to move to Panama. Visa, shipping, housing, banking, residency, costs.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/how-to-move-to-panama-step-by-step-2026',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80', width: 1200, height: 630, alt: 'Moving to Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -33,6 +39,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80'],
     },
 };
+}
 
 const phases = [
     {

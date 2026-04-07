@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, DollarSign, Heart, Sun, Globe, TrendingUp } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'retire-in-panama';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Retire in Panama 2026: Complete Guide, Visas, Costs, Lifestyle',
     description: 'Complete retirement guide to Panama. Pensionado visa, costs, healthcare, lifestyle, real estate.',
     keywords: 'retire in Panama, Panama retirement guide, pensionado visa Panama, retirement in Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/retire-in-panama',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/retire-in-panama',
             'es': 'https://panamarealestatesale.com/es/blog/retire-in-panama',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Retire in Panama 2026: Complete Guide, Visas, Costs, Lifestyle',
         description: 'Complete retirement guide to Panama. Pensionado visa, costs, healthcare, lifestyle, real estate.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/retire-in-panama',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&q=80', width: 1200, height: 630, alt: 'Retirement in Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&q=80'],
     },
 };
+}
 
 const retirementBudgets = [
     {

@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, MapPin, Cloud, Sun, Droplets } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-weather-guide';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama Weather Guide 2026: Climate, Seasons, Temperature Info',
     description: 'Panama weather guide. Rainy season, dry season, temperature, humidity, best time to visit.',
     keywords: 'Panama weather, Panama climate, Panama rainy season, Panama temperature, weather in Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-weather-guide',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-weather-guide',
             'es': 'https://panamarealestatesale.com/es/blog/panama-weather-guide',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Panama Weather Guide 2026: Climate, Seasons, Temperature Info',
         description: 'Panama weather guide. Rainy season, dry season, temperature, humidity, best time to visit.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-weather-guide',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1456496169494-63e8e1c5aaa3?w=1200&q=80', width: 1200, height: 630, alt: 'Panama weather' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1456496169494-63e8e1c5aaa3?w=1200&q=80'],
     },
 };
+}
 
 const climateCards = [
   {

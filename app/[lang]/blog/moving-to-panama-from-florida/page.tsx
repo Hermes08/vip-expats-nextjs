@@ -14,12 +14,18 @@ const floridaVsPanamaData = [
     { label: 'Boquete', value: 1750, color: '#D4A843' },
 ];
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'moving-to-panama-from-florida';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Move from Florida to Panama 2026: Visa, Costs, Relocation Guide',
     description: 'Floridians moving to Panama. Visa options, residency, costs, healthcare, taxes, relocation tips.',
     keywords: 'Florida to Panama, moving from Florida to Panama, Panama pensionado visa, expats from Florida',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-florida',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-florida',
             'es': 'https://panamarealestatesale.com/es/blog/moving-to-panama-from-florida',
@@ -31,7 +37,7 @@ export const metadata: Metadata = {
         title: 'Move from Florida to Panama 2026: Visa, Costs, Relocation Guide',
         description: 'Floridians moving to Panama. Visa options, residency, costs, healthcare, taxes, relocation tips.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-florida',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Moving from Florida' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -43,6 +49,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
+}
 
 const floridaToPanamaFlights = [
     { route: 'Miami (MIA) → Panama City (PTY)', airline: 'Copa Airlines, American, United, Delta', duration: '2h 40m nonstop', price: '$200–$500' },

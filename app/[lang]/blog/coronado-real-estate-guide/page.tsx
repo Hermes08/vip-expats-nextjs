@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, MapPin, DollarSign, TrendingUp, Home } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'coronado-real-estate-guide';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Coronado Real Estate 2026: Prices, Beach Living, Investment Guide',
     description: 'Coronado real estate. Beach properties, prices, lifestyle, buying guide, investment opportunities.',
     keywords: 'Coronado real estate, Coronado Panama, Coronado properties, beach homes Panama, Coronado investment',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/coronado-real-estate-guide',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/coronado-real-estate-guide',
             'es': 'https://panamarealestatesale.com/es/blog/coronado-real-estate-guide',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Coronado Real Estate 2026: Prices, Beach Living, Investment Guide',
         description: 'Coronado real estate. Beach properties, prices, lifestyle, buying guide, investment opportunities.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/coronado-real-estate-guide',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80', width: 1200, height: 630, alt: 'Coronado beach Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80'],
     },
 };
+}
 
 const propertyTypes = [
     {

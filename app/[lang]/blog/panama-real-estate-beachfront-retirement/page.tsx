@@ -3,12 +3,18 @@ import Link from 'next/link';
 import { ArrowRight, Waves, Palmtree, Umbrella, Coffee, Heart } from 'lucide-react';
 import BlogPostSchema from '@/components/seo/BlogPostSchema';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-real-estate-beachfront-retirement';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Beachfront Real Estate Panama 2026: Retirement Living Guide',
     description: 'Beachfront properties Panama. Coronado, Bocas, San Blas. Retirement living, investment.',
     keywords: 'beachfront Panama, beachfront real estate, beach properties, Panama coastal living',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-real-estate-beachfront-retirement',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-real-estate-beachfront-retirement',
             'es': 'https://panamarealestatesale.com/es/blog/panama-real-estate-beachfront-retirement',
@@ -20,7 +26,7 @@ export const metadata: Metadata = {
         title: 'Beachfront Real Estate Panama 2026: Retirement Living Guide',
         description: 'Beachfront properties Panama. Coronado, Bocas, San Blas. Retirement living, investment.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-real-estate-beachfront-retirement',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80', width: 1200, height: 630, alt: 'Beachfront property' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,7 +37,8 @@ export const metadata: Metadata = {
         description: 'Beachfront properties Panama. Coronado, Bocas, San Blas. Retirement living, investment.',
         images: ['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80'],
     },
-};;
+};
+};
 
 const lifestylePillars = [
     {

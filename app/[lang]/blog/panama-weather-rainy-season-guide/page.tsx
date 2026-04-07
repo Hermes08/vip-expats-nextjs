@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Cloud, Sun, Droplets, MapPin, AlertCircle, HelpCircle } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-weather-rainy-season-guide';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama Weather & Rainy Season 2026: When to Go, What to Pack',
     description: 'Panama weather guide. Rainy season timing, temperature, humidity, packing tips. When is the best time to visit.',
     keywords: 'Panama weather, rainy season Panama, Panama climate, when to visit Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-weather-rainy-season-guide',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-weather-rainy-season-guide',
             'es': 'https://panamarealestatesale.com/es/blog/panama-weather-rainy-season-guide',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Panama Weather & Rainy Season 2026: When to Go, What to Pack',
         description: 'Panama weather guide. Rainy season timing, temperature, humidity, packing tips. When is the best time to visit.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-weather-rainy-season-guide',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1456496169494-63e8e1c5aaa3?w=1200&q=80', width: 1200, height: 630, alt: 'Panama rain and weather' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1456496169494-63e8e1c5aaa3?w=1200&q=80'],
     },
 };
+}
 
 const monthlyWeather = [
     {

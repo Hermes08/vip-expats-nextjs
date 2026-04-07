@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Home, DollarSign, TrendingUp, Users, CheckCircle2, AlertCircle } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'condos-for-sale-panama-buyers-guide';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Condos for Sale Panama 2026: Buyers Guide, Prices, Investment',
     description: 'Buy condo in Panama. Price ranges, best developments, buying process, HOA costs, investment tips.',
     keywords: 'condos for sale Panama, condos Panama City, condo prices Panama, buy condo Panama, Panama real estate',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/condos-for-sale-panama-buyers-guide',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/condos-for-sale-panama-buyers-guide',
             'es': 'https://panamarealestatesale.com/es/blog/condos-for-sale-panama-buyers-guide',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Condos for Sale Panama 2026: Buyers Guide, Prices, Investment',
         description: 'Buy condo in Panama. Price ranges, best developments, buying process, HOA costs, investment tips.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/condos-for-sale-panama-buyers-guide',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80', width: 1200, height: 630, alt: 'Condo in Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80'],
     },
 };
+}
 
 const neighborhoods = [
   {

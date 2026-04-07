@@ -4,12 +4,18 @@ import { ArrowRight, CheckCircle, DollarSign, Lock, FileText, AlertCircle, Trend
 import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-banking-non-residents-guide';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama Banking for Non-Residents 2026: Open Account, Services Guide',
     description: 'Banking in Panama as non-resident. Open bank account, services, digital banking, minimum deposits.',
     keywords: 'Panama banking, bank account Panama, banking services Panama, non-resident banking Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-banking-non-residents-guide',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-banking-non-residents-guide',
             'es': 'https://panamarealestatesale.com/es/blog/panama-banking-non-residents-guide',
@@ -21,7 +27,7 @@ export const metadata: Metadata = {
         title: 'Panama Banking for Non-Residents 2026: Open Account, Services Guide',
         description: 'Banking in Panama as non-resident. Open bank account, services, digital banking, minimum deposits.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-banking-non-residents-guide',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=1200&q=80', width: 1200, height: 630, alt: 'Banking in Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -33,6 +39,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=1200&q=80'],
     },
 };
+}
 
 const banksInfo = [
     {

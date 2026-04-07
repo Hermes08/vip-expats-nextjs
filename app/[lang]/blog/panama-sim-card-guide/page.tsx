@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Phone, Smartphone, Globe, AlertCircle, MapPin } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-sim-card-guide';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Buy SIM Card Panama 2026: Claro vs Movistar vs Cable Onda',
     description: 'Compare SIM card providers in Panama: Claro, Movistar, Cable Onda. eSIM options, pricing, coverage, data speeds. Where to buy.',
     keywords: 'SIM card Panama, Panama phone plan, eSIM Panama, Claro Panama, Movistar Panama, Cable Onda',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-sim-card-guide',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-sim-card-guide',
             'es': 'https://panamarealestatesale.com/es/blog/panama-sim-card-guide',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Buy SIM Card Panama 2026: Claro vs Movistar vs Cable Onda',
         description: 'Compare SIM card providers in Panama: Claro, Movistar, Cable Onda. eSIM options, pricing, coverage, data speeds.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-sim-card-guide',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1200&q=80', width: 1200, height: 630, alt: 'SIM card in Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=1200&q=80'],
     },
 };
+}
 
 const carriers = [
     {

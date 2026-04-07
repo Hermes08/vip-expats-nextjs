@@ -1,14 +1,21 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 
 
 
-export const metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-para-ecuatorianos-guia-2026';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
   title: 'Guía Panamá para Ecuatorianos 2026: Visa, Costos, Residencia',
   description: 'Ecuatorianos emigrando a Panamá. Opciones de visa, costos, residencia.',
   keywords: 'panama, para',
   alternates: {
-    canonical: 'https://panamarealestatesale.com/en/blog/panama-para-ecuatorianos-guia-2026',
+    canonical,
     languages: {
       'en': 'https://panamarealestatesale.com/en/blog/panama-para-ecuatorianos-guia-2026',
       'es': 'https://panamarealestatesale.com/es/blog/panama-para-ecuatorianos-guia-2026',
@@ -20,7 +27,7 @@ export const metadata = {
     title: 'Guía Panamá para Ecuatorianos 2026: Visa, Costos, Residencia',
     description: 'Ecuatorianos emigrando a Panamá. Opciones de visa, costos, residencia.',
     type: 'article',
-    url: 'https://panamarealestatesale.com/en/blog/panama-para-ecuatorianos-guia-2026',
+    url: canonical,
     images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Guía Panamá para Ecuatorianos 2026: Visa, Costos, Residencia' }],
     locale: 'en_US',
     siteName: 'VIP Expats Panama',
@@ -32,6 +39,7 @@ export const metadata = {
     images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
   },
 };
+}
 
 const ecuadorChartData = [
   { label: 'Quito', value: 900, color: '#6b7280' },

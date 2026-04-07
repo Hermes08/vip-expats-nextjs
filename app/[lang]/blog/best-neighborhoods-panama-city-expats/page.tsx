@@ -4,12 +4,18 @@ import { ArrowRight, CheckCircle, DollarSign, MapPin, Wifi, AlertCircle, Trendin
 import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'best-neighborhoods-panama-city-expats';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Best Neighborhoods Panama City 2026: Expats Living Guide',
     description: 'Best neighborhoods in Panama City for expats. Casco Viejo, Clayton, Coronado. Safety, prices, lifestyle.',
     keywords: 'Panama City neighborhoods, expat neighborhoods Panama, best areas Panama City, Casco Viejo, Clayton',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/best-neighborhoods-panama-city-expats',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/best-neighborhoods-panama-city-expats',
             'es': 'https://panamarealestatesale.com/es/blog/best-neighborhoods-panama-city-expats',
@@ -21,7 +27,7 @@ export const metadata: Metadata = {
         title: 'Best Neighborhoods Panama City 2026: Expats Living Guide',
         description: 'Best neighborhoods in Panama City for expats. Casco Viejo, Clayton, Coronado. Safety, prices, lifestyle.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/best-neighborhoods-panama-city-expats',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80', width: 1200, height: 630, alt: 'Panama City neighborhood' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -33,6 +39,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80'],
     },
 };
+}
 
 const neighborhoods = [
     {

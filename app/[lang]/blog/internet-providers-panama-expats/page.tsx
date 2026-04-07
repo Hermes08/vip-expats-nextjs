@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Zap, Globe, MapPin, AlertCircle, Wifi } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'internet-providers-panama-expats';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Internet Providers Panama 2026: Speed, Reliability, Cost Comparison',
     description: 'Compare internet providers in Panama. Cable Onda, Claro, Movistar, Digicel. Speed, pricing, customer service.',
     keywords: 'internet Panama, Cable Onda Panama, internet providers Panama, best internet Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/internet-providers-panama-expats',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/internet-providers-panama-expats',
             'es': 'https://panamarealestatesale.com/es/blog/internet-providers-panama-expats',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Internet Providers Panama 2026: Speed, Reliability, Cost Comparison',
         description: 'Compare internet providers in Panama. Cable Onda, Claro, Movistar, Digicel. Speed, pricing, customer service.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/internet-providers-panama-expats',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&q=80', width: 1200, height: 630, alt: 'Internet connection' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&q=80'],
     },
 };
+}
 
 const providers = [
     {

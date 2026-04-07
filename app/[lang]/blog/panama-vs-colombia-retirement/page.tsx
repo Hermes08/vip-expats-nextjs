@@ -4,12 +4,18 @@ import { ArrowRight, CheckCircle, MapPin, DollarSign, TrendingUp, Home, Shield, 
 import { CostBarChart } from '@/components/three/ThreeComponents';
 
 
-export const metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-vs-colombia-retirement';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
   title: 'Panama vs Colombia Retirement 2026: Comparison, Costs',
   description: 'Compare Panama vs Colombia for retirement. Costs, lifestyle, visas, real estate.',
   keywords: 'panama',
   alternates: {
-    canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-colombia-retirement',
+    canonical,
     languages: {
       'en': 'https://panamarealestatesale.com/en/blog/panama-vs-colombia-retirement',
       'es': 'https://panamarealestatesale.com/es/blog/panama-vs-colombia-retirement',
@@ -21,7 +27,7 @@ export const metadata = {
     title: 'Panama vs Colombia Retirement 2026: Comparison, Costs',
     description: 'Compare Panama vs Colombia for retirement. Costs, lifestyle, visas, real estate.',
     type: 'article',
-    url: 'https://panamarealestatesale.com/en/blog/panama-vs-colombia-retirement',
+    url: canonical,
     images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Panama vs Colombia Retirement 2026: Comparison, Costs' }],
     locale: 'en_US',
     siteName: 'VIP Expats Panama',
@@ -33,6 +39,7 @@ export const metadata = {
     images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
   },
 };
+}
 
 const costComparisonData = [
     ['Expense Category', 'Medellin, Colombia', 'Bogota, Colombia', 'Cartagena, Colombia', 'Panama City, Panama'],

@@ -14,12 +14,18 @@ const texasVsPanamaData = [
     { label: 'Boquete', value: 1750, color: '#D4A843' },
 ];
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'moving-to-panama-from-texas';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Move from Texas to Panama 2026: Visa, Costs, Guide',
     description: 'Texans moving to Panama. Visa options, residency programs, costs, healthcare, relocation guide.',
     keywords: 'Texas to Panama, moving from Texas to Panama, Panama relocation, Texas expats Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-texas',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-texas',
             'es': 'https://panamarealestatesale.com/es/blog/moving-to-panama-from-texas',
@@ -31,7 +37,7 @@ export const metadata: Metadata = {
         title: 'Move from Texas to Panama 2026: Visa, Costs, Guide',
         description: 'Texans moving to Panama. Visa options, residency programs, costs, healthcare, relocation guide.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-texas',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Moving to Panama from Texas' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -43,6 +49,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
+}
 
 const texasToPanamaFlights = [
     { route: 'Houston (IAH) → Panama City (PTY)', airline: 'Copa Airlines (nonstop)', duration: '3h 30m', price: '$250–$550' },

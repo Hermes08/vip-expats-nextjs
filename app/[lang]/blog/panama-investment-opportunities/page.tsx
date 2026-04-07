@@ -3,12 +3,18 @@ import Link from 'next/link';
 import { ArrowRight, CheckCircle, TrendingUp, Globe, Building2, Landmark, ShieldCheck } from 'lucide-react';
 import BlogPostSchema from '@/components/seo/BlogPostSchema';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-investment-opportunities';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama Investment Opportunities 2026: Real Estate, Projects, Returns',
     description: 'Investment opportunities in Panama. Real estate, development projects, ROI potential.',
     keywords: 'Panama investment opportunities, invest in Panama, Panama real estate investment',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-investment-opportunities',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-investment-opportunities',
             'es': 'https://panamarealestatesale.com/es/blog/panama-investment-opportunities',
@@ -20,7 +26,7 @@ export const metadata: Metadata = {
         title: 'Panama Investment Opportunities 2026: Real Estate, Projects, Returns',
         description: 'Investment opportunities in Panama. Real estate, development projects, ROI potential.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-investment-opportunities',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80', width: 1200, height: 630, alt: 'Investment opportunities' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,7 +37,8 @@ export const metadata: Metadata = {
         description: 'Investment opportunities in Panama. Real estate, development projects, ROI potential.',
         images: ['https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80'],
     },
-};;
+};
+};
 
 const investmentHighlights = [
     {

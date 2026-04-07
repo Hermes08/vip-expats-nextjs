@@ -12,12 +12,18 @@ const panamaVsAlternativesData = [
     { label: 'USA (avg)', value: 5500, color: '#e05555' },
 ];
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'pros-cons-retiring-panama';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Pros and Cons of Retiring in Panama 2026: Complete Analysis',
     description: 'Pros and cons of retiring in Panama. Benefits, drawbacks, costs, visas, lifestyle considerations.',
     keywords: 'retire to Panama, retiring in Panama, Panama retirement, Panama pensionado visa, expat retirement',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/pros-cons-retiring-panama',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/pros-cons-retiring-panama',
             'es': 'https://panamarealestatesale.com/es/blog/pros-cons-retiring-panama',
@@ -29,7 +35,7 @@ export const metadata: Metadata = {
         title: 'Pros and Cons of Retiring in Panama 2026: Complete Analysis',
         description: 'Pros and cons of retiring in Panama. Benefits, drawbacks, costs, visas, lifestyle considerations.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/pros-cons-retiring-panama',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&q=80', width: 1200, height: 630, alt: 'Retirement considerations' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -41,6 +47,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=1200&q=80'],
     },
 };
+}
 
 const pros = [
     { num: '1', title: 'The Pensionado Visa Is World-Class', desc: 'Guaranteed permanent residency with just $1,000/month income. No waiting, no temporary status, no year-by-year renewal anxiety. Plus 22+ government discounts: 25% utilities, 50% cinema, 10–25% restaurants, free airport parking. First-year cost ~$2,000–$3,000 in legal fees. Worth every penny.' },

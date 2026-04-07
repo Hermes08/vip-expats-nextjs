@@ -13,12 +13,18 @@ const taxBurdenData = [
     { label: 'Panama (foreign income)', value: 0, color: '#00C5CB' },
 ];
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-tax-benefits-foreigners-2026';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama Tax Benefits for Foreigners 2026: Residency Tax Breaks',
     description: 'Tax benefits for foreigners in Panama. Territorial taxation, resident status, tax advantages.',
     keywords: 'Panama taxes foreigners, tax benefits Panama residents, territorial tax Panama, resident tax breaks',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-tax-benefits-foreigners-2026',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-tax-benefits-foreigners-2026',
             'es': 'https://panamarealestatesale.com/es/blog/panama-tax-benefits-foreigners-2026',
@@ -30,7 +36,7 @@ export const metadata: Metadata = {
         title: 'Panama Tax Benefits for Foreigners 2026: Residency Tax Breaks',
         description: 'Tax benefits for foreigners in Panama. Territorial taxation, resident status, tax advantages.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-tax-benefits-foreigners-2026',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80', width: 1200, height: 630, alt: 'Tax information' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -42,6 +48,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80'],
     },
 };
+}
 
 const taxFreeIncome = [
     { item: 'US Social Security Benefits', icon: '✓', detail: 'Regardless of amount — all monthly benefits are 100% tax-free in Panama' },

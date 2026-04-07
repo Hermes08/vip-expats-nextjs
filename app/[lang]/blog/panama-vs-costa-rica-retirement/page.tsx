@@ -12,12 +12,18 @@ const monthlyCostData = [
     { label: 'Boquete', value: 1800, color: '#D4A843' },
 ];
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-vs-costa-rica-retirement';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama vs Costa Rica Retirement 2026: Which is Better? Comparison',
     description: 'Compare Panama vs Costa Rica for retirement. Costs, lifestyle, visas, real estate, climate.',
     keywords: 'Panama vs Costa Rica, retirement Panama Costa Rica, Panama vs Costa Rica cost of living',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-costa-rica-retirement',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-vs-costa-rica-retirement',
             'es': 'https://panamarealestatesale.com/es/blog/panama-vs-costa-rica-retirement',
@@ -29,7 +35,7 @@ export const metadata: Metadata = {
         title: 'Panama vs Costa Rica Retirement 2026: Which is Better? Comparison',
         description: 'Compare Panama vs Costa Rica for retirement. Costs, lifestyle, visas, real estate, climate.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-vs-costa-rica-retirement',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Comparison' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -41,6 +47,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
+}
 
 const costComparisonTable = [
     { category: 'Monthly Rent (2BR apartment)', panama: '$800–$1,500', costaRica: '$1,000–$2,000' },

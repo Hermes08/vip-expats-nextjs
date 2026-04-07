@@ -23,12 +23,18 @@ const vsPanamaChartData = [
     { label: 'Boquete', value: 1800, color: '#00d4db' },
 ];
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-cost-of-living-2026';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama Cost of Living 2026: Housing, Food, Utilities, Full Breakdown',
     description: 'Complete Panama cost of living breakdown 2026. Housing, food, utilities, healthcare, transportation.',
     keywords: 'Panama cost of living, Panama expenses, living costs Panama, Panama budget, Panama affordability',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-cost-of-living-2026',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-cost-of-living-2026',
             'es': 'https://panamarealestatesale.com/es/blog/panama-cost-of-living-2026',
@@ -40,7 +46,7 @@ export const metadata: Metadata = {
         title: 'Panama Cost of Living 2026: Housing, Food, Utilities, Full Breakdown',
         description: 'Complete Panama cost of living breakdown 2026. Housing, food, utilities, healthcare, transportation.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-cost-of-living-2026',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1579621970563-cbf4b0aab9c5?w=1200&q=80', width: 1200, height: 630, alt: 'Cost of living breakdown' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -52,6 +58,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1579621970563-cbf4b0aab9c5?w=1200&q=80'],
     },
 };
+}
 
 const costSummary = [
     {

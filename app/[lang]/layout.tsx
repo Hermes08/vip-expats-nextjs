@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { headers } from "next/headers";
 import { Inter, Montserrat, Manrope, Cormorant_Garamond } from "next/font/google";
 import Script from "next/script";
 import "../globals.css";
@@ -36,6 +37,8 @@ const cormorant = Cormorant_Garamond({
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
+  const headersList = await headers();
+  const pathname = headersList.get('x-pathname') || `/${lang}`;
 
   const titles = {
     es: "Bienes Raíces en Panamá 2026 | Propiedades de Lujo e Inversión VIP",
@@ -51,13 +54,14 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     de: "Entdecken Sie die besten Panama-Immobilien 2026. Von luxuriösen Strandwohnungen bis zu hochrentablen Stadtinvestitionen."
   };
 
-  const domain = "https://panamarealestatesale.com"; // User should update this if different
+  const domain = "https://panamarealestatesale.com";
+  const canonicalUrl = `${domain}${pathname}`;
 
   return {
     title: titles[lang as keyof typeof titles] || titles.es,
     description: descriptions[lang as keyof typeof descriptions] || descriptions.es,
     alternates: {
-      canonical: `${domain}/${lang}`,
+      canonical: canonicalUrl,
       languages: {
         'en-US': `${domain}/en`,
         'es-PA': `${domain}/es`,
@@ -69,7 +73,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     openGraph: {
       type: 'website',
       locale: lang === 'es' ? 'es_PA' : lang === 'pt' ? 'pt_BR' : lang === 'de' ? 'de_DE' : 'en_US',
-      url: `${domain}/${lang}`,
+      url: canonicalUrl,
       siteName: titles[lang as keyof typeof titles] || titles.es,
       title: titles[lang as keyof typeof titles] || titles.es,
       description: descriptions[lang as keyof typeof descriptions] || descriptions.es,

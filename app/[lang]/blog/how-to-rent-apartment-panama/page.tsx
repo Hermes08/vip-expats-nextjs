@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Home, MapPin, DollarSign, CheckCircle, AlertTriangle, Search, HelpCircle } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'how-to-rent-apartment-panama';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Rent Apartment in Panama 2026: Complete Process, Costs, Neighborhoods',
     description: 'How to rent an apartment in Panama. Finding rentals, neighborhoods, costs, lease terms, landlord tips.',
     keywords: 'rent apartment Panama, apartment rental Panama, apartments Panama City, lease Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/how-to-rent-apartment-panama',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/how-to-rent-apartment-panama',
             'es': 'https://panamarealestatesale.com/es/blog/how-to-rent-apartment-panama',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Rent Apartment in Panama 2026: Complete Process, Costs, Neighborhoods',
         description: 'How to rent an apartment in Panama. Finding rentals, neighborhoods, costs, lease terms, landlord tips.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/how-to-rent-apartment-panama',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1430077592969-5dbbbfddb1cd?w=1200&q=80', width: 1200, height: 630, alt: 'Apartment in Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1430077592969-5dbbbfddb1cd?w=1200&q=80'],
     },
 };
+}
 
 const searchPlatforms = [
     {

@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Home, DollarSign, MapPin, Users, CheckCircle2, AlertCircle, Wifi, Zap, Droplet, Search } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'apartments-for-rent-panama-city';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Rent Apartments Panama City 2026: Best Neighborhoods, Costs, Guide',
     description: 'Find apartments for rent in Panama City. Best neighborhoods, prices, how to search, lease terms for expats.',
     keywords: 'apartments for rent Panama, apartment Panama City, rental apartments Panama, rent in Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/apartments-for-rent-panama-city',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/apartments-for-rent-panama-city',
             'es': 'https://panamarealestatesale.com/es/blog/apartments-for-rent-panama-city',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Rent Apartments Panama City 2026: Best Neighborhoods, Costs, Guide',
         description: 'Find apartments for rent in Panama City. Best neighborhoods, prices, how to search, lease terms for expats.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/apartments-for-rent-panama-city',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1430077592969-5dbbbfddb1cd?w=1200&q=80', width: 1200, height: 630, alt: 'Apartment in Panama City' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1430077592969-5dbbbfddb1cd?w=1200&q=80'],
     },
 };
+}
 
 const neighborhoods = [
   {

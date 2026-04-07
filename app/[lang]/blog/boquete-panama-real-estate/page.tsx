@@ -11,12 +11,18 @@ const boquetePriceData = [
     { label: 'Commercial', value: 400000, color: '#b8902e' },
 ];
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'boquete-panama-real-estate';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Boquete Real Estate 2026: Prices, Properties, Investment Guide',
     description: 'Boquete real estate. Cool mountain properties, prices, investment, lifestyle, buying process.',
     keywords: 'Boquete real estate, property Boquete, Boquete houses for sale, Boquete investment, Boquete property',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/boquete-panama-real-estate',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/boquete-panama-real-estate',
             'es': 'https://panamarealestatesale.com/es/blog/boquete-panama-real-estate',
@@ -28,7 +34,7 @@ export const metadata: Metadata = {
         title: 'Boquete Real Estate 2026: Prices, Properties, Investment Guide',
         description: 'Boquete real estate. Cool mountain properties, prices, investment, lifestyle, buying process.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/boquete-panama-real-estate',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1200&q=80', width: 1200, height: 630, alt: 'Boquete Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -40,6 +46,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=1200&q=80'],
     },
 };
+}
 
 const propertyTypes = [
     {

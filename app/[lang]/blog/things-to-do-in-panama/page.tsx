@@ -19,12 +19,18 @@ import {
   Zap,
 } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'things-to-do-in-panama';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Things to Do in Panama 2026: Activities, Tourist Attractions',
     description: 'Things to do in Panama. Panama City attractions, Bocas, Boquete, adventure activities, tourism.',
     keywords: 'things to do in Panama, Panama attractions, Panama City tourism, Panama activities, visit Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/things-to-do-in-panama',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/things-to-do-in-panama',
             'es': 'https://panamarealestatesale.com/es/blog/things-to-do-in-panama',
@@ -36,7 +42,7 @@ export const metadata: Metadata = {
         title: 'Things to Do in Panama 2026: Activities, Tourist Attractions',
         description: 'Things to do in Panama. Panama City attractions, Bocas, Boquete, adventure activities, tourism.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/things-to-do-in-panama',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80', width: 1200, height: 630, alt: 'Panama attractions' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -48,6 +54,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?w=1200&q=80'],
     },
 };
+}
 
 // Quick stats data
 const quickStats = [

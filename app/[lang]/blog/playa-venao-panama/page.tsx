@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Waves, MapPin, TrendingUp } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'playa-venao-panama';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Playa Venao Panama 2026: Beach Town, Real Estate, Lifestyle',
     description: 'Playa Venao Panama. Surf beach, real estate, costs, lifestyle, community, getting there.',
     keywords: 'Playa Venao, Venao beach, Playa Venao real estate, Venao Panama, Azuero Peninsula',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/playa-venao-panama',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/playa-venao-panama',
             'es': 'https://panamarealestatesale.com/es/blog/playa-venao-panama',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Playa Venao Panama 2026: Beach Town, Real Estate, Lifestyle',
         description: 'Playa Venao Panama. Surf beach, real estate, costs, lifestyle, community, getting there.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/playa-venao-panama',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80', width: 1200, height: 630, alt: 'Playa Venao' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80'],
     },
 };
+}
 
 const highlights = [
   {

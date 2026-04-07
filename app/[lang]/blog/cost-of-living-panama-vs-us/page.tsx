@@ -4,12 +4,18 @@ import Image from 'next/image';
 import { ArrowRight, CheckCircle, TrendingDown, DollarSign, Home, HeartPulse } from 'lucide-react';
 import OrganizationSchema from '@/components/seo/OrganizationSchema';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'cost-of-living-panama-vs-us';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Cost of Living Panama vs USA 2026: Comparison, Expenses',
     description: 'Panama vs USA cost of living. Housing, food, healthcare costs. Why Panama is cheaper for expats.',
     keywords: 'cost of living Panama vs USA, Panama cheaper than USA, living costs Panama, Panama expenses',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/cost-of-living-panama-vs-us',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/cost-of-living-panama-vs-us',
             'es': 'https://panamarealestatesale.com/es/blog/cost-of-living-panama-vs-us',
@@ -21,7 +27,7 @@ export const metadata: Metadata = {
         title: 'Cost of Living Panama vs USA 2026: Comparison, Expenses',
         description: 'Panama vs USA cost of living. Housing, food, healthcare costs. Why Panama is cheaper for expats.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/cost-of-living-panama-vs-us',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1200&q=80', width: 1200, height: 630, alt: 'Cost comparison' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -32,7 +38,8 @@ export const metadata: Metadata = {
         description: 'Panama vs USA cost of living. Housing, food, healthcare costs. Why Panama is cheaper for expats.',
         images: ['https://images.unsplash.com/photo-1540518614846-7eded433c457?w=1200&q=80'],
     },
-};;
+};
+};
 
 export default function CostOfLivingArticle() {
     return (

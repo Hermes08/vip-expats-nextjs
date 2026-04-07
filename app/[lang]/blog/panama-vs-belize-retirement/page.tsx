@@ -4,12 +4,18 @@ import { ArrowRight, CheckCircle, TrendingUp, DollarSign, AlertCircle, MapPin, S
 import { CostBarChart } from '@/components/three/ThreeComponents';
 
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-vs-belize-retirement';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama vs Belize Retirement 2026: Which is Better? Comparison',
     description: 'Compare Panama vs Belize for retirement. Costs, lifestyle, visas, real estate, expat community.',
     keywords: 'Panama vs Belize retirement, Panama vs Belize cost of living, retire Panama or Belize',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-belize-retirement',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-vs-belize-retirement',
             'es': 'https://panamarealestatesale.com/es/blog/panama-vs-belize-retirement',
@@ -21,7 +27,7 @@ export const metadata: Metadata = {
         title: 'Panama vs Belize Retirement 2026: Which is Better? Comparison',
         description: 'Compare Panama vs Belize for retirement. Costs, lifestyle, visas, real estate, expat community.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-vs-belize-retirement',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Comparison' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -33,6 +39,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
+}
 
 const visaComparison = [
     {

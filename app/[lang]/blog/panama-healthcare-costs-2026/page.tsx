@@ -14,12 +14,18 @@ import {
 
 
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-healthcare-costs-2026';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Healthcare in Panama 2026: Costs, Doctors, Insurance, Quality',
     description: 'Healthcare in Panama. Doctor costs, health insurance, quality of care, hospitals, medical tourism.',
     keywords: 'healthcare Panama, health insurance Panama, doctor costs Panama, hospitals Panama, medical care',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-healthcare-costs-2026',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-healthcare-costs-2026',
             'es': 'https://panamarealestatesale.com/es/blog/panama-healthcare-costs-2026',
@@ -31,7 +37,7 @@ export const metadata: Metadata = {
         title: 'Healthcare in Panama 2026: Costs, Doctors, Insurance, Quality',
         description: 'Healthcare in Panama. Doctor costs, health insurance, quality of care, hospitals, medical tourism.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-healthcare-costs-2026',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1576091160550-112173f9f866?w=1200&q=80', width: 1200, height: 630, alt: 'Healthcare in Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -43,6 +49,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1576091160550-112173f9f866?w=1200&q=80'],
     },
 };
+}
 
 const comparisonData = [
   { procedure: 'Hip Replacement', panama: 12000, usa: 40000, difference: 28000 },

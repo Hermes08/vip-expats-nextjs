@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 
@@ -9,12 +10,18 @@ interface PageProps {
   };
 }
 
-export const metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'moving-to-panama-from-canada';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
   title: 'Move from Canada to Panama 2026: Visa, Residency, Costs Guide',
   description: 'Canadians moving to Panama. Visas, residency options, shipping, costs, healthcare, retirement programs.',
   keywords: 'Canada to Panama, Canadians in Panama, Panama pensionado visa, move to Panama',
   alternates: {
-    canonical: 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-canada',
+    canonical,
     languages: {
       'en': 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-canada',
       'es': 'https://panamarealestatesale.com/es/blog/moving-to-panama-from-canada',
@@ -26,7 +33,7 @@ export const metadata = {
     title: 'Move from Canada to Panama 2026: Visa, Residency, Costs Guide',
     description: 'Canadians moving to Panama. Visas, residency options, shipping, costs, healthcare, retirement programs.',
     type: 'article',
-    url: 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-canada',
+    url: canonical,
     images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Move from Canada to Panama 2026: Visa, Residency, Costs Guide' }],
     locale: 'en_US',
     siteName: 'VIP Expats Panama',
@@ -38,6 +45,7 @@ export const metadata = {
     images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
   },
 };
+}
 
 export default function MoveTopanamaPanamaPanamFromCanadaPage({ params: { lang } }: PageProps) {
   return (

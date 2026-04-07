@@ -2,12 +2,18 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Shield, TrendingUp, Globe, Building2 } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-golden-visa-2026';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama Golden Visa 2026: Investment Residency, Cost, Requirements',
     description: 'Panama Golden Visa. Investment options, costs, residency benefits, application process.',
     keywords: 'Panama golden visa, investment residency Panama, Panama investor visa, permanent residency',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-golden-visa-2026',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-golden-visa-2026',
             'es': 'https://panamarealestatesale.com/es/blog/panama-golden-visa-2026',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Panama Golden Visa 2026: Investment Residency, Cost, Requirements',
         description: 'Panama Golden Visa. Investment options, costs, residency benefits, application process.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-golden-visa-2026',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80', width: 1200, height: 630, alt: 'Panama residency visa' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -30,7 +36,8 @@ export const metadata: Metadata = {
         description: 'Panama Golden Visa. Investment options, costs, residency benefits, application process.',
         images: ['https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&q=80'],
     },
-};;
+};
+};
 
 const benefits = [
   'Permanent residency with a path to citizenship after 5 years',

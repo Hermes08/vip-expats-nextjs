@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Heart, AlertCircle, MapPin, Zap, FileText } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'moving-to-panama-with-pets';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Moving to Panama with Pets 2026: Import Requirements, Vet, Quarantine',
     description: 'Import pets to Panama. Vaccination requirements, veterinary documentation, quarantine, airlines, pet services.',
     keywords: 'moving to Panama with pets, pet import Panama, quarantine Panama pets, dog cat Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/moving-to-panama-with-pets',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/moving-to-panama-with-pets',
             'es': 'https://panamarealestatesale.com/es/blog/moving-to-panama-with-pets',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Moving to Panama with Pets 2026: Import Requirements, Vet, Quarantine',
         description: 'Import pets to Panama. Vaccination requirements, veterinary documentation, quarantine, airlines, pet services.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/moving-to-panama-with-pets',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1552053831-71594a27c62d?w=1200&q=80', width: 1200, height: 630, alt: 'Pets in Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1552053831-71594a27c62d?w=1200&q=80'],
     },
 };
+}
 
 const requirements = [
     {

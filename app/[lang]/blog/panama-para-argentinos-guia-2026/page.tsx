@@ -1,14 +1,21 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 
 
 
-export const metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-para-argentinos-guia-2026';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
   title: 'Guía Panamá para Argentinos 2026: Visa, Costos, Vida',
   description: 'Argentinos emigrando a Panamá. Opciones de visa, costos, estilo de vida.',
   keywords: 'panama, para',
   alternates: {
-    canonical: 'https://panamarealestatesale.com/en/blog/panama-para-argentinos-guia-2026',
+    canonical,
     languages: {
       'en': 'https://panamarealestatesale.com/en/blog/panama-para-argentinos-guia-2026',
       'es': 'https://panamarealestatesale.com/es/blog/panama-para-argentinos-guia-2026',
@@ -20,7 +27,7 @@ export const metadata = {
     title: 'Guía Panamá para Argentinos 2026: Visa, Costos, Vida',
     description: 'Argentinos emigrando a Panamá. Opciones de visa, costos, estilo de vida.',
     type: 'article',
-    url: 'https://panamarealestatesale.com/en/blog/panama-para-argentinos-guia-2026',
+    url: canonical,
     images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Guía Panamá para Argentinos 2026: Visa, Costos, Vida' }],
     locale: 'en_US',
     siteName: 'VIP Expats Panama',
@@ -32,6 +39,7 @@ export const metadata = {
     images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
   },
 };
+}
 
 const argentinaChartData = [
   { label: 'Buenos Aires', value: 700, color: '#6b7280' },

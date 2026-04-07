@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Luggage, Heart, AlertTriangle, Package, ShoppingCart, HelpCircle } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'what-to-pack-moving-to-panama';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'What to Pack Moving to Panama 2026: Essential Items Checklist',
     description: 'Complete packing list for moving to Panama. Clothing, documents, medications, electronics, what not to bring.',
     keywords: 'what to pack Panama, packing list Panama, moving to Panama checklist, items to bring Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/what-to-pack-moving-to-panama',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/what-to-pack-moving-to-panama',
             'es': 'https://panamarealestatesale.com/es/blog/what-to-pack-moving-to-panama',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'What to Pack Moving to Panama 2026: Essential Items Checklist',
         description: 'Complete packing list for moving to Panama. Clothing, documents, medications, electronics, what not to bring.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/what-to-pack-moving-to-panama',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80', width: 1200, height: 630, alt: 'Packing for Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=1200&q=80'],
     },
 };
+}
 
 const clothingDos = [
     'Light cotton/linen shirts (5–7 pieces)',

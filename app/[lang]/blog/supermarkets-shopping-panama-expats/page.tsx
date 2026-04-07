@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, ShoppingCart, DollarSign, MapPin, AlertCircle, TrendingDown } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'supermarkets-shopping-panama-expats';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Supermarkets & Shopping in Panama 2026: Where Expats Buy Groceries',
     description: 'Guide to supermarkets in Panama. El Rey, Riba Smith, Súper 99, organic stores. Prices, locations, shopping tips.',
     keywords: 'supermarkets Panama, grocery stores Panama, El Rey Panama, Riba Smith, shopping Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/supermarkets-shopping-panama-expats',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/supermarkets-shopping-panama-expats',
             'es': 'https://panamarealestatesale.com/es/blog/supermarkets-shopping-panama-expats',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Supermarkets & Shopping in Panama 2026: Where Expats Buy Groceries',
         description: 'Guide to supermarkets in Panama. El Rey, Riba Smith, Súper 99, organic stores. Prices, locations, shopping tips.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/supermarkets-shopping-panama-expats',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1537427564867-f4ef3ce7c827?w=1200&q=80', width: 1200, height: 630, alt: 'Supermarket in Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1537427564867-f4ef3ce7c827?w=1200&q=80'],
     },
 };
+}
 
 const supermarkets = [
     {

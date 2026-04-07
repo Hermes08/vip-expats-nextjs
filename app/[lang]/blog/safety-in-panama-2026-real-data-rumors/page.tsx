@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, TrendingUp, Shield, MapPin } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'safety-in-panama-2026-real-data-rumors';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Safety in Panama 2026: Crime Data, Safe Areas, Real Facts',
     description: 'Safety in Panama 2026. Crime statistics, safe neighborhoods, security tips, expat safety guide.',
     keywords: 'safety Panama, crime Panama, safe neighborhoods Panama, expat safety, safety in Panama City',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/safety-in-panama-2026-real-data-rumors',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/safety-in-panama-2026-real-data-rumors',
             'es': 'https://panamarealestatesale.com/es/blog/safety-in-panama-2026-real-data-rumors',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Safety in Panama 2026: Crime Data, Safe Areas, Real Facts',
         description: 'Safety in Panama 2026. Crime statistics, safe neighborhoods, security tips, expat safety guide.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/safety-in-panama-2026-real-data-rumors',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1521737852567-6949f3f9f7e3?w=1200&q=80', width: 1200, height: 630, alt: 'Safety information' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1521737852567-6949f3f9f7e3?w=1200&q=80'],
     },
 };
+}
 
 const safeNeighborhoods = [
   {

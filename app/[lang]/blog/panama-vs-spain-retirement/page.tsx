@@ -4,12 +4,18 @@ import { ArrowRight, CheckCircle, MapPin, DollarSign, TrendingUp, Home, AlertCir
 import { CostBarChart } from '@/components/three/ThreeComponents';
 
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-vs-spain-retirement';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama vs Spain Retirement 2026: Comparison, Costs, Lifestyle',
     description: 'Compare Panama vs Spain for retirement. Golden Visa, costs, lifestyle, healthcare, communities.',
     keywords: 'Panama vs Spain, retire Panama vs Spain, cost of living Panama Spain, Spain retirement visa',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-spain-retirement',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-vs-spain-retirement',
             'es': 'https://panamarealestatesale.com/es/blog/panama-vs-spain-retirement',
@@ -21,7 +27,7 @@ export const metadata: Metadata = {
         title: 'Panama vs Spain Retirement 2026: Comparison, Costs, Lifestyle',
         description: 'Compare Panama vs Spain for retirement. Golden Visa, costs, lifestyle, healthcare, communities.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-vs-spain-retirement',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Comparison' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -33,6 +39,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
+}
 
 const costComparisonData = [
     ['Expense Category', 'Madrid, Spain', 'Barcelona, Spain', 'Valencia, Spain', 'Panama City', 'Boquete'],

@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, FileText, AlertCircle, MapPin, Zap } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-drivers-license-foreigners';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Get Driver License in Panama 2026: Foreigners Guide, Cost & Process',
     description: 'How to get a Panama driver license. Requirements, cost, DMV process, written test. Drive legally in Panama.',
     keywords: 'Panama driver license, driver license Panama foreigners, DMV Panama, driving permit Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-drivers-license-foreigners',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-drivers-license-foreigners',
             'es': 'https://panamarealestatesale.com/es/blog/panama-drivers-license-foreigners',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Get Driver License in Panama 2026: Foreigners Guide, Cost & Process',
         description: 'How to get a Panama driver license. Requirements, cost, DMV process, written test. Drive legally in Panama.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-drivers-license-foreigners',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1555949519-bb6e7a9c8e4f?w=1200&q=80', width: 1200, height: 630, alt: 'Panama driver license' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1555949519-bb6e7a9c8e4f?w=1200&q=80'],
     },
 };
+}
 
 const reciprocityCountries = [
     'USA (all states)',

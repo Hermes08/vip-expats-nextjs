@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Landmark, DollarSign, AlertTriangle, MapPin, TrendingDown, HelpCircle } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'atm-cash-panama-guide';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'ATMs in Panama 2026: Lowest Fees, Best Networks, Withdraw Cash Guide',
     description: 'Find ATMs in Panama with lowest fees. Banistmo, BAC, Multibank guide. Minimize ATM charges with Charles Schwab or Wise card.',
     keywords: 'ATM Panama, ATM fees Panama, withdraw cash Panama, Banistmo ATM, BAC ATM, Charles Schwab Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/atm-cash-panama-guide',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/atm-cash-panama-guide',
             'es': 'https://panamarealestatesale.com/es/blog/atm-cash-panama-guide',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'ATMs in Panama 2026: Lowest Fees, Best Networks, Withdraw Cash Guide',
         description: 'Find ATMs in Panama with lowest fees. Banistmo, BAC, Multibank guide. Minimize ATM charges with Charles Schwab or Wise card.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/atm-cash-panama-guide',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1526487486765-1c3dd1f75e24?w=1200&q=80', width: 1200, height: 630, alt: 'ATM in Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1526487486765-1c3dd1f75e24?w=1200&q=80'],
     },
 };
+}
 
 const atmNetworks = [
     {

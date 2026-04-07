@@ -2,12 +2,18 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, TrendingUp, MapPin, Palmtree, Globe } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-real-estate-investments';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama Real Estate Investment 2026: Opportunities & Returns',
     description: 'Real estate investment in Panama. Development projects, emerging areas, ROI potential.',
     keywords: 'real estate investment Panama, invest Panama real estate, property investment opportunities',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-real-estate-investments',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-real-estate-investments',
             'es': 'https://panamarealestatesale.com/es/blog/panama-real-estate-investments',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Panama Real Estate Investment 2026: Opportunities & Returns',
         description: 'Real estate investment in Panama. Development projects, emerging areas, ROI potential.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-real-estate-investments',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80', width: 1200, height: 630, alt: 'Real estate investment' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -30,7 +36,8 @@ export const metadata: Metadata = {
         description: 'Real estate investment in Panama. Development projects, emerging areas, ROI potential.',
         images: ['https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80'],
     },
-};;
+};
+};
 
 const investmentHighlights = [
     { stat: '$1,200–$1,800', label: 'Monthly luxury condo rent in Panama City', icon: MapPin },

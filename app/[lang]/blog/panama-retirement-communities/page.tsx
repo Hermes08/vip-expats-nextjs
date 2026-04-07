@@ -13,12 +13,18 @@ const communityCostData = [
     { label: 'Sun City AZ (USA)', value: 3800, color: '#e07744' },
 ];
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-retirement-communities';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Retirement Communities Panama 2026: Best Places, Costs, Guide',
     description: 'Retirement communities in Panama. Best developments, amenities, costs, retirement lifestyle.',
     keywords: 'retirement communities Panama, retirement homes Panama, retirement living Panama, pensionado visa',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-retirement-communities',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-retirement-communities',
             'es': 'https://panamarealestatesale.com/es/blog/panama-retirement-communities',
@@ -30,7 +36,7 @@ export const metadata: Metadata = {
         title: 'Retirement Communities Panama 2026: Best Places, Costs, Guide',
         description: 'Retirement communities in Panama. Best developments, amenities, costs, retirement lifestyle.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-retirement-communities',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1200&q=80', width: 1200, height: 630, alt: 'Retirement community' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -42,6 +48,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1200&q=80'],
     },
 };
+}
 
 const retirementCommunities = [
     {

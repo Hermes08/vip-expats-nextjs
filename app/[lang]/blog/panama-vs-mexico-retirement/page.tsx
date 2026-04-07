@@ -4,12 +4,18 @@ import { ArrowRight, CheckCircle, MapPin, DollarSign, TrendingUp, Home, AlertCir
 import { CostBarChart } from '@/components/three/ThreeComponents';
 
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-vs-mexico-retirement';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama vs Mexico Retirement 2026: Which is Better? Full Comparison',
     description: 'Compare Panama vs Mexico for retirement. Costs, lifestyle, visas, real estate, communities.',
     keywords: 'Panama vs Mexico retirement, Mexico vs Panama cost of living, retire in Panama or Mexico',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-vs-mexico-retirement',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-vs-mexico-retirement',
             'es': 'https://panamarealestatesale.com/es/blog/panama-vs-mexico-retirement',
@@ -21,7 +27,7 @@ export const metadata: Metadata = {
         title: 'Panama vs Mexico Retirement 2026: Which is Better? Full Comparison',
         description: 'Compare Panama vs Mexico for retirement. Costs, lifestyle, visas, real estate, communities.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-vs-mexico-retirement',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Comparison' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -33,6 +39,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
+}
 
 const costComparisonData = [
     ['Expense Category', 'Puerto Vallarta, Mexico', 'Cancun, Mexico', 'Boquete, Panama', 'Panama City, Panama'],

@@ -4,12 +4,18 @@ import { ArrowRight, CheckCircle, Scale, DollarSign, AlertCircle, Briefcase, Hom
 import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-property-buying-process-guide';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Buying Property in Panama 2026: Complete Step-by-Step Guide',
     description: 'Complete guide to buying property in Panama. Due diligence, legal process, costs, title registry.',
     keywords: 'buy property Panama, real estate purchase process, property law Panama, buying land Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-property-buying-process-guide',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-property-buying-process-guide',
             'es': 'https://panamarealestatesale.com/es/blog/panama-property-buying-process-guide',
@@ -21,7 +27,7 @@ export const metadata: Metadata = {
         title: 'Buying Property in Panama 2026: Complete Step-by-Step Guide',
         description: 'Complete guide to buying property in Panama. Due diligence, legal process, costs, title registry.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-property-buying-process-guide',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80', width: 1200, height: 630, alt: 'Buying property in Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -33,6 +39,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80'],
     },
 };
+}
 
 const titleTypes = [
     {

@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, MapPin, DollarSign, Heart, Zap, Users, AlertTriangle } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'living-in-panama-city';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Living in Panama City 2026: Lifestyle, Costs, Neighborhoods, Guide',
     description: 'Living in Panama City. Neighborhoods, costs, transportation, lifestyle, schools, expat community.',
     keywords: 'living in Panama City, Panama City expat guide, Panama City lifestyle, neighborhoods Panama City',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/living-in-panama-city',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/living-in-panama-city',
             'es': 'https://panamarealestatesale.com/es/blog/living-in-panama-city',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Living in Panama City 2026: Lifestyle, Costs, Neighborhoods, Guide',
         description: 'Living in Panama City. Neighborhoods, costs, transportation, lifestyle, schools, expat community.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/living-in-panama-city',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80', width: 1200, height: 630, alt: 'Panama City living' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=1200&q=80'],
     },
 };
+}
 
 const neighborhoods = [
     {

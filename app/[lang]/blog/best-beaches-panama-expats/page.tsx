@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, MapPin } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'best-beaches-panama-expats';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Best Beaches in Panama 2026: Where Expats Relax, Weekend Guide',
     description: 'Best beaches in Panama. Bocas del Toro, Coronado, San Blas. Beach towns for expats, water activities.',
     keywords: 'beaches Panama, best beaches Panama, Panama beaches expats, Bocas del Toro, Coronado beach',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/best-beaches-panama-expats',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/best-beaches-panama-expats',
             'es': 'https://panamarealestatesale.com/es/blog/best-beaches-panama-expats',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Best Beaches in Panama 2026: Where Expats Relax, Weekend Guide',
         description: 'Best beaches in Panama. Bocas del Toro, Coronado, San Blas. Beach towns for expats, water activities.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/best-beaches-panama-expats',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80', width: 1200, height: 630, alt: 'Beach in Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200&q=80'],
     },
 };
+}
 
 const beaches = [
   {

@@ -12,12 +12,18 @@ import {
   BarChart3,
 } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-real-estate-market-2026';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama Real Estate Market 2026: Trends, Prices, Investment',
     description: 'Panama real estate market 2026. Price trends, investment opportunities, market analysis, forecasts.',
     keywords: 'Panama real estate market, real estate prices Panama, property market Panama, market trends',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-real-estate-market-2026',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-real-estate-market-2026',
             'es': 'https://panamarealestatesale.com/es/blog/panama-real-estate-market-2026',
@@ -29,7 +35,7 @@ export const metadata: Metadata = {
         title: 'Panama Real Estate Market 2026: Trends, Prices, Investment',
         description: 'Panama real estate market 2026. Price trends, investment opportunities, market analysis, forecasts.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-real-estate-market-2026',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80', width: 1200, height: 630, alt: 'Real estate market' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -41,6 +47,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80'],
     },
 };
+}
 
 const marketSegments = [
   {

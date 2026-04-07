@@ -14,12 +14,18 @@ const deutschlandVsPanamaData = [
     { label: 'Coronado', value: 2000, color: '#00b0b6' },
 ];
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-deutsche-auswanderer';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama für Deutsche Auswanderer: Visa, Kosten, Lebensqualität',
     description: 'Deutsche Auswanderer in Panama. Visa-Optionen, Kosten, Lebensstil, Pensionierungsvisa, Gemeinschaft.',
     keywords: 'Deutsche in Panama, Auswandern nach Panama, Panama Visa Deutsch, Pensionistenvisa Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-deutsche-auswanderer',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-deutsche-auswanderer',
             'es': 'https://panamarealestatesale.com/es/blog/panama-deutsche-auswanderer',
@@ -31,7 +37,7 @@ export const metadata: Metadata = {
         title: 'Panama für Deutsche Auswanderer: Visa, Kosten, Lebensqualität',
         description: 'Deutsche Auswanderer in Panama. Visa-Optionen, Kosten, Lebensstil, Pensionierungsvisa, Gemeinschaft.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-deutsche-auswanderer',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80', width: 1200, height: 630, alt: 'Deutsche in Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -43,6 +49,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1488747807830-63789f68bb65?w=1200&q=80'],
     },
 };
+}
 
 const flughäfen = [
     { route: 'Frankfurt (FRA) → Panama City (PTY)', fluggesellschaft: 'Lufthansa/Copa Codeshare', dauer: '11h 30m', preis: '€600–€1.200' },

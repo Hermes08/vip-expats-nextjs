@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Waves, MapPin, TrendingUp, Fish } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'santa-catalina-panama';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Santa Catalina Panama 2026: Surf Beach, Real Estate, Lifestyle',
     description: 'Santa Catalina Panama. Surf town, real estate, costs, lifestyle, community, beach life.',
     keywords: 'Santa Catalina, Santa Catalina Panama, Santa Catalina real estate, surf Panama, Veraguas',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/santa-catalina-panama',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/santa-catalina-panama',
             'es': 'https://panamarealestatesale.com/es/blog/santa-catalina-panama',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Santa Catalina Panama 2026: Surf Beach, Real Estate, Lifestyle',
         description: 'Santa Catalina Panama. Surf town, real estate, costs, lifestyle, community, beach life.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/santa-catalina-panama',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80', width: 1200, height: 630, alt: 'Santa Catalina beach' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80'],
     },
 };
+}
 
 const sections = [
   {

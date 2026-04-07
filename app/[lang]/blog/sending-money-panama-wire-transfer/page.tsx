@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { DollarSign, Send, TrendingDown, AlertCircle, CheckCircle, HelpCircle } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'sending-money-panama-wire-transfer';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Send Money to Panama 2026: Wire Transfer, Apps, Lowest Fees',
     description: 'Send money to Panama. Wire transfers, international apps, exchange rates, lowest fees, remittance options.',
     keywords: 'send money to Panama, wire transfer Panama, remit to Panama, money transfer apps',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/sending-money-panama-wire-transfer',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/sending-money-panama-wire-transfer',
             'es': 'https://panamarealestatesale.com/es/blog/sending-money-panama-wire-transfer',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Send Money to Panama 2026: Wire Transfer, Apps, Lowest Fees',
         description: 'Send money to Panama. Wire transfers, international apps, exchange rates, lowest fees, remittance options.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/sending-money-panama-wire-transfer',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1606603715578-f1ca91e98b90?w=1200&q=80', width: 1200, height: 630, alt: 'Money transfer' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1606603715578-f1ca91e98b90?w=1200&q=80'],
     },
 };
+}
 
 const methodsUSToPA = [
     {

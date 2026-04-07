@@ -2,12 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Bus, Car, Zap, MapPin, AlertCircle, Navigation } from 'lucide-react';
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'getting-around-panama-city-guide';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Getting Around Panama City 2026: Metro, Uber, Bus & Taxi Guide',
     description: 'Transportation guide for Panama City. Metro, Metrobus, Uber, inDriver, taxis. How to navigate like a local.',
     keywords: 'Panama City transportation, metro Panama City, Uber Panama, taxi Panama, get around Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/getting-around-panama-city-guide',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/getting-around-panama-city-guide',
             'es': 'https://panamarealestatesale.com/es/blog/getting-around-panama-city-guide',
@@ -19,7 +25,7 @@ export const metadata: Metadata = {
         title: 'Getting Around Panama City 2026: Metro, Uber, Bus & Taxi Guide',
         description: 'Transportation guide for Panama City. Metro, Metrobus, Uber, inDriver, taxis. How to navigate like a local.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/getting-around-panama-city-guide',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1464207687429-7505649dae38?w=1200&q=80', width: 1200, height: 630, alt: 'Panama City transportation' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -31,6 +37,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1464207687429-7505649dae38?w=1200&q=80'],
     },
 };
+}
 
 const metro = [
     { line: 'Line 1', route: 'Albrook to San Isidro', status: 'Operating', notes: 'Original metro line. Clean, fast, safe.' },

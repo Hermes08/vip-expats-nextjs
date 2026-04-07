@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 
 
@@ -8,12 +9,18 @@ interface PageProps {
   };
 }
 
-export const metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'apostille-documents-panama-visa';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
   title: 'Apostille Documents Panama Visa 2026: State by State Guide',
   description: 'Get apostille for Panama visa. Which documents need apostille, where to get them, cost, processing time.',
   keywords: 'apostille Panama, apostille documents, Panama visa documents, notarization',
   alternates: {
-    canonical: 'https://panamarealestatesale.com/en/blog/apostille-documents-panama-visa',
+    canonical,
     languages: {
       'en': 'https://panamarealestatesale.com/en/blog/apostille-documents-panama-visa',
       'es': 'https://panamarealestatesale.com/es/blog/apostille-documents-panama-visa',
@@ -25,7 +32,7 @@ export const metadata = {
     title: 'Apostille Documents Panama Visa 2026: State by State Guide',
     description: 'Get apostille for Panama visa. Which documents need apostille, where to get them, cost, processing time.',
     type: 'article',
-    url: 'https://panamarealestatesale.com/en/blog/apostille-documents-panama-visa',
+    url: canonical,
     images: [{ url: 'https://images.unsplash.com/photo-1450101499163-c8917c7b16c3?w=1200&q=80', width: 1200, height: 630, alt: 'Apostille Documents Panama Visa 2026: State by State Guide' }],
     locale: 'en_US',
     siteName: 'VIP Expats Panama',
@@ -37,6 +44,7 @@ export const metadata = {
     images: ['https://images.unsplash.com/photo-1450101499163-c8917c7b16c3?w=1200&q=80'],
   },
 };
+}
 
 export default function ApostilleGuidePage({ params: { lang } }: PageProps) {
   return (

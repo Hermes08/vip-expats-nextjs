@@ -4,12 +4,18 @@ import { ArrowRight, CheckCircle, DollarSign, Heart, Globe, AlertCircle, MapPin,
 import { CostBarChart, PanamaCityScene } from '@/components/three/ThreeComponents';
 
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'panama-for-families-with-children';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Panama for Families 2026: Schools, Expat Kids, Safety, Lifestyle',
     description: 'Families moving to Panama. Schools, safety, kids activities, healthcare, lifestyle for expat families.',
     keywords: 'families in Panama, expat families Panama, schools in Panama, kids in Panama, family living Panama',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/panama-for-families-with-children',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/panama-for-families-with-children',
             'es': 'https://panamarealestatesale.com/es/blog/panama-for-families-with-children',
@@ -21,7 +27,7 @@ export const metadata: Metadata = {
         title: 'Panama for Families 2026: Schools, Expat Kids, Safety, Lifestyle',
         description: 'Families moving to Panama. Schools, safety, kids activities, healthcare, lifestyle for expat families.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/panama-for-families-with-children',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1200&q=80', width: 1200, height: 630, alt: 'Family in Panama' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -33,6 +39,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1200&q=80'],
     },
 };
+}
 
 const internationalSchools = [
     {

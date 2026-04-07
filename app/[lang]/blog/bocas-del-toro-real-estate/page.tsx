@@ -11,12 +11,18 @@ const bocasPriceData = [
     { label: 'Overwater Bungalows', value: 600000, color: '#b8902e' },
 ];
 
-export const metadata: Metadata = {
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+  const { lang } = await params;
+  const slug = 'bocas-del-toro-real-estate';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}/blog/${slug}`;
+
+  return {
     title: 'Bocas del Toro Real Estate 2026: Property Prices, Guide, Investment',
     description: 'Bocas del Toro real estate. Island properties, prices, investment opportunities, lifestyle, buying guide.',
     keywords: 'Bocas del Toro real estate, property Bocas del Toro, investment Bocas, houses for sale Bocas',
     alternates: {
-        canonical: 'https://panamarealestatesale.com/en/blog/bocas-del-toro-real-estate',
+        canonical,
         languages: {
             'en': 'https://panamarealestatesale.com/en/blog/bocas-del-toro-real-estate',
             'es': 'https://panamarealestatesale.com/es/blog/bocas-del-toro-real-estate',
@@ -28,7 +34,7 @@ export const metadata: Metadata = {
         title: 'Bocas del Toro Real Estate 2026: Property Prices, Guide, Investment',
         description: 'Bocas del Toro real estate. Island properties, prices, investment opportunities, lifestyle, buying guide.',
         type: 'article',
-        url: 'https://panamarealestatesale.com/en/blog/bocas-del-toro-real-estate',
+        url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1473093295203-cad00010cb78?w=1200&q=80', width: 1200, height: 630, alt: 'Bocas del Toro' }],
         locale: 'en_US',
         siteName: 'VIP Expats Panama',
@@ -40,6 +46,7 @@ export const metadata: Metadata = {
         images: ['https://images.unsplash.com/photo-1473093295203-cad00010cb78?w=1200&q=80'],
     },
 };
+}
 
 const propertyTypes = [
     {
