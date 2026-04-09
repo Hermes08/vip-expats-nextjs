@@ -9,12 +9,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const l = (lang === 'es' || lang === 'en') ? lang : 'en';
 
   const titles = {
-    en: 'Panama City Condos for Sale 2026: Prices, Neighborhoods & Listings',
-    es: 'Condos en Venta en Ciudad de Panamá 2026: Precios, Vecindarios y Listados',
+    en: 'Panama City Condos for Sale — Prices & Listings (2026)',
+    es: 'Condos en Venta en Ciudad de Panamá — Precios 2026',
   };
   const descriptions = {
-    en: 'Find Panama City Panama condos for sale. Compare Punta Pacifica, Costa del Este, El Cangrejo, Casco Viejo. Prices from $100K, expat buying guide.',
-    es: 'Encuentre condos en venta en Ciudad de Panamá. Compare Punta Pacífica, Costa del Este, El Cangrejo, Casco Viejo. Precios desde $100K, guía de compra para expats.',
+    en: 'Panama City condos for sale from $100K — compare Punta Pacifica, Costa del Este, El Cangrejo & Casco Viejo. Expat buying guide, neighborhood ratings & current listings. Browse now.',
+    es: 'Condos en venta en Ciudad de Panamá desde $100K — compare Punta Pacífica, Costa del Este, El Cangrejo y Casco Viejo. Guía para expats y listados actuales. Explore ahora.',
   };
 
   return {

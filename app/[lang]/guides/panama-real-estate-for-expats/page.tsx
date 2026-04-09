@@ -9,12 +9,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const l = (lang === 'es' || lang === 'en') ? lang : 'en';
 
   const titles = {
-    en: 'Panama Real Estate for Expats 2026: Complete Buying Guide',
-    es: 'Bienes Raíces en Panamá para Expats 2026: Guía Completa de Compra',
+    en: 'Panama Real Estate for Sale Expats — 2026 Buying Guide',
+    es: 'Bienes Raíces Panamá para Expats — Guía de Compra 2026',
   };
   const descriptions = {
-    en: 'Complete guide to buying Panama real estate as an expat. Equal ownership rights, USD economy, top neighborhoods, prices from $100K. Expert expat property guide.',
-    es: 'Guía completa para comprar bienes raíces en Panamá como expat. Derechos de propiedad iguales, economía en dólares, principales vecindarios, precios desde $100K.',
+    en: 'Panama real estate for sale for expats — same ownership rights as locals, USD economy, condos from $80K. Browse top neighborhoods, legal steps & visa-qualifying investments. Start your search now.',
+    es: 'Bienes raíces en Panamá para expats — mismos derechos que locales, economía en USD, condos desde $80K. Vecindarios top, proceso legal e inversiones para visa. Explore ahora.',
   };
 
   return {

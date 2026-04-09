@@ -9,12 +9,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const l = (lang === 'es' || lang === 'en') ? lang : 'en';
 
   const titles = {
-    en: 'Panama Real Estate 2026: Market Guide, Prices & Investment Opportunities',
-    es: 'Bienes Raíces en Panamá 2026: Guía del Mercado, Precios y Oportunidades',
+    en: 'Panama Real Estate — Homes, Condos & Land for Sale 2026',
+    es: 'Bienes Raíces Panamá — Casas, Condos y Terrenos 2026',
   };
   const descriptions = {
-    en: 'Complete Panama real estate guide. Market trends, property prices from $100K, top areas (Panama City, Boquete, Coronado), buying process, and investment ROI. Foreign buyers welcome.',
-    es: 'Guía completa de bienes raíces en Panamá. Tendencias del mercado, precios desde $100K, mejores zonas, proceso de compra y retorno de inversión.',
+    en: 'Panama real estate for sale — condos from $80K, beachfront homes, investment land. Compare Panama City, Boquete, Coronado & Bocas del Toro. Equal foreign ownership rights. Search properties now.',
+    es: 'Bienes raíces en Panamá — condos desde $80K, casas frente al mar, terrenos. Compare Ciudad de Panamá, Boquete, Coronado y Bocas. Mismos derechos para extranjeros. Busque ahora.',
   };
 
   return {

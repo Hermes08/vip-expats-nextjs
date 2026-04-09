@@ -87,6 +87,7 @@ export async function GET() {
         '/guides/panama-real-estate',
         '/guides/how-to-move-to-panama',
         '/guides/homes-for-sale-panama',
+        '/guides/panama-vs-costa-rica',
         // New SEO articles
         '/blog/boquete-panama-real-estate',
         '/blog/bocas-del-toro-real-estate',

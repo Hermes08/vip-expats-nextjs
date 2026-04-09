@@ -9,12 +9,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const l = (lang === 'es' || lang === 'en') ? lang : 'en';
 
   const titles = {
-    en: 'Expat Living in Panama 2026: Cost, Lifestyle, Safety & Neighborhoods',
-    es: 'Vivir como Expat en Panamá 2026: Costos, Estilo de Vida, Seguridad',
+    en: 'Expat Living in Panama — Cost, Safety & Lifestyle 2026',
+    es: 'Vida Expat en Panamá — Costos, Seguridad y Estilo 2026',
   };
   const descriptions = {
-    en: 'Everything you need to know about expat living in Panama. Cost of living from $1,500/mo, USD economy, world-class healthcare, best neighborhoods, visa options, and community life.',
-    es: 'Todo lo que necesita saber sobre vivir como expat en Panamá. Costo de vida desde $1,500/mes, economía en dólares, atención médica, mejores vecindarios y visas.',
+    en: 'Expat living in Panama starts at $1,500/mo — USD economy, world-class healthcare, safe neighborhoods & easy visas. Discover why 30,000+ expats chose Panama. Explore areas & properties now.',
+    es: 'Vivir como expat en Panamá desde $1,500/mes — economía en USD, atención médica, vecindarios seguros y visas fáciles. Descubra por qué 30,000+ expats eligieron Panamá.',
   };
 
   return {

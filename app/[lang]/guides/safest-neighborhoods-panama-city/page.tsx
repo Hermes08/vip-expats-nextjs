@@ -9,12 +9,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const l = (lang === 'es' || lang === 'en') ? lang : 'en';
 
   const titles = {
-    en: 'Safest Neighborhoods in Panama City, Panama 2026 | Expat Safety Guide',
-    es: 'Vecindarios Más Seguros de Ciudad de Panamá 2026 | Guía de Seguridad',
+    en: 'Safest Neighborhoods Panama City — Expat Guide 2026',
+    es: 'Vecindarios Más Seguros de Ciudad de Panamá 2026',
   };
   const descriptions = {
-    en: 'Discover the safest neighborhoods in Panama City, Panama for expats. Punta Pacifica, Costa del Este, Clayton & more. Crime data, gated communities, 24/7 security. Not Panama City, Florida.',
-    es: 'Descubra los vecindarios más seguros de Ciudad de Panamá para expats. Punta Pacífica, Costa del Este, Clayton y más. Datos de seguridad, comunidades cerradas.',
+    en: 'Safest neighborhoods in Panama City, Panama for expats — Punta Pacifica, Costa del Este, Clayton ranked. Crime data, gated communities, 24/7 security. Find your ideal area & browse properties.',
+    es: 'Vecindarios más seguros de Ciudad de Panamá para expats — Punta Pacífica, Costa del Este, Clayton. Datos de seguridad, comunidades cerradas. Encuentre su área ideal.',
   };
 
   return {
