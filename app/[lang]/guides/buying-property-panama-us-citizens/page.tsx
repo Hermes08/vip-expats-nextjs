@@ -9,12 +9,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const l = (lang === 'es' || lang === 'en') ? lang : 'en';
 
   const titles = {
-    en: 'Buying Property in Panama as a US Citizen (2026 Guide)',
-    es: 'Comprar Propiedad en Panamá — Guía para Estadounidenses 2026',
+    en: 'Buying Property in Panama as a US Citizen — Step-by-Step Process 2026',
+    es: 'Comprar Propiedad en Panamá como Estadounidense — Proceso Paso a Paso 2026',
   };
   const descriptions = {
-    en: 'Buying property in Panama as a US citizen is simple — no residency needed, same rights as locals. Step-by-step legal process, closing costs 2-5%, attorney guide. Browse listings & start today.',
-    es: 'Comprar propiedad en Panamá como estadounidense es simple — sin residencia, mismos derechos. Proceso legal paso a paso, costos de cierre 2-5%. Explore listados hoy.',
+    en: 'Complete guide to buying property in Panama as a US citizen. No residency required, same rights as locals. Step-by-step: title search, attorney selection, closing costs (2-5%), tax ID, bank account setup. Prices from $80K. Start today.',
+    es: 'Guía completa para comprar propiedad en Panamá como ciudadano estadounidense. Sin residencia requerida, mismos derechos. Paso a paso: búsqueda de título, abogado, costos de cierre (2-5%). Precios desde $80K.',
   };
 
   return {

@@ -9,12 +9,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const l = lang === 'es' ? 'es' : 'en';
     const domain = 'https://panamarealestatesale.com';
     const titles = {
-        en: 'Panama Pensionado Visa & Real Estate — Requirements 2026',
-        es: 'Visa Pensionado Panamá y Bienes Raíces — Requisitos 2026',
+        en: 'Panama Pensionado Visa & Real Estate — Requirements, Discounts & Property Guide 2026',
+        es: 'Visa Pensionado Panamá y Bienes Raíces — Requisitos, Descuentos y Propiedades 2026',
     };
     const descriptions = {
-        en: "Panama Pensionado Visa meets real estate — qualify with $1,000/mo pension or $750/mo + $100K property. 50% off entertainment, 25% off utilities. Full requirements, discounts & property options.",
-        es: 'Visa Pensionado Panamá y bienes raíces — califique con $1,000/mes de pensión o $750/mes + propiedad de $100K. Descuentos del 50% entretenimiento, 25% servicios. Requisitos completos.',
+        en: "Panama Pensionado Visa + real estate investment guide. Qualify with $1,000/mo pension or $750/mo + $100K property purchase. Get 50% off entertainment, 25% off utilities, 25% off flights. Full requirements, application steps, discount list, and visa-qualifying property options from $100K.",
+        es: 'Visa Pensionado Panamá + guía de inversión inmobiliaria. Califique con $1,000/mes de pensión o $750/mes + compra de propiedad de $100K. 50% entretenimiento, 25% servicios, 25% vuelos. Requisitos completos, pasos, descuentos y propiedades desde $100K.',
     };
     return {
         title: titles[l],

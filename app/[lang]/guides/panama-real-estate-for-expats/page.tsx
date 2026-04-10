@@ -9,12 +9,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const l = (lang === 'es' || lang === 'en') ? lang : 'en';
 
   const titles = {
-    en: 'Panama Real Estate for Sale Expats — 2026 Buying Guide',
-    es: 'Bienes Raíces Panamá para Expats — Guía de Compra 2026',
+    en: 'Panama Real Estate for Sale Expats — Prices, Neighborhoods & Legal Guide 2026',
+    es: 'Bienes Raíces Panamá para Expats — Precios, Barrios y Guía Legal 2026',
   };
   const descriptions = {
-    en: 'Panama real estate for sale for expats — same ownership rights as locals, USD economy, condos from $80K. Browse top neighborhoods, legal steps & visa-qualifying investments. Start your search now.',
-    es: 'Bienes raíces en Panamá para expats — mismos derechos que locales, economía en USD, condos desde $80K. Vecindarios top, proceso legal e inversiones para visa. Explore ahora.',
+    en: 'Find Panama real estate for sale as an expat. Same ownership rights as locals, USD economy, condos from $80K, beachfront homes from $150K. Compare Punta Pacifica, Coronado, Boquete — with legal steps, closing costs, and visa-qualifying investments.',
+    es: 'Encuentre bienes raíces en Panamá como expat. Mismos derechos que locales, economía en USD, condos desde $80K, casas frente al mar desde $150K. Compare Punta Pacífica, Coronado, Boquete — pasos legales, costos de cierre e inversiones para visa.',
   };
 
   return {

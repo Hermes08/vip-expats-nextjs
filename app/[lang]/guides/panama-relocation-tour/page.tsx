@@ -9,12 +9,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const l = (lang === 'es' || lang === 'en') ? lang : 'en';
 
   const titles = {
-    en: 'Panama Relocation Tour — Costs, Itineraries & Reviews 2026',
-    es: 'Tour de Reubicación a Panamá — Costos y Reseñas 2026',
+    en: 'Panama Relocation Tour 2026 — Compare Operators, Costs & What to Expect',
+    es: 'Tour de Reubicación a Panamá 2026 — Compare Operadores, Costos y Qué Esperar',
   };
   const descriptions = {
-    en: 'Panama relocation tour guide — compare operators from $2,600, 6-day itineraries, neighborhoods visited, real estate previews & visa guidance. Read reviews and book your exploratory trip.',
-    es: 'Guía de tours de reubicación a Panamá — compare operadores desde $2,600, itinerarios de 6 días, vecindarios, bienes raíces y visas. Lea reseñas y reserve.',
+    en: 'Compare Panama relocation tours: operators from $2,600 for 6-day all-inclusive trips. See neighborhoods (Boquete, Coronado, Panama City), meet expats, preview real estate, get visa guidance. Honest reviews, itinerary breakdown & booking tips.',
+    es: 'Compare tours de reubicación a Panamá: operadores desde $2,600 por viajes de 6 días todo incluido. Vea vecindarios (Boquete, Coronado, Ciudad de Panamá), conozca expats, vea propiedades. Reseñas honestas y tips de reserva.',
   };
 
   return {
