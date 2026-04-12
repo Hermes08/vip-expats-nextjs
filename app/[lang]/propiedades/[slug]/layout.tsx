@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
             canonical: `${domain}/${lang}/propiedades/${slug}`,
             languages: {
                 'en-US': `${domain}/en/propiedades/${slug}`,
-                'es-PA': `${domain}/es/propiedades/${slug}a,
+                'es-PA': `${domain}/es/propiedades/${slug}`,
                 'pt-BR': `${domain}/pt/propiedades/${slug}`,
                 'de-DE': `${domain}/de/propiedades/${slug}`,
                 'x-default': `${domain}/en/propiedades/${slug}`,
