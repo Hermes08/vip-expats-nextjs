@@ -31,7 +31,7 @@ const CONTACT_TEXT: Record<string, {
     badge: 'Secure Infrastructure',
     heading: 'DIRECT',
     headingGold: 'CONCIERGE',
-    subheading: 'Our team of bilingual experts is ready to assist in every phase of your Panama move. No generic support—direct elite intelligence.',
+    subheading: 'Our team of bilingual experts is ready to assist in every phase of your Panama move. No generic supportâdirect elite intelligence.',
     fullName: 'Full Name',
     email: 'Email',
     phone: 'WhatsApp / Phone',
@@ -51,32 +51,32 @@ const CONTACT_TEXT: Record<string, {
     badge: 'Infraestructura Segura',
     heading: 'ACCESO',
     headingGold: 'CONCIERGE',
-    subheading: 'Nuestro equipo de expertos bilingües está listo para asistirle en cada fase de su mudanza a Panamá. Sin soporte genérico — inteligencia elite directa.',
+    subheading: 'Nuestro equipo de expertos bilingÃ¼es estÃ¡ listo para asistirle en cada fase de su mudanza a PanamÃ¡. Sin soporte genÃ©rico â inteligencia elite directa.',
     fullName: 'Nombre Completo',
-    email: 'Correo Electrónico',
-    phone: 'WhatsApp / Teléfono',
-    propertyOfInterest: 'Propiedad de Interés',
+    email: 'Correo ElectrÃ³nico',
+    phone: 'WhatsApp / TelÃ©fono',
+    propertyOfInterest: 'Propiedad de InterÃ©s',
     selectProperty: 'Seleccione una propiedad...',
     message: 'Mensaje',
     messagePlaceholder: 'Estoy interesado en...',
     sendBtn: 'ENVIAR CONSULTA',
     directContact: 'Contacto Directo',
-    callUs: 'Llámenos',
+    callUs: 'LlÃ¡menos',
     sendMessage: 'Enviar Mensaje',
-    successMsg: '¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.',
-    errorMsg: 'Error al enviar el mensaje. Por favor, inténtelo de nuevo.',
+    successMsg: 'Â¡Mensaje enviado con Ã©xito! Nos pondremos en contacto pronto.',
+    errorMsg: 'Error al enviar el mensaje. Por favor, intÃ©ntelo de nuevo.',
   },
   pt: {
     topBar: 'Fale com um Especialista Hoje',
     badge: 'Infraestrutura Segura',
     heading: 'ACESSO',
     headingGold: 'CONCIERGE',
-    subheading: 'Nossa equipe de especialistas bilíngues está pronta para ajudá-lo em cada fase da sua mudança para o Panamá. Sem suporte genérico — inteligência elite direta.',
+    subheading: 'Nossa equipe de especialistas bilÃ­ngues estÃ¡ pronta para ajudÃ¡-lo em cada fase da sua mudanÃ§a para o PanamÃ¡. Sem suporte genÃ©rico â inteligÃªncia elite direta.',
     fullName: 'Nome Completo',
     email: 'E-mail',
     phone: 'WhatsApp / Telefone',
-    propertyOfInterest: 'Imóvel de Interesse',
-    selectProperty: 'Selecione um imóvel...',
+    propertyOfInterest: 'ImÃ³vel de Interesse',
+    selectProperty: 'Selecione um imÃ³vel...',
     message: 'Mensagem',
     messagePlaceholder: 'Tenho interesse em...',
     sendBtn: 'ENVIAR CONSULTA',
@@ -91,14 +91,14 @@ const CONTACT_TEXT: Record<string, {
     badge: 'Sichere Infrastruktur',
     heading: 'DIREKTER',
     headingGold: 'CONCIERGE',
-    subheading: 'Unser Team aus zweisprachigen Experten ist bereit, Ihnen in jeder Phase Ihres Umzugs nach Panama zu helfen. Kein generischer Support — direkte Elite-Intelligenz.',
-    fullName: 'Vollständiger Name',
+    subheading: 'Unser Team aus zweisprachigen Experten ist bereit, Ihnen in jeder Phase Ihres Umzugs nach Panama zu helfen. Kein generischer Support â direkte Elite-Intelligenz.',
+    fullName: 'VollstÃ¤ndiger Name',
     email: 'E-Mail',
     phone: 'WhatsApp / Telefon',
     propertyOfInterest: 'Immobilie von Interesse',
-    selectProperty: 'Immobilie auswählen...',
+    selectProperty: 'Immobilie auswÃ¤hlen...',
     message: 'Nachricht',
-    messagePlaceholder: 'Ich interessiere mich für...',
+    messagePlaceholder: 'Ich interessiere mich fÃ¼r...',
     sendBtn: 'ANFRAGE SENDEN',
     directContact: 'Direktkontakt',
     callUs: 'Anrufen',
@@ -114,7 +114,7 @@ const ContactPageContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white">
-            {/* Talk to an Expert — top bar */}
+            {/* Talk to an Expert â top bar */}
             <div className="bg-brand-GOLD/10 border-b border-brand-GOLD/20 py-4 px-4">
               <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-center">
                 <span className="text-brand-GOLD font-black text-xs uppercase tracking-[0.3em]">
@@ -133,6 +133,11 @@ const ContactPageContent: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 min-h-[44px] text-brand-950 font-bold text-sm hover:text-green-600 transition-colors"
+                    onClick={() => {
+                        if (typeof window !== 'undefined' && typeof (window as unknown as { gtag?: Function }).gtag === 'function') {
+                            (window as unknown as { gtag: Function }).gtag('event', 'contact_click', { event_category: 'Top Bar', event_label: 'WhatsApp' });
+                        }
+                    }}
                   >
                     <MessageCircle size={14} className="text-green-400" />
                     WhatsApp
@@ -186,6 +191,14 @@ const ContactPageContent: React.FC = () => {
                                 const { supabase } = await import('@/lib/supabase');
                                 const { error } = await supabase.from('leads').insert([data]);
                                 if (error) throw error;
+                                // GA4 conversion event — fired on every successful lead submission
+                                if (typeof window !== 'undefined' && typeof (window as unknown as { gtag?: Function }).gtag === 'function') {
+                                    (window as unknown as { gtag: Function }).gtag('event', 'generate_lead', {
+                                        event_category: 'Contact Form',
+                                        event_label: data.project_interest || 'General Inquiry',
+                                        value: 1,
+                                    });
+                                }
                                 alert(ct.successMsg);
                                 form.reset();
                             } catch (err) {
@@ -211,7 +224,7 @@ const ContactPageContent: React.FC = () => {
                                     <option value="" className="text-brand-950">{ct.selectProperty}</option>
                                     <option value="Pino Alto (Boquete)" className="text-brand-950">Pino Alto (Boquete)</option>
                                     <option value="Westin Residences (Playa Bonita)" className="text-brand-950">Westin Residences (Playa Bonita)</option>
-                                    <option value="Playa Escondida (Colón)" className="text-brand-950">Playa Escondida (Colón)</option>
+                                    <option value="Playa Escondida (ColÃ³n)" className="text-brand-950">Playa Escondida (ColÃ³n)</option>
                                     <option value="Buenaventura (Rio Hato)" className="text-brand-950">Buenaventura (Rio Hato)</option>
                                     <option value="Margaritaville (Chame)" className="text-brand-950">Margaritaville (Chame)</option>
                                 </select>
