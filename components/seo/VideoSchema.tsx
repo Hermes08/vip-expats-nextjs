@@ -18,13 +18,16 @@ export default function VideoSchema({ videoUrl, name, description, uploadDate, t
 
     const finalThumbnail = thumbnailUrl || `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
 
+    // Ensure uploadDate is ISO 8601 with timezone (Google requirement)
+    const isoUploadDate = uploadDate.includes('T') ? uploadDate : `${uploadDate}T00:00:00Z`;
+
     const schema = {
         "@context": "https://schema.org",
         "@type": "VideoObject",
         "name": name,
         "description": description,
         "thumbnailUrl": [finalThumbnail],
-        "uploadDate": uploadDate,
+        "uploadDate": isoUploadDate,
         "contentUrl": videoUrl,
         "embedUrl": `https://www.youtube.com/embed/${videoId}`
     };
