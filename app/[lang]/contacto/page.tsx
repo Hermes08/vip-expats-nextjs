@@ -10,11 +10,15 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     const titles = {
         es: 'Contact Panama Real Estate Experts | ExpatRockstars Panama',
         en: 'Contact Panama Real Estate Experts | ExpatRockstars Panama',
+        pt: 'Contato com Especialistas em Imóveis no Panamá | ExpatRockstars Panama',
+        de: 'Kontakt zu Panama Immobilienexperten | ExpatRockstars Panama',
     };
 
     const descriptions = {
         es: '¿Listo para invertir en bienes raíces en Panamá? Conecta con nuestros expertos en reubicación y propiedades de lujo. Agenda una consulta privada hoy.',
         en: 'Ready to invest in Panama Real Estate? Connect with our relocation and luxury property experts. Schedule a private consultation today and begin your journey.',
+        pt: 'Pronto para investir em imóveis no Panamá? Conecte-se com nossos especialistas em realocação e propriedades de luxo. Agende uma consulta privada hoje.',
+        de: 'Bereit, in Panama-Immobilien zu investieren? Verbinden Sie sich mit unseren Experten für Umzug und Luxusimmobilien. Vereinbaren Sie noch heute eine private Beratung.',
     };
 
     return {
@@ -25,6 +29,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             languages: {
                 'en-US': `${domain}/en/contacto`,
                 'es-PA': `${domain}/es/contacto`,
+                'pt-BR': `${domain}/pt/contacto`,
+                'de-DE': `${domain}/de/contacto`,
+                'x-default': `${domain}/en/contacto`,
             },
         },
         openGraph: {
