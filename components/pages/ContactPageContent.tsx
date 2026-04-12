@@ -31,7 +31,7 @@ const CONTACT_TEXT: Record<string, {
     badge: 'Secure Infrastructure',
     heading: 'DIRECT',
     headingGold: 'CONCIERGE',
-    subheading: 'Our team of bilingual experts is ready to assist in every phase of your Panama move. No generic supportâdirect elite intelligence.',
+    subheading: 'Our team of bilingual experts is ready to assist in every phase of your Panama move. No generic support—direct elite intelligence.',
     fullName: 'Full Name',
     email: 'Email',
     phone: 'WhatsApp / Phone',
@@ -51,32 +51,32 @@ const CONTACT_TEXT: Record<string, {
     badge: 'Infraestructura Segura',
     heading: 'ACCESO',
     headingGold: 'CONCIERGE',
-    subheading: 'Nuestro equipo de expertos bilingÃ¼es estÃ¡ listo para asistirle en cada fase de su mudanza a PanamÃ¡. Sin soporte genÃ©rico â inteligencia elite directa.',
+    subheading: 'Nuestro equipo de expertos bilingües está listo para asistirle en cada fase de su mudanza a Panamá. Sin soporte genérico — inteligencia elite directa.',
     fullName: 'Nombre Completo',
-    email: 'Correo ElectrÃ³nico',
-    phone: 'WhatsApp / TelÃ©fono',
-    propertyOfInterest: 'Propiedad de InterÃ©s',
+    email: 'Correo Electrónico',
+    phone: 'WhatsApp / Teléfono',
+    propertyOfInterest: 'Propiedad de Interés',
     selectProperty: 'Seleccione una propiedad...',
     message: 'Mensaje',
     messagePlaceholder: 'Estoy interesado en...',
     sendBtn: 'ENVIAR CONSULTA',
     directContact: 'Contacto Directo',
-    callUs: 'LlÃ¡menos',
+    callUs: 'Llámenos',
     sendMessage: 'Enviar Mensaje',
-    successMsg: 'Â¡Mensaje enviado con Ã©xito! Nos pondremos en contacto pronto.',
-    errorMsg: 'Error al enviar el mensaje. Por favor, intÃ©ntelo de nuevo.',
+    successMsg: '¡Mensaje enviado con éxito! Nos pondremos en contacto pronto.',
+    errorMsg: 'Error al enviar el mensaje. Por favor, inténtelo de nuevo.',
   },
   pt: {
     topBar: 'Fale com um Especialista Hoje',
     badge: 'Infraestrutura Segura',
     heading: 'ACESSO',
     headingGold: 'CONCIERGE',
-    subheading: 'Nossa equipe de especialistas bilÃ­ngues estÃ¡ pronta para ajudÃ¡-lo em cada fase da sua mudanÃ§a para o PanamÃ¡. Sem suporte genÃ©rico â inteligÃªncia elite direta.',
+    subheading: 'Nossa equipe de especialistas bilíngues está pronta para ajudá-lo em cada fase da sua mudança para o Panamá. Sem suporte genérico — inteligência elite direta.',
     fullName: 'Nome Completo',
     email: 'E-mail',
     phone: 'WhatsApp / Telefone',
-    propertyOfInterest: 'ImÃ³vel de Interesse',
-    selectProperty: 'Selecione um imÃ³vel...',
+    propertyOfInterest: 'Imóvel de Interesse',
+    selectProperty: 'Selecione um imóvel...',
     message: 'Mensagem',
     messagePlaceholder: 'Tenho interesse em...',
     sendBtn: 'ENVIAR CONSULTA',
@@ -91,14 +91,14 @@ const CONTACT_TEXT: Record<string, {
     badge: 'Sichere Infrastruktur',
     heading: 'DIREKTER',
     headingGold: 'CONCIERGE',
-    subheading: 'Unser Team aus zweisprachigen Experten ist bereit, Ihnen in jeder Phase Ihres Umzugs nach Panama zu helfen. Kein generischer Support â direkte Elite-Intelligenz.',
-    fullName: 'VollstÃ¤ndiger Name',
+    subheading: 'Unser Team aus zweisprachigen Experten ist bereit, Ihnen in jeder Phase Ihres Umzugs nach Panama zu helfen. Kein generischer Support — direkte Elite-Intelligenz.',
+    fullName: 'Vollständiger Name',
     email: 'E-Mail',
     phone: 'WhatsApp / Telefon',
     propertyOfInterest: 'Immobilie von Interesse',
-    selectProperty: 'Immobilie auswÃ¤hlen...',
+    selectProperty: 'Immobilie auswählen...',
     message: 'Nachricht',
-    messagePlaceholder: 'Ich interessiere mich fÃ¼r...',
+    messagePlaceholder: 'Ich interessiere mich für...',
     sendBtn: 'ANFRAGE SENDEN',
     directContact: 'Direktkontakt',
     callUs: 'Anrufen',
@@ -114,7 +114,7 @@ const ContactPageContent: React.FC = () => {
 
     return (
         <div className="pt-24 min-h-screen bg-white">
-            {/* Talk to an Expert â top bar */}
+            {/* Talk to an Expert — top bar */}
             <div className="bg-brand-GOLD/10 border-b border-brand-GOLD/20 py-4 px-4">
               <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 text-center">
                 <span className="text-brand-GOLD font-black text-xs uppercase tracking-[0.3em]">
@@ -224,7 +224,7 @@ const ContactPageContent: React.FC = () => {
                                     <option value="" className="text-brand-950">{ct.selectProperty}</option>
                                     <option value="Pino Alto (Boquete)" className="text-brand-950">Pino Alto (Boquete)</option>
                                     <option value="Westin Residences (Playa Bonita)" className="text-brand-950">Westin Residences (Playa Bonita)</option>
-                                    <option value="Playa Escondida (ColÃ³n)" className="text-brand-950">Playa Escondida (ColÃ³n)</option>
+                                    <option value="Playa Escondida (Colón)" className="text-brand-950">Playa Escondida (Colón)</option>
                                     <option value="Buenaventura (Rio Hato)" className="text-brand-950">Buenaventura (Rio Hato)</option>
                                     <option value="Margaritaville (Chame)" className="text-brand-950">Margaritaville (Chame)</option>
                                 </select>
@@ -244,14 +244,30 @@ const ContactPageContent: React.FC = () => {
                         <div className="card-light rounded-3xl p-7 border-brand-100 bg-brand-50/40">
                             <h3 className="text-xs font-black text-brand-GOLD mb-6 uppercase tracking-[0.3em]">{ct.directContact}</h3>
                             <div className="space-y-5">
-                                <a href={`tel:${CONTACT_INFO.phone}`} className="flex items-center gap-4 group">
+                                <a
+                                    href={`tel:${CONTACT_INFO.phone}`}
+                                    className="flex items-center gap-4 group"
+                                    onClick={() => {
+                                        if (typeof window !== 'undefined' && typeof (window as unknown as { gtag?: Function }).gtag === 'function') {
+                                            (window as unknown as { gtag: Function }).gtag('event', 'contact_click', { event_category: 'Direct Contact', event_label: 'Phone Call' });
+                                        }
+                                    }}
+                                >
                                     <div className="p-3 bg-brand-50 rounded-full group-hover:bg-brand-GOLD group-hover:text-brand-900 transition-all text-brand-TEAL"><Phone size={18} /></div>
                                     <div>
                                         <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">{ct.callUs}</p>
                                         <p className="font-bold text-brand-950 text-sm">{CONTACT_INFO.phone}</p>
                                     </div>
                                 </a>
-                                <a href={`https://wa.me/${CONTACT_INFO.whatsapp}`} className="flex items-center gap-4 group">
+                                <a
+                                    href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
+                                    className="flex items-center gap-4 group"
+                                    onClick={() => {
+                                        if (typeof window !== 'undefined' && typeof (window as unknown as { gtag?: Function }).gtag === 'function') {
+                                            (window as unknown as { gtag: Function }).gtag('event', 'contact_click', { event_category: 'Direct Contact', event_label: 'WhatsApp' });
+                                        }
+                                    }}
+                                >
                                     <div className="p-3 bg-brand-50 rounded-full group-hover:bg-green-600 group-hover:text-white transition-all text-brand-TEAL"><MessageCircle size={18} /></div>
                                     <div>
                                         <p className="text-[10px] text-slate-500 font-bold uppercase tracking-widest">WhatsApp</p>
