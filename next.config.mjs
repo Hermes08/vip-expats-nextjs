@@ -1,3 +1,4 @@
+// build: 2026-04-12T01:34:57.807Z
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
