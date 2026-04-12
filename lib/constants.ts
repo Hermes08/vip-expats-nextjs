@@ -844,7 +844,7 @@ export const PROJECTS: Project[] = [
           zh: ['3 卧室 + 书房', '4 浴室', '双层高']
         }
       }
-    ]    ],
+    ],
     highlights: {
       en: ['Three Ecosystems', '7,000m2 Amenities', 'Mallol Architects', 'Urban Porosity'],
       es: ['Tres Ecosistemas', '7,000m2 Amenidades', 'Arquitectura Mallol', 'Porosidad Urbana'],
