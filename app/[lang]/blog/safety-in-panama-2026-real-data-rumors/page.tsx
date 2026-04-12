@@ -9,8 +9,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const canonical = `${domain}/${lang}/blog/${slug}`;
 
   return {
-    title: 'Safety in Panama 2026: Crime Data, Safe Areas, Real Facts',
-    description: 'Safety in Panama 2026. Crime statistics, safe neighborhoods, security tips, expat safety guide.',
+    title: 'Is Panama Safe in 2026? Real Crime Data & Safe Expat Areas',
+    description: 'Panama is safer than most headlines suggest — real 2026 crime stats, the 5 safest expat neighborhoods in Panama City, and honest tips from people who live there.',
     keywords: 'safety Panama, crime Panama, safe neighborhoods Panama, expat safety, safety in Panama City',
     alternates: {
         canonical,
@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         },
     },
     openGraph: {
-        title: 'Safety in Panama 2026: Crime Data, Safe Areas, Real Facts',
-        description: 'Safety in Panama 2026. Crime statistics, safe neighborhoods, security tips, expat safety guide.',
+        title: 'Is Panama Safe in 2026? Real Crime Data & Safe Expat Areas',
+        description: 'Panama is safer than most headlines suggest — real 2026 crime stats, the 5 safest expat neighborhoods in Panama City, and honest tips from people who live there.',
         type: 'article',
         url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1521737852567-6949f3f9f7e3?w=1200&q=80', width: 1200, height: 630, alt: 'Safety information' }],
@@ -32,8 +32,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Safety in Panama 2026: Crime Data, Safe Areas, Real Facts',
-        description: 'Safety in Panama 2026. Crime statistics, safe neighborhoods, security tips, expat safety guide.',
+        title: 'Is Panama Safe in 2026? Real Crime Data & Safe Expat Areas',
+        description: 'Panama is safer than most headlines suggest — real 2026 crime stats, the 5 safest expat neighborhoods in Panama City, and honest tips from people who live there.',
         images: ['https://images.unsplash.com/photo-1521737852567-6949f3f9f7e3?w=1200&q=80'],
     },
 };
