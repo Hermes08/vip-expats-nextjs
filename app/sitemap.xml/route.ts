@@ -33,6 +33,25 @@ function parseDurationToSeconds(durationStr: string): number {
     return 0;
 }
 
+async function getPublishedListingSlugs(): Promise<string[]> {
+    try {
+        const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+        const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+        if (!supabaseUrl || !supabaseKey || supabaseUrl.includes('tu-proyecto') || supabaseUrl.includes('placeholder')) {
+            return [];
+        }
+        const res = await fetch(
+            `${supabaseUrl}/rest/v1/listings?select=slug&published=eq.true`,
+            { headers: { apikey: supabaseKey, Authorization: `Bearer ${supabaseKey}` }, next: { revalidate: 3600 } }
+        );
+        if (!res.ok) return [];
+        const data: { slug: string }[] = await res.json();
+        return data.map(d => d.slug).filter(Boolean);
+    } catch {
+        return [];
+    }
+}
+
 export async function GET() {
     const baseUrl = 'https://panamarealestatesale.com';
     const languages = ['en', 'es', 'pt', 'de'];
@@ -147,14 +166,29 @@ export async function GET() {
     <url>
         <loc>${url}</loc>
         <lastmod>${lastMod}</lastmod>
-        <changefreq>weekly</changefreq>
+ 0      <changefreq>weekly</changefreq>
         <priority>0.9</priority>${videoBlock}
     </url>`;
         });
     });
 
 
-    // 3. Blog Posts
+    // 3. Listing Pages (from Supabase — dynamic, published only)
+    const listingSlugs = await getPublishedListingSlugs();
+    languages.forEach(lang => {
+        listingSlugs.forEach(slug => {
+            const url = `${baseUrl}/${lang}/propiedades/${slug}`;
+            xml += `
+    <url>
+        <loc>${url}</loc>
+        <lastmod>${new Date().toISOString()}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+    </url>`;
+        });
+    });
+
+    // 5. Blog Posts
     languages.forEach(lang => {
         BLOG_POSTS.forEach(post => {
             const url = `${baseUrl}/${lang}/blog/${post.slug}`;
