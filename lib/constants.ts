@@ -768,10 +768,10 @@ export const PROJECTS: Project[] = [
     videoUrl: 'https://www.youtube.com/watch?v=yrqNyWJ2d_s',
     floorplans: [
       {
-        name: { en: 'Model A - Studio', es: 'Modelo A - Estudio', zh: 'A型' },
-        size: '65 m2',
+        name: { en: 'Model A - 65m²', es: 'Modelo A - 65m²', zh: 'A型 - 65m²' },
+        size: '65 m²',
         price: 342000,
-        image: '/images/placeholders/studio_apartment_floorplan.png',
+        image: 'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d41c5cbb65b9319875ad1a_65m.png',
         characteristics: {
           en: ['1 Bed', '1 Bath', 'Terrace', '3.2m Ceilings'],
           es: ['1 Recámara', '1 Baño', 'Terraza', 'Techos de 3.2m'],
@@ -779,58 +779,95 @@ export const PROJECTS: Project[] = [
         }
       },
       {
-        name: { en: 'Model B - 1 Bed Plus', es: 'Modelo B - 1 Rec +', zh: 'B型' },
-        size: '89 m2',
+        name: { en: 'Model B - 89m²', es: 'Modelo B - 89m²', zh: 'B型 - 89m²' },
+        size: '89 m²',
         price: 372000,
-        image: '/images/placeholders/modern_floorplan_1.png',
+        image: 'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d41c5b58adadb63539d5bc_89m.png',
         characteristics: {
-          en: ['1 Bed + Den', '2 Baths', '12m2 Terrace', 'Walk-in Closet'],
-          es: ['1 Rec + Den', '2 Baños', 'Terraza 12m2', 'Walk-in Closet'],
+          en: ['1 Bed + Den', '2 Baths', '12m² Terrace', 'Walk-in Closet'],
+          es: ['1 Rec + Den', '2 Baños', 'Terraza 12m²', 'Walk-in Closet'],
           zh: ['1 卧室 + 书房', '2 浴室', '露台']
         }
       },
       {
-        name: { en: 'Model C - 2 Bed Classic', es: 'Modelo C - 2 Rec Clásico', zh: 'C型' },
-        size: '97 m2',
+        name: { en: 'Model C - 97m²', es: 'Modelo C - 97m²', zh: 'C型 - 97m²' },
+        size: '97 m²',
         price: 417000,
-        image: '/images/placeholders/modern_floorplan_1.png',
+        image: 'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d41c5b71ab92a1a740cce1_97m.png',
         characteristics: {
-          en: ['2-3 Beds', '2.5 Baths', '15m2 Terrace', 'Maid Option'],
-          es: ['2-3 Recámaras', '2.5 Baños', 'Terraza 15m2', 'Opción Empleada'],
-          zh: ['2-3 卧室', '2.5 浴室', '露台']
+          en: ['2 Beds', '2.5 Baths', '15m² Terrace', 'Maid Option'],
+          es: ['2 Recámaras', '2.5 Baños', 'Terraza 15m²', 'Opción Empleada'],
+          zh: ['2 卧室', '2.5 浴室', '露台']
         }
       },
       {
-        name: { en: 'Model E - 3 Bed Family', es: 'Modelo E - 3 Rec Familiar', zh: 'E型' },
-        size: '114 m2',
-        price: 498000,
-        image: '/images/placeholders/luxury_villa_floorplan.png',
+        name: { en: 'Model D - 100m²', es: 'Modelo D - 100m²', zh: 'D型 - 100m²' },
+        size: '100 m²',
+        price: 435000,
+        image: 'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d41c5c5b22fbaa8592d849_100m.png',
         characteristics: {
-          en: ['3 Beds', '3 Baths', '20m2 Terrace', 'Service Room'],
-          es: ['3 Recámaras', '3 Baños', 'Terraza 20m2', 'Cuarto de Servicio'],
+          en: ['2 Beds', '2.5 Baths', '15m² Terrace', 'Walk-in Closet'],
+          es: ['2 Recámaras', '2.5 Baños', 'Terraza 15m²', 'Walk-in Closet'],
+          zh: ['2 卧室', '2.5 浴室', '露台']
+        }
+      },
+      {
+        name: { en: 'Model E - 114m²', es: 'Modelo E - 114m²', zh: 'E型 - 114m²' },
+        size: '114 m²',
+        price: 498000,
+        image: 'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d41c5dbb65b9319875af7f_114m.png',
+        characteristics: {
+          en: ['3 Beds', '3 Baths', '20m² Terrace', 'Service Room'],
+          es: ['3 Recámaras', '3 Baños', 'Terraza 20m²', 'Cuarto de Servicio'],
           zh: ['3 卧室', '3 浴室', '露台']
         }
       },
       {
-        name: { en: 'Model G - Penthouse', es: 'Modelo G - Penthouse', zh: 'G型' },
-        size: '156 m2',
+        name: { en: 'Model F - 130m²', es: 'Modelo F - 130m²', zh: 'F型 - 130m²' },
+        size: '130 m²',
+        price: 580000,
+        image: 'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d41c5d04989450dddd8dea_130m.png',
+        characteristics: {
+          en: ['3 Beds', '3 Baths', '25m² Terrace', 'Walk-in Closet'],
+          es: ['3 Recámaras', '3 Baños', 'Terraza 25m²', 'Walk-in Closet'],
+          zh: ['3 卧室', '3 浴室', '露台']
+        }
+      },
+      {
+        name: { en: 'Model G - Penthouse 156m²', es: 'Modelo G - Penthouse 156m²', zh: 'G型 Penthouse - 156m²' },
+        size: '156 m²',
         price: 695000,
-        image: '/images/placeholders/luxury_villa_floorplan.png',
+        image: 'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d41c5e729d61d6e649d2aa_156m.png',
         characteristics: {
           en: ['3 Beds + Den', '4 Baths', 'Double Height', 'Rooftop Access'],
           es: ['3 Rec + Den', '4 Baños', 'Doble Altura', 'Acceso Rooftop'],
-          zh: ['3 卧室 + 书房', '4 浴室', '双倍层高']
+          zh: ['3 卧室 + 书房', '4 浴室', '双层高']
         }
       }
-    ],
+    ]    ],
     highlights: {
       en: ['Three Ecosystems', '7,000m2 Amenities', 'Mallol Architects', 'Urban Porosity'],
       es: ['Tres Ecosistemas', '7,000m2 Amenidades', 'Arquitectura Mallol', 'Porosidad Urbana'],
       zh: ['三大生态系统', '7,000平米设施', 'Mallol建筑', '城市孔隙度']
     },
     images: [
-      'https://thepanamalink.com/wp-content/uploads/2024/05/Bioma-Costa-del-Este.jpg',
-      'https://thepanamalink.com/wp-content/uploads/2024/05/Bioma-Amenities.jpg'
+      'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d67b8ca9596956b786fa3d_280623_BIOMA_REMATE05.webp',
+      'https://www.the-velopers.com/hubfs/PROYECTO-BIOMA-1.png',
+      'https://www.the-velopers.com/hubfs/PROYECTO-BIOMA-2.jpg',
+      'https://www.the-velopers.com/hubfs/PROYECTO-BIOMA-3.jpg',
+      'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d6c5bcf12b478f4cd6cf88_APTO_01.webp',
+      'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d6c5bc47c23330b7208ce7_APTO_02.webp',
+      'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d6c5bf456341124ba71381_APTO_03.webp',
+      'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d6c5bef8ffba2383101893_APTO_04.webp',
+      'https://www.the-velopers.com/hubfs/Proyecto-Pool-1.png',
+      'https://www.the-velopers.com/hubfs/BIOMA_Golf-simulator-web-b.jpg',
+      'https://www.the-velopers.com/hubfs/Outdoor-Cinema.jpg',
+      'https://www.the-velopers.com/hubfs/Music-Studio.jpg',
+      'https://www.the-velopers.com/hubfs/Proyecto-Terrarium-1.png',
+      'https://www.the-velopers.com/hubfs/Proyecto-Terrarium-2.png',
+      'https://www.the-velopers.com/hubfs/Proyecto-Kid-park.png',
+      'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64a08cb061f8ca9a1eb15797_VEL_ISO%20TERRAZA%20CENA%40300x.webp',
+      'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64a08cb0ab26229b1706c5c2_VEL_ISO%20TERRAZA%20PISCINA%40300x.webp',
     ],
     amenities: {
       en: ['Nature Pool', 'Bowling Alley', 'Sky Bar', 'Coworking Habitats'],
