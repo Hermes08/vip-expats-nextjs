@@ -10,7 +10,7 @@ import ScrollAnimationObserver from "@/components/ScrollAnimationObserver";
 import ZeroGravityWrapper from '@/components/GoldParticles/ZeroGravityWrapper';
 import SmoothScroll from "@/components/providers/SmoothScroll";
 import OrganizationSchema from '@/components/seo/OrganizationSchema';
-// WhatsAppFloat removed — WA button is rendered inside MainLayout at bottom-left to avoid overlap with StickyCTA
+// WhatsAppFloat removed â WA button is rendered inside MainLayout at bottom-left to avoid overlap with StickyCTA
 
 const inter = Inter({
   variable: "--font-inter",
@@ -41,21 +41,24 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const pathname = headersList.get('x-pathname') || `/${lang}`;
 
   const titles = {
-    es: "Bienes Raíces en Panamá 2026 | Propiedades de Lujo e Inversión VIP",
+    es: "Bienes RaÃ­ces en PanamÃ¡ 2026 | Propiedades de Lujo e InversiÃ³n VIP",
     en: "Panama Real Estate for Sale 2026 | Luxury Beachfront & City Investment",
-    pt: "Imóveis no Panamá 2026 | Propriedades de Luxo e Investimento de Alto Rendimento",
+    pt: "ImÃ³veis no PanamÃ¡ 2026 | Propriedades de Luxo e Investimento de Alto Rendimento",
     de: "Panama Immobilien 2026 | Luxus Meerblick & Stadt Investitionen"
   };
 
   const descriptions = {
-    es: "Descubra las mejores propiedades en Panamá para 2026. Lujo frente al mar, inversiones de alto rendimiento y asesoría experta para su próximo activo inmobiliario.",
+    es: "Descubra las mejores propiedades en PanamÃ¡ para 2026. Lujo frente al mar, inversiones de alto rendimiento y asesorÃ­a experta para su prÃ³ximo activo inmobiliario.",
     en: "Explore the best Panama real estate for sale in 2026. From luxury beachfront condos to high-yield city investments, secure your dream home or ROI asset with us.",
-    pt: "Explore os melhores imóveis no Panamá para 2026. De condomínios frente ao mar de luxo a investimentos imobiliários de alto rendimento.",
-    de: "Entdecken Sie die besten Panama-Immobilien 2026. Von luxuriösen Strandwohnungen bis zu hochrentablen Stadtinvestitionen."
+    pt: "Explore os melhores imÃ³veis no PanamÃ¡ para 2026. De condomÃ­nios frente ao mar de luxo a investimentos imobiliÃ¡rios de alto rendimento.",
+    de: "Entdecken Sie die besten Panama-Immobilien 2026. Von luxuriÃ¶sen Strandwohnungen bis zu hochrentablen Stadtinvestitionen."
   };
 
   const domain = "https://panamarealestatesale.com";
   const canonicalUrl = `${domain}${pathname}`;
+  // Strip the leading lang segment to get the page-relative path
+  // e.g. '/en/blog/foo' → '/blog/foo', '/en' → ''
+  const langPath = pathname.replace(new RegExp(`^/${lang}`), '') || '';
 
   return {
     title: titles[lang as keyof typeof titles] || titles.es,
@@ -63,11 +66,11 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     alternates: {
       canonical: canonicalUrl,
       languages: {
-        'en-US': `${domain}/en`,
-        'es-PA': `${domain}/es`,
-        'pt-BR': `${domain}/pt`,
-        'de-DE': `${domain}/de`,
-        'x-default': `${domain}/es`,
+        'en-US': `${domain}/en${langPath}`,
+        'es-PA': `${domain}/es${langPath}`,
+        'pt-BR': `${domain}/pt${langPath}`,
+        'de-DE': `${domain}/de${langPath}`,
+        'x-default': `${domain}/en${langPath}`,
       },
     },
     openGraph: {
