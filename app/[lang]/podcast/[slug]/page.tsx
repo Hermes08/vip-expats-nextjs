@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     }
 
     return {
-        title: episode.title[lang as 'en' | 'es'],
-        description: episode.description[lang as 'en' | 'es'],
+        title: episode.title[lang as 'en' | 'es'] ?? episode.title.en,
+        description: episode.description[lang as 'en' | 'es'] ?? episode.description.en,
     };
 }
 
@@ -45,20 +45,25 @@ export default async function PodcastEpisodePage({ params }: Props) {
         );
     }
 
+    // Fallback to English for languages without dedicated translations (de, pt, zh)
+    const episodeTitle = episode.title[lang as 'en' | 'es'] ?? episode.title.en;
+    const episodeDescription = episode.description[lang as 'en' | 'es'] ?? episode.description.en;
+    const homeLabel = lang === 'es' ? 'Inicio' : lang === 'en' ? 'Home' : 'Home';
+
     return (
         <div className="bg-white min-h-screen">
             <ZeroGravityWrapper />
             <VideoSchema
                 videoUrl={`https://www.youtube.com/watch?v=${episode.videoId}`}
-                name={episode.title[lang as 'en' | 'es']}
-                description={episode.description[lang as 'en' | 'es']}
+                name={episodeTitle}
+                description={episodeDescription}
                 uploadDate={episode.publishDate}
                 thumbnailUrl={`https://img.youtube.com/vi/${episode.videoId}/maxresdefault.jpg`}
             />
             <BreadcrumbSchema items={[
-                { name: lang === 'es' ? 'Inicio' : 'Home', item: `${baseUrl}/${lang}` },
+                { name: homeLabel, item: `${baseUrl}/${lang}` },
                 { name: 'Podcast', item: `${baseUrl}/${lang}/podcast` },
-                { name: episode.title[lang as 'en' | 'es'], item: `${baseUrl}/${lang}/podcast/${slug}` }
+                { name: episodeTitle, item: `${baseUrl}/${lang}/podcast/${slug}` }
             ]} />
 
             <div className="container mx-auto px-4 pt-32 pb-20 relative z-10">
@@ -76,7 +81,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
                             <iframe
                                 src={`https://www.youtube.com/embed/${episode.videoId}?rel=0`}
                                 className="absolute top-0 left-0 w-full h-full"
-                                title={episode.title[lang as 'en' | 'es']}
+                                title={episodeTitle}
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                                 allowFullScreen
@@ -86,7 +91,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
 
                         {/* Title & Meta */}
                         <h1 className="text-3xl md:text-5xl font-heading font-black text-brand-950 mb-6 leading-tight">
-                            {episode.title[lang as 'en' | 'es']}
+                            {episodeTitle}
                         </h1>
 
                         <div className="flex flex-wrap items-center gap-6 text-slate-500 mb-8 pb-8 border-b border-brand-100">
@@ -111,7 +116,7 @@ export default async function PodcastEpisodePage({ params }: Props) {
                                 {lang === 'es' ? 'Resumen del Episodio' : 'Episode Overview'}
                             </h3>
                             <p className="text-slate-500 leading-relaxed text-lg mb-8">
-                                {episode.description[lang as 'en' | 'es']}
+                                {episodeDescription}
                             </p>
 
                             <div className="bg-white/5 rounded-2xl p-8 border border-brand-100 mt-8">
