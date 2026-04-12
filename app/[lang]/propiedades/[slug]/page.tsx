@@ -1,14 +1,11 @@
-'use client';
-
-import React from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useParams } from 'next/navigation';
-import { useCMS } from '@/context/CMSContext';
-import { useLanguage } from '@/context/LanguageContext';
+import { notFound } from 'next/navigation';
+import { createClient } from '@supabase/supabase-js';
 import {
   Bed, Bath, Maximize2, MapPin, Phone, Mail, ArrowLeft,
-  Star, CheckCircle, Home, Building2, Tag, Calendar
+  Star, CheckCircle, Building2, Tag, Calendar
 } from 'lucide-react';
 
 const BLUR_PLACEHOLDER = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg==";
@@ -22,43 +19,132 @@ function formatPrice(price: number, status: string, lang: string): string {
 }
 
 const STATUS_LABELS: Record<string, Record<string, string>> = {
-  'For Sale': { en: 'For Sale', es: 'En Venta' },
-  'For Rent': { en: 'For Rent', es: 'En Alquiler' },
-  'Sold':     { en: 'Sold',     es: 'Vendido' },
-  'Rented':   { en: 'Rented',   es: 'Alquilado' },
+  'For Sale': { en: 'For Sale', es: 'En Venta', pt: 'À Venda', de: 'Zu Verkaufen' },
+  'For Rent': { en: 'For Rent', es: 'En Alquiler', pt: 'Para Alugar', de: 'Zu Vermieten' },
+  'Sold':     { en: 'Sold',     es: 'Vendido',    pt: 'Vendido',   de: 'Verkauft' },
+  'Rented':   { en: 'Rented',   es: 'Alquilado',  pt: 'Alugado',   de: 'Vermietet' },
 };
 
-export default function PropertyDetailPage() {
-  const params = useParams();
-  const { lang } = useLanguage();
-  const { listings } = useCMS();
+async function getListing(slug: string) {
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
-  const slug = params?.slug as string;
-  const listing = listings.find((l) => l.slug === slug);
-
-  if (!listing) {
-    return (
-      <div className="min-h-screen bg-white flex flex-col items-center justify-center px-4 text-center pt-32">
-        <Home size={48} className="text-brand-GOLD mb-6 opacity-50" />
-        <h1 className="text-4xl font-black text-white uppercase italic tracking-tighter mb-4">
-          {lang === 'es' ? 'Propiedad no encontrada' : 'Property not found'}
-        </h1>
-        <p className="text-slate-500 mb-10">
-          {lang === 'es'
-            ? 'Esta propiedad ya no está disponible o el enlace es incorrecto.'
-            : 'This property is no longer available or the link is incorrect.'}
-        </p>
-        <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-gold px-10 py-4 rounded-xl font-black text-[11px] uppercase tracking-widest inline-flex items-center gap-2">
-          <ArrowLeft size={14} /> {lang === 'es' ? 'Ver todas las propiedades' : 'View all properties'}
-        </Link>
-      </div>
-    );
+  if (!supabaseUrl || !supabaseKey || supabaseUrl.includes('tu-proyecto') || supabaseUrl.includes('placeholder')) {
+    return null;
   }
 
-  const title = listing.title[lang] ?? listing.title.en ?? '';
-  const description = listing.description[lang] ?? listing.description.en ?? '';
-  const images = listing.images?.length ? listing.images : ['https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80'];
+  const supabase = createClient(supabaseUrl, supabaseKey);
+  const { data, error } = await supabase
+    .from('listings')
+    .select('*')
+    .eq('slug', slug)
+    .eq('published', true)
+    .single();
+
+  if (error || !data) return null;
+
+  return {
+    id: data.id as string,
+    slug: data.slug as string,
+    ref: data.ref as string | undefined,
+    title: (data.title ?? {}) as Record<string, string>,
+    description: (data.description ?? {}) as Record<string, string>,
+    excerpt: (data.excerpt ?? {}) as Record<string, string>,
+    price: (data.price ?? 0) as number,
+    pricePerSqft: data.price_per_sqft as number | undefined,
+    status: (data.status ?? 'For Sale') as string,
+    property_type: data.property_type as string | undefined,
+    zone: data.zone as string | undefined,
+    city: data.city as string,
+    neighborhood: data.neighborhood as string | undefined,
+    province: data.province as string | undefined,
+    beds: data.beds as number | undefined,
+    baths: data.baths as number | undefined,
+    sqft: data.sqft as number | undefined,
+    lotSqft: data.lot_sqft as number | undefined,
+    yearBuilt: data.year_built as number | undefined,
+    images: (data.images ?? []) as string[],
+    videoUrl: data.video_url as string | undefined,
+    amenities: (data.amenities ?? []) as string[],
+    features: (data.features ?? []) as string[],
+    featured: (data.featured ?? false) as boolean,
+    agentName: data.agent_name as string | undefined,
+    agentWhatsapp: data.agent_whatsapp as string | undefined,
+    agentEmail: data.agent_email as string | undefined,
+    keywords: (data.keywords ?? []) as string[],
+    createdAt: data.created_at as string | undefined,
+    updatedAt: data.updated_at as string | undefined,
+  };
+}
+
+export async function generateMetadata(
+  { params }: { params: Promise<{ lang: string; slug: string }> }
+): Promise<Metadata> {
+  const { lang, slug } = await params;
+  const listing = await getListing(slug);
+
+  if (!listing) {
+    return { title: 'Property Not Found | VIP Expats Panama' };
+  }
+
+  const title = listing.title[lang] ?? listing.title['en'] ?? '';
+  const rawDesc = listing.excerpt?.[lang] ?? listing.excerpt?.['en'] ??
+    listing.description[lang] ?? listing.description['en'] ?? '';
+  const description = rawDesc.slice(0, 160);
+  const image = listing.images?.[0] ?? 'https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80';
+  const canonical = `https://panamarealestatesale.com/${lang}/propiedades/${slug}`;
+  const metaTitle = listing.title[lang]
+    ? `${listing.title[lang]} | Panama Real Estate`
+    : `${title} | Panama Real Estate`;
+
+  return {
+    title: metaTitle,
+    description,
+    keywords: listing.keywords?.join(', '),
+    alternates: {
+      canonical,
+      languages: {
+        'en': `https://panamarealestatesale.com/en/propiedades/${slug}`,
+        'es': `https://panamarealestatesale.com/es/propiedades/${slug}`,
+        'pt': `https://panamarealestatesale.com/pt/propiedades/${slug}`,
+        'de': `https://panamarealestatesale.com/de/propiedades/${slug}`,
+      },
+    },
+    openGraph: {
+      title: metaTitle,
+      description,
+      type: 'website',
+      url: canonical,
+      images: [{ url: image, width: 1200, height: 630, alt: title }],
+      locale: 'en_US',
+      siteName: 'VIP Expats Panama',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: metaTitle,
+      description,
+      images: [image],
+    },
+  };
+}
+
+export default async function PropertyDetailPage(
+  { params }: { params: Promise<{ lang: string; slug: string }> }
+) {
+  const { lang, slug } = await params;
+  const listing = await getListing(slug);
+
+  if (!listing) {
+    notFound();
+  }
+
+  const title = listing.title[lang] ?? listing.title['en'] ?? '';
+  const description = listing.description[lang] ?? listing.description['en'] ?? '';
+  const images = listing.images?.length
+    ? listing.images
+    : ['https://images.unsplash.com/photo-1613977257363-707ba9348227?w=1200&q=80'];
   const statusLabel = STATUS_LABELS[listing.status]?.[lang] ?? listing.status;
+
   const whatsappMsg = encodeURIComponent(
     lang === 'es'
       ? `Hola, me interesa la propiedad: ${title} (${listing.slug}). ¿Está disponible?`
@@ -68,12 +154,14 @@ export default function PropertyDetailPage() {
     ? `https://wa.me/${listing.agentWhatsapp.replace(/\D/g, '')}?text=${whatsappMsg}`
     : `https://wa.me/50767610315?text=${whatsappMsg}`;
 
-  const locationStr = [listing.neighborhood, listing.city, listing.province].filter(Boolean).join(', ') || 'Panama';
+  const locationStr = [listing.neighborhood, listing.city, listing.province]
+    .filter(Boolean).join(', ') || 'Panama';
+
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'RealEstateListing',
     name: title,
-    description: description,
+    description,
     price: listing.price,
     priceCurrency: 'USD',
     url: `https://panamarealestatesale.com/${lang}/propiedades/${listing.slug}`,
@@ -123,7 +211,11 @@ export default function PropertyDetailPage() {
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-950/60 to-transparent" />
               {/* Status badge */}
-              <div className={`absolute top-6 left-6 px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-widest ${listing.status === 'For Sale' ? 'bg-brand-GOLD text-brand-950' : listing.status === 'For Rent' ? 'bg-emerald-500 text-white' : 'bg-neutral-500 text-white'}`}>
+              <div className={`absolute top-6 left-6 px-5 py-2 rounded-full text-[10px] font-black uppercase tracking-widest ${
+                listing.status === 'For Sale' ? 'bg-brand-GOLD text-brand-950'
+                : listing.status === 'For Rent' ? 'bg-emerald-500 text-white'
+                : 'bg-neutral-500 text-white'
+              }`}>
                 {statusLabel}
               </div>
               {listing.featured && (
