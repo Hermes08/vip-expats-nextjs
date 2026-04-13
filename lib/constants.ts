@@ -774,8 +774,8 @@ export const PROJECTS: Project[] = [
         image: 'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d41c5cbb65b9319875ad1a_65m.png',
         characteristics: {
           en: ['1 Bed', '1 Bath', 'Terrace', '3.2m Ceilings'],
-          es: ['1 Recámara', '1 Baño', 'Terraza', 'Techos de 3.2m'],
-          zh: ['1 卧室', '1 浴室', '露台']
+          es: ['1 Recámara', '1 Baño', 'Terraza', 'Techos 3.2m'],
+          zh: ['1 卧室', '1 浴室', '露台', '3.2m层高']
         }
       },
       {
@@ -786,7 +786,7 @@ export const PROJECTS: Project[] = [
         characteristics: {
           en: ['1 Bed + Den', '2 Baths', '12m² Terrace', 'Walk-in Closet'],
           es: ['1 Rec + Den', '2 Baños', 'Terraza 12m²', 'Walk-in Closet'],
-          zh: ['1 卧室 + 书房', '2 浴室', '露台']
+          zh: ['1 卧室 + 书房', '2 浴室', '12m²露台', '步入式衣柜']
         }
       },
       {
@@ -795,9 +795,9 @@ export const PROJECTS: Project[] = [
         price: 417000,
         image: 'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d41c5b71ab92a1a740cce1_97m.png',
         characteristics: {
-          en: ['2 Beds', '2.5 Baths', '15m² Terrace', 'Maid Option'],
-          es: ['2 Recámaras', '2.5 Baños', 'Terraza 15m²', 'Opción Empleada'],
-          zh: ['2 卧室', '2.5 浴室', '露台']
+          en: ['2 Beds', '2 Baths', '15m² Terrace', 'Service Room Option'],
+          es: ['2 Recámaras', '2 Baños', 'Terraza 15m²', 'Opción Cuarto Servicio'],
+          zh: ['2 卧室', '2 浴室', '15m²露台', '可选服务间']
         }
       },
       {
@@ -806,9 +806,9 @@ export const PROJECTS: Project[] = [
         price: 435000,
         image: 'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d41c5c5b22fbaa8592d849_100m.png',
         characteristics: {
-          en: ['2 Beds', '2.5 Baths', '15m² Terrace', 'Walk-in Closet'],
-          es: ['2 Recámaras', '2.5 Baños', 'Terraza 15m²', 'Walk-in Closet'],
-          zh: ['2 卧室', '2.5 浴室', '露台']
+          en: ['2 Beds', '2 Baths', 'Corner Unit', 'Double Terrace'],
+          es: ['2 Recámaras', '2 Baños', 'Unidad Esquinera', 'Doble Terraza'],
+          zh: ['2 卧室', '2 浴室', '转角单元', '双露台']
         }
       },
       {
@@ -817,9 +817,9 @@ export const PROJECTS: Project[] = [
         price: 498000,
         image: 'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d41c5dbb65b9319875af7f_114m.png',
         characteristics: {
-          en: ['3 Beds', '3 Baths', '20m² Terrace', 'Service Room'],
-          es: ['3 Recámaras', '3 Baños', 'Terraza 20m²', 'Cuarto de Servicio'],
-          zh: ['3 卧室', '3 浴室', '露台']
+          en: ['3 Beds', '2 Baths', '20m² Terrace', 'Service Room'],
+          es: ['3 Recámaras', '2 Baños', 'Terraza 20m²', 'Cuarto de Servicio'],
+          zh: ['3 卧室', '2 浴室', '20m²露台', '服务间']
         }
       },
       {
@@ -830,18 +830,18 @@ export const PROJECTS: Project[] = [
         characteristics: {
           en: ['3 Beds', '3 Baths', '25m² Terrace', 'Walk-in Closet'],
           es: ['3 Recámaras', '3 Baños', 'Terraza 25m²', 'Walk-in Closet'],
-          zh: ['3 卧室', '3 浴室', '露台']
+          zh: ['3 卧室', '3 浴室', '25m²露台', '步入式衣柜']
         }
       },
       {
-        name: { en: 'Model G - Penthouse 156m²', es: 'Modelo G - Penthouse 156m²', zh: 'G型 Penthouse - 156m²' },
+        name: { en: 'Model G - Penthouse 156m²', es: 'Modelo G - Penthouse 156m²', zh: 'G型 - 顶层156m²' },
         size: '156 m²',
         price: 695000,
         image: 'https://cdn.prod.website-files.com/64986a1411e142a684e722df/64d41c5e729d61d6e649d2aa_156m.png',
         characteristics: {
-          en: ['3 Beds + Den', '4 Baths', 'Double Height', 'Rooftop Access'],
-          es: ['3 Rec + Den', '4 Baños', 'Doble Altura', 'Acceso Rooftop'],
-          zh: ['3 卧室 + 书房', '4 浴室', '双层高']
+          en: ['3 Beds + Den', '3 Baths', 'Double Height', 'Rooftop Access'],
+          es: ['3 Rec + Den', '3 Baños', 'Doble Altura', 'Acceso Rooftop'],
+          zh: ['3 卧室 + 书房', '3 浴室', '双层挑高', '屋顶平台']
         }
       }
     ],
@@ -876,7 +876,7 @@ export const PROJECTS: Project[] = [
     },
     priceFrom: 342000,
     beds: '1-3',
-    baths: '1-4',
+    baths: '1-3',
     sqft: '65 - 156',
     unitsAvailable: 15,
     faqs: [],

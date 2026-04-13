@@ -222,6 +222,30 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
           </div>
         </div>
       </section>
+
+      {/* 9 — FINAL CTA — CRO audit 2026-04-10 */}
+      <section className="py-16 bg-gradient-to-br from-brand-950 via-brand-900 to-brand-950 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_50%_50%,theme(colors.brand.TEAL),transparent_70%)]" />
+        <div className="max-w-3xl mx-auto px-4 text-center relative z-10">
+          <span className="text-brand-GOLD font-black uppercase tracking-[0.4em] text-[10px] mb-3 block">
+            {lang === 'es' ? 'Comience Hoy' : lang === 'pt' ? 'Comece Hoje' : lang === 'de' ? 'Starten Sie Heute' : 'Start Today'}
+          </span>
+          <h2 className="text-2xl md:text-4xl font-heading font-black text-white tracking-tight mb-4">
+            {lang === 'es' ? '¿Listo para invertir en Panamá?' : lang === 'pt' ? 'Pronto para investir no Panamá?' : lang === 'de' ? 'Bereit, in Panama zu investieren?' : 'Ready to Invest in Panama?'}
+          </h2>
+          <p className="text-white/60 text-sm md:text-base mb-8 max-w-lg mx-auto leading-relaxed">
+            {lang === 'es' ? 'Explore propiedades exclusivas o reserve una consulta gratuita con nuestro equipo de expertos.' : lang === 'pt' ? 'Explore propriedades exclusivas ou agende uma consulta gratuita com nossa equipe de especialistas.' : lang === 'de' ? 'Entdecken Sie exklusive Immobilien oder buchen Sie eine kostenlose Beratung mit unserem Expertenteam.' : 'Explore exclusive properties or book a free consultation with our expert team.'}
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-gold px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] flex items-center justify-center gap-2">
+              {lang === 'es' ? 'VER PROPIEDADES' : lang === 'pt' ? 'VER IMÓVEIS' : lang === 'de' ? 'IMMOBILIEN ANSEHEN' : 'BROWSE PROPERTIES'} <ArrowRight size={14} />
+            </Link>
+            <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] bg-white/10 backdrop-blur-3xl border border-white/30 text-white flex items-center justify-center gap-2">
+              {lang === 'es' ? 'CONSULTA GRATIS' : lang === 'pt' ? 'CONSULTA GRÁTIS' : lang === 'de' ? 'KOSTENLOSE BERATUNG' : 'FREE CONSULTATION'} <ArrowRight size={14} />
+            </Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

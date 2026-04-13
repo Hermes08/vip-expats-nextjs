@@ -115,6 +115,22 @@ export default function PanamaCityCondosForSalePage() {
                     text: 'Many buildings allow short-term (Airbnb-style) rentals, but you should confirm with the HOA before purchasing as an investment.',
                   },
                 },
+                {
+                  '@type': 'Question',
+                  name: 'What are the best neighborhoods for condos in Panama City, Panama?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Top neighborhoods include Punta Pacifica (luxury high-rises, ocean views, $200K–$800K), Costa del Este (modern family-friendly, $150K–$500K), El Cangrejo (central, walkable, $80K–$250K), and Casco Viejo (historic charm, boutique condos, $120K–$400K). Each offers different lifestyles and price points for expat buyers.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'How much are HOA fees for Panama City condos?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'HOA fees in Panama City typically range from $0.50–$1.50 per square meter per month. For a 100m² (1,076 sq ft) condo, expect $50–$150/month. Luxury buildings with pools, gyms, and concierge services charge $150–$300/month. These fees are significantly lower than comparable US buildings.',
+                  },
+                },
               ],
             },
           }),

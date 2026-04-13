@@ -35,7 +35,8 @@ export function middleware(request: NextRequest) {
 
     // e.g. incoming is /products
     // The new URL is now /en/products
-    return NextResponse.redirect(request.nextUrl)
+    // Use 308 (Permanent Redirect) so Google stops re-crawling lang-less URLs
+    return NextResponse.redirect(request.nextUrl, { status: 308 })
 }
 
 export const config = {

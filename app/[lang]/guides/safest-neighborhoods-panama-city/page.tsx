@@ -9,8 +9,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const l = (lang === 'es' || lang === 'en') ? lang : 'en';
 
   const titles = {
-    en: 'Safest Neighborhoods in Panama City, Panama for Expats (Not Florida) — 2026 Ranked',
-    es: 'Vecindarios Más Seguros en Ciudad de Panamá para Expats — Ranking 2026',
+    en: '7 Safest Neighborhoods in Panama City for Expats (2026)',
+    es: '7 Vecindarios Más Seguros en Ciudad de Panamá (2026)',
   };
   const descriptions = {
     en: 'Ranked: safest neighborhoods in Panama City, Panama for expats. Punta Pacifica, Costa del Este, Clayton, San Francisco & Casco Viejo compared with crime stats, gated communities, walkability scores. Real estate from $120K. Not Panama City, Florida.',

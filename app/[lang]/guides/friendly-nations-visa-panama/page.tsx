@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Globe } from 'lucide-react';
 
@@ -62,7 +63,7 @@ export default async function FriendlyNationsVisaPage({ params }: Props) {
         <article className="bg-white min-h-screen pt-28 pb-20">
             <section className="section-teal-soft py-24 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
-                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80" alt="Panama Friendly Nations Visa" className="w-full h-full object-cover" />
+                    <Image src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1600&q=80" alt="Panama Friendly Nations Visa" fill className="object-cover" sizes="100vw" priority={false} />
                 </div>
                 <div className="max-w-3xl mx-auto px-4 text-center relative z-10">
                     <span className="tag-teal mb-5 inline-block">VISA GUIDE · 2026</span>

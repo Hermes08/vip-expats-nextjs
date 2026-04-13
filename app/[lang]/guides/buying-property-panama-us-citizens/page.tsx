@@ -115,6 +115,22 @@ export default function BuyingPropertyPanamaUSCitizensPage() {
                     text: 'Yes. US citizens can qualify for several residency visas tied to real estate investment, including the Pensionado Visa, Qualified Investor Visa, and Friendly Nations Visa.',
                   },
                 },
+                {
+                  '@type': 'Question',
+                  name: 'Is it safe to buy property in Panama as a foreigner?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Yes — Panama is considered one of the safest countries in Latin America for real estate. The key is to hire a licensed attorney for title verification, confirm registration in the Public Registry, and avoid "rights of possession" land unless you understand the risks. Working with a reputable agent is essential.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'What are the risks of buying property in Panama?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Main risks include unclear title (especially coastal "rights of possession" land), unregistered properties, developer insolvency for pre-construction projects, and potential squatter claims on rural land. All can be mitigated with proper legal due diligence and title insurance.',
+                  },
+                },
               ],
             },
           }),

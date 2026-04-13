@@ -9,8 +9,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const l = (lang === 'es' || lang === 'en') ? lang : 'en';
 
   const titles = {
-    en: 'Expat Living in Panama — Cost of Living, Best Areas & Honest Pros/Cons 2026',
-    es: 'Vida Expat en Panamá — Costo de Vida, Mejores Áreas y Pros/Contras 2026',
+    en: 'Expat Living in Panama 2026: Cost, Best Areas & Pros/Cons',
+    es: 'Vida Expat en Panamá 2026: Costos, Áreas y Pros/Contras',
   };
   const descriptions = {
     en: 'Real talk on expat living in Panama: $1,200-$2,000/mo cost of living, USD economy, territorial taxes, world-class healthcare, easy visas. Best neighborhoods ranked (Boquete, Coronado, Panama City). 30,000+ expats already here. Pros, cons & property options.',

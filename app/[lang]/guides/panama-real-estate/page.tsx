@@ -9,8 +9,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const l = (lang === 'es' || lang === 'en') ? lang : 'en';
 
   const titles = {
-    en: 'Panama Real Estate — Market Guide, Prices & Best Areas to Buy (2026)',
-    es: 'Bienes Raíces Panamá — Guía del Mercado, Precios y Mejores Zonas (2026)',
+    en: 'Panama Real Estate 2026: Prices, Best Areas & How to Buy',
+    es: 'Bienes Raíces Panamá 2026: Precios, Zonas y Cómo Comprar',
   };
   const descriptions = {
     en: 'Panama real estate market guide 2026: condos from $80K, beachfront homes from $150K, investment land. Compare Panama City, Boquete, Coronado & Bocas del Toro with prices, ROI data, and foreign ownership rules. Equal rights for buyers worldwide.',

@@ -107,6 +107,7 @@ export async function GET() {
         '/guides/how-to-move-to-panama',
         '/guides/homes-for-sale-panama',
         '/guides/panama-vs-costa-rica',
+        '/guides/houses-for-sale-panama-city',
     ];
 
     let xml = `<?xml version="1.0" encoding="UTF-8"?>

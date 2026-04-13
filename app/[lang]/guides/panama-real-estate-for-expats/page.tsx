@@ -9,8 +9,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const l = (lang === 'es' || lang === 'en') ? lang : 'en';
 
   const titles = {
-    en: 'Panama Real Estate for Sale Expats — Prices, Neighborhoods & Legal Guide 2026',
-    es: 'Bienes Raíces Panamá para Expats — Precios, Barrios y Guía Legal 2026',
+    en: 'Panama Real Estate for Expats: Buying Guide & Prices 2026',
+    es: 'Bienes Raíces en Panamá para Expats: Guía de Compra 2026',
   };
   const descriptions = {
     en: 'Find Panama real estate for sale as an expat. Same ownership rights as locals, USD economy, condos from $80K, beachfront homes from $150K. Compare Punta Pacifica, Coronado, Boquete — with legal steps, closing costs, and visa-qualifying investments.',
@@ -105,6 +105,22 @@ export default function PanamaRealEstateForExpatsPage() {
                   acceptedAnswer: {
                     '@type': 'Answer',
                     text: 'New construction properties are exempt from property tax for up to 20 years. There is no capital gains tax on primary residences held more than 2 years. Panama taxes only locally-sourced income — foreign income is tax-free. Property transfer tax is just 2%.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Can a US citizen buy real estate in Panama?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Yes. Foreigners have the same property ownership rights as Panamanian citizens, including full property titles. No residency is required to purchase. Some restrictions apply to properties within 10 km of national borders.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Can I live on $3,000 a month in Panama as an expat?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Yes — $3,000/month provides a very comfortable lifestyle in Panama. In Panama City, $2,000–$2,500 covers rent, food, transport, and entertainment. In smaller towns like Boquete or Coronado, $1,500/month is sufficient. A couple can live well on $2,600/month including rent.',
                   },
                 },
               ],

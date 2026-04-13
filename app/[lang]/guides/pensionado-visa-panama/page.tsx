@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, ShieldCheck } from 'lucide-react';
 
@@ -9,8 +10,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const l = lang === 'es' ? 'es' : 'en';
     const domain = 'https://panamarealestatesale.com';
     const titles = {
-        en: 'Panama Pensionado Visa & Real Estate — Requirements, Discounts & Property Guide 2026',
-        es: 'Visa Pensionado Panamá y Bienes Raíces — Requisitos, Descuentos y Propiedades 2026',
+        en: 'Panama Pensionado Visa 2026: Requirements, Discounts & Real Estate',
+        es: 'Visa Pensionado Panamá 2026: Requisitos, Descuentos e Inmuebles',
     };
     const descriptions = {
         en: "Panama Pensionado Visa + real estate investment guide. Qualify with $1,000/mo pension or $750/mo + $100K property purchase. Get 50% off entertainment, 25% off utilities, 25% off flights. Full requirements, application steps, discount list, and visa-qualifying property options from $100K.",
@@ -71,7 +72,7 @@ export default async function PensionadoVisaPage({ params }: Props) {
             {/* Hero */}
             <section className="section-teal-soft py-24 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
-                    <img src="https://images.unsplash.com/photo-1549420958-370146059d4c?w=1600&q=80" alt="Panama Retirement" className="w-full h-full object-cover" />
+                    <Image src="https://images.unsplash.com/photo-1549420958-370146059d4c?w=1600&q=80" alt="Panama Retirement" fill className="object-cover" sizes="100vw" priority={false} />
                 </div>
                 <div className="max-w-3xl mx-auto px-4 text-center relative z-10">
                     <span className="tag-gold mb-5 inline-block">VISA GUIDE · 2026</span>

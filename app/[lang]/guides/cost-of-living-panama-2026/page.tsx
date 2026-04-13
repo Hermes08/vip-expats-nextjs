@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, DollarSign } from 'lucide-react';
 
@@ -89,7 +90,7 @@ export default async function CostOfLivingPage({ params }: { params: Promise<{ l
         <article className="bg-white min-h-screen pt-28 pb-20">
             <section className="section-teal-soft py-24 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
-                    <img src="https://images.unsplash.com/photo-1556742111-a301076d9d18?w=1600&q=80" alt="Panama cost of living" className="w-full h-full object-cover" />
+                    <Image src="https://images.unsplash.com/photo-1556742111-a301076d9d18?w=1600&q=80" alt="Panama cost of living" fill className="object-cover" sizes="100vw" priority={false} />
                 </div>
                 <div className="max-w-3xl mx-auto px-4 text-center relative z-10">
                     <span className="tag-teal mb-5 inline-block">COST OF LIVING GUIDE · 2026</span>

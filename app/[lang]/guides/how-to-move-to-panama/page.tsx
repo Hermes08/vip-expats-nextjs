@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, CheckCircle, Calendar, DollarSign, FileText, Plane, Heart, Home } from 'lucide-react';
 
@@ -120,7 +121,7 @@ export default async function HowToMoveToPanamaPage({ params }: { params: Promis
             {/* Hero */}
             <section className="section-teal-soft py-24 relative overflow-hidden">
                 <div className="absolute inset-0 opacity-10">
-                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600&q=80" alt="Moving to Panama" className="w-full h-full object-cover" />
+                    <Image src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1600&q=80" alt="Moving to Panama" fill className="object-cover" sizes="100vw" priority={false} />
                 </div>
                 <div className="max-w-3xl mx-auto px-4 text-center relative z-10">
                     <span className="tag-teal mb-5 inline-block">RELOCATION GUIDE · 2026</span>
