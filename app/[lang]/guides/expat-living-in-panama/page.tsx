@@ -9,12 +9,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const l = (lang === 'es' || lang === 'en') ? lang : 'en';
 
   const titles = {
-    en: 'Expat Living in Panama 2026: Cost, Best Areas & Pros/Cons',
-    es: 'Vida Expat en Panamá 2026: Costos, Áreas y Pros/Contras',
+    en: 'Expat Living in Panama 2026: Cost of Living, Safety & Where to Live',
+    es: 'Vida Expat en Panamá 2026: Costo de Vida, Seguridad y Dónde Vivir',
   };
   const descriptions = {
-    en: 'Real talk on expat living in Panama: $1,200-$2,000/mo cost of living, USD economy, territorial taxes, world-class healthcare, easy visas. Best neighborhoods ranked (Boquete, Coronado, Panama City). 30,000+ expats already here. Pros, cons & property options.',
-    es: 'La verdad sobre vivir como expat en Panamá: $1,200-$2,000/mes, economía en USD, impuestos territoriales, salud de clase mundial, visas fáciles. Mejores vecindarios (Boquete, Coronado, Ciudad de Panamá). Pros, contras y opciones de propiedades.',
+    en: 'Everything about expat living in Panama: $1,200-$2,000/mo costs, USD economy, no tax on foreign income, excellent healthcare & easy visa paths. Best areas ranked — Boquete, Coronado, Panama City. 30,000+ expats already here. Read honest pros, cons & real estate options.',
+    es: 'Todo sobre la vida expat en Panamá: $1,200-$2,000/mes, economía USD, sin impuestos a ingresos extranjeros, salud excelente y visas fáciles. Mejores zonas — Boquete, Coronado, Ciudad de Panamá. 30,000+ expats aquí. Pros, contras y opciones inmobiliarias.',
   };
 
   return {
