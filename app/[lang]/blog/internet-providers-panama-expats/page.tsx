@@ -9,9 +9,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const canonical = `${domain}/${lang}/blog/${slug}`;
 
   return {
-    title: 'Internet Providers Panama 2026: Speed, Reliability, Cost Comparison',
-    description: 'Compare internet providers in Panama. Cable Onda, Claro, Movistar, Digicel. Speed, pricing, customer service.',
-    keywords: 'internet Panama, Cable Onda Panama, internet providers Panama, best internet Panama',
+    title: 'Best Internet Providers in Panama 2026: Speed & Price Compared',
+    description: 'Cable Onda vs Claro vs Movistar in 2026: real fiber speeds, monthly prices, install times, and which provider actually works in expat neighborhoods.',
+    keywords: 'internet Panama, Cable Onda Panama, internet providers Panama, best internet Panama, fiber internet Panama City, Claro Movistar Panama',
     alternates: {
         canonical,
         languages: {
@@ -22,8 +22,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         },
     },
     openGraph: {
-        title: 'Internet Providers Panama 2026: Speed, Reliability, Cost Comparison',
-        description: 'Compare internet providers in Panama. Cable Onda, Claro, Movistar, Digicel. Speed, pricing, customer service.',
+        title: 'Best Internet Providers in Panama 2026: Speed & Price Compared',
+        description: 'Cable Onda vs Claro vs Movistar in 2026: real fiber speeds, monthly prices, install times, and which provider actually works in expat neighborhoods.',
         type: 'article',
         url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&q=80', width: 1200, height: 630, alt: 'Internet connection' }],
@@ -32,8 +32,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Internet Providers Panama 2026: Speed, Reliability, Cost Comparison',
-        description: 'Compare internet providers in Panama. Cable Onda, Claro, Movistar, Digicel. Speed, pricing, customer service.',
+        title: 'Best Internet Providers in Panama 2026: Speed & Price Compared',
+        description: 'Cable Onda vs Claro vs Movistar in 2026: real fiber speeds, monthly prices, install times, and which provider actually works in expat neighborhoods.',
         images: ['https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=1200&q=80'],
     },
 };

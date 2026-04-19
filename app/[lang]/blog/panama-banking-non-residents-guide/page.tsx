@@ -11,9 +11,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const canonical = `${domain}/${lang}/blog/${slug}`;
 
   return {
-    title: 'Panama Banking for Non-Residents 2026: Open Account, Services Guide',
-    description: 'Banking in Panama as non-resident. Open bank account, services, digital banking, minimum deposits.',
-    keywords: 'Panama banking, bank account Panama, banking services Panama, non-resident banking Panama',
+    title: 'Open a Panama Bank Account as Non-Resident (2026 Guide)',
+    description: 'Exactly which Panama banks accept non-residents in 2026, minimum deposits ($500–$10k), documents needed, and the one bank that still opens accounts for tourists.',
+    keywords: 'Panama banking, bank account Panama, banking services Panama, non-resident banking Panama, open bank account Panama tourist',
     alternates: {
         canonical,
         languages: {
@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         },
     },
     openGraph: {
-        title: 'Panama Banking for Non-Residents 2026: Open Account, Services Guide',
-        description: 'Banking in Panama as non-resident. Open bank account, services, digital banking, minimum deposits.',
+        title: 'Open a Panama Bank Account as Non-Resident (2026 Guide)',
+        description: 'Exactly which Panama banks accept non-residents in 2026, minimum deposits ($500–$10k), documents needed, and the one bank that still opens accounts for tourists.',
         type: 'article',
         url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=1200&q=80', width: 1200, height: 630, alt: 'Banking in Panama' }],
@@ -34,8 +34,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Panama Banking for Non-Residents 2026: Open Account, Services Guide',
-        description: 'Banking in Panama as non-resident. Open bank account, services, digital banking, minimum deposits.',
+        title: 'Open a Panama Bank Account as Non-Resident (2026 Guide)',
+        description: 'Exactly which Panama banks accept non-residents in 2026, minimum deposits ($500–$10k), documents needed, and the one bank that still opens accounts for tourists.',
         images: ['https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=1200&q=80'],
     },
 };

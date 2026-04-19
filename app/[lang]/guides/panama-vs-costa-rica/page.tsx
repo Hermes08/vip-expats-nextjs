@@ -8,15 +8,15 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     const canonical = `https://panamarealestatesale.com/${lang}/guides/panama-vs-costa-rica`;
 
     return {
-        title: 'Panama vs Costa Rica for Expats 2026 — Honest Side-by-Side Comparison',
+        title: 'Panama vs Costa Rica 2026: Which Is Better for Expats?',
         description:
-            'Panama or Costa Rica? Compare cost of living, visas, healthcare, taxes, safety, and quality of life for expats and retirees in 2026 with real numbers.',
+            'Real 2026 cost, visa, healthcare & lifestyle comparison between Panama and Costa Rica — with actual numbers, not opinions. Pick the right country for you.',
         keywords:
             'panama vs costa rica expat living, panama vs costa rica retirement, costa rica or panama 2026, best country retire central america, panama costa rica comparison expats',
         alternates: { canonical },
         openGraph: {
-            title: 'Panama vs Costa Rica for Expats 2026 — Honest Side-by-Side Comparison',
-            description: 'Real cost, visa, healthcare, and lifestyle comparison for expats choosing between Panama and Costa Rica in 2026.',
+            title: 'Panama vs Costa Rica 2026: Which Is Better for Expats?',
+            description: 'Real 2026 cost, visa, healthcare & lifestyle comparison with actual numbers — pick the right country for you.',
             type: 'article',
         },
     };

@@ -11,9 +11,9 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const canonical = `${domain}/${lang}/blog/${slug}`;
 
   return {
-    title: 'Panama for Families 2026: Schools, Expat Kids, Safety, Lifestyle',
-    description: 'Families moving to Panama. Schools, safety, kids activities, healthcare, lifestyle for expat families.',
-    keywords: 'families in Panama, expat families Panama, schools in Panama, kids in Panama, family living Panama',
+    title: 'Moving to Panama with Kids (2026): Schools, Safety & Real Costs',
+    description: 'International schools ($6k–$22k/yr), safe family neighborhoods, healthcare, and the honest reality of raising expat kids in Panama in 2026.',
+    keywords: 'families in Panama, expat families Panama, international schools Panama, moving to Panama with kids, family living Panama 2026',
     alternates: {
         canonical,
         languages: {
@@ -24,8 +24,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         },
     },
     openGraph: {
-        title: 'Panama for Families 2026: Schools, Expat Kids, Safety, Lifestyle',
-        description: 'Families moving to Panama. Schools, safety, kids activities, healthcare, lifestyle for expat families.',
+        title: 'Moving to Panama with Kids (2026): Schools, Safety & Real Costs',
+        description: 'International schools ($6k–$22k/yr), safe family neighborhoods, healthcare, and the honest reality of raising expat kids in Panama in 2026.',
         type: 'article',
         url: canonical,
         images: [{ url: 'https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1200&q=80', width: 1200, height: 630, alt: 'Family in Panama' }],
@@ -34,8 +34,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     },
     twitter: {
         card: 'summary_large_image',
-        title: 'Panama for Families 2026: Schools, Expat Kids, Safety, Lifestyle',
-        description: 'Families moving to Panama. Schools, safety, kids activities, healthcare, lifestyle for expat families.',
+        title: 'Moving to Panama with Kids (2026): Schools, Safety & Real Costs',
+        description: 'International schools ($6k–$22k/yr), safe family neighborhoods, healthcare, and the honest reality of raising expat kids in Panama in 2026.',
         images: ['https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1200&q=80'],
     },
 };
