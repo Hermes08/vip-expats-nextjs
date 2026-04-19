@@ -5,7 +5,9 @@ import { ArrowRight, CheckCircle, DollarSign } from 'lucide-react';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
-  const canonical = `https://panamarealestatesale.com/${lang}/guides/cost-of-living-panama-2026`;
+  const slug = '/guides/cost-of-living-panama-2026';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}${slug}`;
 
   return {
     title: 'Cost of Living in Panama 2026: Real Monthly Budgets for Expats',
@@ -13,7 +15,16 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         'What does it actually cost to live in Panama in 2026? Real monthly budgets for rent, groceries, healthcare, transport, and utilities — compared to the US.',
     keywords:
         'cost of living panama 2026, panama monthly expenses expat, how much to live in panama, panama budget retirement, panama vs usa cost of living',
-    alternates: { canonical },
+    alternates: {
+      canonical,
+      languages: {
+        'en-US': `${domain}/en${slug}`,
+        'es-PA': `${domain}/es${slug}`,
+        'pt-BR': `${domain}/pt${slug}`,
+        'de-DE': `${domain}/de${slug}`,
+        'x-default': `${domain}/en${slug}`,
+      },
+    },
     openGraph: {
         title: 'Cost of Living in Panama 2026: Real Monthly Budgets for Expats',
         description: 'Real monthly expense breakdowns for expats in Panama City, Boquete, and Coronado in 2026.',

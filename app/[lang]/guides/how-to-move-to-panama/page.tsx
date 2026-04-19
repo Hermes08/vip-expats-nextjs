@@ -5,7 +5,9 @@ import { ArrowRight, CheckCircle, Calendar, DollarSign, FileText, Plane, Heart, 
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
-  const canonical = `https://panamarealestatesale.com/${lang}/guides/how-to-move-to-panama`;
+  const slug = '/guides/how-to-move-to-panama';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}${slug}`;
 
   return {
     title: 'How to Move to Panama from the USA: Step-by-Step Guide 2026',
@@ -13,7 +15,16 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         'The complete guide to relocating to Panama in 2026 — visa options, banking, healthcare, shipping, and your first 30 days. Written for Americans making the move.',
     keywords:
         'how to move to panama, relocate to panama from usa, moving to panama guide, panama relocation 2026, expat panama move, panama residency visa',
-    alternates: { canonical },
+    alternates: {
+      canonical,
+      languages: {
+        'en-US': `${domain}/en${slug}`,
+        'es-PA': `${domain}/es${slug}`,
+        'pt-BR': `${domain}/pt${slug}`,
+        'de-DE': `${domain}/de${slug}`,
+        'x-default': `${domain}/en${slug}`,
+      },
+    },
     openGraph: {
         title: 'How to Move to Panama from the USA: Step-by-Step Guide 2026',
         description: 'Visa options, banking, healthcare, and everything you need to relocate to Panama successfully.',

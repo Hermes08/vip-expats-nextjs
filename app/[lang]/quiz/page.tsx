@@ -4,14 +4,25 @@ import QuizPageContent from '@/components/pages/QuizPageContent';
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
   const { lang } = await params;
-  const canonical = `https://panamarealestatesale.com/${lang}/quiz`;
+  const slug = '/quiz';
+  const domain = 'https://panamarealestatesale.com';
+  const canonical = `${domain}/${lang}${slug}`;
 
   return {
     title: 'Panama Property Match Quiz 2026 | Find Your Perfect Investment',
     description:
         'Answer 5 questions and get a personalized Panama property recommendation. Our AI-powered quiz matches your lifestyle, budget, and goals to the best developments in Panama City, Boquete, and Coronado.',
     keywords: 'panama property quiz, find best area retire panama, panama real estate recommendation, panama investment match, where to live panama expat',
-    alternates: { canonical },
+    alternates: {
+      canonical,
+      languages: {
+        'en-US': `${domain}/en${slug}`,
+        'es-PA': `${domain}/es${slug}`,
+        'pt-BR': `${domain}/pt${slug}`,
+        'de-DE': `${domain}/de${slug}`,
+        'x-default': `${domain}/en${slug}`,
+      },
+    },
     openGraph: {
         title: 'Panama Property Match Quiz 2026 | Find Your Perfect Investment',
         description: 'Take the 5-question quiz and discover which Panama property matches your lifestyle and investment goals.',

@@ -5,7 +5,9 @@ import { ArrowRight, CheckCircle, Globe, DollarSign, Heart, Shield, Sun } from '
 
 export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
     const { lang } = await params;
-    const canonical = `https://panamarealestatesale.com/${lang}/guides/panama-vs-costa-rica`;
+    const slug = '/guides/panama-vs-costa-rica';
+    const domain = 'https://panamarealestatesale.com';
+    const canonical = `${domain}/${lang}${slug}`;
 
     return {
         title: 'Panama vs Costa Rica 2026: Which Is Better for Expats?',
@@ -13,7 +15,16 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'Real 2026 cost, visa, healthcare & lifestyle comparison between Panama and Costa Rica — with actual numbers, not opinions. Pick the right country for you.',
         keywords:
             'panama vs costa rica expat living, panama vs costa rica retirement, costa rica or panama 2026, best country retire central america, panama costa rica comparison expats',
-        alternates: { canonical },
+        alternates: {
+            canonical,
+            languages: {
+                'en-US': `${domain}/en${slug}`,
+                'es-PA': `${domain}/es${slug}`,
+                'pt-BR': `${domain}/pt${slug}`,
+                'de-DE': `${domain}/de${slug}`,
+                'x-default': `${domain}/en${slug}`,
+            },
+        },
         openGraph: {
             title: 'Panama vs Costa Rica 2026: Which Is Better for Expats?',
             description: 'Real 2026 cost, visa, healthcare & lifestyle comparison with actual numbers — pick the right country for you.',
