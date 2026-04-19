@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/panama-banking-non-residents-guide',
             'pt': 'https://panamarealestatesale.com/pt/blog/panama-banking-non-residents-guide',
             'de': 'https://panamarealestatesale.com/de/blog/panama-banking-non-residents-guide',
+            'x-default': 'https://panamarealestatesale.com/es/blog/panama-banking-non-residents-guide',
         },
     },
     openGraph: {

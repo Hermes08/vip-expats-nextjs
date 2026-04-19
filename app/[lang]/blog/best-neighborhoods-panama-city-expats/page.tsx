@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/best-neighborhoods-panama-city-expats',
             'pt': 'https://panamarealestatesale.com/pt/blog/best-neighborhoods-panama-city-expats',
             'de': 'https://panamarealestatesale.com/de/blog/best-neighborhoods-panama-city-expats',
+            'x-default': 'https://panamarealestatesale.com/es/blog/best-neighborhoods-panama-city-expats',
         },
     },
     openGraph: {

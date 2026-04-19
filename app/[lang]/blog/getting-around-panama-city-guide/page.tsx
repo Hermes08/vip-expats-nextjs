@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/getting-around-panama-city-guide',
             'pt': 'https://panamarealestatesale.com/pt/blog/getting-around-panama-city-guide',
             'de': 'https://panamarealestatesale.com/de/blog/getting-around-panama-city-guide',
+            'x-default': 'https://panamarealestatesale.com/es/blog/getting-around-panama-city-guide',
         },
     },
     openGraph: {

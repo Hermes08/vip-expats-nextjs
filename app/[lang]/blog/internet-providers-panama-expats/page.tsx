@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/internet-providers-panama-expats',
             'pt': 'https://panamarealestatesale.com/pt/blog/internet-providers-panama-expats',
             'de': 'https://panamarealestatesale.com/de/blog/internet-providers-panama-expats',
+            'x-default': 'https://panamarealestatesale.com/es/blog/internet-providers-panama-expats',
         },
     },
     openGraph: {

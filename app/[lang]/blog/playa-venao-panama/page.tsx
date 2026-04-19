@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/playa-venao-panama',
             'pt': 'https://panamarealestatesale.com/pt/blog/playa-venao-panama',
             'de': 'https://panamarealestatesale.com/de/blog/playa-venao-panama',
+            'x-default': 'https://panamarealestatesale.com/es/blog/playa-venao-panama',
         },
     },
     openGraph: {

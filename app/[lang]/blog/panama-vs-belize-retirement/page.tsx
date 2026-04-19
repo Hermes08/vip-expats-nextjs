@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/panama-vs-belize-retirement',
             'pt': 'https://panamarealestatesale.com/pt/blog/panama-vs-belize-retirement',
             'de': 'https://panamarealestatesale.com/de/blog/panama-vs-belize-retirement',
+            'x-default': 'https://panamarealestatesale.com/es/blog/panama-vs-belize-retirement',
         },
     },
     openGraph: {

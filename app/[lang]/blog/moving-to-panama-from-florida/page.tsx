@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/moving-to-panama-from-florida',
             'pt': 'https://panamarealestatesale.com/pt/blog/moving-to-panama-from-florida',
             'de': 'https://panamarealestatesale.com/de/blog/moving-to-panama-from-florida',
+            'x-default': 'https://panamarealestatesale.com/es/blog/moving-to-panama-from-florida',
         },
     },
     openGraph: {

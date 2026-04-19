@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/panama-weather-rainy-season-guide',
             'pt': 'https://panamarealestatesale.com/pt/blog/panama-weather-rainy-season-guide',
             'de': 'https://panamarealestatesale.com/de/blog/panama-weather-rainy-season-guide',
+            'x-default': 'https://panamarealestatesale.com/es/blog/panama-weather-rainy-season-guide',
         },
     },
     openGraph: {

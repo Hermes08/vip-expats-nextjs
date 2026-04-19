@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/coronado-real-estate-guide',
             'pt': 'https://panamarealestatesale.com/pt/blog/coronado-real-estate-guide',
             'de': 'https://panamarealestatesale.com/de/blog/coronado-real-estate-guide',
+            'x-default': 'https://panamarealestatesale.com/es/blog/coronado-real-estate-guide',
         },
     },
     openGraph: {

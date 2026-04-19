@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/best-beaches-panama-expats',
             'pt': 'https://panamarealestatesale.com/pt/blog/best-beaches-panama-expats',
             'de': 'https://panamarealestatesale.com/de/blog/best-beaches-panama-expats',
+            'x-default': 'https://panamarealestatesale.com/es/blog/best-beaches-panama-expats',
         },
     },
     openGraph: {

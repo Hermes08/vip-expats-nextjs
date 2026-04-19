@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/panama-for-families-with-children',
             'pt': 'https://panamarealestatesale.com/pt/blog/panama-for-families-with-children',
             'de': 'https://panamarealestatesale.com/de/blog/panama-for-families-with-children',
+            'x-default': 'https://panamarealestatesale.com/es/blog/panama-for-families-with-children',
         },
     },
     openGraph: {

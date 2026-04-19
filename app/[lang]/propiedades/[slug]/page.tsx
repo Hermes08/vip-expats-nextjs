@@ -108,6 +108,7 @@ export async function generateMetadata(
         'es': `https://panamarealestatesale.com/es/propiedades/${slug}`,
         'pt': `https://panamarealestatesale.com/pt/propiedades/${slug}`,
         'de': `https://panamarealestatesale.com/de/propiedades/${slug}`,
+        'x-default': `https://panamarealestatesale.com/es/propiedades/${slug}`,
       },
     },
     openGraph: {

@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/santa-catalina-panama',
             'pt': 'https://panamarealestatesale.com/pt/blog/santa-catalina-panama',
             'de': 'https://panamarealestatesale.com/de/blog/santa-catalina-panama',
+            'x-default': 'https://panamarealestatesale.com/es/blog/santa-catalina-panama',
         },
     },
     openGraph: {

@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/atm-cash-panama-guide',
             'pt': 'https://panamarealestatesale.com/pt/blog/atm-cash-panama-guide',
             'de': 'https://panamarealestatesale.com/de/blog/atm-cash-panama-guide',
+            'x-default': 'https://panamarealestatesale.com/es/blog/atm-cash-panama-guide',
         },
     },
     openGraph: {

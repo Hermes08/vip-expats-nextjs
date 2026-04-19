@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/panama-weather-guide',
             'pt': 'https://panamarealestatesale.com/pt/blog/panama-weather-guide',
             'de': 'https://panamarealestatesale.com/de/blog/panama-weather-guide',
+            'x-default': 'https://panamarealestatesale.com/es/blog/panama-weather-guide',
         },
     },
     openGraph: {

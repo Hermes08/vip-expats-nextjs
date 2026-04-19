@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       'es': 'https://panamarealestatesale.com/es/blog/panama-para-mexicanos-guia-2026',
       'pt': 'https://panamarealestatesale.com/pt/blog/panama-para-mexicanos-guia-2026',
       'de': 'https://panamarealestatesale.com/de/blog/panama-para-mexicanos-guia-2026',
+      'x-default': 'https://panamarealestatesale.com/es/blog/panama-para-mexicanos-guia-2026',
     },
   },
   openGraph: {

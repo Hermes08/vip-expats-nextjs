@@ -32,6 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/real-cost-of-moving-to-panama',
             'pt': 'https://panamarealestatesale.com/pt/blog/real-cost-of-moving-to-panama',
             'de': 'https://panamarealestatesale.com/de/blog/real-cost-of-moving-to-panama',
+            'x-default': 'https://panamarealestatesale.com/es/blog/real-cost-of-moving-to-panama',
         },
     },
     openGraph: {

@@ -28,6 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/boquete-panama-real-estate',
             'pt': 'https://panamarealestatesale.com/pt/blog/boquete-panama-real-estate',
             'de': 'https://panamarealestatesale.com/de/blog/boquete-panama-real-estate',
+            'x-default': 'https://panamarealestatesale.com/es/blog/boquete-panama-real-estate',
         },
     },
     openGraph: {

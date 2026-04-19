@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       'es': 'https://panamarealestatesale.com/es/blog/panama-food-guide-expats',
       'pt': 'https://panamarealestatesale.com/pt/blog/panama-food-guide-expats',
       'de': 'https://panamarealestatesale.com/de/blog/panama-food-guide-expats',
+      'x-default': 'https://panamarealestatesale.com/es/blog/panama-food-guide-expats',
     },
   },
   openGraph: {

@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/supermarkets-shopping-panama-expats',
             'pt': 'https://panamarealestatesale.com/pt/blog/supermarkets-shopping-panama-expats',
             'de': 'https://panamarealestatesale.com/de/blog/supermarkets-shopping-panama-expats',
+            'x-default': 'https://panamarealestatesale.com/es/blog/supermarkets-shopping-panama-expats',
         },
     },
     openGraph: {

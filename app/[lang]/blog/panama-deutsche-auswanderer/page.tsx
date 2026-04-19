@@ -31,6 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/panama-deutsche-auswanderer',
             'pt': 'https://panamarealestatesale.com/pt/blog/panama-deutsche-auswanderer',
             'de': 'https://panamarealestatesale.com/de/blog/panama-deutsche-auswanderer',
+            'x-default': 'https://panamarealestatesale.com/es/blog/panama-deutsche-auswanderer',
         },
     },
     openGraph: {

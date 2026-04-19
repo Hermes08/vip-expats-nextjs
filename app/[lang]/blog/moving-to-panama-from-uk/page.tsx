@@ -27,6 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       'es': 'https://panamarealestatesale.com/es/blog/moving-to-panama-from-uk',
       'pt': 'https://panamarealestatesale.com/pt/blog/moving-to-panama-from-uk',
       'de': 'https://panamarealestatesale.com/de/blog/moving-to-panama-from-uk',
+      'x-default': 'https://panamarealestatesale.com/es/blog/moving-to-panama-from-uk',
     },
   },
   openGraph: {

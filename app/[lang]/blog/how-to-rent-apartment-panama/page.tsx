@@ -19,6 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/how-to-rent-apartment-panama',
             'pt': 'https://panamarealestatesale.com/pt/blog/how-to-rent-apartment-panama',
             'de': 'https://panamarealestatesale.com/de/blog/how-to-rent-apartment-panama',
+            'x-default': 'https://panamarealestatesale.com/es/blog/how-to-rent-apartment-panama',
         },
     },
     openGraph: {
