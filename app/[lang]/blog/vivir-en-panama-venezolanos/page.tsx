@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       'es': 'https://panamarealestatesale.com/es/blog/vivir-en-panama-venezolanos',
       'pt': 'https://panamarealestatesale.com/pt/blog/vivir-en-panama-venezolanos',
       'de': 'https://panamarealestatesale.com/de/blog/vivir-en-panama-venezolanos',
-      'x-default': 'https://panamarealestatesale.com/es/blog/vivir-en-panama-venezolanos',
+      'x-default': 'https://panamarealestatesale.com/en/blog/vivir-en-panama-venezolanos',
     },
   },
   openGraph: {

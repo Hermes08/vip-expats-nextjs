@@ -17,7 +17,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog',
             'pt': 'https://panamarealestatesale.com/pt/blog',
             'de': 'https://panamarealestatesale.com/de/blog',
-            'x-default': 'https://panamarealestatesale.com/es/blog',
+            'x-default': 'https://panamarealestatesale.com/en/blog',
         },
     },
     openGraph: {

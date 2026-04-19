@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/condos-for-sale-panama-buyers-guide',
             'pt': 'https://panamarealestatesale.com/pt/blog/condos-for-sale-panama-buyers-guide',
             'de': 'https://panamarealestatesale.com/de/blog/condos-for-sale-panama-buyers-guide',
-            'x-default': 'https://panamarealestatesale.com/es/blog/condos-for-sale-panama-buyers-guide',
+            'x-default': 'https://panamarealestatesale.com/en/blog/condos-for-sale-panama-buyers-guide',
         },
     },
     openGraph: {

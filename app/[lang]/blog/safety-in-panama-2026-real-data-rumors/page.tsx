@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/safety-in-panama-2026-real-data-rumors',
             'pt': 'https://panamarealestatesale.com/pt/blog/safety-in-panama-2026-real-data-rumors',
             'de': 'https://panamarealestatesale.com/de/blog/safety-in-panama-2026-real-data-rumors',
-            'x-default': 'https://panamarealestatesale.com/es/blog/safety-in-panama-2026-real-data-rumors',
+            'x-default': 'https://panamarealestatesale.com/en/blog/safety-in-panama-2026-real-data-rumors',
         },
     },
     openGraph: {

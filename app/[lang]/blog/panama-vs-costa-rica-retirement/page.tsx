@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/panama-vs-costa-rica-retirement',
             'pt': 'https://panamarealestatesale.com/pt/blog/panama-vs-costa-rica-retirement',
             'de': 'https://panamarealestatesale.com/de/blog/panama-vs-costa-rica-retirement',
-            'x-default': 'https://panamarealestatesale.com/es/blog/panama-vs-costa-rica-retirement',
+            'x-default': 'https://panamarealestatesale.com/en/blog/panama-vs-costa-rica-retirement',
         },
     },
     openGraph: {

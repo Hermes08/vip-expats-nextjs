@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/what-to-pack-moving-to-panama',
             'pt': 'https://panamarealestatesale.com/pt/blog/what-to-pack-moving-to-panama',
             'de': 'https://panamarealestatesale.com/de/blog/what-to-pack-moving-to-panama',
-            'x-default': 'https://panamarealestatesale.com/es/blog/what-to-pack-moving-to-panama',
+            'x-default': 'https://panamarealestatesale.com/en/blog/what-to-pack-moving-to-panama',
         },
     },
     openGraph: {

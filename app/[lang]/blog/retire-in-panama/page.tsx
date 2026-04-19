@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/retire-in-panama',
             'pt': 'https://panamarealestatesale.com/pt/blog/retire-in-panama',
             'de': 'https://panamarealestatesale.com/de/blog/retire-in-panama',
-            'x-default': 'https://panamarealestatesale.com/es/blog/retire-in-panama',
+            'x-default': 'https://panamarealestatesale.com/en/blog/retire-in-panama',
         },
     },
     openGraph: {

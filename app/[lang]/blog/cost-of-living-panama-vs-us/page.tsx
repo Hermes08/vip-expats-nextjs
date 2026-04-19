@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/cost-of-living-panama-vs-us',
             'pt': 'https://panamarealestatesale.com/pt/blog/cost-of-living-panama-vs-us',
             'de': 'https://panamarealestatesale.com/de/blog/cost-of-living-panama-vs-us',
-            'x-default': 'https://panamarealestatesale.com/es/blog/cost-of-living-panama-vs-us',
+            'x-default': 'https://panamarealestatesale.com/en/blog/cost-of-living-panama-vs-us',
         },
     },
     openGraph: {

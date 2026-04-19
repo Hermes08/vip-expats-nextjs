@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/panama-sim-card-guide',
             'pt': 'https://panamarealestatesale.com/pt/blog/panama-sim-card-guide',
             'de': 'https://panamarealestatesale.com/de/blog/panama-sim-card-guide',
-            'x-default': 'https://panamarealestatesale.com/es/blog/panama-sim-card-guide',
+            'x-default': 'https://panamarealestatesale.com/en/blog/panama-sim-card-guide',
         },
     },
     openGraph: {

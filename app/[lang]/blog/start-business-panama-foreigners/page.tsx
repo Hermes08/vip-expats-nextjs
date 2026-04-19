@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       'es': 'https://panamarealestatesale.com/es/blog/start-business-panama-foreigners',
       'pt': 'https://panamarealestatesale.com/pt/blog/start-business-panama-foreigners',
       'de': 'https://panamarealestatesale.com/de/blog/start-business-panama-foreigners',
-      'x-default': 'https://panamarealestatesale.com/es/blog/start-business-panama-foreigners',
+      'x-default': 'https://panamarealestatesale.com/en/blog/start-business-panama-foreigners',
     },
   },
   openGraph: {

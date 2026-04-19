@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/panama-vs-portugal-retirement',
             'pt': 'https://panamarealestatesale.com/pt/blog/panama-vs-portugal-retirement',
             'de': 'https://panamarealestatesale.com/de/blog/panama-vs-portugal-retirement',
-            'x-default': 'https://panamarealestatesale.com/es/blog/panama-vs-portugal-retirement',
+            'x-default': 'https://panamarealestatesale.com/en/blog/panama-vs-portugal-retirement',
         },
     },
     openGraph: {

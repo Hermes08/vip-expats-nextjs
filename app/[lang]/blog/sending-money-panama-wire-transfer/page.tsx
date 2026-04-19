@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/sending-money-panama-wire-transfer',
             'pt': 'https://panamarealestatesale.com/pt/blog/sending-money-panama-wire-transfer',
             'de': 'https://panamarealestatesale.com/de/blog/sending-money-panama-wire-transfer',
-            'x-default': 'https://panamarealestatesale.com/es/blog/sending-money-panama-wire-transfer',
+            'x-default': 'https://panamarealestatesale.com/en/blog/sending-money-panama-wire-transfer',
         },
     },
     openGraph: {

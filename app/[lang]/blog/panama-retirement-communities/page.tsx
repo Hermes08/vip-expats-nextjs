@@ -30,7 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/panama-retirement-communities',
             'pt': 'https://panamarealestatesale.com/pt/blog/panama-retirement-communities',
             'de': 'https://panamarealestatesale.com/de/blog/panama-retirement-communities',
-            'x-default': 'https://panamarealestatesale.com/es/blog/panama-retirement-communities',
+            'x-default': 'https://panamarealestatesale.com/en/blog/panama-retirement-communities',
         },
     },
     openGraph: {

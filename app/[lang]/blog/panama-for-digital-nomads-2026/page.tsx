@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/panama-for-digital-nomads-2026',
             'pt': 'https://panamarealestatesale.com/pt/blog/panama-for-digital-nomads-2026',
             'de': 'https://panamarealestatesale.com/de/blog/panama-for-digital-nomads-2026',
-            'x-default': 'https://panamarealestatesale.com/es/blog/panama-for-digital-nomads-2026',
+            'x-default': 'https://panamarealestatesale.com/en/blog/panama-for-digital-nomads-2026',
         },
     },
     openGraph: {

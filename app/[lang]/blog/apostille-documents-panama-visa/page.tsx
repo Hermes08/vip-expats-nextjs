@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       'es': 'https://panamarealestatesale.com/es/blog/apostille-documents-panama-visa',
       'pt': 'https://panamarealestatesale.com/pt/blog/apostille-documents-panama-visa',
       'de': 'https://panamarealestatesale.com/de/blog/apostille-documents-panama-visa',
-      'x-default': 'https://panamarealestatesale.com/es/blog/apostille-documents-panama-visa',
+      'x-default': 'https://panamarealestatesale.com/en/blog/apostille-documents-panama-visa',
     },
   },
   openGraph: {

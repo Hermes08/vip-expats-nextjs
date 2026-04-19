@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/panama-property-buying-process-guide',
             'pt': 'https://panamarealestatesale.com/pt/blog/panama-property-buying-process-guide',
             'de': 'https://panamarealestatesale.com/de/blog/panama-property-buying-process-guide',
-            'x-default': 'https://panamarealestatesale.com/es/blog/panama-property-buying-process-guide',
+            'x-default': 'https://panamarealestatesale.com/en/blog/panama-property-buying-process-guide',
         },
     },
     openGraph: {

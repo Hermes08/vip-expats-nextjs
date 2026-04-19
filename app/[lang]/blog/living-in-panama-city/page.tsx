@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/living-in-panama-city',
             'pt': 'https://panamarealestatesale.com/pt/blog/living-in-panama-city',
             'de': 'https://panamarealestatesale.com/de/blog/living-in-panama-city',
-            'x-default': 'https://panamarealestatesale.com/es/blog/living-in-panama-city',
+            'x-default': 'https://panamarealestatesale.com/en/blog/living-in-panama-city',
         },
     },
     openGraph: {

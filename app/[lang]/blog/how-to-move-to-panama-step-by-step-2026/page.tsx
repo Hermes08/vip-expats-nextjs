@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/how-to-move-to-panama-step-by-step-2026',
             'pt': 'https://panamarealestatesale.com/pt/blog/how-to-move-to-panama-step-by-step-2026',
             'de': 'https://panamarealestatesale.com/de/blog/how-to-move-to-panama-step-by-step-2026',
-            'x-default': 'https://panamarealestatesale.com/es/blog/how-to-move-to-panama-step-by-step-2026',
+            'x-default': 'https://panamarealestatesale.com/en/blog/how-to-move-to-panama-step-by-step-2026',
         },
     },
     openGraph: {

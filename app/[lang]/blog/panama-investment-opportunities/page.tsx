@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/panama-investment-opportunities',
             'pt': 'https://panamarealestatesale.com/pt/blog/panama-investment-opportunities',
             'de': 'https://panamarealestatesale.com/de/blog/panama-investment-opportunities',
-            'x-default': 'https://panamarealestatesale.com/es/blog/panama-investment-opportunities',
+            'x-default': 'https://panamarealestatesale.com/en/blog/panama-investment-opportunities',
         },
     },
     openGraph: {

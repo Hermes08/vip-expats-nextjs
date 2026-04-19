@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/pros-cons-retiring-panama',
             'pt': 'https://panamarealestatesale.com/pt/blog/pros-cons-retiring-panama',
             'de': 'https://panamarealestatesale.com/de/blog/pros-cons-retiring-panama',
-            'x-default': 'https://panamarealestatesale.com/es/blog/pros-cons-retiring-panama',
+            'x-default': 'https://panamarealestatesale.com/en/blog/pros-cons-retiring-panama',
         },
     },
     openGraph: {

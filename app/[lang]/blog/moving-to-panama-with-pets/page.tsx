@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/moving-to-panama-with-pets',
             'pt': 'https://panamarealestatesale.com/pt/blog/moving-to-panama-with-pets',
             'de': 'https://panamarealestatesale.com/de/blog/moving-to-panama-with-pets',
-            'x-default': 'https://panamarealestatesale.com/es/blog/moving-to-panama-with-pets',
+            'x-default': 'https://panamarealestatesale.com/en/blog/moving-to-panama-with-pets',
         },
     },
     openGraph: {

@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/bocas-del-toro-real-estate',
             'pt': 'https://panamarealestatesale.com/pt/blog/bocas-del-toro-real-estate',
             'de': 'https://panamarealestatesale.com/de/blog/bocas-del-toro-real-estate',
-            'x-default': 'https://panamarealestatesale.com/es/blog/bocas-del-toro-real-estate',
+            'x-default': 'https://panamarealestatesale.com/en/blog/bocas-del-toro-real-estate',
         },
     },
     openGraph: {

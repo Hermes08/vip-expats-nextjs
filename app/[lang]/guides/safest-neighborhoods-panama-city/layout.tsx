@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
         'es-PA': `${domain}/es${slug}`,
         'pt-BR': `${domain}/pt${slug}`,
         'de-DE': `${domain}/de${slug}`,
-        'x-default': `${domain}/es${slug}`,
+        'x-default': `${domain}/en${slug}`,
       },
     },
     openGraph: {

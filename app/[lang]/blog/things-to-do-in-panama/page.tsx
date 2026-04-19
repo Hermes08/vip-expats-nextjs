@@ -36,7 +36,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/things-to-do-in-panama',
             'pt': 'https://panamarealestatesale.com/pt/blog/things-to-do-in-panama',
             'de': 'https://panamarealestatesale.com/de/blog/things-to-do-in-panama',
-            'x-default': 'https://panamarealestatesale.com/es/blog/things-to-do-in-panama',
+            'x-default': 'https://panamarealestatesale.com/en/blog/things-to-do-in-panama',
         },
     },
     openGraph: {

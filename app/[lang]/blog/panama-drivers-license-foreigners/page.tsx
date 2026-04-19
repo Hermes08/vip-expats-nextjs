@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/panama-drivers-license-foreigners',
             'pt': 'https://panamarealestatesale.com/pt/blog/panama-drivers-license-foreigners',
             'de': 'https://panamarealestatesale.com/de/blog/panama-drivers-license-foreigners',
-            'x-default': 'https://panamarealestatesale.com/es/blog/panama-drivers-license-foreigners',
+            'x-default': 'https://panamarealestatesale.com/en/blog/panama-drivers-license-foreigners',
         },
     },
     openGraph: {

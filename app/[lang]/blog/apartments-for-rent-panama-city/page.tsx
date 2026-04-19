@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
             'es': 'https://panamarealestatesale.com/es/blog/apartments-for-rent-panama-city',
             'pt': 'https://panamarealestatesale.com/pt/blog/apartments-for-rent-panama-city',
             'de': 'https://panamarealestatesale.com/de/blog/apartments-for-rent-panama-city',
-            'x-default': 'https://panamarealestatesale.com/es/blog/apartments-for-rent-panama-city',
+            'x-default': 'https://panamarealestatesale.com/en/blog/apartments-for-rent-panama-city',
         },
     },
     openGraph: {

@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
       'es': 'https://panamarealestatesale.com/es/blog/moving-to-panama-from-canada',
       'pt': 'https://panamarealestatesale.com/pt/blog/moving-to-panama-from-canada',
       'de': 'https://panamarealestatesale.com/de/blog/moving-to-panama-from-canada',
-      'x-default': 'https://panamarealestatesale.com/es/blog/moving-to-panama-from-canada',
+      'x-default': 'https://panamarealestatesale.com/en/blog/moving-to-panama-from-canada',
     },
   },
   openGraph: {
