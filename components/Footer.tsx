@@ -29,13 +29,13 @@ const Footer: React.FC = () => {
                         <Magnetic strength={0.2}>
                             <Link
                                 href={`/${lang}`}
-                                aria-label="PanamaRealEstateSale.com"
+                                aria-label="PanamaRealEstateGuide.com"
                                 className="lg h-dark mb-8"
                                 style={{ fontSize: 30 }}
                             >
                                 <span className="p">Panama</span>
                                 <span className="r">RealEstate</span>
-                                <span className="g">Sale</span>
+                                <span className="g">Guide</span>
                                 <span className="tld" style={{ fontSize: 25 }}>.com</span>
                             </Link>
                         </Magnetic>
@@ -69,7 +69,7 @@ const Footer: React.FC = () => {
                 </div>
 
                 <div className="pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
-                    <p className="eyebrow eyebrow-light !text-white/50 !text-[10px]">&copy; {new Date().getFullYear()} PANAMAREALESTATESALE. {t.footer.rights}</p>
+                    <p className="eyebrow eyebrow-light !text-white/50 !text-[10px]">&copy; {new Date().getFullYear()} PANAMAREALESTATEGUIDE.COM · {t.footer.rights}</p>
                     <div className="flex gap-10">
                         <Link href={`/${lang}/admin`} className="opacity-20 hover:opacity-60 transition-all text-slate-600 text-[8px] uppercase tracking-widest">Admin</Link>
                     </div>
