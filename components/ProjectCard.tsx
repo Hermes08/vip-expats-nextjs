@@ -33,7 +33,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, className = '' }) =>
             href={`/${lang}/proyectos/${project.slug}`}
             className={`block group ${className}`}
         >
-            <TiltCard className="rounded-[2.5rem] overflow-hidden bg-brand-50 border border-brand-100 shadow-2xl">
+            <TiltCard className="rounded-3xl overflow-hidden bg-[color:var(--color-paper)] border border-[color:rgba(14,42,43,0.08)] shadow-[0_20px_60px_-20px_rgba(14,42,43,0.25)]">
                 {/* Image Container */}
                 <div className="relative aspect-[16/11] overflow-hidden">
                     <Image
@@ -46,65 +46,65 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project, className = '' }) =>
                     {/* Status Badge */}
                     <div className="absolute top-6 left-6 z-10">
                         <span className={`
-                            px-4 py-1.5 text-[9px] font-black uppercase tracking-widest text-brand-900 rounded-full shadow-xl
-                            ${isPresale ? 'bg-brand-GOLD' : 'bg-white'}
+                            tag-mono shadow-xl
+                            ${isPresale ? '!bg-brand-GOLD !text-brand-950' : '!bg-[color:var(--color-paper)] !text-[color:var(--color-ink)]'}
                         `}>
                             {project.status}
                         </span>
                     </div>
 
                     {/* Price Tag - Glassmorphism */}
-                    <div className="absolute bottom-8 left-6 right-6 z-20">
-                        <div className="bg-white/10 backdrop-blur-md px-6 py-5 rounded-3xl border border-white/20 shadow-xl flex justify-between items-center transform transition-transform duration-500 group-hover:-translate-y-2">
+                    <div className="absolute bottom-6 left-6 right-6 z-20">
+                        <div className="bg-[color:rgba(253,253,247,0.92)] backdrop-blur-md px-6 py-5 rounded-2xl border border-[color:rgba(14,42,43,0.08)] shadow-xl flex justify-between items-center transform transition-transform duration-500 group-hover:-translate-y-2">
                             <div>
-                                <span className="text-[10px] font-black text-brand-GOLD uppercase tracking-widest block mb-2 text-shadow-sm">
+                                <span className="eyebrow !text-[color:var(--color-ink-mute)] block mb-1.5">
                                     {CONTENT[lang].startingAt || 'Starting At'}
                                 </span>
-                                <div className="text-2xl font-black text-brand-950 tracking-tighter italic text-shadow-md">
+                                <div className="display-serif italic text-3xl text-[color:var(--color-ink)] leading-none">
                                     {formattedPrice}
                                 </div>
                             </div>
-                            <div className="bg-white/20 p-3 rounded-full backdrop-blur-sm border border-white/20 shadow-lg group-hover:bg-brand-GOLD group-hover:text-brand-950 transition-colors">
-                                <TrendingUp size={20} className="text-brand-GOLD group-hover:text-brand-900" />
+                            <div className="bg-[color:var(--color-teal-soft)] p-3 rounded-full border border-[color:var(--color-teal-edit)]/20 group-hover:bg-[color:var(--color-teal-edit)] group-hover:border-[color:var(--color-teal-edit)] transition-colors">
+                                <TrendingUp size={20} className="text-[color:var(--color-teal-deep)] group-hover:text-white transition-colors" />
                             </div>
                         </div>
                     </div>
                 </div>
 
                 {/* Content */}
-                <div className="p-10 relative z-20 bg-white flex flex-col flex-grow">
-                    <div className="flex items-center gap-2 text-brand-TEAL text-[10px] font-black uppercase tracking-[0.3em] mb-4">
+                <div className="p-8 md:p-10 relative z-20 bg-[color:var(--color-paper)] flex flex-col flex-grow">
+                    <div className="flex items-center gap-2 eyebrow !text-[color:var(--color-teal-edit)] mb-4">
                         <MapPin size={12} />
                         {project.location[lang] || project.location.en}
                     </div>
-                    <h3 className="text-xl md:text-2xl font-heading font-black text-brand-950 mb-4 group-hover:text-brand-GOLD transition-colors uppercase tracking-tighter italic">
+                    <h3 className="display-serif italic text-3xl md:text-4xl text-[color:var(--color-ink)] mb-5 group-hover:text-[color:var(--color-teal-edit)] transition-colors">
                         {project.name[lang] || project.name.en}
                     </h3>
 
                     {/* Specs Grid */}
-                    <div className="flex items-center justify-between mb-8 pb-8 border-b border-brand-100">
+                    <div className="flex items-center justify-between mb-7 pb-7 border-b border-[color:rgba(14,42,43,0.08)]">
                         <div className="flex flex-col gap-1">
-                            <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest">{labels.beds}</span>
-                            <div className="flex items-center gap-2 text-brand-950 font-black italic"><BedDouble size={14} className="text-brand-TEAL" /> {project.beds}</div>
+                            <span className="eyebrow !text-[10px]">{labels.beds}</span>
+                            <div className="flex items-center gap-2 text-[color:var(--color-ink)] font-semibold"><BedDouble size={14} className="text-[color:var(--color-teal-edit)]" /> {project.beds}</div>
                         </div>
-                        <div className="w-px h-6 bg-brand-100"></div>
+                        <div className="w-px h-6 bg-[color:rgba(14,42,43,0.08)]"></div>
                         <div className="flex flex-col gap-1">
-                            <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest">{labels.baths}</span>
-                            <div className="flex items-center gap-2 text-brand-950 font-black italic"><Bath size={14} className="text-brand-TEAL" /> {project.baths}</div>
+                            <span className="eyebrow !text-[10px]">{labels.baths}</span>
+                            <div className="flex items-center gap-2 text-[color:var(--color-ink)] font-semibold"><Bath size={14} className="text-[color:var(--color-teal-edit)]" /> {project.baths}</div>
                         </div>
-                        <div className="w-px h-6 bg-brand-100"></div>
+                        <div className="w-px h-6 bg-[color:rgba(14,42,43,0.08)]"></div>
                         <div className="flex flex-col gap-1">
-                            <span className="text-[9px] font-black text-slate-500 uppercase tracking-widest">AREA</span>
-                            <div className="flex items-center gap-2 text-brand-950 font-black italic"><Square size={14} className="text-brand-TEAL" /> {project.sqft} m²</div>
+                            <span className="eyebrow !text-[10px]">AREA</span>
+                            <div className="flex items-center gap-2 text-[color:var(--color-ink)] font-semibold"><Square size={14} className="text-[color:var(--color-teal-edit)]" /> {project.sqft} m²</div>
                         </div>
                     </div>
 
-                    <p className="text-slate-500 text-sm font-medium leading-relaxed mb-10 line-clamp-2 italic">
+                    <p className="text-[color:var(--color-ink-soft)] text-sm font-normal leading-relaxed mb-8 line-clamp-2">
                         {project.description[lang] || project.description.en}
                     </p>
 
                     <div className="mt-auto">
-                        <span className="btn-3d btn-3d-gold flex items-center justify-center gap-4 w-full py-5 rounded-full font-black text-[10px] uppercase tracking-[0.3em] transition-all group-hover:scale-105">
+                        <span className="btn-editorial btn-editorial-teal w-full !py-4 flex items-center justify-center gap-3 group-hover:translate-y-[-2px] transition-transform">
                             {labels.viewDetails} <ArrowUpRight size={16} />
                         </span>
                     </div>
