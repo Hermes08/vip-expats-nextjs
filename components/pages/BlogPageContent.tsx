@@ -46,35 +46,35 @@ const BlogPageContent: React.FC<{ lang?: string }> = ({ lang: propLang }) => {
     });
 
     return (
-        <div className="pt-24 min-h-screen bg-white">
+        <div className="pt-24 min-h-screen bg-[color:var(--color-cream)]">
             <BreadcrumbSchema
                 items={[
                     { name: 'Blog', item: `https://panamarealestatesale.com/${lang}/blog` }
                 ]}
             />
 
-            {/* Page header — light teal tinted */}
-            <div className="bg-brand-50 border-b border-brand-100 py-16">
+            {/* Page header — editorial paper surface */}
+            <div className="bg-[color:var(--color-paper)] border-b border-[color:rgba(14,42,43,0.08)] py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                    <span className="tag-teal-light mb-4 inline-block">
+                    <span className="eyebrow !text-[color:var(--color-teal-edit)] mb-5 inline-block">
                         {bt.badge}
                     </span>
-                    <h1 className="font-heading text-4xl md:text-5xl font-black text-brand-950 uppercase italic tracking-tighter mb-4 mt-3">
-                        {t.nav.blog}
+                    <h1 className="display-serif text-5xl md:text-7xl text-[color:var(--color-ink)] mb-6 leading-[0.98]">
+                        <span className="italic">{t.nav.blog}</span>
                     </h1>
-                    <p className="text-slate-500 text-base max-w-xl mx-auto leading-relaxed">
+                    <p className="lede mx-auto">
                         {bt.subtitle}
                     </p>
                 </div>
             </div>
 
-            {/* Post grid */}
+            {/* Post grid — editorial cards */}
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {sortedPosts.map((post) => (
                         <article
                             key={post.id}
-                            className="card-light rounded-2xl overflow-hidden flex flex-col group"
+                            className="bg-[color:var(--color-paper)] border border-[color:rgba(14,42,43,0.08)] rounded-2xl overflow-hidden flex flex-col group hover:shadow-[0_20px_50px_-20px_rgba(14,42,43,0.22)] hover:border-[color:var(--color-teal-edit)]/30 transition-all duration-500"
                         >
                             <Link href={`/${lang}/blog/${post.slug}`} className="block h-52 overflow-hidden relative flex-shrink-0">
                                 <img
@@ -82,27 +82,27 @@ const BlogPageContent: React.FC<{ lang?: string }> = ({ lang: propLang }) => {
                                     alt={post.title[lang] || post.title.en}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-brand-950/30 to-transparent" />
-                                <div className="absolute top-3 left-3">
-                                    <span className="tag-teal text-[10px]">
+                                <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-ink)]/45 via-[color:var(--color-ink)]/5 to-transparent" />
+                                <div className="absolute top-4 left-4">
+                                    <span className="tag-mono tag-mono-brass">
                                         {post.category}
                                     </span>
                                 </div>
                             </Link>
 
-                            <div className="p-6 flex flex-col flex-grow">
-                                <div className="text-brand-TEAL text-[11px] font-bold uppercase tracking-widest mb-2">{post.date}</div>
-                                <h2 className="font-heading text-lg font-black text-brand-950 mb-3 group-hover:text-brand-TEAL transition-colors leading-tight">
+                            <div className="p-7 flex flex-col flex-grow">
+                                <div className="eyebrow !text-[color:var(--color-teal-edit)] mb-3">{post.date}</div>
+                                <h2 className="display-serif italic text-2xl text-[color:var(--color-ink)] mb-4 group-hover:text-[color:var(--color-teal-edit)] transition-colors leading-snug">
                                     <Link href={`/${lang}/blog/${post.slug}`}>
                                         {post.title[lang] || post.title.en}
                                     </Link>
                                 </h2>
-                                <p className="text-slate-500 mb-5 leading-relaxed flex-grow line-clamp-3 text-sm">
+                                <p className="text-[color:var(--color-ink-soft)] mb-6 leading-relaxed flex-grow line-clamp-3 text-sm">
                                     {post.excerpt[lang] || post.excerpt.en}
                                 </p>
                                 <Link
                                     href={`/${lang}/blog/${post.slug}`}
-                                    className="inline-flex items-center gap-2 text-brand-TEAL font-black hover:gap-3 transition-all text-xs uppercase tracking-widest"
+                                    className="inline-flex items-center gap-2 eyebrow !text-[color:var(--color-teal-edit)] border-b border-[color:var(--color-teal-edit)]/40 pb-1.5 hover:border-[color:var(--color-teal-edit)] transition-all self-start"
                                 >
                                     {bt.readArticle} <ArrowRight size={12} />
                                 </Link>
