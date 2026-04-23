@@ -606,6 +606,10 @@ body {
   border-radius: 4px;
 }
 
+/* Hide scrollbar on horizontal strips (sticky tab bars, filter rows) */
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+
 /* ─────────────────────────────────────────────────────────────
    GLOBAL EDITORIALIZATION LAYER
    ─────────────────────────────────────────────────────────────
