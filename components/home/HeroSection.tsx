@@ -15,47 +15,57 @@ interface HeroSectionProps {
 const HERO_TEXT: Record<string, {
   title: string;
   titleGold: string;
+  tagline: string;
   subtitle: string;
   statsLabels: string[];
   ctaBrowse: string;
   ctaConsult: string;
   scroll: string;
+  badge: string;
 }> = {
   en: {
     title: 'Panama Real Estate',
     titleGold: 'for Sale 2026',
-    subtitle: 'Your trusted guide to buying property in Panama. From beachfront condos to mountain retreats, we connect international investors with the best opportunities.',
-    statsLabels: ['Properties', 'Years Experience', 'USD · No Currency Risk'],
+    tagline: 'USD Economy · Pensionado Visa · Johns Hopkins-Affiliated Healthcare',
+    subtitle: 'The #1 Plan-B destination for US & Canadian retirees and LATAM investors hedging in dollars. Permanent residency in 4–8 months, no currency risk, world-class medical care, and titled beachfront from $250K.',
+    statsLabels: ['Verified Listings', 'Years in Panama', 'USD · No FX Risk'],
     ctaBrowse: 'BROWSE PROPERTIES',
     ctaConsult: 'FREE CONSULTATION',
     scroll: 'Scroll to Discover',
+    badge: 'Market Intelligence',
   },
   es: {
     title: 'Bienes Raíces',
     titleGold: 'en Venta 2026',
-    subtitle: 'Su guía de confianza para comprar propiedades en Panamá. Desde condos frente al mar hasta retiros en la montaña, conectamos a inversores internacionales con las mejores oportunidades.',
-    statsLabels: ['Propiedades', 'Años de experiencia', 'USD · Sin riesgo cambiario'],
+    tagline: 'Economía en USD · Visa Pensionado · Salud de Clase Mundial',
+    subtitle: 'El destino #1 Plan B para inversionistas latinoamericanos que buscan dolarizar su patrimonio. Residencia permanente en 4–8 meses, cero riesgo cambiario, propiedad titulada frente al mar desde $250,000 USD.',
+    statsLabels: ['Propiedades Verificadas', 'Años en Panamá', 'USD · Sin Riesgo FX'],
     ctaBrowse: 'VER PROPIEDADES',
     ctaConsult: 'CONSULTA GRATIS',
     scroll: 'Desplázate para Descubrir',
+    badge: 'Inteligencia de Mercado',
   },
   pt: {
     title: 'Imóveis no Panamá',
     titleGold: 'à Venda 2026',
-    subtitle: 'Seu guia confiável para comprar imóveis no Panamá. De apartamentos à beira-mar a retiros na montanha, conectamos investidores internacionais às melhores oportunidades.',
-    statsLabels: ['Propriedades', 'Anos de Experiência', 'USD · Sem Risco Cambial'],
+    tagline: 'Economia em USD · Visto de Residência · Saúde Padrão Global',
+    subtitle: 'O destino #1 Plano B para brasileiros que querem proteger patrimônio em dólar. Residência permanente em 4–8 meses, sem risco cambial, imóveis beira-mar titulados a partir de US$ 250.000.',
+    statsLabels: ['Imóveis Verificados', 'Anos no Panamá', 'USD · Sem Risco Cambial'],
     ctaBrowse: 'VER IMÓVEIS',
     ctaConsult: 'CONSULTA GRÁTIS',
     scroll: 'Role para Descobrir',
+    badge: 'Inteligência de Mercado',
   },
   de: {
     title: 'Panama Immobilien',
     titleGold: 'zum Verkauf 2026',
-    subtitle: 'Ihr vertrauenswürdiger Leitfaden zum Immobilienkauf in Panama. Von Strandapartments bis hin zu Bergrückzugsorten verbinden wir internationale Investoren mit den besten Möglichkeiten.',
-    statsLabels: ['Immobilien', 'Jahre Erfahrung', 'USD · Kein Währungsrisiko'],
+    tagline: 'USD-Wirtschaft · Permanente Aufenthaltsgenehmigung · Erstklassige Gesundheitsversorgung',
+    subtitle: 'Das #1 Plan-B-Ziel für internationale Investoren. Permanente Aufenthaltsgenehmigung in 4–8 Monaten, kein Währungsrisiko, Strandimmobilien mit Eigentumstitel ab 250.000 USD.',
+    statsLabels: ['Verifizierte Immobilien', 'Jahre in Panama', 'USD · Kein FX-Risiko'],
     ctaBrowse: 'IMMOBILIEN ANSEHEN',
     ctaConsult: 'KOSTENLOSE BERATUNG',
     scroll: 'Scrollen zum Entdecken',
+    badge: 'Marktintelligenz',
   },
 };
 
@@ -76,7 +86,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
             style={{ transform: 'translateZ(40px)' }}
           >
             <div className="w-2 h-2 bg-brand-GOLD rounded-full animate-pulse shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div>
-            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white/90">Market Intelligence <span className="text-brand-GOLD">2026</span></span>
+            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white/90">{h.badge} <span className="text-brand-GOLD">2026</span></span>
           </motion.div>
 
           <div style={{ transform: 'translateZ(60px)' }}>
@@ -96,9 +106,9 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.5, delay: 0.8 }}
-              className="text-sm md:text-base text-white/75 font-bold mb-5 uppercase tracking-[0.3em]"
+              className="text-xs md:text-sm text-white/80 font-bold mb-5 uppercase tracking-[0.25em]"
             >
-              Luxury Beachfront & City Portfolio
+              {h.tagline}
             </motion.p>
           </div>
 
