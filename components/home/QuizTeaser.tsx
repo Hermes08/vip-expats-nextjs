@@ -21,21 +21,21 @@ export default function QuizTeaser({ lang = 'en' }: Props) {
   const t = text[lang as 'en' | 'es'] ?? text.en;
 
   return (
-    <div className="w-full bg-white border-b border-brand-100 py-3 px-4">
+    <div className="w-full bg-[color:var(--color-paper)] border-b border-[color:rgba(14,42,43,0.08)] py-3 px-4">
       <div className="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-center sm:text-left">
-        <HelpCircle size={16} className="text-brand-GOLD flex-shrink-0 hidden sm:block" />
-        <span className="text-slate-500 text-xs font-medium">
+        <HelpCircle size={16} className="text-[color:var(--color-teal-edit)] flex-shrink-0 hidden sm:block" />
+        <span className="text-[color:var(--color-ink-soft)] text-xs font-medium">
           {t.label}
         </span>
         <Link
           href={`/${lang}/quiz`}
-          className="inline-flex items-center gap-1.5 text-brand-GOLD font-black text-xs uppercase tracking-widest border-b border-brand-GOLD/40 pb-px hover:border-brand-GOLD transition-all group"
+          className="inline-flex items-center gap-1.5 eyebrow !text-[color:var(--color-teal-edit)] border-b border-[color:var(--color-teal-edit)]/40 pb-px hover:border-[color:var(--color-teal-edit)] transition-all group"
         >
           {t.cta}
           <ArrowRight size={12} className="group-hover:translate-x-0.5 transition-transform" />
         </Link>
-        <span className="hidden sm:block text-slate-600 text-[10px]">·</span>
-        <span className="hidden sm:block text-slate-500 text-[10px] font-medium">{t.sub}</span>
+        <span className="hidden sm:block text-[color:var(--color-ink-mute)] text-[10px]">·</span>
+        <span className="hidden sm:block text-[color:var(--color-ink-mute)] text-[10px] font-medium italic">{t.sub}</span>
       </div>
     </div>
   );

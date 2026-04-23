@@ -69,15 +69,15 @@ export default function TestimonialsSection() {
   const h = TESTIMONIALS_HEADING[lang] || TESTIMONIALS_HEADING['en'];
 
   return (
-    <section className="py-14 bg-brand-50 border-t border-brand-100 relative overflow-hidden">
+    <section className="py-20 bg-[color:var(--color-cream)] border-t border-[color:rgba(14,42,43,0.08)] relative overflow-hidden">
       {/* Subtle gold glow */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-brand-GOLD/5 rounded-full blur-[80px] pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-brand-GOLD/8 rounded-full blur-[80px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 relative z-10">
-        <div className="text-center mb-10 reveal-on-scroll">
-          <span className="text-brand-TEAL font-black uppercase tracking-[0.4em] text-[10px] mb-2 block">{h.badge}</span>
-          <h2 className="text-2xl md:text-4xl font-heading font-black text-brand-950 tracking-tight">
-            {h.title} <span className="text-brand-GOLD">{h.titleGold}</span>
+        <div className="text-center mb-14 reveal-on-scroll">
+          <span className="eyebrow !text-[color:var(--color-teal-edit)] mb-4 block">{h.badge}</span>
+          <h2 className="display-serif text-4xl md:text-6xl text-[color:var(--color-ink)]">
+            {h.title} <span className="italic text-brand-GOLD">{h.titleGold}</span>
           </h2>
         </div>
 
@@ -85,11 +85,11 @@ export default function TestimonialsSection() {
           {testimonials.map((t, i) => (
             <div
               key={i}
-              className={`card-light p-7 rounded-2xl border-brand-100 hover:border-brand-GOLD/30 transition-all flex flex-col reveal-on-scroll stagger-${i + 1}`}
+              className={`bg-[color:var(--color-paper)] border border-[color:rgba(14,42,43,0.08)] p-7 rounded-2xl hover:border-brand-GOLD/40 hover:shadow-[0_20px_40px_-20px_rgba(14,42,43,0.2)] transition-all flex flex-col reveal-on-scroll stagger-${i + 1}`}
             >
               {/* Quote icon + stars */}
               <div className="flex items-start justify-between mb-5">
-                <Quote size={28} className="text-brand-GOLD/40" />
+                <Quote size={28} className="text-brand-GOLD/50" />
                 <div className="flex gap-0.5">
                   {Array.from({ length: t.stars }).map((_, s) => (
                     <Star key={s} size={12} className="text-brand-GOLD fill-brand-GOLD" />
@@ -98,27 +98,27 @@ export default function TestimonialsSection() {
               </div>
 
               {/* Quote */}
-              <p className="text-slate-500 text-sm font-medium leading-relaxed flex-1 mb-6 italic">
+              <p className="text-[color:var(--color-ink-soft)] text-sm font-normal leading-relaxed flex-1 mb-6 italic">
                 &ldquo;{t.quote}&rdquo;
               </p>
 
               {/* Person */}
-              <div className="border-t border-brand-100 pt-5">
+              <div className="border-t border-[color:rgba(14,42,43,0.08)] pt-5">
                 <div className="flex items-center justify-between">
                   <div>
-                    <p className="text-slate-700 font-black text-sm tracking-tight">{t.name}</p>
-                    <p className="text-slate-500 text-[10px] font-bold uppercase tracking-widest mt-0.5">
+                    <p className="display-serif italic text-[color:var(--color-ink)] text-lg leading-tight">{t.name}</p>
+                    <p className="eyebrow !text-[10px] !text-[color:var(--color-ink-mute)] mt-1">
                       {t.from}
                     </p>
-                    <p className="text-brand-GOLD text-[10px] font-bold uppercase tracking-widest mt-0.5">
+                    <p className="eyebrow !text-[10px] !text-brand-GOLD mt-1">
                       {t.location}
                     </p>
                   </div>
-                  <span className="px-3 py-1 bg-brand-GOLD/10 border border-brand-GOLD/20 rounded-full text-brand-GOLD text-[9px] font-black uppercase tracking-widest">
+                  <span className="tag-mono tag-mono-brass">
                     {t.tag}
                   </span>
                 </div>
-                <p className="text-slate-600 text-[9px] font-black uppercase tracking-widest mt-2">
+                <p className="eyebrow !text-[9px] !text-[color:var(--color-ink-mute)] mt-2">
                   via {t.visa}
                 </p>
               </div>
@@ -127,8 +127,8 @@ export default function TestimonialsSection() {
         </div>
 
         {/* Bottom trust line */}
-        <div className="mt-10 text-center reveal-on-scroll">
-          <p className="text-slate-500 text-xs font-bold uppercase tracking-widest">
+        <div className="mt-12 text-center reveal-on-scroll">
+          <p className="eyebrow !text-[color:var(--color-ink-mute)]">
             {h.trust}
           </p>
         </div>

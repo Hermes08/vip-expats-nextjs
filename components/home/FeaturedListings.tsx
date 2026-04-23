@@ -61,21 +61,21 @@ export default function FeaturedListings({ lang }: FeaturedListingsProps) {
   if (featured.length === 0) return null;
 
   return (
-    <section className="py-16 md:py-32 bg-white border-t border-brand-100 relative">
+    <section className="py-16 md:py-32 bg-[color:var(--color-cream-soft)] border-t border-[color:rgba(14,42,43,0.08)] relative">
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         {/* Section header */}
-        <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8 reveal-on-scroll">
+        <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8 reveal-on-scroll">
           <div>
-            <span className="text-brand-GOLD font-black uppercase tracking-[0.5em] text-[10px] mb-4 block italic">
+            <span className="eyebrow !text-[color:var(--color-brass)] mb-5 block">
               {ft.badge}
             </span>
-            <h2 className="font-heading text-4xl md:text-7xl font-black text-brand-950 uppercase tracking-tighter leading-tight md:leading-[0.85]">
-              {ft.titleLine1}<br /><span className="text-brand-GOLD">{ft.titleLine2Gold}</span>
+            <h2 className="display-serif text-5xl md:text-7xl text-[color:var(--color-ink)] leading-[0.95]">
+              {ft.titleLine1}<br /><span className="italic text-brand-GOLD">{ft.titleLine2Gold}</span>
             </h2>
           </div>
           <Link
             href={`/${lang}/propiedades`}
-            className="flex items-center gap-3 text-brand-GOLD font-black text-[11px] uppercase tracking-widest border-b border-brand-GOLD/40 pb-2 hover:border-brand-GOLD transition-all group whitespace-nowrap"
+            className="eyebrow !text-[color:var(--color-teal-edit)] flex items-center gap-3 border-b border-[color:var(--color-teal-edit)]/40 pb-2 hover:border-[color:var(--color-teal-edit)] transition-all group whitespace-nowrap"
           >
             {ft.viewAll}
             <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
@@ -95,7 +95,7 @@ export default function FeaturedListings({ lang }: FeaturedListingsProps) {
         <div className="mt-16 text-center reveal-on-scroll">
           <Link
             href={`/${lang}/propiedades`}
-            className="btn-3d btn-3d-gold inline-flex items-center gap-3 px-12 py-5 rounded-xl font-black text-[11px] uppercase tracking-widest"
+            className="btn-editorial btn-editorial-teal inline-flex items-center gap-3 uppercase tracking-[0.18em]"
           >
             {ft.exploreAll}
             <ArrowRight size={14} />

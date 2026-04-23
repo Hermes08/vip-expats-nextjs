@@ -20,7 +20,7 @@ export default function TrustBar({ lang = 'en' }: TrustBarProps) {
   const labels = STAT_LABELS[lang] || STAT_LABELS['en'];
 
   return (
-    <div className="w-full py-5 px-4 bg-brand-50 border-y border-brand-100">
+    <div className="w-full py-6 px-4 bg-[color:var(--color-cream-soft)] border-y border-[color:rgba(14,42,43,0.08)]">
       <div className="max-w-5xl mx-auto grid grid-cols-2 md:flex md:flex-row md:items-center md:justify-around gap-0">
         {stats.map((stat, i) => (
           <div
@@ -28,12 +28,12 @@ export default function TrustBar({ lang = 'en' }: TrustBarProps) {
             className="flex flex-col items-center justify-center py-3 px-6 relative"
           >
             {i > 0 && (
-              <div className="hidden md:block absolute left-0 top-1/4 h-1/2 w-px bg-white/10" />
+              <div className="hidden md:block absolute left-0 top-1/4 h-1/2 w-px bg-[color:rgba(14,42,43,0.08)]" />
             )}
-            <span className="text-2xl md:text-3xl font-black tracking-tight text-brand-GOLD">
+            <span className="display-serif italic text-3xl md:text-4xl text-brand-GOLD leading-none">
               {stat.number}
             </span>
-            <span className="text-[10px] font-bold uppercase tracking-widest text-slate-500 mt-1 text-center">
+            <span className="eyebrow !text-[10px] !text-[color:var(--color-ink-mute)] mt-2 text-center">
               {labels[i]}
             </span>
           </div>

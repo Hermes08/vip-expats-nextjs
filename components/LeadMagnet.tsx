@@ -29,41 +29,37 @@ const LeadMagnet: React.FC<LeadMagnetProps> = ({ variant = 'full' }) => {
 
     if (isSubmitted) {
         return (
-            <div className="card-light rounded-[3rem] p-16 text-center border-brand-GOLD/40">
-                <div className="w-24 h-24 bg-brand-GOLD text-brand-900 rounded-full flex items-center justify-center mx-auto mb-10 shadow-2xl">
+            <div className="bg-[color:var(--color-paper)] border border-[color:rgba(14,42,43,0.08)] rounded-[3rem] p-16 text-center">
+                <div className="w-24 h-24 bg-brand-GOLD text-brand-900 rounded-full flex items-center justify-center mx-auto mb-10 shadow-xl">
                     <CheckCircle2 size={48} />
                 </div>
-                <h3 className="text-4xl font-black text-brand-950 mb-6 uppercase tracking-tighter italic">{t.success}</h3>
-                <p className="text-brand-GOLD font-bold uppercase tracking-[0.2em] text-xs">A ROCKSTAR ADVISOR WILL REACH OUT MOMENTARILY.</p>
+                <h3 className="display-serif italic text-4xl text-[color:var(--color-ink)] mb-6">{t.success}</h3>
+                <p className="eyebrow !text-brand-GOLD">A ROCKSTAR ADVISOR WILL REACH OUT MOMENTARILY.</p>
             </div>
         );
     }
 
     return (
-        <section className="py-32 bg-brand-50/90 backdrop-blur-sm relative overflow-hidden">
-            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-GOLD/5 rounded-full blur-[150px] -mr-64 -mt-64"></div>
+        <section className="py-32 bg-[color:var(--color-cream)] relative overflow-hidden">
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-GOLD/8 rounded-full blur-[150px] -mr-64 -mt-64"></div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="card-light rounded-[4rem] overflow-hidden shadow-[0_50px_100px_-20px_rgba(0,0,0,0.7)] flex flex-col lg:flex-row border-brand-100">
+                <div className="bg-[color:var(--color-paper)] border border-[color:rgba(14,42,43,0.08)] rounded-[3rem] overflow-hidden shadow-[0_40px_80px_-20px_rgba(14,42,43,0.25)] flex flex-col lg:flex-row">
                     {/* Visual Column */}
-                    <div className="lg:w-1/2 bg-brand-50 p-16 flex flex-col justify-center relative overflow-hidden">
-                        {/* Gold glowing ring — pulsing neon halo */}
+                    <div className="lg:w-1/2 bg-[color:var(--color-cream-soft)] p-16 flex flex-col justify-center relative overflow-hidden">
+                        {/* Soft gold halo — pulse stripped by global editorial layer */}
                         <div className="absolute inset-0 pointer-events-none">
-                            <div
-                                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full border-[18px] border-brand-GOLD neon-ring-gold animate-neon-pulse"
-                            ></div>
-                            {/* Inner soft fill glow */}
-                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-brand-GOLD/8 blur-[60px]"></div>
+                            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] rounded-full bg-brand-GOLD/10 blur-[60px]"></div>
                         </div>
 
                         <div className="relative z-10">
                             <div className="flex gap-1 mb-8 text-brand-GOLD">
-                                {[...Array(5)].map((_, i) => <Star key={i} size={20} fill="currentColor" className="animate-pulse" style={{ animationDelay: `${i * 0.2}s` }} />)}
+                                {[...Array(5)].map((_, i) => <Star key={i} size={20} fill="currentColor" />)}
                             </div>
-                            <p className="text-brand-TEAL font-black uppercase tracking-[0.4em] text-xs mb-6 italic">
+                            <p className="eyebrow !text-[color:var(--color-teal-edit)] mb-6">
                                 {t.socialProof}
                             </p>
-                            <h3 className="text-4xl md:text-6xl font-heading font-black text-brand-950 mb-16 leading-[0.9] tracking-tighter uppercase italic">
-                                THE PANAMA <br /> INVESTMENT <br /> <span className="text-brand-GOLD">BIBLE 2026.</span>
+                            <h3 className="display-serif text-4xl md:text-6xl text-[color:var(--color-ink)] mb-16 leading-[1.0]">
+                                The Panama <br /> Investment <br /> <span className="italic text-brand-GOLD">Bible 2026.</span>
                             </h3>
 
                             {/* Book Experience */}
@@ -91,17 +87,17 @@ const LeadMagnet: React.FC<LeadMagnetProps> = ({ variant = 'full' }) => {
                     {/* Form Column */}
                     <div className="lg:w-1/2 p-16 md:p-20 flex flex-col justify-center">
                         <div className="max-w-md mx-auto w-full">
-                            <span className="inline-block px-4 py-1.5 bg-brand-GOLD text-brand-900 text-[10px] font-black uppercase tracking-[0.3em] rounded-full mb-8 shadow-2xl">
+                            <span className="tag-mono !bg-brand-GOLD !text-brand-900 mb-8 shadow-md">
                                 {t.freeBadge}
                             </span>
-                            <h2 className="text-4xl font-heading font-black text-brand-950 mb-10 leading-[0.9] tracking-tighter uppercase italic">
+                            <h2 className="display-serif italic text-4xl md:text-5xl text-[color:var(--color-ink)] mb-10 leading-[1.0]">
                                 {t.title}
                             </h2>
 
-                            <ul className="space-y-6 mb-12">
+                            <ul className="space-y-5 mb-12">
                                 {t.bullets.map((bullet: string, i: number) => (
-                                    <li key={i} className="flex items-start gap-4 text-slate-500 font-medium text-lg leading-snug">
-                                        <CheckCircle2 size={24} className="text-brand-GOLD shrink-0 mt-1" />
+                                    <li key={i} className="flex items-start gap-4 text-[color:var(--color-ink-soft)] font-normal text-base leading-relaxed">
+                                        <CheckCircle2 size={22} className="text-[color:var(--color-teal-edit)] shrink-0 mt-1" />
                                         {bullet}
                                     </li>
                                 ))}
@@ -110,23 +106,23 @@ const LeadMagnet: React.FC<LeadMagnetProps> = ({ variant = 'full' }) => {
                             <form onSubmit={handleSubmit} className="space-y-6">
                                 <div className="grid grid-cols-1 gap-6">
                                     <div className="space-y-2">
-                                        <label htmlFor="lead-name" className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">{t.formLabels.name}</label>
+                                        <label htmlFor="lead-name" className="eyebrow !text-[color:var(--color-ink-mute)] ml-1 block">{t.formLabels.name}</label>
                                         <input
                                             id="lead-name"
                                             required
                                             type="text"
-                                            className="w-full px-6 py-4 bg-white border border-brand-100 rounded-2xl focus:ring-2 focus:ring-brand-TEAL outline-none transition-all text-brand-950 font-bold"
+                                            className="w-full px-6 py-4 bg-[color:var(--color-paper)] border border-[color:rgba(14,42,43,0.12)] rounded-2xl focus:ring-2 focus:ring-[color:var(--color-teal-edit)] focus:border-[color:var(--color-teal-edit)] outline-none transition-all text-[color:var(--color-ink)] font-semibold"
                                             value={formData.name}
                                             onChange={e => setFormData({ ...formData, name: e.target.value })}
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label htmlFor="lead-email" className="text-[10px] font-black text-slate-500 uppercase tracking-widest ml-1">{t.formLabels.email}</label>
+                                        <label htmlFor="lead-email" className="eyebrow !text-[color:var(--color-ink-mute)] ml-1 block">{t.formLabels.email}</label>
                                         <input
                                             id="lead-email"
                                             required
                                             type="email"
-                                            className="w-full px-6 py-4 bg-white border border-brand-100 rounded-2xl focus:ring-2 focus:ring-brand-TEAL outline-none transition-all text-brand-950 font-bold"
+                                            className="w-full px-6 py-4 bg-[color:var(--color-paper)] border border-[color:rgba(14,42,43,0.12)] rounded-2xl focus:ring-2 focus:ring-[color:var(--color-teal-edit)] focus:border-[color:var(--color-teal-edit)] outline-none transition-all text-[color:var(--color-ink)] font-semibold"
                                             value={formData.email}
                                             onChange={e => setFormData({ ...formData, email: e.target.value })}
                                         />
@@ -135,23 +131,23 @@ const LeadMagnet: React.FC<LeadMagnetProps> = ({ variant = 'full' }) => {
 
                                 <button
                                     type="submit"
-                                    className="btn-3d btn-3d-gold w-full py-6 rounded-2xl font-black uppercase tracking-[0.3em] text-[11px] transition-all flex items-center justify-center gap-4 mt-8"
+                                    className="btn-editorial btn-editorial-teal w-full !py-5 uppercase !tracking-[0.18em] flex items-center justify-center gap-4 mt-8"
                                 >
                                     <Download size={20} /> {t.button}
                                 </button>
-                                <p className="text-center text-[10px] text-slate-500 font-black mt-6 uppercase tracking-[0.2em]">
+                                <p className="text-center eyebrow !text-[color:var(--color-ink-mute)] mt-6">
                                     {t.buttonSub}
                                 </p>
                             </form>
 
-                            <div className="mt-16 pt-8 border-t border-brand-100 flex flex-wrap justify-between gap-8 opacity-40 grayscale group-hover:grayscale-0 transition-all">
+                            <div className="mt-16 pt-8 border-t border-[color:rgba(14,42,43,0.08)] flex flex-wrap justify-between gap-8">
                                 <div className="flex items-center gap-3">
-                                    <ShieldCheck size={18} className="text-brand-GOLD" />
-                                    <span className="text-[9px] font-black uppercase tracking-widest text-white">{t.trust.privacy}</span>
+                                    <ShieldCheck size={18} className="text-[color:var(--color-teal-edit)]" />
+                                    <span className="eyebrow !text-[9px] !text-[color:var(--color-ink-mute)]">{t.trust.privacy}</span>
                                 </div>
                                 <div className="flex items-center gap-3">
-                                    <Mail size={18} className="text-brand-GOLD" />
-                                    <span className="text-[9px] font-black uppercase tracking-widest text-white">{t.trust.delivery}</span>
+                                    <Mail size={18} className="text-[color:var(--color-teal-edit)]" />
+                                    <span className="eyebrow !text-[9px] !text-[color:var(--color-ink-mute)]">{t.trust.delivery}</span>
                                 </div>
                             </div>
                         </div>
