@@ -19,7 +19,7 @@ const AboutPageContent: React.FC = () => {
                     <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80" alt="" className="w-full h-full object-cover" />
                 </div>
                                 <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-                    <span className="tag-teal mb-5 inline-block">
+                    <span className="tag-mono tag-mono-teal mb-5 inline-flex">
                         {lang === 'es' ? 'QUIÉNES SOMOS' : 'WHO WE ARE'}
                     </span>
                     <h1 className="font-heading text-4xl md:text-6xl font-black text-brand-950 mb-6 leading-tight uppercase italic tracking-tighter mt-4">
@@ -84,7 +84,7 @@ const AboutPageContent: React.FC = () => {
             <section className="py-20 section-alt">
                 <div className="max-w-5xl mx-auto px-4">
                     <div className="text-center mb-14">
-                        <span className="tag-teal-light mb-4 inline-block">DEEP INTELLIGENCE</span>
+                        <span className="tag-mono tag-mono-brass mb-4 inline-flex">DEEP INTELLIGENCE</span>
                         <h2 className="font-heading text-3xl md:text-5xl font-black text-brand-950 mb-4 uppercase italic tracking-tighter mt-3">
                             Retiring in Panama: Pros, Cons &amp; Dangers
                         </h2>
@@ -206,7 +206,7 @@ const AboutPageContent: React.FC = () => {
             {/* Final CTA — light teal soft */}
             <section className="section-teal-soft py-20 text-center">
                 <div className="max-w-3xl mx-auto px-4">
-                    <span className="tag-teal-light mb-5 inline-block">READY TO MOVE?</span>
+                    <span className="tag-mono tag-mono-teal mb-5 inline-flex">READY TO MOVE?</span>
                     <h2 className="font-heading text-3xl md:text-5xl font-black text-brand-950 mb-8 uppercase italic tracking-tighter mt-4">
                         Start Your Panama Journey
                     </h2>
