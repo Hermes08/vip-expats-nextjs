@@ -753,3 +753,50 @@ h2.font-heading.font-black.text-brand-950:not([data-editorial="off"]) {
   letter-spacing: -0.01em;
   text-transform: none;
 }
+
+/* ─────────────────────────────────────────────────────────────
+   PAGE SHELL RETROFIT — covers the ~30 untouched content pages
+   ─────────────────────────────────────────────────────────────
+   The dominant "pt-24 min-h-screen bg-white" page container is used
+   by About, Contact, Quiz, every guide, every relocation subpage,
+   the safest-neighborhoods content, etc. Retrofit the surface to
+   warm cream so the whole site breathes editorial. Typography there
+   was already covered by earlier rules.
+*/
+div.pt-24.min-h-screen.bg-white:not([data-editorial="off"]) {
+  background-color: var(--color-cream) !important;
+}
+
+/* Secondary common hero wrapper used by content pages:
+   `bg-brand-50 border-b border-brand-100 py-16` → paper surface with
+   editorial ink-on-cream border. Keeps the block-level structure
+   (same padding, same border) but swaps the tone. */
+div.bg-brand-50.border-b.border-brand-100:not([data-editorial="off"]) {
+  background-color: var(--color-paper) !important;
+  border-color: rgba(14, 42, 43, 0.08) !important;
+}
+
+/* Tertiary hero wrapper used inside long-form pages:
+   `bg-brand-50 rounded-[5rem]` callout blocks. Editorial surfacing. */
+section.bg-brand-50.rounded-\[5rem\]:not([data-editorial="off"]) {
+  background-color: var(--color-cream-soft) !important;
+  border-radius: 2.5rem !important;
+}
+
+/* Body copy color slip-through — text-slate-500/600 was used across
+   guides for prose. Keep them readable with ink-soft instead of
+   the cool slate tone, without changing typography or spacing. */
+article .text-slate-500:not([data-editorial="off"]),
+article .text-slate-600:not([data-editorial="off"]),
+main .text-slate-500:not([data-editorial="off"]),
+main .text-slate-600:not([data-editorial="off"]) {
+  color: var(--color-ink-soft) !important;
+}
+
+/* Fake dark-section slip: `section-dark` outside the footer renders
+   brand-950 but with slate-500 text — keep footer untouched, skip
+   via the :where() lowered-specificity rule below so Footer wins. */
+:where(.section-teal-soft):not([data-editorial="off"]) {
+  background-color: var(--color-cream-soft);
+  border-color: rgba(14, 42, 43, 0.08);
+}
