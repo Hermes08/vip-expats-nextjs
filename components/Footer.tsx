@@ -21,49 +21,50 @@ const Footer: React.FC = () => {
     const fh = FOOTER_HEADINGS[lang] || FOOTER_HEADINGS['en'];
 
     return (
-        <footer className="bg-[#032F30] text-white pt-12 pb-8 z-10 relative overflow-hidden">
-            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-brand-TEAL/40 to-transparent"></div>
+        <footer className="bg-[color:var(--color-ink)] text-[color:var(--color-cream)] pt-16 pb-8 z-10 relative overflow-hidden">
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-px bg-gradient-to-r from-transparent via-[color:var(--color-teal-edit)]/50 to-transparent"></div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-10">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
                     <div className="col-span-1 md:col-span-2">
                         <Magnetic strength={0.2}>
-                            <Link href={`/${lang}`} className="font-heading text-4xl font-black tracking-tighter mb-8 block uppercase">
-                                <span className="text-brand-GOLD">PANAMA</span> <span className="text-white font-serif-luxury lowercase tracking-normal -ml-2">Sale</span>
+                            <Link href={`/${lang}`} className="text-4xl tracking-tight mb-8 block">
+                                <span className="font-heading font-black uppercase text-brand-GOLD">PANAMA</span>
+                                <span className="display-serif italic ml-2 text-[color:var(--color-cream)]">Sale</span>
                             </Link>
                         </Magnetic>
-                        <p className="text-teal-200/80 max-w-sm mb-6 text-sm font-medium leading-relaxed border-l-2 border-brand-TEAL/30 pl-5">{t.footer.about}</p>
-                        <div className="flex gap-6">
+                        <p className="lede lede-light max-w-sm mb-8 !text-base border-l border-[color:var(--color-teal-edit)]/40 pl-5 italic">{t.footer.about}</p>
+                        <div className="flex gap-4">
                             <Magnetic strength={0.3}>
-                                <a href="#" aria-label="Instagram" className="p-4 bg-white/10 rounded-2xl hover:bg-brand-TEAL/30 text-white transition-all transform hover:scale-110"><Instagram size={20} /></a>
+                                <a href="#" aria-label="Instagram" className="p-3.5 border border-white/15 rounded-full hover:bg-[color:var(--color-teal-edit)] hover:border-[color:var(--color-teal-edit)] text-white transition-all"><Instagram size={18} /></a>
                             </Magnetic>
                             <Magnetic strength={0.3}>
-                                <a href="#" aria-label="Email" className="p-4 bg-white/10 rounded-2xl hover:bg-brand-TEAL/30 text-white transition-all transform hover:scale-110"><Mail size={20} /></a>
+                                <a href="#" aria-label="Email" className="p-3.5 border border-white/15 rounded-full hover:bg-[color:var(--color-teal-edit)] hover:border-[color:var(--color-teal-edit)] text-white transition-all"><Mail size={18} /></a>
                             </Magnetic>
                         </div>
                     </div>
                     <div>
-                        <h4 className="text-brand-TEAL text-xs font-black uppercase tracking-[0.3em] mb-4">{fh.navigation}</h4>
-                        <ul className="space-y-3 text-teal-200/70 text-xs font-black uppercase tracking-widest">
-                            <li><Magnetic strength={0.15}><Link href={`/${lang}/proyectos`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> {t.nav.projects}</Link></Magnetic></li>
-                            <li><Magnetic strength={0.15}><Link href={`/${lang}/quiz`} className="hover:text-white transition-colors flex items-center gap-2 group text-brand-TEAL"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> {t.nav.quiz}</Link></Magnetic></li>
-                            <li><Magnetic strength={0.15}><Link href={`/${lang}/relocation/tours`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> {t.nav.tours}</Link></Magnetic></li>
-                            <li><Magnetic strength={0.15}><Link href={`/${lang}/blog`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all" /> {t.nav.blog}</Link></Magnetic></li>
+                        <h4 className="eyebrow eyebrow-light !text-[color:var(--color-teal-bright)] mb-5">{fh.navigation}</h4>
+                        <ul className="space-y-3 text-white/70 text-sm font-medium">
+                            <li><Magnetic strength={0.15}><Link href={`/${lang}/proyectos`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all text-brand-GOLD" /> {t.nav.projects}</Link></Magnetic></li>
+                            <li><Magnetic strength={0.15}><Link href={`/${lang}/quiz`} className="hover:text-white transition-colors flex items-center gap-2 group text-[color:var(--color-teal-bright)]"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all text-brand-GOLD" /> {t.nav.quiz}</Link></Magnetic></li>
+                            <li><Magnetic strength={0.15}><Link href={`/${lang}/relocation/tours`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all text-brand-GOLD" /> {t.nav.tours}</Link></Magnetic></li>
+                            <li><Magnetic strength={0.15}><Link href={`/${lang}/blog`} className="hover:text-white transition-colors flex items-center gap-2 group"><ArrowRight size={12} className="opacity-0 group-hover:opacity-100 -ml-4 transition-all text-brand-GOLD" /> {t.nav.blog}</Link></Magnetic></li>
                         </ul>
                     </div>
                     <div>
-                        <h4 className="text-brand-TEAL text-xs font-black uppercase tracking-[0.3em] mb-4">{fh.globalAccess}</h4>
-                        <ul className="space-y-3 text-teal-200/70 text-sm font-medium">
-                            <li className="flex items-start gap-4"><Phone size={18} className="text-brand-TEAL shrink-0" /> {CONTACT_INFO.displayPhone}</li>
-                            <li className="flex items-start gap-4"><Mail size={18} className="text-brand-TEAL shrink-0" /> {CONTACT_INFO.email}</li>
-                            <li className="flex items-start gap-4"><MapPin size={18} className="text-brand-TEAL shrink-0" /> {CONTACT_INFO.address}</li>
+                        <h4 className="eyebrow eyebrow-light !text-[color:var(--color-teal-bright)] mb-5">{fh.globalAccess}</h4>
+                        <ul className="space-y-3 text-white/70 text-sm font-medium">
+                            <li className="flex items-start gap-3"><Phone size={16} className="text-[color:var(--color-teal-bright)] shrink-0 mt-0.5" /> {CONTACT_INFO.displayPhone}</li>
+                            <li className="flex items-start gap-3"><Mail size={16} className="text-[color:var(--color-teal-bright)] shrink-0 mt-0.5" /> {CONTACT_INFO.email}</li>
+                            <li className="flex items-start gap-3"><MapPin size={16} className="text-[color:var(--color-teal-bright)] shrink-0 mt-0.5" /> {CONTACT_INFO.address}</li>
                         </ul>
                     </div>
                 </div>
 
-                <div className="pt-6 border-t border-white/10 text-teal-200/50 text-[9px] font-black uppercase tracking-[0.4em] flex flex-col md:flex-row justify-between items-center gap-6">
-                    <p>&copy; {new Date().getFullYear()} PANAMAREALESTATESALE. {t.footer.rights}</p>
+                <div className="pt-6 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
+                    <p className="eyebrow eyebrow-light !text-white/50 !text-[10px]">&copy; {new Date().getFullYear()} PANAMAREALESTATESALE. {t.footer.rights}</p>
                     <div className="flex gap-10">
-                        <Link href={`/${lang}/admin`} className="opacity-20 hover:opacity-60 transition-all text-slate-600 text-[8px]">Admin</Link>
+                        <Link href={`/${lang}/admin`} className="opacity-20 hover:opacity-60 transition-all text-slate-600 text-[8px] uppercase tracking-widest">Admin</Link>
                     </div>
                 </div>
             </div>
