@@ -86,7 +86,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
             style={{ transform: 'translateZ(40px)' }}
           >
             <div className="w-2 h-2 bg-brand-GOLD rounded-full animate-pulse shadow-[0_0_10px_theme(colors.brand.GOLD)]"></div>
-            <span className="text-[10px] font-black uppercase tracking-[0.3em] text-white/90">{h.badge} <span className="text-brand-GOLD">2026</span></span>
+            <span className="eyebrow eyebrow-light !text-white/85">{h.badge} <span className="text-brand-GOLD">· 2026</span></span>
           </motion.div>
 
           <div style={{ transform: 'translateZ(60px)' }}>
@@ -94,10 +94,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
-              className="font-heading text-4xl sm:text-6xl md:text-7xl font-black text-white mb-5 leading-tight tracking-tight uppercase"
+              className="display-serif text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] text-white mb-6"
             >
               {h.title} <br />
-              <span className="text-brand-GOLD">
+              <span className="italic text-brand-GOLD">
                 {h.titleGold}
               </span>
             </motion.h1>
@@ -106,7 +106,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1.5, delay: 0.8 }}
-              className="text-xs md:text-sm text-white/80 font-bold mb-5 uppercase tracking-[0.25em]"
+              className="eyebrow eyebrow-light !text-white/80 mb-6"
             >
               {h.tagline}
             </motion.p>
@@ -116,7 +116,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 1, ease: [0.22, 1, 0.36, 1] }}
-            className="text-base md:text-lg text-white/70 mb-8 leading-relaxed max-w-xl mx-auto font-medium"
+            className="lede lede-light mx-auto mb-10"
             style={{ transform: 'translateZ(30px)' }}
           >
             {h.subtitle}
@@ -130,12 +130,12 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
             style={{ transform: 'translateZ(50px)' }}
           >
             <Magnetic strength={0.3}>
-              <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-gold px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] flex items-center justify-center">
+              <Link href={`/${lang}/propiedades`} className="btn-editorial btn-editorial-teal">
                 {h.ctaBrowse}
               </Link>
             </Magnetic>
             <Magnetic strength={0.3}>
-              <Link href={`/${lang}/contacto`} className="btn-3d btn-3d-navy px-8 py-4 rounded-xl font-black uppercase tracking-[0.2em] text-[11px] bg-white/10 backdrop-blur-3xl border border-white/30 text-white flex items-center justify-center gap-3">
+              <Link href={`/${lang}/contacto`} className="btn-editorial btn-editorial-ghost-light">
                 {h.ctaConsult}
               </Link>
             </Magnetic>
@@ -154,10 +154,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({ lang }) => {
               { val: '7+', label: h.statsLabels[1] },
               { val: '100%', label: h.statsLabels[2] },
             ].map((stat, i) => (
-              <div key={i} className="flex items-center gap-2 text-white/80">
-                <span className="text-brand-GOLD font-black text-lg">{stat.val}</span>
-                <span className="text-[10px] font-bold uppercase tracking-widest">{stat.label}</span>
-                {i < 2 && <span className="ml-4 w-px h-4 bg-white/20 hidden sm:block" />}
+              <div key={i} className="flex items-center gap-3 text-white/85">
+                <span className="display-serif italic text-brand-GOLD text-2xl leading-none">{stat.val}</span>
+                <span className="eyebrow eyebrow-light !text-white/75 !text-[10px]">{stat.label}</span>
+                {i < 2 && <span className="ml-4 w-px h-4 bg-white/15 hidden sm:block" />}
               </div>
             ))}
           </motion.div>
