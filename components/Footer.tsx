@@ -27,14 +27,14 @@ const Footer: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
                     <div className="col-span-1 md:col-span-2">
                         <Magnetic strength={0.2}>
-                            <Link href={`/${lang}`} aria-label="PANAMASale" className="mb-8 inline-flex items-center gap-3 group">
-                                <svg width="36" height="36" viewBox="0 0 40 40" fill="none" aria-hidden="true" className="text-[color:var(--color-cream)] group-hover:text-white transition-colors">
+                            <Link href={`/${lang}`} aria-label="Panama Real Estate Sale" className="mb-8 inline-flex items-center gap-3 group">
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" className="text-[color:var(--color-cream)] group-hover:text-white transition-colors">
                                     <path d="M10 33 V 9 H 22 A 7 7 0 0 1 22 23 H 14" stroke="currentColor" strokeWidth="2.6" strokeLinecap="square" strokeLinejoin="miter" fill="none" />
                                     <circle cx="30" cy="13" r="3.2" fill="var(--color-coral)" />
                                 </svg>
-                                <span className="inline-flex items-baseline font-sans text-xl md:text-2xl font-extrabold uppercase leading-none tracking-[0.14em] whitespace-nowrap">
-                                    <span className="text-[color:var(--color-cream)]">PANAMA</span>
-                                    <span className="font-normal opacity-75 text-[color:var(--color-cream)]">Sale</span>
+                                <span className="inline-flex flex-col leading-[1.05] font-sans text-[color:var(--color-cream)] whitespace-nowrap">
+                                    <span className="text-2xl md:text-3xl font-extrabold uppercase tracking-[0.12em]">Panama</span>
+                                    <span className="text-[11px] md:text-xs font-medium uppercase tracking-[0.24em] opacity-75 mt-1">Real Estate Sale</span>
                                 </span>
                             </Link>
                         </Magnetic>

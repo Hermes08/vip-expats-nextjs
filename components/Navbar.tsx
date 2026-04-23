@@ -74,14 +74,14 @@ const Navbar: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
                     <Magnetic strength={0.2}>
-                        <Link href={`/${lang}`} aria-label="PANAMASale" className="z-50 focus:outline-none group inline-flex items-center gap-2.5 transition-opacity group-hover:opacity-90">
+                        <Link href={`/${lang}`} aria-label="Panama Real Estate Sale" className="z-50 focus:outline-none group inline-flex items-center gap-2.5 transition-opacity group-hover:opacity-90">
                             <svg width="28" height="28" viewBox="0 0 40 40" fill="none" aria-hidden="true" className={isScrolled ? 'text-[color:var(--color-ink)]' : 'text-white'}>
                                 <path d="M10 33 V 9 H 22 A 7 7 0 0 1 22 23 H 14" stroke="currentColor" strokeWidth="2.6" strokeLinecap="square" strokeLinejoin="miter" fill="none" />
                                 <circle cx="30" cy="13" r="3.2" fill="var(--color-coral)" />
                             </svg>
-                            <span className="inline-flex items-baseline font-sans text-[15px] md:text-base font-extrabold uppercase leading-none tracking-[0.14em] whitespace-nowrap">
-                                <span className={isScrolled ? 'text-[color:var(--color-ink)]' : 'text-white'}>PANAMA</span>
-                                <span className={`font-normal opacity-75 ${isScrolled ? 'text-[color:var(--color-ink)]' : 'text-white'}`}>Sale</span>
+                            <span className={`inline-flex flex-col leading-[1.05] font-sans whitespace-nowrap ${isScrolled ? 'text-[color:var(--color-ink)]' : 'text-white'}`}>
+                                <span className="text-[15px] md:text-base font-extrabold uppercase tracking-[0.14em]">Panama</span>
+                                <span className="text-[9px] md:text-[10px] font-medium uppercase tracking-[0.24em] opacity-75 -mt-0.5">Real Estate Sale</span>
                             </span>
                         </Link>
                     </Magnetic>
