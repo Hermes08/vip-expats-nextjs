@@ -464,3 +464,144 @@ body {
   transform: translateZ(-1px) scale(2);
   z-index: -1;
 }
+
+/* ─────────────────────────────────────────────────────────────
+   EDITORIAL UTILITIES (opt-in) — from Claude Design handoff
+   ─────────────────────────────────────────────────────────────
+   These are new, additive classes. Nothing above this block is
+   modified. Components can opt into the editorial look by applying
+   these classes; otherwise behavior is unchanged.
+*/
+
+/* Display serif headline — use for hero/section titles when we want
+   the editorial travel-magazine moment instead of the Montserrat caps. */
+.display-serif {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 0.98;
+}
+.display-serif em,
+.display-serif .italic {
+  font-style: italic;
+  font-weight: 400;
+}
+
+/* Eyebrow — mono, small caps, tracked. The editorial "MARKET INTELLIGENCE 2026" style. */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--color-ink-mute);
+}
+.eyebrow-light { color: rgba(255, 255, 255, 0.75); }
+
+/* Lede — editorial subtitle. Soft, wider than body, generous line-height. */
+.lede {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--color-ink-soft);
+  max-width: 52ch;
+  text-wrap: pretty;
+}
+.lede-light { color: rgba(255, 255, 255, 0.78); }
+
+/* Editorial pill button — teal primary, no 3D/neon. Calm, premium.
+   Use when btn-3d-teal/btn-3d-gold feel too maximalist. */
+.btn-editorial {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 28px;
+  font-family: var(--font-manrope), sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+              background 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.btn-editorial-teal {
+  background: #0B8C8F;
+  color: #FFFDF7;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset,
+              0 10px 24px -8px rgba(11, 140, 143, 0.45);
+}
+.btn-editorial-teal:hover {
+  background: #0A3E40;
+  transform: translateY(-2px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset,
+              0 16px 32px -10px rgba(11, 140, 143, 0.55);
+}
+.btn-editorial-ghost {
+  background: transparent;
+  color: var(--color-ink);
+  border: 1px solid rgba(14, 42, 43, 0.18);
+}
+.btn-editorial-ghost:hover {
+  background: var(--color-ink);
+  color: var(--color-cream);
+  border-color: var(--color-ink);
+}
+.btn-editorial-ghost-light {
+  background: transparent;
+  color: #FFFDF7;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+}
+.btn-editorial-ghost-light:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+.btn-editorial-coral {
+  background: #E4704A;
+  color: #FFFDF7;
+  box-shadow: 0 10px 24px -8px rgba(228, 112, 74, 0.45);
+}
+.btn-editorial-coral:hover { transform: translateY(-2px); }
+
+/* Tag mono — eyebrow-size label for cards (status, region, type). */
+.tag-mono {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.tag-mono-teal  { background: var(--color-teal-soft); color: var(--color-teal-deep); }
+.tag-mono-coral { background: rgba(228, 112, 74, 0.14); color: var(--color-coral); }
+.tag-mono-brass { background: rgba(198, 150, 69, 0.16); color: #8a6a2e; }
+
+/* Editorial hairline divider — subtle ink-on-cream line */
+.hr-editorial {
+  height: 1px;
+  background: rgba(14, 42, 43, 0.12);
+  border: 0;
+  margin: 0;
+}
+
+/* Cream surface — for sections that want the warm editorial paper feel
+   instead of pure white. Use selectively; do not globalize. */
+.surface-cream     { background-color: var(--color-cream); color: var(--color-ink); }
+.surface-cream-soft { background-color: var(--color-cream-soft); color: var(--color-ink); }
+.surface-paper     { background-color: var(--color-paper); color: var(--color-ink); }
+.surface-ink       { background-color: var(--color-ink); color: var(--color-cream); }
+
+/* Focus ring — editorial teal */
+.focus-editorial:focus-visible {
+  outline: 2px solid #0B8C8F;
+  outline-offset: 3px;
+  border-radius: 4px;
+}
