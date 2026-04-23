@@ -27,7 +27,7 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
     const baseUrl = 'https://panamarealestatesale.com';
 
     return (
-        <div className="bg-white min-h-screen">
+        <div className="bg-[color:var(--color-cream)] min-h-screen">
             <ProductSchema project={project} lang={lang as 'es' | 'en'} />
             <BreadcrumbSchema items={[
                 { name: lang === 'es' ? 'Inicio' : 'Home', item: `${baseUrl}/${lang}` },
@@ -53,20 +53,20 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                 <div className="absolute bottom-0 left-0 w-full p-6 md:p-12 pb-24">
                     <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end gap-6">
                         <div className="text-white max-w-4xl relative z-20">
-                            <div className="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md text-brand-GOLD font-bold uppercase tracking-widest text-[10px] mb-6 px-4 py-1.5 rounded-full border border-brand-100">
+                            <div className="inline-flex items-center gap-2 eyebrow eyebrow-light !text-brand-GOLD mb-6">
                                 <MapPin size={12} /> {project.location[lang]}
                             </div>
-                            <h1 className="font-heading text-4xl md:text-7xl font-black mb-6 leading-none md:leading-[0.9] tracking-tighter text-shadow-lg">
+                            <h1 className="display-serif text-5xl md:text-7xl text-white mb-6 leading-[0.98] text-shadow-lg">
                                 <SplitText text={project.name[lang]} delay={0.2} />
                             </h1>
                             <div className="flex flex-wrap gap-4">
-                                <span className="bg-brand-GOLD text-white px-4 py-1.5 rounded-full text-xs font-black uppercase tracking-wider shadow-lg shadow-brand-GOLD/20">{project.status}</span>
-                                <span className="bg-white/10 backdrop-blur-md text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase border border-white/20 hover:bg-white/20 transition-colors cursor-default">{project.type}</span>
+                                <span className="tag-mono !bg-brand-GOLD !text-brand-950 shadow-md">{project.status}</span>
+                                <span className="tag-mono !bg-white/10 !text-white backdrop-blur-md border border-white/20">{project.type}</span>
                             </div>
                         </div>
                         <div className="bg-white/10 backdrop-blur-xl p-8 rounded-3xl shadow-2xl flex flex-col items-end min-w-[280px] hidden md:flex border border-white/20 relative z-20">
-                            <span className="text-[10px] font-black text-brand-GOLD uppercase tracking-[0.2em] mb-2 text-shadow-sm">{labels.startingAt}</span>
-                            <span className="text-4xl font-black text-white tracking-tighter italic text-shadow-lg">USD {project.priceFrom.toLocaleString()}</span>
+                            <span className="eyebrow eyebrow-light !text-brand-GOLD mb-2">{labels.startingAt}</span>
+                            <span className="display-serif italic text-4xl text-white leading-none">USD {project.priceFrom.toLocaleString()}</span>
                         </div>
                     </div>
                 </div>
@@ -94,24 +94,24 @@ const ProjectDetailContent: React.FC<{ slug: string }> = ({ slug }) => {
                     <div className="lg:col-span-2">
 
                         {/* Quick Specs */}
-                        <div className="grid grid-cols-3 gap-6 mb-16 py-8 border-y border-brand-100 text-center">
+                        <div className="grid grid-cols-3 gap-6 mb-16 py-8 border-y border-[color:rgba(14,42,43,0.08)] text-center">
                             <div>
-                                <span className="block text-xl font-bold text-white">{project.beds}</span>
-                                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">{labels.beds}</span>
+                                <span className="display-serif italic text-3xl text-[color:var(--color-ink)] block leading-none">{project.beds}</span>
+                                <span className="eyebrow !text-[10px] !text-[color:var(--color-ink-mute)] mt-2 inline-block">{labels.beds}</span>
                             </div>
                             <div>
-                                <span className="block text-xl font-bold text-white">{project.baths}</span>
-                                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">{labels.baths}</span>
+                                <span className="display-serif italic text-3xl text-[color:var(--color-ink)] block leading-none">{project.baths}</span>
+                                <span className="eyebrow !text-[10px] !text-[color:var(--color-ink-mute)] mt-2 inline-block">{labels.baths}</span>
                             </div>
                             <div>
-                                <span className="block text-xl font-bold text-white">{project.sqft}</span>
-                                <span className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">m²</span>
+                                <span className="display-serif italic text-3xl text-[color:var(--color-ink)] block leading-none">{project.sqft}</span>
+                                <span className="eyebrow !text-[10px] !text-[color:var(--color-ink-mute)] mt-2 inline-block">m²</span>
                             </div>
                         </div>
 
                         {/* SECTION 1: Deep Dive */}
-                        <article className="prose prose-lg max-w-none text-brand-600 mb-20 reveal-on-scroll">
-                            <h2 className="text-3xl font-heading font-bold text-brand-950 mb-8 border-b-2 border-brand-GOLD inline-block pb-2 uppercase tracking-tighter">
+                        <article className="prose prose-lg max-w-none text-[color:var(--color-ink-soft)] mb-20 reveal-on-scroll">
+                            <h2 className="display-serif italic text-4xl text-[color:var(--color-ink)] mb-8 border-b-2 border-brand-GOLD inline-block pb-2">
                                 {lang === 'es' ? 'Análisis Profundo del Proyecto' : 'Project Deep Dive & Architectural Vision'}
                             </h2>
                             <div

@@ -63,17 +63,17 @@ export default function ListingsGrid({ lang, initialListings }: Props) {
   const ct = contactLabels[lang];
 
   return (
-    <div className="min-h-screen bg-white pt-24 pb-24 px-4">
+    <div className="min-h-screen bg-[color:var(--color-cream)] pt-24 pb-24 px-4">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="mb-10 text-center">
-          <div className="inline-flex items-center gap-2 text-brand-GOLD/70 text-xs font-bold uppercase tracking-[0.2em] mb-4">
+        <div className="mb-12 text-center">
+          <div className="inline-flex items-center gap-2 eyebrow !text-[color:var(--color-teal-edit)] mb-5">
             <Building2 size={13} /> {lang === 'es' ? 'Propiedades Disponibles' : 'Available Properties'}
           </div>
-          <h1 className="font-heading text-4xl md:text-6xl font-black text-white mb-4">
-            {t.heading}
+          <h1 className="display-serif text-5xl md:text-7xl text-[color:var(--color-ink)] mb-5 leading-[0.98]">
+            <span className="italic">{t.heading}</span>
           </h1>
-          <p className="text-slate-500 max-w-xl mx-auto text-sm leading-relaxed">{t.sub}</p>
+          <p className="lede mx-auto">{t.sub}</p>
         </div>
 
         {/* Filters */}

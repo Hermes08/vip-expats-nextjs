@@ -141,20 +141,20 @@ const ProjectsPageContent: React.FC = () => {
     });
 
     return (
-        <div className="pt-24 min-h-screen bg-white">
-            {/* Header: 3.0 Cinematic */}
-            <div className="relative pt-20 pb-14 px-4 overflow-hidden border-b border-brand-100 bg-brand-50">
+        <div className="pt-24 min-h-screen bg-[color:var(--color-cream)]">
+            {/* Header: Editorial Cinematic */}
+            <div className="relative pt-20 pb-16 px-4 overflow-hidden border-b border-[color:rgba(14,42,43,0.08)] bg-[color:var(--color-ink)]">
                 <div className="absolute inset-0 z-0 scale-105 overflow-hidden">
                     <motion.img
                         initial={{ opacity: 0, scale: 1.1 }}
-                        animate={{ opacity: 0.15, scale: 1 }}
+                        animate={{ opacity: 0.22, scale: 1 }}
                         transition={{ duration: 3, ease: 'easeOut' }}
                         src="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1600&q=80"
                         alt=""
                         className="w-full h-full object-cover"
                     />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-b from-brand-950/60 via-brand-950/40 to-brand-950" />
+                <div className="absolute inset-0 bg-gradient-to-b from-[color:var(--color-ink)]/60 via-[color:var(--color-ink)]/50 to-[color:var(--color-ink)]" />
                 <div className="max-w-7xl mx-auto relative z-10">
                     <HeroTilt intensity={2}>
                         <motion.div
@@ -162,13 +162,13 @@ const ProjectsPageContent: React.FC = () => {
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
                         >
-                            <span className="inline-block border border-brand-GOLD/30 bg-brand-TEAL/50 backdrop-blur-md text-brand-GOLD px-6 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.5em] mb-6 shadow-[0_0_20px_rgba(233,195,73,0.1)]">
+                            <span className="eyebrow eyebrow-light !text-brand-GOLD mb-6 block">
                                 {pt.badge}
                             </span>
-                            <h1 className="font-heading text-4xl sm:text-6xl md:text-7xl font-black text-white mb-5 tracking-tight leading-tight uppercase">
-                                {pt.title} <span className="text-brand-GOLD">{pt.titleGold}</span>
+                            <h1 className="display-serif text-5xl sm:text-6xl md:text-7xl text-white mb-6 leading-[0.98]">
+                                {pt.title} <span className="italic text-brand-GOLD">{pt.titleGold}</span>
                             </h1>
-                            <p className="text-base md:text-lg text-slate-500 max-w-2xl leading-relaxed font-medium italic border-l-2 border-brand-GOLD/20 pl-5 opacity-90">
+                            <p className="lede lede-light max-w-2xl italic border-l-2 border-brand-GOLD/40 pl-5">
                                 {pt.subtitle}
                             </p>
                         </motion.div>
