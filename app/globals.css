@@ -605,3 +605,110 @@ body {
   outline-offset: 3px;
   border-radius: 4px;
 }
+
+/* ─────────────────────────────────────────────────────────────
+   GLOBAL EDITORIALIZATION LAYER
+   ─────────────────────────────────────────────────────────────
+   Re-styles the dominant "font-heading + uppercase + italic +
+   tracking-tighter" headline pattern and the "btn-3d-*" CTA
+   pattern used across ~40 content components. This lets the
+   editorial look apply to the entire site without editing every
+   .tsx file individually.
+
+   Content pages (blog, guides, relocation, projects, about,
+   contact, quiz, etc.) pick this up automatically. To opt OUT of
+   the editorialization on a specific element, add
+   `data-editorial="off"` to it (escape hatch preserved).
+*/
+
+/* Headlines: font-heading + italic + uppercase + tracking-tighter
+   is the signature pattern used in almost every content page H1/H2/H3.
+   Swap the font to Cormorant Garamond, drop the uppercase shouting,
+   soften the tracking. The structure remains identical. */
+h1.font-heading.italic.uppercase.tracking-tighter:not([data-editorial="off"]),
+h2.font-heading.italic.uppercase.tracking-tighter:not([data-editorial="off"]),
+h3.font-heading.italic.uppercase.tracking-tighter:not([data-editorial="off"]),
+h4.font-heading.italic.uppercase.tracking-tighter:not([data-editorial="off"]) {
+  font-family: var(--font-serif), Georgia, serif !important;
+  font-weight: 500 !important;
+  font-style: italic;
+  text-transform: none !important;
+  letter-spacing: -0.015em !important;
+  line-height: 1.05;
+}
+
+/* Legacy btn-3d family → editorial pills. Removes the neon pulse
+   and the chunky 3D stacked shadow, keeps color semantics. */
+.btn-3d:not([data-editorial="off"]) {
+  animation: none !important;
+  transform-style: flat;
+}
+
+.btn-3d.btn-3d-gold:not([data-editorial="off"]) {
+  background-color: var(--color-brand-GOLD);
+  color: var(--color-brand-950);
+  box-shadow: 0 10px 24px -8px rgba(212, 168, 67, 0.45);
+  border-radius: 999px;
+  animation: none !important;
+}
+.btn-3d.btn-3d-gold:not([data-editorial="off"]):hover {
+  background-color: #C79A3E;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px -10px rgba(212, 168, 67, 0.55);
+  animation: none !important;
+}
+
+.btn-3d.btn-3d-teal:not([data-editorial="off"]) {
+  background-color: #0B8C8F;
+  color: #FFFDF7;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset,
+              0 10px 24px -8px rgba(11, 140, 143, 0.45);
+  border-radius: 999px;
+  animation: none !important;
+}
+.btn-3d.btn-3d-teal:not([data-editorial="off"]):hover {
+  background-color: #0A3E40;
+  transform: translateY(-2px);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25) inset,
+              0 16px 32px -10px rgba(11, 140, 143, 0.55);
+  animation: none !important;
+}
+
+.btn-3d.btn-3d-navy:not([data-editorial="off"]) {
+  background-color: var(--color-ink);
+  color: var(--color-cream);
+  box-shadow: 0 10px 24px -8px rgba(14, 42, 43, 0.35);
+  border-radius: 999px;
+  animation: none !important;
+}
+.btn-3d.btn-3d-navy:not([data-editorial="off"]):hover {
+  background-color: #1C3B3D;
+  transform: translateY(-2px);
+  box-shadow: 0 16px 32px -10px rgba(14, 42, 43, 0.5);
+}
+
+/* Disable the neon-ring / neon-teal / neon-gold utility classes that
+   are applied as standalone modifiers — the editorial look doesn't
+   want the pulsing halos. Structure stays; just the glow goes. */
+.animate-neon-pulse:not([data-editorial="off"]) {
+  animation: none !important;
+}
+.neon-gold:not([data-editorial="off"]),
+.neon-teal:not([data-editorial="off"]),
+.neon-ring-gold:not([data-editorial="off"]) {
+  box-shadow: none !important;
+}
+
+/* Soften the very chunky border-l-4 brand-TEAL pull-quote pattern.
+   Same ink meaning, more editorial proportions. */
+.border-l-4.border-brand-TEAL:not([data-editorial="off"]) {
+  border-left-width: 2px !important;
+  border-left-color: var(--color-teal-edit) !important;
+}
+
+/* Body surface: keep white as default for legibility on prose, but
+   let content wrappers opt into cream via .page-editorial class if
+   they want the warm paper feel. Body bg stays white to keep prose
+   rendering unchanged. */
+.page-editorial { background-color: var(--color-cream); color: var(--color-ink); }
+.page-editorial .lede { color: var(--color-ink-soft); }
