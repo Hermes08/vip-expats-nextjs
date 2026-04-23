@@ -27,15 +27,16 @@ const Footer: React.FC = () => {
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
                     <div className="col-span-1 md:col-span-2">
                         <Magnetic strength={0.2}>
-                            <Link href={`/${lang}`} aria-label="Panama Real Estate Sale" className="mb-8 inline-flex items-center gap-3 group">
-                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" aria-hidden="true" className="text-[color:var(--color-cream)] group-hover:text-white transition-colors">
-                                    <path d="M10 33 V 9 H 22 A 7 7 0 0 1 22 23 H 14" stroke="currentColor" strokeWidth="2.6" strokeLinecap="square" strokeLinejoin="miter" fill="none" />
-                                    <circle cx="30" cy="13" r="3.2" fill="var(--color-coral)" />
-                                </svg>
-                                <span className="inline-flex flex-col leading-[1.05] font-sans text-[color:var(--color-cream)] whitespace-nowrap">
-                                    <span className="text-2xl md:text-3xl font-extrabold uppercase tracking-[0.12em]">Panama</span>
-                                    <span className="text-[11px] md:text-xs font-medium uppercase tracking-[0.24em] opacity-75 mt-1">Real Estate Sale</span>
-                                </span>
+                            <Link
+                                href={`/${lang}`}
+                                aria-label="PanamaRealEstateSale.com"
+                                className="lg h-dark mb-8"
+                                style={{ fontSize: 30 }}
+                            >
+                                <span className="p">Panama</span>
+                                <span className="r">RealEstate</span>
+                                <span className="g">Sale</span>
+                                <span className="tld" style={{ fontSize: 25 }}>.com</span>
                             </Link>
                         </Magnetic>
                         <p className="lede lede-light max-w-sm mb-8 !text-base border-l border-[color:var(--color-teal-edit)]/40 pl-5 italic">{t.footer.about}</p>

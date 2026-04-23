@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Search, Sparkles, ChevronDown } from 'lucide-react';
 import LanguageSwitcher from './LanguageSwitcher';
+import ThemeToggle from './ui/ThemeToggle';
 import { CONTENT } from '@/lib/constants';
 import { useLanguage } from '@/context/LanguageContext';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -74,15 +75,15 @@ const Navbar: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
                     <Magnetic strength={0.2}>
-                        <Link href={`/${lang}`} aria-label="Panama Real Estate Sale" className="z-50 focus:outline-none group inline-flex items-center gap-2.5 transition-opacity group-hover:opacity-90">
-                            <svg width="28" height="28" viewBox="0 0 40 40" fill="none" aria-hidden="true" className={isScrolled ? 'text-[color:var(--color-ink)]' : 'text-white'}>
-                                <path d="M10 33 V 9 H 22 A 7 7 0 0 1 22 23 H 14" stroke="currentColor" strokeWidth="2.6" strokeLinecap="square" strokeLinejoin="miter" fill="none" />
-                                <circle cx="30" cy="13" r="3.2" fill="var(--color-coral)" />
-                            </svg>
-                            <span className={`inline-flex flex-col leading-[1.05] font-sans whitespace-nowrap ${isScrolled ? 'text-[color:var(--color-ink)]' : 'text-white'}`}>
-                                <span className="text-[15px] md:text-base font-extrabold uppercase tracking-[0.14em]">Panama</span>
-                                <span className="text-[9px] md:text-[10px] font-medium uppercase tracking-[0.24em] opacity-75 -mt-0.5">Real Estate Sale</span>
-                            </span>
+                        <Link
+                            href={`/${lang}`}
+                            aria-label="PanamaRealEstateSale.com"
+                            className={`lg ${isScrolled ? 'h' : 'h-dark'} focus:outline-none`}
+                        >
+                            <span className="p">Panama</span>
+                            <span className="r">RealEstate</span>
+                            <span className="g">Sale</span>
+                            <span className="tld">.com</span>
                         </Link>
                     </Magnetic>
 
@@ -118,7 +119,8 @@ const Navbar: React.FC = () => {
                             <Link href={`/${lang}/podcast`} className={`py-4 transition-all duration-300 ${isActive('/podcast') ? 'text-brand-TEAL-dark' : isScrolled ? 'hover:text-brand-TEAL-dark' : 'hover:text-white'}`}>{lang === 'es' ? 'Podcast' : 'Podcast'}</Link>
                             <Link href={`/${lang}/contacto`} className={`py-4 transition-all duration-300 ${isActive('/contacto') ? 'text-brand-TEAL-dark' : isScrolled ? 'hover:text-brand-TEAL-dark' : 'hover:text-white'}`}>{t.nav.contact}</Link>
                         </div>
-                        <div className="flex items-center gap-6">
+                        <div className="flex items-center gap-5">
+                            <ThemeToggle />
                             <LanguageSwitcher currentLang={lang} />
                             <Magnetic strength={0.3}>
                                 <Link href={`/${lang}/propiedades`} className="btn-editorial btn-editorial-teal !text-[11px] !tracking-[0.14em] uppercase flex items-center gap-2">
@@ -128,7 +130,8 @@ const Navbar: React.FC = () => {
                         </div>
                     </div>
 
-                    <div className="flex lg:hidden items-center gap-4">
+                    <div className="flex lg:hidden items-center gap-3">
+                        <ThemeToggle />
                         <LanguageSwitcher currentLang={lang} />
                         <button
                             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

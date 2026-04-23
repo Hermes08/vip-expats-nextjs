@@ -74,6 +74,58 @@
   }
 }
 
+/* ─────────────────────────────────────────────────────────────
+   DARK MODE — opt-in via <html data-theme="dark">
+   ─────────────────────────────────────────────────────────────
+   Swaps editorial tokens to their dark-surface equivalents. The
+   legacy brand-* tokens stay unchanged so existing components that
+   hard-code colors continue to look right. Only the new editorial
+   surface tokens (ink/cream/sand/paper) flip — which means the
+   .surface-cream / .lede / .eyebrow / .btn-editorial / .display-serif
+   primitives automatically invert without any component edits.
+*/
+[data-theme="dark"] {
+  --color-ink:        #F2E9D7;  /* was deep teal-black → cream-tone */
+  --color-ink-soft:   #D5CCBA;
+  --color-ink-mute:   #8E9C9D;
+  --color-cream:      #0B1E1F;  /* page surface → deep ink */
+  --color-cream-soft: #0F2829;
+  --color-sand:       #1A3536;
+  --color-paper:      #071415;  /* card surface → darkest */
+  --color-teal-deep:  #CFECEC;
+  --color-teal-edit:  #14B8BC;
+  --color-teal-bright:#4FE2E4;
+  --color-teal-soft:  rgba(20, 184, 188, 0.14);
+  --color-coral:      #F08A66;  /* coral stays warm, slightly lifted */
+  --color-coral-soft: #E4704A;
+  --color-brass:      #D7AD5B;
+}
+[data-theme="dark"] body { background-color: var(--color-cream); color: var(--color-ink); }
+
+/* Ensure borders using inline rgba(14,42,43,...) tone flip too.
+   Catches the ink-on-cream 8% border used everywhere. */
+[data-theme="dark"] .border-\[color\:rgba\(14\,42\,43\,0\.08\)\] {
+  border-color: rgba(242, 233, 215, 0.12) !important;
+}
+[data-theme="dark"] .border-\[color\:rgba\(14\,42\,43\,0\.12\)\] {
+  border-color: rgba(242, 233, 215, 0.16) !important;
+}
+
+/* Logo variant auto-switch in dark mode: if the caller used Variant H
+   light, flip it to h-dark automatically when data-theme="dark".
+   Saves having to toggle classes at the component level. */
+[data-theme="dark"] .lg.h .p,
+[data-theme="dark"] .lg.h .g {
+  background: var(--color-ink); /* which is cream in dark */
+  color: var(--color-cream);    /* which is ink in dark */
+}
+[data-theme="dark"] .lg.h .r { color: var(--color-ink); opacity: 0.7; }
+[data-theme="dark"] .lg .tld { box-shadow: 3px 3px 0 var(--color-ink); }
+
+[data-theme="dark"] .lg.i .p,
+[data-theme="dark"] .lg.i .g { color: var(--color-ink); }
+/* coral stays coral in both modes */
+
 /* Subtle noise texture — very light on light pages */
 body::before {
   content: "";
@@ -609,6 +661,134 @@ body {
 /* Hide scrollbar on horizontal strips (sticky tab bars, filter rows) */
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { scrollbar-width: none; -ms-overflow-style: none; }
+
+/* ─────────────────────────────────────────────────────────────
+   WORDMARK LOGO — from the Claude Design Logo Spec handoff
+   ─────────────────────────────────────────────────────────────
+   Two approved wordmark variants:
+     - Variant H (.lg.h / .lg.h-dark) — primary, ink-block bookends
+     - Variant I (.lg.i / .lg.i-dark) — editorial alternate
+   Both share the sticker-style .com chip (coral, rotated -2deg,
+   ink/cream drop shadow). Structure:
+     <a class="lg h" aria-label="PanamaRealEstateSale.com">
+       <span class="p">Panama</span>
+       <span class="r">RealEstate</span>
+       <span class="g">Sale</span>
+       <span class="tld">.com</span>
+     </a>
+*/
+.lg {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-manrope), sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0;
+  gap: 0;
+  text-decoration: none;
+  line-height: 1;
+  white-space: nowrap;
+}
+.lg .tld {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 4px 10px;
+  background: var(--color-coral);
+  color: var(--color-paper);
+  font-weight: 900;
+  font-size: 22px;
+  transform: rotate(-2deg);
+  border-radius: 4px;
+  box-shadow: 3px 3px 0 var(--color-ink);
+  line-height: 1.1;
+}
+
+/* Variant H — ink block bookends (PRIMARY) */
+.lg.h .p,
+.lg.h .g {
+  background: var(--color-ink);
+  color: var(--color-paper);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 800;
+}
+.lg.h .g { margin-left: 4px; }
+.lg.h .r {
+  color: var(--color-ink);
+  font-weight: 300;
+  opacity: 0.6;
+  margin: 0 4px;
+}
+
+/* Variant H · dark — inverted for dark surfaces */
+.lg.h-dark .p,
+.lg.h-dark .g {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-weight: 800;
+}
+.lg.h-dark .g { margin-left: 4px; }
+.lg.h-dark .r {
+  color: var(--color-cream);
+  font-weight: 300;
+  opacity: 0.7;
+  margin: 0 4px;
+}
+.lg.h-dark .tld {
+  box-shadow: 3px 3px 0 var(--color-cream);
+}
+
+/* Variant I — coral underline alternate (editorial) */
+.lg.i .p,
+.lg.i .g {
+  color: var(--color-ink);
+  font-weight: 800;
+  margin: 0 2px;
+}
+.lg.i .r {
+  color: var(--color-coral);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--color-coral);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  margin: 0 2px;
+}
+
+/* Variant I · dark */
+.lg.i-dark .p,
+.lg.i-dark .g {
+  color: var(--color-cream);
+  font-weight: 800;
+  margin: 0 2px;
+}
+.lg.i-dark .r {
+  color: var(--color-coral);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: var(--color-coral);
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+  margin: 0 2px;
+}
+.lg.i-dark .tld {
+  box-shadow: 3px 3px 0 var(--color-cream);
+}
+
+/* Responsive scaling — the spec says min-width 180px for H, 160px
+   for I. Downscale gracefully on mobile without breaking the wordmark. */
+@media (max-width: 480px) {
+  .lg { font-size: 18px; }
+  .lg .tld { font-size: 15px; padding: 3px 7px; margin-left: 5px; box-shadow: 2px 2px 0 var(--color-ink); }
+  .lg.h-dark .tld { box-shadow: 2px 2px 0 var(--color-cream); }
+  .lg.i-dark .tld { box-shadow: 2px 2px 0 var(--color-cream); }
+}
+@media (min-width: 481px) and (max-width: 720px) {
+  .lg { font-size: 21px; }
+  .lg .tld { font-size: 18px; padding: 3px 8px; }
+}
 
 /* ─────────────────────────────────────────────────────────────
    GLOBAL EDITORIALIZATION LAYER
