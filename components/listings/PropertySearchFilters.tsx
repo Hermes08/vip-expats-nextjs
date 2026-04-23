@@ -83,22 +83,22 @@ export default function PropertySearchFilters({ filters, onChange, total, filter
     onChange(DEFAULT_FILTERS);
   }
 
-  const selectCls = "w-full bg-white border border-brand-TEAL/30 text-brand-950 text-sm rounded-xl px-3 py-2.5 focus:outline-none focus:border-brand-TEAL transition-colors appearance-none cursor-pointer";
+  const selectCls = "w-full bg-[color:var(--color-cream-soft)] border border-[color:rgba(14,42,43,0.12)] text-[color:var(--color-ink)] text-sm rounded-full px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-teal-edit)]/30 focus:border-[color:var(--color-teal-edit)] hover:border-[color:var(--color-teal-edit)] transition-colors appearance-none cursor-pointer";
 
   return (
-    <div className="bg-white border border-brand-TEAL/20 rounded-2xl p-5 mb-8 shadow-sm">
+    <div className="bg-[color:var(--color-paper)] border border-[color:rgba(14,42,43,0.08)] rounded-2xl p-5 mb-10 shadow-sm">
       {/* Search text */}
       <div className="relative mb-4">
-        <Search size={16} className="absolute left-3.5 top-1/2 -translate-y-1/2 text-brand-TEAL/50" />
+        <Search size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-[color:var(--color-ink-mute)]" />
         <input
           type="text"
           value={filters.query}
           onChange={e => set('query', e.target.value)}
           placeholder={lang === 'es' ? 'Buscar por nombre, zona, ciudad...' : 'Search by name, zone, city...'}
-          className="w-full bg-white border border-brand-TEAL/30 text-brand-950 text-sm rounded-xl pl-10 pr-4 py-2.5 focus:outline-none focus:border-brand-TEAL transition-colors placeholder:text-slate-400"
+          className="w-full bg-[color:var(--color-cream-soft)] border border-[color:rgba(14,42,43,0.12)] text-[color:var(--color-ink)] text-sm rounded-full pl-11 pr-10 py-2.5 focus:outline-none focus:ring-2 focus:ring-[color:var(--color-teal-edit)]/30 focus:border-[color:var(--color-teal-edit)] transition-all placeholder:text-[color:var(--color-ink-mute)]"
         />
         {filters.query && (
-          <button onClick={() => set('query', '')} className="absolute right-3.5 top-1/2 -translate-y-1/2 text-slate-500 hover:text-brand-TEAL transition-colors">
+          <button onClick={() => set('query', '')} className="absolute right-4 top-1/2 -translate-y-1/2 text-[color:var(--color-ink-mute)] hover:text-[color:var(--color-teal-edit)] transition-colors">
             <X size={14} />
           </button>
         )}
@@ -162,8 +162,8 @@ export default function PropertySearchFilters({ filters, onChange, total, filter
       </div>
 
       {/* Results summary + reset */}
-      <div className="flex items-center justify-between mt-4 pt-4 border-t border-brand-100">
-        <span className="text-slate-500 text-xs font-semibold">
+      <div className="flex items-center justify-between mt-4 pt-4 border-t border-[color:rgba(14,42,43,0.08)]">
+        <span className="eyebrow !text-[color:var(--color-ink-mute)]">
           {lang === 'es'
             ? `Mostrando ${filtered} de ${total} propiedades`
             : `Showing ${filtered} of ${total} properties`}
@@ -171,10 +171,10 @@ export default function PropertySearchFilters({ filters, onChange, total, filter
         {hasActive && (
           <button
             onClick={reset}
-            className="flex items-center gap-1.5 text-brand-GOLD/70 hover:text-brand-GOLD text-xs font-bold uppercase tracking-wider transition-colors"
+            className="flex items-center gap-1.5 eyebrow !text-[color:var(--color-teal-edit)] hover:!text-[color:var(--color-ink)] transition-colors"
           >
             <X size={12} />
-            {lang === 'es' ? 'Limpiar filtros' : 'Clear filters'}
+            {lang === 'es' ? 'Limpiar' : 'Clear'}
           </button>
         )}
       </div>
