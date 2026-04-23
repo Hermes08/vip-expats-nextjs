@@ -3,6 +3,8 @@
 @theme {
   --font-sans: var(--font-manrope);
   --font-heading: var(--font-montserrat);
+  --font-display: var(--font-serif);   /* Cormorant Garamond — editorial display */
+  --font-mono: ui-monospace, 'JetBrains Mono', SFMono-Regular, Menlo, monospace;
 
   /* ─── Dark scale — ONLY for hero photo overlays and footer ─── */
   --color-brand-950: #01181A;
@@ -27,6 +29,24 @@
   --color-brand-TEAL:      #00C5CB;   /* bright Caribbean teal */
   --color-brand-TEAL-dark: #00A8AE;   /* readable teal on white — NOT dark green */
   --color-brand-CORAL:     #E8714A;
+
+  /* ─── Editorial coastal palette — additive, from the design handoff ─── */
+  /* Use these for editorial surfaces (warmer, softer). Legacy brand-* tokens remain unchanged. */
+  --color-ink:        #0E2A2B;        /* deep teal-black */
+  --color-ink-soft:   #1C3B3D;
+  --color-ink-mute:   #4A6668;
+  --color-cream:      #F6EFE2;        /* warm off-white — editorial page bg */
+  --color-cream-soft: #FBF6EC;
+  --color-sand:       #E8DCC4;
+  --color-paper:      #FFFDF7;
+  --color-teal-deep:  #0A3E40;        /* rich brand teal */
+  --color-teal-edit:  #0B8C8F;        /* editorial primary teal (matches design button) */
+  --color-teal-bright:#14B8BC;
+  --color-teal-soft:  #CFECEC;
+  --color-coral:      #E4704A;        /* sunset */
+  --color-coral-soft: #F3B79A;
+  --color-brass:      #C69645;        /* metallic warm accent */
+  --color-brass-soft: #E8C88A;
 
   --color-neutral-50:  #f8fafc;
   --color-neutral-100: #f1f5f9;
