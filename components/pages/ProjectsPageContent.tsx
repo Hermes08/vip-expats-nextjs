@@ -176,64 +176,55 @@ const ProjectsPageContent: React.FC = () => {
                 </div>
             </div>
 
-            {/* Filters Bar */}
-            <div className="relative lg:sticky lg:top-[72px] z-40 bg-brand-TEAL/70 backdrop-blur-2xl border-b border-brand-100 py-8 shadow-2xl">
+            {/* Filters Bar — pill style */}
+            <div className="relative lg:sticky lg:top-[72px] z-40 bg-[color:var(--color-paper)] border-b border-[color:rgba(14,42,43,0.08)] py-5">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="flex flex-wrap items-center justify-between gap-4 sm:gap-10">
-                        <div className="flex flex-wrap gap-4 sm:gap-12 items-center">
-                            <div className="flex items-center gap-4">
-                                <Filter size={16} className="text-brand-GOLD" />
-                                <div className="relative group">
-                                    <select
-                                        className="bg-transparent font-black text-[11px] uppercase tracking-[0.2em] focus:outline-none cursor-pointer pr-8 appearance-none text-white hover:text-brand-GOLD transition-colors"
-                                        value={activeZone}
-                                        onChange={(e) => setActiveZone(e.target.value)}
-                                        aria-label="Neighborhood Filter"
-                                    >
-                                        <option value="All" className="text-brand-950">{lang === 'zh' ? '全部地区' : pt.allNeighborhoods}</option>
-                                        <option value="Beach" className="text-brand-950">{lang === 'zh' ? '海滩' : pt.beachAreas}</option>
-                                        <option value="Mountain" className="text-brand-950">{lang === 'zh' ? '山区' : pt.highlands}</option>
-                                        <option value="Caribbean" className="text-brand-950">{lang === 'zh' ? '加勒比海' : pt.caribbean}</option>
-                                    </select>
-                                    <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 text-brand-GOLD/50 pointer-events-none group-hover:text-brand-GOLD transition-colors" size={14} />
-                                </div>
-                            </div>
-
-                            <div className="flex items-center gap-4">
-                                <Map size={16} className="text-brand-GOLD" />
-                                <div className="relative group">
-                                    <select
-                                        className="bg-transparent font-black text-[11px] uppercase tracking-[0.2em] focus:outline-none cursor-pointer pr-8 appearance-none text-white hover:text-brand-GOLD transition-colors"
-                                        value={activeType}
-                                        onChange={(e) => setActiveType(e.target.value)}
-                                        aria-label="Property Type Filter"
-                                    >
-                                        <option value="Any" className="text-brand-950">{lang === 'zh' ? '房产类型' : pt.propertyType}</option>
-                                        <option value="Condo" className="text-brand-950">{lang === 'zh' ? '公寓' : pt.condominiums}</option>
-                                        <option value="House" className="text-brand-950">{lang === 'zh' ? '住宅' : pt.singleFamily}</option>
-                                        <option value="Villa" className="text-brand-950">{lang === 'zh' ? '别墅' : pt.luxuryVillas}</option>
-                                    </select>
-                                    <ChevronDown className="absolute right-0 top-1/2 -translate-y-1/2 text-brand-GOLD/50 pointer-events-none group-hover:text-brand-GOLD transition-colors" size={14} />
-                                </div>
-                            </div>
+                    <div className="flex flex-wrap items-center gap-3">
+                        <div className="flex items-center gap-2 px-4 py-2.5 text-[color:var(--color-ink-mute)] text-xs font-medium">
+                            <Filter size={14} className="text-[color:var(--color-teal-edit)]" />
+                            <span className="hidden sm:inline">{lang === 'es' ? 'Filtrar' : 'Filter'}</span>
                         </div>
 
-                        <div className="flex-grow md:max-w-md relative">
-                            <Magnetic strength={0.1}>
-                                <input
-                                    type="text"
-                                    value={searchTerm}
-                                    onChange={(e) => setSearchTerm(e.target.value)}
-                                    placeholder={lang === 'zh' ? "搜索项目..." : pt.searchPlaceholder}
-                                    aria-label="Search projects by keyword"
-                                    className="w-full pl-14 pr-10 py-5 bg-white/5 rounded-2xl text-[11px] font-black uppercase tracking-widest border border-brand-100 text-white focus:ring-1 focus:ring-brand-GOLD/50 outline-none transition-all placeholder:text-slate-600 shadow-inner"
-                                />
-                                <Search className="absolute left-6 top-1/2 -translate-y-1/2 text-brand-GOLD/50" size={20} />
-                            </Magnetic>
+                        <div className="h-6 w-px bg-[color:rgba(14,42,43,0.12)] hidden sm:block" />
+
+                        <select
+                            className="px-4 py-2.5 text-sm border border-[color:rgba(14,42,43,0.12)] rounded-full bg-[color:var(--color-cream-soft)] text-[color:var(--color-ink)] cursor-pointer hover:border-[color:var(--color-teal-edit)] transition-colors outline-none focus:ring-2 focus:ring-[color:var(--color-teal-edit)]/30"
+                            value={activeZone}
+                            onChange={(e) => setActiveZone(e.target.value)}
+                            aria-label="Neighborhood Filter"
+                        >
+                            <option value="All">{pt.allNeighborhoods}</option>
+                            <option value="Beach">{pt.beachAreas}</option>
+                            <option value="Mountain">{pt.highlands}</option>
+                            <option value="Caribbean">{pt.caribbean}</option>
+                        </select>
+
+                        <select
+                            className="px-4 py-2.5 text-sm border border-[color:rgba(14,42,43,0.12)] rounded-full bg-[color:var(--color-cream-soft)] text-[color:var(--color-ink)] cursor-pointer hover:border-[color:var(--color-teal-edit)] transition-colors outline-none focus:ring-2 focus:ring-[color:var(--color-teal-edit)]/30"
+                            value={activeType}
+                            onChange={(e) => setActiveType(e.target.value)}
+                            aria-label="Property Type Filter"
+                        >
+                            <option value="Any">{pt.propertyType}</option>
+                            <option value="Condo">{pt.condominiums}</option>
+                            <option value="House">{pt.singleFamily}</option>
+                            <option value="Villa">{pt.luxuryVillas}</option>
+                        </select>
+
+                        <div className="flex-grow md:max-w-sm relative ml-auto">
+                            <input
+                                type="text"
+                                value={searchTerm}
+                                onChange={(e) => setSearchTerm(e.target.value)}
+                                placeholder={pt.searchPlaceholder}
+                                aria-label="Search projects by keyword"
+                                className="w-full pl-11 pr-10 py-2.5 bg-[color:var(--color-cream-soft)] rounded-full text-sm border border-[color:rgba(14,42,43,0.12)] text-[color:var(--color-ink)] focus:ring-2 focus:ring-[color:var(--color-teal-edit)]/30 focus:border-[color:var(--color-teal-edit)] outline-none transition-all placeholder:text-[color:var(--color-ink-mute)]"
+                            />
+                            <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-[color:var(--color-ink-mute)]" size={16} />
                             {searchTerm && (
                                 <button
                                     onClick={() => setSearchTerm('')}
-                                    className="absolute right-4 top-1/2 -translate-y-1/2 text-slate-600 hover:text-brand-TEAL"
+                                    className="absolute right-4 top-1/2 -translate-y-1/2 text-[color:var(--color-ink-mute)] hover:text-[color:var(--color-teal-edit)]"
                                 >
                                     <span className="sr-only">Clear</span>
                                     &times;
@@ -245,9 +236,9 @@ const ProjectsPageContent: React.FC = () => {
             </div>
 
             {/* Main Grid Content */}
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-14">
-                <div className="flex justify-between items-center mb-16">
-                    <p className="text-sm font-black text-brand-GOLD uppercase tracking-[0.2em] mb-4">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-10 pb-14">
+                <div className="flex justify-between items-center mb-12">
+                    <p className="eyebrow !text-[color:var(--color-ink-mute)]">
                         {pt.showingAssets(filteredProjects.length)}
                     </p>
                 </div>
@@ -271,16 +262,16 @@ const ProjectsPageContent: React.FC = () => {
                     </div>
 
                     {filteredProjects.length === 0 && (
-                        <div className="text-center py-32 card-light rounded-[4rem] border-brand-100 shadow-2xl">
-                            <p className="text-2xl text-gray-400 mb-4 font-black uppercase tracking-tighter">{pt.noAssetsTitle}</p>
-                            <p className="text-sm text-gray-500 mb-12 font-medium">{pt.noAssetsSubtitle}</p>
+                        <div className="text-center py-24 bg-[color:var(--color-paper)] border border-[color:rgba(14,42,43,0.08)] rounded-[3rem]">
+                            <p className="display-serif italic text-3xl text-[color:var(--color-ink)] mb-4">{pt.noAssetsTitle}</p>
+                            <p className="lede mx-auto mb-10">{pt.noAssetsSubtitle}</p>
                             <button
                                 onClick={() => {
                                     setActiveType('Any');
                                     setActiveZone('All');
                                     setSearchTerm('');
                                 }}
-                                className="btn-3d btn-3d-gold px-12 py-6 rounded-xl font-black text-xs uppercase tracking-widest"
+                                className="btn-editorial btn-editorial-teal uppercase tracking-[0.18em]"
                             >
                                 {pt.resetFilters}
                             </button>
@@ -289,12 +280,12 @@ const ProjectsPageContent: React.FC = () => {
                 </div>
 
                 {/* SECTION: MASSIVE NEIGHBORHOOD ANALYSIS */}
-                <div className="mt-32 pt-20 border-t border-brand-100">
+                <div className="mt-32 pt-20 border-t border-[color:rgba(14,42,43,0.08)]">
                     <div className="max-w-5xl mx-auto">
                         <div className="text-center mb-16">
-                            <span className="bg-brand-GOLD/10 text-brand-GOLD px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-4 inline-block">Market Intelligence</span>
-                            <h2 className="text-3xl md:text-5xl font-heading font-bold text-white mb-8">{t.projectsPage.neighborhoodTitle}</h2>
-                            <div className="prose prose-lg text-slate-500 max-w-none text-left leading-relaxed whitespace-pre-line font-medium">
+                            <span className="tag-mono tag-mono-brass mb-5 inline-flex">Market Intelligence</span>
+                            <h2 className="display-serif italic text-4xl md:text-6xl text-[color:var(--color-ink)] mb-8">{t.projectsPage.neighborhoodTitle}</h2>
+                            <div className="prose prose-lg text-[color:var(--color-ink-soft)] max-w-none text-left leading-relaxed whitespace-pre-line font-normal">
                                 {t.projectsPage.neighborhoodBody}
                             </div>
                         </div>
@@ -302,22 +293,22 @@ const ProjectsPageContent: React.FC = () => {
                         <div className="grid md:grid-cols-2 gap-16 mt-20">
                             <div className="space-y-10">
                                 <div>
-                                    <h3 className="text-xl font-bold text-brand-950 mb-4 flex items-center gap-3"><TrendingUp className="text-brand-GOLD" /> Beachfront Investment Hotspots</h3>
-                                    <p className="text-sm leading-relaxed text-slate-500">The <strong>panama condos on the beach</strong> market has expanded significantly towards <strong>playa caracol panama</strong> and Playa Bonita. These areas represent <strong>panama beachfront investment</strong> opportunities with the highest potential for short-term rental yields. Benchmark these against the traditional <strong>coronado panama real estate</strong> market to see how <strong>panama city beach real estate</strong> is evolving towards a younger, lifestyle-oriented demographic.</p>
+                                    <h3 className="display-serif italic text-2xl text-[color:var(--color-ink)] mb-4 flex items-center gap-3"><TrendingUp className="text-[color:var(--color-teal-edit)]" /> Beachfront Investment Hotspots</h3>
+                                    <p className="text-sm leading-relaxed text-[color:var(--color-ink-soft)]">The <strong>panama condos on the beach</strong> market has expanded significantly towards <strong>playa caracol panama</strong> and Playa Bonita. These areas represent <strong>panama beachfront investment</strong> opportunities with the highest potential for short-term rental yields. Benchmark these against the traditional <strong>coronado panama real estate</strong> market to see how <strong>panama city beach real estate</strong> is evolving towards a younger, lifestyle-oriented demographic.</p>
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-brand-950 mb-4 flex items-center gap-3"><Map className="text-brand-GOLD" /> The Highlands & Retiro Life</h3>
-                                    <p className="text-sm leading-relaxed text-slate-500">For <strong>panama mountain homes for sale</strong>, Boquete is the undisputed king. The <strong>boquete panama real estate</strong> market is driven by <strong>american retirees in panama</strong> looking for world-class wellness facilities and established <strong>expat communities in panama</strong>. Explore <strong>property in boquete panama</strong> as a defensive asset in your portfolio, providing stability and excellent quality of life under the <strong>pensionado visa panama</strong> benefits.</p>
+                                    <h3 className="display-serif italic text-2xl text-[color:var(--color-ink)] mb-4 flex items-center gap-3"><Map className="text-[color:var(--color-teal-edit)]" /> The Highlands & Retiro Life</h3>
+                                    <p className="text-sm leading-relaxed text-[color:var(--color-ink-soft)]">For <strong>panama mountain homes for sale</strong>, Boquete is the undisputed king. The <strong>boquete panama real estate</strong> market is driven by <strong>american retirees in panama</strong> looking for world-class wellness facilities and established <strong>expat communities in panama</strong>. Explore <strong>property in boquete panama</strong> as a defensive asset in your portfolio, providing stability and excellent quality of life under the <strong>pensionado visa panama</strong> benefits.</p>
                                 </div>
                             </div>
                             <div className="space-y-10">
                                 <div>
-                                    <h3 className="text-xl font-bold text-brand-950 mb-4 flex items-center gap-3"><Info className="text-brand-GOLD" /> Urban Luxury & Branded Residences</h3>
-                                    <p className="text-sm leading-relaxed text-slate-500"><strong>Panama city condos</strong> continue to lead the region in sophistication. Projects like <strong>ocean reef islands panama</strong> and <strong>westin panama residences</strong> are the pinnacle of <strong>panama branded residences</strong>. These properties appeal to international buyers seeking <strong>panama high end real estate</strong> with the security of a global hotel brand. Benchmark these against <strong>punta pacifica condos</strong> like <strong>ph oceanaire</strong> to understand the premium of hotel-managed inventory.</p>
+                                    <h3 className="display-serif italic text-2xl text-[color:var(--color-ink)] mb-4 flex items-center gap-3"><Info className="text-[color:var(--color-teal-edit)]" /> Urban Luxury & Branded Residences</h3>
+                                    <p className="text-sm leading-relaxed text-[color:var(--color-ink-soft)]"><strong>Panama city condos</strong> continue to lead the region in sophistication. Projects like <strong>ocean reef islands panama</strong> and <strong>westin panama residences</strong> are the pinnacle of <strong>panama branded residences</strong>. These properties appeal to international buyers seeking <strong>panama high end real estate</strong> with the security of a global hotel brand. Benchmark these against <strong>punta pacifica condos</strong> like <strong>ph oceanaire</strong> to understand the premium of hotel-managed inventory.</p>
                                 </div>
                                 <div>
-                                    <h3 className="text-xl font-bold text-brand-950 mb-4 flex items-center gap-3"><ShieldCheck className="text-brand-GOLD" /> Buyer's Checklist for Panama</h3>
-                                    <p className="text-sm leading-relaxed text-slate-500">When <strong>buying real estate in panama</strong>, always verify the developer's track record and the <strong>panama real estate projects</strong>' history of appreciation. Our <strong>panama property investment guide</strong> recommends prioritizing <strong>panama gated communities</strong> with professional maintenance. Whether you seek <strong>panama expat real estate</strong> or a <strong>panama second home</strong>, the Rockstar advisors provide full transparency on closing costs and tax exemptions.</p>
+                                    <h3 className="display-serif italic text-2xl text-[color:var(--color-ink)] mb-4 flex items-center gap-3"><ShieldCheck className="text-[color:var(--color-teal-edit)]" /> Buyer's Checklist for Panama</h3>
+                                    <p className="text-sm leading-relaxed text-[color:var(--color-ink-soft)]">When <strong>buying real estate in panama</strong>, always verify the developer's track record and the <strong>panama real estate projects</strong>' history of appreciation. Our <strong>panama property investment guide</strong> recommends prioritizing <strong>panama gated communities</strong> with professional maintenance. Whether you seek <strong>panama expat real estate</strong> or a <strong>panama second home</strong>, the Rockstar advisors provide full transparency on closing costs and tax exemptions.</p>
                                 </div>
                             </div>
                         </div>
@@ -326,10 +317,10 @@ const ProjectsPageContent: React.FC = () => {
             </div>
 
             {/* Search Grounding Wall */}
-            <section className="bg-brand-50 py-20 border-t border-brand-100">
+            <section className="bg-[color:var(--color-paper)] py-20 border-t border-[color:rgba(14,42,43,0.08)]">
                 <div className="max-w-7xl mx-auto px-4">
-                    <h2 className="text-[10px] font-black text-neutral-600 uppercase tracking-[0.3em] mb-10 text-center">Global Property Search Hub</h2>
-                    <div className="flex flex-wrap justify-center gap-x-12 gap-y-6 opacity-40 text-[11px] font-bold text-brand-GOLD grayscale hover:grayscale-0 transition-all">
+                    <h2 className="eyebrow !text-[color:var(--color-ink-mute)] mb-10 text-center">Global Property Search Hub</h2>
+                    <div className="flex flex-wrap justify-center gap-x-10 gap-y-5 opacity-60 text-xs font-medium text-[color:var(--color-ink-mute)] italic hover:opacity-100 transition-all">
                         <span>panama condos for sale</span>
                         <span>panama apartments for sale</span>
                         <span>panama houses for sale</span>
