@@ -46,7 +46,7 @@ export default function PropertyCard({ listing, lang, priority = false }: Proper
   const location = [listing.neighborhood, listing.city].filter(Boolean).join(', ');
 
   return (
-    <article className="group bg-white rounded-2xl overflow-hidden border border-brand-100 hover:border-brand-TEAL/40 transition-all duration-300 hover:shadow-xl hover:shadow-brand-TEAL/8 flex flex-col">
+    <article className="group bg-[color:var(--color-paper)] rounded-2xl overflow-hidden border border-[color:rgba(14,42,43,0.08)] hover:border-[color:var(--color-teal-edit)]/40 transition-all duration-300 hover:shadow-[0_20px_50px_-15px_rgba(14,42,43,0.22)] flex flex-col">
       {/* Image */}
       <Link href={`/${lang}/propiedades/${listing.slug}`} className="block relative h-56 overflow-hidden">
         <Image
@@ -60,24 +60,24 @@ export default function PropertyCard({ listing, lang, priority = false }: Proper
           priority={priority}
           loading={priority ? 'eager' : 'lazy'}
         />
-        {/* Gradient overlay — dark at bottom so price text is always readable */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
+        {/* Gradient overlay — ink at bottom so price text is always readable */}
+        <div className="absolute inset-0 bg-gradient-to-t from-[color:var(--color-ink)]/65 via-[color:var(--color-ink)]/10 to-transparent" />
 
         {/* Status badge */}
-        <span className={`absolute top-3 left-3 text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest backdrop-blur-sm ${statusColor}`}>
+        <span className={`tag-mono absolute top-3 left-3 shadow-md ${statusColor}`}>
           {statusLabel}
         </span>
 
         {/* Featured star */}
         {listing.featured && (
-          <span className="absolute top-3 right-3 bg-brand-GOLD/90 backdrop-blur-sm text-brand-950 rounded-full p-1.5">
+          <span className="absolute top-3 right-3 bg-brand-GOLD/95 backdrop-blur-sm text-brand-950 rounded-full p-1.5">
             <Star size={12} fill="currentColor" />
           </span>
         )}
 
         {/* Price overlay */}
-        <div className="absolute bottom-3 left-3">
-          <span className="text-white font-black text-lg drop-shadow-lg">
+        <div className="absolute bottom-3 left-4">
+          <span className="display-serif italic text-white text-2xl drop-shadow-lg">
             {formatPrice(listing.price, listing.status, lang)}
           </span>
         </div>
@@ -86,46 +86,46 @@ export default function PropertyCard({ listing, lang, priority = false }: Proper
       {/* Content */}
       <div className="p-5 flex flex-col flex-grow">
         {/* Location */}
-        <div className="flex items-center gap-1.5 text-brand-TEAL text-xs font-bold uppercase tracking-widest mb-2">
+        <div className="flex items-center gap-1.5 eyebrow !text-[color:var(--color-teal-edit)] mb-3">
           <MapPin size={11} />
           <span>{location}</span>
         </div>
 
         {/* Title */}
-        <h3 className="font-heading text-brand-950 font-bold text-base leading-snug mb-3 group-hover:text-brand-TEAL transition-colors line-clamp-2">
+        <h3 className="display-serif italic text-[color:var(--color-ink)] text-xl leading-snug mb-3 group-hover:text-[color:var(--color-teal-edit)] transition-colors line-clamp-2">
           <Link href={`/${lang}/propiedades/${listing.slug}`}>{title}</Link>
         </h3>
 
         {/* Excerpt */}
         {excerpt && (
-          <p className="text-slate-500 text-sm leading-relaxed line-clamp-2 mb-4 flex-grow">
+          <p className="text-[color:var(--color-ink-soft)] text-sm leading-relaxed line-clamp-2 mb-4 flex-grow">
             {excerpt}
           </p>
         )}
 
         {/* Stats bar */}
-        <div className="flex items-center gap-4 text-slate-500 text-xs font-semibold border-t border-brand-100 pt-4 mt-auto">
+        <div className="flex items-center gap-4 text-[color:var(--color-ink-mute)] text-xs font-semibold border-t border-[color:rgba(14,42,43,0.08)] pt-4 mt-auto">
           {listing.beds != null && (
             <span className="flex items-center gap-1.5">
-              <Bed size={13} className="text-brand-TEAL/70" />
+              <Bed size={13} className="text-[color:var(--color-teal-edit)]/80" />
               {listing.beds} {lang === 'es' ? 'hab' : 'bd'}
             </span>
           )}
           {listing.baths != null && (
             <span className="flex items-center gap-1.5">
-              <Bath size={13} className="text-brand-TEAL/70" />
+              <Bath size={13} className="text-[color:var(--color-teal-edit)]/80" />
               {listing.baths} {lang === 'es' ? 'baños' : 'ba'}
             </span>
           )}
           {listing.sqft != null && (
             <span className="flex items-center gap-1.5">
-              <Maximize2 size={13} className="text-brand-TEAL/70" />
+              <Maximize2 size={13} className="text-[color:var(--color-teal-edit)]/80" />
               {listing.sqft.toLocaleString()} {lang === 'es' ? 'm²' : 'sqft'}
             </span>
           )}
           <Link
             href={`/${lang}/propiedades/${listing.slug}`}
-            className="ml-auto flex items-center gap-1 text-brand-TEAL/70 hover:text-brand-TEAL transition-colors font-bold"
+            className="ml-auto flex items-center gap-1 text-[color:var(--color-teal-edit)]/80 hover:text-[color:var(--color-teal-edit)] transition-colors font-semibold"
           >
             {lang === 'es' ? 'Ver' : 'View'} <ArrowRight size={12} />
           </Link>
