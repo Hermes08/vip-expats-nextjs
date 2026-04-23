@@ -77,12 +77,12 @@ const Navbar: React.FC = () => {
                     <Magnetic strength={0.2}>
                         <Link
                             href={`/${lang}`}
-                            aria-label="PanamaRealEstateGuide.com"
+                            aria-label="PanamaRealEstateSale.com"
                             className={`lg ${isScrolled ? 'h' : 'h-dark'} focus:outline-none`}
                         >
                             <span className="p">Panama</span>
                             <span className="r">RealEstate</span>
-                            <span className="g">Guide</span>
+                            <span className="g">Sale</span>
                             <span className="tld">.com</span>
                         </Link>
                     </Magnetic>
