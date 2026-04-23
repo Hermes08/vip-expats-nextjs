@@ -74,9 +74,14 @@ const Navbar: React.FC = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
                     <Magnetic strength={0.2}>
-                        <Link href={`/${lang}`} className="z-50 focus:outline-none group">
-                            <span className="font-heading text-xl md:text-3xl font-black tracking-tighter transition-opacity group-hover:opacity-90">
-                                <span className="text-brand-GOLD uppercase">PANAMA</span><span className={`uppercase font-serif-luxury lowercase tracking-normal -ml-1 ${isScrolled ? 'text-brand-950' : 'text-white'}`}>Sale</span>
+                        <Link href={`/${lang}`} aria-label="PANAMASale" className="z-50 focus:outline-none group inline-flex items-center gap-2.5 transition-opacity group-hover:opacity-90">
+                            <svg width="28" height="28" viewBox="0 0 40 40" fill="none" aria-hidden="true" className={isScrolled ? 'text-[color:var(--color-ink)]' : 'text-white'}>
+                                <path d="M10 33 V 9 H 22 A 7 7 0 0 1 22 23 H 14" stroke="currentColor" strokeWidth="2.6" strokeLinecap="square" strokeLinejoin="miter" fill="none" />
+                                <circle cx="30" cy="13" r="3.2" fill="var(--color-coral)" />
+                            </svg>
+                            <span className="inline-flex items-baseline font-sans text-[15px] md:text-base font-extrabold uppercase leading-none tracking-[0.14em] whitespace-nowrap">
+                                <span className={isScrolled ? 'text-[color:var(--color-ink)]' : 'text-white'}>PANAMA</span>
+                                <span className={`font-normal opacity-75 ${isScrolled ? 'text-[color:var(--color-ink)]' : 'text-white'}`}>Sale</span>
                             </span>
                         </Link>
                     </Magnetic>

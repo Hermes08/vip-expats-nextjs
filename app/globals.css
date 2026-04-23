@@ -716,3 +716,40 @@ h4.font-heading.italic.uppercase.tracking-tighter:not([data-editorial="off"]) {
    rendering unchanged. */
 .page-editorial { background-color: var(--color-cream); color: var(--color-ink); }
 .page-editorial .lede { color: var(--color-ink-soft); }
+
+/* Blog article inner HTML — the content rendered from
+   dangerouslySetInnerHTML has no Tailwind classes, so headings fell
+   back to plain Manrope. Treat any h2/h3/h4 inside <article> as
+   editorial serif to keep the feel consistent inside long-form
+   content. Structure is untouched — only typography. */
+article h2:not([data-editorial="off"]),
+article h3:not([data-editorial="off"]),
+article h4:not([data-editorial="off"]) {
+  font-family: var(--font-serif), Georgia, serif;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  color: var(--color-ink);
+  line-height: 1.1;
+}
+article h2 { font-size: clamp(1.75rem, 3vw, 2.25rem); margin-top: 2.25rem; margin-bottom: 1rem; }
+article h3 { font-size: clamp(1.4rem, 2.4vw, 1.75rem); margin-top: 1.75rem; margin-bottom: 0.75rem; }
+article h4 { font-size: clamp(1.15rem, 2vw, 1.35rem); margin-top: 1.25rem; margin-bottom: 0.5rem; }
+
+/* Inline strong inside article body — keep the editorial ink tone */
+article p strong,
+article li strong {
+  color: var(--color-ink);
+  font-weight: 700;
+}
+
+/* Blog grid card titles — the dominant "h2.font-heading.font-black
+   .text-brand-950" pattern (without italic+uppercase+tracking) on
+   index cards. Make these editorial too. */
+h2.font-heading.font-black.text-brand-950:not([data-editorial="off"]) {
+  font-family: var(--font-serif), Georgia, serif !important;
+  font-weight: 500 !important;
+  font-style: italic;
+  letter-spacing: -0.01em;
+  text-transform: none;
+}
