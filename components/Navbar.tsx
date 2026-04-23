@@ -82,7 +82,7 @@ const Navbar: React.FC = () => {
                     </Magnetic>
 
                     <div className="hidden lg:flex items-center gap-10">
-                        <div className={`flex gap-8 text-[11px] font-black uppercase tracking-[0.2em] ${isScrolled ? 'text-brand-800' : 'text-gray-200'}`}>
+                        <div className={`flex gap-8 text-[11px] font-semibold uppercase tracking-[0.18em] ${isScrolled ? 'text-brand-800' : 'text-white/90'}`}>
                             {Object.entries(navItems).map(([key, group]) => (
                                 <div
                                     key={key}
@@ -90,17 +90,17 @@ const Navbar: React.FC = () => {
                                     onMouseEnter={() => setActiveDropdown(key)}
                                     onMouseLeave={() => setActiveDropdown(null)}
                                 >
-                                    <button className={`flex items-center gap-1 transition-all ${isScrolled ? 'hover:text-brand-TEAL-dark' : 'hover:text-white'} ${group.items.some(i => isActive(i.path)) ? 'text-brand-TEAL-dark' : ''}`}>
+                                    <button className={`flex items-center gap-1.5 transition-all duration-300 ${isScrolled ? 'hover:text-brand-TEAL-dark' : 'hover:text-white'} ${group.items.some(i => isActive(i.path)) ? 'text-brand-TEAL-dark' : ''}`}>
                                         {group.label} <ChevronDown size={12} className={`transition-transform duration-300 ${activeDropdown === key ? 'rotate-180' : ''}`} />
                                     </button>
 
-                                    <div className={`absolute top-full left-0 mt-0 w-56 bg-white border border-brand-100 rounded-xl overflow-hidden shadow-2xl transition-all duration-300 origin-top ${activeDropdown === key ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
-                                        <div className="py-2 bg-gradient-to-b from-white/5 to-transparent">
+                                    <div className={`absolute top-full left-0 mt-1 w-60 bg-[color:var(--color-paper)] border border-[color:rgba(14,42,43,0.08)] rounded-2xl overflow-hidden shadow-xl transition-all duration-300 origin-top ${activeDropdown === key ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}>
+                                        <div className="py-2">
                                             {group.items.map((item) => (
                                                 <Link
                                                     key={item.path}
                                                     href={`/${lang}${item.path}`}
-                                                    className={`flex items-center gap-3 px-6 py-4 text-[10px] font-black uppercase tracking-widest hover:bg-brand-50 hover:text-brand-TEAL transition-colors ${isActive(item.path) ? 'text-brand-GOLD' : 'text-brand-800'}`}
+                                                    className={`flex items-center gap-3 px-5 py-3.5 text-[11px] font-semibold uppercase tracking-[0.14em] hover:bg-[color:var(--color-cream-soft)] transition-colors ${isActive(item.path) ? 'text-[color:var(--color-teal-edit)]' : 'text-[color:var(--color-ink)]'}`}
                                                 >
                                                     {item.icon}
                                                     {item.label}
@@ -110,13 +110,13 @@ const Navbar: React.FC = () => {
                                     </div>
                                 </div>
                             ))}
-                            <Link href={`/${lang}/podcast`} className={`py-4 transition-all ${isActive('/podcast') ? 'text-brand-TEAL-dark' : isScrolled ? 'hover:text-brand-TEAL-dark' : 'hover:text-white'}`}>{lang === 'es' ? 'Podcast' : 'Podcast'}</Link>
-                            <Link href={`/${lang}/contacto`} className={`py-4 transition-all ${isActive('/contacto') ? 'text-brand-TEAL-dark' : isScrolled ? 'hover:text-brand-TEAL-dark' : 'hover:text-white'}`}>{t.nav.contact}</Link>
+                            <Link href={`/${lang}/podcast`} className={`py-4 transition-all duration-300 ${isActive('/podcast') ? 'text-brand-TEAL-dark' : isScrolled ? 'hover:text-brand-TEAL-dark' : 'hover:text-white'}`}>{lang === 'es' ? 'Podcast' : 'Podcast'}</Link>
+                            <Link href={`/${lang}/contacto`} className={`py-4 transition-all duration-300 ${isActive('/contacto') ? 'text-brand-TEAL-dark' : isScrolled ? 'hover:text-brand-TEAL-dark' : 'hover:text-white'}`}>{t.nav.contact}</Link>
                         </div>
                         <div className="flex items-center gap-6">
                             <LanguageSwitcher currentLang={lang} />
                             <Magnetic strength={0.3}>
-                                <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-teal px-8 py-3 rounded-xl font-black text-[10px] uppercase tracking-widest flex items-center gap-2">
+                                <Link href={`/${lang}/propiedades`} className="btn-editorial btn-editorial-teal !text-[11px] !tracking-[0.14em] uppercase flex items-center gap-2">
                                     <Search size={14} /> {lang === 'es' ? 'Ver Propiedades' : 'Properties'}
                                 </Link>
                             </Magnetic>
@@ -171,7 +171,7 @@ const Navbar: React.FC = () => {
                     <Link href={`/${lang}/contacto`} className={`text-2xl font-black uppercase tracking-tighter ${isActive('/contacto') ? 'text-brand-GOLD' : 'text-white'}`}>{t.nav.contact}</Link>
 
                     <div className="mt-auto py-8">
-                        <Link href={`/${lang}/propiedades`} className="btn-3d btn-3d-teal w-full px-8 py-5 rounded-2xl font-black text-xs uppercase tracking-widest flex items-center justify-center gap-3">
+                        <Link href={`/${lang}/propiedades`} className="btn-editorial btn-editorial-teal w-full !py-5 !text-xs !tracking-[0.18em] uppercase flex items-center justify-center gap-3">
                             <Search size={20} /> {lang === 'es' ? 'Ver Propiedades' : 'Properties'}
                         </Link>
                     </div>
